@@ -1,0 +1,269 @@
+/*
+
+Colors
+
+#da7
+#c96
+#CC9966
+#B3874F
+#A3672F
+
+*/
+
+body
+{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 67.5%;
+    background-color:#B3874F;
+    color:#222;
+}
+
+
+a:link,
+a:visited,
+a:hover,
+a:active
+{
+	color: #758F96;
+	border-bottom: 1px solid #da7;
+	text-decoration: none;
+}
+
+a:visited
+{
+	border-style: none none dotted none;
+}
+
+a:hover
+{
+	border-color: #758F96;
+}
+
+
+h1,h2,h3,h4
+{
+    color: #c96;
+}
+
+h1
+{
+	border-bottom: 2px solid #A3672F;
+	padding-bottom: .5em;
+}
+
+legend
+{
+    font-weight: bold;
+    color: #A3672F
+}
+
+fieldset
+{
+	border-color: #A3672F;
+	margin-bottom: 2em;
+}
+
+fieldset fieldset
+{
+	margin-top: 2em;
+}
+
+fieldset h2
+{
+	font-size: 1em;
+}
+
+fieldset h2 + div
+{
+	padding-left: 1.5em;
+}
+
+label
+{
+	width: 5em;
+	display: block;
+	float: left;
+	
+	font-weight: bold;
+}
+
+table
+{
+    border-collapse: collapse;
+    margin: auto;
+  	text-align: left;
+}
+
+table td
+{
+    border: 1px solid #A3672F;
+    padding: .25em .25em .25em .75em;
+}
+
+tr.warn td
+{
+	background-color: #fee;
+}
+
+tr.good td
+{
+	background-color: #efe;
+}
+
+tr.sub td
+{
+	background-color: #dfd;
+}
+
+tr.super td
+{
+	background-color: #ddf;	
+}
+
+tr.primary td
+{
+	background-color: #ffa;
+}
+
+tr.normal td
+{
+}
+
+tr.head td, tr.subhead td
+{
+	padding: .25em .75em;
+	text-align: center;
+	color: #c96;
+	font-weight: bold;
+	font-size: bigger;
+	border-width: 2px;
+}
+
+tr.subhead td
+{
+	font-style: italic;
+	text-align: left;
+}
+
+.b
+{
+	font-weight: bold;
+}
+
+.centered
+{
+    text-align: center;
+}
+
+.lefted
+{
+    text-align: left;
+
+}
+
+.righted
+{
+    text-align: right;
+
+}
+
+.left
+{
+    float: left;
+}
+
+.right
+{
+	float: right;
+}
+
+.clearleft
+{
+	clear: left;
+}
+
+.clearright
+{
+	clear: right;
+}
+
+.clearboth
+{
+	clear: both;
+}
+
+.redborder
+{
+	border: 2px solid red;
+}
+
+.greenborder
+{
+	border: 2px solid green;
+}
+
+.blueborder
+{
+	border: 2px solid blue;
+}
+
+.odd td
+{
+	background-color: #f0d68d;
+}
+
+.even td
+{
+	background-color: #fcebac;
+}
+
+.fullwidth
+{
+	width: 100%;
+}
+
+.radiogroup + .radiogroup
+{
+	margin-top: 1.5em;
+}
+
+.separate
+{
+	margin-top: 2em;
+}
+
+.tab
+{
+    float: left;
+    width: 30%;
+    text-align: center;
+    margin-left: 1em;
+}
+
+.tab table
+{
+    margin: 0 auto;
+}
+
+#wrapper
+{
+    width: 55em;
+    min-height: 41.25em;
+    font-size: 1.4em;
+    margin: 1em auto;
+    padding: 2em;
+    text-align: left;
+    background-color: #fff;
+    border: 3px solid #A3672F;
+}
+
+#loadimg
+{
+	position: relative;
+	float: right;
+	right: 0;
+	top: 0;
+	height: 6em;
+	width: 12em;
+}

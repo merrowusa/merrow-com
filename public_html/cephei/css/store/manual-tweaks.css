@@ -1,0 +1,168 @@
+/* @override http://a248.e.akamai.net/7/248/2041/1433/store.apple.com/Catalog/US/Images/css/manual-tweaks.css */
+
+/*
+This file is for manual tweaks to achieve column alignment (ragline) with changing content.
+The tweaks in this particular file are per-country.
+*/
+body #promos3 #promo3 {
+	min-height:127px;
+}
+.department #navigation .module ul {
+	margin-bottom: 7px;
+}
+.shopmac #navigation .modulecontent {
+	min-height: 908px;
+}
+.shopmac #navigation #shop .modulecontent {
+	min-height: 0;
+}
+.shopmac #navigation .footerblock .modulecontent {
+	min-height: 30.5em;
+}
+body #navigation .module ul#shopapple {
+	margin-top: 4px;
+	margin-bottom: 2px;
+}
+body .department #navigation .module ul#shopapple { /* non-safari styles below */
+	margin-bottom: 6px;
+}
+#navigation .module .modulecontent #shopapple li a {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+body #navigation .module ul#shopaccessories {
+	margin-top: 0;
+}
+#secondary .modulecontent li a,
+#secondary .modulecontent p.more a { /* non-safari styles below */
+	padding-top: 6px;
+}
+#navigation .modulecontent li a,
+#navigation .modulecontent p.more a {
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.home #secondary #newtothestore .list_content {
+	min-height: 302px;
+}
+#secondary #topsellers .modulecontent {
+	padding-bottom: 6px;
+}
+.home #secondary #topsellers .modulecontent {
+	padding-bottom: 0;
+	min-height: 826px;
+}
+#secondary #topsellers .modulecontent a {
+	line-height: 1.25em;
+}
+#secondary #topsellers .list_content {
+	padding: 4px 0 0;
+}
+.shopmac #secondary #topsellers .list_content {
+	padding-bottom: 0;
+	min-height: 517px;
+}
+.shopmac #secondary #newtothestore .list_content {
+	padding-bottom: 0;
+	min-height: 518px;
+}
+#secondary #topsellers .list_foot {
+	padding-bottom: 4px;
+}
+.home #navigation .module#shop .modulecontent {
+	min-height: 247px;
+}
+.department #navigation #shop .modulecontent {
+	padding-bottom: 0;
+}
+#navigation .modulecontent #software p.more {
+	margin-bottom: 6px;
+}
+#secondary .footerblock ul.more,
+#navigation .footerblock ul.more {
+	margin-top: 2px;
+	margin-bottom: 7px;
+}
+
+body #navigation .module #morestores ul {
+	margin-top: 4px;
+	padding-bottom: 2px; /* non-safari style below */
+	padding-top: 8px;
+}
+
+body #navigation .list_content {
+	padding-top: 1px;
+}
+body #navigation .list_foot {
+	padding-bottom: 3px;
+}
+
+body #navigation #popularaccessories .list_content {
+	padding-top: 4px;
+}
+body #navigation #popularaccessories .list_foot {
+	padding-bottom: 8px;
+}
+body #aos_header #masthead_wrap {
+	min-height: 104px;
+}
+body .shopiphone #secondary .module#newtothestore ul {
+	margin-bottom: 10px;
+}
+body .shopmac #store_details {
+	margin-bottom: 3px;
+}
+
+
+
+/*	IMPORTANT: Safari 2 ignores these styles and all styles below --------
+	this must remain at the bottom of the file */
+
+.module ul#more_promos li {
+	min-height: 172px; #
+}
+.home .module ul#more_promos li {
+	min-height:173px; #
+}
+body #navigation .modulecontent li a,
+#navigation .modulecontent p.more a {
+	padding-top:3px; #
+}
+body .department #navigation .footerblock .modulecontent {
+	min-height: 30.45em; #
+}
+body .department #navigation .module ul {
+	margin-top: 4px; #
+}
+body #tab-latestsoftware {
+	height:260px; #
+}
+body #guide_wrap_btm {
+	margin-top:-3px; #
+}
+body #secondary .modulecontent li a,
+body #secondary .modulecontent p.more a {
+	padding-top: 5px; #
+}
+body #navigation .list_content {
+	padding-top: 2px; #
+}
+body #navigation #popularaccessories .list_content {
+	padding-top: 5px; #
+}
+body #navigation #popularaccessories .list_foot {
+	padding-bottom: 9px; #
+}
+.home #secondary #topsellers .modulecontent {
+	min-height: 827px; #
+}
+body #masthead form div.psearch label {
+	padding: 3px 0; #
+}
+body #aos_header #masthead_wrap {
+	min-height: 104px; #
+}
+
+
+
+/* -- do not put *anything* under this line ------------------------------ */

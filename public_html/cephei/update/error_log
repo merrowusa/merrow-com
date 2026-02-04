@@ -1,0 +1,4 @@
+[12-Sep-2008 12:54:14] PHP Warning:  imagecreatefromgif() [<a href='function.imagecreatefromgif'>function.imagecreatefromgif</a>]: 'http://merrow.com/cephei/img/userPics/1221238454_26343.jpg' is not a valid GIF file in /home/merrowco/public_html/cephei/_class/img_ctrl.php on line 146
+[12-Sep-2008 12:54:14] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/merrowco/public_html/cephei/_class/img_ctrl.php on line 185
+[12-Sep-2008 12:54:14] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/merrowco/public_html/cephei/_class/img_ctrl.php on line 186
+[12-Sep-2008 12:54:14] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/merrowco/public_html/cephei/_class/img_ctrl.php on line 187

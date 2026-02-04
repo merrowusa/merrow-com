@@ -1,0 +1,1 @@
+zh([-_][[:alpha:]]{2})?|chinese

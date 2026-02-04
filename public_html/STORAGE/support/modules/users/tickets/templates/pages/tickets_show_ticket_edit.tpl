@@ -1,0 +1,5 @@
+{TICKETS_SHOW_TICKET}
+<br>&nbsp;<br>
+{TICKETS_EDIT_NOTE_FORM}
+<br>&nbsp;<br>
+{TICKETS_LIST_NOTES}

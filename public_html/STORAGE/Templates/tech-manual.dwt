@@ -1,0 +1,137 @@
+<html>
+
+<head>
+<!-- #BeginEditable "doctitle" -->
+<title>Merrow Sewing Machine Co. &#150; Technical Manual</title>
+<!-- #EndEditable -->
+<meta name="DESCRIPTION" content="Merrow machines are mainstays in the production lines of the world's top textile producers, renowned for their longevity and reliability.">
+<meta name="KEYWORDS" content="Merrow Sewing Machine Co., production lines, cam-driven sewing machines, 5-axis, computerized milling machines.">
+<link rel="stylesheet" href="merrow_styles.css" type="text/css">
+<!-- #BeginEditable "javascript" -->
+<script language="JavaScript">
+<!-- hide from JavaScript-challenged browsers--!>
+
+function popOne() {
+  var newwin = window.open("thelogo.htm","pop1","left=0,top=0,width=600,height=450,resizable=no,scrollbars=no,menubar=no")
+}
+// done hiding -->
+</script>
+<!-- #EndEditable -->
+<script language="JavaScript">
+<!--
+
+
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+<link rel="stylesheet" href="../merrow_styles.css" type="text/css">
+</head>
+
+<body background="../images/tile.gif" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="684"> 
+      <table border="0" cellspacing="0" cellpadding="0" width="700">
+        <tr> 
+          <td valign="top"> 
+            <table width="750" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td valign="top" colspan="2"  background="../images/tile.gif"> 
+                  <div align="left"><img src="../images/inside-hdr.jpg" width="750" height="38"></div></td>
+              </tr>
+              
+              <tr> 
+                <td valign="top" background="../images/tile.gif" width="131"> 
+                  <p><img src="../images/techman-crnr.jpg" width="128" height="136" border="0"></p>
+                  <table border="0" cellspacing="0" cellpadding="5" width="119">
+                    <tr> 
+                      <td> 
+                        <div align="center"><a href="../index.htm"><img src="../images/home-hdr.gif" width="50" height="18" border="0"></a></div>                      </td>
+                    </tr>
+                    <tr> 
+                      <td> 
+                        <div align="center"><img src="../images/rule.gif" width="110" height="16"></div>                      </td>
+                    </tr>
+                    <tr> 
+                      <td> 
+                        <div align="center"><a href="../aboutmerrow/about.htm"><img src="../images/about.gif" width="109" height="18" border="0"></a></div>                      </td>
+                    </tr>
+                    <tr> 
+                      <td> 
+                        <div align="center"><img src="../images/rule.gif" width="110" height="16"></div>                      </td>
+                    </tr>
+                    <tr> 
+                      <td> 
+                        <div align="center"><a href="../applications.htm"><img src="../images/apps.gif" width="103" height="18" border="0"></a></div>                      </td>
+                    </tr>
+                    <tr> 
+                      <td> 
+                        <div align="center"><img src="../images/rule.gif" width="110" height="16"></div>                      </td>
+                    </tr>
+                    <tr> 
+                      <td> 
+                        <div align="center"><a href="../distributors/distributors.htm"><img src="../images/dist.gif" width="99" height="16" border="0"></a></div>                      </td>
+                    </tr>
+                    <tr> 
+                      <td> 
+                        <div align="center"><img src="../images/rule.gif" width="110" height="16"></div>                      </td>
+                    </tr>
+                    <tr> 
+                      <td> 
+                        <div align="center"><a href="../product-lineA.htm"><img src="../images/product.gif" width="103" height="17" border="0"></a></div>                      </td>
+                    </tr>
+                    <tr> 
+                      <td> 
+                        <div align="center"><img src="../images/rule.gif" width="110" height="16"></div>                      </td>
+                    </tr>
+                    <tr> 
+                      <td> 
+                        <div align="center"><a href="../tech-manual.htm"><img src="../images/tech-manuals.gif" width="112" height="23" border="0"></a></div>                      </td>
+                    </tr>
+                    <tr> 
+                      <td> 
+                        <div align="center"><img src="../images/rule.gif" width="110" height="16"></div>                      </td>
+                    </tr>
+                    <tr> 
+                      <td> 
+                        <div align="center"><a href="../tradeshows.htm"><img src="../images/trade.gif" width="102" height="17" border="0"></a></div>                      </td>
+                    </tr>
+                    <tr> 
+                      <td> 
+                        <div align="center"><img src="../images/rule.gif" width="110" height="16"></div>                      </td>
+                    </tr>
+                    <tr> 
+                      <td> 
+                        <div align="center"><a href="../helpinghand.htm"><img src="../images/request.gif" width="109" height="18" border="0"></a></div>                      </td>
+                    </tr>
+                  </table>                </td>
+                <td valign="top" width="622"> 
+                  <table width="622" border="0" cellspacing="0" cellpadding="15" bgcolor="#FFFFFF">
+                    <tr> 
+                      <td valign="top"><span class="bodytext"><< <a href="../tech-manual.htm" class="default">Back 
+                        to Main Technical Manual Page</a></span><!-- #BeginEditable "Body" --> 
+                        <p class="mainhead">Technical Manual:</p>
+                        <p class="mainhead">&nbsp;</p>
+                        <!-- #EndEditable --> 
+                        <p class="bodytext"><font color="#CC0000">11 Patterson Brook Rd.  
+                          &#149; West Wareham, MA USA 02576<br>Tel: 800.431.6677 &#149 Fax: 508.295.8897<br>
+                          <a href="mailto:info@merrow.com" class="default">info@merrow.com</a></font></p>
+                        <div align="left" class="bodytext"><font color="#CC0000">&copy; 
+                          2004 Merrow Sewing Machine Co. All Rights Reserved.</font></div>                      </td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

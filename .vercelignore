@@ -1,0 +1,19 @@
+# Ignore for Vercel CLI uploads
+node_modules/
+.next/
+.git/
+
+# Legacy site (not needed for Next.js build)
+public_html/
+_mmServerScripts/
+Connections/
+imageupload/
+phpimages/
+
+# Backstop visual regression (not needed for deploy)
+backstop_data/
+*.png
+
+# Build artifacts
+.DS_Store
+*.log

@@ -1,0 +1,19 @@
+{
+  "name": "@merrow/data-layer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.ts",
+    "./db": "./db.ts",
+    "./dynamic-db": "./dynamic-db.ts",
+    "./queries/*": "./queries/*.ts",
+    "./schema": "./schema/index.ts",
+    "./schema/*": "./schema/*.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "drizzle-orm": "^0.45.1",
+    "postgres": "^3.4.8"
+  }
+}

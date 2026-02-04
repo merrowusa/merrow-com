@@ -1,0 +1,170 @@
+/* @override http://merrow.com/cephei/css/css_major/about_us.css */
+
+/* @override http://merrow.com/cephei/css/css_major/about_us.css */
+
+div.InfoCase {  
+}
+div.InfoCase h1 { color: #7aa089; margin-top: 0;
+	text-align: left;
+	position: relative;
+	left: 40px;
+}
+
+div.lineemup div.InfoCase blockquote h3 {
+	font-size: 18px !important;
+	line-height: 24px !important;
+	padding-bottom: 10px;
+}
+
+div.bottom_paragraph {
+	text-align: left;
+	margin-left: 40px;
+	margin-top: 20px;
+	width: 550px;
+	border-top: 1px groove gray;
+}
+
+
+
+div.lineemup div.InfoCase h2 {
+	text-align: left;
+	position: relative;
+	left: 40px;
+}
+
+div.lineemup div.InfoCase blockquote {
+	text-align: left;
+	position: relative;
+	left: 100px;
+	
+}
+
+div.lineemup {
+	width: 530px;
+	float: left;
+}
+
+div.lineemup div.InfoCase blockquote h3 b {
+	color: #7aa089;
+	
+}
+
+div.rounder {
+	position: absolute;
+	width: 300px;
+	left: 645px;
+	top: 25px;
+	clear: both;
+}
+
+div.round1 {
+	position: relative;
+	left: 0px;
+	width: 100%;
+}
+div.round2 {
+	position: relative;
+	left: 100px;
+	width: 100%;
+	bottom: 25px;
+}
+div.round3 {
+	position: relative;
+	width: 100%;
+	margin-right: 106px;
+	left: 125px;
+	top: 25px;
+}
+div.round4 {
+	position: relative;
+	left: 95px;
+	top: 65px;
+}
+div.round5 {
+	position: relative;
+	top: 40px;
+}
+div.round6 {
+	position: relative;
+	right: 95px;
+	bottom: 55px;
+}
+div.round7 {
+	position: relative;
+	right: 130px;
+	bottom: 215px;
+}
+div.round8 {
+	position: relative;
+	bottom: 385px;
+	right: 100px;
+}
+div.round9 {
+	position: relative;
+	bottom: 390px;
+	font-size: 22px;
+	color: orange;
+	width: 210px;
+	left: 48px;
+	float: left;
+}
+div.round10 {
+	position: relative;
+	bottom: 400px;
+	font-size: 14px;
+	color: gray;
+	width: 200px;
+	left: 48px;
+	float: left;
+}
+
+div.squarer {
+	display: inline-block;
+	position: absolute;
+	top: 450px;
+	height: 180px;
+	width: 220px;
+	left: 690px;
+	float: left;
+	clear: both;
+}
+
+div.management {
+	font-size: 18px;
+	float: left;
+	clear: both;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	color: orange;
+	padding-bottom: 5px;
+	position: relative;
+	left: 48px;
+}
+
+div.charlie {
+	float: left;
+}
+
+div.owen {
+	padding-right: 10px;
+	float: left;
+}
+
+div.charlietxt {
+	}
+
+div.owentxt {
+}
+div.blogtext {
+	width: 200px;
+	height: 30px;
+	position: absolute;
+	top: 170px;
+	text-align: left;
+	color: gray;
+}
+div.lineemup div.InfoCase blockquote h3 font b {
+	color: black;
+	}
+

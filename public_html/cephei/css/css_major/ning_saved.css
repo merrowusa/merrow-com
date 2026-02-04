@@ -1,0 +1,56 @@
+div.xg_module.xg_ads {
+	visibility: hidden;
+	position: absolute;
+}
+
+#xg_navigation {
+	height:1%;
+	
+	
+}
+
+div#xn_bar {
+	position: absolute;
+	visibility: hidden;
+}
+
+
+li#xg_tab_invite {
+	position: absolute;
+	visibility: hidden;
+}
+
+div.xg_module.module_about {
+	visibility: hidden;
+	position: absolute;
+}
+
+li#xg_tab_video {
+	visibility: hidden;
+	position: absolute;
+}
+li#xg_tab_gadgets {
+	visibility: hidden;
+	position: absolute;
+}
+li#xg_tab_notes {
+	visibility: hidden;
+	position: absolute;
+}
+#xg_tab_groups {
+	position: absolute;
+	visibility: hidden;
+}
+#xg_tab_forum {
+	position: absolute;
+	visibility: hidden;
+}
+#xg_tab_main {
+	position: absolute;
+	visibility: hidden;
+}
+
+#xg_tab_events {
+	position: absolute;
+	visibility: hidden;
+}

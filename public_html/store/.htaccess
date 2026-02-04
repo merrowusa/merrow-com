@@ -1,0 +1,7 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^store\.merrow\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.store\.merrow\.com$
+RewriteRule ^/?$ "http\:\/\/www\.merrow\.com" [R=301,L]
+
+AddType text/css css

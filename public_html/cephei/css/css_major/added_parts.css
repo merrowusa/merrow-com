@@ -1,0 +1,141 @@
+/* @override http://merrow.com/cephei/css/css_major/added_parts.css */
+
+/* @override http://merrow.com/cephei/css/productpage/added_parts.css */
+
+a:active, a:link, .g-novisited a:visited {color: #055d90; text-decoration:none}
+
+a:visited {color: #055d90}
+
+td#title.layout3.layout3Name {
+	background-color: black;
+	background-image: url(http://imerrow.com/webportal/images/mapple/index_iphonekeynotebottom_hero20080306.jpg);
+}
+
+.our-label{color: gray;font-weight:bold;}
+
+.savings td{white-space:nowrap; font-size:10px;}
+
+body, div, span, ul, ol, dl, h1, h2, h3 {font-family:Arial, Helvetica, sans-serif; font-size:small}
+
+.layout3 {
+  padding: 0 3px;
+  text-align: center;
+}
+
+body, .g-std {font-family:Arial, Helvetica, sans-serif; font-size:small}
+
+body {margin-top:0 !important; padding-top:0 !important}
+
+.layout3 {
+  padding: 0 3px;
+  text-align: center;
+}
+
+div.instructions_header {
+	font-size: 18px;
+	font-variant: small-caps;
+	margin-top: 0;
+}
+
+div.body_text {
+	color: #606060;
+	width: 700px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+div.needhelp{
+	position: relative;
+	color: orange !important;
+	font-size: 18px;
+	font-weight: bold;
+	width: 350px;
+	float: left;
+	top: 20px;
+}
+
+div.rail_options {
+	position: relative;
+	color: #2e6eff;
+	font: 16px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	height: 250px;
+	width: 700px;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+a.thickbox {
+	color: #2e6eff;
+	padding-left: 10px;
+}
+
+div.rail_words {
+	direction: ltr;
+	display: inline-block;
+	position: relative;
+	width: 290px;
+	height: 20px;
+	float: left;
+	font-size: 14px;
+	padding-bottom: 3px;
+}
+
+div.lilheadline {
+	color: #3269ff;
+	font-weight: bold;
+	font-size: 16px;
+
+}
+
+div.clear {
+	position: absolute;
+	left: 150px;
+	top: 60px;
+	font-size: 10px;
+	color: gray;
+	z-index: 5;
+}
+
+div.lilanswer {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+a.handsome {
+	margin-left: 5px;
+}
+
+
+
+
+
+input#totalcost {
+	position: absolute;
+	bottom: 350px;
+	font-size: 24px;
+	color: #394cff;
+	width: 120px;
+	left: 376px;
+}
+
+div.money {
+	position: absolute;
+	bottom: 350px;
+	left: 40px;
+	color: orange;
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+div.rail_length {
+	width: 300px;
+	height: 300px;
+	margin-right: 5px;
+	position: relative;
+	left: 575px;
+	bottom: 240px;
+	font-size: 14px;
+	font-weight: bold;
+}

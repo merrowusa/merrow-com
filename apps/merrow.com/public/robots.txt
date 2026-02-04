@@ -1,0 +1,23 @@
+# Merrow.com Robots.txt
+# https://www.merrow.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.merrow.com/sitemap.xml
+
+# Block admin and API routes
+Disallow: /api/
+Disallow: /_next/
+
+# Allow search engines to crawl important pages
+Allow: /fashion-sewing
+Allow: /technical-sewing
+Allow: /end-to-end-seaming
+Allow: /sewing/applications
+Allow: /customer-stories
+Allow: /agentmap.html
+Allow: /support
+Allow: /about.html
+Allow: /overlock-history

@@ -1,0 +1,498 @@
+/* @override http://merrow.com/cephei/css/css_major/iws_machine.css */
+
+
+a{
+;
+}
+
+.bgcl,.bgc,.bg,.fc,.bgw { }/* yellow */
+
+ #title h3 a:hover { 
+  color: #e47911;
+}
+.n {}
+
+.n{/*left nav categories*/
+text-decoration:none;
+color:#000000;
+}
+
+h2{
+font-weight:100;
+text-decoration:none;
+margin-bottom: 0px;
+margin:0px;
+	padding: 5px;
+}
+
+img#productImage {
+	visibility: visible;
+	z-index: 100;
+	margin: 1px;
+}
+
+
+h2 
+{
+font-size: 12px;
+	padding: 0 0px 0px 5px;
+	
+}
+
+td.leftnavlink h2 {
+	font-size: 12px;
+	font-weight: bold;
+	
+}
+
+a.n {
+color: #333 !important;	
+}
+
+#description div.dd {
+	color: #f29f2a;
+	font-size: 16px;
+}
+
+#description div.dd h2 {
+	color: #666;
+}
+
+
+
+.leftnavlink,.left-vert-bar-link
+{
+width:196px;
+	background: none no-repeat;
+	height: 0;
+}
+
+
+.leftnav {
+width:196px;
+	background: #f6f6f6 no-repeat 0 10px;
+}
+
+
+table{/*no table borders*/
+border:0px;
+}
+
+
+
+.content{
+	position: relative;
+	width: 980px;
+	left: 10px;
+	bottom: 10px;
+	margin-top: 10px;
+}
+
+
+.main {
+	position: relative;
+	left: 25px;
+}
+
+
+div#features.dd { min-height: 5px;  margin-bottom: 16px;
+	position: relative;
+}
+
+
+
+body{
+font-family:verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+}
+
+
+
+body
+{
+margin:0px 0px 0px 0px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+background:#fff;
+}
+
+img{/*no image borders*/
+border:0px;
+}
+
+img.wba_zoom_btn {
+	visibility: hidden;
+}
+
+img.wba_email_btn {
+	visibility: hidden;
+}
+
+.i{
+	z-index: 0;
+	
+}
+
+
+
+
+.d{/*Details TD*/
+vertical-align:top;
+vertical-align:baseline;
+width:250px !important;
+height: 350px !important;
+	float: left;
+}
+
+td.d {
+	padding-right: 10px;
+	height: 350px !important;
+}
+
+
+div.machinemenu{
+	
+}
+
+td#description {
+	position: relative;
+	width: 400px;
+	height: 250px !important;
+	float: right;
+}
+
+
+.dd{/*Details price, name, usually ships spacing*/
+padding-bottom:10px;
+padding-top:10px;
+}
+
+<!--[if IE 7]>
+
+
+#content-1{
+	visibility: visible;
+	float: left;
+	clear: both;
+	width: 800px;
+	height: 600px;
+	position: relative;
+	bottom: 455px;
+}
+<![endif]-->
+
+
+span#parentAvailability{
+
+	color:#619eff;
+}
+
+.variant{border:#CCCCCC solid 1px;
+	
+}
+
+.rw{/*right nav names*/
+color:#666666;
+font-size:10px;
+font-weight:bold;
+}
+
+
+.fg{
+font-weight:bold;
+padding:5px;
+}
+
+
+.fg,.fg1,h4 {
+}
+
+
+
+
+.fg{
+font-size:12px;
+color: #535353;
+font-weight:bold;
+	background: none repeat-x left;
+	border-bottom: 1px solid silver;
+}
+
+.vert-bar *{width:170px !important;}
+
+
+
+
+
+
+#title.layout3 h3, #title.layout4 h3{
+	text-align:left;
+}
+
+#title h3{
+color:#666666;
+font-size: 67px;
+font-weight:bold;
+text-align:center;
+font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+H3 {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	margin:0px;
+
+}
+
+.bg{
+font-weight:bold;
+	background-repeat: repeat-x;
+}
+
+#leftnav-label p {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 14px;
+	color: #fff;
+	text-shadow: 1px 1px 1px #224272;
+	margin-bottom: 7px;
+}
+
+
+.bgcl,.bgc,.bgcr,.bgl,.bg,.yy,.bar,.row,.bgw {
+}
+
+
+
+.bg{
+width:196px;
+font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+font-size: 12px;
+vertical-align:middle;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 14px;
+	color: #fff;
+	text-shadow: 1px 1px 1px #224272;
+	height: 33px;
+	padding-right: 0px;
+	padding-left: 10px;
+	opacity: 1;
+	background: url(http://images.imerrow.com/images/menubar/m_head.jpg) no-repeat center;
+}
+.r{/*right nav names*/
+color:#666666;
+font-size:10px;
+font-weight:bold;
+text-align: center;
+}
+
+#title h3 a.r {
+	color: #2E5D90;
+	font-size: 12px;
+	opacity: 1;
+	text-shadow: #000000 0 0 0;
+}
+
+h1{
+font-weight: bold;
+text-decoration:none;
+margin:0px;
+	color: #1848b2;
+	font-size: 16px;
+}
+
+#category-title h1 {
+	font-size: 18px;
+}
+
+#breadcrumb a{color: #f29f2a;
+}
+
+.crumbPast{font-size:12px; font-weight:normal;
+}
+
+span.crumbPast b {
+	color: #f29f2a;
+}
+
+span.crumbHome {
+	margin-left: 55px;
+	color: #f29f2a;
+}
+
+#breadcrumb h2{display:inline; padding:0; margin:0;}
+
+
+#category-title{
+background:url(../images/hag_bullet.gif) left no-repeat;
+padding-left:20px;
+font-size:12px;
+color:#000000;
+font-weight:bold;
+}
+
+.layout3{
+text-align:left;
+background-color:#FFFFFF;
+padding:3px;
+}
+
+.vert-bar .bg{width:100%; height:32px;}
+
+.vert-bar{padding:0;margin:0;}
+
+.e{/*left nav extras*/
+text-align:center;
+font-size:12px;
+}
+.our{font-weight: bold;color:#B13400;
+	font-size: 13px;
+}
+
+.our-label{color:#000000;font-weight:bold;}
+
+#sku h1{
+font-size:12px;
+font-weight:normal;
+color:#000000;
+text-decoration:none;
+margin:0px;
+display:inline;
+}
+
+.savings td{white-space:nowrap; font-size: 12px;
+
+}
+.savings .save{font-weight:normal;}
+.savings .list-label{font-weight:bold;}
+.savings .list{font-weight:normal; color:#000000;}
+
+#description h2,#features h2{
+font-size: 12px;
+color:#000000;
+text-decoration:none;
+margin:0px;
+padding:0px;
+display:inline;
+}
+
+#sku b {
+	font-size: 18px;
+}
+
+span#parentSku {
+	color: #4c4c4c;
+}
+
+#features h2 {
+	font-size: 12px;
+	font-weight: bold;
+}
+.fg1{
+height:30px;
+font-weight: bold;
+	background-image: none;
+	color: orange;
+}
+.fc{
+color: #5e5353;
+font-size:12px;
+}
+.row{
+background:#f6f6f6;
+}
+
+
+
+
+
+.ct{
+text-align: left;
+	padding-right: 20px;
+	background: url(http://images.imerrow.com/images/fp/cartflat.png) repeat-x;
+}
+
+span.thirdPartyWarning {
+	font-size: 10px;
+}
+.ct,.cp{
+font-size: 11px;
+	background: url(http://images.imerrow.com/images/fp/cartflat.png) repeat-x;
+}
+.y{
+text-align:center;
+vertical-align:bottom;
+vertical-align:baseline;
+border-top: 1px solid #ddd;
+	padding: 3px 10px;
+}
+
+td.leftnavlink.activeLink h2 b a.n {
+	color: black;
+}
+
+div#leftnav-label {
+	margin-top: 5px;
+	position: relative;
+	right: 5px;
+	color: #fff;
+	font-size: 16px;
+}
+
+#title table.savings {
+	visibility: visible;
+	text-transform: lowercase;
+}
+#sortBy form{text-align:right; padding:0; margin:0;
+	background-color: #fcfcfc;
+	border-bottom-style: none;
+}
+
+tr.lightGreyBar {
+	background-color: #f9f9f9;
+	opacity: 0.78;
+	border-bottom-style: none;
+}
+.tiny{
+font-size:9px;
+}
+
+.w{/*Cat header*/
+font-weight:bold;
+color:#3366ff;
+}
+.t a{
+color:#000000; 
+font-size:12px; 
+text-align:center;
+text-decoration:underline; 
+font-weight:bold;
+font-family:verdana, arial, tahoma;
+}
+
+ #title h3 a:hover { 
+  color: #e47911;
+	text-decoration: none;
+}
+
+.t a:hover{
+color:#ffff00; 
+text-decoration:underline; 
+}
+
+.list{text-decoration:line-through;}
+
+
+span.crumbHome {
+	margin-left: 55px;
+	color: #f29f2a;
+}
+
+
+.bgl{
+/*Single Red TD*/
+height:1px;
+width:1px;
+}
+

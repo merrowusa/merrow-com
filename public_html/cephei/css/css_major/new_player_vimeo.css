@@ -1,0 +1,1563 @@
+/* @override 
+	http://merrow.com/cephei/css/video/player.css
+	http://merrow.com/cephei/css/video/player.css
+	http://merrow.com/cephei/css/video/player.css
+	http://merrow.com/cephei/css/css_major/stitching_styles_default.css
+	http://merrow.com/cephei/css/css_major/stitching_styles_default.css
+	http://merrow.com/cephei/css/applications/rightColContent.css
+	http://merrow.com/cephei/css/css_major/stitching_styles_default.css
+	http://merrow.com/cephei/css/css_major/new_player_vimeo.css
+*/
+
+}
+
+div.workarea { padding:10px; float:left }
+div.video {    cursor: move; };
+
+
+ul.searchlist  {
+	overflow: auto;
+    background: #1A1A1A;
+    border: 1px solid gray;
+    list-style: none;
+    margin:0;
+    padding:0;
+	text-align: center;
+}
+
+
+.tubeviewer{display:block;
+	width: 480px;
+	position: relative;
+	left: 45px;
+	top: 37px;
+}
+.tubeviewer *{
+  display:block;
+  height:1px;
+  overflow:hidden;
+  font-size:.01em;
+  background: #e06846}
+
+.tubeviewer1{
+  margin-left:3px;
+  margin-right:3px;
+  padding-left:1px;
+  padding-right:1px;
+  border-left:1px solid #d1cdcd;
+  border-right:1px solid #d1cdcd;
+  background:#b0a8a8}
+.tubeviewer2{
+  margin-left:1px;
+  margin-right:1px;
+  padding-right:1px;
+  padding-left:1px;
+  border-left:1px solid #f4f3f3;
+  border-right:1px solid #f4f3f3;
+  background:#a9a1a1}
+.tubeviewer3{
+  margin-left:1px;
+  margin-right:1px;
+  border-left:1px solid #a9a1a1;
+  border-right:1px solid #a9a1a1;}
+.tubeviewer4{
+  border-left:1px solid #d1cdcd;
+  border-right:1px solid #d1cdcd}
+.tubeviewer5{
+  border-left:1px solid #b0a8a8;
+  border-right:1px solid #b0a8a8}
+.tubeviewerfg{
+  background:#968C8C;
+	width: 480px;
+	text-indent: 10px;
+	visibility: hidden;
+}
+
+div.moreorange{
+	height: 20px;
+	background-color: #e06846 !important;
+	width: 480px;
+	visibility: visible;
+	position: relative;
+	top: 37px;
+	left: 45px;
+}
+
+
+ul.draglist li {
+	padding: 5px;
+}
+
+
+ul.draglist_alt { 
+    position: relative; 
+    list-style: none;
+    margin:0;
+    padding:0;
+    padding-bottom:30px;
+}
+
+ul.draglist_alt li {
+    margin: 1px;
+    cursor: move; 
+}
+
+
+ul.playlist  {
+	overflow: auto;
+    width: 920px; 
+    height:460px;
+    background: #fdfdf8;
+    border: 1px none gray;
+    list-style: none;
+    margin:0;
+	text-align: center;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+div#whole.dragdrop {
+	margin-left: 60px;
+}
+
+div.playpause {
+	z-index: 900;
+	position: relative;
+	top: 5px;
+	text-transform: uppercase;
+}
+
+ul.playlist li {
+	overflow: hidden;
+	float:left;
+	padding:5px;
+    cursor: move;
+	width: 140px;
+	height: 145px;
+}
+
+
+
+ul.playlistBottom  {
+	overflow: auto;
+    width: 925px; 
+    height: 110px;
+    background: #1A1A1A;
+    border: 1px solid gray;
+    list-style: none;
+    padding:0;
+	text-align: center;
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-right: 0;
+}
+
+ul.playlistBottom li {
+	overflow: hidden;
+	float:left;
+	padding:5px;
+    cursor: move;
+}
+
+ul.playlistBottom li img{
+
+}
+
+.draglist_small img { 
+    position: relative;
+    padding-bottom:30px;
+}
+.draglist_small img{
+	height: 47px;
+	width: 65px;
+}
+.draglist_small li {
+	  cursor: move; 
+}
+li.list1 {
+    background-color: #D1E6EC;
+    border:1px solid #7EA6B2;
+}
+
+li.list2 {
+    background-color: #D8D4E2;
+    border:1px solid #6B4C86;
+}
+
+
+#ul3 img, #ul2 img, #ul1 img{
+
+	border: 3px solid #333;
+
+}
+
+div#boxtop {
+	position: relative;
+	font-size: 16px;
+	font-weight: bold;
+	left: 12px;
+}
+div.TVheader{
+	position: absolute;
+	font-size: 18px;
+	color: #98c4ab;
+	float: left;
+}
+div.TVsubheader{
+
+	font-size: 14px;
+	position: absolute;
+	left: 210px;
+	width: 400px;
+	top: 0;
+}
+
+#boxtop a {
+	position: relative;
+	top: 1px;
+	left: 3px;
+	font-size: 18px;
+}
+
+p.nowplaying {
+	margin-bottom: 0;
+	padding: 0;
+	height: 0;
+	margin-top: 12px;
+}
+
+#ul2 div {
+
+}
+
+
+#slider-thumb {
+        cursor:default;
+        position: absolute;
+        top: 4px;
+}
+
+#content div.column div div.spiffyfg object {
+	margin-left: 10px;
+}
+
+#ytapiplayer{
+	position: relative;
+	z-index: 0;
+	width: 480px;
+	height: 360px;
+}
+
+div#items.menu {
+	padding-top: 30px;
+	margin-left: 20px;
+}
+
+
+embed#playerid {
+	height: 360px;
+	visibility: visible;
+}
+
+ul#ul2.draglist {
+	z-index: -2;
+	height: 320px;
+}
+
+#ul2 li {
+}
+
+
+
+
+div#cgm.player {
+	position: relative;
+	z-index: 0;
+	margin: 10px 50px 50px 40px;
+}
+
+/**************************/
+/* -- Basic HTML Rules -- */
+/**************************/
+/* - stop gap if only inline element in block level container - */
+img,object,embed{border:none;}
+/* - to avoid ff<1.03 bug - */
+
+/* - look normal - */
+a img,:link img,:visited img,fieldset{border:none; color:#FFFFFF;}
+/* - dot less - */
+/*ul,ol,dl{list-style:none;}*/
+/* - uniform styles - */
+h1,h2,h3,h4,h5,h6,pre,code,input,textarea,select{font-size:1em;}
+
+/* -- General Styles -- */
+/* - default font */
+
+/* - give default font style - */
+
+th dt, td dt, th dd, td dd, th li, td li, li li, dt dt, dt dd, dd dt, dd dd, legend legend{font-size:100%;}
+h1,h2,h3,h4,h5,h6,p,ul,dl,ol,pre{margin-bottom:1em;}
+/* - table - */
+
+
+
+/* -- General Classes -- */
+/* --  errors -- */
+.error{color:red;list-style:none;}
+.errorTop{margin-bottom:0.5em;margin-top:0.2em}
+.errorBottom{margin-bottom:0.5em;margin-top:0.2em}
+
+/* -- contain -- */
+.contain:after{content:".";display: block;clear:both;visibility:hidden;height:0;
+	position: relative;
+}
+/* ie mac fix */
+
+* html .contain{/* nomac \*/height:1%;/* nomac */}
+/* should hide from mac but seems to work */
+/* -- image replacement -- */
+.imageReplace{position:relative;/* nomac \*/overflow:hidden;/* nomac */margin:0px; padding:0px;}
+.imageReplace span{width:100%;height:100%;position:absolute;background-repeat:no-repeat;top:0px;left:0px;z-index:1;}
+/* -- clear -- */
+.clear {clear: both;}
+.clearLeft {clear: left;}
+.clearRight {clear: right;}
+
+/* -- Page Wrap -- */
+
+
+
+.noBorder {
+	border: none !important;	
+}
+
+/* -- Allows setting a label without changing the design -- */
+label.access {
+	display: none;
+}
+
+/* -- Standard Floating Functions --*/
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
+
+.access, hr {
+	background-color: inherit;
+	color: #ffffff;
+	position: absolute;
+	border: none;
+	left: -999px;
+	width: 990px;
+	height: 0px;
+}
+
+
+
+
+
+/* STANDARD FONT HANDLING */	
+
+
+
+h1 {
+	margin-bottom: 14px;
+	font-size: 188%;
+	color: #5e5e5e;
+}
+
+h2 {
+	color: #595959;
+	font-size: 94%;
+}
+
+p input, p label, ul li ul li, table p, p select {
+	font-size: 100%;
+}
+
+p {
+	line-height: 1.4em;
+	margin: 0;
+	padding: 0 0 1.1em;
+}
+
+
+
+
+
+
+/***** Header *****/
+
+.header p {
+	font-size: 75%;
+	color: #ffffff;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+.header p.logo {
+	margin: 7px 0px 13px 0px;
+	overflow: hidden;
+	display: block;
+	height: 45px;
+	width: 252px;
+	float: left;
+}
+
+.header p.logo a {
+
+	padding: 14px 0 0px 411px;
+	font-weight: normal;
+	overflow: hidden;
+	height: 45px;
+	width: 252px;
+	display: block;
+}
+
+.header iframe {
+	overflow: hidden;
+	float: right;
+	border: 0 none;
+}
+
+/***** Nav *****/
+ul.nav {
+	position:relative;
+	z-index:100;
+}
+
+/* style the links for the top level */
+ul.nav a, ul.nav a:visited {
+	border-right: solid #d2d2d2 1px;
+	color:#666666;
+	display:block;
+	font-weight:bold;
+	padding:9px 12px 9px 12px;
+}
+
+ul.nav {
+	background: url(http://images.imerrow.com/images/navRibbon_DS.jpg) no-repeat left;
+	clear: both;
+	list-style-type:none;
+	margin: 0px;
+	padding: 7px 0px 0px 0px;
+}
+
+
+ul.nav ul {
+	background:url(http://images.imerrow.com/images/define_stitches/navBtmCrv.gif) bottom left no-repeat;
+	margin:0;
+	padding:0;
+	width:122px;
+}
+
+ul.nav li {
+	float:left;
+	margin:0;
+	padding:0;
+	position:relative;
+}
+
+ul.nav li a.selected,
+ul.nav li.selected {
+	background: url(http://images.imerrow.com/images/define_stitches/navBgOvr.gif) bottom right no-repeat;
+	text-decoration: none;
+	color: #000000;
+}
+
+ul.nav li a:hover {
+	background: url(http://images.imerrow.com/images/define_stitches/navBgOvr.gif) bottom right no-repeat;
+	text-decoration: none;
+	color: #000000;
+}
+
+ul.nav li ul li {
+	background: #fff;
+	display: block;
+	width: 122px !important;
+}
+
+ul.nav li ul li a {
+	background:#fff;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	color: #0033cc !important;
+	font-size: 95%;
+	font-weight: normal !important;
+	display: block;
+}
+
+ul.nav li ul li a:hover {
+	background: #f1f1f1;
+	color:#0033cc;
+	text-decoration: underline;
+}
+
+ul.nav li ul li.lastNav { background:none; }
+
+ul.nav li ul li.lastNav a {
+	background: transparent url(http://images.imerrow.com/images/define_stitches/navBtmCrv.gif) bottom left no-repeat !important;
+	border: none !important;
+	display: block;
+}
+
+ul.nav li ul li.lastNav a:hover {
+	background: transparent url(http://images.imerrow.com/images/define_stitches/navBtmCrvOvr.gif) bottom left no-repeat !important;
+	border: none;
+	color: #0033cc;
+	text-decoration: underline;
+}
+
+/* hide the sub levels and give them a positon absolute so that they take up no room */
+ul.nav ul {
+	height:0;
+	left:-1px; 
+	position:absolute;
+	top:32px;
+	visibility:hidden;
+	width:122px;
+}
+
+/* style the table so that it takes no part in the layout - required for IE to work */
+ul.nav table {
+	border-collapse:collapse;
+	left:0; 
+	position:absolute; 
+	top:0; 
+}
+
+/* make the second level visible when hover on first level list OR link */
+ul.nav li:hover ul,
+ul.nav a:hover ul{
+	visibility:visible;
+}
+
+ul.nav li.dDown a span {
+	background: url(http://images.imerrow.com/images/define_stitches/arrowDwn.gif) right no-repeat;
+	padding-right: 20px;
+}
+
+ul.nav li.dDown a:hover span, ul.nav li.selected a span { background: url(http://images.imerrow.com/images/define_stitches/arrowDwnOvr.gif) right no-repeat; color: #000; }
+ul.nav li.first a { background: url(http://images.imerrow.com/images/define_stitches/navLftCrv.gif) bottom left no-repeat; }
+ul.nav li.first a.selected { background: url(http://images.imerrow.com/images/define_stitches/navLftCrvOvr.gif) bottom left no-repeat; color: #000;}
+ul.nav li.first a:hover { background: url(http://images.imerrow.com/images/define_stitches/navLftCrvOvr.gif) bottom left no-repeat; }
+ul.nav li.last a:hover { background: url(http://images.imerrow.com/images/define_stitches/navRghtCrvOvr.gif) bottom right no-repeat; }
+ul.nav li.last a.selected { background: url(http://images.imerrow.com/images/define_stitches/navRghtCrvOvr.gif) bottom right no-repeat; color: #000; }
+ul.nav li.blogHelp { float: right; }
+ul.nav li.blogHelp a { border-left: solid #d2d2d2 1px; }
+ul.nav li.blogHelp a.noLeftB { border-left: none; }
+ul.nav .last a { background: url(http://images.imerrow.com/images/define_stitches/navRgtCrv.gif) bottom right no-repeat; }
+ul.nav li.last a { border: none; }
+
+
+/***** Main Content *****/
+
+.content {
+	 margin: 2px auto 0;
+    width: 980px;
+	padding-left: 50px;
+}
+
+.mainCol {
+	float: left;
+	width: 628px;
+}
+
+.rightCol {
+	padding-left: 12px;
+	width: 303px;
+	float: left;
+	position: relative;
+}
+
+/* Marketing images */
+
+.mainCol p.mrktgTxt {
+	line-height: 0.9em;
+	letter-spacing: -0.04em;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	font-weight: bold;
+	font-size: 220%;
+	color: #ffffff;
+	width: 597px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.mainCol p.mrktgTxt span.sub {
+	letter-spacing: -0.01em;
+	font-weight: normal;
+	font-size: 65%;
+	display: block;
+}
+
+.mainCol span.girlInField {
+
+	padding: 25px 0 0 295px;
+	height: 113px;
+	display: block;
+}
+
+.mainCol span.girlInField span.sub {
+	position: relative;
+	margin-left: -25px;
+	margin-top: 0;
+	line-height: 90%;
+	text-align: center;
+}
+
+.mainCol span.sittingGirl {
+
+	padding: 20px 0px 10px 348px;
+	height: 98px;
+	display: block;
+}
+
+.mainCol span.sittingGirl span.sub {
+	position: relative;
+	margin-left: -46px;
+}
+
+.mainCol span.girlOnLeaves {
+	
+	padding: 30px 0px 5px 290px;
+	height: 93px;
+	display: block;
+}
+
+.mainCol span.girlOnLeaves span.sub {
+	position: relative;
+	margin-left: 5px;
+	margin-top: -10px;
+}
+
+.mainCol span.sittingGuy {
+
+	padding: 22px 0px 10px 268px;
+	height: 96px;
+	display: block;
+}
+
+.mainCol span.sittingGuy span.sub {
+	position: relative;
+	margin-left: -46px;
+	margin-bottom: -5px;
+}
+
+.mainCol span.smilingGirl {
+
+	padding: 10px 0px 0 298px;
+	height: 118px;
+	display: block;
+}
+
+.mainCol span.smilingGirl span.sub {
+	position: relative;
+	margin-left: 60px;
+	margin-top: -2px;
+}
+
+.mainCol span.smilingGirl span.sub1 {
+	position: relative;
+	font-weight: normal;
+	font-size: 65%;
+	margin-left: 33px;
+	margin-top: -10px;
+	display: block;
+}
+
+/* Homepage image */
+
+.content .mainCol .homeImg {
+	width: 598px;
+	height: 187px;
+}
+
+#homeHeader p.header {
+	color: #fff;
+	font-size: 30px;
+	position: relative;
+	top: 65px;
+	left: 360px;
+	width: 230px;
+	line-height: 20px;
+}
+
+.content .mainCol .homeImg0 { background: url(http://images.imerrow.com/images/artheaders/homepageImg3.jpg);
+}
+.content .mainCol .homeImg1 { background: url(http://images.imerrow.com/images/artheaders/homepageImg5.jpg); }
+
+.content .mainCol .homeImg4 { background: url(http://images.imerrow.com/images/artheaders/homepageImg4.jpg); }
+.content .mainCol .homeImg7 { background: url(http://images.imerrow.com/images/artheaders/homepageImg6.jpg); }
+
+
+p.header1 {
+	color: white;
+	width: 200px;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 15px;
+	background-color: silver;
+	position: relative;
+	display: block;
+	height: 63px;
+	top: 55px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.content .mainCol .homeImg h1 {
+	letter-spacing: -0.04em;
+	line-height: .8em;
+	position: absolute;
+	margin-bottom: 0;
+	font-size: 220%;
+	color: #ffffff;
+	left: 295px;
+	top: 55px;
+	z-index: 2;
+	text-align: center;
+	font-weight: bold;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.content .mainCol .homeImg h1 span {
+	display: block;
+	font-size: 67%;
+	font-weight: normal;
+	letter-spacing: normal;
+	text-transform: none;
+}
+
+.mainCol ul.partner {
+	margin: 0;
+	padding: 15px 0 0;
+	list-style-type: none;
+}
+
+.mainCol ul.partner li {
+	float: left;
+	display: block;
+	width: 240px;
+	border-right: 1px solid #ccc;
+	padding: 0 21px;
+	margin: 0;
+}
+
+.mainCol ul.partner li a.ebay {
+
+	padding: 0 0 20px 80px;
+	float: left;
+}
+
+.mainCol ul.partner li a.halfcom {
+
+	padding: 0 0 20px 90px;
+	float: left;
+}
+
+
+/* Large containers */
+
+.mainCol .lrgMid {
+	background: url(http://images.imerrow.com/images/define_stitches/lrgMid.gif) top left repeat-y;
+	width: 597px;
+	float: left;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+.mainCol .lrgMid1 {
+	background: url(http://images.imerrow.com/images/define_stitches/lrgMid_980.gif) top left repeat-y;
+	width: 980px;
+	float: left;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+
+.mainCol .firstItem {
+	margin-top: 0px;
+}
+
+.mainCol .lrgBtm {
+	background: url(http://images.imerrow.com/images/define_stitches/lrgBtm.gif) bottom left no-repeat;
+	padding-bottom: 12px;
+}
+.mainCol .lrgBtm1 {
+	background: url(http://images.imerrow.com/images/define_stitches/lrgBtm_980.gif) bottom left no-repeat;
+	padding-bottom: 12px;
+}
+div.sendus {
+	width: 250px;
+	position: relative;
+	visibility: hidden;
+}
+
+.mainCol .lrgTop {
+	background: url(http://images.imerrow.com/images/define_stitches/lrgTop.gif) left 1px no-repeat;
+	padding: 15px;
+}
+.mainCol .lrgTop1 {
+	background: url(http://images.imerrow.com/images/define_stitches/lrgTop_980.gif) left 1px no-repeat;
+	padding: 15px;
+}
+
+.mainCol .lrgYellowFadeTop {
+	background: url(http://images.imerrow.com/images/define_stitches/lrgYellowFadeTop.jpg) top left no-repeat;
+	padding: 15px;
+}
+
+.mainCol .lrgYellowFadeTop h2 {
+	font-size: 150%;
+	color: #333;
+}
+
+.mainCol .lrgGreenTop {
+	background: url(http://images.imerrow.com/images/define_stitches/lrgGreenTop.jpg) top left no-repeat;
+	padding: 15px 15px 10px 15px;
+}
+
+.mainCol .terms h1 {
+	color: #5e5e5e;
+	font-size: 150%;
+}
+
+.mainCol .terms h2 {
+	color: #333;
+	font-size: 85%;
+}
+
+.mainCol .terms h3 {
+	color: #333;
+	font-size: 80%;
+}
+
+.mainCol .terms ul {
+	margin: 0;
+	padding: 0 0 15px 25px;
+}
+
+.mainCol .terms ul li {
+	line-height: 1.4em;
+}
+
+p.joinUs {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+p.commission {
+	color: #690;
+	font-weight: bold;
+	font-size: 225%;
+	line-height: 100%;
+	margin: 0;
+	padding: 12px 15px 10px 0;
+}
+
+p.commission span{
+	color: #333;
+	font-weight: normal;
+	font-size: 50%;
+	line-height: 130%;
+	display: block;
+	padding-top: 9px;
+}
+
+/* Price splash on home page */
+
+.lrgMid .lrgBtmShade {
+	background: url(http://images.imerrow.com/images/define_stitches/lrgBtmShade.jpg) bottom left no-repeat;
+	padding: 0;
+	margin: 0;
+}
+	
+.lrgBtmShade p.commission {
+	color: #690;
+	font-weight: bold;
+	font-size: 185%;
+	line-height: 100%;
+	margin: 0;
+	padding: 0 15px 0 4px;
+}
+
+.lrgBtmShade p.commission span{
+	font-weight: normal;
+	color: #690;
+	font-size: 100%;
+	line-height: 100%;
+	display: inline;
+}
+
+.lrgMid p.view {
+	border-top: solid #cfcfcf 1px;
+	padding: 6px 13px 0 0;
+	margin: 0 -14px;
+	text-align: right;
+	clear: both;
+}
+
+.lrgMid p.view a { color: #0101cd; }
+	
+.lrgBtmShade ul.commissionList {
+	margin: 0;
+	padding: 17px 0 17px 6px;
+}
+
+.lrgBtmShade ul.commissionList li {
+	background: url(http://images.imerrow.com/images/define_stitches/bulletBlack.gif) left 4px no-repeat;
+	padding: 0 0 5px 11px;
+	list-style: none;
+}
+	
+.lrgBtmShade ul.commissionList li span {
+	font-weight: bold;
+}
+
+/* Join us box on home page */
+
+.joinTopHome {
+	background: url(http://images.imerrow.com/images/artheaders/smlGreenTop.jpg) top left no-repeat;
+	padding-bottom: 0;
+	width: 304px;
+}
+
+.joinBtmHome {
+	background: url(http://images.imerrow.com/images/define_stitches/smlBtm.gif) bottom left no-repeat;
+	text-align: center;
+	padding: 22px 15px;
+}
+
+.joinBtmHome h3 {
+	color: #333;
+	font-size: 150%;
+	line-height: 100%;
+	text-align: center;
+	margin: 0;
+	padding: 0 10px 14px;
+}
+
+.joinBtmHome p {
+	margin-bottom: 3px;
+	padding: 0px 45px;
+}
+
+.joinBtmHome p.btnLnk {
+	padding: 4px 0px 0px 0px;
+	margin-bottom: 0px;
+}
+
+.joinBtmHome .btnLnk a {
+	background: url(http://images.imerrow.com/images/define_stitches/joinBtnBtm.gif) center bottom no-repeat;
+	margin: 4px 0px 0px 0px;
+	padding:  0px;
+	font-weight: bold;
+	font-size: 148%;
+	color: #333333;
+	display: block;
+}
+
+.joinBtmHome .btnLnk a span {
+	background: url(http://images.imerrow.com/images/define_stitches/joinBtnTop.gif) center top no-repeat;
+	padding: 9px 22px 10px 22px;
+	display: block;
+	margin: 0px auto;
+}
+
+.joinBtmHome .btnLnk a:hover span {
+	color: #0033cc;
+}
+
+.joinBtmHome .btnLnk a {
+	text-decoration: none;
+}
+
+#pageWrap div.content.contain div.mainCol.contain div.lrgMid div.lrgBtm div.lrgTop.contain div.imgTxt.tool div.section.demo form div.formtext div.greyMain div.greyTop div.greyBtm h2 {
+	margin-top: 88px;
+}
+
+
+/***** Footer *****/
+
+.footer {
+	border-top: 1px solid #c1c1c1;
+	padding-top: 16px;
+	margin-top: 34px;
+	clear: both;
+	margin-right: auto;
+	width: 960px;
+	margin-left: auto;
+}
+
+.footer p {
+	color: #6e6e6e;
+	font-size: 70%;
+	margin: 0;
+	padding: 0 0 5px;
+}
+.joinTop {
+	background: url(http://images.imerrow.com/images/define_stitches/joinTop.gif) top left;
+	padding-bottom: 0px;
+	width: 304px;
+}
+
+.joinTopBlue {
+	background: url(http://images.imerrow.com/images/artheaders/smlOrangeTop.jpg) top left no-repeat;
+	width: 304px;
+	position: relative;
+	right: 20px;
+}
+
+.joinTopGold {
+	background: url(http://images.imerrow.com/images/define_stitches/joinTopGold.jpg) top left no-repeat;
+	padding-bottom: 0px;
+	width: 304px;
+}
+.joinTopBlu {
+	background: url(http://images.imerrow.com/images/define_stitches/joinTop.gif) top left no-repeat;
+	padding-bottom: 0px;
+	width: 304px;
+}
+/* Join CTA  */
+.joinBtm {
+	background: url(http://images.imerrow.com/images/define_stitches/joinBtm.gif) bottom left no-repeat;
+	text-align: center;
+	padding: 10px 15px 13px;
+}
+
+.joinBtm h3 {
+	margin-bottom: 3px;
+	font-size: 113%;
+}
+
+.joinBtm p {
+	margin-bottom: 3px;
+	padding: 0px 45px;
+}
+
+.joinBtm p.btnLnk {
+	padding: 4px 0px 0px 0px;
+	margin-bottom: 0;
+}
+
+.joinBtm .btnLnk a {
+	background: url(http://images.imerrow.com/images/define_stitches/joinBtnBtm.gif)  center bottom no-repeat;
+	margin: 4px 0px 0px 0px;
+	padding:  0px;
+	font-weight: bold;
+	font-size: 148%;
+	color: #333333;
+	display: block;
+}
+
+.joinBtm .btnLnk a span {
+	background: url(http://images.imerrow.com/images/define_stitches/joinBtnTop.gif) center top no-repeat;
+	padding: 9px 22px 10px 22px;
+	display: block;
+	margin: 0px auto;
+}
+
+.joinBtm .btnLnk a:hover span {
+	color: #0033cc;
+}
+
+.joinBtm .btnLnk a {
+	text-decoration: none;
+}
+
+.smlMid {
+	background: url(http://images.imerrow.com/images/define_stitches/smlMid.gif) top left;
+	margin-top: 15px;
+	width: 304px;
+}
+
+.smlMid .smlTop {
+	background: url(http://images.imerrow.com/images/define_stitches/smlTop.gif) top left no-repeat;
+}
+
+.smlMid .smlBtm {
+	background: url(http://images.imerrow.com/images/define_stitches/smlBtm.gif) bottom left no-repeat;
+	padding: 11px 0px 15px 13px;
+}
+
+.smlMid .smlBtmShade {
+	background: url(http://images.imerrow.com/images/define_stitches/smlBtmShade.gif) bottom left no-repeat;
+	padding: 11px 0px 0px 13px;
+}
+
+.smlMid h3 {
+	padding-bottom: 16px;
+	margin-bottom: 0px;
+	font-size: 95%;
+	color: #595959;
+}
+
+p.answer {
+	color: gray;
+	font-size: 12px;
+	
+	float: left;
+	width: 86px;
+	line-height: 25px;
+	margin-left: 5px;
+	text-transform: lowercase;
+	font-weight: bold;
+}
+p.answer a {
+	color: #0101cd;
+}
+
+div.videosubtitle1 {
+	width: 85px;
+	margin-left: 5px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+div.subcontainer {
+	float: left;
+}
+div.subcontainer1 {
+	float: left;
+	border-right: 1px solid gray;
+	border-left: 1px solid gray;
+}
+
+p.title {
+	font-size: 16px;
+	color: #f7a261;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+
+
+.smlMid h4 {
+	padding-bottom: 10px;
+	margin-bottom: 0;
+	font-size: 86%;
+	color: #666;
+}
+
+.smlMid ul.links {
+	padding: 0;
+	margin: 0;
+}
+
+.smlMid ul.links li {
+	background: url(http://images.imerrow.com/images/define_stitches/bulletBlue.gif) left 4px no-repeat;
+	padding: 0px 0px 4px 11px;
+	list-style: none;
+}
+
+.smlMid ul li a {
+	color: #1a4dc2;
+}
+
+.smlMid p.view {
+	border-top: solid #cfcfcf 1px;
+	margin-bottom: 0px;
+	margin-top: 15px;
+	text-align: left;
+	clear: both;
+	padding: 6px 5px 5px 0px;
+}
+
+.smlMid p.view a {
+	color: #0101cd;
+}
+
+.smlBlueTop {
+	background: url(http://images.imerrow.com/images/define_stitches/smlBlueTop.jpg) top left no-repeat;
+}
+
+.smlMid ul.datedList {
+	padding: 0px;
+	margin: 0px;
+}
+
+.smlMid ul.datedList li {
+	padding: 0px 0px 4px 0px;
+	line-height: 1.6em;
+	list-style: none;
+	font-size: 60%;
+	color: #999999;
+}
+
+.smlMid ul.datedList li a {
+	font-size: 130%;
+	display: block;
+}
+
+.smlMid p.latestPost {
+	padding: 0 0 25px 0;
+	line-height: 1.6em;
+	list-style: none;
+	font-size: 60%;
+	color: #999999;
+}
+
+.smlMid p.latestPost a {
+	font-size: 150%;
+	display: block;
+	padding-right: 15px;
+}
+
+
+.smlGreenTop {
+	background: url(http://images.imerrow.com/images/define_stitches/smlGreenTop.jpg) top left no-repeat;
+}
+
+.smlGoldTop {
+	background: url(http://images.imerrow.com/images/define_stitches/smlGoldTop.jpg) top left no-repeat;
+}
+
+#generateRevenue {
+	float: left;
+	padding: 20px 0 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+#generateRevenue ul {
+	list-style-type:none;
+	margin: 0;
+	padding:0;
+}
+
+#generateRevenue ul,
+#generateRevenue li {
+	float:left;
+	display:block;
+	text-align:center;
+}
+
+#generateRevenue li li {
+	padding-top:25px;
+}
+
+#generateRevenue .register {
+	background:url(http://images.imerrow.com/images/define_stitches/iconYourWebSite.gif) top left no-repeat;
+	font-size:1em;
+	margin-top:40px;
+	width:51px;
+}
+
+#generateRevenue .register a {
+	margin-top: -25px;
+	width:51px;
+}
+
+#generateRevenue .arrowBlack {
+	background:url(http://images.imerrow.com/images/define_stitches/iconArrowBlack.gif) top left no-repeat;
+	height:76px;
+	margin:45px 9px 0 9px;
+	width:18px;
+}
+
+#generateRevenue .arrowGrey {
+	background:url(http://images.imerrow.com/images/define_stitches/iconArrowGrey.gif) top left no-repeat;
+	height:76px;
+	margin:32px 5px 0 5px;
+	width:14px;
+}
+
+#generateRevenue .promote .arrowGrey {
+	margin-left:18px;
+	margin-right:15px;
+}
+
+#generateRevenue .pricing .arrowGrey {
+	margin-left:10px;
+	margin-right:10px;
+}
+
+#generateRevenue .optimise .arrowGrey {
+	margin-left:15px;
+	margin-right:15px;
+}
+
+#generateRevenue .promote,
+#generateRevenue .pricing,
+#generateRevenue .optimise {
+	background:url(http://images.imerrow.com/images/define_stitches/bracketBlue.gif) 0 18px no-repeat;
+	padding-top:0;
+	width:136px;
+}
+
+#generateRevenue .pricing { background:url(http://images.imerrow.com/images/define_stitches/bracketGreen.gif) 0 22px no-repeat; }
+#generateRevenue .optmise { background:url(http://images.imerrow.com/images/define_stitches/bracketYellow.gif) 0 22px no-repeat; }
+
+#generateRevenue a {
+	display:block;
+	font-size:0.9em;
+	padding-top:65px;
+	color: #000000;
+}
+
+#generateRevenue a:hover {
+	text-decoration: none;
+}
+
+
+#generateRevenue .tools a {
+
+	width:46px;
+}
+
+#generateRevenue .tracking a {
+
+	width:26px;
+}
+
+#generateRevenue .salesNewUsers a {
+
+	width:51px;
+}
+
+#generateRevenue .payment a {
+	
+	width:46px;
+}
+
+#generateRevenue .reports a {
+	
+	width:44px;
+}
+
+#generateRevenue .optimiseSmall a {
+
+	width:41px;
+}
+
+#generateRevenue span a {
+	color:#1a4dc2;
+	font-size:1.4em;
+	font-weight:bold;
+	padding-top:0;
+}
+
+#howItWorksSide {
+	float:left;
+	list-style-type:none;
+	margin:10px 0;
+	padding:0;
+}
+
+#howItWorksSide li {
+	float:left;
+}
+
+#howItWorksSide li.arrowBlack {
+	background:url(http://images.imerrow.com/images/define_stitches/iconArrowBlack.gif) top left no-repeat;
+	height:56px;
+	margin:0 6px;
+	width:18px;
+}
+
+#howItWorksSide li.register a {
+	background:url(http://images.imerrow.com/images/define_stitches/iconYourWebSite.gif) top left no-repeat;
+	font-size:0.9em;
+	width:51px;
+}
+
+#howItWorksSide li a {
+	display:block;
+	font-size:0.9em;
+	padding-top:65px;
+}
+
+#howItWorksSide li.promote a {
+	background:url(http://images.imerrow.com/images/define_stitches/iconTools.gif) top left no-repeat;
+	width:46px;
+}
+
+#howItWorksSide li.pricing a {
+	background:url(http://images.imerrow.com/images/define_stitches/iconPayment.gif) top left no-repeat;
+	width:46px;
+	text-align: center;
+}
+
+#howItWorksSide li.optimise a {
+	background:url(http://images.imerrow.com/images/define_stitches/iconReports.gif) top left no-repeat;
+	width:44px;
+}
+
+
+#howItWorksLarge {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+#howItWorksLarge li {
+	float:left;
+	text-align:center;
+}
+
+#howItWorksLarge li.arrowBlack {
+	background:url(http://images.imerrow.com/images/define_stitches/iconArrowBlack.gif) top left no-repeat;
+	height:56px;
+	margin:10px 30px 0 30px;
+	width:18px;
+}
+
+#howItWorksLarge li.register a{
+	background:url(http://images.imerrow.com/images/artheaders/square.jpg) top left no-repeat;
+	margin-left:20px;
+	width:82px;
+}
+
+#howItWorksLarge li a {
+	display:block;
+	font-size:1.2em;
+	padding-top:82px;
+}
+
+#howItWorksLarge li.promote a {
+	background:url(http://images.imerrow.com/images/artheaders/lilmachine.jpg) top left no-repeat;
+	width:75px;
+}
+
+#howItWorksLarge li.pricing a {
+	background:url(http://images.imerrow.com/images/artheaders/liltable.jpg) top left no-repeat;
+	width:55px;
+}
+
+#howItWorksLarge li.optimise a {
+	background:url(http://images.imerrow.com/images/menubar/little_peasant.png) top left no-repeat;
+	width:40px;
+}
+
+
+
+.hoverBox {
+	background:url(http://images.imerrow.com/images/define_stitches/hoverBoxBtm.gif) bottom left no-repeat;
+	margin-left:-8px;
+	padding-bottom:12px;
+	position:absolute;
+	width:250px;
+	z-index:100;
+}
+
+.hoverBoxContent { background:#fff7d5 url(http://images.imerrow.com/images/define_stitches/hoverBoxSide.gif) top left no-repeat; }
+
+.hoverBoxContent p {
+	font-size:1em;
+	padding:10px;
+	text-align:left;
+}
+
+.tools .hoverBox {
+	margin-top:-68px;
+}
+
+.tracking .hoverBox {
+	margin-left:-12px;
+	margin-top:-67px;
+}
+
+.salesNewUsers .hoverBox {
+	margin-top:-103px;	
+}
+
+.payment .hoverBox {
+	margin-top:-83px;
+	margin-left: -6px;
+}
+
+.reports .hoverBox {
+	margin-top:-90px;
+}
+
+.optimiseSmall .hoverBox {
+	margin-top:-100px;
+}
+
+
+div.decorative.ex {
+	width: 550px;
+	height: 100px;
+	float: left;
+}
+
+
+
+div.textcontainer1 {
+	position: relative;
+	left: 110px;
+	bottom: 70px;
+	width: 425px;
+}
+
+p.wider {
+	width: 280px;
+	position: relative;
+	right: 45px;
+}
+
+
+div.didyouknow_video {
+	color: gray;
+	line-height: 24px;
+	font-size: 18px;
+}
+
+div.bottomlead {
+	padding-bottom: 5px;
+	color: gray;
+}
+
+
+div.sanitykeeper {
+	visibility: hidden;
+}
+
+
+div.searchapps {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-size: 20px;
+}
+
+div.appconfigannouncement {
+	width: 300px;
+	text-align: left;
+	font-size: 10px;
+}
+
+div.btnlinkcontain_huh {
+	font-size: 10px;
+	width: 300px;
+}
+
+
+
+p.quick {
+	color: black;
+	font-size: 14px;
+	text-align: left;
+	font-weight: bold;
+}
+
+div.apptitle1 {
+	font-size: 16px;
+	color: green;
+}
+
+p.explination1 {
+
+}
+
+input#searchbutton1 {
+	position: relative;
+	left: 140px;
+	top: 10px;
+}
+

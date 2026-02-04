@@ -1,0 +1,21 @@
+[23-May-2013 12:11:08] PHP Warning:  PHP Startup: apc.shm_size now uses M/G suffixes, please update your ini files in Unknown on line 0
+[23-May-2013 12:11:20] PHP Warning:  PHP Startup: apc.shm_size now uses M/G suffixes, please update your ini files in Unknown on line 0
+[23-May-2013 12:12:30] PHP Warning:  PHP Startup: apc.shm_size now uses M/G suffixes, please update your ini files in Unknown on line 0
+[23-May-2013 12:15:37] PHP Warning:  PHP Startup: apc.shm_size now uses M/G suffixes, please update your ini files in Unknown on line 0
+[23-May-2013 12:15:37] PHP Parse error:  syntax error, unexpected '}' in /home/patch/public_html/dev/comments.php on line 48
+[23-May-2013 12:16:00] PHP Warning:  PHP Startup: apc.shm_size now uses M/G suffixes, please update your ini files in Unknown on line 0
+[23-May-2013 12:17:56] PHP Warning:  PHP Startup: apc.shm_size now uses M/G suffixes, please update your ini files in Unknown on line 0
+[23-May-2013 12:17:56] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ',' or ';' in /home/patch/public_html/dev/comments.php on line 3
+[23-May-2013 12:18:11] PHP Warning:  PHP Startup: apc.shm_size now uses M/G suffixes, please update your ini files in Unknown on line 0
+[23-May-2013 12:18:46] PHP Warning:  PHP Startup: apc.shm_size now uses M/G suffixes, please update your ini files in Unknown on line 0
+[23-May-2013 12:18:46] PHP Parse error:  syntax error, unexpected T_ECHO, expecting ',' or ';' in /home/patch/public_html/dev/comments.php on line 3
+[23-May-2013 12:19:02] PHP Warning:  PHP Startup: apc.shm_size now uses M/G suffixes, please update your ini files in Unknown on line 0
+[23-May-2013 12:21:27] PHP Warning:  PHP Startup: apc.shm_size now uses M/G suffixes, please update your ini files in Unknown on line 0
+[23-May-2013 12:22:31] PHP Warning:  PHP Startup: apc.shm_size now uses M/G suffixes, please update your ini files in Unknown on line 0
+[23-May-2013 12:22:58] PHP Warning:  PHP Startup: apc.shm_size now uses M/G suffixes, please update your ini files in Unknown on line 0
+[23-May-2013 12:25:09] PHP Warning:  PHP Startup: apc.shm_size now uses M/G suffixes, please update your ini files in Unknown on line 0
+[23-May-2013 12:30:08] PHP Warning:  PHP Startup: apc.shm_size now uses M/G suffixes, please update your ini files in Unknown on line 0
+[23-May-2013 12:30:08] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/patch/public_html/dev/comments.php:2) in /home/patch/public_html/dev/comments.php on line 51
+[23-May-2013 12:33:14] PHP Warning:  PHP Startup: apc.shm_size now uses M/G suffixes, please update your ini files in Unknown on line 0
+[23-May-2013 12:35:16] PHP Warning:  PHP Startup: apc.shm_size now uses M/G suffixes, please update your ini files in Unknown on line 0
+[07-Jun-2013 14:54:30] PHP Warning:  PHP Startup: apc.shm_size now uses M/G suffixes, please update your ini files in Unknown on line 0

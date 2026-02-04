@@ -1,0 +1,188 @@
+/* @override http://merrow.com/cephei/css/MIT_dummy.css */
+
+
+
+
+div.exhibit-collectionView-header { 
+	width: 515px;
+	padding-top: 10px !important;
+	 
+
+}
+
+div.exhibit-thumbnailView-itemContainer {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	position: relative;
+	bottom: 40px;
+}
+
+table#largetable {
+	position: relative;
+	
+}
+table.exhibit-tabularView-body {
+    width: 100%;
+	position: relative;
+	top: 20px;
+}
+
+table.pnav {
+	font-size: 13px;
+}
+
+
+ div#buythis.mylilbutton {
+	top: 30px;
+	position: relative;
+	left: 40px;
+}
+
+
+
+div.learn {
+	position: relative;
+	top: 60px;
+	margin-right: 10px;
+}
+
+
+
+div.buttons {
+	position: relative;
+	top: 56px;
+}
+
+span.exhibit-collectionSummaryWidget-results {
+	position: relative;
+	text-align: left;
+	left: 5px;
+	padding-right: 95px;
+}
+#mamam {
+	
+}
+
+
+
+
+
+ul#lists {
+	font-size: 13px;
+}
+     
+      
+       div.name {
+           font-weight: bold;
+           font-size:   30%;
+           width: 200px;
+       }
+
+       .year {
+           font-style:  italic;
+		   color:  #888;
+       }
+       .relationship {
+           color:  #888;
+
+}
+       .co-winners {
+       }
+	 
+
+#bar div div.exhibit-text-facet input {
+	height: 30px;
+	width: 400px;
+	margin-top: 5px;
+	position: relative;
+	
+		color: #297fb5;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #f0f0f0;
+	margin-bottom: 10px;
+	right: 90px;
+}
+div#seachheader.h2 {
+	color: gray;
+	font-size: 16px;
+	text-align: left;
+}
+div.exhibit-collectionView-header-sortControls {
+	visibility: hidden;
+}
+
+div.tech {
+	position: relative;
+	display: inline;
+	margin-top: 25px;
+	top: 65px;
+}
+
+img.exhibit-toolboxWidget-button {
+	visibility: hidden;
+}
+
+div.exhibit-facet-body-frame {
+	text-align: left;
+}
+
+div.exhibit-toolboxWidget-popup.screen {
+	visibility: hidden;
+}
+table.nobelist {
+	width: 550px;
+	 border:     1px solid #ddd;
+     padding:    0.5em;
+	margin-bottom: 10px;
+	position: relative;
+	display: inline;
+}
+
+
+div.exhibit-viewPanel-viewSelection {
+   position: relative;
+	width: 200px;
+	right: 25px;
+	
+}
+div.mainurl {
+	margin-right: 10px;
+	border-color: #ccc;
+	border-style: solid;
+}
+
+td.nobelist {
+	width: 400px;
+}
+
+div.lilurl {
+	position: relative;
+	top: 0;
+	float: left;
+	margin-right: 5px;
+	border: 1px solid gray;
+}
+
+ .discipline {
+	position: relative;
+	font-weight: bold;
+	color: black;
+	width: 300px;
+}
+
+div.charlie {
+	width: 300px;
+	height: 75px;
+	position: relative;
+	float: left;
+	text-align: left;
+}
+
+div.weebits {
+	width: 250px;
+	position: relative;
+}
+
+
+

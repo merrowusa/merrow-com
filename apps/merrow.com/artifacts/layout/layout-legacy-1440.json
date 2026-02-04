@@ -1,0 +1,155 @@
+{
+  "url": "https://www.merrow.com",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "capturedAt": "2026-02-02T18:30:01.849Z",
+  "elements": [
+    {
+      "selector": "[data-testid='top-promo-bar']",
+      "name": "Header: Top Splash",
+      "bbox": null,
+      "styles": {},
+      "exists": false
+    },
+    {
+      "selector": "header.new_menu",
+      "name": "Header: Main Container",
+      "bbox": null,
+      "styles": {},
+      "exists": false
+    },
+    {
+      "selector": "header img[alt*='logo']",
+      "name": "Header: Logo",
+      "bbox": null,
+      "styles": {},
+      "exists": false
+    },
+    {
+      "selector": "nav[aria-label='Main navigation']",
+      "name": "Header: Nav Bar",
+      "bbox": null,
+      "styles": {},
+      "exists": false
+    },
+    {
+      "selector": "main",
+      "name": "Hero: Main Container",
+      "bbox": null,
+      "styles": {},
+      "exists": false
+    },
+    {
+      "selector": ".bg-gradient-to-b",
+      "name": "Hero: Gradient Band",
+      "bbox": null,
+      "styles": {},
+      "exists": false
+    },
+    {
+      "selector": "a[href='/technical-sewing']",
+      "name": "Hero: Tech Card",
+      "bbox": {
+        "x": 250,
+        "y": 706.953125,
+        "height": 16.5,
+        "width": 321
+      },
+      "styles": {
+        "width": "auto",
+        "height": "auto",
+        "maxWidth": "none",
+        "padding": "0px",
+        "margin": "0px",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderTopWidth": "0px",
+        "borderTopColor": "rgb(127, 5, 5)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "fontSize": "14px",
+        "fontFamily": "\"Helvetica Neue\", Arial, Helvetica, Geneva, sans-serif"
+      },
+      "exists": true
+    },
+    {
+      "selector": "a[href='/fashion-sewing']",
+      "name": "Hero: Fashion Card",
+      "bbox": {
+        "x": 570,
+        "y": 706.953125,
+        "height": 16.5,
+        "width": 321
+      },
+      "styles": {
+        "width": "auto",
+        "height": "auto",
+        "maxWidth": "none",
+        "padding": "0px",
+        "margin": "0px",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderTopWidth": "0px",
+        "borderTopColor": "rgb(127, 5, 5)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "fontSize": "14px",
+        "fontFamily": "\"Helvetica Neue\", Arial, Helvetica, Geneva, sans-serif"
+      },
+      "exists": true
+    },
+    {
+      "selector": "a[href='/end-to-end-seaming']",
+      "name": "Hero: End Card",
+      "bbox": {
+        "x": 890,
+        "y": 706.953125,
+        "height": 16.5,
+        "width": 321
+      },
+      "styles": {
+        "width": "auto",
+        "height": "auto",
+        "maxWidth": "none",
+        "padding": "0px",
+        "margin": "0px",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderTopWidth": "0px",
+        "borderTopColor": "rgb(127, 5, 5)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "fontSize": "14px",
+        "fontFamily": "\"Helvetica Neue\", Arial, Helvetica, Geneva, sans-serif"
+      },
+      "exists": true
+    },
+    {
+      "selector": ".rounded-\\[9px\\]",
+      "name": "Hero: Grey Box",
+      "bbox": null,
+      "styles": {},
+      "exists": false
+    },
+    {
+      "selector": "footer#footer",
+      "name": "Footer: Container",
+      "bbox": null,
+      "styles": {},
+      "exists": false
+    },
+    {
+      "selector": "footer img[alt='World Map']",
+      "name": "Footer: World Map",
+      "bbox": null,
+      "styles": {},
+      "exists": false
+    },
+    {
+      "selector": "form[action*='mailchimp']",
+      "name": "Footer: Newsletter Form",
+      "bbox": null,
+      "styles": {},
+      "exists": false
+    }
+  ]
+}

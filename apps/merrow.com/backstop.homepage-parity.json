@@ -1,0 +1,43 @@
+{
+  "id": "homepage-parity",
+  "viewports": [
+    {
+      "label": "desktop",
+      "width": 1351,
+      "height": 1453
+    }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "Homepage",
+      "url": "http://localhost:3000/",
+      "delay": 3000,
+      "misMatchThreshold": 5,
+      "requireSameDimensions": true,
+      "selectorExpansion": false,
+      "selectors": ["viewport"]
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/homepage_parity_reference",
+    "bitmaps_test": "backstop_data/homepage_parity_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/homepage_parity_report",
+    "ci_report": "backstop_data/homepage_parity_ci_report"
+  },
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 1,
+  "asyncCompareLimit": 1,
+  "debug": false,
+  "debugWindow": false,
+  "resembleOutputOptions": {
+    "ignoreAntialiasing": true,
+    "usePreciseMatching": true
+  }
+}

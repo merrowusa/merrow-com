@@ -1,0 +1,9 @@
+AuthUserFile "/home/merrowco/.htpasswds/public_html/cephei/sable/passwd"
+AuthName "the New Merrow website (under wraps for the time being)"
+
+ErrorDocument 404 http://merrow.com/cephei/sable/merrow404.php
+
+
+
+AuthType Basic
+require valid-user

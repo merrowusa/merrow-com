@@ -1,0 +1,282 @@
+/* @override http://merrow.com/cephei/css/css_major/MIT_dummy.css */
+
+/* @override http://merrow.com/cephei/css/css_major/MIT_dummy.css */
+
+/* @override http://merrow.com/cephei/css/MIT_dummy.css */
+
+
+
+
+div.exhibit-collectionView-header {
+	height: 30px;
+	font-weight: bold;
+	color: red;
+	float: right;
+	width: 500px;
+	background-color: white;
+	z-index: 15;
+	margin-top: 15px;
+}
+
+div.searchbarnote1 {
+	position: absolute;
+	left: 90px;
+	top: 70px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.header {
+	text-align: center;
+}
+
+div.exhibit-thumbnailView-itemContainer {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	position: relative;
+	bottom: 40px;
+}
+
+table#largetable {
+	position: relative;
+	
+}
+table.exhibit-tabularView-body {
+    width: 100%;
+	position: relative;
+	top: 20px;
+}
+
+table.pnav {
+	font-size: 13px;
+}
+
+
+ div#buythis.mylilbutton {
+	top: 30px;
+	position: relative;
+	left: 40px;
+}
+
+
+
+div.learn {
+	position: relative;
+	top: 60px;
+	margin-right: 10px;
+}
+
+span.exhibit-collectionSummaryWidget-results {
+	position: absolute;
+	text-align: left;
+	left: 5px;
+	padding-right: 95px;
+	visibility: hidden;
+}
+#mamam {
+	
+}
+
+
+
+
+
+ul#lists {
+	font-size: 13px;
+}
+     
+      
+       div.name {
+           font-weight: bold;
+           font-size:   30%;
+           width: 200px;
+       }
+
+       .year {
+           font-style:  italic;
+		   color:  #888;
+       }
+
+
+       .relationship {
+           color:  #888;
+
+}
+
+div#content {
+	text-align: left;
+}
+       .co-winners {
+	width: 200px;
+}
+
+div.buttons {
+	margin-right: 10px;
+	margin-top: 10px;
+}
+	 
+
+#bar div div.exhibit-text-facet input {
+	position: absolute;
+	left: 220px;
+	height: 32px;
+	background-color: #fffff5;
+	color: black;
+	font-size: 18px;
+	
+	width: 320px;
+	border-right: 1px solid orange;
+	border-top: 1px solid orange;
+	border-left-color: rgba(243,243,243,0.32);
+	border-left-width: 1px;
+}
+div#seachheader.h2 {
+	color: gray;
+	font-size: 16px;
+	text-align: left;
+	margin-left: 10px;
+}
+div.exhibit-collectionView-header-sortControls {
+	visibility: hidden;
+}
+
+div.tech {
+	position: relative;
+	display: inline;
+	margin-top: 25px;
+	top: 65px;
+}
+
+img.exhibit-toolboxWidget-button {
+	visibility: hidden;
+}
+
+div.exhibit-facet-body-frame {
+	text-align: left;
+}
+
+div.exhibit-toolboxWidget-popup.screen {
+	visibility: hidden;
+}
+
+
+
+
+div.trap {
+	width: 550px;
+}
+
+div.llearn {
+	position: absolute;
+	top: 120px;
+	left: 300px;
+}
+
+div.ttech {
+	position: absolute;
+	top: 120px;
+	left: 380px;
+}
+
+
+div.exhibit-viewPanel-viewSelection {
+   position: relative;
+	width: 200px;
+	right: 25px;
+	
+}
+div.mainurl {
+	border: 1px solid #ccc;
+	float: left;
+	margin: 3px;
+}
+
+td.nobelist {
+	width: 400px;
+}
+
+div.lilurl {
+	float: right;
+	position: relative;
+	bottom: 35px;
+	margin-right: 6px;
+}
+
+div.lilurl_all {
+	position: absolute;
+	float: right;
+	margin-right: 5px;
+	width: 300px;
+	left: 255px;
+}
+
+div#bar.searchbar {
+	position: relative;
+	top: 25px;
+}
+
+div.searchbarnote {
+	width: 150px;
+	position: absolute;
+	left: 140px;
+	top: 47px;
+	color: gray;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+table.nobelist {
+	border: 1px solid silver;
+	width: 525px;
+}
+
+ol.exhibit-tileView-body {
+	width: 530px;
+	float: left;
+}
+
+div.exhibit-viewPanel-viewContainer {
+	position: absolute;
+	float: left;
+	right: 2px;
+	margin-top: 40px;
+}
+
+div.biggerimages {
+	margin: 10px;
+}
+
+
+
+
+div.boxes {
+	position: relative;
+	left: 5px;
+	display: inline-block;
+	width: 240px;
+	text-align: left;
+	float: left;
+}
+
+ .discipline {
+	position: relative;
+	font-weight: bold;
+	color: black;
+	width: 200px;
+}
+
+div.charlie {
+	float: left;
+	text-align: left;
+	width: 240px;
+	padding-top: 20px;
+}
+
+div.weebits {
+	width: 250px;
+	position: relative;
+}
+
+
+

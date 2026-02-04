@@ -1,0 +1,48 @@
+/* @override http://a248.e.akamai.net/7/248/2041/1433/store.apple.com/rs/css/aos-typography.css */
+
+/* moveback */
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: 10px/1.7em "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+	color: #333;
+}
+a {
+	color: #333;
+}
+a:link, a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+img {
+	border: 0;
+}
+abbr {
+	border: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-size: 1em;
+}
+
+ul {
+	list-style: none;
+}
+#primary a {
+	color: #0085CF;
+}
+
+.alert { color:#ff3300; }
+
+.freeshipping,
+.free-shipping {
+    color:#ff3300;
+}
+
+.freeshipping {
+	display: block;
+}

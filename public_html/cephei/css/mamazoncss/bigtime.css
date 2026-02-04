@@ -1,0 +1,52 @@
+/* @override http://imerrow.com/amazon/css/bigtime.css */
+
+div#bodytxt.text {
+	color: #757575;
+	font: 14px/20px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	display: inline;
+	position: fixed;
+	padding-left: 20px;
+	padding-top: 15px;
+	padding-right: 50px;
+	z-index: 1;
+	visibility: visible;
+	width: 300px;
+	margin: 3px;
+}
+
+#small p a {
+	color: #1300f9;
+}
+
+a:visited {
+	color: #3e4043;
+}
+
+a {
+	color: #3e4043;
+}
+
+
+
+}
+
+
+}
+
+#stitch object {
+	padding-left: 35px;
+}
+
+#small p {
+	color: #041eff;
+	padding-left: 40px;
+	font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-decoration: underline;
+}
+
+
+
+div#stitch.flash {
+	width: 600px;
+}
+

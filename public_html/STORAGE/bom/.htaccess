@@ -1,0 +1,9 @@
+
+AuthType Basic
+
+AuthName "Bill of Materials Tool"
+
+
+
+require valid-user
+AuthUserFile "/home/merrowco/.htpasswds/public_html/bom/passwd"

@@ -1,0 +1,338 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Merrow</title>
+	
+	<meta name="Author" content="Merrow, Inc.">
+	<meta name="Category" content="products,sewingmachines">
+	<meta name="Description" content="the worlds best sewing machines.">
+
+	<meta name="Keywords" content="merrow,charlie,merrow machines">
+	<meta name="viewport" content="width=1024"/>
+
+
+
+
+<!--all of this javascript appears necessary to drive movies and drawers -->	
+	<script src="http://merrow.com/cephei/scripts/prototype.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://merrow.com/cephei/scripts/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://merrow.com/cephei/scripts/browserdetect.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://merrow.com/cephei/scripts/flip.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://merrow.com/cephei/scripts/event_mixins.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://merrow.com/cephei/scripts/drawers.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://merrow.com/cephei/scripts/ac_quicktime.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://merrow.com/cephei/scripts/frontrow_redux.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://merrow.com/cephei/scripts/tracking.js" type="text/javascript" charset="utf-8"></script>
+
+	<!--<script src="http://merrow.com/cephei/scripts/randinator.js" type="text/javascript" charset="utf-8"></script> -->
+	<script src="http://merrow.com/cephei/scripts/quicktimegallery.js" type="text/javascript" charset="utf-8"></script>
+<!--all of this javascript appears necessary to drive movies and drawers -->	
+	
+	
+	
+	<script type="text/javascript" charset="utf-8">
+		defaultId = 'a';
+		var latestSliders = null;
+		var galleryShingles = null;
+		Event.observe(window, 'load', function() {
+			/* SLIDERS */
+			var container = $('latest');
+			latestSliders = new AC.SlidingBureau(container);
+			var drawers = $$("#latest .drawers>li");
+			for (var i = 0; i < drawers.length; i++) {
+				var handle = drawers[i].getElementsByClassName('drawer-handle')[0];
+				var content = drawers[i].getElementsByClassName('drawer-content')[0];
+				var drawer = new AC.SlidingDrawer(content, handle, latestSliders, {
+					triggerEvent: 'mouseover', triggerDelay: 120});
+				latestSliders.addDrawer(drawer);
+				
+				var title = 'Window Shade - iPhone - ' + handle.innerHTML;
+				var properties = {sprop3: title};
+				AC.Tracking.trackLinksWithin(content, function() {return true;} , title, properties);
+			}
+			var freeDrawers = function(container) {
+				return function() {
+					if (!AC.Detector.isIEStrict()) {
+						container.setStyle({height: 'auto'});
+					}
+				}
+			}
+			setTimeout(freeDrawers(container), 1000);
+			
+			/* SHINGLES */
+			galleryShingles = new AC.ShingleBureau('gallery-shingles');
+			var steps = $('gallery-shingles').getElementsByTagName('li');
+			for (var i = 0; i < steps.length; i++) {
+				var handle = $(steps[i]).getElementsByClassName('handle')[0];
+				var drawer = new AC.ShingleDrawer(steps[i], handle, galleryShingles, {
+					triggerEvent: 'mouseover',
+					triggerDelay: 50});
+				galleryShingles.addDrawer(drawer);
+				
+				var title = 'Shingles - iPhone - ' + handle.getElementsByTagName('strong')[0].innerHTML;
+				var properties = {sprop3: title};
+				AC.Tracking.trackLinksWithin(steps[i], function() {return true;} , title, properties);
+				
+			}
+
+		}, false);
+		
+		
+		
+	</script>
+	<link rel="stylesheet" href="http://merrow.com/cephei/css/frontpage/base.css" type="text/css" charset="utf-8">
+	<!--<link rel="stylesheet" href="http://merrow.com/cephei/css/nav.css" type="text/css" charset="utf-8"> -->
+	<link rel="stylesheet" href="http://merrow.com/cephei/css/ac_quicktime.css"  type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="http://merrow.com/cephei/css/video/index.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="http://merrow.com/cephei/css/frontpage/whole.css" type="text/css" charset="utf-8">
+    
+    <?php 
+// for example: thispage.php?word=abracadabra 
+
+$val = $_GET['keyword']; 
+$cunt = $_GET['stitch']; 
+
+
+?>
+
+
+
+	<script type="text/javascript" charset="utf-8">
+		document.write('<style type="text/css" media="screen">#quicktimecontroller { display:block; zoom:1; } #gallery { height: 550px; } #gallery .shingles { height: 524px; } #gallery .shingles li { position: absolute; top: 0; }<\/style>');
+	</script>
+</head>
+
+<script>
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<!-- End SiteCatalyst code version: H.8. -->
+<div></div><div align="center"><!-- Portal Top Div --><!--  top left right bottom  --><script src="http://imerrow.com/amazon/scripts/ucommand.js"></script><div class="ContentContainer" id="TopContainer"><!-- Portal Top --><div><div class="pcontent"><div id="gnheader" class="gbhdr"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td><!-- headerType=FULL:CCHP_PAGE--><div style="display: none;" id="playground"></div><div id="cobrandHeader"></div><div id="dynamicmenu-hdrCtr" class="hdrCtr"><table class="logobar" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td class="logoimg" valign="top" width="1%"><a href="http://www.ebay.com" rel="nofollow"><img src="http://merrow.com/cephei/images/fp/top5.gif" alt="" border="0" height="50" width="525"></a></a></a></td>
+<span id="bta"></span></span></td><td id="rbt" valign="bottom"><span class="rebate"></span></td><td align="right" valign="bottom"><div class="addllinks"><a id="v4-header0" href="http://us.ebayobjects.com/2c;27244793;12515765;n" target="livehelpwin" rel="nofollow"><img src="http://pics.ebaystatic.com/aw/pics/globalHeader/imgHdrLiveHelpIcon.gif" border="0">&nbsp;Agent Login</a> | <a href="http://pages.ebay.com/sitemap.html">Agent Map</a></div></td></tr></tbody></table>
+<form method="get" action="http://merrow3.amazonwebstore.com/search.htm" name="searchForm" id="searchForm"><div class="srchBox"><div class="srchBoxE"><div class="srchBoxW"><input class="searchBox" name="keyword" tabindex="1" type="text" value="">
+                            <div class="button" id="searchb" visibility: visible;>
+                              <input value="Search" tabindex="3" type="submit"> 
+                          </div>
+                 </div></div></div></form>
+                 
+                 
+                 
+               
+                 
+                 
+                 
+                 
+                    <div class="colorbar" id="all">
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody><tr><td class="brnd1"></td><td class="brnd2"></td><td class="brnd3"></td><td class="brnd4"></td><td class="brnd5"></td><td class="brnd6"></td><td class="brnd7"></td></tr><tr><td class="brnd8"></td><td class="brnd8"></td><td class="brnd8"></td><td class="brnd8"></td><td class="brnd8"></td><td class="brnd8"></td><td class="brnd8"></td></tr></tbody>
+                      </table>
+                    </div>
+                  <div class="snav"><div class="snavE"><div class="snavW" id="dynamicmenu-snavW"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td class="snav" width="100%"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td id="browsecategoriesitem" class="fc"><a id="BrowseCategories" href="http://listings.ebay.com/">Products <img src="http://pics.ebaystatic.com/aw/pics/globalHeader/imgHdrDropDownIcon.gif" border="0" height="6" width="6"></a></td><td id="ebaymotorsitem"><a title="Buy and sell cars, trucks, vehicle parts, and accessories." href="http://www.motors.ebay.com/">Support</a></td><td id="enayexpressitem"><a title="Get what you want now - no bidding, no waiting." href="http://www.express.ebay.com/">About us</a></td><td id="ebaystoresitem" class="lc"><a title="Find more of what you love." href="http://stores.ebay.com/">Home</a></td></tr></tbody></table></td><td class="poweredBy" align="right"><div class="bottommenu">
+  <div style="overflow: hidden; height: 22px; width: 112px;" id="rtm_html_433">
+    
+     </div>
+</div></td></tr></tbody></table></div></div></div><div class="pnav"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><table class="pnav" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td id="buyitem" class="fc"><a id="nuy" href="http://hub.ebay.com/buy">My Account</a></td><td id="nellitem"><a href="http://sell.ebay.com/sell" id="nell">View Cart</a></td><td id="communityitem"><a href="http://hub.ebay.com/community" id="nommunity">Community</a></td><td id="helpitem" class="lc"><a href="http://pages.ebay.com/help/index.html" id="nelp">Contact Us</a></td></tr></tbody></table></td></tr></tbody></table></div></div><style type="text/css">.clBox {visibility:hidden}
+.clTable {border:2px solid #0098cf; margin-bottom:15px}
+.clCell {padding:0 10px}
+.clMsg {padding-right:10px}
+.clSep {margin:0 10px}
+.clLogo {padding:0 20px}
+</style>
+<div class="wholemenu">
+  <div id="divCrossLink" style="display: none;"></div>
+  <div style="visibility: hidden; position: absolute;" id="BrowseCategories-menu" class="dynmenu"></div>
+  <div style="visibility: hidden; position: absolute;" id="Buy-menu" class="dynmenu"></div>
+  <div style="visibility: hidden; position: absolute;" id="Sell-menu" class="dynmenu"></div>
+  <div style="visibility: hidden; position: absolute;" id="MyEbay-menu" class="dynmenu"></div>
+  <div style="visibility: hidden; position: absolute;" id="Community-menu" class="dynmenu"></div>
+  <div style="visibility: hidden; position: absolute;" id="Help-menu" class="dynmenu"></div>
+  <div></div>
+  <div style="display: none;" id="dynMenuCtr"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td colspan="3" class="dynmenubrdr">##1##</td></tr><tr><td><img src="http://pics.ebaystatic.com/aw/pics/motors2/images/imgCrnrO4.gif" class="crnrimg" border="0" height="6" width="6"></td><td class="dynmenubtmbrdr">##2##</td><td><img src="http://pics.ebaystatic.com/aw/pics/motors2/images/imgCrnrO3.gif" class="crnrimg" border="0" height="6" width="6"></td></tr></tbody></table>
+  </div>
+</div></td></tr></tbody></table>
+</div></span><script src="http://imerrow.com/amazon/scripts/icommand.js" type="text/javascript"></script><!--td.s5os500,,RlogId p4kjkbsdab%60jtb9%3Ftd.s5os500-11a3fcafba6--></div></div><div><div class="pcontent"><div id="rtm_html_245" style="height: 0px; display: none;"></div><!--td.s5os500,,RlogId p4kjkbsdab%60jtb9%3Ftd.s5os500-11a3fcafba6--></div></div></div>
+
+
+<!-- END:Portal Top Div --><!-- Portal Center Div -->
+<div id="container">
+		<div id="main">
+			<div id="content" class="grid3cola">
+			  <div class="column first sidebar">
+               
+  
+                              
+                
+                <div class="box dark" id="features">
+						<h2>Sewing Machines</h2>
+
+						<ul id="feature-nav">
+							<li id="phone"><a href="/iphone/features/index.html#phone">Revolutionary Phone</a></li>
+							<li id="ipod"><a href="/iphone/features/index.html#ipod">Widescreen iPod</a></li>
+							<li id="internet"><a href="/iphone/features/index.html#internet">Breakthrough Internet Device</a></li>
+							<li id="tech"><a href="/iphone/features/index.html#technology">High Technology</a></li>
+						</ul>
+						<ul id="feature-nav2">
+
+							<li><img src="http://merrow.com/cephei/images/mapple/new_icon20080130.png" alt="NEW" width="27" height="13" class="new"><a href="/iphone/features/jan08update.html" class="more">Accessories</a></li>
+							<li><a href="/iphone/accessories/" class="more">Gallery</a></li>
+							<li><a href="/iphone/gallery/" class="more">Thread</a></li>
+							<li><a href="/iphone/specs.html" class="more">Hooks and Needles</a></li>			
+							<li><a href="/iphone/questionsandanswers.html" class="more">Knives &amp; Cutters</a></li>
+
+							<li><a href="http://manuals.info.apple.com/en/iPhone_User_Guide.pdf" class="more">User&rsquo;s Guide (PDF)</a></li>
+						</ul>
+						<ul id="feature-nav2" class="provider">
+							<li><strong><a href="/iphone/easysetup/rateplans.html">Used Merrow Machines</a></strong></li>
+							<a href="/iphone/easysetup/rateplans.html"><img src="/nebula/images/logoEbay_x45.gif" width="55" height="23" border="0" alt="AT&amp;T logo"></a>
+							<p class="last">Find out about <a href="/iphone/easysetup/rateplans.html#individual">buying</a>, <a href="/iphone/easysetup/rateplans.html#family">Merrow</a>equipment <a href="/iphone/easysetup/rateplans.html#corporate">on</a> ebay in partnership with Merrow</p>
+
+						</ul>
+						<div class="boxcap"></div>
+				</div> <!-- /features -->
+					
+					 <!-- /itunes -->
+			<!--		 <div class="box" id="gallery">
+						<h2>Merrow Applications</h2>
+						<ul class="drawers shingles" id="gallery-shingles">
+							<li>
+
+								<a href="/iphone/gettingstarted/guidedtour/"><img src="http://merrow.com/cephei/images/mapple/index_videotours_guidedtour20080306.jpg" width="178" height="180" alt="Guided Tour" class="photo"></a>
+								<div class="handle">
+									<strong>Guided Tour</strong>
+									<span class="description">Get a closer look at all the features of iPhone. <a href="/iphone/gettingstarted/guidedtour/" class="more">Watch video</a></span>
+								</div>
+							</li>
+							<li>
+
+								<a href="/iphone/gettingstarted/guidedtourupdate2/"><img src="http://merrow.com/cephei/images/mapple/index_videotours_janupdate20080306.jpg" width="178" height="180" border="0" alt="January ‘08 Update" class="photo"></a>
+								<div class="handle">
+									<strong>January ‘08 Update</strong>
+									<span class="description">Take a tour of new features introduced in January. <a href="/iphone/gettingstarted/guidedtourupdate2/" class="more">Watch video</a></span>
+								</div>
+							</li>
+							<li>
+
+								<a href="/iphone/gettingstarted/activation.html"><img src="http://merrow.com/cephei/images/mapple/index_videotours_activation20080306.jpg" width="178" height="180" alt="Activation and Sync" class="photo"></a>
+								<div class="handle">
+									<strong>Activation and Sync</strong>
+									<span class="description">Even the activation process is impressively simple. <a href="/iphone/gettingstarted/activation.html" class="more">Watch video</a></span>
+								</div>
+							</li>
+							<li>
+
+								<a href="/iphone/gettingstarted/keyboard.html"><img src="http://merrow.com/cephei/images/mapple/index_videotours_keyboard20080306.jpg" width="178" height="180" alt="Using Your Keyboard" class="photo"></a>
+								<div class="handle">
+									<strong>Using Your Keyboard</strong>
+									<span class="description">Make the most of the world’s smartest keyboard. <a href="/iphone/gettingstarted/keyboard.html" class="more">Watch video</a></span>
+								</div>
+							</li>
+						</ul>
+
+						<div class="boxcap"></div>
+					</div> <!-- /gallery --> --> 
+                    
+                    
+			  </div> <!-- /column.first -->
+              
+              <!-- begin center column -->
+				<div class="column">
+					
+					<div class="box" id="videos">
+						<h2><a href="/iphone/ads/" class="right">Merrow Stitch Browser</a></h2>
+						<div class="padder">
+							<p align="left" class="nowplaying">Now Viewing: <strong id="descriptionpanel"> an overview of stitches (please choose your stitch)</strong></p>
+<script language="JavaScript" src="http://lapi.ebay.com/ws/eBayISAPI.dll?EKServer&ai=mvaa%7Cd%7Erp%7Bz%7Dv&bdrcolor=FFCC00&cid=0&eksize=1&encode=UTF-8&endcolor=FF0000&endtime=y&fbgcolor=FFFFFF&fntcolor=000000&fs=0&hdrcolor=FFFFCC&hdrimage=1&hdrsrch=y&height=450&img=y&lnkcolor=0000FF&logo=2&num=25&numbid=y&paypal=n&popup=y&prvd=0&query=merrow+sewing&r0=3&shipcost=n&siteid=0&sort=MetaEndSort&sortby=endtime&sortdir=asc&srchdesc=y&tbgcolor=FFFFFF&title=Merrow+on+Ebay&tlecolor=FFCE63&tlefs=0&tlfcolor=000000&track=&width=570"></script>
+							
+						<div class="boxcap"></div> 	
+						</div> <!-- /padder -->
+
+						<div class="boxcap"></div> 
+					</div> <!-- /videos -->
+				</div> <!-- /center column -->
+				<div class="column last sidebar">
+					
+						<div class="boxcap captop"></div>
+					
+					<div class="box dark" id="gallery">
+					<h2><a href="/iphone/buy/">Select Stitches</a></h2>
+
+						<div id="wheretobuypromo"></div>
+						<div class="availability padder">
+									<h3 id="attstore">Choose your Stitch</h3>
+						  <p>view stitch samples by machine type, application, and stitch type</p>
+                            
+						
+							
+							<h3 id="onlinestore">by Machine Type</h3>
+							<p>what machine would yo like?</p>
+<form name="form" id="form" action="http://merrow.com/cephei/testpages/stitchend.php">
+							  <select name="stitch" id="jumpMenu">
+							   <option value=“18a“>18-A</option>
+<option value=“18e“>18-E</option>
+<option value=“18g“>18-G</option>
+<option value=“18s“>18-S</option>
+<option value=“22fj“>22FJ</option>
+<option value=“701d2“>70-1D-2</option>
+<option value=“701d7“>70-1D-7</option>
+<option value=“70d3b2“>70-D3B-2</option>
+<option value=“70d3b2cnp“>70-D3B-2CNP</option>
+<option value=“70d3b2rail“>70-D3B-2RAIL</option>
+<option value=“70y3b2“>70-Y3B2</option>
+<option value=“72d3b“>72-D3B</option>
+<option value=“m27gribitz“>M-27GRIBITZ</option>
+<option value=“m2d“>M-2D</option>
+<option value=“m2d7“>M-2D-7</option>
+<option value=“m2dh1a“>M-2D-H1A</option>
+<option value=“m2dh2“>M-2D-H2</option>
+<option value=“m2dh2a“>M-2D-H2A</option>
+<option value=“m2dhwa“>M-2D-HWA</option>
+<option value=“m2dnr1“>M-2D-NR1</option>
+<option value=“m2dnrl“>M-2D-NRL</option>
+<option value=“m2dr“>M-2D-R</option>
+<option value=“m2dr2“>M-2D-R2</option>
+<option value=“md3b2“>M-D3B-2</option>
+<option value=“md3b2rail“>M-D3B-2RAIL</option>
+<option value=“mg3“>MG-3</option>
+<option value=“mg3d“>MG-3D</option>
+<option value=“mg3d1“>MG-3D1</option>
+<option value=“mg3d7“>MG-3D7</option>
+<option value=“mg3de“>MG-3DE</option>
+<option value=“mg3de2“>MG-3DE2</option>
+<option value=“mg3de7“>MG-3DE7</option>
+<option value=“mg3dr“>MG-3DR</option>
+<option value=“mg3drw“>MG-3DRW</option>
+<option value=“mg3du“>MG-3DU</option>
+<option value=“mg3dw“>MG-3DW</option>
+<option value=“mg3dw2“>MG-3DW-2</option>
+<option value=“mg3dw3“>MG-3DW-3</option>
+<option value=“mg3dw4“>MG-3DW-4</option>
+<option value=“mg3dw5“>MG-3DW-5</option>
+<option value=“mg3dw7“>MG-3DW-7</option>
+<option value=“mg3dwl“>MG-3DW-L</option>
+<option value=“mg3q3“>MG-3Q3</option>
+<option value=“mg3qa3“>MG-3QA-3</option>
+<option value=“mg3u“>MG-3U</option>
+<option value=“mg4dw“>MG-4DW</option>
+<option value=“mg4dw100“>MG-4DW-100</option>
+<option value=“mg4dw45“>MG-4DW-45</option>
+<option value=“mg4dw60“>MG-4DW-60</option>
+
+                              </select>
+							  <input type="submit" name="go_button" id= "go_button" value="Go" onClick="MM_jumpMenuGo('jumpMenu','parent',0)">
+                          </form>
+                            
+							
+						
+							<br></br>
+							<h3 class="last"><a href="/support/iphone/">Need More Help? </a></h3>
+							<p><a href="/support/iphone/" class="more">call us to order stitch samples <br> 800.431.6677</a></p>
+
+					
+                        </div> <!-- /availability padder -->
+						<!--<div class="boxcap"></div> -->
+					</div> <!-- /wheretobuy -->
+				</div> <!-- /colum.last -->
+			</div> <!-- /content -->
+		</div> <!-- /container -->
+
+	</div> <!-- /main -->

@@ -1,0 +1,50 @@
+a:active, a:link, .g-novisited a:visited {color: #055d90; text-decoration:none}
+
+a:visited {color: #055d90}
+
+td#title.layout3.layout3Name {
+	background: url(http://images.imerrow.com/images/mapple/index_iphonekeynotebottom_hero20080306.jpg) repeat-x;
+}
+
+div#loveme.instructions {
+	color: orange;
+	font-size: 16px;
+	left: 400px;
+	position: absolute;
+	width: 300px;
+	top: 30px;
+}
+
+
+div#statement {
+	color: #333;
+	margin-top: 10px;
+}
+
+div#phonehome {
+	font-size: 18px;
+	text-align: center;
+	position: absolute;
+	left: 400px;
+	top: 160px;
+}
+
+.our-label{color: gray;font-weight:bold;}
+
+.savings td{white-space:nowrap; font-size:10px;}
+
+body, div, span, ul, ol, dl, h1, h2, h3 {font-family:Arial, Helvetica, sans-serif; font-size:small}
+
+.layout3 {
+  padding: 0 3px;
+  text-align: center;
+}
+
+body, .g-std {font-family:Arial, Helvetica, sans-serif; font-size:small}
+
+body {margin-top:0 !important; padding-top:0 !important}
+
+.layout3 {
+  padding: 0 3px;
+  text-align: center;
+}

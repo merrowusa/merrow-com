@@ -1,0 +1,1 @@
+ELF	FreeBSDrintfCFG File: %s

@@ -1,0 +1,25 @@
+<HEAD>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Original:  desypfa@hotmail.com -->
+<!-- Modified:  Benjamin Wright, Editor -->
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+redirTime = "5000";
+redirURL = "http://www.merrow.com";
+function redirTimer() { self.setTimeout("self.location.href = redirURL;",redirTime); }
+//  End -->
+</script>
+
+
+
+<BODY onLoad="redirTimer()">
+
+<p><center>
+<font face="arial, helvetica" size"-5">This page has been moved. <br>you will be redirected to MERROW.COM in 4.5 seconds.<br>
+the <a href="http://www.merrow.com">Merrow Sewing Machine Company</a></font>
+</center><p>
+

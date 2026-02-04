@@ -1,0 +1,18 @@
+	<form name="addform" class="separate" method="post" action="<?= $cript ?>">
+		<fieldset>
+			<legend>Add Order</legend>
+
+			<label for="part">Part: </label>
+			<?= getTextBox('part'); ?>
+			<br />
+			<label for="date">Date: </label>
+			<?= getMonthSelect('month'); ?>
+			<?= getDaySelect('day'); ?>
+			<?= getTextBox('year', 4, 4); ?>
+			<br />
+			<label for="quantity">Quantity: </label>
+			<?= getTextBox('quantity', 4, 4); ?>
+			
+			<input type="submit" name="add" value="Add Shipment" />
+		</fieldset>
+	</form>

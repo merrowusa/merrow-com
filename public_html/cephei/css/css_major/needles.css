@@ -1,0 +1,141 @@
+/* @override http://merrow.com/cephei/css/css_major/needles.css */
+
+/* @override http://merrow.com/cephei/css/css_major/needles.css */
+
+.spiffy_needles{display:block}
+.spiffy_needles *{
+  display:block;
+  height:1px;
+  overflow:hidden;
+  font-size:.01em;
+  background:#fbf4d3}
+.spiffy_needles1{
+  margin-left:3px;
+  margin-right:3px;
+  padding-left:1px;
+  padding-right:1px;
+  border-left:1px solid #fdfaec;
+  border-right:1px solid #fdfaec;
+  background:#fcf6de}
+.spiffy_needles2{
+  margin-left:1px;
+  margin-right:1px;
+  padding-right:1px;
+  padding-left:1px;
+  border-left:1px solid #fefdfa;
+  border-right:1px solid #fefdfa;
+  background:#fbf6db}
+
+div.exhibit-collectionView-body {
+	width: 980px;
+	float: left;
+}
+
+table.nobelist {
+	width: 930px;
+	margin: 5px;
+	text-align: center;
+}
+.spiffy_needles3{
+  margin-left:1px;
+  margin-right:1px;
+  border-left:1px solid #fbf6db;
+  border-right:1px solid #fbf6db;}
+
+div.nobelist-thumbnail {
+	position: relative;
+	top: 5px;
+	right: 5px;
+	margin: 10px;
+	overflow: visible;
+	float: left;
+}
+
+div.exhibit-viewPanel-viewContainer {
+	width: 980px;
+	position: relative;
+	right: 40px;
+	float: left;
+}
+
+div.exhibit-viewPanel.exhibit-ui-protection {
+	width: 980px;
+	position: relative;
+}
+.spiffy_needles4{
+  border-left:1px solid #fdfaec;
+  border-right:1px solid #fdfaec}
+.spiffy_needles5{
+  border-left:1px solid #fcf6de;
+  border-right:1px solid #fcf6de}
+.spiffy_needlesfg{
+  background:#fbf4d3}
+
+div#title-panel {
+	position: relative;
+	right: 280px;
+	color: #8a8581;
+}
+
+div.exhibit-viewPanel-viewSelection {
+	width: 300px;
+	float: left;
+	position: relative;
+	bottom: 250px;
+	left: 500px;
+}
+
+span.exhibit-viewPanel-viewSelection-view {
+	font-size: 24px;
+	color: #0080ff;
+	font-weight: bold;
+}
+
+span.exhibit-viewPanel-viewSelection-selectedView {
+	font-size: 24px;
+	color: orange;
+}
+
+span.exhibit-collectionSummaryWidget-results {
+	position: relative;
+}
+
+div.exhibit-collectionView-header {
+}
+
+#content div div.exhibit-viewPanel.exhibit-ui-protection div.exhibit-viewPanel-viewContainer div.exhibit-collectionView-header div span a.exhibit-action {
+	color: #f00;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+div.co-winners {
+	text-align: left;
+	width: 600px;
+	font-size: 18px;
+	color: #2971b0;
+	line-height: 24px;
+	position: relative;
+	left: 20px;
+}
+
+#content div div.exhibit-viewPanel.exhibit-ui-protection div.exhibit-viewPanel-viewContainer div.exhibit-collectionView-body ol.exhibit-tileView-body li table.nobelist tbody tr td div.co-winners span span {
+	font-size: 16px;
+	color: black;
+	text-align: left;
+}
+
+div.exhibit-collectionView-header-sortControls {
+	visibility: hidden;
+	position: absolute;
+}
+
+div.exhibit-thumbnailView-group {
+	text-align: left;
+}
+
+#content div div.exhibit-viewPanel.exhibit-ui-protection div.exhibit-viewPanel-viewContainer div.exhibit-collectionView-body div.exhibit-thumbnailView-group h1 {
+	font-size: 14px;
+	position: relative;
+	top: 20px;
+}

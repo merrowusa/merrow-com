@@ -1,0 +1,127 @@
+/* @override http://merrow.com/cephei/css/imagegallery.css */
+
+/* @override http://merrow.com/cephei/css/imagegallery.css */
+
+#descriptionpanel {
+	font-size: 18px;
+}
+
+div#liltext {
+	
+}
+
+div#boinga.toptext {
+		position: absolute;
+	width: 300px;
+	left: 620px;
+	display: inline;
+	color: gray;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+<style type="text/css">
+
+/*Credits: Dynamic Drive CSS Library */
+/*URL: http://www.dynamicdrive.com/style/ */
+
+.gallerycontainer{
+position: relative;
+height: 68px;
+/*Add a height attribute and set to largest image's height to prevent overlaying*/
+}
+
+.thumbnail img{
+border: 1px solid white;
+	margin: 0 10px 10px 0;
+}
+
+.thumbnail:hover{
+background-color: transparent;
+}
+
+.thumbnail:hover img{
+border: 1px solid blue;
+}
+
+.thumbnail span{ /*CSS for enlarged image*/
+position: absolute;
+background-color: #fff;
+padding: 5px;
+border: 1px dashed gray;
+visibility: hidden;
+color: black;
+text-decoration: none;
+	display: inline;
+	width: 500px;
+	height: 200px;
+	
+	top: 200px;
+	text-align: left;
+	opacity: 70%;
+}
+
+.thumbnail span img{ /*CSS for enlarged image*/
+border-width: 0;
+padding: 2px;
+}
+
+.thumbnail:hover span{ /*CSS for enlarged image*/
+visibility: visible;
+top: 0;
+right: 310px; /*position where enlarged image should offset horizontally */
+z-index: 50;
+}
+div.gallerycontainer {
+	position: absolute;
+	display: inline;
+	left: 610px;
+	width: 250px;
+	top: 65px;
+	margin: 5px;
+	border-style: solid;
+	border-color: silver;
+	background-image: none;
+}
+
+#main .box h2 {color:white;font-size:12px;font-weight:bold;height:25px;line-height:25px;margin-bottom:0;padding:0 0 0 12px;
+	background: no-repeat left !important;
+}
+#main .box h2 a.right{color:#fff;display:block;float:right;margin-right:-9px;height:25px;width:100%;_background-image:url(http://images.imerrow.com/images/mapple/box_linkarrow.gif);
+	background: no-repeat 97.5% 50% !important;
+}
+
+ul#shopaccessories {
+	position: absolute;
+	left: 610px;
+	background-color:;
+	width: 250px;
+	text-align: left;
+	top: 340px;
+	font-weight: bold;
+}
+
+#shopaccessories h3 {
+	color: #0075ed !important;
+	font-size: 18px !important;
+}
+
+input#searchinput {
+	height: 30px;
+	font-size: 18px;
+	width: 250px;
+}
+
+input#searchbutton {
+	margin-left: 260px;
+	position: relative;
+	bottom: 25px;
+}
+
+
+
+</style>
+@charset "UTF-8";
+/* CSS Document */
+

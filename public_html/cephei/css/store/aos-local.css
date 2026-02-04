@@ -1,0 +1,113 @@
+/* @override http://a248.e.akamai.net/7/248/2041/1433/store.apple.com/Catalog/US/Images/css/aos-local.css */
+
+/*
+This file is for localized adjustments to CSS on a per-country basis.
+*/
+
+/* footerblock Subscribe */
+button#subscribe {
+	margin: 1em 0 0;
+	width: 88px;
+	height: 20px;
+	border: 0;
+	background: url(../buttons/subscribe.png) no-repeat;
+	text-indent: -9999em;
+	cursor: pointer;
+}
+
+#aos_header #masthead.education ul {
+	margin-top: 10px;
+}
+
+#aos_header #masthead address.phone,
+.home #aos_header #masthead.education address.phone {
+	background: url(http://images.imerrow.com/images/machines/mh-phone.png););/);) no-repeat 0 50%;
+	width: 86px;
+	height: 13px;
+	margin-left: 0; 
+}
+#aos_header #masthead.smb address.phone {
+background: url(../layout/mh_phone_smb.png) 0 50% no-repeat;
+width: 86px;
+height: 13px;
+margin-left: 0;
+}
+#aos_header #masthead.education address.phone,
+#aos_header #masthead.education li#chatnow {
+	margin-bottom: 6px;
+}
+.home #aos_header #masthead address.phone {
+	margin-left: 6px;
+	margin-bottom: 6px;
+	background: url(http://images.imerrow.com/images/machines/mh-phone.pn) no-repeat 0 50%;
+	width: 125px;
+}
+.home #aos_header #masthead.smb address.phone {
+	margin-left: 6px;
+	margin-bottom: 6px;
+	background: url(../layout/mh_phone-home-smb.png) 0 50% no-repeat;
+	width: 125px;
+}
+.home #aos_header #masthead.epp address.phone {
+	margin-left: 6px;
+	margin-bottom: 6px;
+	background: url(../layout/mh_phone-home-epp.png) 0 50% no-repeat;
+	width: 125px;
+}
+#aos_header #masthead.epp #masthead_wrap {
+	background-image: url(../layout/masthead_epp.png);
+}
+#aos_header.collapsed #masthead.epp #masthead_wrap {
+	background-image: url(../layout/masthead_collapsed_epp.png);
+}
+#aos_header #masthead.fr-ca address.phone {
+	margin-left: 6px;
+	background: url(../layout/mh_phone-home-xf.png) 0 50% no-repeat;
+	width: 125px;
+}
+#aos_header #masthead li#chatnow {
+	display: block;
+}
+.home #aos_header #masthead li#chatnow {
+	display: none;
+}
+.home #aos_header #masthead.education li#chatnow {
+	display: block;
+}
+#aos_header #masthead.eduIndividual #masthead_wrap {
+	background-image: url(../layout/masthead_edu.png);
+}
+#aos_header.collapsed #masthead.eduIndividual #masthead_wrap {
+	background-image: url(../layout/masthead_collapsed_edu.png);
+}
+#aos_header #masthead.smb #masthead_wrap {
+	background-image: url(../layout/masthead_smb.png);
+}
+#aos_header.collapsed #masthead.smb #masthead_wrap {
+	background-image: url(../layout/masthead_collapsed_smb.png);
+}
+
+/* Juniper app (#as-page-content div) */
+#as-page-content div.benefitsbox {
+	margin: 24px 28px 30px 43px;
+}
+#as-page-content div.footnotes {
+	margin: 20px 12px 20px 0pt;
+}
+#as-page-content div.footnotes ol {
+	padding-left: 40px;
+}
+#as-page-content div.rule {
+	margin: 24px 18px 0;
+}
+#as-page-content div.footnotes {
+	margin: 20px 12px 20px 0;
+}
+#as-page-content div.footnotes li {
+	margin: 0 0 10px 0;
+}
+
+form#g-search { display: block; }
+
+div.ase-ni #globalheader #globalnav li { width: 136px; }
+

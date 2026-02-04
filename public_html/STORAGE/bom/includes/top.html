@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head><title><?= $title ?></title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<script type="text/javascript" language="Javascript">
+	
+	window.onload=stopImg;
+	
+	function stopImg()
+	{
+		loader = document.getElementById('loadimg');
+		loader.style.display = 'none';
+	}
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+<div id="loadimg"><?php if($bear) echo '<img src="images/dancingbear.gif"><p>Enjoy the show while your request is processing!</p>';else echo '<img src="images/ajax-loader.gif">';?></div>
+
+<h1><?= $title?></h1>

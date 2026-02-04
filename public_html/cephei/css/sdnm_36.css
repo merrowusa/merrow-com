@@ -1,0 +1,140 @@
+/* @override http://merrow.com/cephei/css/sdnm_36.css */
+
+div.sdnm_flat {
+  width: auto;
+	text-align: left;
+  font-family: Sans-Serif;
+  font-size: 0.75em;
+  color: #0066d2;
+	background-color: rgba(0,128,255,0.28);
+	zoom: 1;
+	cursor: pointer;
+}
+
+div.sdnm_flat span.title, div.sdnm_flat span.titlehidden, div.sdnm_flat span.rtitlehidden {
+  display: block;
+  line-height:3em; /* padding: 6px 6px 6px 6px; */
+  font-weight: bold;
+  color: rgba(4,0,53,0.73);
+  border-bottom: 0px solid #DDD;
+}
+div.sdnm_flat span.title a, div.sdnm_flat span.titlehidden a, div.sdnm_flat span.titlehidden a {
+  font-weight: bold;
+  color: #FFF;
+}
+div.sdnm_flat span.rtitlehidden {
+	cursor: default;
+}
+div.sdnm_flat span.title, div.sdnm_flat span.titlehidden, div.sdnm_flat span.rtitlehidden { border-top:5px solid white; }
+div.sdnm_flat dl + span.title, div.sdnm_flat dl + span.titlehidden, div.sdnm_flat dl + span.rtitlehidden { border-top:0; }
+
+div.sdnm_flat span.title,
+div.sdnm_flat span.titlehidden,
+div.sdnm_flat span.rtitlehidden { background-color: #c3d9ff;}
+
+div.sdnm_flat div.submenu span.title,
+div.sdnm_flat div.submenu span.titlehidden { background-color:#a8a6a6;}
+
+div.sdnm_flat div.submenu div.submenu span.title,
+div.sdnm_flat div.submenu div.submenu span.titlehidden { background-color:#b8b6b6;}
+
+div.sdnm_flat div.submenu div.submenu div.submenu span.title,
+div.sdnm_flat div.submenu div.submenu div.submenu span.titlehidden { background-color:#c8c6c6;}
+
+div.sdnm_flat div.submenu div.submenu div.submenu div.submenu span.title,
+div.sdnm_flat div.submenu div.submenu div.submenu div.submenu span.titlehidden { background-color:#d8d6d6;}
+
+div.sdnm_flat span.title span { background-image: url(http://images.imerrow.com/images/sd_images/sdexpanded.gif); background-repeat: no-repeat; background-position: 8px 50%; }
+div.sdnm_flat span.rtitlehidden {
+	background-image: none;
+}
+div.sdnm_flat span.rtitlehidden span {background-image: url(http://images.imerrow.com/images/sd_images/sdsquare.gif); background-repeat: no-repeat; background-position: 6px 50%; }
+
+div.sdnm_flat span.title:hover span { background-image: url(http://images.imerrow.com/images/sd_images/sdexpandedOn.gif); background-repeat: no-repeat; background-position: 8px 50%; }
+div.sdnm_flat span.titlehidden:hover span {background-image: url(http://images.imerrow.com/images/sd_images/sdcollapsedOn.gif); background-repeat: no-repeat; background-position: 8px 50%; }
+div.sdnm_flat span.rtitlehidden:hover span {background-image: url(http://images.imerrow.com/images/sd_images/sdsquareOn.gif); background-repeat: no-repeat; background-position: 6px 50%; }
+
+div.sdnm_flat span.tt, div.sdnm_flat span.tthidden { display:block; margin-left: 5px; padding: 0px 5px 0px 25px;}
+
+div.sdnm_flat a {
+	text-decoration: none;
+}
+
+div.sdnm_flat div.submenu {
+	overflow: hidden;
+	zborder-bottom: 1px dashed #AAA;
+	-moz-box-sizing:border-box;
+}
+div.sdnm_flat div.submenu a {
+  padding: 2px 2px 2px 5px;
+  background: #EEE;
+  display: block;
+  border-bottom: 1px solid #DDD;
+  color: #066;
+  text-decoration: none;
+}
+div.sdnm_flat div.submenu a:hover {
+	background : #066;
+  color: #FFF;
+  border-bottom: 1px solid #066;
+}
+
+div.sdnm_flat div.submenu a.current {
+	background : #DDD;
+}
+
+#text p.bodytext span.smsubhead {
+	color: black;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+}
+
+#text ol li.bodytext {
+	text-align: left;
+	color: rgba(4,0,53,0.73);
+}
+
+#text p span.smsubhead {
+	text-align: left;
+	color: black;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#text blockquote p.bodytext {
+	text-align: left;
+	color: rgba(4,0,53,0.73);
+}
+
+#text p.bodytext {
+	color: rgba(4,0,53,0.73);
+	font-size: 14px;
+	text-align: left;
+}
+
+#text p.subhead {
+	text-align: left;
+	color: rgba(4,0,53,0.73);
+}
+
+div#text.technical {
+	text-align: left;
+	color: rgba(4,0,53,0.73);
+}
+
+div#tech.techheader {
+	color: #0066d2;
+	font-size: 18px;
+	text-align: left;
+	text-decoration: underline;
+}
+
+div.sdnm_flat div.submenu span.s { display:block; margin-left: 1em; border-right: #EEE solid thick; }
+div.sdnm_flat div.submenu a:hover span.s { border-right: #FF6600 solid thick; }
+
+div.sdnm_flat dl.top_lft {background: #c3d9ff url(http://images.imerrow.com/images/sd_images/sdtoptitleleft.gif) no-repeat left; margin:0px 0px; padding:0px; width:100%; line-height:7px;}
+div.sdnm_flat dl.top_lft dd {background:transparent url(http://images.imerrow.com/images/sd_images/sdtoptitleright.gif) top right no-repeat; padding:0px; margin:0px;}
+
+div.sdnm_flat dl.bot_lft {background:rgba(0,128,255,0.28) url(http://images.imerrow.com/images/sd_images/sdbottomtitleleft.gif) bottom left no-repeat; margin:0px 0px; padding:0px; width:100%; line-height:7px; }
+div.sdnm_flat dl.bot_lft dd {background:transparent url(http://images.imerrow.com/images/sd_images/sdbottomtitleright.gif) bottom right no-repeat; padding:0px; margin:0px;}

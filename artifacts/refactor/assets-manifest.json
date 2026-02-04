@@ -1,0 +1,232 @@
+{
+  "manifest_version": "1.0",
+  "created": "2026-02-02",
+  "purpose": "STEP 0 — Map Figma assets to repo paths with legacy template references",
+  "scope": "Homepage header + above-fold hero + footer ONLY",
+  "source_of_truth": "public_html/index.php + header_test.php + widget_feet.php",
+
+  "summary": {
+    "total_assets": 10,
+    "downloaded": 10,
+    "repo_path_prefix": "public/images",
+    "download_date": "2026-02-02"
+  },
+
+  "assets": [
+    {
+      "id": "logo-main",
+      "figma_filename": "merrow sewing machine co. logo",
+      "figma_node": "2:1344",
+      "s3_url": "https://merrow-media.s3.amazonaws.com/general-http/merrowlogo_03.png",
+      "repo_path": "public/images/merrowlogo_03.png",
+      "legacy_usage": [
+        "public_html/header_test.php:98 (<img src='...' class='merrow_header_logo'>)"
+      ],
+      "new_usage": "apps/merrow.com/app/_components/Header.tsx",
+      "dimensions": "341x68",
+      "format": "PNG",
+      "component": "Header",
+      "downloaded": true
+    },
+    {
+      "id": "badge-1838",
+      "figma_filename": "1838.png",
+      "figma_node": "2:1354",
+      "s3_url": "https://merrow-media.s3.amazonaws.com/general-http/1838.png",
+      "repo_path": "public/images/1838.png",
+      "legacy_usage": [
+        "public_html/header_test.php:100 (<img src='...' class='merrow_header_logo1838'>)"
+      ],
+      "new_usage": "apps/merrow.com/app/_components/Header.tsx",
+      "dimensions": "96x36",
+      "format": "PNG",
+      "component": "Header",
+      "downloaded": true
+    },
+    {
+      "id": "hero-tech",
+      "figma_filename": "h_02.gif.png",
+      "figma_node": "2:1398",
+      "s3_url": "https://merrow-media.s3.amazonaws.com/general-http/2011_live/h_02.gif.png",
+      "repo_path": "public/images/hero/h_02.gif.png",
+      "legacy_usage": [
+        "public_html/index.php:30 (left hero card - Technical Sewing)"
+      ],
+      "new_usage": "apps/merrow.com/app/page.tsx (IMG.heroTech)",
+      "dimensions": "321x370",
+      "format": "PNG",
+      "component": "HeroAboveFold",
+      "downloaded": true
+    },
+    {
+      "id": "hero-fashion-base",
+      "figma_filename": "h_01.gif.png",
+      "figma_node": "2:1407",
+      "s3_url": "https://merrow-media.s3.amazonaws.com/general-http/2011_live/h_01.gif.png",
+      "repo_path": "public/images/hero/h_01.gif.png",
+      "legacy_usage": [
+        "public_html/index.php:45 (center hero card - Fashion Sewing base layer)"
+      ],
+      "new_usage": "apps/merrow.com/app/page.tsx (IMG.heroFashionBase)",
+      "dimensions": "321x370",
+      "format": "PNG",
+      "component": "HeroAboveFold",
+      "downloaded": true
+    },
+    {
+      "id": "hero-fashion-overlay",
+      "figma_filename": "h_04.gif.png",
+      "figma_node": null,
+      "s3_url": "https://merrow-media.s3.amazonaws.com/general-http/2011_live/h_04.gif.png",
+      "repo_path": "public/images/hero/h_04.gif.png",
+      "legacy_usage": [
+        "public_html/index.php:46 (center hero card - Fashion Sewing overlay for fade animation)"
+      ],
+      "new_usage": "apps/merrow.com/app/page.tsx (IMG.heroFashionOverlay)",
+      "dimensions": "321x370",
+      "format": "PNG",
+      "component": "HeroAboveFold",
+      "note": "Overlay image for opacity animation, not in Figma wire",
+      "downloaded": true
+    },
+    {
+      "id": "hero-end",
+      "figma_filename": "h_03.gif.png",
+      "figma_node": "2:1420",
+      "s3_url": "https://merrow-media.s3.amazonaws.com/general-http/2011_live/h_03.gif.png",
+      "repo_path": "public/images/hero/h_03.gif.png",
+      "legacy_usage": [
+        "public_html/index.php:60 (right hero card - End-to-End Seaming)"
+      ],
+      "new_usage": "apps/merrow.com/app/page.tsx (IMG.heroEnd)",
+      "dimensions": "321x370",
+      "format": "PNG",
+      "component": "HeroAboveFold",
+      "downloaded": true
+    },
+    {
+      "id": "mid-heritage",
+      "figma_filename": "h_05.gif.png",
+      "figma_node": "2:1519",
+      "s3_url": "https://merrow-media.s3.amazonaws.com/general-http/2011_live/h_05.gif.png",
+      "repo_path": "public/images/hero/h_05.gif.png",
+      "legacy_usage": [
+        "public_html/index.php:80 (mid-section left - Heritage)"
+      ],
+      "new_usage": "apps/merrow.com/app/page.tsx (IMG.midHeritage)",
+      "dimensions": "162x160",
+      "format": "PNG",
+      "component": "HeroAboveFold",
+      "downloaded": true
+    },
+    {
+      "id": "mid-branded",
+      "figma_filename": "h_06.gif.png",
+      "figma_node": "2:1534",
+      "s3_url": "https://merrow-media.s3.amazonaws.com/general-http/2011_live/h_06.gif.png",
+      "repo_path": "public/images/hero/h_06.gif.png",
+      "legacy_usage": [
+        "public_html/index.php:95 (mid-section right - Branded Stitch)"
+      ],
+      "new_usage": "apps/merrow.com/app/page.tsx (IMG.midBranded)",
+      "dimensions": "124x162",
+      "format": "PNG",
+      "component": "HeroAboveFold",
+      "downloaded": true
+    },
+    {
+      "id": "logo-bar",
+      "figma_filename": "ft_10.gif",
+      "figma_node": "2:1647",
+      "s3_url": "https://merrow-media.s3.amazonaws.com/general-http/2011_live/ft_10.gif",
+      "repo_path": "public/images/ft_10.gif",
+      "legacy_usage": [
+        "public_html/index.php:110 (customer logos strip above footer)"
+      ],
+      "new_usage": "apps/merrow.com/app/page.tsx (IMG.logoBar)",
+      "dimensions": "938x50",
+      "format": "GIF",
+      "component": "Footer",
+      "downloaded": true
+    },
+    {
+      "id": "world-map",
+      "figma_filename": "ft_11.gif",
+      "figma_node": "2:1662",
+      "s3_url": "https://merrow-media.s3.amazonaws.com/general-http/2011_live/ft_11.gif",
+      "repo_path": "public/images/ft_11.gif",
+      "legacy_usage": [
+        "public_html/widget_feet.php:42 (agent locator world map)"
+      ],
+      "new_usage": "apps/merrow.com/app/_components/Footer.tsx",
+      "dimensions": "312x153",
+      "format": "GIF",
+      "component": "Footer",
+      "downloaded": true
+    }
+  ],
+
+  "text_elements": {
+    "note": "These Figma elements are text-as-images in legacy, rendered as styled text in new site",
+    "elements": [
+      {
+        "id": "promo-bar",
+        "figma_text": "NEW MERROW ACTIVESEAM VISIT",
+        "legacy_location": "public_html/header_test.php:15-25 (TOP_SPLASH div)",
+        "new_implementation": "TopPromoBar.tsx - styled <span> elements"
+      },
+      {
+        "id": "nav-items",
+        "figma_nodes": ["2:1357", "2:1358", "2:1359", "2:1360", "2:1361"],
+        "legacy_location": "public_html/header_test.php:120-150 (NAV_MENU ul)",
+        "new_implementation": "Header.tsx - NAV_ITEMS array"
+      },
+      {
+        "id": "since-text",
+        "figma_text": "Manufacturing Sewing Machines since",
+        "figma_node": "2:1352",
+        "legacy_location": "public_html/header_test.php:97",
+        "new_implementation": "Header.tsx - static text"
+      }
+    ]
+  },
+
+  "download_script": {
+    "description": "Run this to download all S3 assets to repo",
+    "working_dir": "apps/merrow.com",
+    "commands": [
+      "mkdir -p public/images/hero",
+      "curl -o public/images/merrowlogo_03.png 'https://merrow-media.s3.amazonaws.com/general-http/merrowlogo_03.png'",
+      "curl -o public/images/1838.png 'https://merrow-media.s3.amazonaws.com/general-http/1838.png'",
+      "curl -o public/images/hero/h_01.gif.png 'https://merrow-media.s3.amazonaws.com/general-http/2011_live/h_01.gif.png'",
+      "curl -o public/images/hero/h_02.gif.png 'https://merrow-media.s3.amazonaws.com/general-http/2011_live/h_02.gif.png'",
+      "curl -o public/images/hero/h_03.gif.png 'https://merrow-media.s3.amazonaws.com/general-http/2011_live/h_03.gif.png'",
+      "curl -o public/images/hero/h_04.gif.png 'https://merrow-media.s3.amazonaws.com/general-http/2011_live/h_04.gif.png'",
+      "curl -o public/images/hero/h_05.gif.png 'https://merrow-media.s3.amazonaws.com/general-http/2011_live/h_05.gif.png'",
+      "curl -o public/images/hero/h_06.gif.png 'https://merrow-media.s3.amazonaws.com/general-http/2011_live/h_06.gif.png'",
+      "curl -o public/images/ft_10.gif 'https://merrow-media.s3.amazonaws.com/general-http/2011_live/ft_10.gif'",
+      "curl -o public/images/ft_11.gif 'https://merrow-media.s3.amazonaws.com/general-http/2011_live/ft_11.gif'"
+    ]
+  },
+
+  "post_download": {
+    "description": "After download, update component constants to use local paths",
+    "changes": [
+      {
+        "file": "apps/merrow.com/app/page.tsx",
+        "find": "https://merrow-media.s3.amazonaws.com/general-http/2011_live/",
+        "replace": "/images/hero/"
+      },
+      {
+        "file": "apps/merrow.com/app/_components/Header.tsx",
+        "find": "https://merrow-media.s3.amazonaws.com/general-http/",
+        "replace": "/images/"
+      },
+      {
+        "file": "apps/merrow.com/app/_components/Footer.tsx",
+        "find": "https://merrow-media.s3.amazonaws.com/general-http/2011_live/",
+        "replace": "/images/"
+      }
+    ]
+  }
+}

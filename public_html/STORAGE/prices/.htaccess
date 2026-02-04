@@ -1,0 +1,10 @@
+
+AuthType Basic
+
+AuthName "merrow prices"
+
+AuthUserFile "/home/merrowco/.htpasswds/prices/passwd"
+
+
+require valid-user
+Options All -Indexes

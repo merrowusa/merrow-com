@@ -1,0 +1,15 @@
+
+# Contact info submission
+
+url: merrow.com/
+site_owner: Merrow Sewing Machine Co.
+address1: 11B Patterson Brook Rd.
+address2: 
+city: West Wareham 
+state: MA
+country: US
+postal_code: 02576
+phone_number: 1-800-431-6677, 508-295-8897
+display_email: charlie@merrow.com
+site_name: Merrow Sewing Machine Co.
+site_description: Since 1834, Manufacturer of Merrow sewing machines for embroidery, crochet, overlock and butt seaming applications

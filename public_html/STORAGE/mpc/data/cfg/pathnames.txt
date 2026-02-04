@@ -1,0 +1,17 @@
+$$SYSTEM=../..
+$$PRIVATE=/u/web/merrow/mpc/data
+$$COMMONDOCS=/u/httpd/cgi-docs/Mercantec/PC_F_6.6.1
+$$CFG=/u/web/merrow/mpc/data/cfg
+$$USR=..
+$$PRIVATEHTDOCS=/u/web/merrow/mpc/docs
+$$CGIBIN=/u/web/merrow/cgi-local/mpc
+$$SCRIPT=/u/web/merrow/mpc/data/scripts
+$$SESSION=/u/web/merrow/mpc/data/session
+$$DATA=/u/web/merrow/mpc/data/data
+$$DB=/u/web/merrow/mpc/data/data
+$$WATSITE=/u/web/merrow/mpc/data/SiteMgr
+$$WATSITEPUBLIC=/u/web/merrow/mpc/docs/SiteMgr
+$$CONFIGFILE=/u/web/merrow/mpc/data/cfg/DataAPI.cfg
+$$PUBLISHROOT=/u/web/merrow/mpc/docs/Site
+$$SITEPRIVATEHTDOCS=/u/web/merrow/mpc/docs
+$$DEFAULTDOC=/u/web/merrow/

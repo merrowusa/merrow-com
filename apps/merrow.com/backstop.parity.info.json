@@ -1,0 +1,152 @@
+{
+  "id": "merrow-com-parity",
+  "viewports": [
+    {
+      "label": "phone",
+      "width": 375,
+      "height": 667
+    },
+    {
+      "label": "tablet",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "label": "desktop-1440",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "label": "desktop-1920",
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "Homepage",
+      "referenceUrl": "https://www.merrow.com/",
+      "url": "${REFACTOR_PREVIEW_URL}/",
+      "delay": 2000,
+      "misMatchThreshold": 3,
+      "hideSelectors": [
+        ".google-analytics",
+        ".chat-widget",
+        ".cookie-banner",
+        "[data-testid='timestamp']"
+      ],
+      "removeSelectors": [
+        "script",
+        "noscript"
+      ]
+    },
+    {
+      "label": "About",
+      "referenceUrl": "https://www.merrow.com/about.html",
+      "url": "${REFACTOR_PREVIEW_URL}/about.html",
+      "delay": 2000,
+      "misMatchThreshold": 5,
+      "hideSelectors": [
+        ".google-analytics",
+        ".chat-widget",
+        ".cookie-banner"
+      ]
+    },
+    {
+      "label": "Agent Map",
+      "referenceUrl": "https://www.merrow.com/agentmap.html",
+      "url": "${REFACTOR_PREVIEW_URL}/agentmap.html",
+      "delay": 3000,
+      "misMatchThreshold": 10,
+      "hideSelectors": [
+        ".google-map",
+        ".map-container",
+        "#map",
+        "iframe[src*='google']",
+        ".google-analytics",
+        ".chat-widget"
+      ],
+      "removeSelectors": [
+        ".gm-style",
+        "[class*='map']"
+      ]
+    },
+    {
+      "label": "Fashion Sewing",
+      "referenceUrl": "https://www.merrow.com/ncp1.php?a=f",
+      "url": "${REFACTOR_PREVIEW_URL}/fashion-sewing",
+      "delay": 2000,
+      "misMatchThreshold": 5,
+      "hideSelectors": [
+        ".google-analytics",
+        ".chat-widget"
+      ]
+    },
+    {
+      "label": "Technical Sewing",
+      "referenceUrl": "https://www.merrow.com/ncp1.php?ncp=technical",
+      "url": "${REFACTOR_PREVIEW_URL}/technical-sewing",
+      "delay": 2000,
+      "misMatchThreshold": 5,
+      "hideSelectors": [
+        ".google-analytics",
+        ".chat-widget"
+      ]
+    },
+    {
+      "label": "End to End Seaming",
+      "referenceUrl": "https://www.merrow.com/ncp1.php?ncp=e2e",
+      "url": "${REFACTOR_PREVIEW_URL}/end-to-end-seaming",
+      "delay": 2000,
+      "misMatchThreshold": 5,
+      "hideSelectors": [
+        ".google-analytics",
+        ".chat-widget"
+      ]
+    },
+    {
+      "label": "Sergers MG3U Detail",
+      "referenceUrl": "https://www.merrow.com/machine_pop.php?cp=MG-3U",
+      "url": "${REFACTOR_PREVIEW_URL}/Sergers_and_Overlock_Sewing_Machines/MG-3U",
+      "delay": 2000,
+      "misMatchThreshold": 10,
+      "hideSelectors": [
+        ".google-analytics",
+        ".chat-widget"
+      ]
+    },
+    {
+      "label": "Support",
+      "referenceUrl": "https://www.merrow.com/support.html",
+      "url": "${REFACTOR_PREVIEW_URL}/support",
+      "delay": 2000,
+      "misMatchThreshold": 5,
+      "hideSelectors": [
+        ".google-analytics",
+        ".chat-widget"
+      ]
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/parity_reference",
+    "bitmaps_test": "backstop_data/parity_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/parity_report",
+    "ci_report": "backstop_data/parity_ci_report"
+  },
+  "report": ["browser", "CI"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 3,
+  "asyncCompareLimit": 20,
+  "debug": false,
+  "debugWindow": false,
+  "resembleOutputOptions": {
+    "ignoreAntialiasing": true,
+    "usePreciseMatching": false
+  }
+}

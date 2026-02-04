@@ -1,0 +1,12 @@
+<table width="100%" border="0" align="center" cellpadding="2" cellspacing="0" class="stafftable">
+  <tr> 
+    <td height="20" colspan="2" class="head">&nbsp;{LANG_SLOGIC_ANNOUNCEMENT}</td>
+  </tr>
+  <tr class="subhead"> 
+    <td height="17"><b>Subject:</b>&nbsp;{SUBJECT}</td>
+    <td height="17"><b>Date:</b>&nbsp;{SENT_DATE}</td>
+  </tr>
+  <tr> 
+    <td height="17" colspan="2">{CONTENT}</td>
+  </tr>
+</table>

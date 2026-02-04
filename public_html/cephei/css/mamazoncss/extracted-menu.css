@@ -1,0 +1,43 @@
+/* @override http://imerrow.com/amazon/menu.css */
+
+<style type="text/css">
+
+.indentmenu{
+font: small-caps 10px Arial;
+width: 100%;
+	background-image: url(file://localhost/Users/charliemerrow/Desktop/DEsktop%20to%20be%20sorted/globalAssets/imgHdrMainNavSearchBg.gif);
+}
+
+.indentmenu ul{
+margin: 0;
+padding: 0;
+float: left;
+width: 80%; /*width of menu*/
+border: 1px 0 none #564c66;
+background: black url(file://localhost/Users/charliemerrow/Desktop/DEsktop%20to%20be%20sorted/globalAssets/imgHdrMainNavSearchBg.gif) repeat-x;/indentbg.gif) repeat-x center center;
+}
+
+.indentmenu ul li{
+display: inline;
+}
+
+.indentmenu ul li a{
+float: left;
+color: #666; /*text color*/
+padding: 5px 11px;
+text-decoration: none;
+border-right: 2px solid #D5D5D5; /*dark purple divider between menu items*/
+}
+
+.indentmenu ul li a:visited{
+color: white;
+}
+
+.indentmenu ul li a:hover, .indentmenu ul li .current{
+color: rgba(0,64,132,0.6); /*text color of selected and active item*/
+padding-top: 6px; /*shift text down 1px for selected and active item*/
+padding-bottom: 4px; /*shift text down 1px for selected and active item*/
+background: black url(file://localhost/Users/charliemerrow/Desktop/DEsktop%20to%20be%20sorted/globalAssets/imgHdrMainNavSearchBg.gif) repeat-x center center;
+}
+
+</style>

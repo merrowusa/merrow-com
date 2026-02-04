@@ -1,0 +1,23 @@
+  #######################################
+  ### Help Center Live Module Install ###
+  #######################################
+
+  ### Install ###
+  To install osTicket, you will need to run the setup file
+  http://www.example.com/hcl/modules/osTicket/setup.php
+
+  Make sure the admin account has the same login information as an admin
+  account in HCL
+
+  The database does not need to be the same as your HCL installation
+  but you can keep it in the same database
+
+  ### Activate ###
+  Once the installation is complete, you will need to activate the module
+  by opening the /modules/ostTicket/hcl/config.php file and changing
+
+  $GLOBALS['conf']['modules']['osTicket']['active'] = false;
+
+  to
+
+  $GLOBALS['conf']['modules']['osTicket']['active'] = true;

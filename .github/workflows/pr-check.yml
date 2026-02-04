@@ -1,0 +1,79 @@
+# pr-check.yml
+# Dual-track enforcement: Parity PRs cannot touch /v3/ routes
+
+name: PR Check
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  dual-track-check:
+    name: Dual-Track Isolation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check dual-track isolation
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
+        run: |
+          # Check if any v3 files were modified
+          if git diff --name-only origin/main...HEAD | grep -q "apps/merrow.com/app/v3/"; then
+            # If v3 touched, PR title must contain [redesign]
+            if ! echo "$PR_TITLE" | grep -q "\[redesign\]"; then
+              echo "ERROR: Parity PR touches app/v3/"
+              echo ""
+              echo "Dual-track policy violation detected."
+              echo "  - Parity PRs (legacy parity work) CANNOT modify /v3/ routes"
+              echo "  - Use [redesign] prefix in PR title for redesign work"
+              echo ""
+              echo "Files in app/v3/ that were touched:"
+              git diff --name-only origin/main...HEAD | grep "apps/merrow.com/app/v3/"
+              echo ""
+              echo "Options:"
+              echo "  1. Add [redesign] prefix to PR title: '[redesign] Your PR title'"
+              echo "  2. Remove v3 changes from this PR and submit separately"
+              exit 1
+            else
+              echo "OK: Redesign PR - v3 changes allowed"
+            fi
+          else
+            echo "OK: No v3 files touched"
+          fi
+
+  gates:
+    name: Quality Gates
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: 'apps/merrow.com/package-lock.json'
+
+      - name: Install dependencies
+        working-directory: apps/merrow.com
+        run: npm ci
+
+      - name: Run gates (routes, links, seo, redirects)
+        working-directory: apps/merrow.com
+        run: |
+          npm run gate:routes
+          npm run gate:links
+          npm run gate:seo
+          npm run gate:redirects
+
+      - name: Run gate:data
+        working-directory: apps/merrow.com
+        env:
+          MERROW_SUPABASE_URL: ${{ secrets.MERROW_SUPABASE_URL }}
+          MERROW_SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.MERROW_SUPABASE_SERVICE_ROLE_KEY }}
+        run: npm run gate:data

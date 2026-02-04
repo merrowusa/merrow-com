@@ -1,0 +1,129 @@
+Support Logic Helpdesk 1.1
+**************************
+
+REQUIREMENTS:
+-------------
+general:
+	- linux OS
+	- apache webserver
+	- php 4.1.x
+	- MySQL
+
+file upload:
+	- access to webserver /tmp directory
+	- safe_mode Off
+
+email pipe:
+	- being able to setup an email pipe/forwarder for your domain
+
+
+INSTALL:
+--------
+pre-install steps:
+	- extract the archive to your desired directory via:
+	  tar -zxfv slogic1.0.tar.gz or download to your machine and extract locally 
+	  before uploading via FTP if you prefer
+	- create a MySQL database and add a MySQL user to it
+	- make the "config.php" file writeable by the webserver, e.g.: chmod 666 or 777
+	
+install:
+	- access "install.php" through your browser and follow the steps
+	- if you receive any kind of error afterwards, check you have followed the 
+	  pre-install steps above correctly!
+	
+post-install steps:
+	- delete "install.php"
+	- delete all "update*.php" files, unless you need to update the helpdesk - refer to "UPDATE"
+	- change "config.php" back from being writeable, e.g.: chmod 644
+	- login to admin.php 
+	- create at least 2 staff members (to avoid errors - you will get an error 
+	if you only create 1)! 
+	- create a user (useful to test the user part of the script) 
+	- change the preset categories 
+	- change the preset priorities 
+	- change the preset email & pipe messages
+	- send some test user tickets and add some staff responses to get used to 
+	how the script works
+	- use your new helpdesk with your clients! 
+
+
+TESTING:
+--------
+- access admin.php for the admin frontend
+- access staff.php for the staff frontend
+- access index.php for the user frontend
+
+if none of the above show any kind of errors, then the install went successfully 
+and you can start using the helpdesk.
+
+
+UPDATE:
+-------
+If you have version 1.0,1.1 or 1.1.1 installed then you can run one of the available update*_1.2.php scripts in order to keep your database data.
+
+Make sure to create a backup file of your MySQL database before running the update script, in order to avoid any data loss in case
+the update fails.
+
+
+NEW FEATURES: (see CHANGELOG for version changes - fixed & added features)
+------------
+improved email pipe 
+	- support for multiple email addresses, which can be assigned to ticket categories in admin area -> Categories
+	- improved email client support for plain text & HTML only emails 
+	- added attachment support for most common attachment types 
+	- default email pipe priority can be changed in the admin area -> Config
+	- max email limit on a per user & per day basis can be set in the admin area in order to avoid email floods -> Config
+
+self-defineable placeholders 
+	- you can assign a placeholder for announcements-, tickets- and the notes content (e.g.: add your own smilies and assign placeholders for them) 
+	  EXAMPLE: 	access the admin section and click on "Placeholders" in "Ticket Menu". Now add ":D" (without the "") in the "placeholder"
+	  		field and add "<img src="http://www.support-logic.com/demo/smilies/biggrin.gif">" (without the framing "") in the
+	  		"Replacement String" field.
+	  		Now every ":D" in every announcements-, ticket- and notes content will be replaced with the image.
+
+staff signature 
+	- staff members can create a signature, which gets displayed at the end of each ticket note -> Edit Profile
+
+predefined responses 
+	- staff members can save predefined responses, which can be selected to be used instead of a self-written note -> Quick replies 
+
+change priority 
+	- users are now able to change the priority of a ticket at any time on the "Show Ticket content" page
+
+HTML Tags support 
+	- admin can define HTML tags, which are allowed in the announcements-, tickets- and notes content -> Config
+
+Template system 
+	The template system now uses the new header & footer style by default, so older template files are incompatible with the default install.
+	You can change the used template system during the install process or by changing it in the admin section -> Config
+	- new design for all areas (admin, staff & user) 
+	- added several colour schemes to choose from (see downloads section at http://www.support-logic.com for additional colour schemes)
+	- added header & footer support 
+	  the header & footer files can be found in 
+	  	modules/admin/slogic/templates/functions/slogic_header.tpl
+	  	modules/admin/slogic/templates/functions/slogic_footer.tpl
+	  	
+	  	modules/staff/slogic/templates/functions/slogic_header.tpl
+	  	modules/staff/slogic/templates/functions/slogic_footer.tpl
+	  	
+	  	modules/users/slogic/templates/functions/slogic_header.tpl
+	  	modules/users/slogic/templates/functions/slogic_footer.tpl
+					  	
+	- the design can now be changed through 1 CSS file per area, which is located in
+		modules/admin/slogic/templates/stylesheet.css
+		modules/staff/slogic/templates/stylesheet.css
+		modules/users/slogic/templates/stylesheet.css
+	
+
+CONTACT:
+--------
+Feel free to contact me directly by email hendrik@support-logic.com or visit 
+www.support-logic.com to post about bugs, feature requests, new modules etc ...
+
+Feel free to email marie@support-logic.com for help with and advice on editing 
+the headers and footers and/or stylesheets.
+
+Please submit your site via "Web Links" -> "Add Link" at www.support-logic.com
+and I will add your site.
+
+... Hendrik Daldrup

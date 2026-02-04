@@ -1,0 +1,90 @@
+{
+  "id": "merrow-com-parity-strict",
+  "viewports": [
+    {
+      "label": "phone",
+      "width": 375,
+      "height": 667
+    },
+    {
+      "label": "tablet",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "label": "desktop-1440",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "label": "desktop-1920",
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "Legacy vs Refactor — Header (Homepage)",
+      "referenceUrl": "https://www.merrow.com/",
+      "url": "${REFACTOR_PREVIEW_URL}/",
+      "delay": 2000,
+      "misMatchThreshold": 3,
+      "selectors": [".new_menu"],
+      "selectorExpansion": false,
+      "hideSelectors": [
+        ".google-analytics",
+        ".chat-widget",
+        ".cookie-banner",
+        ".promo-bar",
+        ".alert-bar"
+      ],
+      "removeSelectors": [
+        "script",
+        "noscript"
+      ],
+      "requireSameDimensions": false
+    },
+    {
+      "label": "Legacy vs Refactor — Footer (Homepage)",
+      "referenceUrl": "https://www.merrow.com/",
+      "url": "${REFACTOR_PREVIEW_URL}/",
+      "delay": 2000,
+      "misMatchThreshold": 3,
+      "selectors": ["viewport"],
+      "selectorExpansion": false,
+      "hideSelectors": [
+        ".google-analytics",
+        ".chat-widget",
+        ".cookie-banner",
+        "iframe"
+      ],
+      "removeSelectors": [
+        "script",
+        "noscript"
+      ],
+      "requireSameDimensions": false
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/parity_strict_reference",
+    "bitmaps_test": "backstop_data/parity_strict_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/parity_strict_report",
+    "ci_report": "backstop_data/parity_strict_ci_report"
+  },
+  "report": ["browser", "CI"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 3,
+  "asyncCompareLimit": 20,
+  "debug": false,
+  "debugWindow": false,
+  "resembleOutputOptions": {
+    "ignoreAntialiasing": true,
+    "usePreciseMatching": false
+  }
+}

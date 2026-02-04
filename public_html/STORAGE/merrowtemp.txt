@@ -1,0 +1,22 @@
+To:info@merrow.com
+From: [email]      
+Subject: web page request
+                                              
+My name is: [yourname]
+My title is:  [title]           
+I am from:  [organization]
+Our address is:  [street] 
+City:  [city] 
+State:  [state] 
+Postal Code:  [postal_code]
+Country:  [country]  
+Our Phone # is:  [phone] 
+Our fax # is:  [faxnumber] 
+My e mail address is:  [email] 
+My question or comment:  [note_request] 
+Contact me via telephone?  [telephone] 
+Contact me via fax?  [fax] 
+Contact me via e mail?  [e-mail] 
+Contact me via regular mail?  [regularmail] 
+No contact at this time?  [no_contact] 
+Send literature to me?  [send_literature] 

@@ -1,0 +1,468 @@
+
+#nav-coverage-checker { margin: 0 0 0 6px;}
+#navigation .iphonebox .modulecontent p.more { margin: 0; padding: 0 12px 8px;}
+#primary .tab-top dl.product dt.name a {
+	color: #333;
+}
+#primary .tab-top dl.product dt.name a:hover {
+	text-decoration: none;
+	color: #0085cf;
+}
+.tab-controller li a.active:hover { background-position: 100% 0; }
+.tab-controller li.left a.active:hover { background-position: 0 0; }
+.sub-department #primary .module_top {
+	background: transparent url(../layout/primary-top.png) no-repeat;
+	border: 0;
+	height: 4px;
+}
+.sub-department #primary #promo-bar .module_top {
+	background: transparent url(../layout/primary-top-with-content.png) no-repeat;
+	border-bottom:1px solid #CFCFCF;
+	height:auto;
+}
+
+#navigation .modulecontent a img {
+	float: none;
+	margin: 20px auto 0;
+}
+
+#aos-page #navigation .footerblock a img {
+	display: block;
+}
+
+#secondary .modulecontent img.sd_accent { /* clock img */
+	margin: -25px 2px 0 0;
+	float: right;
+}
+#navigation .footerblock .modulecontent p.number {
+	color: #000;
+}
+
+/* Family Module */
+
+
+
+.department ul#family-ipod { margin-left: 26px; }
+.home #primary #aos_family ul#family-ipod {
+	width: auto;
+}
+ul#family-mac,
+ul#family-ipod,
+ul#family-iphone,
+ul#family-servers {
+	border-top: 1px solid #cdcdcd;
+	margin: 0 0 2px 19px;
+	padding: 0;
+	float: left;
+	position: relative;
+	width: 590px;
+	line-height: 14px;
+	min-height: 156px;
+	height: auto !important;
+	height: 156px;
+	white-space: nowrap;
+}
+* html .home ul#family-ipod {
+	margin-left: 12px;
+}
+* html .home ul#family-mac {
+	margin-left: 10px;
+}
+* html .department ul#family-ipod {
+	margin-left: 14px;
+}
+ul#family-mac {
+	clear: both;
+	margin-right: -1px;
+}
+/* Begin clear fix */
+	ul#family-mac:after,
+	ul#family-ipod:after,
+	ul#family-iphone:after,
+	ul#family-servers:after {
+		content: "."; 
+		display: block; 
+		height: 0; 
+		clear: both; 
+		visibility: hidden;
+	}
+	
+	ul#family-mac,
+	ul#family-ipod,
+	ul#family-iphone,
+	ul#family-servers {display: inline-block;}
+	
+	/* Hides from IE-mac \*/
+	* html ul#family-mac,
+	* html ul#family-ipod,
+	* html ul#family-iphone,
+	* html ul#family-servers {height: 1%;}
+	ul#family-mac,
+	ul#family-ipod,
+	ul#family-iphone,
+	ul#family-servers {display: block;}
+	/* End hide from IE-mac */
+
+/* End clearfix */
+
+.department ul#family-mac,
+.department ul#family-ipod {
+	margin-bottom: 0;
+	min-height: 141px;
+	height: auto !important;
+	height: 141px;
+}
+ul#family-servers {
+	border-bottom: 1px solid #cdcdcd;
+	margin-bottom: 0;
+	min-height: 130px;
+	height: auto !important;
+	height: 130px;
+}
+ul#family-mac.first-row,
+ul#family-ipod.first-row,
+ul#family-iphone.first-row,
+ul#family-servers.first-row {
+	border-top: 0;
+}
+ul#family-mac.last-row,
+ul#family-ipod.last-row,
+ul#family-iphone.last-row,
+ul#family-servers.last-row {
+	border-top: 0;
+	padding-top: 10px;
+}
+.home #primary ul#family-ipod.hc {
+	margin-left: 0;
+	width: auto;
+}
+ul#family-iphone,
+.home #aos_family ul#family-iphone {
+	width: auto;
+}
+* html ul#family-iphone {
+	margin-left: 6px;
+}
+ul#family-mac a,
+ul#family-ipod a,
+ul#family-iphone a,
+ul#family-servers a,
+ul#family-mac em,
+ul#family-ipod em,
+ul#family-iphone em,
+ul#family-servers em {
+	float: left;
+	display: block;
+	padding: 20px 10px 2px;
+	position: relative;
+	color: #666;
+	font-size: 11px;
+	font-style: normal;
+}
+*+html ul#family-mac a,
+*+html ul#family-ipod a,
+*+html ul#family-iphone a,
+*+html ul#family-servers a,
+*+html ul#family-mac em,
+*+html ul#family-ipod em,
+*+html ul#family-iphone em,
+*+html ul#family-servers em {
+	padding-left: 12px;
+	padding-right: 12px;
+}
+* html ul#family-mac a,
+* html ul#family-ipod a,
+* html ul#family-iphone a,
+* html ul#family-servers a,
+* html ul#family-mac em,
+* html ul#family-ipod em,
+* html ul#family-iphone em,
+* html ul#family-servers em {
+	padding-left: 11px;
+	padding-right: 13px;
+}/*
+ul#family-mac span,
+ul#family-ipod span,
+ul#family-iphone span,
+ul#family-servers span {
+	position: relative;
+	float: left;
+}*/
+ul#family-mac .first a {
+	padding-left: 0;
+}
+ul#family-mac em,
+ul#family-ipod em,
+ul#family-iphone em,
+ul#family-servers em {
+	padding-top: 17px;
+}
+ul#family-mac em,
+ul#family-ipod em,
+ul#family-iphone em,
+ul#family-servers em {
+	filter: alpha(opacity=50);
+	-moz-opacity: .50;
+	opacity: .50;
+}
+.department ul#family-mac a,
+.department ul#family-ipod a,
+.department ul#family-mac em,
+.department ul#family-ipod em {
+	padding-top: 11px;
+}
+ul#family-mac .last a,
+ul#family-mac .last em {
+	padding-left: 5px;
+	padding-right: 0;
+}
+ul#family-ipod a,
+ul#family-ipod em {
+	padding-left: 14px;
+	padding-right: 14px;
+}
+* html ul#family-ipod a,
+* html ul#family-ipod em {
+	padding-left: 24px;
+	padding-right: 24px;
+}
+.department ul#family-ipod a,
+.department ul#family-ipod em {
+	padding-left: 14px;
+	padding-right: 16px;
+}
+*+html .department ul#family-ipod a,
+*+html .department ul#family-ipod em,
+* html .department ul#family-ipod a,
+* html .department ul#family-ipod em {
+	padding-left: 14px;
+	padding-right: 18px;
+}
+*+html ul#family-ipod a,
+*+html ul#family-ipod em,
+* html ul#family-ipod a,
+* html ul#family-ipod em {
+	padding-left: 26px;
+	padding-right: 26px;
+}
+ul#family-ipod .first a,
+ul#family-ipod .first em {
+	padding-left: 10px;
+	padding-right: 16px;
+}
+.department ul#family-ipod .first a,
+.department ul#family-ipod .first em {
+	padding-left: 0;
+	padding-right: 16px;
+}
+ul#family-ipod .last a,
+ul#family-ipod .last em {
+	border-left: 1px solid #cdcdcd;
+	margin-left: 4px;
+	padding-left: 25px;
+	padding-right: 5px;
+}
+.department ul#family-ipod .last a,
+.department ul#family-ipod .last em {
+	padding-right: 0;
+}
+*+html .department ul#family-ipod .last a,
+*+html .department ul#family-ipod .last em,
+* html .department ul#family-ipod .last a,
+* html .department ul#family-ipod .last em {
+	padding-left: 26px;
+}
+ul#family-ipod.hc a,
+ul#family-ipod.hc em {
+	padding-right: 14px;
+	padding-left: 4px;
+}
+ul#family-ipod.hc .first a,
+ul#family-ipod.hc .first em {
+	padding-left: 20px;
+	padding-right: 9px;
+}
+ul#family-ipod.hc .last a,
+ul#family-ipod.hc .last em {
+	border-left: 1px solid #cdcdcd;
+	margin-left: 8px;
+	padding-left: 20px;
+	padding-right: 2px;
+}
+ul#family-iphone a,
+ul#family-iphone em {
+	margin-right: 0;
+	border-right: 1px solid #cdcdcd;
+	padding-left: 4px;
+	padding-right: 15px;
+}
+*+html ul#family-iphone a,
+*+html ul#family-iphone em {
+	padding-right: 15px;
+}
+* html ul#family-iphone a,
+* html ul#family-iphone em {
+	padding-right: 15px;
+}
+ul#family-iphone a img,
+ul#family-iphone em img {
+	padding-left: 0;
+}
+ul#family-mac a strong,
+ul#family-ipod a strong,
+ul#family-iphone a strong,
+ul#family-servers a strong,
+ul#family-mac em strong,
+ul#family-ipod em strong,
+ul#family-iphone em strong,
+ul#family-servers em strong {
+	display: block;
+	color: #000;
+}
+ul#family-mac a:hover,
+ul#family-ipod a:hover,
+ul#family-iphone a:hover,
+ul#family-servers a:hover {
+	text-decoration: none;
+}
+ul#family-mac a:hover strong,
+ul#family-ipod a:hover strong,
+ul#family-iphone a:hover strong,
+ul#family-servers a:hover strong {
+	color: #0085CF;
+}
+ul#family-mac span span {
+	position: static;
+	float: none;
+}
+ul#family-mac span span.price,
+ul#family-ipod span span.price,
+ul#family-iphone span span.price,
+ul#family-servers span span.price {
+	display: block;
+	clear: both;
+	margin-right: -200px; /* avoid wrapping for long titles */
+}
+ul#family-mac a span.imac_title {
+	display: block;
+	margin-left: 14px;
+}
+body.home ul#family-mac a,
+body.home ul#family-ipod a,
+body.home ul#family-iphone a,
+body.home ul#family-servers a,
+body.home ul#family-mac em,
+body.home ul#family-ipod em,
+body.home ul#family-iphone em,
+body.home ul#family-servers em {
+	padding-bottom: 11px;
+}
+
+/* Family Violators */
+.new-icon { display: none; position: absolute; }
+.home #family-prod-iphone .new-icon { display:block; top: 6px; }
+.home #family-prod-shuffle .new-icon { top: 61px; }
+.home #family-prod-nano .new-icon { top: 35px; }
+.home #family-prod-classic .new-icon { top: 12px; }
+.home #family-prod-touch .new-icon { top: 6px; }
+.home #family-prod-appletv .new-icon { top: 8px; }
+
+.home #family-prod-macbook .new-icon { top: 45px; margin-left: 9px; }
+.home #family-prod-macbookair .new-icon { top: 49px; margin-left: 11px; }
+.home #family-prod-macbookpro .new-icon { top: 44px; margin-left: 9px; }
+.home #family-prod-macmini .new-icon { top: 80px; }
+.home #family-prod-imac .new-icon { top: 10px; margin-left: 1px; }
+.home #family-prod-macpro .new-icon { top: 14px; }
+
+.department #family-prod-shuffle .new-icon { top: 63px; }
+.department #family-prod-nano .new-icon { top: 27px; }
+.department #family-prod-classic .new-icon { top: 3px; }
+.department #family-prod-touch .new-icon { top: -4px; }
+.department #family-prod-appletv .new-icon { top: 3px; }
+
+.department #family-prod-macbook .new-icon { top: 37px; margin-left: 9px; }
+.department #family-prod-macbookair .new-icon { top: 40px; margin-left: 11px; }
+.department #family-prod-macbookpro .new-icon { top: 36px; margin-left: 9px; }
+.department #family-prod-macmini .new-icon { top: 71px; }
+.department #family-prod-imac .new-icon { top: 2px; margin-left: 1px; }
+.department #family-prod-macpro .new-icon { top: 5px; }
+
+/* Promotions Banners */
+h2.promos {
+	display: none;
+}
+#aos_promos {
+	margin-left: 1px;
+}
+#aos_promos li {
+	display: inline;
+	margin-right: 6px;
+	margin-bottom: 9px;
+	float: left;
+	line-height: 1em;
+}
+#aos_promos li.last {
+	display: inline;
+	margin-right: 0;
+}
+.banner-grid {
+	margin: 0 0 8px 0;
+	padding: 0;
+}
+.banner-grid li {
+	display: inline;
+}
+.banner-grid li.middle {
+	margin: 0 8px;
+}
+
+/* More Promos */
+.module ul#more_promos li {
+	display: inline;
+	float: left;
+	padding: 1em 0 0;
+	border-right: 1px solid #cbced0;
+	width: 207px;
+	min-height: 172px;
+	position: relative;
+}
+.module ul#more_promos li.first {
+	width: 210px;
+}
+.module ul#more_promos li.last {
+	border-right: 0;
+	width: 200px;
+}
+.module ul#more_promos li h3 {
+	margin: 0 25px .25em;
+	font-weight: bold;
+	font-size: 1.1em;
+	line-height: 1.25em;
+	color: #000;
+}
+.module ul#more_promos li h3 a {
+	color: #000;
+}
+.module ul#more_promos li p,
+.module ul#more_promos li img {
+	margin: 5px 25px 0 25px;
+	font-size: .95em;
+	line-height: 1.375em;
+}
+.module ul#more_promos li img {
+	position: absolute;
+	bottom: 0;
+}
+.module ul#more_promos li.first h3,
+.module ul#more_promos li.first p,
+.module ul#more_promos li.first img {
+	margin-left: 15px;
+}
+.module ul#more_promos li.last h3,
+.module ul#more_promos li.last p,
+.module ul#more_promos li.last img {
+	margin-right: 15px;
+}
+
+
+

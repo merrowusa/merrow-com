@@ -1,0 +1,59 @@
+/* @override http://merrow.com/cephei/css/css_major/cs_interactive_form.css */
+
+hr.pme-hr		     { border: 0px solid; padding: 0px; margin: 0px; border-top-width: 1px; height: 1px; }
+	table.pme-main 	     { border-collapse: collapse; border-spacing: 0px; width: 970px;
+	margin-top: 20px;
+	border-width: 1px;
+	border-color: #004d9c;
+}
+	table.pme-navigation { border-collapse: collapse; border-spacing: 0px; width: 100%;
+	border-width: 0px;
+	border-color: #004d9c;border-right: 1px dotted silver;
+}
+	td.pme-navigation-0, td.pme-navigation-1 { white-space: nowrap; }
+	th.pme-header	     { padding: 4px; background: #f4f4ee;
+	color: white;
+	border-width: 1px;
+	border-right: 1px dotted silver;
+}
+
+a.pme-header {
+	color: #2b88c2;
+	font: 18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-transform: lowercase;
+	text-align: left;
+}
+
+td.pme-cell-1 {
+	color: #413833;
+	background-color: #edebe9;
+	font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-align: justify;
+	border-right: 1px dotted orange;
+}
+td.pme-cell-0 {
+	color: #de6342;
+	background-color: #edebe9;
+	font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-align: justify;
+}
+	td.pme-key-0, td.pme-value-0, td.pme-help-0, td.pme-navigation-0, td.pme-cell-0,
+	td.pme-key-1, td.pme-value-1, td.pme-help-0, td.pme-navigation-1, td.pme-cell-1,
+	td.pme-sortinfo, td.pme-filter { border: 1px none #004d9c; padding: 3px;
+	border-bottom: 1px dotted orange;
+	border-right: 1px dotted silver;
+	
+}
+
+td.pme-sortinfo {
+	font: 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-transform: lowercase;
+}
+	td.pme-buttons { text-align: left;   }
+	td.pme-message { text-align: center; }
+	td.pme-stats   { text-align: right;  }
+
+tr.pme-header {
+	color: orange;
+	background-color: silver;
+}

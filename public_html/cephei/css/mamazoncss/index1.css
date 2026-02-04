@@ -1,0 +1,385 @@
+/* @override http://merrow.com/cephei/css/index.css */
+
+@import url('/global/styles/slider.css');
+
+/* GRID */
+.grid3cola .column { width: 582px; margin-left: 15px; }
+.grid3cola .column.first,
+.grid3cola .column.last { width: 184px; }
+.grid3cola .grid3col .column { width: 32%; margin-left: 14px; }
+
+/* MAIN */
+#main h3 { font-size: 13px; color: #333; font-weight: normal; word-spacing: -0.1em; }
+#main a:link,
+#main a:visited { color: #2971a7; text-decoration: none; }
+#main a:hover { text-decoration: underline; }
+#main .more { padding-right: 9px; background: url(http://images.imerrow.com/images/mapple/morearrow.png) 100% 0.4em no-repeat; white-space: nowrap; _white-space: normal; _display: inline-block; }
+#main .morenew { padding-right: 55px; background: url(/iphone/images/morenew20080130.gif) 100% no-repeat; white-space: nowrap; _white-space: normal; _display: inline-block; }
+
+
+#main .sidebar { font-size: 11px; color: #666; }
+#main .sidebar p,
+#main .sidebar ul,
+#main .sidebar h4 { font-size: 11px; line-height: 14px; }
+#main .sidebar p,
+#main .sidebar ul { margin-bottom: 1em; *margin-bottom: 1.4em; }
+
+/* CONTENT */
+#content { padding: 0; }
+
+/* BOXES */
+#main .box { background: url(http://images.imerrow.com/images/mapple/box_582bgrep.png) repeat-y; position: relative; }
+#main .sidebar .box.dark { background: url(http://images.imerrow.com/images/mapple/index_boxbg20070905.png) no-repeat 0 100%; }
+#main .sidebar .box a.last { margin-bottom: -10px; display: block; position: relative; height: 25px; width: 100%; padding-top: 10px; background: url(http://images.imerrow.com/images/mapple/box_ruleinsetblue20070905.png) no-repeat 50% 15%; }
+#main .sidebar .box a.morelast { padding-right: 9px; background: url(http://images.imerrow.com/images/mapple/morearrow.png) 100% 0.4em no-repeat; position: absolute; right: 15px; }
+#main .sidebar .box h3#last { margin-bottom: -10px; padding-top: 24px; background: url(http://images.imerrow.com/images/mapple/box_ruleinsetblue20070905.png) no-repeat 50% 15%; margin-top: 10px;}
+#main .sidebar .box h3#lastblue { margin-bottom: -10px; padding-top: 24px; background: url(http://images.imerrow.com/images/mapple/box_ruleinsetblue20070905.png) no-repeat 50% 15%; margin-top: 25px;}
+
+#main .sidebar .box p.last {margin-bottom: 5px;}
+#main .box h2 { background: url(http://images.imerrow.com/images/mapple/boxtopblue.png) no-repeat top left; color: #fff; font-size: 12px; font-weight: normal; height: 25px; line-height: 25px; margin-bottom: 0; padding: 0 0 0 12px; }
+#main .box h2 a { color: #fff; display: block; position: relative; height: 25px; width: 100%; background: url(http://images.imerrow.com/images/mapple/box_linkarrow.png) 97.5% 50% no-repeat; _background-image: url(http://images.imerrow.com/images/mapple/box_linkarrow.gif); }
+#main .box h2 a.right { color: #fff; display: block; float: right; margin-right: -9px; height: 25px; width: 100%; background: url(http://images.imerrow.com/images/mapple/box_linkarrow.png) 97.5% 50% no-repeat; _background-image: url(http://images.imerrow.com/images/mapple/box_linkarrow.gif); }
+#main .box h2 a.none { display: block; position: relative; height: 25px; width: 100%; background: none }
+#main .box h2 a:hover { text-decoration: none; }
+
+#main .padder { padding: 0 15px; }
+#main .boxcap { height:5px; width:100%; position:absolute; z-index:100; bottom:0; _bottom: -10px; left: 0; background: url(http://images.imerrow.com/images/mapple/box_582capbottom.png) no-repeat; behavior:url(/nebula/scripts/iepngfix.htc); }
+#main .sidebar .boxcap { background: url(http://images.imerrow.com/images/mapple/box_184capbottom.png) no-repeat; }
+#main .sidebar .captop { bottom: auto; top: 0; background-image: url(http://images.imerrow.com/images/mapple/box_184captop.png); }
+
+/* DRAWERS */
+#main ul.drawers { margin: 0; }
+#main .slider .drawer-handle { color: #333; font-size: 12px; padding: 5px 0; text-indent: 15px; width: 100%; background: #939393 url(http://images.imerrow.com/images/mapple/slider_handlebg.png) 0 0 no-repeat; cursor: default; }
+#main .slider .drawer-content { display: block;  height:auto; }
+#main .slider h3.open { background-color: #72839d; background-position: -184px 0; color: #fff; }
+#main .drawercap { height: 5px; width: 184px; position: absolute; z-index: 100; bottom: 0; _bottom: -10px; left: 0; background: url(http://images.imerrow.com/images/mapple/slider_capbottom.png) no-repeat; behavior:url(/nebula/scripts/iepngfix.htc); }
+
+/* FEATURES */
+#features { min-height: 502px; *height: 497px; margin-bottom: 16px; }
+#features .padder { padding: 1.15em 15px 1.5em; background: url(http://images.imerrow.com/images/mapple/box_ruleinset.png) no-repeat 50% 0; }
+
+/* FEATURES NAV */
+#features ul#feature-nav { margin: 0 1px; padding: 15px 11px 5px; _padding-top: 12px; }
+#features li { margin-bottom: 8px; }
+#features ul#feature-nav li { margin-bottom: 8px; }
+#features li a { height: 28px; }
+#features li#phone a { text-indent: -9999px; height:32px; background: url(http://images.imerrow.com/images/mapple/index_features_phone20071018.gif) no-repeat 0 0; display: block; overflow: hidden; }
+#features li#ipod a { text-indent: -9999px; height:32px; background: url(http://images.imerrow.com/images/mapple/index_features_ipod20071018.gif) no-repeat 0 0; display: block; overflow: hidden; }
+#features li#internet a { text-indent: -9999px; height: 32px; background: url(http://images.imerrow.com/images/mapple/index_features_internet20071018.gif) no-repeat 0 0; display: block; overflow: hidden; }
+#features li#tech a { text-indent: -9999px; height: 32px; background: url(http://images.imerrow.com/images/mapple/index_features_technology20071018.gif) no-repeat 0 0; display: block; overflow: hidden; }
+#features li#phone a:hover,
+#features li#phone a.active { background-position:0 100%; }
+#features li#ipod a:hover,
+#features li#ipod a.active { background-position:0 100%; }
+#features li#internet a:hover,
+#features li#internet a.active { background-position:0 100%; }
+#features li#tech a:hover,
+#features li#tech a.active { background-position:0 100%; }
+#features ul#feature-nav2 { margin: 0; padding: 1.3em 14px; background: url(http://images.imerrow.com/images/mapple/box_ruleinset.png) no-repeat 50% 0; }
+#features ul#feature-nav2 li.pdf { font-size: 10px; background: none; padding-left: 0; }
+#features ul#feature-nav2 li a { font-size: 11px; _height: auto; }
+#features ul#feature-nav2 li strong,
+#features ul#feature-nav2 li strong a { display: block; font-size: 13px; color: #333; font-weight: normal; height: 18px; white-space: nowrap; overflow: hidden; }
+#features ul#feature-nav2 li strong a:hover {  color: #000; text-decoration: none; }
+#features ul#feature-nav2.provider { padding:1.2em 12px .6em;}
+#features ul#feature-nav2.provider img { margin:3px 0 3px 42px; }
+#features ul#feature-nav2 img.new { position:absolute; left: 140px; margin-top: 1px; width: 27px; z-index:100; }
+
+
+
+/* ITUNES */
+#itunes { position: relative; z-index: 20; min-height: 230px; *height: 230px; margin-bottom: 15px; }
+#itunes .padder { padding-top: 1.2em; }
+#itunes a.downloaditunes { padding: 100px 0 10px; background: url(http://images.imerrow.com/images/mapple/iphone_itunes7_20070621.jpg) no-repeat 50% 0; display: block; }
+
+/* GETTING STARTED */
+#main #gallery { min-height: 553px; *height: 500px; background:url(http://images.imerrow.com/images/mapple/box_184bgrep.png); }
+#gallery .shingles { margin: 0 1px; position: relative; overflow: hidden; }
+#gallery .shingles li { display: block; z-index: 1; width: 100%; }
+#gallery .shingles img.photo { display: block; margin: 2px 3px -10px 3px; }
+#gallery .shingles .handle { display: block; padding: 16px 15px 8px; height: 73px; margin-bottom: -6px; background: url(http://images.imerrow.com/images/mapple/shingles_handlebg.png) -184px 100% no-repeat; overflow: hidden; _margin-bottom: -3px; }
+#gallery .shingles .handle:hover { text-decoration: none; }
+#gallery .shingles .handle strong { display: block; font-size: 13px; color: #333; font-weight: normal; height: 18px; white-space: nowrap; overflow: hidden; }
+#gallery .shingles .handle .description { margin-bottom: 5px; color: #333; height: 28px; overflow: hidden; line-height: 14px; }
+#gallery .shingles .handle .more { color: #2971a7; _zoom: 1; }
+#gallery .shingles li.obscured .handle { background-position: 0 100%; }
+#gallery .shingles li.obscured .handle .description { color: #666; }
+#gallery .shingles li.first .handle strong { padding: 0; }
+#gallery .shingles li.last .handle { padding-bottom: 9px; _padding-bottom: 5px; }
+
+/* SHOWCASE */
+#showcase { min-height:502px; overflow: hidden; margin-bottom:16px; position: relative; }
+#showcase .promo { float: left; width: 188px; height: 110px; }
+#showcase .column.promo { margin-left: 9px; }
+#showcase .leadpromo { clear: both; width: 582px; height: 380px; margin-bottom: 10px; }
+#showcase .leadpromolarge { clear: both; width: 585px; height: 500px; /*margin-bottom: 10px;*/ }
+#showcase .last { _width: 184px !important; _float: right !important; }
+#showcase .leadpromo { _margin: 0; }
+
+#showcase #sdk_img { position: absolute; top:415px; left:20px; }
+#showcase #sdk_img p {margin-left: 80px; margin-top: -46px; color: #000; font-weight: bold; font-size: 12px;}
+#showcase #enterprise_img { position: absolute; top:419px; left:290px; }
+#showcase #enterprise_img p {margin-left: 132px; margin-top: -38px; color: #000; font-weight: bold; font-size: 12px;}
+
+#showcase #keynote_img { position: absolute; top:378px; left:49px; }
+#showcase #keynote_img p {margin-left: -20px; margin-top: -2px; color: #000; font-weight: bold; font-size: 12px;}
+#showcase #sdkwithkeynote_img { position: absolute; top:368px; left:239px; }
+#showcase #sdkwithkeynote_img p {margin-left: -22px; margin-top: 2px; color: #000; font-weight: bold; font-size: 12px;}
+#showcase #enterprisewithkeynote_img { position: absolute; top:389px; left:412px; }
+#showcase #enterprisewithkeynote_img p {margin-left: 8px; margin-top: 10px; color: #000; font-weight: bold; font-size: 12px;}
+
+
+/* LATEST */
+#latest { height: auto; min-height: 502px; *height: 496px; _height: 494px; margin-bottom:16px; position: relative; overflow: hidden; _width: 184px; }
+#latest .drawers .drawer-content { width: 184px; min-height: 389px; *height: 341px; *min-height: 410px; } /*TODO: fix IE height*/
+#main #latest ul.padder { margin-bottom:0;}
+#latest .padder li { min-height:84px; padding:20px 0 18px; background: url(http://images.imerrow.com/images/mapple/box_ruleinset.png) no-repeat 50% 100%; }
+#latest .padder li.last { background-image: url(http://images.imerrow.com/images/mapple/box_ruleinset_blue.png); }
+#latest .padder img { margin:0;}
+#latest .padder span { display:block; margin:10px 0 0 48px; font-size:12px; font-weight:bold; }
+#latest .padder span strong { display:block; margin-bottom:6px; color:#333; }
+#latest .padder a { font-size:11px; font-weight:normal; }
+#latest .padder a.viewall { float:right; margin-top:5px; }
+
+/* TOP LISTS */
+#latest .toplist { margin: 0; }
+#latest .toplist li { margin: 0; padding: 0 13px; list-style-type: none; background: url(http://images.imerrow.com/images/mapple/box_ruleinset.png) 50% 0 no-repeat; }
+#latest .toplist a { display: block; padding: 8px 15px 8px 0; overflow: hidden; background: url(http://images.imerrow.com/images/mapple/box_linkarrowgrey.png) no-repeat; behavior:url(/nebula/scripts/iepngfix.htc); }
+#latest .toplist a:link,
+#latest .toplist a:visited { color: #666; }
+#latest .toplist a:hover { text-decoration: none; background-position: -184px 0; }
+#latest .toplist a strong { color: #333; }
+#latest .toplist a span { display: block; width: 135px; *width: 100px; }
+#latest .toplist .first { background: none; padding-top: 8px; }
+#latest .toplist .first a { padding-bottom: 10px; }
+#latest .toplist .first a:hover { background-position: -184px 0; }
+#latest .toplist .first img.left { float: left; margin: 0 8px 8px 0; }
+#latest .toplist .first strong { height: 1.8em; overflow: hidden; }
+
+/* TOPDISCUSSIONS */
+#main #topdiscussions ol { padding:0 5px 0 0; margin-left:10px; padding-top: 5px; margin-bottom:0; }
+#topdiscussions p.viewall { margin:0; padding:5px 15px 0; text-align:right; background: url(http://images.imerrow.com/images/mapple/box_ruleinset_blue.png) 50% 0 no-repeat; }
+#topdiscussions img.supporticon { margin: 5px 23px 0; }
+#topdiscussions li { padding: 5px 0; border-bottom: 1px solid #e5e5e5; margin-left: 20px; }
+#main #topdiscussions li a { color: #666; display: block; background: url(http://images.imerrow.com/images/mapple/sidebar_linkarrow.png) no-repeat; padding-right: 18px; }
+#main #topdiscussions li a:hover { background-position: -188px 0; color: #2971a7; }
+
+/* TOPRINGTONES */
+#latest #topringtones ol { margin: 0 10px 0 35px; padding-top: 10px; height: 379px; }
+#latest #topringtones li { margin-bottom: 6px; padding: 0; }
+#latest #topringtones a { color: #4d4d4d; padding: 0 0 3px; }
+#latest #topringtones a.more { color: #2971A7; display: block; padding-right: 13px; position: relative; zoom: 1; _background: url(http://images.imerrow.com/images/mapple/morearrow.gif) no-repeat 100% center; }
+#latest #topringtones a:hover,
+#latest #topringtones a:hover strong { color: #08c; text-decoration: underline; }
+
+#latest #topringtones li.learnmore { list-style-type: none; margin-bottom: 0; }
+#latest #topringtones ul.topfeatured li { padding: 2px 9px; }
+
+/* TOP WEBAPPS */
+#main #topwebapps ol { padding: 0 5px 0px 0; margin-left: 10px; margin-top: 0; margin-bottom: 0; }
+#topwebapps p.viewall { margin:0; padding: 5px 15px 0; text-align:right; background: url(http://images.imerrow.com/images/mapple/box_ruleinset_blue.png) 50% 0 no-repeat; }
+#topwebapps img.appshero { margin: 10px 0 0 1px; }
+#topwebapps li { line-height: 18px; padding: 3px 0 4px; border-bottom: 1px solid #e5e5e5; margin-left: 20px; }
+#main #topwebapps li a { color: #666; display: block; background: url(http://images.imerrow.com/images/mapple/sidebar_linkarrow.png) no-repeat; padding-right: 13px; }
+#main #topwebapps li a:hover { background-position: -188px 0; color: #2971a7; }
+
+/* LATEST NEWS */
+#latest #latestnews ul li h4 { color: #000; }
+#latest #latestnews ul li p { margin-bottom: 0; }
+#latest #latestnews ul li { padding-top: 16px; min-height: 80px; _height: 80px; padding-bottom: 0; }
+#latest #latestnews ul li.last { background: none; }
+
+
+/* FINGERTIPS */
+#videos .slideritem { float: left; width: 168px; margin-right: 4px; }
+#videos #slider { height: 170px; width: 100%; _margin-top: 20px; }
+#videos #slider .ACSliderPageNav { margin-top: 5px; width: 100px; margin-left: -30px; }
+#videos #slider .ACSliderPageNav li a { background: url(http://images.imerrow.com/images/mapple/paging_dot_20070629.jpg) no-repeat -18px 0; }
+#videos #slider .ACSliderPageNav li a:hover { background-position: -9px 0; }
+#videos #slider .ACSliderPageNav li a.active { background-position: 0 0; }
+#videos #slider .ACSliderPreviousArrow { top: 45%; left: -7px; width: 28px; height: 29px; background: url(http://images.imerrow.com/images/mapple/video_leftarrow.jpg) no-repeat 0 0; }
+#videos #slider .ACSliderNextArrow { top: 45%; right: -5px; width: 28px; height: 29px; background: url(http://images.imerrow.com/images/mapple/video_rightarrow.jpg) no-repeat 0 0; }
+#videos #slider .ACSliderPreviousArrow:hover,
+#videos #slider .ACSliderNextArrow:hover { background-position: -28px 0; }
+#videos #slider .ACSliderMaskDiv { margin: 0 auto; width: 516px; height: 175px; }
+#videos #slider .ACSliderMaskDiv ul { margin-top: 4px; height: 175px; }
+#videos #slider .ACSliderMaskDiv ul li { display: inline; width: 168px; height: 175px; margin-right: 4px; }
+
+/* VIDEO CONTROLLER */
+#videos .ACQuicktimeController { visibility: hidden; padding-bottom:5px; }
+#videos .ACQuicktimeController.active { visibility: visible; }
+#videos .ACQuicktimeController div.control { width: 18px; height: 18px; background: url(http://images.imerrow.com/images/mapple/playpause_light.gif) 6px 0 no-repeat; }
+#videos .ACQuicktimeController div.control.pause { background: url(http://images.imerrow.com/images/mapple/playpause_light.gif) 6px -18px no-repeat; }
+#videos .ACQuicktimeController div.sliderPanel { width: 532px; left: 24px; }
+#videos .ACQuicktimeController div.sliderPanel div.track { border: 1px solid #aaa; background-color: #ccc; width: 532px; height: 6px; }
+#videos .ACQuicktimeController div.sliderPanel div.track div.loadedProgress { background-color: #aaa; height: 6px; }
+#videos .ACQuicktimeController div.sliderPanel div.track div.trackProgress { background-color: #fff; height: 6px; }
+#videos .ACQuicktimeController div.sliderPanel div.track div.playHead { background-image: url(http://images.imerrow.com/images/mapple/pointer_light.gif); height: 13px; }
+
+/* WHERE TO BUY */
+#main #wheretobuypromo img.workshop { margin:5px 0;}
+#main #wheretobuypromo p { padding:0 12px; margin-bottom:5px; }
+#wheretobuypromo br { display:block; margin-top:5px; }
+#wheretobuy { min-height: 550px; *height: 550px; }
+#wheretobuy .padder { padding: 9px 13px 0; _padding-bottom: 4px; overflow: hidden; zoom:1; }
+#wheretobuy .phone { white-space: nowrap; }
+#wheretobuy .padder p { *margin-bottom:8px;}
+#wheretobuy .padder img { margin-left:-2px; margin-bottom:7px; *margin-bottom:4px;}
+#wheretobuy h3 { padding-top:1.1em; line-height:1.3em; margin-bottom:0.2em; margin-top:0.3em; _margin-top:0; width:158px; font-weight: bold; font-size:1.1em;  background:url(http://images.imerrow.com/images/mapple/box_ruleinset.png) no-repeat 50% 15%;}
+#wheretobuy h3 a:hover { text-decoration:none; }
+#wheretobuy h3.last { padding-top:18px; padding-bottom:5px; background-image: url(http://images.imerrow.com/images/mapple/box_ruleinset_blue.png); }
+
+/* VIDEOS */
+#videos { min-height:550px; _height:550px; }
+#main #videos h2 { background-image: url(http://images.imerrow.com/images/mapple/boxtopblue582.png); }
+#videos .padder { padding: 3px 11px 0; }
+#videos .nowplaying { font-size: 11px; color: #666; padding: 8px 0; margin-bottom: 0; }
+#videos .nowplaying strong { color: #333; }
+#videos #quicktime { position: relative; width: 560px; height: 316px; background: #fdfdfd; padding-bottom:12px; margin: 0 auto; text-align: center; }
+#videos #quicktime .poster { cursor: pointer; _cursor: hand; }
+#videos .endstate {position: absolute; left: 0; top: 0;}
+#videos #quicktime.loading object { width:1px !important; height:1px !important; }
+#videos #videoplaylist { overflow: hidden; margin: 0 -1px 9px; }
+#videos #videoplaylist li { display: inline; }
+#videos #videoplaylist .button a { float: left; margin-left: 7px; width: 135px; height: 0; padding-top: 90px; overflow: hidden; }
+#videos #videoplaylist .button.first a { margin-left: 0; }
+#videos #videoplaylist .button.last a { float: right; }
+#videos #videoplaylist #mov-a a { background: url() no-repeat 0 0; }
+#videos #videoplaylist #mov-b a { background: url() no-repeat -135px 0; }
+#videos #videoplaylist #mov-c a { background: url() no-repeat -270px 0; }
+#videos #videoplaylist #mov-d a { background: url() no-repeat -405px 0; }
+#videos #videoplaylist #mov-e a { background: url() no-repeat 0 0; }
+#videos #videoplaylist #mov-a.active a { background-position: 0 -90px; }
+#videos #videoplaylist #mov-b.active a { background-position: -135px -90px; }
+#videos #videoplaylist #mov-c.active a { background-position: -270px -90px; }
+#videos #videoplaylist #mov-d.active a { background-position: -405px -90px; }
+#videos #videoplaylist #mov-e.active a { background-position: 0 -90px; }
+#videos .posterFrame {display: none;}
+
+/* FINGERTIPS */
+#videos .slideritem { float: left; width: 168px; margin-right: 4px; }
+#videos #slider { height: 170px; width: 100%; _margin-top: 10px; }
+#videos #slider .ACSliderPageNav { margin-top: 5px; width: 100px; margin-left: -30px; }
+#videos #slider .ACSliderPageNav li a { background: url(http://images.imerrow.com/images/mapple/paging_dot_20070629.jpg) no-repeat -18px 0; }
+#videos #slider .ACSliderPageNav li a:hover { background-position: -9px 0; }
+#videos #slider .ACSliderPageNav li a.active { background-position: 0 0; }
+#videos #slider .ACSliderPreviousArrow { top: 45%; left: -7px; width: 28px; height: 29px; background: url(http://images.imerrow.com/images/mapple/video_leftarrow.jpg) no-repeat 0 0; }
+#videos #slider .ACSliderNextArrow { top: 45%; right: -5px; width: 28px; height: 29px; background: url(http://images.imerrow.com/images/mapple/video_rightarrow.jpg) no-repeat 0 0; }
+#videos #slider .ACSliderPreviousArrow:hover,
+#videos #slider .ACSliderNextArrow:hover { background-position: -28px 0; }
+#videos #slider .ACSliderMaskDiv { margin: 0 auto; width: 516px; height: 175px; }
+#videos #slider .ACSliderMaskDiv ul { margin-top: 4px; height: 175px; }
+#videos #slider .ACSliderMaskDiv ul li { display: inline; width: 168px; height: 175px; margin-right: 4px; }
+
+/* MOVIE LINKS */
+#videos #slider .slideritem a { width: 168px; display: block; height: 142px; text-indent: -9999px; overflow: hidden; }
+#videos #slider a#watchall { background: url() no-repeat 0 0; }
+#videos #slider a#customize { background: url(videos_customizeb.jpg) no-repeat 0 0; }
+#videos #slider a#silencering { background: url(videos_silencering.jpg) no-repeat 0 0; }
+#videos #slider a#deletemessage { background: url(http://images.imerrow.com/images/mapple/videos_deletemessage.jpg) no-repeat 0 0; }
+#videos #slider a#favlist { background: url(http://images.imerrow.com/images/mapple/videos_favorites.jpg) no-repeat 0 0; }
+#videos #slider a#ringtone { background: url(http://images.imerrow.com/images/mapple/videos_ringtone.jpg) no-repeat 0 0; }
+#videos #slider a#songcontrols { background: url(http://images.imerrow.com/images/mapple/videos_songcontrols.jpg) no-repeat 0 0; }
+#videos #slider a#coverflow { background: url(http://images.imerrow.com/images/mapple/videos_coverflow.jpg) no-repeat 0 0; }
+#videos #slider a#magnify { background: url(http://images.imerrow.com/images/mapple/videos_magnify.jpg) no-repeat 0 0; }
+#videos #slider a#mailprefs { background: url(http://images.imerrow.com/images/mapple/videos_mail.jpg) no-repeat 0 0; }
+#videos #slider a#passcode { background: url(http://images.imerrow.com/images/mapple/videos_passcode.jpg) no-repeat 0 0; }
+#videos #slider a#resetiphone { background: url(http://images.imerrow.com/images/mapple/videos_reset.jpg) no-repeat 0 0; }
+#videos #slider a#watchall:hover,
+#videos #slider a#customize:hover,
+#videos #slider a#silencering:hover,
+#videos #slider a#deletemessage:hover,
+#videos #slider a#favlist:hover,
+#videos #slider a#ringtone:hover,
+#videos #slider a#songcontrols:hover,
+#videos #slider a#coverflow:hover,
+#videos #slider a#magnify:hover,
+#videos #slider a#mailprefs:hover,
+#videos #slider a#passcode:hover,
+#videos #slider a#resetiphone:hover { background-position: -168px 0; }
+#videos #slider .active a#watchall,
+#videos #slider .active a#customize,
+#videos #slider .active a#silencering,
+#videos #slider .active a#deletemessage,
+#videos #slider .active a#favlist,
+#videos #slider .active a#ringtone,
+#videos #slider .active a#songcontrols,
+#videos #slider .active a#coverflow,
+#videos #slider .active a#magnify,
+#videos #slider .active a#mailprefs,
+#videos #slider .active a#passcode,
+#videos #slider .active a#resetiphone { background-position: -336px 0; }
+
+/* pill buttons */
+#main #quicktime ul { margin-top:-170px;}
+#main #quicktime .pillbutton { display:block; min-height:3em; margin:0 auto 1em; padding-right:43px; text-align:center; font-size:15px; line-height:1.3em; }
+#main #quicktime .pillbutton a { display:inline-block; position:relative; color:#fff; text-decoration:none; outline: none; z-index:9999px; }
+#main #quicktime .pillbutton.top  { margin-top: 90px; }
+#main #quicktime .pillbutton a span,
+#main #quicktime .pillbutton a b { display:inline-block; width:auto; padding:15px 0; text-align:left; outline:none; }
+#main #quicktime .pillbutton a span { padding-right:8px; padding-left:25px; background:url(http://images.imerrow.com/images/mapple/pillbevel_leftcap.png) no-repeat 0 50%; overflow: hidden; _background-image:url(http://images.imerrow.com/images/mapple/pill_leftcap.gif); }
+#main #quicktime .pillbutton a b { position:absolute; width:43px; top:0; right:-43px; text-indent:-9999px; background:url(http://images.imerrow.com/images/mapple/pillbevel_rightcap.png) no-repeat 0 50%; _background-image:url(http://images.imerrow.com/images/mapple/pill_rightcap.gif); }
+#main #quicktime .pillbutton a b, x:-moz-any-link { top:inherit; margin-top:-15px; } /* this is for firefox because it's dumb when it comes to inline-block */
+#main #quicktime .pillbutton a b, x:-moz-any-link, x:default { top:0; margin-top:0; } /* this is to reset IE7 because it was reading the above */
+#main #quicktime .pillbutton a:hover { color:#e6e6e6; }
+
+#main #quicktime .pillbuttonleft { display:block; min-height:3em; margin-top: 140px; padding-right:43px; text-align:center; font-size:15px; line-height:1.3em; }
+#main #quicktime .pillbuttonleft a { display:inline-block; position:relative; color:#fff; text-decoration:none; z-index:9999px; }
+#main #quicktime .pillbuttonleft a span,
+#main #quicktime .pillbuttonleft a b { display:inline-block; width:auto; padding:15px 0; text-align:left; outline:none; }
+#main #quicktime .pillbuttonleft a span { padding-right:8px; padding-left:25px; background:url(http://images.imerrow.com/images/mapple/pillbevel_leftcap.png) no-repeat 0 50%; _background-image:url(http://images.imerrow.com/images/mapple/pill_leftcap.gif); }
+#main #quicktime .pillbuttonleft a b { position:absolute; width:43px; top:0; right:-43px; text-indent:-9999px; background:url(http://images.imerrow.com/images/mapple/pillbevel_rightcap.png) no-repeat 0 50%; _background-image:url(http://images.imerrow.com/images/mapple/pill_rightcap.gif); }
+#main #quicktime .pillbuttonleft a b, x:-moz-any-link { top:inherit; margin-top:-15px; } /* this is for firefox because it's dumb when it comes to inline-block */
+#main #quicktime .pillbuttonleft a b, x:-moz-any-link, x:default { top:0; margin-top:0; } /* this is to reset IE7 because it was reading the above */
+#main #quicktime .pillbuttonleft a:hover { color:#e6e6e6; }
+
+/* END STATES */
+#main #videos #quicktime ul.endstate { display: block; margin: 0; padding: 100px 0 0 0; width: 100%; height:216px; display:inline-block; _margin-bottom:-384px; }
+
+/*
+#videos .endstate a { display: block; height: 46px; margin: 10px auto; overflow: hidden; text-indent: -9999px; behavior:url(/nebula/scripts/iepngfix.htc); }
+#videos .endstate .replay { width: 204px; margin-top: 115px; background: url(http://images.imerrow.com/images/mapple/2007/09/endbutton_watchagain_20070905.png); }
+#videos .endstate .viewall { width: 204px; background: url(http://images.imerrow.com/images/mapple/2007/09/index_ads_viewall20070905.png); }
+*/
+#videos .endstate.bet { background: url(http://images.imerrow.com/images/mapple/videos_bet_20080331.jpg); }
+#videos .endstate.brilliant { background: url(http://images.imerrow.com/images/mapple/2008/03/videos_brilliant_20080331.jpg); }
+#videos .endstate.musicstore { background: url(http://images.imerrow.com/images/mapple/2008/03/videos_musicstore_20080331.jpg); }
+#videos .endstate.thegreatthing { background: url(http://images.imerrow.com/images/mapple/2008/02/videos_thegreatthing_20080207.jpg); }
+#videos .endstate.facebook { background: url(http://images.imerrow.com/images/mapple/2008/02/endstate_facebook_20080205.jpg); }
+#videos .endstate.cars { background: url(http://images.imerrow.com/images/mapple/2008/02/endstate_cars_20080205.jpg); }
+#videos .endstate.alltheseyears { background: url(http://images.imerrow.com/images/mapple/2007/09/endframe_alltheseyears_20070905.jpg); }
+#videos .endstate.alltheparts { background: url(http://images.imerrow.com/images/mapple/2007/09/endframe_alltheparts_20070905.jpg); }
+#videos .endstate.onething { background: url(http://images.imerrow.com/images/mapple/2007/10/endstate_onething_20071005.jpg); }
+#videos .endstate.delay { background: url(http://images.imerrow.com/images/mapple/2007/10/endstate_delay_20071017.jpg);}
+#videos .endstate.thewinger { background: url(http://images.imerrow.com/images/mapple/2007/10/endstate_thewinger_20071017.jpg); }
+#videos .endstate.myshow { background: url(http://images.imerrow.com/images/mapple/2007/10/endstate_myshow_20071017.jpg); }
+
+
+
+/* VIDEO CONTROLLER */
+#videos .ACQuicktimeController { visibility: hidden; padding-top: 5px; padding-bottom: 5px; }
+#videos .ACQuicktimeController.active { visibility: visible; }
+#videos .ACQuicktimeController div.control { width: 18px; height: 18px; background: url(http://images.imerrow.com/images/mapple/playpause_light.gif) 6px 0 no-repeat; }
+#videos .ACQuicktimeController div.control.pause { background: url(http://images.imerrow.com/images/mapple/playpause_light.gif) 6px -18px no-repeat; }
+#videos .ACQuicktimeController div.sliderPanel { width: 532px; left: 24px; }
+#videos .ACQuicktimeController div.sliderPanel div.track { border: 1px solid #aaa; background-color: #ccc; width: 532px; height: 6px; }
+#videos .ACQuicktimeController div.sliderPanel div.track div.loadedProgress { background-color: #aaa; height: 6px; }
+#videos .ACQuicktimeController div.sliderPanel div.track div.trackProgress { background-color: #fff; height: 6px; }
+#videos .ACQuicktimeController div.sliderPanel div.track div.playHead { background-image: url(http://images.imerrow.com/images/mapple/pointer_light.gif); height: 13px; }
+
+/* WEB APPS */
+#webappsfeatured { min-height: 300px;  }
+#webappsfeatured .padder { padding: 9px 13px 0; _padding-bottom: 4px; overflow: hidden; zoom:1; }
+#webappsfeatured .phone { white-space: nowrap; }
+#webappsfeatured .padder p { *margin-bottom:8px;}
+#webappsfeatured .padder img { margin-left:-2px; margin-bottom:7px; *margin-bottom:4px;}
+/*#webappsfeatured h2 { background: url(/iphone/images/webapps_titlebg.png) no-repeat; }*/
+#webappsfeatured h3 { padding-top:1.1em; line-height:1.3em; margin-bottom:0.2em; margin-top:0.3em; _margin-top:0; width:158px; font-weight: bold; font-size:1.1em;  background:url(http://images.imerrow.com/images/mapple/box_ruleinset.png) no-repeat 50% 15%;}
+#webappsfeatured h3 a:hover { text-decoration:none; }
+#webappsfeatured h3.last { padding-top:18px; padding-bottom:5px; background-image: url(http://images.imerrow.com/images/mapple/box_ruleinset_blue.png); }
+
+/* AVAILABILITY */
+#wheretobuy .availability.padder { padding-top: 0; background: none; }
+
+/* FOOTER */
+#globalfooter p.sosumi { float: right; color: #999; margin-top: -18px; }

@@ -1,0 +1,51 @@
+/* @override http://merrow.com/cephei/css/css_major/ac_quicktime.css */
+
+
+
+div#custext.cus {
+	color: gray;
+	font-size: 14px;
+	text-align: center;
+	position: relative;
+	display: inline;
+	top: 12px;
+	padding-bottom: 40px;
+}
+
+#cusimage img {
+	position: relative;
+	display: inline;
+	top: 45px;
+	border: 1px solid black;
+	text-align: center;
+}
+
+#cusimagenb img {
+	position: relative;
+	display: block;
+	top: 35px;
+	text-align: center;
+	padding-left: 30px;
+}
+
+div#custextleft.cus {
+	color: gray;
+	font-size: 14px;
+	text-align: left;
+	position: relative;
+	display: inline;
+	top: 12px;
+	padding-bottom: 40px;
+	float: left;
+}
+
+#custitle.cus {
+color: black;
+	font-size: 16px;
+	text-align: center;
+	position: relative;
+	
+	top: 20px;
+	display: inline-block;
+	margin-bottom: 25px;
+}

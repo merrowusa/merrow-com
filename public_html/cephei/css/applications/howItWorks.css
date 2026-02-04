@@ -1,0 +1,261 @@
+#generateRevenue {
+	float: left;
+	padding: 20px 0 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+#generateRevenue ul {
+	list-style-type:none;
+	margin: 0;
+	padding:0;
+}
+
+#generateRevenue ul,
+#generateRevenue li {
+	float:left;
+	display:block;
+	text-align:center;
+}
+
+#generateRevenue li li {
+	padding-top:25px;
+}
+
+#generateRevenue .register {
+	background:url(https://www.ebaypartnernetwork.com/files/hub/img/iconYourWebSite.gif) top left no-repeat;
+	font-size:1em;
+	margin-top:40px;
+	width:51px;
+}
+
+#generateRevenue .register a {
+	margin-top: -25px;
+	width:51px;
+}
+
+#generateRevenue .arrowBlack {
+	background:url(https://www.ebaypartnernetwork.com/files/hub/img/iconArrowBlack.gif) top left no-repeat;
+	height:76px;
+	margin:45px 9px 0 9px;
+	width:18px;
+}
+
+#generateRevenue .arrowGrey {
+	background:url(https://www.ebaypartnernetwork.com/files/hub/img/iconArrowGrey.gif) top left no-repeat;
+	height:76px;
+	margin:32px 5px 0 5px;
+	width:14px;
+}
+
+#generateRevenue .promote .arrowGrey {
+	margin-left:18px;
+	margin-right:15px;
+}
+
+#generateRevenue .pricing .arrowGrey {
+	margin-left:10px;
+	margin-right:10px;
+}
+
+#generateRevenue .optimise .arrowGrey {
+	margin-left:15px;
+	margin-right:15px;
+}
+
+#generateRevenue .promote,
+#generateRevenue .pricing,
+#generateRevenue .optimise {
+	background:url(https://www.ebaypartnernetwork.com/files/hub/img/bracketBlue.gif) 0 18px no-repeat;
+	padding-top:0;
+	width:136px;
+}
+
+#generateRevenue .pricing { background:url(https://www.ebaypartnernetwork.com/files/hub/img/bracketGreen.gif) 0 22px no-repeat; }
+#generateRevenue .optmise { background:url(https://www.ebaypartnernetwork.com/files/hub/img/bracketYellow.gif) 0 22px no-repeat; }
+
+#generateRevenue a {
+	display:block;
+	font-size:0.9em;
+	padding-top:65px;
+	color: #000000;
+}
+
+#generateRevenue a:hover {
+	text-decoration: none;
+}
+
+
+#generateRevenue .tools a {
+	background:url(https://www.ebaypartnernetwork.com/files/hub/img/iconTools.gif) top left no-repeat;
+	width:46px;
+}
+
+#generateRevenue .tracking a {
+	background:url(https://www.ebaypartnernetwork.com/files/hub/img/iconTracking.gif) top left no-repeat;
+	width:26px;
+}
+
+#generateRevenue .salesNewUsers a {
+	background:url(https://www.ebaypartnernetwork.com/files/hub/img/iconSalesNewUsers.gif) top left no-repeat;
+	width:51px;
+}
+
+#generateRevenue .payment a {
+	background:url(https://www.ebaypartnernetwork.com/files/hub/img/iconPayment.gif) top left no-repeat;
+	width:46px;
+}
+
+#generateRevenue .reports a {
+	background:url(https://www.ebaypartnernetwork.com/files/hub/img/iconReports.gif) top left no-repeat;
+	width:44px;
+}
+
+#generateRevenue .optimiseSmall a {
+	background:url(https://www.ebaypartnernetwork.com/files/hub/img/iconOptimise.gif) top left no-repeat;
+	width:41px;
+}
+
+#generateRevenue span a {
+	color:#1a4dc2;
+	font-size:1.4em;
+	font-weight:bold;
+	padding-top:0;
+}
+
+#howItWorksSide {
+	float:left;
+	list-style-type:none;
+	margin:10px 0;
+	padding:0;
+}
+
+#howItWorksSide li {
+	float:left;
+}
+
+#howItWorksSide li.arrowBlack {
+	background:url(https://www.ebaypartnernetwork.com/files/hub/img/iconArrowBlack.gif) top left no-repeat;
+	height:56px;
+	margin:0 6px;
+	width:18px;
+}
+
+#howItWorksSide li.register a {
+	background:url(https://www.ebaypartnernetwork.com/files/hub/img/iconYourWebSite.gif) top left no-repeat;
+	font-size:0.9em;
+	width:51px;
+}
+
+#howItWorksSide li a {
+	display:block;
+	font-size:0.9em;
+	padding-top:65px;
+}
+
+#howItWorksSide li.promote a {
+	background:url(https://www.ebaypartnernetwork.com/files/hub/img/iconTools.gif) top left no-repeat;
+	width:46px;
+}
+
+#howItWorksSide li.pricing a {
+	background:url(https://www.ebaypartnernetwork.com/files/hub/img/iconPayment.gif) top left no-repeat;
+	width:46px;
+	text-align: center;
+}
+
+#howItWorksSide li.optimise a {
+	background:url(https://www.ebaypartnernetwork.com/files/hub/img/iconReports.gif) top left no-repeat;
+	width:44px;
+}
+
+
+#howItWorksLarge {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+#howItWorksLarge li {
+	float:left;
+	text-align:center;
+}
+
+#howItWorksLarge li.arrowBlack {
+	background:url(https://www.ebaypartnernetwork.com/files/hub/img/iconArrowBlack.gif) top left no-repeat;
+	height:56px;
+	margin:10px 30px 0 30px;
+	width:18px;
+}
+
+#howItWorksLarge li.register a{
+	background:url(https://www.ebaypartnernetwork.com/files/hub/img/iconYourWebSiteLrg.gif) top left no-repeat;
+	margin-left:20px;
+	width:82px;
+}
+
+#howItWorksLarge li a {
+	display:block;
+	font-size:1.2em;
+	padding-top:82px;
+}
+
+#howItWorksLarge li.promote a {
+	background:url(https://www.ebaypartnernetwork.com/files/hub/img/iconToolsLrg.gif) top left no-repeat;
+	width:59px;
+}
+
+#howItWorksLarge li.pricing a {
+	background:url(https://www.ebaypartnernetwork.com/files/hub/img/iconPaymentLrg.gif) top left no-repeat;
+	width:59px;
+}
+
+#howItWorksLarge li.optimise a {
+	background:url(https://www.ebaypartnernetwork.com/files/hub/img/iconReportsLrg.gif) top left no-repeat;
+	width:60px;
+}
+
+
+
+.hoverBox {
+	background:url(https://www.ebaypartnernetwork.com/files/hub/img/hoverBoxBtm.gif) bottom left no-repeat;
+	margin-left:-8px;
+	padding-bottom:12px;
+	position:absolute;
+	width:250px;
+	z-index:100;
+}
+
+.hoverBoxContent { background:#fff7d5 url(https://www.ebaypartnernetwork.com/files/hub/img/hoverBoxSide.gif) top left no-repeat; }
+
+.hoverBoxContent p {
+	font-size:1em;
+	padding:10px;
+	text-align:left;
+}
+
+.tools .hoverBox {
+	margin-top:-68px;
+}
+
+.tracking .hoverBox {
+	margin-left:-12px;
+	margin-top:-67px;
+}
+
+.salesNewUsers .hoverBox {
+	margin-top:-103px;	
+}
+
+.payment .hoverBox {
+	margin-top:-83px;
+	margin-left: -6px;
+}
+
+.reports .hoverBox {
+	margin-top:-90px;
+}
+
+.optimiseSmall .hoverBox {
+	margin-top:-100px;
+}

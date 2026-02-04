@@ -1,0 +1,23 @@
+/* @override http://merrow.com/cephei/css/css_major/amazon_corrections.css */
+
+#content-1{
+	visibility: visible;
+	float: left;
+	width: 800px;
+	height: 600px;
+	position: relative;
+	bottom: 455px;
+	display: inline-block;
+	overflow: visible;
+}
+
+.y{
+text-align:center;
+vertical-align:bottom;
+vertical-align:baseline;
+border-top: 1px solid #ddd;
+	visibility: visible;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	width: 170px;
+}

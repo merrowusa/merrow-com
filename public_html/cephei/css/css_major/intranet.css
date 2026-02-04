@@ -1,0 +1,207 @@
+/* @override http://merrow.com/cephei/css/css_major/intranet.css */
+
+/* @override http://merrow.com/cephei/css/css_major/intranet.css */
+
+/* @override http://merrow.com/cephei/css/css_major/intranet.css */
+
+div.goog-ws-top.goog-ws-clear {
+	visibility: hidden;
+	position: absolute;
+}
+.goog-ws-sidebar-gadget,
+.goog-ws-sidebar-textgadget {
+ color: #484848;
+  font-family: arial;
+  margin: 0 0 6px;
+}
+.spiffy_brown{display:block}
+.spiffy_brown *{
+  display:block;
+  height:1px;
+  overflow:hidden;
+  font-size:.01em;
+  background:#6b645b}
+.spiffy_brown1{
+  margin-left:3px;
+  margin-right:3px;
+  padding-left:1px;
+  padding-right:1px;
+  border-left:1px solid #bfbcb8;
+  border-right:1px solid #bfbcb8;
+  background:#908a84}
+.spiffy_brown2{
+  margin-left:1px;
+  margin-right:1px;
+  padding-right:1px;
+  padding-left:1px;
+  border-left:1px solid #f0efee;
+  border-right:1px solid #f0efee;
+  background:#87817a}
+.spiffy_brown3{
+  margin-left:1px;
+  margin-right:1px;
+  border-left:1px solid #87817a;
+  border-right:1px solid #87817a;}
+.spiffy_brown4{
+  border-left:1px solid #bfbcb8;
+  border-right:1px solid #bfbcb8}
+.spiffy_brown5{
+  border-left:1px solid #908a84;
+  border-right:1px solid #908a84}
+.spiffy_brownfg{
+  background:#6b645b}
+  .spiffy_orange{display:block}
+.spiffy_orange *{
+  display:block;
+  height:1px;
+  overflow:hidden;
+  font-size:.01em;
+  background:#dd532f}
+.spiffy_orange1{
+  margin-left:3px;
+  margin-right:3px;
+  padding-left:1px;
+  padding-right:1px;
+  border-left:1px solid #f0b5a5;
+  border-right:1px solid #f0b5a5;
+  background:#e57e63}
+.spiffy_orange2{
+  margin-left:1px;
+  margin-right:1px;
+  padding-right:1px;
+  padding-left:1px;
+  border-left:1px solid #fbedea;
+  border-right:1px solid #fbedea;
+  background:#e37356}
+.spiffy_orange3{
+  margin-left:1px;
+  margin-right:1px;
+  border-left:1px solid #e37356;
+  border-right:1px solid #e37356;}
+.spiffy_orange4{
+  border-left:1px solid #f0b5a5;
+  border-right:1px solid #f0b5a5}
+.spiffy_orange5{
+  border-left:1px solid #e57e63;
+  border-right:1px solid #e57e63}
+.spiffy_orangefg{
+  background:#dd532f}
+  .spiffy_green{display:block}
+.spiffy_green *{
+  display:block;
+  height:1px;
+  overflow:hidden;
+  font-size:.01em;
+  background:#95bfa7}
+.spiffy_green1{
+  margin-left:3px;
+  margin-right:3px;
+  padding-left:1px;
+  padding-right:1px;
+  border-left:1px solid #d1e3d9;
+  border-right:1px solid #d1e3d9;
+  background:#afcfbd}
+.spiffy_green2{
+  margin-left:1px;
+  margin-right:1px;
+  padding-right:1px;
+  padding-left:1px;
+  border-left:1px solid #f4f8f6;
+  border-right:1px solid #f4f8f6;
+  background:#a9cbb7}
+.spiffy_green3{
+  margin-left:1px;
+  margin-right:1px;
+  border-left:1px solid #a9cbb7;
+  border-right:1px solid #a9cbb7;}
+.spiffy_green4{
+  border-left:1px solid #d1e3d9;
+  border-right:1px solid #d1e3d9}
+.spiffy_green5{
+  border-left:1px solid #afcfbd;
+  border-right:1px solid #afcfbd}
+.spiffy_greenfg{
+  background:#95bfa7}
+
+div.green1 {
+	width: 320px;
+	float: left;
+	color: white;
+	text-indent: 15px;
+	font-weight: bold;
+	height: 140px;
+}
+
+div.internal_list {
+	font-size: 18px;
+	margin: 2px 2px 2px 20px;
+	line-height: 30px;
+	text-indent: 0;
+}
+
+div.internal_list a {
+	color: #e5e5e5 !important;
+}
+div.title10 {
+	color: white;
+	position: relative;
+	font-size: 24px;
+	margin-bottom: 20px;
+	text-decoration: underline;
+}
+div.brown1 {
+	width: 320px;
+	float: left;
+	color: white;
+	text-indent: 14px;
+	font-weight: bold;
+	height: 140px;
+	margin-right: 4px;
+	margin-left: 4px;
+}
+
+
+div.orange1 {
+	width: 320px;
+	float: left;
+	color: white;
+	text-indent: 14px;
+	font-weight: bold;
+	height: 140px;
+}
+div.green {
+	width: 980px;
+	margin-top: 20px;
+	position: relative;
+		display: inline-block;
+	top: 60px;
+}
+div.brown {
+	width: 980px;
+	margin-top: 2px;
+	position: relative;
+		display: inline-block;
+	top: 60px;
+}
+div.orange {
+	width: 980px;
+	margin-top: 2px;
+	position: relative;
+	display: inline-block;
+	top: 60px;
+}
+
+div.navigator {
+	font: bold 24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	padding-left: 5px;
+	color: #ef6e00;
+}
+
+div.unread {
+	color: orange;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+}

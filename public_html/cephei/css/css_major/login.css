@@ -1,0 +1,160 @@
+/* @override http://merrow.com/cephei/css/css_major/login.css */
+
+/* @override 
+	http://merrow.com/cephei/sable/login.css
+	http://merrow.com/cephei/css/css_major/login.css
+*/
+
+/*
+**	@desc:	PHP ajax login form using jQuery
+**	@author:	programmer@chazzuka.com
+**	@url:		http://www.chazzuka.com/blog
+**	@date:	15 August 2008
+**	@license:	Free!, but i'll be glad if i my name listed in the credits'
+*/
+
+
+	html,
+	body
+		{
+	background: white none repeat scroll 0 0;
+color:white;
+font-family:"Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+font-size:16px;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+line-height:normal;
+margin:0;
+text-align:center;
+		}
+
+
+	#wrapper
+		{
+			border:solid 1px #fff;
+			margin:0 auto;
+			width: 450px;
+			text-align:left;
+			padding:25px;
+	color: #a1e1e7;
+	text-transform: lowercase;
+	font: 36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+div.essence {
+	font-size: 25px;
+	color: white;
+}
+
+label#laid {
+	font-size: 24px;
+}
+
+form#frmlogin {
+	border: 1px solid white;
+}
+	a
+		{
+			text-decoration:none;
+			color: white;
+			border-bottom:dotted 1px #000;
+	text-transform: lowercase;
+}
+	a:hover
+		{
+			color:#000;
+			border-bottom:solid 1px #000;
+		}
+	form
+		{
+			padding:15px; margin:0;
+		}
+	#msg
+		{
+		text-align:center; color:red; padding:0px 0 10px 0;
+		}
+	label
+		{
+		font-weight: bold;
+		display:block;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: white;
+}
+	.textfield
+		{
+			background: #cadb7b;
+			padding:3px;
+			margin:4px 0px 4px 0px;
+			width:90%;
+	height: 30px;
+	border-style: groove;
+	color: #4c4fae !important;
+	font-size: 24px;
+	font-weight: bold;
+}
+	.textfield:hover,
+	.textfield:focus
+		{
+		background: #d7ff71;
+		border:solid 1px #fff;
+		color:#fff;
+		}
+	
+	.buttonfield
+		{
+			background: #cadb7b;
+			border:solid 1px #ddd;
+			color:#000;
+			font:bold 11px/normal Tahoma, Verdana;
+			margin-top:10px;
+			padding:4px;
+		}
+	.buttonfield:hover,
+	.buttonfield:focus
+		{
+			background:#000;
+			border:solid 1px #fff;
+			color:#fff;
+		}
+	#wait{ position:absolute; top:0px; left:0px; background: yellow; color: #4c4fae; padding:10px; }
+	#footer { padding:10px 0px; }
+	
+	.spiffy_login{display:block}
+.spiffy_login *{
+  display:block;
+  height:1px;
+  overflow:hidden;
+  font-size:.01em;
+  background:#FE7B13}
+.spiffy_login1{
+  margin-left:3px;
+  margin-right:3px;
+  padding-left:1px;
+  padding-right:1px;
+  border-left:1px solid #fec699;
+  border-right:1px solid #fec699;
+  background:#fe9c4e}
+.spiffy_login2{
+  margin-left:1px;
+  margin-right:1px;
+  padding-right:1px;
+  padding-left:1px;
+  border-left:1px solid #fef1e7;
+  border-right:1px solid #fef1e7;
+  background:#fe943f}
+.spiffy_login3{
+  margin-left:1px;
+  margin-right:1px;
+  border-left:1px solid #fe943f;
+  border-right:1px solid #fe943f;}
+.spiffy_login4{
+  border-left:1px solid #fec699;
+  border-right:1px solid #fec699}
+.spiffy_login5{
+  border-left:1px solid #fe9c4e;
+  border-right:1px solid #fe9c4e}
+.spiffy_loginfg{
+  background:#FE7B13}

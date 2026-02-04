@@ -1,0 +1,1 @@
+<br>&nbsp;{TICKETS_REOPEN_TICKET}

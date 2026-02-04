@@ -1,0 +1,8 @@
+DirectoryIndex index.php
+
+# FOR REWRITING ALL PHP ENDING URL TO HTML
+RewriteEngine on
+RewriteBase /
+RewriteRule ^(.*)\.html$ $1.php [L]	
+
+AddType text/css css

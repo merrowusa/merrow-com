@@ -1,0 +1,35 @@
+/* @override http://merrow.com/cephei/css/css_major/why_buy.css */
+
+/* @override http://merrow.com/cephei/css/css_major/why_buy.css */
+
+#main div.lrgMid.floatLeft div.lrgBtm.floatLeft div.lrgTop.floatLeft p {
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+	bottom: 40px;
+	margin-bottom: 00px;
+}
+
+div.paragraph {
+	position: relative;
+	color: gray;
+}
+
+div.second_title {
+	color: #78a85e;
+	font-weight: bold;
+	font-size: 14px;
+	display: inline;
+	float: left;
+	width: 700px;
+	padding-bottom: 10px;
+}
+
+div.small_title {
+	font-size: 14px;
+	margin-top: 15px;
+	font-weight: bold;
+	color: black;
+}
+

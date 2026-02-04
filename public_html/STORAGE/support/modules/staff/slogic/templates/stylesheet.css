@@ -1,0 +1,23 @@
+body { background: #f5f5f5; color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px;}
+td { color: #336699; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; }
+.mainmenu { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #336699; text-decoration: none; }
+.mainmenu-over { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #336699; text-decoration: underline; }
+a:link, a:visited{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #336699; text-decoration: none; }
+a:active, a:hover { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; color: #336699; text-decoration: underline; }
+.debug { font: 11px/14px geneva, arial, verdana, sans-serif; font-weight: bold; color: red; text-decoration: none; }
+table.maintable { background-color: #ffffff; font-size: 11px;  font-family: Verdana, Arial, Helvetica, sans-serif;  border: 1px solid #336699;    }
+.topmenu { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #336699; text-decoration: none; }
+.topmenu a:link,.topmenu a:visited { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #336699; text-decoration: none; }
+.topmenu a:hover, .topmenu a:active { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #336699; text-decoration: underline; }
+table.boxtable { border: 1px solid #336699;  font-family: Verdana, Arial, Helvetica, sans-serif;  }
+.boxtable td { background: #ffffff;  font-size: 11px;  font-family: Verdana, Arial, Helvetica, sans-serif;   }
+table.stafftable, .stafftable td { border: 1px solid #336699; border-collapse: collapse;  font-size: 11px;  font-family: Verdana, Arial, Helvetica, sans-serif;   }
+td.head { background: #bad2e9; color: #336699; font-weight: bold;  font-size: 11px;  font-family: Verdana, Arial, Helvetica, sans-serif;   }
+.subhead { background-color: #f5f5f5; color: #336699;  font-size: 11px;  font-family: Verdana, Arial, Helvetica, sans-serif;   }
+.formfield, .title { color: #336699; font-weight: bold;  font-size: 11px;  font-family: Verdana, Arial, Helvetica, sans-serif;   }
+input.input, textarea, select { border: 1px solid #336699; background-color: #ffffff; color: #336699;  font-size: 11px;  font-family: Verdana, Arial, Helvetica, sans-serif;   }
+input.checkbox { border: 0px; background-color: transparent; }
+.button { border: 1px solid #336699; background: #bad2e9; color: #336699 ; font-weight: bold;  font-size: 12px;  font-family: Verdana, Arial, Helvetica, sans-serif;   }
+.cright { background: #ffffff; color: #336699; font-weight: normal; font-style: italic; font-size: 11px;  font-family: Verdana, Arial, Helvetica, sans-serif;  }
+.reset_row TD { background-color: #f5f5f5;  font-size: 11px;  color: #336699;   }
+.mark_row TD { background-color: #f5f5f5;  font-size: 11px;  color: #336699;   }

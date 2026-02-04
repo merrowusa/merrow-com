@@ -1,0 +1,2 @@
+{TICKETS_LIST_PLACEHOLDERS}<br>
+<div align="center">{TICKETS_ADD_PLACEHOLDER}</div>

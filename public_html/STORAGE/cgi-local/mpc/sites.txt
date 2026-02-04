@@ -1,0 +1,2 @@
+Global=/u/web/merrow/mpc/data/cfg/Global.txt
+merrow=/u/web/merrow/mpc/data/cfg/pathnames.txt

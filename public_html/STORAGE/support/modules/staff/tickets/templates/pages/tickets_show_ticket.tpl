@@ -1,0 +1,6 @@
+{TICKETS_SHOW_TICKET}
+<br><br>
+{TICKETS_ADD_NOTE_FORM}
+<div align="center">{TICKETS_SHOW_GRAB}</div>
+
+{TICKETS_LIST_NOTES}

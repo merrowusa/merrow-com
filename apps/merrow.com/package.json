@@ -1,0 +1,47 @@
+{
+  "name": "merrow.com",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "gate:routes": "npx tsx scripts/gate-routes.ts",
+    "gate:links": "npx tsx scripts/gate-links.ts",
+    "gate:seo": "npx tsx scripts/gate-seo.ts",
+    "gate:data": "npx tsx scripts/gate-data.ts",
+    "gate:redirects": "npx tsx scripts/gate-redirects.ts",
+    "gate:dom": "npx tsx scripts/gate-dom-structure.ts",
+    "gate:forms": "npx tsx scripts/gate-forms.ts",
+    "gate:all": "npm run gate:routes && npm run gate:links && npm run gate:seo && npm run gate:redirects && npm run gate:dom",
+    "backstop:reference": "backstop reference --config=backstop.json",
+    "backstop:test": "backstop test --config=backstop.json",
+    "backstop:approve": "backstop approve --config=backstop.json",
+    "backstop:parity:strict:reference": "MODE=strict npx tsx scripts/backstop-parity.ts reference",
+    "backstop:parity:strict:test": "MODE=strict npx tsx scripts/backstop-parity.ts test",
+    "backstop:parity:info:reference": "MODE=info npx tsx scripts/backstop-parity.ts reference",
+    "backstop:parity:info:test": "MODE=info npx tsx scripts/backstop-parity.ts test"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "drizzle-orm": "^0.45.1",
+    "leaflet": "^1.9.4",
+    "next": "16.0.8",
+    "postgres": "^3.4.8",
+    "react": "19.2.1",
+    "react-dom": "19.2.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "backstopjs": "^6.3.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.8",
+    "tailwindcss": "^4",
+    "tsx": "^4.7.0",
+    "typescript": "^5"
+  }
+}

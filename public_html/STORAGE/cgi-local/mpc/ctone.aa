@@ -1,0 +1,14 @@
+ctone-url: http://pm.mercantec.com
+ctone-secure-url: https://sim.mercantec.com
+customer-gen-url: http://pm.mercantec.com/CustGen
+sdkversion: 0.1
+loginurl: http://pm.mercantec.com/ct/Verio/welcome.jsp
+regurl: http://pm.mercantec.com/ct/Verio/welcome.jsp
+powershell: /u/lib/Mercantec/PC_F_6.6.1/bin/powershell.exe 
+cgibinpath: /u/web/merrow/cgi-local/mpc
+SiteId: merrow 
+filepath: /u/web/merrow/mpc/data/scripts
+MerchantDir: /u/web/merrow/mpc/data/merchant
+StoreMgrDir: /u/web/merrow/mpc/docs/SiteMgr
+DocumentRoot: /u/web/merrow/mpc/docs
+isp_id: Verio

@@ -1,0 +1,216 @@
+/* cgm */
+.bgcl,.bgc,.bgcr,.bgl,.bg,.yy,.bar,.row,.bgw { background-color: transparent;} /* brown */
+.fg,.fg1,h4 { color: orange; } /* brown */
+.bgcl,.bgc,.bg,.fc,.bgw { color:#ffffff; }
+/* My Comment */
+.fg{
+background: none no-repeat left;
+}
+/* cgm this is for the spacing of the products vertically on the pages */
+.layout3 {
+  padding: 0 3px;
+  text-align: center;
+}
+
+/* cgm */
+
+#category-title{
+padding-left:20px;
+font-size:12px;
+color:#000000;
+font-weight:bold;
+	background-position: left;
+	background-repeat: no-repeat;
+}
+
+
+/* CGM */
+#title h3 a.r {
+  color: #055d90;
+	font-size: 16px;
+	}
+
+.leftnavlink,.left-vert-bar-link {
+background-image: none;
+width: 200px;
+background-repeat:no-repeat;
+	float: left;
+}
+/* cgm */
+.n {color:#055d90;}
+
+/* cgm */
+#page-title tbody tr td.page {
+	position: relative;
+	display: block;
+	right: 185px;
+	top: 96px;
+}
+/* cgm */
+#category-title h1 {
+  color: #e47911;
+  font-size: 130%;
+  margin: 0;
+  padding: 0 0 0 0;
+}
+#breadcrumb a{color: #055d90;
+	visibility: visible;
+}
+#breadcrumb h2{display:inline; padding:0; margin:0;
+	color: #e47911;
+}
+.crumbPast{font-size:12px; font-weight:normal;
+	color: #055d90;
+}
+
+/* cgm */
+td.leftnav-col {
+  border: 1px solid #d0eaf8;
+  padding: 4px 4px 0 4px;
+}
+/* cgm */
+
+#category-title{
+padding-left:20px;
+font-size:12px;
+color:#000000;
+font-weight:bold;
+	background-position: left;
+	background-repeat: no-repeat;
+	
+}
+/* cgm */
+.e{
+text-align:center;
+font-size:12px;
+	background-image: url(file://localhost/Users/charliemerrow/Desktop/mamazoncss/tile-blue-bg._V46870869_.gif);
+	}
+	/* added blue backroound to search bar CGM */
+#sortBy {padding-right:10px;
+	background: url(http://merrow.com/cephei/css/mamazoncss/tile-blue-bg._V46870869_.gif) repeat-x;
+}
+#sortBy form{text-align:right; padding:0; margin:0;
+	background: none repeat-x;
+}
+/* cgm */
+
+img.wba_email_btn {
+	visibility: hidden;
+}
+
+/* cgm */
+.t{/*Top Nav*/
+color:#000000;
+font-size: 14px;
+text-align:right;
+text-decoration:none;
+font-weight:bold;
+vertical-align:bottom;
+/*vertical-align:baseline;*/
+padding:5px;
+}
+
+/* cgm */
+
+img.wba_zoom_btn {
+	visibility: hidden;
+}
+/* cgm */
+
+.our-label{color: gray;font-weight:bold;}
+/* cgm */
+#sortBy label{padding-right:5px;
+	color: blue;
+}
+/* cgm */
+.dd{
+	padding-top: 30px;
+	width: 300px;
+}
+/* cgm */
+#features h2{
+font-size: 12px;
+color: #055d90;
+	font-variant: small-caps;
+}
+/* cgm */
+.i{/*Details img*/
+padding:5px;
+text-align:center;
+	background: url(http://imerrow.com/images/index_iphonekeynotebottom_hero20080306.jpg) repeat;
+	z-index: 0;
+	opacity: 1;
+}
+
+/* cgm */
+h1{
+font-weight: bold;
+color: #eb8800;
+text-decoration:none;
+margin:0px;
+}
+
+/* cgm */
+.d{/*Details TD*/
+vertical-align:top;
+vertical-align:baseline;
+}	
+/* cgm */
+.bg{
+padding:0px 0px 2px 22px;
+background: none no-repeat center;
+height: 3px;
+width:196px;
+font-family:verdana, arial, tahoma;
+font-size:12px;
+vertical-align:middle;
+color:#000000;
+font-weight:bold;
+}
+/* cgm */
+
+td.bg {
+	background-color: #0565af;
+}/* blue */
+
+/* cgm */
+.main {width: 100%;
+	float: left;
+	padding-left: 40px;
+}
+/* cgm */
+
+table#page-title {
+	height: 30px;
+	}
+	/* cgm */
+
+h2 
+{
+font-size:16px; 
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 26px;
+}
+
+/* cgm */
+h2{/*left nav categories*/
+font-size:16px;
+color:#000000;
+text-decoration:none;
+margin-bottom: 0px;
+margin:0px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+/* cgm */
+
+.leftnav {
+  border: 1px solid #d0eaf8;
+  padding: 4px 4px 0 4px;
+	width: 200px;
+	font-size: 12px;
+}
+
+

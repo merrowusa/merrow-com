@@ -1,0 +1,51 @@
+		
+	<form name="theform" action="./">
+		<fieldset>
+			<legend>Select Part</legend>
+
+			<label for="part">Part: </label>
+			<input type="text" name="part" />
+			<input type="submit" value="Get Report" />
+
+			<h2>Accumulation</h2>
+			<div id="accumulation">
+				<div class="radiogroup">
+					<input type="radio" name="daterange" id="nodaterange" value="nodaterange" checked="checked" />
+					<span>No date range</span>
+				</div>
+	
+				<div class="radiogroup">
+					<div class="left" style="margin-bottom: 2em;">
+						<input type="radio" name="daterange" id="increment" value="increment" />
+					</div>
+					<div id="increment_choices">
+						<label for="month" id="increment_label_month">Start Date: </label>
+						<?= getMonthSelect('month'); ?>
+						<?= getDaySelect('day'); ?>
+						<?= getTextBox('year', 4, 4); ?>
+						<br />
+						<label for="increment-length" id="increment_label_increment-length"># Weeks: </label>
+						<?= getTextBox('increment-length', 3); ?>
+					</div><!-- increment_choices -->
+				</div>
+				
+				<div class="radiogroup clearboth">
+					<div class="left" style="margin-bottom: 2em;">
+						<input type="radio" name="daterange" id="range" value="range" />
+					</div>
+					<div id="range_choices">
+						<label for="frommonth" id="range_label_frommonth">From: </label>
+						<?= getMonthSelect('frommonth'); ?>
+						<?= getDaySelect('fromday'); ?>
+						<?= getTextBox('fromyear', 4); ?>
+						<br />
+						<label for="tomonth" id="range_label_tomonth">To: </label>
+						<?= getMonthSelect('tomonth'); ?>
+						<?= getDaySelect('today'); ?>
+						<?= getTextBox('toyear', 4); ?>					
+					</div><!-- range_choices -->
+				</div>
+			</div><!-- accumulation -->
+
+		</fieldset>
+	</form>

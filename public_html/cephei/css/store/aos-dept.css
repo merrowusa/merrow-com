@@ -1,0 +1,2058 @@
+/* @override http://merrow.com/cephei/css/store/aos-dept.css */
+
+/* @override http://a248.e.akamai.net/7/248/2041/1433/store.apple.com/Catalog/regional/amr/css/aos-dept.css */
+
+#nav-coverage-checker { margin: 0 0 0 6px;}
+#navigation .iphonebox .modulecontent p.more { margin: 0; padding: 0 12px 8px;}
+#primary .tab-top dl.product dt.name a {
+	color: #333;
+}
+#primary .tab-top dl.product dt.name a:hover {
+	text-decoration: none;
+	color: #0085cf;
+}
+.tab-controller li a.active:hover { background-position: 100% 0; }
+.tab-controller li.left a.active:hover { background-position: 0 0; }
+.sub-department #primary .module_top {
+	background: transparent url(../layout/primary-top.png) no-repeat;
+	border: 0;
+	height: 4px;
+}
+.sub-department #primary #promo-bar .module_top {
+	background: transparent url(../layout/primary-top-with-content.png) no-repeat;
+	border-bottom:1px solid #CFCFCF;
+	height:auto;
+}
+
+#navigation .modulecontent a img {
+	float: none;
+	margin: 20px auto 0;
+}
+
+#aos-page #navigation .footerblock a img {
+	display: block;
+}
+
+#secondary .modulecontent img.sd_accent { /* clock img */
+	margin: -25px 2px 0 0;
+	float: right;
+}
+#navigation .footerblock .modulecontent p.number {
+	color: #000;
+}
+
+/* Family Module */
+
+
+
+.department ul#family-ipod { margin-left: 26px; }
+.home #primary #aos_family ul#family-ipod {
+	width: auto;
+}
+ul#family-mac,
+ul#family-ipod,
+ul#family-iphone,
+ul#family-servers {
+	border-top: 1px solid #cdcdcd;
+	margin: 0 0 2px 19px;
+	padding: 0;
+	float: left;
+	position: relative;
+	width: 590px;
+	line-height: 14px;
+	min-height: 156px;
+	height: auto !important;
+	height: 156px;
+	white-space: nowrap;
+}
+* html .home ul#family-ipod {
+	margin-left: 12px;
+}
+* html .home ul#family-mac {
+	margin-left: 10px;
+}
+* html .department ul#family-ipod {
+	margin-left: 14px;
+}
+ul#family-mac {
+	clear: both;
+	margin-right: -1px;
+}
+/* Begin clear fix */
+	ul#family-mac:after,
+	ul#family-ipod:after,
+	ul#family-iphone:after,
+	ul#family-servers:after {
+		content: "."; 
+		display: block; 
+		height: 0; 
+		clear: both; 
+		visibility: hidden;
+	}
+	
+	ul#family-mac,
+	ul#family-ipod,
+	ul#family-iphone,
+	ul#family-servers {display: inline-block;}
+	
+	/* Hides from IE-mac \*/
+	* html ul#family-mac,
+	* html ul#family-ipod,
+	* html ul#family-iphone,
+	* html ul#family-servers {height: 1%;}
+	ul#family-mac,
+	ul#family-ipod,
+	ul#family-iphone,
+	ul#family-servers {display: block;}
+	/* End hide from IE-mac */
+
+/* End clearfix */
+
+.department ul#family-mac,
+.department ul#family-ipod {
+	margin-bottom: 0;
+	min-height: 141px;
+	height: auto !important;
+	height: 141px;
+}
+ul#family-servers {
+	border-bottom: 1px solid #cdcdcd;
+	margin-bottom: 0;
+	min-height: 130px;
+	height: auto !important;
+	height: 130px;
+}
+ul#family-mac.first-row,
+ul#family-ipod.first-row,
+ul#family-iphone.first-row,
+ul#family-servers.first-row {
+	border-top: 0;
+}
+ul#family-mac.last-row,
+ul#family-ipod.last-row,
+ul#family-iphone.last-row,
+ul#family-servers.last-row {
+	border-top: 0;
+	padding-top: 10px;
+}
+.home #primary ul#family-ipod.hc {
+	margin-left: 0;
+	width: auto;
+}
+ul#family-iphone,
+.home #aos_family ul#family-iphone {
+	width: auto;
+}
+* html ul#family-iphone {
+	margin-left: 6px;
+}
+ul#family-mac a,
+ul#family-ipod a,
+ul#family-iphone a,
+ul#family-servers a,
+ul#family-mac em,
+ul#family-ipod em,
+ul#family-iphone em,
+ul#family-servers em {
+	float: left;
+	display: block;
+	padding: 20px 10px 2px;
+	position: relative;
+	color: #666;
+	font-size: 11px;
+	font-style: normal;
+}
+*+html ul#family-mac a,
+*+html ul#family-ipod a,
+*+html ul#family-iphone a,
+*+html ul#family-servers a,
+*+html ul#family-mac em,
+*+html ul#family-ipod em,
+*+html ul#family-iphone em,
+*+html ul#family-servers em {
+	padding-left: 12px;
+	padding-right: 12px;
+}
+* html ul#family-mac a,
+* html ul#family-ipod a,
+* html ul#family-iphone a,
+* html ul#family-servers a,
+* html ul#family-mac em,
+* html ul#family-ipod em,
+* html ul#family-iphone em,
+* html ul#family-servers em {
+	padding-left: 11px;
+	padding-right: 13px;
+}/*
+ul#family-mac span,
+ul#family-ipod span,
+ul#family-iphone span,
+ul#family-servers span {
+	position: relative;
+	float: left;
+}*/
+ul#family-mac .first a {
+	padding-left: 0;
+}
+ul#family-mac em,
+ul#family-ipod em,
+ul#family-iphone em,
+ul#family-servers em {
+	padding-top: 17px;
+}
+ul#family-mac em,
+ul#family-ipod em,
+ul#family-iphone em,
+ul#family-servers em {
+	filter: alpha(opacity=50);
+	-moz-opacity: .50;
+	opacity: .50;
+}
+.department ul#family-mac a,
+.department ul#family-ipod a,
+.department ul#family-mac em,
+.department ul#family-ipod em {
+	padding-top: 11px;
+}
+ul#family-mac .last a,
+ul#family-mac .last em {
+	padding-left: 5px;
+	padding-right: 0;
+}
+ul#family-ipod a,
+ul#family-ipod em {
+	padding-left: 14px;
+	padding-right: 14px;
+}
+* html ul#family-ipod a,
+* html ul#family-ipod em {
+	padding-left: 24px;
+	padding-right: 24px;
+}
+.department ul#family-ipod a,
+.department ul#family-ipod em {
+	padding-left: 14px;
+	padding-right: 16px;
+}
+*+html .department ul#family-ipod a,
+*+html .department ul#family-ipod em,
+* html .department ul#family-ipod a,
+* html .department ul#family-ipod em {
+	padding-left: 14px;
+	padding-right: 18px;
+}
+*+html ul#family-ipod a,
+*+html ul#family-ipod em,
+* html ul#family-ipod a,
+* html ul#family-ipod em {
+	padding-left: 26px;
+	padding-right: 26px;
+}
+ul#family-ipod .first a,
+ul#family-ipod .first em {
+	padding-left: 10px;
+	padding-right: 16px;
+}
+.department ul#family-ipod .first a,
+.department ul#family-ipod .first em {
+	padding-left: 0;
+	padding-right: 16px;
+}
+ul#family-ipod .last a,
+ul#family-ipod .last em {
+	border-left: 1px solid #cdcdcd;
+	margin-left: 4px;
+	padding-left: 25px;
+	padding-right: 5px;
+}
+.department ul#family-ipod .last a,
+.department ul#family-ipod .last em {
+	padding-right: 0;
+}
+*+html .department ul#family-ipod .last a,
+*+html .department ul#family-ipod .last em,
+* html .department ul#family-ipod .last a,
+* html .department ul#family-ipod .last em {
+	padding-left: 26px;
+}
+ul#family-ipod.hc a,
+ul#family-ipod.hc em {
+	padding-right: 14px;
+	padding-left: 4px;
+}
+ul#family-ipod.hc .first a,
+ul#family-ipod.hc .first em {
+	padding-left: 20px;
+	padding-right: 9px;
+}
+ul#family-ipod.hc .last a,
+ul#family-ipod.hc .last em {
+	border-left: 1px solid #cdcdcd;
+	margin-left: 8px;
+	padding-left: 20px;
+	padding-right: 2px;
+}
+ul#family-iphone a,
+ul#family-iphone em {
+	margin-right: 0;
+	border-right: 1px solid #cdcdcd;
+	padding-left: 4px;
+	padding-right: 15px;
+}
+*+html ul#family-iphone a,
+*+html ul#family-iphone em {
+	padding-right: 15px;
+}
+* html ul#family-iphone a,
+* html ul#family-iphone em {
+	padding-right: 15px;
+}
+ul#family-iphone a img,
+ul#family-iphone em img {
+	padding-left: 0;
+}
+ul#family-mac a strong,
+ul#family-ipod a strong,
+ul#family-iphone a strong,
+ul#family-servers a strong,
+ul#family-mac em strong,
+ul#family-ipod em strong,
+ul#family-iphone em strong,
+ul#family-servers em strong {
+	display: block;
+	color: #000;
+}
+ul#family-mac a:hover,
+ul#family-ipod a:hover,
+ul#family-iphone a:hover,
+ul#family-servers a:hover {
+	text-decoration: none;
+}
+ul#family-mac a:hover strong,
+ul#family-ipod a:hover strong,
+ul#family-iphone a:hover strong,
+ul#family-servers a:hover strong {
+	color: #0085CF;
+}
+ul#family-mac span span {
+	position: static;
+	float: none;
+}
+ul#family-mac span span.price,
+ul#family-ipod span span.price,
+ul#family-iphone span span.price,
+ul#family-servers span span.price {
+	display: block;
+	clear: both;
+	margin-right: -200px; /* avoid wrapping for long titles */
+}
+ul#family-mac a span.imac_title {
+	display: block;
+	margin-left: 14px;
+}
+body.home ul#family-mac a,
+body.home ul#family-ipod a,
+body.home ul#family-iphone a,
+body.home ul#family-servers a,
+body.home ul#family-mac em,
+body.home ul#family-ipod em,
+body.home ul#family-iphone em,
+body.home ul#family-servers em {
+	padding-bottom: 11px;
+}
+
+/* Family Violators */
+.new-icon { display: none; position: absolute; }
+.home #family-prod-iphone .new-icon { display:block; top: 6px; }
+.home #family-prod-shuffle .new-icon { top: 61px; }
+.home #family-prod-nano .new-icon { top: 35px; }
+.home #family-prod-classic .new-icon { top: 12px; }
+.home #family-prod-touch .new-icon { top: 6px; }
+.home #family-prod-appletv .new-icon { top: 8px; }
+
+.home #family-prod-macbook .new-icon { top: 45px; margin-left: 9px; }
+.home #family-prod-macbookair .new-icon { top: 49px; margin-left: 11px; }
+.home #family-prod-macbookpro .new-icon { top: 44px; margin-left: 9px; }
+.home #family-prod-macmini .new-icon { top: 80px; }
+.home #family-prod-imac .new-icon { top: 10px; margin-left: 1px; }
+.home #family-prod-macpro .new-icon { top: 14px; }
+
+.department #family-prod-shuffle .new-icon { top: 63px; }
+.department #family-prod-nano .new-icon { top: 27px; }
+.department #family-prod-classic .new-icon { top: 3px; }
+.department #family-prod-touch .new-icon { top: -4px; }
+.department #family-prod-appletv .new-icon { top: 3px; }
+
+.department #family-prod-macbook .new-icon { top: 37px; margin-left: 9px; }
+.department #family-prod-macbookair .new-icon { top: 40px; margin-left: 11px; }
+.department #family-prod-macbookpro .new-icon { top: 36px; margin-left: 9px; }
+.department #family-prod-macmini .new-icon { top: 71px; }
+.department #family-prod-imac .new-icon { top: 2px; margin-left: 1px; }
+.department #family-prod-macpro .new-icon { top: 5px; }
+
+/* Promotions Banners */
+h2.promos {
+	display: none;
+}
+#aos_promos {
+	margin-left: 1px;
+}
+#aos_promos li {
+	display: inline;
+	margin-right: 6px;
+	margin-bottom: 9px;
+	float: left;
+	line-height: 1em;
+}
+#aos_promos li.last {
+	display: inline;
+	margin-right: 0;
+}
+.banner-grid {
+	margin: 0 0 8px 0;
+	padding: 0;
+}
+.banner-grid li {
+	display: inline;
+}
+.banner-grid li.middle {
+	margin: 0 8px;
+}
+
+/* More Promos */
+.module ul#more_promos li {
+	display: inline;
+	float: left;
+	padding: 1em 0 0;
+	border-right: 1px solid #cbced0;
+	width: 207px;
+	min-height: 172px;
+	position: relative;
+}
+.module ul#more_promos li.first {
+	width: 210px;
+}
+.module ul#more_promos li.last {
+	border-right: 0;
+	width: 200px;
+}
+.module ul#more_promos li h3 {
+	margin: 0 25px .25em;
+	font-weight: bold;
+	font-size: 1.1em;
+	line-height: 1.25em;
+	color: #000;
+}
+.module ul#more_promos li h3 a {
+	color: #000;
+}
+.module ul#more_promos li p,
+.module ul#more_promos li img {
+	margin: 5px 25px 0 25px;
+	font-size: .95em;
+	line-height: 1.375em;
+}
+.module ul#more_promos li img {
+	position: absolute;
+	bottom: 0;
+}
+.module ul#more_promos li.first h3,
+.module ul#more_promos li.first p,
+.module ul#more_promos li.first img {
+	margin-left: 15px;
+}
+.module ul#more_promos li.last h3,
+.module ul#more_promos li.last p,
+.module ul#more_promos li.last img {
+	margin-right: 15px;
+}
+
+
+/* Department page - frequently changed-out Astro stuff */
+.footerblock .modulecontent div#specialdeals-list ul li a {
+	color: #333;
+	margin: 0 12px;
+}
+.footerblock .modulecontent div#specialdeals-list ul li a:hover {
+	color: #0085CF;
+}
+#navigation .modulecontent img.sd_accent {
+	margin: -20px 2px 0 0;
+	float: right;
+}
+#navigation .footerblock .modulecontent .moduledetail img.fb-macbook {
+	margin: 6px -12px 1em -7px;
+}
+* html #navigation .footerblock .modulecontent .moduledetail img.fb-macbook {
+	margin-right:  -4px !important;
+}
+
+/* Special Deals in right column (current use: EMEA) */
+#secondary .footerblock .modulecontent #specialdeals p {
+	padding-top: 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+#secondary .footerblock .modulecontent #specialdeals p.more {
+    font-size: 11px;
+    font-weight: normal;
+}
+
+/* =TAB-CONTROLLER */
+.tab-top {
+	height: 284px;
+	position: relative;
+	width: 628px;
+}
+.tab-top .subtitle,
+.tab-top .product {
+	position: absolute;
+	line-height: 1.3em;
+}
+.tab-top .product {
+	color: #333;
+	font-weight: bold;
+	width: 110px;
+}
+.tab-top .product dd {
+	margin: 5px 0;
+}
+.tab-top subtitle {
+	font-weight: bold;
+}
+#tab-whatsnew .subtitle {
+	left: 30px;
+	top: 75px;
+	width: 162px;
+}
+#tab-whatsnew .product {
+	width: 130px;
+}
+#tab-whatsnew .p1,
+#tab-whatsnew .p2 {
+	left: 210px;
+	top: 50px;
+}
+#tab-whatsnew .p2 {
+	top: 160px;
+}
+#tab-ipodshuffle .p1 {
+	left: 360px;
+	top: 45px;
+}
+#tab-ipodshuffle .p2 {
+	left: 225px;
+	top: 80px;
+}
+#tab-ipodshuffle .p3 {
+	left: 350px;
+	top: 168px;
+}
+#tab-ipodnano .product {
+	width: 130px;
+}
+#tab-ipodnano .p1,
+#tab-ipodnano .p2 {
+	left: 307px;
+	top: 50px;
+}
+#tab-ipodnano .p2 {
+	top: 160px;
+}
+
+#tab-ipod {
+    padding-top:20px;
+}
+
+#tab-ipod .subtitle {
+	left: 29px;
+	top: 50px;
+	width: 234px;
+}
+#tab-ipod .product {
+	width: 110px;
+}
+#tab-ipod .p1,
+#tab-ipod .p2 {
+	left: 215px;
+	top: 60px;
+}
+#tab-ipod .p2 {
+	top: 168px;
+}
+
+/* Placement of ipod promo text */
+.shopipod #tab-whatsnew dl.p1 {
+	left: 30px;
+	top: 93px;
+	width: 90px;
+}
+.shopipod #tab-whatsnew dl.p2 {
+	left: 424px;
+	top: 144px;
+	width: 100px;
+}
+.shopipod #tab-ipodshuffle dl.p2 {
+	left: 30px;
+	top: 75px;
+	width: 120px;
+}
+.shopipod #tab-ipodshuffle dl.p3 {
+	left: 424px;
+	top: 135px;
+	width: 150px;
+}
+.shopipod #tab-ipodnano dl.p1 {
+	left: 30px;
+	top: 82px;
+	width: 130px;
+}
+.shopipod #tab-ipodnano dl.p2 {
+	left: 424px;
+	top: 160px;
+	width: 130px;
+}
+.shopipod #tab-ipod dl.p1 {
+	left: 30px;
+	top: 67px;
+	width: 130px;
+}
+.shopipod #tab-ipod dl.p2 {
+	left: 424px;
+	top: 165px;
+	width: 125px;
+}
+
+/* Department: Mac */
+#tab-latestsoftware {
+	height: 337px;
+}
+#tab-content-latestsoftware {
+	margin-bottom: 0px;
+}
+#tab-content-latestsoftware .product {
+	float: left;
+	padding: 0 0 0 38px;
+	width: 168px;
+}
+#tab-content-latestsoftware h5 a {
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+}
+#tab-content-latestsoftware .product .price {
+	color: #000;
+	font-size: 1em;
+	font-weight: bold;
+	margin: 18px 0;
+}
+#tab-backtoschool .subtitle {
+	left: 29px;
+	top: 112px;
+	width: 185px;
+}
+#tab-backtoschool .more {
+	left: 29px;
+	position: absolute;
+	top: 190px;
+}
+#tab-newtomac .subtitle {
+	left: 29px;
+	top: 45px;
+	width: 500px;
+}
+#tab-newtomac .more {
+	left: 29px;
+	position: absolute;
+	top: 115px;
+}
+#tab-newtomac .description {
+	font-weight: normal;
+}
+
+/* Placement of mac promo text */
+.shopmac #tab-gowireless .subtitle {
+	left: 29px;
+	top: 50px;
+	width: 300px;
+}
+.shopmac #tab-gowireless dl.p1 {
+    left: 29px;
+    top: 130px;
+    width: 100px;
+}
+.shopmac #tab-newtomac dl.p1 {
+    left: 29px;
+    top: 90px;
+    width: 130px;
+}
+.shopmac #tab-newtomac dl.p2 {
+    width: 100px;
+    left: 490px;
+    top: 130px;
+}
+
+
+/* Department: iPhone */
+#banner-large {
+	margin: 2px 0 8px;
+}
+
+#tab-iphone {
+	height: 220px;
+	margin-bottom: 15px;
+}
+
+.shopiphone .module ul.product-row {
+	margin-bottom: 15px;
+}
+
+#tab-iphone .subtitle {
+	left: 31px;
+	top: 48px;
+}
+#tab-iphone .product {
+	width: 100px;
+}
+#tab-iphone .p1 {
+	left: 155px;
+	top: 85px;
+}
+#tab-iphone .p2 {
+	left: 524px;
+	top: 95px;
+}
+
+/* =ipod-everywhere */
+#navigation #ipod-everywhere h3,
+#secondary #ipod-everywhere h3 {
+	background: none;
+}
+#navigation #ipod-everywhere h3 a,
+#secondary #ipod-everywhere h3 a {
+	background: url(../dept/ipod/ipodeverywhere/onthego.jpg) 0 0 no-repeat;
+	border-bottom: none;
+	clear: left;
+	color: #000;
+	display: block;
+	float: none;
+	font-size: 11px;
+	margin-right: 2px;
+	padding: 79px 12px 0;
+	width: auto;
+}
+#ipod-everywhere .modulecontent p {
+	padding: 0 11px 9px;
+}
+#ipod-everywhere .tall p {
+	padding-bottom: 14px;
+}
+#ipod-everywhere .modulecontent div {
+	float: left;
+	width: 100%;
+}
+#navigation #ipod-everywhere a,
+#secondary #ipod-everywhere a {
+	color: #0085CF;
+	display: inline;
+}
+#ipod-everywhere #inyourcar h3 a {
+	background-image: url(../dept/ipod/ipodeverywhere/inyourcar.jpg);
+	border-top: 1px solid #cdcdcd;
+}
+#ipod-everywhere #inyourhome h3 a {
+	background-image: url(../dept/ipod/ipodeverywhere/inyourhome.jpg);
+	border-top: 1px solid #cdcdcd;
+}
+#navigation #ipod-everywhere .tall h3 a,
+#secondary #ipod-everywhere .tall h3 a {
+	background-image: url(../dept/ipod/ipodeverywhere/onthego-tall.jpg);
+	padding-top: 122px;
+}
+#ipod-everywhere .tall #inyourcar h3 a {
+	background-image: url(../dept/ipod/ipodeverywhere/inyourcar-tall.jpg);
+}
+#ipod-everywhere .tall #inyourhome h3 a {
+	background-image: url(../dept/ipod/ipodeverywhere/inyourhome-tall.jpg);
+}
+#navigation #ipod-everywhere p,
+#secondary #ipod-everywhere p,
+#navigation #ipod-everywhere p a.more,
+#secondary #ipod-everywhere p a.more {
+	float: left;
+}
+
+/* Videos (3) */
+#videos .video,
+#videos .video a {
+	color: #333;
+	float: left;
+	text-align: center;
+	text-decoration: none;
+	width: 208px;
+}
+#videos .video a {
+	padding: 14px 0;
+}
+#videos .video a strong,
+#videos .video a img {
+	display: block;
+	font-style: normal;
+	margin: 0 auto;
+}
+/*
+#videos .video a:hover strong {
+	text-decoration: underline;
+}
+*/
+#videos .video a:hover {
+	color: #0085cf;
+	text-decoration: none;
+}
+
+
+/* =PROMOS2 
+These rules are put here because the promo content is likely to change around, requiring CSS changes */
+#promos2 .promo {
+	float: left;
+	margin: 0 1px;
+	width: 230px;
+}
+#promos2 .promo img {
+	float: left;
+	padding: 10px 10px 10px 20px;
+}
+#promos2 .promo p {
+	float: left;
+	line-height: 1.3em;
+	width: 150px;
+}
+#promos2 .promo a {
+	color: #333;
+	display: block;
+	font-weight: bold;
+	margin: 0 0 5px;
+}
+#promos2 #promo1 {
+	width: 350px;
+}
+#promos2 #promo2 p {
+	width: 120px;
+}
+#promos2 #promo2 img {
+	padding: 10px 10px 10px 0;
+}
+
+/* =PROMOS3 */
+#promos3 .promo {
+	float: left;
+	margin: 0 1px;
+}
+#promos3 .promo img {
+	float: left;
+}
+#promos3 .promo h3 {
+	font-size: 12px;
+	float: left;
+	width: 150px;
+}
+#promos3 .promo p {
+	float: left;
+	line-height: 1.3em;
+	width: 150px;
+}
+#promos3 .promo a {
+	color: #333;
+	display: block;
+	font-weight: bold;
+	margin: 0 0 5px;
+}
+#promos3 .promo p.more {
+	margin: 0;
+	padding-top: 8px;
+	line-height: 1.3em;
+}
+#promos3 .promo #promo4 p.more {
+	padding-top: 4px;
+}
+#promos3 .promo p.more a {
+	display: inline;
+	color: #0085CF;
+	font-weight: normal;
+}
+#promos3 #promo3 {
+	width: 330px;
+}
+body #promos3 #promo3 { 
+	min-height: 100px !important;
+}
+#promos3 #promo4 {
+	width: 280px;
+}
+#promos3 #promo3 h3, 
+#promos3 #promo4 h3 {
+	margin-top: 3px;
+}
+#promos3 #promo3 p,
+#promos3 #promo3 h3,
+#promos3 #promo4 p,
+#promos3 #promo4 h3 {
+	width: 190px;
+}
+#promos3 #promo3 img {
+	margin-right: 20px;
+}
+#promos3 #promo4 img {
+	padding: 0 20px 10px 0;
+	clear: left;
+}
+#promos3 #promo4 img.bts {
+	margin-top: 3px;
+	padding-top: 15px;
+	margin-left: -34px;
+	padding-bottom: 1.5em;
+}
+#promos3 #promo4 h3.bts {
+	padding-top: 15px;
+}
+
+#promos3 .modulecontent h2 {
+	margin: 4px 0 12px 15px;
+}
+
+#navigation #iphone-nav-activation .modulecontent img {
+	margin-bottom: -4px;
+	margin-top: 6px;
+}
+
+/* LEOPARD styles */
+#tab-latestsoftware {
+	height: 225px;
+}
+#tab-latestsoftware .mac-hero {
+	padding: 14px 0 0 26px;
+	float: left;
+}
+#tab-latestsoftware .mac-hero.consumer {
+	padding-top: 0;
+}
+#tab-latestsoftware .link-shop {
+	font-size: 12px;
+	margin-top: 12px;
+}
+#tab-latestsoftware .link-shop img {
+	padding-bottom: 3px;
+	vertical-align: middle;
+}
+#tab-latestsoftware .order {
+	float: left;
+	margin: 66px 0 0 18px;
+	width: 295px;
+}
+#tab-latestsoftware .order h4 {
+	margin: 0;
+	padding-bottom: 4px;
+}
+#tab-latestsoftware .order-consumer h4 {
+	padding-bottom: 14px;
+}
+#tab-latestsoftware .order .option {
+	float: left;
+}
+#tab-latestsoftware .order .option p {
+	margin-bottom: 1px;
+}
+#tab-latestsoftware .order .option.left {
+	margin-right: 10px;
+	width: 150px;
+}
+#tab-latestsoftware .order .option.right {
+	width: 135px;
+}
+#tab-latestsoftware .order .option .btn {
+	margin-top: 3px;
+}
+#tab-latestsoftware .option {
+	color: #666;
+	font-size: 12px;
+}
+#tab-latestsoftware .order-consumer {
+	float: left;
+	margin: 60px 0 0 34px;
+	width: 340px;
+}
+#tab-latestsoftware .order-consumer .option {
+	margin-bottom: 6px;
+}
+#tab-latestsoftware .order-consumer .option img {
+	padding: 0 0 3px 0;
+	vertical-align: middle;
+}
+#tab-latestsoftware .badge {
+	position: absolute;
+	right: 2px;
+	top: -8px;
+}
+#store-prod-content .mac-top {
+	background: url(../dept/mac/leopard-box-top.gif) no-repeat;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 612px;
+	height: 5px;
+}
+#store-prod-content .mac-btm {
+	background: url(../dept/mac/leopard-box-btm.gif) no-repeat;
+	width: 612px;
+	height: 6px;
+	margin: 0 auto;
+	clear: both;
+}
+#tab-content-latestsoftware {
+	background: #fbfbfb url(../dept/mac/leopard-bg-gradient.gif) repeat-x bottom left;
+	margin-left: 8px;
+	width: 612px;
+}
+*html #tab-content-latestsoftware {
+	margin-left: 4px;
+}
+#tab-content-latestsoftware h4 {
+	margin: -6px 0 3px 0;
+	position: relative;
+}
+#tab-content-latestsoftware .product {
+	background: url(../dept/mac/leopard-product-divider.gif) no-repeat bottom right;
+	float: left;
+	padding: 0 0 0 18px;
+	width: 186px;
+}
+#tab-content-latestsoftware .product.last {
+	background: none;
+}
+#tab-content-latestsoftware .product h5 {
+	color: #666;
+	font-size: 16px;
+	margin: -19px 0 3px 0;
+}
+#tab-content-latestsoftware .product .description{
+	color: #666;
+	width: 160px;
+}
+.video {
+	font-size: 12px;
+	margin: -11px 0 -20px;
+}
+.video img {
+	padding-bottom: 2px;
+	vertical-align: middle;
+}
+.video img.upgrade {
+	padding: 0 13px 17px 0;
+}
+
+/* Leopard video */
+.macguidedtour {
+font-size: 12px;
+margin: -11px 0 -20px 68px;
+}
+.macguidedtour img {
+padding-bottom: 2px;
+vertical-align: middle;
+}
+.macguidedtour img.upgrade {
+padding: 0 13px 17px 0;
+}
+
+
+/* holiday tabs */
+/* common */
+#tab-games .product, #tab-cases .product, #tab-games .product, #tab-classic .product, #tab-games .product, #tab-nano .product, #tab-touch .product {
+	position: static;
+}
+*html #tab-games, *html #tab-games, *html #tab-cases, *html #tab-red, *html #tab-iphone, *html #tab-iphone-giftwrap, *html #tab-ipod, *html #tab-ipod-engrave, *html #tab-ipod-giftwrap, , *html #tab-classic, *html #tab-nano, *html #tab-touch {
+	margin-top: -17px;
+}
+
+/* mac pro 8 core */
+#tab-macpro { margin-bottom: 20px; !margin-bottom: 0px; }
+#tab-macpro #macpro_8core {
+	background: #000 url('../dept/img/macpro_8core_bottom.jpg') no-repeat 50% 100%;
+	width: 614px;
+	margin: 0 auto;
+}
+#tab-macpro #macpro_8core_top {
+	vertical-align: top;
+	background: #000 url('../dept/img/macpro_8core_top.jpg') no-repeat 0 0;
+	width: 614px;
+	height: 10px;
+	margin: 0 auto;
+}
+#tab-macpro .hero {
+	position: relative;
+	float: right;
+	margin-right: 22px;
+	bottom: 0px;
+}
+#tab-macpro h4, #tab-macpro p.desc, #tab-macpro p.price, #tab-macpro img.btn { margin-left: 30px; }
+#tab-macpro h4 {
+	padding-top: 15px;
+	color: #eee;
+}
+#tab-macpro p.desc {
+	margin-top: 11px;
+	width: 222px;
+	color: #b5b5b5;
+}
+#tab-macpro p.price {
+	margin-top: 18px;
+	width: 222px;
+	color: #7f7f7f;
+}
+#tab-macpro a img {
+	margin-top: 22px;
+}
+
+
+/* mac games */
+#tab-games {
+	position: relative;
+	background: transparent url(../dept/img/bg-gradient-blue.gif) no-repeat bottom left;
+	margin: 0 0 0 1px;
+	width: 626px;
+	_width: 626px;
+}
+#tab-games .btn {
+	margin-top: 10px;
+}
+#tab-games h4 {
+	padding: 30px 0 8px 23px;
+}
+#tab-games .prod1 {
+	float: left;
+	position: relative;
+	margin: 0;
+	margin: 13px 0 0 0;
+	width: 303px;
+}
+#tab-games .prod1 img.left {
+	float: left;
+	position: relative;
+	margin-left: 15px;
+}
+
+#tab-games .prod1 dl {
+	float: left;
+	position: relative;
+	margin: 35px 0 0 15px;
+	width: 140px;
+}
+
+#tab-games .prod2 {
+	float: right;
+	position: relative;
+	padding-right: 31px;
+	top: -20px;
+	width: 287px;
+}
+#tab-games .prod2 dl {
+	position: absolute;
+	right: 20px;
+	top: 95px;
+	width: 140px;
+}
+#tab-games .column {
+	float: left;
+	margin-top: 13px;
+	width: 300px;
+}
+#tab-games .column.first {
+	padding-left: 23px;
+}
+*html #tab-games .column.first {
+	width: 320px;
+}
+#tab-games .column img.left {
+	float: left;
+}
+#tab-games dl {
+	float: left;
+	margin: 35px 0 0 13px;
+	width: 140px;
+}
+
+
+/* mac cases */
+#tab-cases {
+	background: transparent url(../dept/img/bg-gradient-blue.gif) no-repeat bottom left;
+	height: 274px;
+	margin: 0 0 10px 1px;
+	width: 624px;
+	_width: 626px;
+	position: relative;
+}
+#tab-cases .btn {
+	margin-top: 10px;
+}
+#tab-cases h4 {
+	padding: 20px 0 8px 23px;
+}
+#tab-cases img.hero {
+	position: absolute;
+	bottom: 6px;
+	left: 150px;
+}
+#tab-cases .prod1 {
+	margin: 25px 0 0 23px;
+}
+#tab-cases .prod2 {
+	position: absolute;
+	top: 29px;
+	right: 55px;
+}
+#tab-cases .prod2 dl {
+	margin: 0 0 0 10px;
+	width: 110px;
+}
+
+/* mac wireless */
+#tab-mac-wireless {
+	height: 324px;
+}
+#tab-mac-wireless .btn {
+	margin-top: 10px;
+}
+#tab-mac-wireless h4 {
+	margin: 21px 0 0 30px;
+}
+#tab-mac-wireless p.main {
+	margin-left: 30px;
+	width: 303px;
+}
+#tab-mac-wireless .extreme {
+	margin: 24px 0 0 60px;
+}
+#tab-mac-wireless .express {
+	position: absolute;
+	top: 0;
+	left: 500px;
+	width: 96px;
+}
+#tab-mac-wireless img.hero {
+	position: absolute;
+	top: 32px;
+	left: 12px;
+}
+#product-row {
+	margin: 0 auto;
+	position: relative;
+	width: 612px;
+}
+#product-row h5 {
+	color: #333;
+	font-size: 15px;
+	margin-bottom: 3px;
+}
+#product-row p {
+	color: #666;
+}
+#product-row .mdl {
+	background: transparent url(../dept/img/bg-mac-wireless.gif) no-repeat bottom left;
+	padding-bottom: 20px;
+	_margin-bottom: -10px;
+}
+
+#product-row .mdl .col1 {
+	float: left;
+	position: relative;
+	padding-left: 21px;
+	width: 170px
+}
+#product-row .mdl .col1 p {
+	width: 160px;
+}
+#product-row .mdl .col2 {
+	float: left;
+	position: relative;
+	margin-left: 35px;
+	width: 185px;
+}
+#product-row .mdl .col2 p {
+	width: 160px;
+}
+#product-row .mdl .col3 {
+	float: left;
+	position: relative;
+	margin-left: 21px;
+	width: 180px;
+}
+#product-row .mdl .col3 p {
+	width: 160px;
+}
+#product-row .btm {
+	background: transparent url(../dept/img/bg-wireless-btm.gif) no-repeat bottom left;
+	height: 4px;
+}
+
+/* ipod red */
+#tab-red {
+	background: url(../dept/img/bg-gradient-blue.gif) no-repeat bottom left;
+	height: auto;
+	margin: 0 1px;
+}
+#tab-red .btn {
+	margin-top: 10px;
+}
+#tab-red dl {
+	margin-top: 10px;
+	position: static;
+}
+#tab-red h4 {
+	padding: 10px 0 11px 29px;
+}
+#tab-red .column, #learnmore-row .column {
+	float: left;
+}
+#tab-red .column img.shuffle {
+	margin-right: 14px;
+}
+#tab-red .column img.card {
+	margin-right: 22px;
+}
+#tab-red .hero {
+	float: left;
+	margin: 0 35px 0 43px;
+}
+#tab-red dl dd.price {
+	color: #666;
+	font-weight: normal;
+}
+#tab-red .products {
+	float: left;
+	width: 340px;
+}
+#tab-red .products .row1 {
+	margin-top: 22px;
+}
+#tab-red .products .row2 {
+	margin-top: 5px;
+}
+#learnmore-row {
+	margin: 28px 0 0 30px;
+}
+#learnmore-row h5 {
+	color: #000;
+	font-weight: bold;
+	margin-bottom: 3px;
+}
+#learnmore-row img.engrave {
+	margin: 0 25px 0 22px;
+}
+#learnmore-row .first {
+	width: 170px;
+}
+#learnmore-row .last {
+	width: 192px;
+}
+#learnmore-row p.more a {
+	background: transparent url(../dept/img/img-arrow-blue.gif) no-repeat bottom right;
+	padding: 5px 11px 3px 0; 
+	display: inline-block; 
+	vertical-align: bottom;
+}
+
+/* iphone */
+#tab-iphone,
+#tab-iphone-giftwrap {
+    background:transparent url(../../../US/Images/banner-outfit.jpg) no-repeat scroll 0pt 50%;
+    height:274px;
+    margin:0pt 0pt 10px;
+}
+#tab-iphone img.hero, #tab-iphone-giftwrap img.hero {
+	position: absolute;
+	bottom: 20px;
+	right: 65px;
+}
+#tab-iphone h4, #tab-iphone-giftwrap h4 {
+	padding: 15px 0 0 34px;
+	line-height: 1.0em;
+}
+#tab-iphone h5, #tab-iphone-giftwrap h5 {
+	padding: 0 0 0 34px;
+	line-height: 1.0em;
+}
+#tab-iphone p, #tab-iphone-giftwrap p {
+	color: #666;
+	font-weight: bold;
+	line-height: 1.35em;
+	padding: 0 0 0 34px;
+	width: 255px;
+}
+#tab-iphone p span, #tab-iphone-giftwrap p span {
+	color: #b00606;
+}
+#tab-iphone img.btn, #tab-iphone-giftwrap img.btn {
+	margin: 14px 0 0 34px;
+}
+
+/* iphone giftwrap */
+#tab-iphone-giftwrap img.hero {
+	bottom: 18px;
+}
+
+/* ipod + ipod engrave */
+#tab-ipod-engrave, #tab-ipod-giftwrap {
+	background: url(../dept/img/ipod-bg-holiday.gif) no-repeat bottom left;
+	height: 274px;
+	margin: 0 0 10px;
+	_padding: 20px 0 0;
+}
+#tab-ipod img.hero, #tab-ipod-engrave img.hero, #tab-ipod-giftwrap img.hero {
+	position: absolute;
+	bottom: 15px;
+	right: 25px;
+}
+#tab-ipod h4, #tab-ipod-engrave h4, #tab-ipod-giftwrap h4 {
+	padding: 15px 0 0 34px;
+	line-height: 1.0em;
+}
+#tab-ipod h5, #tab-ipod-engrave h5, #tab-ipod-giftwrap h5 {
+	padding: 0 0 0 34px;
+	line-height: 1.0em;
+}
+#tab-ipod p, #tab-ipod-engrave p, #tab-ipod-giftwrap p {
+	color: #666;
+	font-weight: bold;
+	line-height: 1.35em;
+	padding: 0 0 0 34px;
+	width: 255px;
+}
+#tab-ipod p span, #tab-ipod-engrave p span, #tab-ipod-giftwrap p span {
+	color: #b00606;
+}
+#tab-ipod img.btn, #tab-ipod-engrave img.btn, #tab-ipod-giftwrap img.btn {
+	margin: 14px 0 0 34px;
+}
+
+/* ipod giftwrap */
+#tab-ipod-giftwrap img.hero {
+	bottom: 0;
+	right: 45px;
+}
+#tab-ipod-giftwrap p {
+	width: 245px;
+}
+
+/* ipod */
+#tab-classic {
+	background: url(../dept/img/bg-gradient-blue.gif) no-repeat bottom left;
+	height: 274px;
+	margin: 0 1px 10px;
+}
+#tab-classic .btn {
+	margin-top: 10px;
+}
+#tab-classic h4 {
+	padding: 20px 0 8px 23px;
+}
+#tab-classic img.hero {
+	position: absolute;
+	bottom: 6px;
+	left: 151px;
+}
+#tab-classic .prod1 {
+	margin: 25px 0 0 23px;
+}
+#tab-classic .prod2 {
+	position: absolute;
+	top: 19px;
+	right: 23px;
+}
+#tab-classic .prod2 dl {
+	margin: 0 0 0 20px;
+	width: 110px;
+}
+
+/* ipod */
+#tab-nano {
+    width:626px;/*account for repeating grey background*/
+	height: 274px;
+	margin: 0 1px 10px;
+	background: url(../dept/img/bg-gradient-grey.gif) bottom left repeat-x;
+}
+#tab-nano .btn {
+	margin-top: 10px;
+}
+#tab-nano h4 {
+	padding: 20px 0 8px 23px;
+}
+#tab-nano img.hero {
+	position: absolute;
+	bottom: 6px;
+	left: 126px;
+}
+#tab-nano .prod1 {
+	margin: 40px 0 0 23px;
+}
+#tab-nano .prod2 {
+	position: absolute;
+	top: 65px;
+	right: 25px;
+}
+#tab-nano .prod2 dl {
+	margin: 0 0 0 0;
+	width: 110px;
+}
+
+/* ipod */
+#tab-touch {
+	background: url(../dept/img/bg-gradient-blue.gif) no-repeat bottom left;
+	height: 274px;
+	margin: 0 0 10px 1px;
+	width: 627px;
+}
+#tab-touch .btn {
+	margin-top: 10px;
+}
+#tab-touch h4 {
+	padding: 20px 0 8px 23px;
+}
+#tab-touch img.hero {
+	position: absolute;
+	bottom: 6px;
+	left: 126px;
+}
+#tab-touch .prod1 {
+	margin: 25px 0 0 23px;
+}
+#tab-touch .prod2 {
+	position: absolute;
+	top: 45px;
+	right: 50px;
+}
+#tab-touch .prod1 dl {
+	width: 140px;
+}
+#tab-touch .prod2 dl {
+	margin: 0 0 0 0;
+	width: 140px;
+}
+
+/* =IPHONE-DEPT-BANNER */
+#iphone-dept-banner h3 {
+    background:transparent url(images/bg-h3-iphone.jpg) no-repeat scroll 100% 0pt;
+    display:inline;
+    float:left;
+    height:97px;
+    margin-left:48px;
+    padding-top:30px;
+    width:296px;
+}
+
+#iphone-dept-banner h3 a,
+#iphone-dept-banner h3 a:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+#iphone-dept-banner .superlink .violator {
+    margin:-16px 0pt -50px 150px;
+    position:relative;
+}
+
+#iphone-dept-banner .superlink-hover h3 a,
+#iphone-dept-banner .superlink-hover h3 a:hover {
+	color: #0085CF;
+}
+#iphone-dept-banner h3 span {
+	font-weight: bold;
+}
+#iphone-dept-banner ul {
+	background: url(images/bg-ul-icons.jpg) 0 0 no-repeat;
+	color: #999;
+	display: inline;
+	float: left;
+	font-weight: bold;
+	list-style: disc;
+	margin-left: 36px;
+	padding: 54px 0 0 16px;
+	width: 222px;
+}
+#iphone-dept-banner ul li span {
+	color: #666;
+}
+#iphone-dept-banner .modulecontent {
+    min-height:120px;/*IE height specified in aos-overrides-ie-6.css*/
+	padding-top:36px;
+}
+#iphone3g-outfit .modulecontent {
+    padding-top: 0;
+}
+#iphone3g-outfit .featured {
+    position: relative;
+    width: 628px;
+    height: 298px;
+    margin-bottom: 25px;
+    background: url(../iphone/img/iphone3g-bg-gradient.gif) no-repeat;
+}
+#iphone3g-outfit .featured h3 {
+	padding: 30px 0 0 30px;
+}
+#iphone3g-outfit .featured .subhd {
+	color: #333;
+	margin-top: -5px;
+	padding-left: 30px;
+}
+#iphone3g-outfit .synopsis {
+    position: absolute;
+}
+#iphone3g-outfit .featured ul.product-row li {
+    float: none;
+    position: absolute;
+}
+#iphone3g-outfit .featured .product dd.image {
+    margin: 0;
+}
+#iphone3g-outfit li#iphone3g-featured-accessory-1 {
+	top: 143px;
+    left: 21px;
+}
+#iphone3g-outfit li#iphone3g-featured-accessory-1 dd.image {
+	margin-top: -57px;
+}
+#iphone3g-outfit li#iphone3g-featured-accessory-1 dl {
+    width: 120px;
+    padding-left: 120px;
+}
+#iphone3g-outfit li#iphone3g-featured-accessory-2 {
+    top: 75px;
+    left: 235px;
+}
+#iphone3g-outfit li#iphone3g-featured-accessory-2 dl {
+    width: 120px;
+    padding-left: 265px;
+}
+
+/* Apple TV */
+#tab-ipod-appletv { background: transparent url("../dept/img/appletv_bg.jpg") no-repeat 50% 0; height: auto; }
+#tab-ipod-appletv #top { padding: 121px 0 0 62px; }
+#tab-ipod-appletv #top p { margin-top: 6px;	color: #d2d6da; }
+#tab-ipod-appletv #top img.btn { margin-top: 12px; }
+#tab-ipod-appletv #bottom { width: 616px; margin: 0 auto; margin-top: 88px; position: relative; top: -18px;}
+#tab-ipod-appletv #bottom .column { float: left; position: relative; background: transparent url("../dept/img/column_divider.png") no-repeat 100% 16px; color: #7c7c7c; /*font-weight: bold;*/ }
+#tab-ipod-appletv #bottom .column p { padding-right: 16px;}
+#tab-ipod-appletv #bottom .column h4 { color: #2a343b; /*font-weight: bold;*/}
+#tab-ipod-appletv #bottom #column1 { width: 144px; padding-left: 18px; }
+#tab-ipod-appletv #bottom #column2 { width: 123px; margin-left: 19px; }
+#tab-ipod-appletv #bottom #column3 { width: 124px; margin-left: 17px; }
+#tab-ipod-appletv #bottom #column4 { width: 136px; margin-left: 20px; background: none; }
+#tab-ipod-appletv #bottom .column img { margin-left: 20px; position: relative; top: 12px;}
+
+#appletv_guided_tour { width: 616px; margin: 10px auto -33px; background: transparent url("../dept/img/appletv_guided_tour.jpg") no-repeat 40px 40%;}
+#appletv_guided_tour p { padding: 35px 0; margin-left: 155px; }
+#appletv_guided_tour p a.circle-arrow { padding-right: 15px; background: transparent url("../dept/img/link_arrow.png") no-repeat 100% 50%;}
+
+/* Apple TV Geo */
+#geo #tab-ipod-appletv { background: transparent url("../dept/img/appletv_bg-geo.jpg") no-repeat 50% 0; height: auto; }
+#geo #tab-ipod-appletv #bottom .column img { margin-left: 20px; position: relative; top: 0;}
+
+#geo #tab-ipod-appletv #bottom #column3 { width: 140px; }
+#geo #tab-ipod-appletv #bottom #column4 { width: 120px; margin-left: 16px;}
+#geo #tab-ipod-appletv #bottom #column4 p { padding: 0;}
+#geo #tab-ipod-appletv #bottom #column3 img { margin-left: 30px; }
+#geo #tab-ipod-appletv #bottom #column1 img { margin-left: 30px; }
+
+/* Apple TV Canada Geo */
+#geo-can #tab-ipod-appletv { background: transparent url("../dept/img/appletv_bg-canada.jpg") no-repeat 50% 0; height: auto; }
+#geo-can #tab-ipod-appletv #bottom .column img { margin-left: 20px; position: relative; top: 0;}
+
+#geo-can #tab-ipod-appletv #bottom #column3 { width: 140px; }
+#geo-can #tab-ipod-appletv #bottom #column4 { width: 120px; margin-left: 16px;}
+#geo-can #tab-ipod-appletv #bottom #column4 p { padding: 0;}
+#geo-can #tab-ipod-appletv #bottom #column3 img { margin-left: 30px; }
+#geo-can #tab-ipod-appletv #bottom #column1 img { margin-left: 30px; }
+
+/* Time Capsule */
+#tab-mac-timecapsule { background: transparent url("../dept/img/time_capsule_bg.jpg") no-repeat 50% 0; height: auto; }
+#tab-mac-timecapsule .violator { position: absolute; top: 4px; right: 9px; }
+#tab-mac-timecapsule #top { text-align: center; padding: 21px 0 0 0; }
+#tab-mac-timecapsule #top div { height: 20px; margin: 0 auto; margin-top: -5px; }
+#tab-mac-timecapsule #top p { font-size: 1.1em; color: #f2f2f2; margin-bottom: 10px;}
+#tab-mac-timecapsule #top p a img { margin-left: 10px; vertical-align: middle; margin-bottom: 3px;}
+#tab-mac-timecapsule #top img.btn { width: 81px; }
+#tab-mac-timecapsule #top h4 { color: #000; font-size: 1.2em; font-weight: bold; margin-top: 200px;}
+#tab-mac-timecapsule #bottom { width: 616px; margin: 26px auto 10px; }
+#tab-mac-timecapsule #bottom .column { text-align: center; float: left; position: relative; background: transparent url("../dept/img/column_divider.png") no-repeat 100% 16px; color: #7c7c7c; }
+#tab-mac-timecapsule #bottom .column p, #tab-mac-timecapsule #bottom .column h4 { width: 166px; text-align: left; margin: 0 auto;}
+#tab-mac-timecapsule #bottom .column p { color: #666; }
+#tab-mac-timecapsule #bottom .column h4 { color: #333; font-size: 1.3em; font-weight: bold; margin-bottom: 5px;}
+#tab-mac-timecapsule #bottom #column1 { width: 205px; }
+#tab-mac-timecapsule #bottom #column2 { width: 205px; }
+#tab-mac-timecapsule #bottom #column3 { width: 205px; background: none;}
+#tab-mac-timecapsule #bottom .column img { margin-bottom: 6px;}
+
+/* iPod touch */
+#tab-ipod-touch { height: auto; padding-top: 20px; text-align: center; color: #666;}
+#tab-ipod-touch #top_left { float: left; width: 218px; margin: 0 28px 0 0; padding-left: 28px; text-align: left;}
+#tab-ipod-touch #top_left p { color: #666; margin-top: 5px; }
+#tab-ipod-touch #top_left p.price { color: #333; margin: 11px 0 12px;}
+#tab-ipod-touch #top_left h4 { color: #000; font-size: 1.2em; font-weight: bold; margin-top: 44px; }
+#tab-ipod-touch #bottom { width: 616px; margin: 0 auto 10px; background: transparent url("../dept/img/ipod_touch_bg.png") no-repeat 50% 100%; }
+#tab-ipod-touch #bottom .column { width: 123px; text-align: center; float: left; position: relative; margin-bottom: 20px; }
+#tab-ipod-touch #bottom .column p, #tab-ipod-touch #bottom .column h4 { width: 94px; text-align: left; margin: 0 auto;}
+#tab-ipod-touch #bottom .column p { color: #666; }
+#tab-ipod-touch #bottom .column h4 { color: #333; font-size: 1.2em; font-weight: bold; margin-bottom: 5px;}
+#tab-ipod-touch #bottom .column img { margin-bottom: 6px;}
+#tab-ipod-touch p a.circle-arrow { padding-right: 15px; background: transparent url("../dept/img/link_arrow.png") no-repeat 100% 50%;}
+
+/* MS Office 08 */
+#tab-mac-office08 { background: transparent url("../dept/img/bg-gradient-grey.gif") no-repeat 0px 0; height: auto; width: 624px; margin: 0 auto;}
+#tab-mac-office08 #top { position: relative; float: left; width: 184px; padding-left: 25px; _margin-bottom: -20px;}
+#tab-mac-office08 h3 { padding-top: 40px; }
+#tab-mac-office08 p { color: #666; margin-top: 10px; }
+#tab-mac-office08 .btn { margin-top: 10px; }
+#tab-mac-office08 img.hero { margin:28px 15px 0 20px; position: relative; float: left; width: 336px; }
+#tab-mac-office08 .violator { position: absolute; top: -2px; right: 48px; }
+#tab-mac-office08 .column { text-align: center; width: 208px; float: left; position: relative; margin-bottom: 20px; background: transparent url("../dept/img/column_divider_tall.png") no-repeat 100% 20px;}
+#tab-mac-office08 #column3 { background: none; }
+#tab-mac-office08 .column p, #tab-mac-office08 .column h4 { text-align: left; width: 163px; margin: 0 auto; }
+#tab-mac-office08 .column h4 { font-size: 1.09em; font-weight: bold; margin: 20px auto 15px;}
+#tab-mac-office08 .column p { color: #000; }
+#tab-mac-office08 .column p.desc { color: #666; }
+#tab-mac-office08 .column .btn { margin-right: 80px; }
+
+/* MacBook Air - Global */
+#tab-mac-macbookair { width: 616px; margin: 0 auto; background: #000 url("../dept/img/macbook_air_bg.jpg") no-repeat 50% 0; height: auto; }
+#tab-mac-macbookair .violator { position: absolute; top: 8px; right: 9px; }
+#tab-mac-macbookair #top { text-align: center; padding: 21px 0 0 0; }
+#tab-mac-macbookair #top div { width: 500px; height: 20px; margin: 15px auto 0; }
+#tab-mac-macbookair #top p { width: 285px; font-size: 1.1em; color: #a8a8a8; display: inline; }
+#tab-mac-macbookair #top p a img { margin-left: 10px; vertical-align: middle; margin-bottom: 3px; }
+#tab-mac-macbookair #top img.btn { width: 81px; }
+#tab-mac-macbookair #top h4 { width: 570px; color: #d1d1d1; font-size: 1.3em; margin: 185px auto 0; text-align: left; }
+#tab-mac-macbookair #bottom { width: 616px; margin: 20px auto 30px; }
+#tab-mac-macbookair #bottom .column { text-align: center; float: left; position: relative; background: transparent url("../dept/img/column_divider_black.png") no-repeat 100% 16px; color: #666; }
+#tab-mac-macbookair #bottom .column p, #tab-mac-macbookair #bottom .column h4 { width: 166px; text-align: left; margin: 0 auto; }
+#tab-mac-macbookair #bottom .column h4 { color: #d1d1d1; font-size: 1.3em; margin: 5px auto; }
+#tab-mac-macbookair #bottom #column1 { width: 205px; }
+#tab-mac-macbookair #bottom #column2 { width: 205px; }
+#tab-mac-macbookair #bottom #column3 { width: 205px; background: none; }
+#tab-mac-macbookair #bottom .column img { margin-bottom: 6px; }
+#tab-mac-macbookair #bottomcap { width: 616px margin: 0 auto; height: 6px; background: transparent url("../dept/img/macbook_air_bottom.jpg") no-repeat 50% 100%; }
+
+#macbookair_guided_tour { width: 616px; margin: -16px auto -8px; }
+#macbookair_guided_tour img { margin-left: 59px; margin-right: -13px; float: left; position: relative;}
+#macbookair_guided_tour p { padding: 22px 0 0 0; }
+#macbookair_guided_tour p a.circle-arrow { padding-right: 15px; background: transparent url("../dept/img/link_arrow.png") no-repeat 100% 50%;}
+
+/* MacBook Air - U.S. */
+#tab-mac-macbookair-us { width: 624px; margin: 0 auto; text-align: center; background: #fff url("../dept/img/macbookair-hero.jpg") no-repeat 50% 110px; _margin: -18px 0 0 2px; }
+#tab-mac-macbookair-us .violator { position: absolute; top: 3px; right: 7px; }
+#tab-mac-macbookair-us h3 { padding-top: 40px; }
+#tab-mac-macbookair-us div { width: 500px; height: 20px; margin: 15px auto 0; }
+#tab-mac-macbookair-us p { width: 350px; font-size: 1.15em; color: #474747; display: inline; }
+#tab-mac-macbookair-us p a img { margin-left: 10px; vertical-align: middle; margin-bottom: 3px; }
+#tab-mac-macbookair-us .btn { margin-left: 8px; width: 81px; }
+
+/* MacBook Pro */
+#tab-mac-macbookpro { text-align: center; color: #333; background: transparent url("../dept/img/macbookpro-bg.jpg") no-repeat 55% 100%; height: auto; }
+#tab-mac-macbookpro .hero { margin: 20px auto 10px; }
+#tab-mac-macbookpro h3 { padding-top: 26px; }
+#tab-mac-macbookpro .subhd p { width: 285px; font-size: 1.1em; display: inline; }
+#tab-mac-macbookpro .subhd p a img { width: 96px; margin-left: 10px; vertical-align: middle; margin-bottom: 3px; }
+#tab-mac-macbookpro h4 { text-align: left; width: 584px; margin: 0 auto; font-weight: bold; font-size: 1.2em; }
+#tab-mac-macbookpro p { color: #666; font-size: 1.15em; line-height: 1.3em; margin-bottom: 10px; }
+#tab-mac-macbookpro .grid3col { width: 616px; margin: 26px auto 0; padding-bottom: 40px; }
+#tab-mac-macbookpro .grid3col .column { text-align: center; float: left; position: relative; }
+#tab-mac-macbookpro .grid3col .column h4,
+#tab-mac-macbookpro .grid3col .column p { color: #666; font-size: 1em; width: 174px; text-align: left; margin: 0 auto; }
+#tab-mac-macbookpro .grid3col .column h4 { color: #333; font-size: 1.2em; margin-bottom: 10px; }
+#tab-mac-macbookpro .grid3col #column1 { width: 200px; }
+#tab-mac-macbookpro .grid3col #column2 { width: 215px; }
+#tab-mac-macbookpro .grid3col #column3 { width: 200px; background: none; }
+
+/* MacBook */
+#tab-mac-macbook { width: 626px; margin: 0 auto 10px; color: #666; background: transparent url("../dept/img/macbook-bg.jpg") no-repeat 50% 0; height: auto; }
+#tab-mac-macbook .text { width: 225px; margin-left: 25px; }
+#tab-mac-macbook .hero { position: absolute; top: 25px; left: 185px; }
+#tab-mac-macbook h3 { padding: 26px 0 6px; }
+#tab-mac-macbook h4 { color: #333; font-weight: bold; margin-top: 20px; }
+#tab-mac-macbook p { font-size: 1em; font-weight: bold; line-height: 1.3em; }
+#tab-mac-macbook p.price { color: #333; line-height: 1.4em; margin-top: 10px; }
+#tab-mac-macbook p.subhd { font-weight: normal; }
+#tab-mac-macbook .btn { margin-top: 4px; margin-bottom: 60px; }
+
+p#footnotes { color: #ccc; font-size: 9px; line-height: 12px; margin: 0 auto; width: 600px; }
+p#footnotes cite { white-space: nowrap; }
+
+/* Final Cut Server */
+#tab-mac-fcs { width: 626px; height: 254px; margin: 0 auto 20px; !margin-top: 20px; color: #666; background: transparent url("../dept/img/fcs-background.jpg") no-repeat 100% 0; }
+#tab-mac-fcs .hero { position: absolute; right: 40px; top: 0; }
+#tab-mac-fcs .tab-content { margin: 16px 0 0 25px; width: 241px; position: relative; }
+#tab-mac-fcs .tab-content h3 { margin-bottom: 12px; }
+#tab-mac-fcs .tab-content h4 { color: #333; font-weight: bold; }
+#tab-mac-fcs .tab-content ul { margin-bottom: 6px; }
+#tab-mac-fcs .tab-content ul li { line-height: 1.3em; }
+#tab-mac-fcs .tab-content p { margin-bottom: 24px; line-height: 1.3em; !width: 220px; }
+#tab-mac-fcs .tab-content p.price { color: #333; font-weight: bold; margin-bottom: 6px; }
+
+/* iMac */
+#tab-mac-imac { width: 626px; height: 254px; margin: 0 auto 10px; !margin-top: 20px; color: #666; background: transparent url("../dept/img/imac-background.jpg") no-repeat 100% 100%; }
+#tab-mac-imac .hero { position: absolute; right: 0; }
+#tab-mac-imac .tab-content { margin: 16px 0 0 28px; width: 231px; position: relative; }
+#tab-mac-imac .tab-content h3 { margin-bottom: 12px; }
+#tab-mac-imac .tab-content h4 { color: #333; font-weight: bold; }
+#tab-mac-imac .tab-content ul { margin-bottom: 6px; }
+#tab-mac-imac .tab-content ul li { line-height: 1.3em; }
+#tab-mac-imac .tab-content p { width: 216px; margin-bottom: 8px; line-height: 1.3em; }
+#tab-mac-imac .tab-content p.price { color: #333; font-weight: bold; margin-bottom: 6px; }
+
+/* iPod shuffle */
+#tab-ipod-shuffle { background: transparent url("../dept/img/bg-gradient-blue.gif") no-repeat bottom left; height: 274px; margin: 0 1px 10px; } 
+
+
+/* fathers day mac tab */
+#tab-mac-fathersday { width: 626px; height: 242px; margin: 0 auto 20px; !margin-top: 20px; color: #666; background: transparent url("../dept/img/bg-gradient-fathersday.gif") no-repeat 100% 0; line-height: 1.3em;}
+#tab-mac-fathersday .buynow {margin-top: 8px;}
+#tab-mac-fathersday h4 { color: #333; font-weight: bold;}
+#tab-mac-fathersday .hero { position: absolute; left: 85px; top: 51px; }
+#tab-mac-fathersday .prod-info {position: absolute; left: 519px; top: 14px; width: 130px;}
+#tab-mac-fathersday .tab-content { margin: 16px 0 0 29px; width: 260px; position: relative; }
+#tab-mac-fathersday .tab-content h3 { margin-bottom: 12px; }
+#tab-mac-fathersday .tab-content h4 { margin-top: 20px; width: 107px;}
+#tab-mac-fathersday .prod-info h4 {margin-top: -15px; width: 100px;}
+
+/* fathers day ipod tab */
+#tab-ipod-fathersday { width: 626px; height: 260px; margin: 0 auto 20px; !margin-top: 20px; color: #666; background: transparent url("../dept/img/bg-gradient-fathersday.gif") no-repeat 100% 0; line-height: 1.3em;}
+#tab-ipod-fathersday .buynow {margin-top: 8px;}
+#tab-ipod-fathersday h4 { color: #333; font-weight: bold;}
+#tab-ipod-fathersday .hero { position: absolute; left: 122px; top: 40px; }
+#tab-ipod-fathersday .prod-info {position: absolute; left: 480px; top: 14px; width: 135px;}
+#tab-ipod-fathersday .tab-content { margin: 16px 0 0 29px; width: 260px; position: relative; }
+#tab-ipod-fathersday .tab-content h3 { margin-bottom: 12px; }
+#tab-ipod-fathersday .tab-content h4 { margin-top: 110px; width: 107px;}
+
+/* mothers day mac tab */
+#tab-mac-mday { width: 626px; height: 254px; margin: 0 auto 20px; !margin-top: 20px; color: #666; background: transparent url("../dept/img/bg-gradient-mday.gif") no-repeat 100% 0; line-height: 1.3em;}
+#tab-mac-mday .hero { position: absolute; right: 40px; top: 3px; }
+#tab-mac-mday .prod-info {position: absolute; left: 520px; top: 85px; }
+#tab-mac-mday .prod-info h4 { color: #333; font-weight: bold; }
+#tab-mac-mday .prod-info .btn {margin-top: 8px;}
+#tab-mac-mday .tab-content { margin: 16px 0 0 25px; width: 241px; position: relative; }
+#tab-mac-mday .tab-content h3 { margin-bottom: 12px; }
+#tab-mac-mday .tab-content p { margin-bottom: 24px; !width: 220px; }
+
+/* mothers day ipod tab */
+#tab-ipod-mday { width: 626px; height: 254px; margin: 0 auto 20px; !margin-top: 20px; color: #666; background: transparent url("../dept/img/bg-gradient-mday-ipod.gif") no-repeat 100% 0; line-height: 1.3em;}
+#tab-ipod-mday .buynow {margin-top: 8px;}
+#tab-ipod-mday h4 { color: #333; font-weight: bold;}
+#tab-ipod-mday .hero { position: absolute; left: 103px; top: 20px; }
+#tab-ipod-mday .hero-mx { position: absolute; left: 103px; top: 5px; }
+#tab-ipod-mday .prod-info {position: absolute; left: 498px; top: 30px; }
+#tab-ipod-mday .tab-content { margin: 16px 0 0 25px; width: 260px; position: relative; }
+#tab-ipod-mday .tab-content h3 { margin-bottom: 12px; }
+#tab-ipod-mday .tab-content h4 {margin-top: 30px;}
+#tab-ipod-mday .tab-content p { margin-bottom: 24px; !width: 220px; }
+#tab-ipod-mday .tab-content.mx p {width: 240px;}
+#tab-ipod-mday .tab-content .mx-indent {padding-left: 10px;}
+
+/* Adobe CS3 Education */
+#tab-mac-cs3education { color: #333; height: auto;}
+#tab-mac-cs3education .grid2col { width: 624px; margin: 0 auto; padding-bottom: 30px; background: transparent url("../dept/img/cs3education-bg.jpg") no-repeat 50% 100%; }
+#tab-mac-cs3education .grid2col .column1 { padding-top: 32px; float: left; display: inline; width: 243px; margin-left: 27px; }
+#tab-mac-cs3education .grid2col .column2 { float: right; display: inline; width: 329px; margin-right: 10px; }
+#tab-mac-cs3education .grid2col .column2 img { margin-left: -18px; }
+#tab-mac-cs3education .grid2col p { color: #666; font-size: 1em; line-height: 1.4em; }
+#tab-mac-cs3education .grid2col .column2 p { color: #bbb; font-size: .85em; line-height: .85em; text-align: right; margin: 8px 0 15px; }
+#tab-mac-cs3education .grid2col .btn { margin-top: 10px; }
+#tab-mac-cs3education #calltostart { margin: 16px 0 0 17px; }
+#tab-mac-cs3education ol { width: 572px; margin: 0px auto; _zoom: 1; }
+#tab-mac-cs3education ol:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+#tab-mac-cs3education ol li { float: left; display: inline; width: 176px; margin-top: -40px; margin-right: 22px; position: relative; }
+#tab-mac-cs3education ol li.column3 { margin-right: 0px; }
+#tab-mac-cs3education ol li h4 { color: #666; font-size: 1.4em; font-weight: bold; margin-bottom: 6px; }
+#tab-mac-cs3education ol li h4 span { color: #333; }
+#tab-mac-cs3education p.questions { clear: left; color: #000; text-align: center; font-size: 1.2em; font-weight: bold; padding: 15px 0 5px; margin: 20px 0 0; background: transparent url("../dept/img/cs3education-horiz-divider.png") no-repeat 50% 0; }
+
+/* College Seniors - Last Chance */
+#tab-mac-seniors { width: 626px; height: auto; margin: 0 auto 10px; !margin-top: 20px; color: #666; background: transparent url("../dept/img/seniors-background.jpg") no-repeat 0 184px; }
+#tab-mac-seniors .hero { position: absolute; right: 32px; }
+#tab-mac-seniors .tab-content { margin: 16px 0 0 28px; padding-top: 30px; !padding-top: 15px; width: 304px; position: relative; }
+#tab-mac-seniors .tab-content p { margin-bottom: 14px; line-height: 1.3em; }
+#tab-mac-seniors ul { margin: 20px 0 6px 28px; width: 582px; overflow: auto; }
+#tab-mac-seniors ul li { line-height: 1.3em; float: left; display: inline; background: url('../dept/img/last-chance-divider.gif') no-repeat 0 20px; }
+#tab-mac-seniors ul li.column1 { width: 180px; background: none; }
+#tab-mac-seniors ul li.column2 { width: 208px; }
+#tab-mac-seniors ul li.column3 { width: 194px; }
+#tab-mac-seniors ul li.column1 img { margin-left: 42px; }
+#tab-mac-seniors ul li.column2 img { margin-left: 40px; }
+#tab-mac-seniors ul li.column3 img { margin-left: 56px; }
+#tab-mac-seniors ul li h4, 
+#tab-mac-seniors ul li p { width: 170px; margin-left: 22px; }
+#tab-mac-seniors ul li.column1 h4, 
+#tab-mac-seniors ul li.column1 p { width: 156px; margin-left: 0px; }
+#tab-mac-seniors h4 { color: #333; font-size: 1.3em; font-weight: bold; margin: 56px 0 10px 28px; }
+#tab-mac-seniors ul li p { margin-bottom: 6px; }
+#tab-mac-seniors ul li h4 { margin-top: 0; font-size: 1.2em; }
+#tab-mac-seniors p.note { margin: 8px 0 0 28px; color: #ccc; }
+
+/* Education Discount */
+#tab-mac-edu { height: auto; padding-top: 25px; color: #666; }
+#tab-mac-edu h3 { margin-bottom: 3px; }
+#tab-mac-edu h4 { color: #333; font-size: 1.1em; font-weight: bold; margin: 0 0 26px 28px; text-align: left; position: relative; }
+#tab-mac-edu .btn { margin: 8px auto; }
+#tab-mac-edu img.hero { margin: -110px 0 0 96px; }
+#tab-mac-edu #top_left { width: 284px; margin: 0; padding-left: 28px; text-align: left; position: relative; }
+#tab-mac-edu #top_left p { line-height: 1.4em; !margin-top: 4px; }
+#tab-mac-edu #top_left p.sub { margin-top: 10px; }
+#tab-mac-edu #bottom { width: 616px; min-height: 240px; _height: 240px; margin: -46px auto 0; background: transparent url("../dept/img/mac_edu_discount_bg.jpg") no-repeat 50% 100%; }
+#tab-mac-edu #bottom .column { width: 200px; float: left; position: relative; display: inline; text-align: center; margin-top: 40px; }
+#tab-mac-edu #bottom #column1 { margin-left: 6px; }
+#tab-mac-edu #bottom #column3 { width: 190px; margin-left: 15px; }
+#tab-mac-edu #bottom .column p,
+#tab-mac-edu #bottom .column h4 { width: 168px; text-align: left; margin: 0 auto; }
+#tab-mac-edu #bottom .column h4 { font-size: 1.2em; font-weight: bold; margin-bottom: 5px; }
+#tab-mac-edu #bottom .column img { margin-bottom: -4px; }
+
+/* mac cases */
+#tab-mac-bags { background: transparent url(../dept/img/bg-gradient-blue.gif) no-repeat 0 100%; height: auto; min-height: 274px; _height: 274px; margin: 0 0 10px 1px; width: 624px; _width: 626px; }
+#tab-mac-bags .btn { margin-top: 10px; }
+#tab-mac-bags h4 { padding: 24px 0 8px 30px; }
+#tab-mac-bags dl.product { position: relative; float: left; }
+#tab-mac-bags .prod1,
+#tab-mac-bags .prod2,
+#tab-mac-bags .prod3 { overflow: auto; }
+#tab-mac-bags .prod1 { width: 340px; margin-left: 30px; }
+#tab-mac-bags .prod1 .hero { width: 174px; float: left; }
+#tab-mac-bags .prod1 dl { width: 140px; margin: 36px 0 0 20px; }
+#tab-mac-bags .prod2 { width: 244px; margin: -225px 0 0 368px; }
+#tab-mac-bags .prod2 .herosub { width: 107px; float: left; }
+#tab-mac-bags .prod2 dl { margin: -3px 0 0 14px; width: 120px; }
+#tab-mac-bags .prod3 { width: 244px; margin: 10px 0 0 368px; }
+#tab-mac-bags .prod3 .herosub { width: 90px; margin-left: 10px; float: left; }
+#tab-mac-bags .prod3 dl { margin: 20px 0 0 21px; width: 120px; }
+
+/* mac games */
+#tab-mac-games { color: #666; background: transparent url(../dept/img/bg-gradient-games.jpg) no-repeat 100% 76%; height: auto; min-height: 274px; _height: 274px; width: 624px; _width: 626px; margin: 0 0 0 2px;  }
+#tab-mac-games img.hero { margin: -192px 0pt 0pt 222px; }
+#tab-mac-games #top_content { width: 285px; margin: 0; padding-left: 28px; text-align: left; position: relative; }
+#tab-mac-games #top_content div { width: 182px; }
+#tab-mac-games #top_content h3 { margin-bottom: 6px; padding-top: 22px; }
+#tab-mac-games #top_content h4 { color: #333; font-weight: bold; margin-bottom: 0px; }
+#tab-mac-games #top_content p { line-height: 1.4em; margin-bottom: 8px; }
+#tab-mac-games #top_content p.intro { margin-bottom: 12px; }
+
+/* MobileMe Sidebar */
+#navigation #mobileme h3 {
+    background-image: none;
+    background-color: transparent;
+    float: none;
+}
+#navigation #mobileme h3 a {
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    color: black;
+    padding-bottom: 0;
+}
+#navigation #mobileme p.more a {
+    display: inline;
+	padding-right: 7px;
+	color: #0085cf;
+	background: url(http://a248.e.akamai.net/7/248/2041/1429/store.apple.com/rs/css/i/aos/module/link-more.png) 100% 60% no-repeat !important;
+	background-image: url(i/aos/module/link-more.gif);
+}
+#navigation #mobileme ul {
+    padding: 0 12px;
+    color: #666;
+    line-height: 16px;
+}
+#navigation #mobileme ul li {
+    padding: 0 0 0 7px;
+    background: url(../layout/bullet.gif) 0 6px no-repeat;
+}
+#navigation #mobileme p.productshot {
+    text-align: center;
+}
+#navigation #mobileme p.productshot img {
+    margin-top: 6px;
+}
+#navigation #apple-promotions .modulecontent p {
+    width: auto;
+    padding: 0 12px;
+    margin: 0;
+}
+#navigation #apple-promotions .modulecontent p.productshot {
+    padding: 20px 0 0 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* Back to School */
+#tab-mac-backtoschool { width: 626px; height: auto; margin: 0 auto; color: #666; }
+#tab-mac-backtoschool .top { height: 262px; background: #71c9cd; position: relative; }
+#tab-mac-backtoschool .top h3 { position: absolute; top: 56px; left: 26px;}
+#tab-mac-backtoschool .top .btn { position: absolute; top: 180px; left: 26px;}
+#tab-mac-backtoschool .top .hero { position: absolute; top: 0; right: 67px; }
+#tab-mac-backtoschool h4 { color: #333; font-size: 1.3em; line-height: 1.3em; font-weight: bold; margin: 10px 26px 4px; }
+#tab-mac-backtoschool p { margin: 12px 80px 0 28px; line-height: 16px; }
+#tab-mac-backtoschool ul { margin: 0 0 0 26px; width: 582px; overflow: auto; }
+#tab-mac-backtoschool ul li { position: relative; color: #333; font-size: 1.1em; line-height: 1.3em; font-weight: bold; padding-top: 75px; float: left; background: url('../dept/img/back-to-school-divider.png') no-repeat 100% 70px; }
+#tab-mac-backtoschool ul li img { position: absolute; top: 4px; margin-top: 4px; }
+#tab-mac-backtoschool ul li.column1 { width: 184px; }
+#tab-mac-backtoschool ul li.column2 { width: 179px; margin-left: 26px; }
+#tab-mac-backtoschool ul li.column3 { width: 174px; margin-left: 19px; background: none; }
+#tab-mac-backtoschool ul li.column1 img { margin-left: 22px; }
+#tab-mac-backtoschool ul li.column2 img { margin-left: 15px; margin-top: 0; }
+#tab-mac-backtoschool ul li.column3 img { margin-left: 42px; }
+#tab-mac-backtoschool ul li h4 { display: inline; font-weight: bold; font-size: 1.1em; margin-left: 0px; padding: 0; }
+#tab-mac-backtoschool ul li p { width: 170px; margin: 0 0 6px 0; color: #666; font-size: 11px; font-weight: normal; }
+#tab-mac-backtoschool ul li.column1 p { width: 152px; }
+#tab-mac-backtoschool ul li.column2 p { width: 156px; }
+
+/* Back to School Canada FR */
+#tab-mac-backtoschool-fx { width: 626px; height: auto; margin: 0 auto; color: #666; }
+#tab-mac-backtoschool-fx .top { height: 262px; background: #71c9cd; position: relative; }
+#tab-mac-backtoschool-fx .top h3 { position: absolute; top: 56px; left: 26px;}
+#tab-mac-backtoschool-fx .top .btn { position: absolute; top: 180px; left: 26px;}
+#tab-mac-backtoschool-fx .top .hero { position: absolute; top: 0; right: 67px; }
+#tab-mac-backtoschool-fx h4 { color: #333; font-size: 1.3em; line-height: 1.3em; font-weight: bold; margin: 10px 26px 4px; }
+#tab-mac-backtoschool-fx p { margin: 12px 80px 0 28px; line-height: 16px; }
+#tab-mac-backtoschool-fx ul { margin: 0 0 0 26px; width: 595px; overflow: auto; }
+#tab-mac-backtoschool-fx ul li { position: relative; color: #333; font-size: 1.1em; line-height: 1.3em; font-weight: bold; padding-top: 75px; float: left; background: url('../dept/img/back-to-school-divider.png') no-repeat 100% 70px; }
+#tab-mac-backtoschool-fx ul li img { position: absolute; top: 4px; margin-top: 4px; }
+#tab-mac-backtoschool-fx ul li.column1 { width: 184px; }
+#tab-mac-backtoschool-fx ul li.column2 { width: 179px; margin-left: 19px; }
+#tab-mac-backtoschool-fx ul li.column3 { width: 174px; margin-left: 19px; background: none; }
+#tab-mac-backtoschool-fx ul li.column1 img { margin-left: 22px; }
+#tab-mac-backtoschool-fx ul li.column2 img { margin-left: 15px; margin-top: 0; }
+#tab-mac-backtoschool-fx ul li.column3 img { margin-left: 42px; }
+#tab-mac-backtoschool-fx ul li h4 { display: inline; font-weight: bold; font-size: 1.1em; margin-left: 0px; padding: 0; }
+#tab-mac-backtoschool-fx ul li p { width: 170px; margin: 0 0 6px 0; color: #666; font-size: 11px; font-weight: normal; }
+#tab-mac-backtoschool-fx ul li.column1 p { width: 152px; }
+#tab-mac-backtoschool-fx ul li.column2 p { width: 156px; }
+
+/* MobileMe */
+#tab-mac-mobileme { color: #666; background: transparent url("../dept/img/mobileme-bg.jpg") no-repeat 50% 100%; height: auto; min-height: 519px; _height: 519px; }
+#tab-mac-mobileme p { font-size: 11px; }
+#tab-mac-mobileme h3 { padding: 18px 0 0; *margin-bottom: 3px; }
+#tab-mac-mobileme h4 { text-align: left; margin: 0 auto; font-weight: bold; font-size: 1.2em; margin-bottom: 6px; *margin-bottom: 10px; color: #333; }
+#tab-mac-mobileme .top { width: 600px; margin-left: 26px; }
+#tab-mac-mobileme .top p { width: 290px; margin-bottom: 14px; line-height: 1.4em; }
+#tab-mac-mobileme .bottom { width: 583px; margin: -2px 0 0 26px; margin-top: -1px; }
+#tab-mac-mobileme .hero { margin: -31px 0 0 72px; }
+#tab-mac-mobileme .badge { float: right; margin: 20px 40px 0 0; }
+#tab-mac-mobileme ul { width: 583px; overflow: auto; margin: 0 auto; margin-top: 23px; }
+#tab-mac-mobileme ul li { color: #666; font-size: 1.1em; display: inline; float: left; background: url('../dept/img/mobileme-divider.png') no-repeat 100% 0; }
+#tab-mac-mobileme ul li img { margin-bottom: 11px; }
+#tab-mac-mobileme ul li h4,
+#tab-mac-mobileme ul li p { width: 176px; text-align: left; margin: 0 auto; *width: 172px; }
+#tab-mac-mobileme ul li h4 { color: #333; font-size: 13px; margin-bottom: 6px; }
+#tab-mac-mobileme ul li#column1 { width: 190px; }
+#tab-mac-mobileme ul li#column1 img { margin-left: 14px; }
+#tab-mac-mobileme ul li#column2 { width: 206px; }
+#tab-mac-mobileme ul li#column2 img { margin-left: 58px; }
+#tab-mac-mobileme ul li#column2 h4,
+#tab-mac-mobileme ul li#column2 p { width: 166px; }
+#tab-mac-mobileme ul li#column3 { width: 187px; background: none; }
+#tab-mac-mobileme ul li#column3 img { margin-left: 49px; }
+#tab-mac-mobileme ul li#column3 h4,
+#tab-mac-mobileme ul li#column3 p { width: 164px; margin-left: 20px;}

@@ -1,0 +1,2 @@
+{SLOGIC_LIST_ANNOUNCEMENTS}
+<div align="center">{SLOGIC_ADD_ANNOUNCEMENT}</div>

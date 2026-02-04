@@ -1,0 +1,136 @@
+{
+  "id": "merrow-com",
+  "viewports": [
+    {
+      "label": "phone",
+      "width": 375,
+      "height": 667
+    },
+    {
+      "label": "tablet",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "label": "desktop",
+      "width": 1440,
+      "height": 900
+    }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "Homepage",
+      "url": "http://localhost:3000/",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "About",
+      "url": "http://localhost:3000/about.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Machines",
+      "url": "http://localhost:3000/machines",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Parts",
+      "url": "http://localhost:3000/parts",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Support",
+      "url": "http://localhost:3000/support",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Agent Map",
+      "url": "http://localhost:3000/agentmap.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Customer Stories",
+      "url": "http://localhost:3000/customer-stories",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Overlock History",
+      "url": "http://localhost:3000/overlock-history",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Sergers Overview",
+      "url": "http://localhost:3000/Sergers_and_Overlock_Sewing_Machines",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "What is a Serger",
+      "url": "http://localhost:3000/Sergers_and_Overlock_Sewing_Machines/what-is-a-serger",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "70 Class",
+      "url": "http://localhost:3000/70class",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Crochet Machines",
+      "url": "http://localhost:3000/crochet-sewing-machines",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Sewing",
+      "url": "http://localhost:3000/sewing",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Fashion Sewing",
+      "url": "http://localhost:3000/fashion-sewing",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Technical Sewing",
+      "url": "http://localhost:3000/technical-sewing",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "End to End Seaming",
+      "url": "http://localhost:3000/end-to-end-seaming",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser", "CI"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}

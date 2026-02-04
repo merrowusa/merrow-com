@@ -1,0 +1,403 @@
+
+
+a{
+color:#000000;
+}
+
+
+ #title h3 a:hover { 
+  color: #e47911;
+}
+.n {}
+
+.n{/*left nav categories*/
+text-decoration:none;
+color:#000000;
+}
+
+h2{
+font-weight:100;
+color:#000000;
+text-decoration:none;
+margin-bottom: 0px;
+margin:0px;
+	padding: 5px;
+}
+
+
+
+h2 
+{
+font-size: 12px; 
+font-weight: bold;
+	padding: 0 0px 0px 26px;
+}
+
+#description div.dd {
+	color: #f29f2a;
+	font-size: 18px;
+}
+
+#description div.dd h2 {
+	color: #666;
+}
+
+
+
+.leftnavlink,.left-vert-bar-link
+{
+width:196px;
+	background: none no-repeat;
+	height: 0;
+}
+
+
+.leftnav {
+width:196px;
+	background: url(http://images.imerrow.com/images/machines/column-bg-grad198.png) no-repeat 0 10px;
+}
+
+
+table{/*no table borders*/
+border:0px;
+}
+
+
+
+
+.content{width: 95%;
+	margin-left: 20px;
+	position: absolute;
+}
+
+
+.main {
+	width: 100%;
+}
+
+
+
+
+body{
+font-family:verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+}
+
+
+
+body
+{
+margin:0px 0px 0px 0px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+background:#fff;
+}
+
+img{/*no image borders*/
+border:0px;
+}
+
+img.wba_zoom_btn {
+	visibility: hidden;
+}
+
+img.wba_email_btn {
+	visibility: hidden;
+}
+
+.i{/*Details img*/
+padding:5px;
+text-align:left;
+}
+
+.d{/*Details TD*/
+vertical-align:top;
+vertical-align:baseline;
+width: 50px;
+}
+
+.dd{/*Details price, name, usually ships spacing*/
+padding-bottom:10px;
+padding-top:10px;
+}
+
+span#parentAvailability {
+	color: #619eff;
+}
+
+.variant{border:#CCCCCC solid 1px;}
+
+
+.rw{/*right nav names*/
+color:#666666;
+font-size:10px;
+font-weight:bold;
+}
+
+
+.fg{
+font-weight:bold;
+padding:5px;
+}
+
+
+.fg,.fg1,h4 {
+}
+
+
+
+
+.fg{
+background:url(../images/hag_bullet2.gif) left no-repeat;
+font-size:12px;
+color:#000000;
+font-weight:bold;
+}
+
+.vert-bar *{width:170px !important;}
+
+
+
+
+
+
+#title.layout3 h3, #title.layout4 h3{
+	text-align:left;
+}
+
+#title h3{
+color:#666666;
+font-size: 67px;
+font-weight:bold;
+text-align:center;
+font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+H3 {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	margin:0px;
+
+}
+
+.bg{
+font-weight:bold;
+	background: url(http://images.imerrow.com/images/machines/boxtopbabyblue196.png) no-repeat;
+}
+
+#leftnav-label p {
+	color: #4d4d4d;
+	font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+
+.bgcl,.bgc,.bgcr,.bgl,.bg,.yy,.bar,.row,.bgw {}
+
+
+.bgcl,.bgc,.bgcr,.bgl,.bg,.yy,.bar,.row,.bgw {}
+
+
+.bg{
+width:196px;
+font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+font-size: 14px;
+vertical-align:middle;
+color: #4d4d4d;
+font-weight:bold;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 25px;
+	padding-right: 0px;
+	padding-left: 22px;
+}
+.r{/*right nav names*/
+color:#666666;
+font-size:10px;
+font-weight:bold;
+text-align: center;
+}
+
+#title h3 a.r {
+	color: #2E5D90;
+	font-size: 12px;
+	opacity: 1;
+	text-shadow: #000000 0 0 0;
+}
+
+h1{
+font-weight: bold;
+text-decoration:none;
+margin:0px;
+	color: #1848b2;
+	font-size: 16px;
+}
+
+#category-title h1 {
+	font-size: 18px;
+}
+
+#breadcrumb a{color: #f29f2a;
+}
+
+.crumbPast{font-size:12px; font-weight:normal;
+}
+
+span.crumbPast b {
+	color: #f29f2a;
+}
+
+span.crumbHome {
+	margin-left: 55px;
+	color: #f29f2a;
+}
+
+#breadcrumb h2{display:inline; padding:0; margin:0;}
+
+
+#category-title{
+background:url(../images/hag_bullet.gif) left no-repeat;
+padding-left:20px;
+font-size:12px;
+color:#000000;
+font-weight:bold;
+}
+
+.layout3{
+text-align:left;
+background-color:#FFFFFF;
+padding:3px;
+}
+
+.vert-bar .bg{width:100%; height:32px;}
+
+.vert-bar{padding:0;margin:0;}
+
+.e{/*left nav extras*/
+text-align:center;
+font-size:12px;
+}
+.our{font-weight: bold;color:#B13400;
+	font-size: 13px;
+}
+
+.our-label{color:#000000;font-weight:bold;}
+
+#sku h1{
+font-size:12px;
+font-weight:normal;
+color:#000000;
+text-decoration:none;
+margin:0px;
+display:inline;
+}
+
+.savings td{white-space:nowrap; font-size: 12px;
+
+}
+.savings .save{font-weight:normal;}
+.savings .list-label{font-weight:bold;}
+.savings .list{font-weight:normal; color:#000000;}
+
+#description h2,#features h2{
+font-size: 16px;
+color:#000000;
+text-decoration:none;
+margin:0px;
+padding:0px;
+display:inline;
+}
+
+#sku b {
+	font-size: 18px;
+}
+
+span#parentSku {
+	color: #4c4c4c;
+}
+
+#features h2 {
+	font-size: 12px;
+	font-weight: bold;
+}
+.fg1{
+height:30px;
+font-weight: bold;
+	background-image: none;
+}
+.fc{
+color:#587f00;
+font-size:12px;
+}
+.row{
+background:#f6f6f6;
+}
+.ct{
+text-align:center;
+}
+.ct,.cp{
+font-size: 9px;
+}
+.y{
+text-align:center;
+vertical-align:bottom;
+vertical-align:baseline;
+padding:3px;
+border-top: 1px solid #ddd;
+}
+
+td.leftnavlink.activeLink h2 b a.n {
+	color: black;
+}
+
+div#leftnav-label {
+	margin-top: 5px;
+	position: relative;
+	right: 5px;
+}
+
+#title table.savings {
+	visibility: visible;
+	text-transform: lowercase;
+}
+#sortBy form{text-align:right; padding:0; margin:0;
+	background-color: #fcfcfc;
+}
+
+tr.lightGreyBar {
+	background-color: #f9f9f9;
+	opacity: 0.78;
+}
+.tiny{
+font-size:9px;
+}
+
+.w{/*Cat header*/
+font-weight:bold;
+color:#3366ff;
+}
+.t a{
+color:#000000; 
+font-size:12px; 
+text-align:center;
+text-decoration:underline; 
+font-weight:bold;
+font-family:verdana, arial, tahoma;
+}
+
+ #title h3 a:hover { 
+  color: #e47911;
+	text-decoration: none;
+}
+
+.t a:hover{
+color:#ffff00; 
+text-decoration:underline; 
+}
+
+.list{text-decoration:line-through;}
+
+
+span.crumbHome {
+	margin-left: 55px;
+	color: #f29f2a;
+}

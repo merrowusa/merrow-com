@@ -1,0 +1,44 @@
+CHANGELOG for the Support-Logic helpdesk
+****************************************
+
+- version 1.2:
+			  - FIX: quick reply added to sent out emails
+			  - FIX: staff signature added to sent out emails
+			  - FIX: added [#ID{PIPE_ID}] to all needed email subject lines by default
+			  - FIX: added SMTP support for "register" and "lost password" functions
+			  - FIX: move ticket email config option
+			  - FIX: mail type install option
+			  - added index.htm in all directories to prevent directory listing
+			  - added email toggle for all emails sent out by the script (including pipe.php)
+			  - added start number selection for tickets in install.php
+			  - added enable/disable automatic user creation via pipe in admin config
+			  - added update scripts from 1.0, 1.1, 1.1.1 to 1.2
+
+- version 1.1.1: 
+                - improved session management
+                - added improved session hijacking prevention
+                - removed trans_id & no cookie session
+                - removed session_id() from all URLs
+
+- BUGFIX 01.17.04: pipe.php -> user validation fixed 
+				   - if s.o. sent an email to an existing ticket and the senders email address was verified by the name and not the
+				     email, then the pipe mixed up the validation and caused an error, so that an add-on note via email was not possible
+
+- version 1.1:
+				changes done by Marie Lowdon:
+				- improved template system: header & footer support, 1 CSS file for each section (admin, user, staff) to 
+				  change the design of all its template files 
+				- changed english language files
+				  
+				- self-defineable placeholders
+				- staff signature 
+				- predefined staff responses 
+				- change priority support for users
+				- HTML Tags support defineable in admin section
+				- added "SMTP" support for emails sent out by the helpdesk (HTML Mime mail class from Richard Heyes: richard@phpguru.org)
+				- improved email pipe: 	- support for multiple email addresses, which can be assigned to ticket categories 
+									 	- improved email client support for plain text & HTML only emails 
+									 	- added attachment support for most common attachment types 
+									 	- default email pipe priority can be changed through the admin interface now 
+									 	- max email limit on a per user & per day basis to avoid email flooding
+

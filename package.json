@@ -1,0 +1,17 @@
+{
+  "name": "merrow-web",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w apps/merrow.com",
+    "build": "npm run build -w apps/merrow.com",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

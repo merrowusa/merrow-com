@@ -1,0 +1,67 @@
+/* @override 
+	http://merrow3.amazonwebstore.com/themes/iwsclassic/styles/common.css
+	http://merrow.com/cephei/css/mamazoncss/extracted-common.css
+*/
+
+.attribution{
+	font-size:10px;
+	font-weight: normal;
+	text-transform: none;
+	text-align:center;
+	text-decoration:none;
+	vertical-align:top;
+}
+
+/* cgm */
+
+td#title.layout3.layout3Name {
+	background-color: black;
+	background-image: url(http://images.imerrow.com/images/mapple/index_iphonekeynotebottom_hero20080306.jpg);
+}
+
+/* cgm */
+
+td.leftnav-col {
+  border: 1px solid #d0eaf8;
+  padding: 4px 4px 0 4px;
+}
+
+/* cgm */
+#breadcrumbs h3{
+font-size:12px;
+margin:0px;
+padding:0px;
+display:inline;
+color: #055d90;
+font-family: verdana, Arial, Helvetica, sans-serif;
+}
+
+.attributionValue{
+	text-transform: capitalize;
+}
+#limitedQuantity{
+	color:#990000;
+}
+#via_amazon{margin-left:10px;}
+
+.savings td{white-space:nowrap; font-size:10px;}
+.savings .save{font-weight:normal;}
+.savings .list-label{font-weight:bold;}
+.savings .list{font-weight:normal; color:#000000;}
+
+.amazonPrime{text-align:center;padding:10px;}
+
+/* added blue backroound to search bar CGM */
+#sortBy {padding-right:10px;
+	background: url(http://merrow.com/cephei/css/mamazoncss/tile-blue-bg._V46870869_.gif) repeat-x;
+}
+#sortBy form{text-align:right; padding:0; margin:0;
+	background: none repeat-x;
+}
+
+/* cgm */
+#sortBy label{padding-right:5px;
+	color: blue;
+}
+
+.avgRating{margin-top:5px; font-size:10px;}

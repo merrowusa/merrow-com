@@ -1,0 +1,702 @@
+/* @override http://merrow.com/cephei/css/store/aos-global.css */
+
+/* @override http://merrow.com/cephei/css/store/aos-global.css */
+
+/* @override 
+	http://a248.e.akamai.net/7/248/2041/1433/store.apple.com/rs/css/aos-global.css
+	http://merrow.com/cephei/css/store/aos-global.css
+*/
+
+/* Text Asset Highlight */
+span.textAssetUnknown {
+	background-color: #982D10 !important;
+	border: 1px solid #982D10 !important;
+	color: #fff !important;
+}
+span.textAssetNoKey {
+	background-color: #2D7B78 !important;
+	border: 1px solid #2D7B78 !important;
+	color: #fff !important;
+}
+span.textAssetNoValue {
+	background-color: #538622 !important;
+	border: 1px solid #538622 !important;
+	color: #fff !important;
+}
+span.textAssetFound {
+/* do nothing */
+}
+
+
+hr {
+	display: none;
+}
+/* Checkout */
+#as-page-content hr {
+	display:block;
+}
+#aos-page {
+	width: 980px;
+	text-align: left;
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-right: 0;
+	padding-left: 38px;
+}
+#aos_header {
+	margin:0 auto;
+	padding-top: 0;
+	text-align: left;
+	width: 980px;
+	line-height: 1.7em;
+	font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+}
+#aos_header * {
+	margin: 0;
+	padding: 0;
+}
+.as-js-wrap {
+	margin: 0;
+	position: absolute;
+	visibility: hidden;
+	width: 1px;
+}
+/* Hide in accessible way */
+.xs {
+	display: block;
+	height: 1px;
+	position: absolute;
+	overflow: hidden;
+	visibility: hidden;
+	width: 1px;
+	line-height: 1px;
+}
+
+/* ------- Masthead ------- */
+#aos_header #masthead {
+    position: relative;
+	width: 168px;
+	color: #afafaf;
+	text-shadow: #fff 1px 1px 1px;
+	float: left;
+	display: inline;
+	margin: 0 8px 8px 0;
+}
+#aos_header #masthead_wrap {
+	min-height: 104px;
+	background: url(http://images.imerrow.com/images/agent_yellow_masthead.png) no-repeat 0 0;
+	z-index: 2;
+}
+#aos_header.collapsed #masthead {
+	margin-bottom: 0;
+}
+#aos_header.collapsed #masthead_wrap {
+	min-height: 0;
+	height: 45px;
+}
+#aos_header #masthead_btm {
+	float: left;
+	width: 168px;
+	height: 5px;
+	background: url(http://images.imerrow.com/images/mastheadagent.png) no-repeat 0 0;
+}
+#aos_header #masthead h1 {
+	overflow: hidden;
+	padding-top: 16px;
+	color: gray;
+	font-weight: bold;
+	font-size: 16px;
+}
+#aos_header #masthead h1 a {
+	display: block;
+	height: 28px;
+	line-height: 28px;
+	text-indent: -999em;
+	width: 168px;
+}
+#aos_header #masthead ul {
+	margin: 6px 14px 0;
+	width: 140px;
+	list-style: none;
+	padding-top: 0px !important;
+	padding-top: 1px;
+}
+#aos_header #masthead li {
+	display: inline;
+	line-height: 14px;
+	text-indent: 0;
+}
+#aos_header #masthead li a {
+	display: block;
+	overflow: hidden;
+}
+#aos_header #masthead address.phone {
+	background: url(../layout/mh_phone.png) 0 50% no-repeat;
+	width: 125px;
+	float: left;
+	font-style: normal;
+	height: 13px; /* This gets overridden in Catalog */
+	text-indent: -9999em;
+}
+#aos_header #masthead li#chatnow {
+	display: none;
+	float: left;
+	padding-top: 0 !important;
+	padding-top: 2px;
+	margin: 1px -20px 3px 6px; /* See bottom of stylesheet for non-safari style */
+	width: 46px; /* This gets overridden in Catalog */
+	height: 12px; /* This gets overridden in Catalog */
+}
+#aos_header #masthead li#chatnow a {
+	font-size: 0;
+}
+#aos_header #masthead .searchform {
+	clear: left;
+}
+#aos_header #masthead .searchform #default-search-form {
+	margin-left: 10px;
+}
+#aos_header #masthead .searchform fieldset {
+	margin-left: 10px;
+	border: 0;
+}
+#aos_header #masthead .searchform legend,
+#aos_header #masthead .searchform button {
+	display: none;
+}
+/* turning off hours everywhere*/
+body #aos_header #masthead #hours { 
+	display: none;
+}
+
+#aos_header #masthead #hours {
+	display: inline;
+	float: left;
+	margin: 0 0 10px 0;
+	text-indent: -9999em;
+}
+
+#aos_header #masthead #inviteBadge
+{
+    position: absolute;
+    top: 46px;
+    left: 1px;
+    z-index: 9999;
+    text-indent: -9999px;
+    display: block;
+    background: transparent;
+    background-image: url(http://images.imerrow.com/images/machines/chat-now.png) !important;
+    background-image: url(http://images.imerrow.com/images/machines/chat-now.gif);
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 159px;
+    height: 24px;
+    border: 0px;
+    cursor: pointer;
+    outline: none;
+}
+
+#aos_header.collapsed #masthead #inviteBadge
+{
+    top: 15px;
+    left: 277px;
+    width: 88px;
+    height: 16px;
+    background: transparent;
+    background-image: url(http://images.imerrow.com/images/machines/pancake-chat-now.gif);
+}
+
+/* ------- Guide (breadcrumb & user_nav) ------- */
+#aos_header #guide {
+	display: inline;
+	float: left;
+	width: 804px;
+	line-height: 1em;
+	color: #000;
+	text-shadow: 1px 1px 1px #fff;
+	background: url(http://images.imerrow.com/images/machines/bc-bg-corners.gif) no-repeat;
+}
+#guide li#chatnow {
+	display: block;
+	float: left;
+}
+/*
+.home #aos_header #guide,
+.department #aos_header #guide {
+	width: 628px;
+	background-image: url(http://images.imerrow.com/images/machines/bc-bg-corners-2.png);
+}*/
+#guide_wrap {
+	position: relative;
+	display: inline;
+	float: left;
+	margin: 0 4px;
+	width: 796px;
+	border-top: 1px solid #cdcdcd;
+	background: #eee url(http://images.imerrow.com/images/machines/bc-bg.gif) 0 0% repeat-x;
+}/*
+.home #aos_header #guide_wrap,
+.department #aos_header #guide_wrap {
+	width: 620px;
+}*/
+#guide_wrap_btm {
+	margin-top: -3px;
+	margin-bottom: 9px;
+	float: right;
+	width: 804px;
+	height: 4px;
+	background: url(http://images.imerrow.com/images/machines/bc-bg-corners_btm.gif) 0 0 no-repeat;
+}/*
+.home #aos_header #guide_wrap_btm,
+.department #aos_header #guide_wrap_btm {
+	background-image: url(http://images.imerrow.com/images/machines/bc-bg-corners_btm-2.png);
+	margin-right: 176px;
+	width: 628px;
+}*/
+#guide ul,
+#guide ol {
+	float: left;
+	list-style: none;
+}
+#guide li {
+	display: inline;
+	text-indent: 0;
+}
+#guide a,
+#guide span,
+#breadcrumb li.title span,
+#breadcrumb li.title a {
+	display: block;
+	float: left;
+	padding: .95em 10px;
+	color: #666;
+}		
+#guide a:hover {
+	text-decoration: none;
+	color: #000;
+	color: #0085cf;
+}				
+#breadcrumb {
+	float: left;
+}
+#breadcrumb li {
+	float: left;
+	text-indent: 0;
+}
+#breadcrumb a,
+#breadcrumb li.title span,
+#breadcrumb li.title a {
+	margin-top: 1px;
+	padding-right: 16px;
+	padding-left: 8px;
+	background: url(http://images.imerrow.com/images/machines/chevron.png) 100% 50% no-repeat !important;
+	background-image: url(http://images.imerrow.com/images/machines/chevron.gif);
+}
+#breadcrumb.js-managed a,
+#breadcrumb.js-managed li.title span,
+#breadcrumb.js-managed li.title a {
+	margin-left: -10px;
+	padding-left: 18px;
+}
+#breadcrumb li.title span,
+#breadcrumb li.title a {
+	background: none !important;
+}
+#breadcrumb span.separator {
+	display: none;
+}
+#breadcrumb #bc-home a {
+	width: 40px;
+	margin-left: 0;
+	padding-left: 0;
+	padding-right: 0;
+	background: url(http://images.imerrow.com/images/machines/chevron-home.png) 100% 50% no-repeat !important;
+	background-image: url(http://images.imerrow.com/images/machines/chevron-home.gif);
+	overflow: hidden;
+	text-indent: -9999em;
+}
+#user_nav {
+	margin-top: 1px;
+	margin-right: 4px;
+	position: relative;
+	float: right;
+	min-height: 2.95em;
+	background: url(http://images.imerrow.com/images/machines/usernav-border.png) repeat-y;
+}
+#user_nav ul {
+	padding: .795em 0 .795em 2px;
+	float: left;
+}
+.collapsed #user_nav {
+	min-height: 4.55em;
+}
+.collapsed #user_nav ul {
+	padding: 1.675em 1.475em 2px;
+}
+#user_nav a {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-right: 1px solid #cfcfcf;
+}
+#user_nav #u_cart a {
+	padding-right: 22px;
+	border-right: 0;
+	background: url(http://images.imerrow.com/images/machines/cart.png) 100% 50% no-repeat !important;
+	background-image: url(http://images.imerrow.com/images/machines/cart.gif);
+}
+#contact-us {
+	float: left;
+	font-size: 11px;
+	line-height: 1em;
+	padding: 1.375em 5px 0 5px;
+}
+#contact-us a,
+#contact-us span {
+	padding: 0;
+	display: block;
+	float: left;
+	color: #333;
+}
+#contact-us span {
+	padding: 2px 8px 2px 10px;
+}
+#contact-us strong {
+	font-weight: normal;
+	color: #000;
+}
+#contact-us div#lpChatButton {
+	position: absolute;
+}
+
+/* ------- Two column layout ------- */
+#primary { 					/* Any content to the right of the "left rail" */
+	float: right;
+	width: 804px;
+	min-height: 6.75em;	/* Keeps the nav to the left if no content in primary div */
+	font-size: 1.1em;
+} /* IE-overrides exist */
+
+.full #primary { /* full width - put class="full" on the body tag */
+	width: 980px;
+	min-height: 0; /* Keeps the nav to the left if no content in primary div */
+}
+#navigation { /* The "left rail" */
+	float: right;
+	margin-right: 7px;
+	width: 169px;
+	font-size: 1.1em;
+	line-height: 1.2em;
+}
+
+/* ------- Also used *if* the right rail is included: -------*/
+#primary_main { /* The content in the center */	
+	float: left;
+	margin-right: 7px;
+	width: 628px;
+}
+#secondary { /* The "right rail" */
+	float: left;
+	width: 169px;
+}/*
+
+/* ------- Global Footer ------- */
+#globalfooter {
+	clear: both;
+	margin: 0 auto 21px;
+	padding-top: 10px;
+	padding-bottom: 1px;
+	width: 980px;
+	text-align: left;
+	font: 10px/1.7em "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+}
+#globalfooter * {
+	margin: 0;
+	padding: 0;
+}
+#globalfooter ul {
+	list-style: none;
+	margin-bottom: 0;
+}
+#globalfooter #orderbyphone,
+#sosumi {
+	float: left;
+}
+#globalfooter #otherstores p,
+#globalfooter #otherstores ul,
+#globalfooter li{
+	display: inline;
+}
+#globalfooter li {
+	margin-right: 1em;
+	padding-right: 1.25em;
+	border-right: 1px solid #666;
+	text-indent: 0;
+}
+#globalfooter li.last {
+	margin-right: 0;
+	border-right: 0;
+}
+#globalfooter a {
+	color: #0085cf;
+}
+#globalfooter #otherstores p {
+	margin-right: 1em;
+}
+#globalfooter #otherstores ul,
+#globalfooter #otherstores form,
+#globalfooter #otherstores fieldset {
+	border: 0;
+	display: inline;
+	vertical-align: top;
+	clear: none;
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+#globalfooter #otherstores form#as-country-switch div {
+	display: inline;
+	width: auto;
+	float: none;
+	clear: none;
+	margin: 0;
+	padding: 0;
+}
+#globalfooter #otherstores form#as-country-switch fieldset {
+	width: 120px;
+}
+#globalfooter #otherstores form#as-country-switch select {
+	position: relative;
+	top: -6px;
+	margin: 0;
+	margin-bottom: -6px;
+	padding: 0;
+	width: 120px;
+}
+#globalfooter #otherstores legend {
+	display: none;
+}
+#globalfooter #shopelsewhere {
+	margin-bottom: .5em;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #d0d1d2;
+}
+#globalfooter #otherstores,
+#globalfooter #gethelp {
+	text-align: right;
+}
+
+
+/* =PSEARCH
+This section controls the "pretty search" fields
+that mimic Safari's input type="search" display.
+========================================== */
+form .psearch {
+    background: none;
+    border: 0;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    width: 130px;
+}
+form div.psearch {
+    position: relative;
+    background: url(http://images.imerrow.com/images/machines/psearch-def-white.gif) 0 0 no-repeat;
+}
+form div.psearch.safari {
+    background: none;
+}
+
+form div.focused {
+    background-position: bottom left;
+}
+
+form div#default-search-form {
+    background: url(http://images.imerrow.com/images/machines/psearch-def-ececec.gif) 0 0 no-repeat;
+}
+form div#default-search-form.focused {
+    /* needed for ie*/
+    background-position: bottom left;
+}
+form div#default-search-form.safari {
+    background: none;
+}
+
+form div#drk-grey-search-form {
+    background: url(http://images.imerrow.com/images/machines/psearch-def-cccccc.gif) 0 0 no-repeat;
+}
+form div#drk-grey-search-form.focused {
+    /* needed for ie*/
+    background-position: bottom left;
+}
+form div#drk-grey-search-form.safari {
+    background: none;
+}
+
+form div.psearch label {
+    display: block;
+    padding: 4px 0;
+}
+
+form input.psearch {
+    /* prevent google toolbar from breaking pretty search when autofill is enabled*/
+    background-color: transparent !important;
+    color: #666;
+    font-size: 11px;
+    height: 18px;
+    margin: 0 4px;
+    padding: 4px 4px 0px 10px;
+    width: 120px;
+}
+
+/* Fix so that the text won't flow pased the end of the background image (x) */
+form input.psearch.nonsafari {
+    width: 108px;
+}
+form div.psearch span {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    overflow: hidden;
+    z-index: 1;
+    right: 9px;
+    top: 10px;
+    background: url(http://images.imerrow.com/images/machines/clear.gif);
+    cursor: pointer;
+    display: none;
+}
+form div.psearch span.down {
+    background: url(http://images.imerrow.com/images/machines/clear-down.gif);
+}
+
+
+
+/* =PAGE-WRAP
+    Note: the #page-wrap div has differing
+    widths between pages
+========================================== */
+#as-page-wrap {
+	clear: both;
+	margin: 0 auto;
+	padding: 10px 0;
+	position: relative;
+	text-align: left;
+}
+#as-page-wrap:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+/* =PAGE-WIDTHS
+========================================== */
+#as-homepage #as-page-wrap { width: 723px }
+#as-homepage #as-page-content { width: 588px }
+#as-homepage #as-main { width: 433px }
+#as-pagewrapper #as-page-wrap { width: 723px }
+#as-pagewrapper #as-page-content { width: 588px }
+#as-pagewrapper #as-main { width: 433px }
+#as-ipodstore #as-page-wrap { width: 900px }
+#as-ipodstore #as-page-content { width: 765px }
+#as-ipodstore #as-main { width: 620px }
+#as-landing #as-page-wrap { width: 745px }
+#as-landing #as-main { width: 600px }
+#as-category #as-page-wrap { width: 893px }
+#as-category #as-main { width: 748px }
+#as-fullpage #as-page-wrap { width: 700px }
+#as-900page #as-page-wrap,
+#as-itunesgifting #as-page-wrap,
+#as-stepone #as-page-wrap { width: 900px }
+#as-980page #as-page-wrap { width: 980px }
+#as-stepthree #as-page-wrap { width: 982px }
+#as-480page #as-page-wrap { width: 480px }
+#as-580page #as-page-wrap { width: 580px }
+#as-promopage #as-page-wrap { width: 620px }
+#as-nmpage #as-page-wrap { width: 750px }
+#as-nmpage #as-page-content { width: 615px }
+#as-footer,
+#as-country-switch { width: 675px }
+
+
+
+/* Clear Fix -- Add the "clearfix" class to the parent element of floated item(s) to clear -- */
+.clearfix:after,
+#primary:after,
+#aos-page:after,
+#navigation:after,
+#globalfooter #shopelsewhere:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+.clearfix,
+#aos_header.collapsed,
+#primary,
+#aos-page,
+#navigation,
+#globalfooter #shopelsewhere {
+	display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html .clearfix,
+* html #aos_header.collapsed,
+* html #primary,
+* html #aos-page,
+* html #navigation,
+* html #globalfooter #shopelsewhere {
+	height: 1%;
+}
+.clearfix,
+#aos_header.collapsed,
+#primary,
+#aos-page,
+#navigation,
+#globalfooter #shopelsewhere {
+	display: block;
+}
+/* End hide from IE-mac */
+
+.superlink {
+	cursor: pointer;
+}
+
+
+
+/* NEW GLOBALFOOTER */
+#globalfooter { color: #999; font-size: 10px; margin: 0 auto 18px; text-align: left !important; }
+#globalfooter a { text-decoration: none; }
+#globalfooter a:hover { text-decoration: underline; }
+#globalfooter p { margin: 0; }
+#globalfooter .gf-buy { float: left; width: 60%; margin: 18px 0 9px; }
+#globalfooter .gf-links { float: right; text-align: right; margin: 18px 0 9px; }
+#globalfooter .gf-links a { padding: 0 10px; white-space: nowrap; }
+#globalfooter .gf-links a.last { padding-right: 0; _float: none !important; width: auto !important;  }
+#globalfooter .gf-sosumi { clear: both; width: 100%; border-top: 1px solid #eee; padding-top: 9px; }
+#globalfooter .gf-sosumi a { padding: 0 10px; }
+
+rap; }
+
+
+/* remove the global search field */
+form#g-search { display: none; }
+
+
+
+
+
+/* Basic styles */
+a img {
+	border: 0;
+	vertical-align: bottom;
+}
+
+
+/* ======================================================= W A R N I N G !!! ======================================================= 
+												Non-safari styles -- Safari cannot see these styles, or anything 
+												under it, so this section must remain at the bottom of the file  */
+
+																	#aos_header #masthead li#chatnow {
+																		margin-bottom: 4px; #
+																	}

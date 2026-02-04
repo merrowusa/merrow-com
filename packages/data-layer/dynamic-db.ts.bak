@@ -1,0 +1,10 @@
+// @version data-layer-dynamic-db v2.0 (PostgreSQL)
+//
+// Dynamic database connector - now using same Supabase PostgreSQL connection
+// All Merrow data is in a single Supabase database
+
+import { db, pool } from "./db";
+
+// Re-export for backwards compatibility
+export const dynamicDb = db;
+export const dynamicPool = pool;

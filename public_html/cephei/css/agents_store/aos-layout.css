@@ -1,0 +1,2640 @@
+/* @override http://merrow.com/cephei/css/agents_store/aos-layout.css */
+
+/* @override http://merrow.com/cephei/css/store/aos-layout.css */
+
+/* @override http://merrow.com/cephei/css/store/aos-layout.css */
+
+/* @override http://merrow.com/cephei/css/store/aos-layout.css */
+
+/* @override http://merrow.com/cephei/css/store/aos-layout.css */
+
+/* @override 
+	http://a248.e.akamai.net/7/248/2041/1433/store.apple.com/rs/css/aos-layout.css
+	http://a248.e.akamai.net/7/248/2041/1434/store.apple.com/rs/css/aos-layout.css
+	http://merrow.com/cephei/css/store/aos-layout.css
+*/
+
+@import url("popup.css");
+
+h1.instn {
+	padding: 8px 0 17px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	color: #000;
+}
+
+/* ------- Modules ------- */
+/* All modules */
+.module {
+	margin-bottom: 8px;
+}
+form#form {
+	display: inline;
+	padding-left: 12px;
+}
+
+select#jumpMenu {
+}
+/* module top */
+.module_top {
+	float: left;
+	width: 100%;
+	height: 4px;
+	background: url(http://images.imerrow.com/images/machines/primary-top.png) no-repeat;
+	line-height: 4px;
+}
+.search-results #primary .module_top,
+.sub-department #primary .module_top,
+.category #primary .module_top,
+.product-reviews #primary .reviews-main .module_top {
+	border-bottom: 1px solid #cfcfcf;
+	height: auto;
+	background: url(http://images.imerrow.com/images/machines/primary-top-with-content.png) no-repeat;
+	line-height: inherit;
+}
+.full .module_top {
+	background: url(http://images.imerrow.com/images/machines/primary-full-top.png) no-repeat;
+}
+#primary_main .module_top {
+	background: url(http://images.imerrow.com/images/machines/primary_main-top.png) no-repeat;
+}
+#navigation .module_top,
+#secondary .module_top {
+	background: url(http://images.imerrow.com/images/machines/column-top.png) no-repeat;
+}
+#secondary #accountlinks .module_top,
+#navigation #shop .module_top {
+	background: url(http://images.imerrow.com/images/machines/column-top-alt.png) no-repeat;
+}
+.product-details #primary .details-main .module_top {
+	background: url(http://images.imerrow.com/images/machines/product-details-top.png) no-repeat;
+}
+
+
+
+
+
+
+/* module h2 - if these are used, don't use module_top */
+.module h2,
+#secondary .module .modulecontent .list_head h2,
+#secondary .module .modulecontent .list_head h2 {
+	float: left;
+	width: 100%;
+	padding: 5px 0 0;
+	background: url(http://images.imerrow.com/images/agent_primary-h2-top.png) no-repeat;
+}
+.full .module h2 {
+	background: url(http://images.imerrow.com/images/machines/primary-full-h2-top.png) no-repeat;
+}
+#primary_main .module h2 {
+	background: url(http://images.imerrow.com/images/agent_primary-h2-top.png) no-repeat;
+}
+#navigation .module h2,
+#secondary .module h2,
+#navigation .module .modulecontent .list_head h2,
+#secondary .module .modulecontent .list_head h2 {
+	background: url(http://images.imerrow.com/images/agent_primary-h2-top.png) no-repeat;
+	overflow: hidden;
+}
+#primary_main .footerblock h2 {
+	background-image: url(http://images.imerrow.com/images/machines/primary_main-fb-h2-top.png);
+}
+#navigation .footerblock h2,
+#secondary .footerblock h2 {
+	background-image: url(http://images.imerrow.com/images/machines/column-fb-h2-top.png);
+}
+.module h2 span {
+	display: block;
+	padding: 0 0 5px 12px;
+	background: #2d5e9f url(http://images.imerrow.com/images/agent_h2.png) repeat-x;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 14px;
+	color: #fff;
+	text-shadow: 1px 1px 1px #224272;
+}
+.module table td h2 span {
+	background: none;
+	padding: 0;
+}
+#primary_main .footerblock h2 span,
+#navigation .footerblock h2 span,
+#secondary .footerblock h2 span {
+	background: #afb0b2 url(http://images.imerrow.com/images/machines/fb-h2.png) repeat-x;
+	text-shadow: 1px 1px 1px #999;
+}
+#navigation .module h2 span,
+#secondary .module h2 span {
+	margin-right: 1px;
+}
+.module h2 span a {
+	display: block;
+	color: #fff;
+}
+#navigation .module h2 span a:hover {
+	text-decoration: none;
+}
+.module .modulecontent h2,
+.module .modulecontent table td h2,
+.full .module .modulecontent h2,
+#primary_main .module .modulecontent h2,
+#navigation .module .modulecontent h2,
+#secondary .module .modulecontent h2,
+#navigation .footerblock .modulecontent .list_head h2,
+#secondary .footerblock .modulecontent .list_head h2 { /* undo the blue bar h2 if inside modulecontent */
+	clear: left;
+	float: none;
+	width: auto;
+	padding: 0;
+	background: none;
+}
+#primary_main .modulecontent #store_details h2,
+#navigation .module .modulecontent h2,
+#secondary .module .modulecontent h2,
+#navigation .footerblock .modulecontent .list_head h2,
+#secondary .footerblock .modulecontent .list_head h2 {
+	padding: 0 12px .25em;
+	font-weight: bold;
+	font-size: 12px;
+	color: #333;
+}
+#navigation .footerblock .modulecontent h2,
+#secondary .footerblock .modulecontent h2 {
+	padding-top: 16px;
+}
+#navigation .footerblock .modulecontent h3,
+#secondary .footerblock .modulecontent h3 {
+	padding-top: 16px;
+	padding-left: 14px;
+	padding-bottom: 0;
+	float: none;
+	width: auto;
+}
+#primary_main .footerblock #store_details h2 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* Translation section (multi-language stores)  */
+#navigation .module ul#shopdetails {
+	border-top: 1px solid #ccc;
+	margin-bottom: 0;
+	padding-top: 6px;
+}
+#shopdetails strong {
+	display: block;
+	font-size: 14px;
+}
+/* Sub department & Category & Search results */
+.search-results #primary .module .module_top h2,
+.sub-department #primary .module .module_top h2,
+.category #primary .module .module_top h2 {
+	float: none;
+	width: auto;
+	padding: 16px 15px 0;
+	font-weight: bold;
+	font-size: 19px;
+	line-height: 1.1em;
+	background: none;
+	color: #343640;
+	text-shadow: 1px 1px 1px #f1f1f1;
+}
+.sub-department #primary .module .sans-tagline h2 {
+	margin-bottom: -6px;
+	padding: 27px 15px 22px;
+}
+.sub-department #primary .module .module_top p.shippingnotice,
+.category #primary .module .module_top p.item-count,
+.category #primary .module .module_top p.item-count-noscript {
+	float: right;
+	font-size: .95em;
+	line-height: 1.5em;
+	margin: -2px 0 0;
+	padding: 6px 18px 0 0;
+	_margin: -6px 0 0;
+}
+.sub-department #primary .module .sans-tagline p.shippingnotice {
+	margin: -37px 0 0;
+	padding: 6px 18px 0 0;
+	_margin: -41px 0 0;
+}
+.category #primary .module .module_top p.item-count,
+.category #primary .module .module_top p.item-count-noscript {
+	float: right;
+	font-size: .95em;
+	margin: -32px 0 0;
+	padding: 6px 18px 0 0;
+	_margin: -36px 0 0;
+}
+.sub-department #primary .module .module_top p.shippingnotice img {
+	margin-top: -6px;
+	vertical-align: middle;
+}
+.sub-department #primary .module .module_top p.mt_btm {
+	margin: 0 1px;
+	clear: left;
+	padding: 4px 15px 8px; 
+	border-bottom: 1px solid #eaeaea;
+	font-size: .95em;
+	color: #8c8c8c;
+}
+/* Search Results & Category */
+.search-results #primary .module .module_top h2,
+.category #primary .module .module_top h2 {
+	padding: 30px 15px 10px;
+}
+.search-results #primary .module .module_top h2 em {
+	font-style: normal;
+	font-weight: normal;
+}
+.search-results .results .modulecontent,
+.category .results .modulecontent,
+.product-reviews .reviews-main .modulecontent {
+	padding: 0;
+}
+.search-results table tr.product td {
+	border-bottom: 1px solid #e1e5e6;
+	padding: 24px 15px 8px;
+	vertical-align: top;
+}
+
+.search-results table tr.see-all td {
+    padding: 0 0 2px 15px;
+    font-size:0.9em;
+	border-bottom: 1px solid #e1e5e6;
+}
+
+.search-results table tr.product td.title,
+.search-results table tr.product td.manufacturer,
+.search-results table tr.product td.price,
+.search-results table tr.product td .freeshipping {
+	color: #000;
+	font-weight: bold;
+}
+.search-results table tr.product td .featured {
+	float: left;
+	margin: -17px 8px 20px 0;
+}
+.search-results table tr.product td .image,
+.search-results table tr.product td .photo {
+	float: left;
+	clear: left;
+	margin: -17px 8px 0 -8px;
+}
+.search-results table tr.product td.manufacturer {
+	width: 50px;
+}
+.search-results table tr.product td.starrating {
+	width: 130px;
+}
+.search-results table tr.product td.shipping {
+	width: 140px;
+}
+.search-results table tr.product td.price {
+	padding-right: 30px;
+}
+.search-results .results tfoot td {
+	background: #f1f1f1;
+	color: #aaa;
+	padding: 0;
+	text-align: center;
+}
+.search-results .results .module_btm {
+	background-image: url(http://images.imerrow.com/images/machines/primary-btm-alt.png);
+}
+.search-results .results tfoot ul.page-results {
+	border: 1px solid #cdcdcd;
+	border-width: 0 1px;
+	padding: 10px 0 8px;
+}
+.search-results .results tfoot ul.page-results li {
+	display: inline;
+}
+.search-results #primary .results tfoot td span {
+	padding: 2px 6px;
+}
+.search-results #primary .results tfoot td a {
+	color: #000;
+	padding: 2px 6px;
+}
+.search-results #primary .results tfoot td a.selected {
+	background: url(http://images.imerrow.com/images/machines/search-results-current.gif) 50% 50% no-repeat;
+	font-weight: bold;
+}
+.search-results #primary .results .error-msg {
+	background: #eee;
+	color: #000;
+	border: 1px solid #cdcdcd;
+	border-top: 0;
+	padding: 5px 15px;
+}
+.search-results #primary .results .search-links {
+	color: #000;
+	margin: 15px 15px 30px;
+}
+.search-results #primary .results .search-links ul {
+	margin-top: 15px;
+}
+
+/* module content */
+.modulecontent {
+	display: inline;
+	float: left;
+	width: 100%;
+	padding: 8px 0;
+	background: url(http://images.imerrow.com/images/machines/primary-bg.png) repeat-y;
+}
+
+#breadcrumb { text-align:center; font-size:10px; color:#686868;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*2 column module content*/
+/*Left column*/
+.module .module-primary,
+.product-details .product-info,
+.product-details .product-overview,
+.product-details .product-overview-full {
+	color: #333;
+	display: inline;
+	float: left;
+	line-height: 1.4em;
+	margin: 0 25px;
+	width: 575px;
+}
+/*Right column*/
+.module .module-secondary {
+	float: left;
+	margin: 0 0 0 5px;
+	width: 145px;
+}
+
+.sub-department #primary .modulecontent,
+.category #primary .modulecontent {
+	padding: 0;
+	background: url(http://images.imerrow.com/images/machines/primary-bg.png) repeat-y;
+}
+.full .modulecontent {
+	background: url(http://images.imerrow.com/images/machines/primary-full-bg.png) repeat-y;
+}
+
+.full-gradient .module_top  {
+	background: url(http://images.imerrow.com/images/machines/primary-full-bg-gradient.gif) top left no-repeat;
+}
+
+.family .full-gradient .modulecontent  {
+	background: url(http://images.imerrow.com/images/machines/primary-full-bg-gradient.gif) bottom left no-repeat;
+	padding-bottom: 10px;
+	margin-bottom: 8px;
+}
+
+#primary_main .modulecontent {
+	background: url(http://images.imerrow.com/images/machines/primary_main-bg.png) repeat-y;
+}
+#navigation .modulecontent,
+#secondary .modulecontent {
+	padding: 0;
+	background: url(http://images.imerrow.com/images/machines/column-bg.png) repeat-y;
+}
+#navigation .list .modulecontent,
+#secondary .list .modulecontent {
+	background: none;
+}
+body #navigation .list_content {
+	padding-top: 2px;
+}
+body #navigation #popularaccessories .list_content {
+	padding-top: 5px;
+}
+.list_content,
+.list_foot {
+	float: left;
+	width: 100%;
+	background: url(http://images.imerrow.com/images/machines/column-bg.png) repeat-y;
+}
+
+body #navigation #popularaccessories .list_foot {
+	padding-bottom: 9px;
+}
+#morestores .list_content {
+	background: none;
+}
+#secondary #topsellers .list_content {
+	padding: 4px 0 0;
+}
+#navigation .footerblock .modulecontent .list_content,
+#secondary .footerblock .modulecontent .list_content {
+	background: none;
+	padding-bottom: 1em;
+}
+#navigation #shop .modulecontent,
+#secondary #newtothestore .modulecontent .list_content {
+	background: url(http://images.imerrow.com/images/machines/column-bg-grad.png) no-repeat;
+}
+.home #secondary #newtothestore .list_content {
+	min-height: 302px;
+}
+.department #secondary #newtothestore .modulecontent .list_content {
+	background: url(http://images.imerrow.com/images/machines/column-bg.png) repeat-y;
+}
+.department #navigation #shop .modulecontent,
+.sub-department #navigation #shop .modulecontent,
+.category #navigation #shop .modulecontent,
+.product-details #navigation #shop .modulecontent,
+.search-results #navigation #shop .modulecontent {
+	padding-bottom: 8px;
+	background: url(http://images.imerrow.com/images/machines/column-bg-grad.png) 0 -100px no-repeat;
+}
+.department #navigation #shop .modulecontent {
+	padding-bottom: 0;
+}
+body #navigation .module ul#shopapple {
+	margin-top: 4px;
+	margin-bottom: 2px;
+}
+body .department #navigation .module ul#shopapple {
+	margin-bottom: 6px;
+}
+.sub-department #navigation #shop .modulecontent ul#shopapple {
+	margin-top: 0;
+}
+body #navigation .module ul#shopaccessories {
+	margin-top: 0;
+}
+.sub-department #navigation #shop .modulecontent {
+	padding-bottom: 2px;
+}
+.product-details #primary .details-main .modulecontent {
+	background: url(http://images.imerrow.com/images/machines/product-details-bg.png) bottom left no-repeat;
+	position: relative;
+}
+
+
+img.module-banner {
+	margin: 0 0 -4px;
+	line-height: 1em;
+}
+
+/* module bottom */
+.module_btm {
+	margin-bottom: 7px;
+	clear: left;
+	float: left;
+	width: 100%;
+	height: 5px;
+	background: url(http://images.imerrow.com/images/machines/primary-btm.png) no-repeat;
+	line-height: 5px;
+}
+#promo-bar .module_btm {
+	background: url(http://images.imerrow.com/images/machines/promo-primary_btm.png) no-repeat;
+}
+.category .module_btm {
+	background: url(http://images.imerrow.com/images/machines/category-primary_btm.png) no-repeat;
+}
+.full .module_btm {
+	background: url(http://images.imerrow.com/images/machines/primary-full-btm.png) no-repeat;
+}
+#primary_main .module_btm {
+	background: url(http://images.imerrow.com/images/machines/primary_main-btm.png) no-repeat;
+}
+#navigation .module_btm,
+#secondary .module_btm {
+	background: url(http://images.imerrow.com/images/machines/column-btm.png) no-repeat;
+}
+.product-details #primary .details-main .module_btm {
+	background: url(http://images.imerrow.com/images/machines/product-details-btm.png) bottom left no-repeat;
+	height: 4px;
+	line-height: 4px;
+}
+.module_clear {
+	clear: left;
+	float: left;
+	width: 100%;
+	height: 26px;
+}
+.module_clear a,
+.module_clear a:hover {
+	display: block;
+	padding: 0;
+	height: 26px;
+	background: url(http://images.imerrow.com/images/machines/column-btm-clear.png) no-repeat !important;
+	line-height: 1em;
+	text-indent: -9999em;
+}
+
+/* module h3 (only left and right column) */
+#navigation .module h3,
+#secondary .module h3 {
+	float: left;
+	width: 100%;
+	background: url(http://images.imerrow.com/images/machines/column-h3-bg.png) repeat-y;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 14px;
+	color: #333;
+}
+#navigation .footerblock h3,
+#secondary .footerblock h3 {
+	background: none;
+}
+
+/*Juniper promo doesn't need a background*/
+#secondary #juniper h3 { background:none; }
+
+#navigation .module h3 span,
+#secondary .module h3 span,
+#navigation .module h3 a,
+#secondary .module h3 a {position:relative;
+	display: block;
+	border-top: 1px solid #cdcdcd;
+	border-bottom: 1px solid #d1d1d1;
+	margin: 0 2px 0 1px;
+	padding: .34em 2px .34em 12px;
+	line-height: 14px;
+	color: #333;
+}
+#navigation .module h3 a,
+#secondary .module h3 a {
+	background: transparent url(http://images.imerrow.com/images/machines/h3-arrow.png) 146px .47em no-repeat;
+	_background-image: url(http://images.imerrow.com/images/machines/h3-arrow.gif);
+}
+#navigation .module h3 a:hover,
+#secondary .module h3 a:hover {
+	background-color: #E4EBF2;
+	color: #0085cf;
+	text-decoration: none;
+}
+#navigation li {
+	clear: left;
+}
+
+/* module lists (only left and right column) */
+#navigation .module ul,
+#secondary .module ul {
+	margin: 5px 2px 3px 1px;
+	padding-left: 0;
+	list-style: none;
+}
+#navigation .module ul {
+	clear: both;
+}
+.department #navigation .module ul {
+	margin-top:  4px;
+	margin-bottom:  7px;
+}
+#secondary .module li {
+	clear: left;
+}
+.shopiphone #navigation .module ul.product-line {
+	margin: 10px 2px 10px 1px;
+}
+
+/* module links in columns */
+#navigation .modulecontent li a,
+#secondary .modulecontent li a,
+#navigation .modulecontent p.more a,
+#secondary .modulecontent p.more a {
+	position: relative;
+	display: inline-block; /* IMPORTANT: this rule gets overridden below, but we MUST keep these as two separate CSS rules or IE6 will choke! */ 
+	clear: left;
+	padding: 5px 12px;
+	line-height: 1.25em;
+	color: #333;
+}
+#navigation .modulecontent li a,
+#secondary .modulecontent li a,
+#navigation .modulecontent p.more a,
+#secondary .modulecontent p.more a {
+	display: block;
+}
+#navigation .modulecontent li a:hover,
+#secondary .modulecontent li a:hover,
+#navigation .modulecontent p.more a:hover,
+#secondary .modulecontent p.more a:hover {
+	text-decoration: none;
+	color: #0085CF;
+}
+#shop a:hover {
+	background-color: #D6E5F2;
+}
+
+#secondary .modulecontent ul.ordered li a {
+	padding-left: 0;
+}
+#secondary .modulecontent ul.ordered li a em {
+	display: block;
+	float: left;
+	width: 2em;
+	text-align: right;
+	font-style: normal;
+	color: #666;
+}
+#secondary .modulecontent ul.ordered li a:hover em {
+	color: #0085CF;
+}
+#secondary .module .modulecontent ul.ordered li a span {
+	display: block;
+	margin-left: 2.3em;
+}
+/* module images in columns */
+#navigation .modulecontent img,
+#secondary .modulecontent img {
+	margin-left: 1px;
+}
+
+/* module paragraphs in columns */
+#navigation .modulecontent p,
+#secondary .modulecontent p {
+	margin: 0 1px;
+	padding: .5em 11px;
+	line-height: 1.5em;
+	color: #666;
+}
+#navigation .modulecontent p.more,
+#secondary .modulecontent p.more {
+	margin: -3px 0 8px 0;
+	padding: 0 2px 0 1px;
+}
+#secondary #topsellers .modulecontent .list_foot p.more a {
+	padding-left: 25px;
+}
+#navigation .iphonebox .modulecontent p {
+	line-height: 1.3em;
+}
+#navigation .iphonebox .modulecontent p.more {
+	margin: 0;
+	padding: 4px 11px;
+}
+#navigation .iphonebox .modulecontent p.more a {
+	background: none;
+}
+#navigation .iphonebox .modulecontent p.more img {
+	float: none;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+}
+/* Shop Apple */
+#navigation .module .modulecontent #shopapple li a {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 14px;
+	line-height: 1em;
+	font-weight: bold;
+}
+
+/* More Stores */
+#navigation .module #morestores ul {
+	margin-top: 4px;
+	padding-top: 8px;
+	border-top: 1px solid #ccc;
+}
+#recentlyviewed .modulecontent {
+	padding: .25em 0;
+}
+#navigation #recentlyviewed a {
+	min-height: 48px;
+	padding-top: 1px;
+	padding-bottom: 0;
+}
+#navigation #recentlyviewed a:hover {
+	background: #fff;
+	text-decoration: underline;
+}
+#navigation #recentlyviewed li,
+#navigation #recentlyviewed li a {
+	float: left;
+}
+#navigation .modulecontent span.recent {
+	float: left;
+	display: block;
+	padding: .625em 0;
+	border-bottom: 1px solid #e1e2e4;
+}
+#navigation .modulecontent li.last span.recent {
+	border-bottom: 0;
+}
+
+/* ------- Footerblock ------- */
+#navigation .footerblock .module_top,
+#secondary .footerblock .module_top {
+	background: url(http://images.imerrow.com/images/machines/column-top-alt.png) no-repeat;
+}
+#primary_main .footerblock .modulecontent {
+	padding-top: 0;
+	padding-bottom: 0;
+	min-height: 30.5em;
+	height: auto !important;
+	height: 30.5em;
+	background: transparent url(http://images.imerrow.com/images/machines/primary_main-bg-alt2.png) repeat-y scroll 100% 0pt;
+	color: #666;
+}
+#primary_main .footerblock .module_btm {
+	width: 628px;
+	background: url(http://images.imerrow.com/images/machines/primary_main-btm-alt.png) 100% 0 no-repeat;
+}
+#primary_main .ipfb .modulecontent {
+	background-image: url(http://images.imerrow.com/images/machines/primary_main-bg-alt-l.png);
+}
+#primary_main .ipfb .module_btm {
+	background-image: url(http://images.imerrow.com/images/machines/primary_main-btm-alt-l.png);
+}
+#navigation .footerblock .module_btm,
+#secondary .footerblock .module_btm,
+#secondary #accountlinks .module_btm {
+	background: url(http://images.imerrow.com/images/machines/column-btm.png) no-repeat scroll 0% 50%;
+}
+#navigation .footerblock .modulecontent,
+#secondary .footerblock .modulecontent {
+	background: url(http://images.imerrow.com/images/machines/column-bg.png) repeat-y scroll 0% 50%;
+}/* IE-overrides exist */
+#secondary #accountlinks .modulecontent {
+	font-size: .95em;
+	background: url(http://images.imerrow.com/images/machines/column-bg-alt.png) repeat-y;
+}
+#secondary #accountlinks .modulecontent ul {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+#navigation .footerblock .modulecontent a,
+#navigation div.iphonebox .modulecontent a,
+#secondary .footerblock .modulecontent a {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	line-height: 1.75em;
+	color: #0085CF;
+}
+/* module links in columns */
+#navigation .footerblock ul.more li,
+#secondary .footerblock ul.more li,
+#navigation .footerblock .list_content ul li,
+#secondary .footerblock .list_content ul li,
+#navigation .footerblock .modulecontent p.more,
+#secondary .footerblock .modulecontent p.more {
+	margin: 0;
+	padding: 0 0 0 12px;
+}
+#primary_main .footerblock .list_content ul li a,
+#navigation .footerblock .list_content ul li a,
+#secondary .footerblock .list_content ul li a,
+#primary_main .footerblock ul.more li a,
+#navigation .footerblock ul.more li a,
+#secondary .footerblock ul.more li a,
+#secondary .footerblock .modulecontent p.more a,
+#navigation .footerblock .modulecontent p.more a,
+#navigation .footerblock .modulecontent ul.more a,
+#navigation .iphonebox .modulecontent p.more a,
+#primary_main .footerblock .modulecontent p.more a,
+#ipod-everywhere p a,
+td.purchase-info p.more a,
+.promo p.more a,
+.review-links a,
+.review-footers a span,
+.review-footer-single a span,
+.review-report a,
+.hreview .more a,
+.one-click a,
+a.learn-more {
+	padding-right: 7px;
+	background: url(http://images.imerrow.com/images/machines/link-more.png) 100% 82% no-repeat !important;
+	background-image: url(http://images.imerrow.com/images/machines/link-more.gif);
+}
+#navigation .footerblock .modulecontent p.more,
+#secondary .footerblock .modulecontent p.more {
+	padding-top: 5px;
+	padding-bottom: 18px;
+}
+#navigation .footerblock .modulecontent p.more a,
+#secondary .footerblock .modulecontent p.more a {
+	padding: 0 10px 0 0;
+	display: inline;
+	color: #0085CF;
+}
+#navigation .iphonebox .modulecontent p.more a {
+	line-height: 1.2em;
+}
+.home .module ul.product-row li dd.more a {
+	line-height: 1.2em;
+}
+.home #primary .product-grid a,
+.sub-department #primary td.purchase-info p.more a,
+.department #primary ul.product-row li dd.more a {
+	color: #999;
+}
+
+/* module detail */
+#navigation .footerblock .modulecontent .moduledetail,
+#secondary .footerblock .modulecontent .moduledetail {
+	border-top: 1px solid #ccc;
+	clear: both;
+	margin: 0 12px 1em 12px;
+	padding: 1em 2px 1em;
+}
+#navigation .footerblock .modulecontent .moduledetail h3,
+#secondary .footerblock .modulecontent .moduledetail h3 {
+	margin: 0;
+	padding: 0 0 15px 0;
+	border: 0;
+	background: none;
+	font-size: 12px;
+	width: auto;
+}
+#navigation .footerblock .modulecontent .moduledetail img,
+#secondary .footerblock .modulecontent .moduledetail img {
+	margin: -8px 5px 1em 10px;
+	float: right;
+}
+#navigation .footerblock .modulecontent .moduledetail p,
+#secondary .footerblock .modulecontent .moduledetail p {
+	padding-bottom: 0;
+	padding-left: 0;
+}
+#navigation .footerblock .modulecontent .moduledetail p.more,
+#secondary .footerblock .modulecontent .moduledetail p.more {
+	padding-left: 0;
+}
+
+/* Footerblock: Store Info */
+#store_details {
+	float: left;
+	width: 404px;
+	margin: 8px 2 2 11px;
+}
+.ipfb #store_details {
+	width: 410px;
+}
+.footerblock #store_details .column {
+	float: left;
+	width: 197px;
+}
+.footerblock #store_details .first {
+	border-right: 1px solid #e0e0e0;
+	margin-right: 1px;
+	width: 195px;
+}
+#store_updates {
+	float: left;
+	margin: 8px 0 0 32px;
+	width: 160px;
+}
+#primary_main .footerblock .modulecontent h3 {
+	margin: 0 2px 0 1px;
+	padding-top: 12px;
+	padding-bottom: 5px;
+	font-weight: bold;
+	font-size: 12px;
+	color: #333;
+}
+#navigation .footerblock .modulecontent p {
+	margin-left: 4px;
+	line-height: 14px;
+	width: 87px;
+}
+.footerblock .modulecontent,
+#secondary .footerblock .modulecontent p {
+	line-height: 14px;
+}
+#navigation .footerblock .modulecontent p.more {
+	margin-left: 3px;
+}
+#navigation .footerblock .modulecontent h4 {
+	margin-left: 14px;
+	font-weight: bold;
+	font-size: 11px;
+	color: #000;
+}
+#primary_main .footerblock .modulecontent #store_details h3 {
+	padding-top: 0;
+	padding-bottom: 3px;
+}
+.footerblock fieldset {
+	border: 0;
+	padding-top: .75em;
+}
+.footerblock legend {
+	display: none;
+}
+.footerblock .modulecontentwrap {
+	margin-bottom: .95em;
+}
+.footerblock #store_details .modulecontentwrap {
+	border-bottom: 1px solid #e0e0e0;
+	height: 13.75em;
+	line-height: 14px;
+	padding: 0 7px;
+}
+.ipfb #store_details .modulecontentwrap {
+	padding: 0 8px;
+}
+.footerblock #store_details #talk {
+	padding-top: 10px;
+}
+.footerblock #store_details .last-row {
+	height: 12em;
+	border-bottom: 0;
+}
+.footerblock #store_details .modulecontentwrap img {
+	display: block;
+	margin: 8px auto 0;
+}
+.footerblock #juniper img {
+	display: block;
+	margin: 30px auto 30px;
+}
+.footerblock #store_details .last-row img {
+	margin-top: 16px;
+}
+.footerblock .modulecontentwrap ul.more {
+	margin-top: .5em;
+	margin-bottom: .75em;
+}
+.ipfb .footerblock #store_details {
+	border-right: 1px solid #e0e0e0;
+}
+.ipfb #store_details .column {
+	padding-right: 10px;
+	width: 184px;
+}
+.ipfb .modulecolumnwrap {
+	padding: 12px 0 0 27px;
+	line-height: 14px;
+}
+.ipfb .modulecolumnwrap {
+	border-right: 0;
+	padding: 12px 0 0 27px;
+	line-height: 14px;
+}
+.ipfb .modulecolumnwrap p {
+	margin: 0 0 20px;
+	padding-right: 17px;
+}
+.ipfb #store_updates {
+	margin-left: 20px;
+}
+.department .footerblock .modulecontentwrap strong.phone {
+	color: #000;
+	display: block;
+	margin: 4px 0 0;
+	padding-top: 10px;
+	font-weight: normal;
+}
+.department .footerblock .modulecolumnwrap img {
+	float: right;
+	margin: 0 0 0 10px;
+}
+.shopipod .footerblock #store_details .column,
+.shopiphone .footerblock #store_details .column {
+	padding-right: 0;
+}
+.shopipod .footerblock .modulecolumnwrap img,
+.shopiphone .footerblock .modulecolumnwrap img {
+	margin: 0;
+}
+.shopipod .footerblock .modulecolumnwrap,
+.shopiphone .footerblock .modulecolumnwrap {
+	margin-right: -15px;
+	width: 195px;
+}
+.department .footerblock .column .download {
+	margin: 0;
+}
+.department .footerblock .download img {
+	float: none;
+	margin: 0;
+}
+
+
+/* ------- Homepage & Department Chrome ------- */
+#aos_family {
+	float: left;
+	width: 100%;
+	margin-bottom: 8px;
+	padding: 5px 0 2px;
+	background: url(http://images.imerrow.com/images/machines/primary_main-family-bg.png) bottom no-repeat;
+	line-height: .5em;
+	border-top: 2px dotted #e6bd5d;
+	margin-top: 5px;
+}
+#aos_family h2,
+#aos_family h3 {
+	display: none;
+}
+#family-mac li,
+#family-ipod li { float: left; }
+
+
+/* =TAB-CONTROLLER */
+.tab-controller,
+.tab-controller li {
+	float: left;
+	height: 41px;
+	line-height: 41px;
+	width: 100%;
+}
+.tab-controller li {
+	text-align: center;
+	width: auto;
+}
+.tab-controller li a {
+	background: url(http://images.imerrow.com/images/machines/bg-tab-controller-2.png) 100% -82px no-repeat;
+	behavior: url(/Catalog/global/iepngfix/iepngfix.htc);
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	text-shadow: 2px 2px 1px #fff;
+}
+.tab-controller li a:hover {
+	background-position: 100% -41px;
+	text-decoration: none;
+}
+.tab-controller li a.active,
+.tab-controller li a.active:hover {
+	background-position: 100% 0;
+}
+
+.tab-controller li {     width: 402px; } /* Default: two tabs across #primary (804px) */
+.t3 .tab-controller li { width: 268px; } 
+.t4 .tab-controller li { width: 201px; }
+.t5 .tab-controller li { width: 161px; }
+#primary_main .tab-controller li {     width: 314px; } /* #primary_main (628px) adjustments */
+#primary_main .t3 .tab-controller li { width: 210px; }
+#primary_main .t4 .tab-controller li { width: 157px; }
+#primary_main .t5 .tab-controller li { width: 126px; }
+
+/* 3 and 5 tab versions require an adjusted width on left-most tab in three cases */
+.t5 .tab-controller li.left {	width: 160px; }
+#primary_main .t3 .tab-controller li.left { width: 208px; }
+#primary_main .t5 .tab-controller li.left { width: 124px; }
+
+.tab-controller li.left a {       background-position: 0 -82px; }
+.tab-controller li.left a:hover { background-position: 0 -41px; }
+.tab-controller li.left a.active,
+.tab-controller li.left a.active:hover { background-position: 0 0; }
+
+.t3 .tab-controller li a {	background-image: url(http://images.imerrow.com/images/machines/bg-tab-controller-3.png); }
+.t4 .tab-controller li a {	background-image: url(http://images.imerrow.com/images/machines/bg-tab-controller-4.png); }
+.t5 .tab-controller li a {	background-image: url(http://images.imerrow.com/images/machines/bg-tab-controller-5.png); }
+#primary_main .tab-controller li a {     background-image: url(http://images.imerrow.com/images/machines/bg-tab-controller-2-pm.png); }
+#primary_main .t3 .tab-controller li a { background-image: url(http://images.imerrow.com/images/machines/bg-tab-controller-3-pm.png); }
+#primary_main .t4 .tab-controller li a { background-image: url(http://images.imerrow.com/images/machines/bg-tab-controller-4-pm.png); }
+#primary_main .t5 .tab-controller li a { background-image: url(http://images.imerrow.com/images/machines/bg-tab-controller-5-pm.png); }
+
+#primary .tab-controller li a {
+	color: #2a2a2a;
+}
+
+
+/* Product Tiles */
+#primary_main .producttiles .module_btm {
+	background: url(http://images.imerrow.com/images/machines/primary_main-grid-btm.png) no-repeat;
+}
+#primary_main .producttiles .modulecontent {
+	padding: 0;
+}
+.module ul.product-row {
+	margin-left: 1px;
+	padding: 0;
+	width: 626px;
+	border-bottom: 1px solid #e5e6e8;
+	background: url(http://images.imerrow.com/images/machines/primary_main-grid.png) 50% 0 repeat-y;
+}
+.module ul.last-row {
+	border-bottom: 0;
+}
+.module ul.product-row li {
+	position: relative;
+	display: inline;
+	float: left;
+	margin: 0 1px 0 0;
+	width: 156px;
+}
+.module ul.product-row,
+.module ul.product-row li {
+	min-height: 16em;
+	height: auto !important;
+	height: 16em;
+}
+.module ul.product-row li.first-tile {
+	width: 154px;
+}
+.module ul.product-row li.last-tile {
+	margin-right: 0;
+	width: 142px;
+}
+.module ul.product-row li dl {
+	position: relative;
+	top: 8px;
+	left: 18px;
+	width: 121px;
+	min-height: 15em;
+	font-size: 10px;
+}
+.module ul.product-row li dt {
+	height: auto !important;
+	height: 2.85em;
+	min-height: 2.85em;
+	font-size: 1.1em;
+	line-height: 1.125em;
+}
+/* =HOME-MODULE-PRODUCT-ROW */
+.home .module ul.product-row li dt {
+	margin-top: 0;
+	height: auto !important;
+	height: 3.125em;
+	min-height: 3.125em;
+}
+.module ul.product-row li dt a {
+	color: #333;
+}
+.module ul.product-row li dt a:hover {
+	text-decoration: none;
+	color: #000 !important;
+}
+.module ul.product-row li dd.starrating {
+	margin: .5em 0;
+	line-height: 1em;
+}
+.home .module ul.product-row li dd.starrating {
+	display: none;
+}
+.home .module ul.product-row li dd.price {
+	margin-top: 6px;
+}
+.module ul.product-row li dd.more a {
+	color: #0085CF;
+}
+.home .module ul.product-row li dd.image {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.home .module ul.product-row li dd.image img {
+	x-width: 79px;
+	x-height: 70px;
+}
+.home .module ul.product-row li dd.more a {
+	background-position: 100% 70%;
+}
+/* Department-specific & Category Product Tiles */
+.department .module ul.product-row,
+.category .module ul.product-row,
+#promo-bar .modulecontent ul {
+	background: none;
+	border: 0;
+	float: left;
+	padding: 12px 0;
+}
+#promo-bar .modulecontent ul {
+	position: relative;
+	border-bottom: 1px solid #e5e5e5;
+	width: 100%;
+	background: url(http://images.imerrow.com/images/machines/category-grid.png) 50% 0 repeat-y;
+}
+.category .module ul.product-row {
+	border-bottom: 1px solid #e5e5e5;
+	width: 801px;
+	background: #fff url(http://images.imerrow.com/images/machines/category-grid.png) 265px 0 repeat-y;
+}
+#promo-bar .modulecontent ul,
+.category .module ul.last-row {
+	border-bottom: 0;
+}
+.department .module ul.product-row li {
+	margin: 0;
+	width: 50%;
+}
+.category .module ul.product-row li,
+#promo-bar .modulecontent ul li {
+	margin: 0 1px 0 1px;
+	width: 267px;
+	padding: .75em 0 2em;
+}
+.category .module ul.product-row li {
+	width: 265px;
+}
+.category .module ul.product-row li .freeshipping {
+	color: black;
+	font-weight: bold;
+	font-size: 10px;
+}
+.category .module ul.product-row li .customer_commit_display {
+	color: #333;
+	font-size: 10px;
+}
+
+#promo-bar .modulecontent ul li {
+	position: relative;
+	float: left;
+	width: 265px;
+	height : 14.5em;
+	padding: 0;
+	margin: 0 1px;
+}
+#promo-bar .modulecontent ul li h3 {
+	position : relative;
+	z-index : 1; 
+	margin: 5px 15px 0;
+	font-weight: bold;
+	font-size: 13px;
+	color: #333;
+}
+#promo-bar .modulecontent ul li.superlink-hover h3 {
+	color: #0085cf;
+}
+#promo-bar .modulecontent ul li p {
+	position : relative;
+	z-index : 1;
+	margin: 0 15px;
+	color: #666;
+}
+#promo-bar .modulecontent ul li img {
+	display: block;
+	margin: 5px auto 0;
+}
+
+#promo-bar .modulecontent ul li a {
+	position : absolute;
+	z-index : 2;
+	left : 0;
+	top : 0;
+	display : block;
+	width : 265px;
+	height : 15em;
+	text-indent : -9999px;
+	overflow : hidden;
+}
+.department .module ul.product-row li dl {
+	padding-left: 130px;
+	width: 130px;
+}
+
+.category .module ul.product-row li dl {
+	padding-left: 107px;
+	width: 146px;
+}
+.department .module ul.product-row,
+.department .module ul.product-row li,
+.department .module ul.product-row li dl,
+.category .module ul.product-row,
+.category .module ul.product-row li,
+.category .module ul.product-row li dl {
+	height: auto;
+	left: 0;
+	min-height: 1em;
+	top: 0;
+}
+.department .module ul.product-row,
+.department .module ul.product-row li,
+.department .module ul.product-row li dl {
+	min-height:7.8em;
+}
+.department #navigation .module h3 {
+	margin-bottom: 6px;
+}
+.category .module ul.product-row {
+	min-height: 13.5em;
+	height: auto !important;
+	height: 13.5em;
+}
+.department .module ul.product-row li dl dt,
+.category .module ul.product-row li dl dt {
+	height: auto;
+	min-height: 1em;
+}
+#primary .module ul.product-row li dl dt a,
+.module ul.product-row li dd.price {
+	color: #333;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 1.3em;
+}
+#primary .module ul.product-row li dl dt a:hover {
+	color: #000;
+	text-decoration: none;
+}
+#primary .module ul.product-row li dl dt.name a:hover {
+	color: #0085CF !important;
+}
+.module ul.product-row li dd.more,
+.category .module ul.product-row li dd.shipping {
+	margin-top: 6px;
+}
+.department .module ul.product-row .product .image,
+.category .module ul.product-row .product .image {
+	left: 15px;
+	position: absolute;
+	top: 0;
+}
+.category .module .product .image {
+	left: 15px;
+}
+.shopiphone .module .product .image {
+	left: 0;
+}
+/* iPhone coverage checker */
+.shopiphone #iphone-nav-coverage #ppu-checker {
+	float: none; 
+	margin: 0; 
+	width: auto;
+}
+.shopiphone #iphone-nav-coverage #ppu-checker form p {
+	display: none; 
+}
+.shopiphone #iphone-nav-coverage #ppu-checker form p#ppu-result {
+	display: block; 
+}
+.shopiphone #ppu-checker input.psearch {
+	padding-top: 4pt;
+	height: 15px;
+	width: 107px;
+}
+.shopiphone #navigation #ppu-checker div.psearch {
+	background-image: url(i/psearch-def-white.gif);
+	margin-left: 6px;
+}
+#ppu-response-msg .checkmark {
+	behavior: url(/Catalog/global/iepngfix/iepngfix.htc);
+}
+.shopiphone #navigation #ppu-checker div.psearch.safari {
+	 background: none; 
+}
+.shopiphone #navigation #iphone-nav-coverage .modulecontent .more a img {
+	margin:0 auto 0pt 5px;
+	vertical-align: middle;
+}
+.shopiphone #navigation #iphone-nav-coverage .modulecontent .more a {
+	color:#0085CF;
+}
+.shopiphone #navigation #iphone-nav-activation .modulecontent .more a img {
+	margin:0 auto 0 5px;
+	vertical-align: middle;
+}
+.shopiphone #navigation #iphone-nav-activation .modulecontent .more a  {
+	color:#0085CF;
+}
+
+/* Product cluster */
+.product-loading-tile {
+	display: inline;
+	margin: 55px 0 0 125px;
+}
+.product-cluster {
+	display: inline;
+	float: left;
+}
+.product-page {
+	display: block;
+	float: left;
+	position: relative;
+}
+.product-page .hidden {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+/* No products found */
+.product-cluster .no-products {
+	padding: 16px;
+}
+/* Similar Products */
+#navigation .module ul.similar-products {
+	margin-top: 0;
+}
+.product-details .module ul.similar-products li.product,
+.product-details .module ul.xsell-products li.product {
+	border-bottom: 1px solid #e1e2e4;
+	clear: left;
+	float: left;
+	min-height: 6.7em;
+	padding: 10px 0 0;
+	width: 100%;
+} /* IE-overrides exist */
+
+.product-details .module ul.similar-products li.last-row,
+.product-details .module ul.xsell-products li.last-row {
+	border: 0;
+}
+.product-details .module ul.similar-products li.product dl,
+.product-details .module ul.xsell-products li.product dl {
+	margin: 0 10px 10px 5px;
+}
+.product-details .module ul.similar-products dt,
+.product-details .module ul.xsell-products dt {
+	margin-left: 55px;
+	margin-bottom: 4px;
+}
+.product-details .module ul.similar-products dd,
+.product-details .module ul.xsell-products dd {
+	margin-left: 55px;
+}
+.product-details .module ul.similar-products dd.image,
+.product-details .module ul.xsell-products dd.image {
+	margin-left: 0;
+	margin-top: -13px;
+	float: left;
+	width: 55px;
+}
+.product-details .module ul.similar-products dd.price,
+.product-details .module ul.xsell-products dd.price {
+	margin-top: 4px;
+	color: #000;
+}
+.product-details #navigation .module .modulecontent ul.similar-products li a,
+.product-details #navigation .module .modulecontent ul.similar-products li a:hover,
+.product-details #navigation .module .modulecontent ul.xsell-products li a,
+.product-details #navigation .module .modulecontent ul.xsell-products li a:hover {
+	background: none;
+	padding: 0;
+}
+
+#navigation .sort .modulecontent li {
+	margin-bottom:2px;
+}
+
+/* Tables */
+.module table {
+	border: 0;
+	border-collapse: collapse;
+	width: 100%;
+}
+.module td {
+	padding: 1.95em 0 2em;
+	vertical-align: top;
+}
+.module #area-product-selection table td {
+	padding: 0;
+}
+.module tr.product {
+	border-bottom: 1px solid #e5e5e5;
+}
+.module tr.last {
+	border-bottom: none;
+}
+.module td.image {
+	padding: 0;
+	width: 180px;
+	vertical-align: middle;
+	text-align: center;
+}
+.module td.details h3 {
+	font-weight: bold;
+	font-size: 11px;
+}
+.module td.details h3 a {
+	color: #333 !important;
+}
+.module td.details h3 a:hover {
+	color: #0085cf !important;
+	text-decoration: none;
+}
+.module td.starrating {
+	width: 190px;
+}
+.module td.starrating abbr,
+.module td.starrating p.ratings-based {
+	display: block;
+	color: #333;
+	margin: 0 20px 0 40px;
+}
+.module .results td.starrating abbr,
+.module .results td.starrating p.ratings-based {
+	margin: 0;
+}
+.module td.purchase-info {
+	width: 185px;
+}
+.module td.purchase-info .price{
+	padding-bottom: .5em;
+	font-size: 12px;
+	color: #000;
+}
+/* sort by types */
+#navigation .sort h3 {
+	float: none;
+	background: none;
+	padding: 6px 14px;
+	font-weight: bold;
+	font-size: 13px;
+	width: auto;
+	color: #184380;
+}
+/* =NOTE: The Sort indicators are styled differently for IE6 due to PNG-positioning */
+/* Modern browsers */
+#navigation .sort .modulecontent li { 
+	margin-bottom : 2px;
+}
+#navigation .sort .modulecontent li a:hover {
+	background: none;
+	color: #000;
+}
+#navigation .sort .modulecontent li.selected {
+	background: url(http://images.imerrow.com/images/machines/column-sort-indicator-tl.gif) 10px 0 no-repeat !important;
+}
+#navigation .sort .modulecontent li.selected a {
+	font-weight: bold;
+	background: url(http://images.imerrow.com/images/machines/column-sort-indicator-bl.gif) 10px 100% no-repeat !important;
+	color: #000;
+}
+#navigation .sort .modulecontent li span {
+	display: block;
+	margin: -5px 0;
+	padding: 5px 0 5px 10px;
+}
+#navigation .sort .modulecontent li.selected span {
+	background: url(http://images.imerrow.com/images/machines/column-sort-indicator.gif) 3px 50% no-repeat;
+}
+#navigation ul.controls {
+	margin-top: -0.375em;
+}
+#navigation ul.secondary {
+	margin: 1em 5px 1px 4px;
+	padding: 1em 0 .75em;
+	background: url(http://images.imerrow.com/images/machines/column-sort-secondary.gif) 0 100% no-repeat;
+}
+#navigation .sort .modulecontent ul.secondary li.selected {
+	background-position: 7px 0;
+}
+#navigation .sort .modulecontent ul.secondary li.selected a {
+	background-position: 7px 100%;
+}
+#navigation .sort .modulecontent ul.secondary li span {
+	margin-right: -4px;
+	padding-left: 7px;
+}
+#navigation .sort .modulecontent ul.secondary li.selected span {
+	background-position: 0 50%;
+}
+#navigation .sort .modulecontent li:hover {
+	background: transparent url(http://images.imerrow.com/images/machines/column-sort-indicator-tl-hover.gif) 10px 0 no-repeat !important;
+}
+#navigation .sort .modulecontent li:hover a {
+	background: transparent url(http://images.imerrow.com/images/machines/column-sort-indicator-bl-hover.gif) 10px 100% no-repeat !important;
+}
+#navigation .sort .modulecontent li:hover span {
+	background: url(http://images.imerrow.com/images/machines/column-sort-indicator-hover.gif) 3px 50% no-repeat !important;
+}
+#navigation .sort .modulecontent li a:hover,
+#navigation .sort .modulecontent li.selected a:hover {
+	color : #0085CF;
+}
+#navigation .sort .modulecontent a img {
+	margin: 0;
+	float: none;
+}
+.sort .contract_link {
+	display: none;
+}
+.expanded .expand_link {
+	display: none;
+}
+.expanded .contract_link {
+	display: block;
+}
+/*	Controls are hidden unless JS is enabled. */
+.sort .controls {
+	display: none;
+}
+
+/* Product details */
+.product-details .product-info,
+.product-details .product-overview,
+.product-details .product-overview-full {
+	color: #333;
+	display: inline;
+	float: left;
+	line-height: 1.4em;
+	margin: 0 25px;
+	width: 575px;
+}
+.product-details .product-overview,
+.product-details .product-overview-full {
+	margin-bottom: 25px;
+}
+.product-details .product-overview-full {
+	width: 754px;
+}
+
+.product-details .product-info h2,
+.product-details h2.overview {
+	color: #333;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0.8em 0 1em 0;
+}
+
+.product-details .product-info h2 {
+    width:460px;
+    line-height:1.2em;
+}
+
+.product-details h2.overview {
+	margin: 0 25px;
+	font-weight: normal;
+	font-size: 18px;
+}
+.product-details .product-info .description {
+	float: left;
+	width: 325px;
+	min-height:5em; /*Define minimum height for description content, ensuring product image clears optional product badging. Height is defined for IE6 in: /Catalog/regional/amr/css/aos-overrides-ie-6.css*/
+	padding-bottom: 8em;
+}
+.product-details .product-info .description p,
+.product-details product-overview p,
+.product-details product-overview-full p {
+	margin: 0 0 1em;
+}
+.product-details .product-info .image {
+	float: left;
+	width: 250px;
+}
+.product-details .product-info .badge {
+	float: right;
+	margin: -30px 0 10px 0;
+}
+.product-details .product-info .image img {
+	display: block;
+	margin: 0 auto;
+}
+.product-details .product-info .product-rating {
+	position: absolute;
+	bottom: 20px;
+	left: 25px;
+	clear: both;
+}
+.product-details .product-info .product-rating h3 {
+	font-weight: bold;
+	padding: 0.6em 0;
+}
+.product-details .product-info .product-rating span.lmcuststar,
+.product-details .product-info .product-rating .rating,
+.product-details .product-info .product-rating .ratings-based {
+	display: inline;
+	float: left;
+}
+.product-details .product-info .product-rating .rating {
+	margin: 0 10px 5px 0;
+}
+.product-details .product-info .product-rating .ratings-based,
+.product-details .reviews .reviews-header .ratings-based,
+.product-details .reviews .hreview .vcard,
+.product-details .reviews .hreview .date,
+.product-details .reviews .vote,
+.product-reviews .reviews-header .ratings-based,
+.product-reviews .reviews .hreview .vcard,
+.product-reviews .reviews .hreview .date {
+	color: #818181;
+}
+.product-details .product-info .product-rating .review-links {
+	clear: left;
+}
+.product-details .review-links a,
+.product-details .review-links span {
+	margin-right: 5px;
+}
+.product-details .product-info ul {
+	list-style-type: disc;
+	margin-top: 1.6em;
+	padding-left: 1.6em;
+}
+.product-details fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+.product-details form#product-details-form,
+.product-details .product-promo {
+	float: left;
+	width: 179px;
+	margin: 0;
+	padding: 0;
+}
+.product-details .purchase-info,
+.product-details .product-options,
+.product-details .custom-store-product-options {
+	margin: 0 10px 10px;
+	padding-bottom: 15px;
+}
+.product-details .purchase-info {
+	border-bottom: 1px solid #d9d9d9;
+}
+.product-details .purchase-info .price {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.8em;
+}
+.product-details .purchase-info .add-to-cart {
+	margin: 10px 0 5px;
+}
+.product-details .product-options legend {
+	font-weight: bold;
+	margin: 0 0 15px !important;
+	margin: 0 0 15px -8px;
+}
+.product-details .product-options input {
+	float: left;
+	clear: left;
+	margin: 4px 0 0 0;
+}
+.product-details .product-options label {
+	float: left;
+	width: 128px;
+	margin: 0 0 7px 10px;
+}
+.product-details .product-options .price,
+.product-details .product-options .availability {
+	display: block;
+}
+.product-details #save-cart-btn,
+.product-details #save-cart-btn-long,
+.product-details #print-btn,
+.product-details #print-btn-long {
+	position: absolute;
+	bottom: -4px;
+	right: 0;
+}
+.product-details #save-cart-btn {
+	right: 90px;
+}
+.product-details .availability {
+	color: #666;
+}
+.product-details .gifting-learn-more {
+	display: block;
+	clear: both;
+}
+.product-details .pdf-specs {
+	clear: both;
+	margin: 0 25px;
+	padding-top: 20px;
+}
+.product-details .pdf-specs a:hover {
+	text-decoration: none;
+}
+.product-details .pdf-specs .arrow {
+	padding-bottom: 2px;
+}
+.product-details .pdf-specs .icon {
+	padding-bottom: 3px;
+}
+
+/* Compatibility products */
+.compatibility-products {
+	clear: both;
+	margin: 0 25px 20px;
+	padding-top: 20px;
+}
+.compatibility-products p {
+	margin: 0 0 20px;
+}
+.compatibility-products ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.compatibility-products li {
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.compatibility-products li p {
+	width: 55px;
+}
+.compatibility-products li.clear {
+	clear: both;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+.compatibility-products li p {
+	margin: 0;
+}
+#primary .compatibility-products p font {
+	font: 10px/1.7em "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+	color: #333;
+}
+#primary .compatibility-products p {
+	font-size: 10px;
+}
+
+/* Ratings and Reviews */
+abbr {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+.reviews .hreview {
+	color: #333;
+	line-height: normal;
+}
+.reviews .hreview .item {
+	display: none;
+}
+.reviews .hreview .summary {
+	font-size: 12px;
+	font-weight: bold;
+	margin: 10px 0 5px;
+	overflow: hidden;
+}
+.reviews .hreview .description {
+	padding: 10px 0 15px;
+}
+.reviews .hreview .votes {
+	display: block;
+	padding-bottom: 15px;
+}
+.reviews .hreview .more,
+.reviews .hreview .view-all .more-text {
+	display: inline;
+}
+.reviews .hreview .view-all .more,
+.reviews .hreview .more-text {
+	display: none;
+}
+.reviews .review-lists .vote .useful,
+.reviews .review-list-single .vote .useful,
+.reviews .review-lists .vote .description {
+	margin: 0 10px 4px 0;
+}
+.reviews .review-lists .vote ul,
+.reviews .review-list-single .vote ul {
+	float: none;
+	display: inline;
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+.reviews .review-lists .vote ul li,
+.reviews .review-list-single .vote ul li {
+	float: none;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.product-details .reviews {
+	clear: both;
+	width: 750px;
+	margin: 0 25px;
+	padding: 25px 0;
+}
+.product-details .reviews .reviews-header {
+	width: 100%;
+	background: #ededed url(i/reviews-header-bg.png) 0 0 no-repeat;
+	margin-bottom: 2px;
+}
+.product-details .reviews .reviews-header h3,
+.product-details .reviews .reviews-header .lmstar,
+.product-details .reviews .reviews-header .ratings-based,
+.product-details .reviews .reviews-header .review-links {
+	float: left;
+	padding: 1em 0;
+	margin-left: 15px;
+}
+.product-details .reviews .reviews-header h3 {
+	font-size: 12px;
+	font-weight: bold;
+}
+.product-details .reviews .reviews-header .review-links {
+	float: right;
+	margin-right: 15px;
+}
+.product-details .reviews .review-lists .review-list,
+.product-details .reviews .review-footers p {
+	float: left;
+	width: 374px;
+	margin-right: 2px;
+}
+.product-details .reviews .review-lists div.last,
+.product-details .reviews .review-footers p.last {
+	margin-right: 0;
+}
+.product-details .review-footers a,
+.product-details .review-footer-single a {
+	display: block;
+	width: auto;
+	padding: 1em 0 1em 15px;
+}
+.product-details .reviews h4 {
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	width: auto;
+	padding: 1em 0 1em 15px;
+}
+.product-details .reviews h4 {
+	background-color: #ccc;
+}
+.product-details .reviews .review-lists ul,
+.product-details .reviews .review-list-single ul {
+	background: url(i/reviews-gradient-bg.png) 0 0 repeat-x;
+	padding: 0;
+}
+.product-details .reviews .review-lists .vote ul {
+	background: none;
+}
+.product-details .review-lists .vote .description {
+	display: inline;
+}
+.product-details .reviews .review-lists li,
+.product-details .reviews .review-list-single li {
+	clear: left;
+	margin: 0 15px;
+	padding: 15px 0 30px;
+	border-bottom: 1px solid #ccc;
+	min-height: 8em;
+	height: auto !important;
+	height: 8em;
+}
+.product-details .reviews .review-lists li.last {
+	border: 0;
+}
+.product-details .reviews .review-footers p.first {
+	background: #ededed url(i/reviews-footer-left.png) bottom left no-repeat;
+}
+.product-details .reviews .review-footers p.last {
+	background: #ededed url(i/reviews-footer-right.png) bottom right no-repeat;
+}
+.product-details .reviews .review-footer-single {
+	background: #ededed url(i/reviews-footer-bg.png) bottom left no-repeat;
+}
+.product-details p.footnote {
+	font-size: 9px;
+}
+
+/* Product reviews */
+.product-reviews .product-image {
+	float: left;
+	display: inline;
+	margin: 5px 25px;
+}
+.product-reviews #primary .module h2 {
+	float: left;
+	clear: none;
+	color: #333;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 1em 0;
+	width: 450px;
+}
+.product-reviews .product-overview {
+	float: right;
+	display: inline;
+	margin: 1em 25px;
+}
+.product-reviews .reviews-header h3,
+.product-reviews .reviews-header .lmstar,
+.product-reviews .reviews-header .ratings-based,
+.product-reviews .reviews-header .review-links {
+	float: left;
+	padding: 2em 0 0.8em;
+}
+.product-reviews  .reviews-header h3 {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 1.2em 0 1em;
+	margin-left: 25px;
+}
+.product-reviews .reviews-header .lmstar {
+	padding-top: 1.7em;
+}
+.product-reviews .reviews-header .lmstar,
+.product-reviews .reviews-header .ratings-based {
+	margin-left: 15px;
+}
+.product-reviews .reviews-header .review-links {
+	float: right;
+	margin-right: 25px;
+}
+.product-reviews .no-reviews {
+	margin: 20px 25px;
+}
+.product-reviews .reviews .review-list-single li,
+.product-reviews .reviews .review-lists li {
+	position: relative;
+	margin: 0;
+	padding: 16px 25px 8px;
+	border-bottom: 1px solid #ccc;
+	float: none;
+	min-height: 8em;
+	height: auto !important;
+	height: 8em;
+}
+.product-details .reviews .review-list-single li {
+	position: relative;
+}
+.product-reviews .hreview .details,
+.product-details .review-list-single .hreview .details {
+	position: absolute;
+	top: 18px;
+	left: 24px;
+}
+.product-details .review-list-single .hreview .details {
+	left: 0;
+}
+.product-reviews .review-list-single li.first,
+.product-details .review-list-single li.first,
+.product-reviews .review-lists li.first {
+	padding-top: 20px;
+}
+.product-reviews .review-list-single li.last,
+.product-details .review-list-single li.last,
+.product-reviews .review-lists li.last {
+	border: 0;
+}
+.product-reviews .paginated .review-list-single li.last,
+.product-reviews .paginated .review-lists li.last {
+	border-bottom: 1px solid #ccc;
+}
+.product-reviews .hreview,
+.product-details .review-list-single .hreview {
+	width: 525px;
+}
+.product-reviews .hreview .details,
+.product-details .review-list-single .hreview .details {
+	width: 175px;
+}
+.product-reviews .hreview .description,
+.product-details .review-list-single .hreview .description {
+	padding-top: 0;
+}
+.product-reviews .hreview .description,
+.product-reviews .hreview .votes,
+.product-details .review-list-single .hreview .description,
+.product-details .review-list-single .hreview .votes {
+	width: 310px;
+	margin: 0 0 15px 224px;
+}
+.product-details .review-list-single .hreview .description,
+.product-details .review-list-single .hreview .votes {
+	margin-left: 215px;
+}
+.product-reviews .reviews .review-actions,
+.product-details .reviews .review-list-single .review-actions {
+	position: absolute;
+	top: 18px;
+	right: 24px;
+	width: 140px;
+}
+.product-details .reviews .review-list-single .review-actions {
+	right: 0;
+}
+.product-reviews .reviews .review-report,
+.product-details .reviews .review-list-single .review-report {
+	margin: 15px 0 0;
+}
+.product-reviews .reviews-nav {
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	background-color: #f4f4f4;
+	color: #aaa;
+	text-align: center;
+	margin: 0;
+	padding: 10px 0 8px;
+}
+.product-reviews .reviews-nav ul {
+	margin: 0;
+	padding: 0;
+}
+.product-reviews .reviews-nav li {
+	display: inline;
+}
+.product-reviews .reviews-nav li a,
+.product-reviews .reviews-nav li span {
+	padding: 2px 6px;
+}
+#primary .reviews-nav li a {
+	color: #000;
+}
+.product-reviews .reviews-nav a.selected,
+.product-reviews .reviews-nav span.selected {
+	color: #000;
+	background: url(http://images.imerrow.com/images/machines/search-results-current.gif) 50% 50% no-repeat;
+	font-weight: bold;
+}
+.product-reviews .paginated .module_btm {
+	background-image: url(http://images.imerrow.com/images/machines/primary-btm-alt.png);
+}
+
+/* Email subscription widget */
+.email_notification .notify_wait {
+	text-indent: -9000px;
+	width: 16px;
+	height: 16px;
+	background-image: url(i/email_spinner.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: none;
+}
+.email_notification .notify_format b {
+	color: red;
+}
+.email_notification .notify_submit {
+	display: block;
+}
+.loading .notify_wait {
+	display: block;
+}
+.loading .notify_submit {
+	display: none;
+}
+input.placeholder {
+	color: #ccc;
+}
+
+/* =SELECT-BUTTONS */
+/* select buttons */
+/* Internationalization is done in Catalog/<country>/Images/css/aos-local.css */
+.prod-btns a {
+	background: transparent url(i/product-bg-btn-select-white.gif) 0 0 no-repeat;
+	display: block;
+	height: 25px;
+	overflow: hidden;
+	text-indent: -999em;
+	width: 76px;
+}
+.prod-btns a:hover {
+	background-position: bottom left;
+}
+.prod-btns a img {
+	display: none;
+}
+
+/* =ENGRAVE-PAGE */
+#store-prod-top .engrave-no p,
+#store-prod-top .engrave-yes p { margin: 1em 0; }
+
+#store-prod-top .engrave-no div.gift-pack-checkbox label,
+#store-prod-top .engrave-yes div.gift-pack-checkbox label { width: 120px; }
+
+/* =GIFTING-PAGE */
+#area-gifting div.gift-no h2,
+#area-gifting div.gift-yes h2 {
+	font-size: 16px;
+}
+#store-prod-top #area-gifting p { color: #000; }
+
+/* =TAB-NAVIGATION */
+/* info area: tabbed navigation */
+div ul#store-nav-tab {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 14px;
+	top: 0;
+	z-index: 100;
+}
+ul#store-nav-tab li {
+	display: block;
+	float: left;
+}
+div ul#store-nav-tab li a {
+	background-color: #b9c3c6;
+	border-left: 1px solid #fff;
+	color: #fff;
+	display: block;
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 25px;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+}
+ul#store-nav-tab li.left a {
+	background: #b9c3c6 url(i/bg-nav-tab-cap-left.gif) top left no-repeat;
+	border: 0;
+}
+ul#store-nav-tab li.right a {
+	background: #b9c3c6 url(i/bg-nav-tab-cap-right.gif) top right no-repeat;
+}
+ul#store-nav-tab li a:hover {
+	background: #93a0a6;
+}
+ul#store-nav-tab li a.active {
+	background-color: #93a0a6;
+	cursor: default;
+}
+ul#store-nav-tab li.left a:hover,
+ul#store-nav-tab li.left a.active {
+	background: #93a0a6 url(i/bg-nav-tab-cap-left.gif) bottom left no-repeat;
+}
+ul#store-nav-tab li.right a:hover,
+ul#store-nav-tab li.right a.active {
+	background: #93a0a6 url(i/bg-nav-tab-cap-right.gif) bottom right no-repeat;
+}
+
+
+/* =COVERAGE-LOOKUP
+================================================= */
+#coverage-lookup {
+    background: #eef2f3 url(i/aos/coverage/ip_s1_checker_top.gif) no-repeat;
+    float: left;
+    margin: 2em 0 0 40px;
+    width: 334px;
+}
+#coverage-lookup .coverage_btm {;
+    clear: left;
+    height: 11px;
+    background: #fff url(i/aos/coverage/ip_s1_checker_btm.gif) no-repeat;
+    width: 334px;
+}
+#coverage-lookup .coverage-intro {
+    float: left;
+    width: 314px;
+}
+#coverage-lookup .coverage-intro h3 {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 20px 0 4px 20px;
+    color: #333;
+}
+#coverage-lookup p.atnt {
+    line-height: 16px;
+    padding-bottom: 10px;
+    margin: 0 0 8px 20px;
+}
+#coverage-lookup p.atnt a {;
+    font-size: 11px;
+}
+#coverage-lookup h3,
+#coverage-lookup p {
+    float: left;
+}
+#ppu-checker-wrapper {
+	float: left;
+	margin: 0;
+	width: 180px;
+}
+#ppu-checker-instructions {
+    margin: 0 0 4px 16px;
+    padding: 0;    
+}
+#ppu-checker {
+    float: left;
+    width: 200px;    
+}
+#ppu-checker p {
+    margin: 0 0 0 16px;
+    padding: 0;
+    width: auto;
+}
+#search-box #searchbox-btn,
+#ppu-checker #ppu-submit-btn {
+    background-image: url(i/aos/coverage/check-coverage-button.gif);
+    margin: 6px 0;
+    height: 18px;
+    width: 20px;
+}
+#ppu-checker #ppu-submit-btn {
+    background-image: url(i/aos/coverage/check-coverage-button.png);
+}
+#ppu-checker button {
+    cursor: pointer;
+    border: none;
+    display: block;
+    float: left;
+    padding: 0;
+    background-color: transparent;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+#ppu-checker button span {
+    position: absolute;
+    height: 1px;
+    overflow: hidden;
+    width: 1px;
+}
+#ppu-checker button:hover,
+#ppu-checker button.hover {
+    background-position: bottom left;
+}
+#ppu-result {
+    color: red;
+}
+#ppu-result em {
+    color: #206726;
+    font-style: normal;
+}
+#ppu-result em span.checkmark {
+    visibility: visible;
+    float: left;
+    width: 14px;
+    height: 13px;
+    background: url(i/aos/coverage/checkmark.png) no-repeat;
+    margin-right: 5px;
+}
+#ppu-checker #ppu-response-msg {
+    display: block;
+    clear: left;
+    font-style: normal;
+    height: 13px;
+}
+#ppu-checker #ppu-spinner {
+    margin-top: 6px;
+    margin-left: 0;
+    vertical-align: center;
+    float: left;
+}
+#ppu-checker form
+#ppu-checker #ppu-response-msg.ppu-response-true {
+    color: green;
+}
+#ppu-checker #ppu-response-msg.ppu-response-error {
+    color: red;
+}
+#ppu-checker div.psearch {
+    background-image: url(i/aos/coverage/psearch-coverage.gif);
+    margin-left: 10px;
+}
+#ppu-checker div.psearch,
+#ppu-checker input.psearch {
+    color: #595959;
+    float: left;
+}
+#ppu-checker input.psearch {
+    margin: 0 4px;
+    padding: 2px 4px 2px 10px;
+    width: 120px;
+}
+
+/* iPhone department page */
+.shopiphone #ppu-checker {
+	width: 19px;
+}
+.shopiphone #ppu-checker #ppu-submit-btn {
+	background-image: url(i/aos/coverage/nav-arrow.png);
+	height: 19px;
+	width: 19px;
+}
+.shopiphone #ppu-input-container {
+	float: left;
+	margin: 0 1px;
+}
+#iphone-nav-coverage .modulecontent p {
+	padding: 10px 12px;
+}
+
+/* Search in Masthead */
+
+/* Psearch stuff moved to aos-global.css */
+
+/* =UNCERTAIN */
+#hcpopuplayer, #mylayer { display: none }
+
+.clearer {
+	clear: both;
+	font-size: 1px;
+	height: 1px;
+	line-height: 1px;
+}
+
+.family .promo_option button { border: 0; padding: 0; }
+
+/*Primary-main
+This is a wide left hand column that can be re-used across different pages - this is NOT the primary-main from the homepage
+-----------------------------------------------------*/
+div#primary-main {
+	float:left;
+	display:inline;
+	width:800px;
+	margin-right:11px;
+	padding-top:5;
+	color:#333;
+	background:url(i/aos/primary-main/primary-main-body.gif) repeat-y;
+}
+
+div#primary-main-content {
+	background:url(i/aos/primary-main/primary-main-bottom.gif) left bottom no-repeat;
+}
+
+div#primary-main div.overview {
+	padding:5px 10px 0 10px;
+	background:url(i/aos/primary-main/primary-main-top.gif) left top no-repeat;
+}
+
+/*Additional Columns | Reusable vertical Columns located in div#secondary. Also includes CTO specific styles for bottom aligned product-summary.
+-----------------------------------------------------*/
+div#secondary div.additional,
+div.cto div.additional {
+	width:168px;
+	margin-bottom:8px;
+	padding-bottom:5px;
+	color:#333;
+	background:url(http://images.imerrow.com/images/machines/column-btm.png) left bottom no-repeat;
+}
+
+div#secondary div.additional div.section,
+div.cto div.additional div.section {
+	padding:8px;
+	background:url(http://images.imerrow.com/images/machines/column-bg.png) repeat-y;
+}
+
+/*Gradient background for gradient varient of Addional boxes*/
+div#secondary div.gradient,
+div#secondary div.gradient div.section {
+    background-image:url("i/aos/sidebar-additional-price/gradient-and-bottom.png");
+}
+
+div#secondary div.gradient { background-position:right bottom;}
+div#secondary div.gradient div.section { background-position:left bottom;}
+
+div#secondary div.additional h2,
+div.cto div.additional h2 {
+	padding-top:5px;
+	font-size:1.3em;
+	color:white;
+	background:url(http://images.imerrow.com/images/machines/column-h2-top.png) left top no-repeat;
+}
+
+div#secondary div.additional h2 strong,
+div.cto div.additional h2 strong {
+	display:block;
+	padding:0 5px 5px 12px;
+	background:url(http://images.imerrow.com/images/machines/h2.png) repeat-x;
+}
+
+/*Gray header styles*/
+div#secondary div.additional h2.subsidiary {
+	background-image:url(http://images.imerrow.com/images/machines/column-fb-h2-top.png);
+}
+
+div#secondary div.additional h2.subsidiary strong {
+	background:#afb0b2 url(http://images.imerrow.com/images/machines/fb-h2.png) repeat-x;
+}
+
+/*More Info Columns | Non header boxes with gray gradient
+-----------------------------------------------------*/
+div#secondary div.more-info {
+    width:168px;
+    margin-bottom:10px;
+    padding-top:5px;
+    background:url("i/aos/sidebar-more-info/top.jpg") left top no-repeat;
+}
+
+div#secondary div.more-info div.more-info-content {
+    padding-bottom:5px;
+    background:url("i/aos/sidebar-more-info/bottom.gif") left bottom no-repeat;
+}
+
+div#secondary div.more-info div.section {
+    padding:3px 8px;
+    background:url("i/aos/sidebar-more-info/section-repeat.gif") repeat-y;
+}
+
+div#secondary div.more-info div.subsection {
+    margin-bottom:12px;
+    line-height:1.2em;
+}
+
+div#secondary div.more-info h4 {
+    font-weight:bold;
+}
+/*-----------------------------------------------------*/
+
+#area-product-selection {
+	margin: 0 10px 0 30px;
+}
+
+/* radr://5750511, fixes the nav tab controller from floating up in the right corner */
+.family .full .modulecontent {
+	position: relative;
+}
+
+.family #store-tab-gallery td {
+	vertical-align:middle;
+}
+
+.module .outline_box {
+	width: 303px;
+}
+
+.product-details #primary .modulecontent .product-overview-full ul {
+	padding-left: 1.6em;
+}
+
+.module .outline_box .top {
+	background: url("http://images.imerrow.com/images/machines/outline_box.gif") top left no-repeat;
+	padding-top: 10px;
+	padding-bottom: 8px;
+}
+
+.module .outline_box .bottom {
+	background: url("http://images.imerrow.com/images/machines/outline_box.gif") bottom left no-repeat;
+	height: 2px;
+}
+
+/* Secondary Purchase Path Styling (right sidebar) */
+
+.secondary fieldset {
+	border: 0;
+}
+
+
+.secondary fieldset.purchase-info {
+	border: 0;
+	margin-bottom: 17px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.secondary fieldset.last {
+	border: 0;
+}
+
+.secondary fieldset.purchase-info legend {
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.secondary fieldset.purchase-info p.availability {
+	padding-top: 6px;
+	padding-bottom: 13px;
+}
+
+.secondary fieldset.purchase-info input {
+	margin-top: 3px;
+}
+
+.secondary fieldset.is_a_gift {
+	padding-top: 12px;
+}
+
+.secondary fieldset.is_a_gift input {
+	float: left;
+}
+
+
+.secondary fieldset.is_a_gift span {
+	padding-left: 29px;
+	background: url("../../Catalog/regional/amr/css/i/engraving-gift-box.png") top left no-repeat;
+	margin-top: -7px;
+	height: 32px;
+	float: left;
+	margin-left: 7px;
+	padding-top: 5px;
+	color: #333333;
+}
+
+/* Alert Bubble */
+
+.alert_bubble {
+	width: 303px;
+	height: 100px;
+	background: url("i/alert-bubble.gif") top left no-repeat;
+	position: absolute;
+	z-index: 11;
+	top: -93px;
+	color: #333333;
+}
+
+.alert_bubble p {
+	width: 266px;
+	margin-left: 16px;
+	margin-top: 10px;
+	line-height: 15px;
+}
+
+.alert_bubble button {
+	padding: 4px 0 0 0;
+	margin: 0 0 0 13px;
+	_margin-left: -14px;
+	float: left;
+	border: 0;
+	background: none;
+	color: #0085CF;
+	cursor: pointer;
+	font-size: 10px;
+}
+
+.alert_bubble button:hover {
+	text-decoration: underline;
+}
+.sosumi {
+	color: #76797C;
+}
+
+form#form {
+	display: inline;
+	padding-left: 12px;
+}
+
+select#jumpMenu {
+}
+div#names.big {
+	color: #000;
+	position: relative;
+	top: 10px;
+	text-align: center;
+	line-height: 1em;
+	font-size: 18px;
+	font-weight: bold;
+}
+

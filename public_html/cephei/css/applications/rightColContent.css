@@ -1,0 +1,176 @@
+/* Join CTA  */
+.joinTop {
+	background: url(https://www.ebaypartnernetwork.com/files/hub/img/joinTop.gif) top left;
+	padding-bottom: 0px;
+	width: 304px;
+}
+
+.joinTopBlue {
+	background: url(https://www.ebaypartnernetwork.com/files/hub/img/joinTopBlue.jpg) top left no-repeat;
+	padding-bottom: 0px;
+	width: 304px;
+}
+
+.joinTopGold {
+	background: url(https://www.ebaypartnernetwork.com/files/hub/img/joinTopGold.jpg) top left no-repeat;
+	padding-bottom: 0px;
+	width: 304px;
+}
+
+/* Join CTA  */
+.joinBtm {
+	background: url(https://www.ebaypartnernetwork.com/files/hub/img/joinBtm.gif) bottom left no-repeat;
+	text-align: center;
+	padding: 10px 15px 13px;
+}
+
+.joinBtm h3 {
+	margin-bottom: 3px;
+	font-size: 113%;
+}
+
+.joinBtm p {
+	margin-bottom: 3px;
+	padding: 0px 45px;
+}
+
+.joinBtm p.btnLnk {
+	padding: 4px 0px 0px 0px;
+	margin-bottom: 0px;
+}
+
+.joinBtm .btnLnk a {
+	background: url(https://www.ebaypartnernetwork.com/files/hub/img/joinBtnBtm.gif)  center bottom no-repeat;
+	margin: 4px 0px 0px 0px;
+	padding:  0px;
+	font-weight: bold;
+	font-size: 148%;
+	color: #333333;
+	display: block;
+}
+
+.joinBtm .btnLnk a span {
+	background: url(https://www.ebaypartnernetwork.com/files/hub/img/joinBtnTop.gif) center top no-repeat;
+	padding: 9px 22px 10px 22px;
+	display: block;
+	margin: 0px auto;
+}
+
+.joinBtm .btnLnk a:hover span {
+	color: #0033cc;
+}
+
+.joinBtm .btnLnk a {
+	text-decoration: none;
+}
+
+.smlMid {
+	background: url(https://www.ebaypartnernetwork.com/files/hub/img/smlMid.gif) top left;
+	margin-top: 15px;
+	width: 304px;
+}
+
+.smlMid .smlTop {
+	background: url(https://www.ebaypartnernetwork.com/files/hub/img/smlTop.gif) top left no-repeat;
+}
+
+.smlMid .smlBtm {
+	background: url(https://www.ebaypartnernetwork.com/files/hub/img/smlBtm.gif) bottom left no-repeat;
+	padding: 11px 0px 15px 13px;
+}
+
+.smlMid .smlBtmShade {
+	background: url(https://www.ebaypartnernetwork.com/files/hub/img/smlBtmShade.gif) bottom left no-repeat;
+	padding: 11px 0px 0px 13px;
+}
+
+.smlMid h3 {
+	padding-bottom: 16px;
+	margin-bottom: 0px;
+	font-size: 95%;
+	color: #595959;
+}
+
+.smlMid h4 {
+	padding-bottom: 10px;
+	margin-bottom: 0;
+	font-size: 86%;
+	color: #666;
+}
+
+.smlMid ul.links {
+	padding: 0;
+	margin: 0;
+}
+
+.smlMid ul.links li {
+	background: url(https://www.ebaypartnernetwork.com/files/hub/img/bulletBlue.gif) left 4px no-repeat;
+	padding: 0px 0px 4px 11px;
+	list-style: none;
+}
+
+.smlMid ul li a {
+	color: #1a4dc2;
+}
+
+.smlMid p.view {
+	border-top: solid #cfcfcf 1px;
+	padding: 6px 13px 5px 0px;
+	margin-bottom: 0px;
+	margin-left: -12px;
+	margin-top: 15px;
+	text-align: right;
+	clear: both;
+}
+
+.smlMid p.view a {
+	color: #0101cd;
+}
+
+.smlBlueTop {
+	background: url(https://www.ebaypartnernetwork.com/files/hub/img/smlBlueTop.jpg) top left no-repeat;
+}
+
+.smlMid ul.datedList {
+	padding: 0px;
+	margin: 0px;
+}
+
+.smlMid ul.datedList li {
+	padding: 0px 0px 4px 0px;
+	line-height: 1.6em;
+	list-style: none;
+	font-size: 60%;
+	color: #999999;
+}
+
+.smlMid ul.datedList li a {
+	font-size: 130%;
+	display: block;
+}
+
+.smlMid p.latestPost {
+	padding: 0 0 25px 0;
+	line-height: 1.6em;
+	list-style: none;
+	font-size: 60%;
+	color: #999999;
+}
+
+.smlMid p.latestPost a {
+	font-size: 150%;
+	display: block;
+	padding-right: 15px;
+}
+
+
+.smlGreenTop {
+	background: url(https://www.ebaypartnernetwork.com/files/hub/img/smlGreenTop.jpg) top left no-repeat;
+}
+
+.smlGoldTop {
+	background: url(https://www.ebaypartnernetwork.com/files/hub/img/smlGoldTop.jpg) top left no-repeat;
+}
+
+
+

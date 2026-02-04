@@ -1,0 +1,9 @@
+
+AuthType Basic
+
+AuthName "Security Level 5"
+
+AuthUserFile "/home/merrowco/.htpasswds/nm/passwd"
+
+
+require valid-user

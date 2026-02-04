@@ -1,0 +1,82 @@
+/* @version globals v2.0 */
+/* Updated to match legacy merrow.com CSS (css.imerrow.com) */
+
+/* Tailwind v4: explicitly bind this app's config (monorepo-safe) */
+@config "../tailwind.config.ts";
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+/* Phase 1: lock to light to match live merrow.com */
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Legacy body styles from css.imerrow.com */
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #222222;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Legacy link styles */
+a {
+  color: #808080;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Legacy headline styles (Century Gothic) */
+h1, h2, h3 {
+  font-family: "Century Gothic", "Helvetica Neue", Arial, sans-serif;
+  font-weight: normal;
+}
+
+/* Legacy category page headline (.ncp_headline) */
+.ncp-headline {
+  font-family: "Century Gothic", "Helvetica Neue", Arial, sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+/* Legacy byeline (.ncp_byeline) */
+.ncp-byeline {
+  text-align: center;
+  font-family: "Century Gothic", Verdana, sans-serif;
+  font-size: 24px;
+}
+
+/* Legacy subhead (.sub_head) */
+.sub-head {
+  color: black;
+  font-family: "Century Gothic", Verdana, sans-serif;
+  font-size: 28px;
+  margin: 10px 0 5px 8px;
+}
+
+/* Legacy machine list link styles */
+.machine-list a {
+  font-size: 11px;
+  color: #808080;
+}
+
+.machine-list a:hover {
+  color: #1a4f8a;
+}
+
+/* Legacy page app list */
+.page-app-list a {
+  color: #808080;
+  font-size: 12px;
+}

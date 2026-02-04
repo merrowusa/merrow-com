@@ -1,0 +1,288 @@
+/* @override http://merrow.com/cephei/css/css_major/contact_general.css */
+
+#content div.column div.title p {
+	position: relative;
+	top: 12px;
+}
+
+div.theform {
+	position: relative;
+	visibility: visible;
+	float: left;
+	bottom: 40px;
+}
+div.theformwhole {
+	position: relative;
+	visibility: visible;
+	height: 600px;
+	
+	text-align: left;
+	left: 0;
+	width: 700px;
+	float: left;
+}
+
+
+
+
+div.captcha {
+	position: absolute;
+	top: 250px;
+	left: 0;
+}
+
+
+
+#content div.column div.theform form textarea {
+	position: relative;
+	visibility: visible;
+	left: 113px;
+	float: left;
+	top: 25px;
+	width: 400px;
+	height: 140px;
+}
+#content div.column div.theformwhole form textarea {
+	position: relative;
+	visibility: visible;
+	float: left;
+	top: 45px;
+	width: 700px;
+	height: 120px;
+}
+
+div.messagetitle {
+	position: relative;
+	width: 100px;
+	display: block;
+	clear: both;
+	float: left;
+	height: 1px;
+	top: 44px;
+}
+
+div.entryfields {
+	position: relative;
+	top: 20px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+
+div.bunk_captcha {
+	position: absolute;
+	left: 350px;
+	width: 400px;
+	color: orange;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 36px;
+	top: 250px;
+}
+
+div.title9 {
+	position: relative;
+	left: 45px;
+	font-size: 24px;
+	color: #71907a;
+	text-transform: lowercase;
+	line-height: 24px;
+}
+
+div.bottomforms {
+	font-size: 16px;
+	text-align: left;
+	width: 450px;
+	position: relative;
+	top: 24px;
+	left: 85px;
+	background-image: none;
+}
+
+#content div.column div.theform form div.entryfields input {
+	width: 250px;
+	margin-top: 5px;
+}
+#content div.column div.theformwhole form div.entryfields input {
+	width: 250px;
+	margin-top: 5px;
+}
+
+
+
+#content div.column div.theform form input.buttons {
+	position: absolute;
+	color: black;
+	left: 310px;
+	font-size: 16px;
+	top: 400px;
+}
+#content div.column div.theformwhole form input.buttons {
+	position: relative;
+	float: left;
+	top: 220px;
+	color: black;
+	left: 220px;
+}
+
+
+.spiffy_machine{display:block;
+}
+.spiffy_machine *{
+  display:block;
+  height:1px;
+  overflow:hidden;
+  font-size:.01em;
+  background:#97cc65}
+.spiffy_machine1{
+  margin-left:3px;
+  margin-right:3px;
+  padding-left:1px;
+  padding-right:1px;
+  border-left:1px solid #d2e9bc;
+  border-right:1px solid #d2e9bc;
+  background:#b1d88b}
+.spiffy_machine2{
+  margin-left:1px;
+  margin-right:1px;
+  padding-right:1px;
+  padding-left:1px;
+  border-left:1px solid #f4f9ef;
+  border-right:1px solid #f4f9ef;
+  background:#aad582}
+.spiffy_machine3{
+  margin-left:1px;
+  margin-right:1px;
+  border-left:1px solid #aad582;
+  border-right:1px solid #aad582;}
+.spiffy_machine4{
+  border-left:1px solid #d2e9bc;
+  border-right:1px solid #d2e9bc}
+.spiffy_machine5{
+  border-left:1px solid #b1d88b;
+  border-right:1px solid #b1d88b}
+.spiffy_machinefg{
+  background:#97cc65}
+
+
+
+div.centerspiffy {
+	margin-top: 20px;
+	width: 900px;
+}
+
+div.titletop {
+	font-size: 24px;
+	font-weight: bold;
+	text-indent: 22px;
+	color: white;
+}
+
+#content div.column div.theformwhole form div div.spiffy_machinefg div.machinequestions input {
+	width: 20px;
+	font-size: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+div.machinequestions {
+	width: 220px;
+	color: white;
+	line-height: 24px;
+	position: relative;
+	padding-left: 20px;
+	text-align: right;
+	padding-top: 20px;
+}
+
+div.contactinfo {
+	width: 230px;
+	position: absolute;
+	top: 0;
+	left: 720px;
+	color: #78a14f;
+	text-transform: lowercase;
+}
+
+div.bulkoftheentrrygfields {
+	height: 420px;
+	position: relative;
+	color: gray;
+	left: 14px;
+}
+
+p.topcontact {
+	font-size: 16px;
+}
+
+div.example {
+	position: relative;
+	color: black;
+	font-size: 12px;
+	font-style: italic;
+}
+
+#content div.column div.theformwhole form div div.spiffy_machinefg div.machinequestions div.example input {
+	color: #950000;
+	font-size: 12px;
+}
+
+
+div.miniheadline {
+	position: absolute;
+	top: 45px;
+	left: 300px;
+	color: white;
+	font-size: 16px;
+}
+
+div.register {
+	position: absolute;
+	left: 360px;
+	color: white;
+	font-size: 12px;
+	top: 100px;
+	width: 140px;
+}
+
+div.secondentry {
+	position: absolute;
+	left: 340px;
+}
+
+
+
+div.form_buttons {
+	position: absolute;
+	left: 500px;
+	top: 120px;
+	color: white;
+}
+
+div.captcha_clarification {
+	position: relative;
+	top: 130px;
+	left: 340px;
+	width: 300px;
+}
+
+
+div.twonotesinmenu {
+	position: absolute;
+	top: 50px;
+	right: 0;
+}
+
+
+input.form_buttons1 {
+	position: absolute;
+	left: 10px;
+	bottom: 0;
+}
+
+div.captcha_agents {
+	position: absolute;
+	top: 250px;
+	left: 110px;
+}

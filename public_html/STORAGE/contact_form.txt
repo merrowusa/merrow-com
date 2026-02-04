@@ -1,0 +1,40 @@
+To: customerservice@merrow.com
+From: [required-emailaddress]
+Subject: Merrow Web Site Information Request
+
+Name: [required-contact]
+
+ADDRESS
+[required-company]
+[required-address1]
+[required-city], [required-state] [required-zip]
+[country]
+
+
+------------------------------------------------------
+
+
+CONTACT INFORAMTION
+Email Address: [required-emailaddress]
+Telephone: [required-telephone]
+Fax: [fax]
+
+
+------------------------------------------------------
+
+
+COMMENTS
+[comments]
+
+
+------------------------------------------------------
+
+
+PREFERRED METHOD OF CONTACT
+Telephone: [con_tel]
+Fax: [con_fax]
+Email: [con_ema]
+Regular Mail: [con_reg]
+No Contact At This Time: [con_no]
+Send Literature: [con_sen]
+

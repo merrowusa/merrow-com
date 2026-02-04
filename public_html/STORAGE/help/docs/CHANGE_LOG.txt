@@ -1,0 +1,32 @@
+  ###################################
+  ### Help Center Live Change Log ###
+  ###################################
+
+  ### Version 2.0.2 - June 28th, 2005 ###
+  - Fixed error with request monitor when there are no visitors
+
+
+  ### Version 2.0.1 - June 25th, 2005 ###
+  - Fixed CoBrowse error. Long URL's now sent to WinApp, not shortened ones.
+  - Fixed problem with stripslashes when posting arrays fixed (caused problems in osTicket)
+  - Fixed problem with access denied for users in osTicket
+  - Fixed HTML error in /templates/G/live/divert.tpl
+  - Fixed fsockopen problem when sending email if chat was diverted
+  - Fixed broken links in osTicket
+  - Added optional use of database cache so that HCL can work with safe_mode
+  - Added rmhcl.php to delete the cache and compile directory contents
+  - Fixed CoMarker positioning problem
+  - Fixed osTickets search bug
+  - Fixed problem with CoBrowse page not synchronizing properly
+  - Changed WinApp footprints and history URL's so they are full instead of abbreviated
+  - Added option in config file to block IP addresses.
+  - Changed osTicket to open in a new window when operators are offline
+  - Changed operator chat request G template to look nicer
+  - Fixed operator chats
+  - Changed monitor to not display visitors with no page info
+  - Added checks to ensure operator is selected for operator chat
+
+
+  ### Version 2.0.0 - June 12th, 2005 ###
+  - Initial release of Help Center Live 2.0.0
+  - Entirely new code, so new changelog.

@@ -1,0 +1,87 @@
+/* @override 
+	http://merrow.com/cephei/css/menu.css
+	http://merrow.com/cephei/css/menu.css
+	http://imerrow.com/amazon/menu.css
+	http://merrow.com/cephei/css/css_major/menu.css
+*/
+
+<style type="text/css">
+
+.indentmenu{
+font: bold 13px Arial; /*leave this value as is in most cases*/
+}
+
+div.menu_container {
+	width: 750px;
+}
+
+.indentmenu ul{
+margin: 0;
+padding: 0;
+float: left; /*width of menu*/
+border: 1px 0 none #564c66;
+	background-repeat: repeat-x;
+	height: 30px;
+}
+
+.indentmenu ul li{
+display: inline;
+}
+
+.indentmenu ul li a{
+float: left;
+color: #fffcf7; /*text color*/
+padding: 5px 11px;
+text-decoration: none;
+	font-weight: bold;
+	font-size: 16px;
+	border-right: 1px dashed white;
+}
+
+.indentmenu ul li a:visited{
+color: white;
+}
+
+.indentmenu ul li a:hover, .indentmenu ul li .current{
+color: silver; /*text color of selected and active item*/
+padding-top: 6px; /*shift text down 1px for selected and active item*/
+padding-bottom: 4px; /*shift text down 1px for selected and active item*/
+background: #d07700 repeat-x center center;
+}
+
+.spiffy_amazon{display:block}
+.spiffy_amazon *{
+  display:block;
+  height:1px;
+  overflow:hidden;
+  font-size:.01em;
+  background:#f58d00}
+.spiffy_amazon1{
+  margin-left:3px;
+  margin-right:3px;
+  padding-left:1px;
+  padding-right:1px;
+  border-left:1px solid #facd91;
+  border-right:1px solid #facd91;
+  background:#f7a93f}
+.spiffy_amazon2{
+  margin-left:1px;
+  margin-right:1px;
+  padding-right:1px;
+  padding-left:1px;
+  border-left:1px solid #fef3e5;
+  border-right:1px solid #fef3e5;
+  background:#f6a230}
+.spiffy_amazon3{
+  margin-left:1px;
+  margin-right:1px;
+  border-left:1px solid #f6a230;
+  border-right:1px solid #f6a230;}
+.spiffy_amazon4{
+  border-left:1px solid #facd91;
+  border-right:1px solid #facd91}
+.spiffy_amazon5{
+  border-left:1px solid #f7a93f;
+  border-right:1px solid #f7a93f}
+.spiffy_amazonfg{
+  background:#f58d00}

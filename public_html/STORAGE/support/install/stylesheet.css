@@ -1,0 +1,91 @@
+body { background: #ffffff; }
+td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #336699;
+	text-decoration: none;
+}
+.mainmenu {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #336699;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+.mainmenu-over {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #336699;
+	text-decoration: underline;
+}
+a:link, a:visited, a:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #336699;
+	text-decoration: none;
+}
+a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #336699;
+	text-decoration: underline;
+}
+.debug {
+    font: 11px/14px geneva, arial, verdana, sans-serif; 
+    font-weight: bold; 
+    color: red; 
+    text-decoration: none
+}
+
+.reset_row TD {
+	background-color: #F5F5F5;
+	border-bottom: solid 2px #EEEEEE;
+}
+.mark_row TD {
+	background-color: #EEEEEE;
+	border-bottom: solid 2px #B6C7E5;
+}
+table.maintable {
+	border: 1px solid #336699;
+	background: #ffffff;
+}
+table.boxtable {
+	border: 1px solid #336699;
+}
+.boxtable td {
+		background: #ffffff;
+}
+table.stafftable, .stafftable td {
+	border: 1px solid #336699;
+	border-collapse: collapse;
+}
+td.head {
+	background: #bad2e9;
+	color: #336699;
+	font-weight: bold;
+}
+.subhead {
+	background-color: #f5f5f5;
+	color: #336699;
+}
+.formfield, .title {
+	color: #336699;
+	font-weight: bold;
+}
+input, textarea {
+	border: 1px solid #336699;
+}
+.button {
+	border: 1px solid #336699;
+	background: #bad2e9;
+	color: #336699;
+	font-weight: bold;
+}
+.cright {
+	background: #ffffff ;
+	color: #336699;
+	font-weight: normal;
+	font-style: italic;
+}

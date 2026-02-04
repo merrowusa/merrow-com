@@ -1,0 +1,7 @@
+{TICKETS_SHOW_TICKET}
+<br><br>
+{TICKETS_ADD_NOTE_FORM}
+<br>
+<div align="center">{TICKETS_CHANGE_PRIORITY}</div>
+<br>
+{TICKETS_LIST_NOTES}

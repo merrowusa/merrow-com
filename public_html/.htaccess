@@ -1,0 +1,337 @@
+Options All +Indexes
+
+ErrorDocument 404 /merrow404.php
+ 
+DirectoryIndex /index.php
+
+#RewriteEngine on
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+#REWRITE www to * merrow
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^merrow\.com
+RewriteRule ^(.*)$ http://www.merrow.com/$1 [R=permanent,L] 
+
+#REWRITE merrowsales to * merrow
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^merrowsales\.com
+RewriteRule ^(.*)$ http://www.merrow.com/$1 [R=permanent,L] 
+
+#REWRITE www.merrowsales to * merrow
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.merrowsales\.com
+RewriteRule ^(.*)$ http://www.merrow.com/$1 [R=permanent,L] 
+
+#REWRITE merrowmachine to * merrow
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^merrowmachine\.com
+RewriteRule ^(.*)$ http://www.merrow.com/$1 [R=permanent,L] 
+
+#REWRITE www.merrowmachine to * merrow
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.merrowmachine\.com
+RewriteRule ^(.*)$ http://www.merrow.com/$1 [R=permanent,L] 
+
+#2025 additions
+
+# Redirect /training to Shopify training page
+RewriteRule ^training/?$ https://merrowedge.com/pages/training-support [R=301,L]
+
+#END 2025 additions
+
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule stitch/marketplace/(.*)/stitch/(.*)/label/(.*)/setnum/(.*)/setnum1/(.*)/setnam/(.*)/resolution/(.*)/ stitch.php?marketplace=$1&stitch=$2&label=$3&setnum=$4&setnum1=$5&setnam=$6&resolution=$7
+RewriteRule stitch/marketplace/(.*)/stitch/(.*)/label/(.*)/setnum/(.*)/setnum1/(.*)/setnam/(.*)/resolution/(.*) stitch.php?marketplace=$1&stitch=$2&label=$3&setnum=$4&setnum1=$5&setnam=$6&resolution=$7	
+
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule merrow_stitching/app/(.*)/version/(.*)/ merrow_stitching.php?app=$1&version=$2
+RewriteRule merrow_stitching/app/(.*)/version/(.*) merrow_stitching.php?app=$1&version=$2					
+				
+# FOR STITCH PICTURES OFF MAIN PAGE
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule stitch/marketplace/(.*)/stitch/(.*)/ stitch.php?marketplace=$1&stitch=$2
+RewriteRule stitch/marketplace/(.*)/stitch/(.*) stitch.php?marketplace=$1&stitch=$2	
+
+#SEWING MACHINE PAGE REWRITES
+
+# FOR 70 CLASS MACHINES (google links)
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule Overlock_Sewing_Machines/Continuous_Processing/(.*)/ mg_1.php?cp=$1
+RewriteRule Overlock_Sewing_Machines/Continuous_Processing/(.*) mg_1.php?cp=$1&	
+RewriteRule compact-professional-sewing-table mg_2.php?cp=70d3b2
+
+# FOR 70 CLASS MACHINES (direct links)
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule 70class/cp/(.*)/ mg_1.php?cp=$1
+RewriteRule 70class/cp/(.*) mg_1.php?cp=$1&	
+
+# FOR PARTS PAGES 
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule parts/(.*)/(.*) parts.php?cp=$1&mmc_code=$2
+
+# FOR M3U CLASS MACHINES 
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule Sergers_and_Overlock_Sewing_Machines/Emblem_Edging/(.*)/ mg_1.php?cp=$1
+RewriteRule Sergers_and_Overlock_Sewing_Machines/Emblem_Edging/(.*) mg_1.php?cp=$1&	
+RewriteRule Sergers_and_Overlock_Sewing_Machines/(.*) mg_1.php?cp=$1&	
+RewriteRule crochet-sewing-machines/(.*) mg_1.php?cp=$1	
+
+# FOR 3 MAJOR SECTIONS
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule fashion-sewing ncp1.php?a=f
+RewriteRule technical-sewing ncp1.php?a=t	
+RewriteRule end-to-end-seaming ncp1.php?a=e
+RewriteRule sewing/applications/(.*)/ a.php?app=$1&#$2
+RewriteRule sewing/applications/(.*) a.php?app=$1
+RewriteRule customer-stories/featured/(.*) ncs1.php?s=$1
+RewriteRule overlock-history nhp1.php
+
+
+	
+
+#REDIRECTS
+
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule ^70d3b2_hp.php$ Overlock_Sewing_Machines/Continuous_Processing/70d3b2hp
+RewriteRule ^70d3b2.php$ Overlock_Sewing_Machines/Continuous_Processing/70d3b2
+RewriteRule ^70d3b2_g.php$ Overlock_Sewing_Machines/Continuous_Processing/70d3b2g
+RewriteRule ^70d3b2_cnp.php$ Overlock_Sewing_Machines/Continuous_Processing/70d3b2cnp
+RewriteRule ^70d3b2_ls.php$ Overlock_Sewing_Machines/Continuous_Processing/70d3b2ls
+RewriteRule ^70d3b2_rail.php$ Overlock_Sewing_Machines/Continuous_Processing/70d3b2rail
+RewriteRule ^70y3b2.php$ Overlock_Sewing_Machines/Continuous_Processing/70y3b2
+RewriteRule ^72d3b2.php$ Overlock_Sewing_Machines/Continuous_Processing/72d3b2
+RewriteRule ^72d3br.php$ Overlock_Sewing_Machines/Continuous_Processing/72d3b2r
+RewriteRule ^index.htm$ index.html
+RewriteRule ^WebStore-Privacy-Notice/ about.html
+RewriteRule ^WebStore-Terms-of-Use/ about.html
+RewriteRule ^aboutmerrow/engineer.htm about.html
+RewriteRule ^aboutmerrow/history.htm about.html
+RewriteRule ^boards////viewtopic.php?p=72 about.html
+RewriteRule ^buttedseam/bs-threading.htm Overlock_Sewing_Machines/Continuous_Processing/70d3b2
+RewriteRule ^crochet/crochet.htm Sergers_and_Overlock_Sewing_Machines/Emblem_Edging/mg3u
+RewriteRule ^decorative/decorative.htm Sergers_and_Overlock_Sewing_Machines/Emblem_Edging/mg3u
+RewriteRule ^decorative/m_mg-maintenance.htm Sergers_and_Overlock_Sewing_Machines/Emblem_Edging/mg3u
+RewriteRule ^decorative/m_mg-op.htm Sergers_and_Overlock_Sewing_Machines/Emblem_Edging/mg3u
+RewriteRule ^decorative/m_mg-troubleshoot.htm Sergers_and_Overlock_Sewing_Machines/Emblem_Edging/mg3u
+RewriteRule ^english/manuals/mgnmclass/maintenance.htm Sergers_and_Overlock_Sewing_Machines/Emblem_Edging/mg3u
+RewriteRule ^merrow-Parts-Manual/PD22FJ/PD22FJ.htm index.html
+RewriteRule ^merrow-Parts-Manual/PD3DW7/PD3DW7.htm index.html
+RewriteRule ^merrow-Parts-Manual/PDMGNR/PDMGNR.htm index.html
+RewriteRule ^pdfs/crochetshell.pdf index.html
+RewriteRule ^pdfs/decorative.pdf index.html
+RewriteRule ^product-lineB. index.html
+RewriteRule ^pdfs/butted-seam.pdf Overlock_Sewing_Machines/Continuous_Processing/70d3b2
+RewriteRule ^pdfs/hosiery.pdf Overlock_Sewing_Machines/mg4d45
+
+#END SEWING MACHINE PAGE REWRITES
+
+# FOR LINKS TO THE PART BOOKS
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule agent_book/kiwifruit/(.*)/language/(.*)/type/(.*)/setnum/(.*)/setnam/(.*)/ agent_book.php?kiwifruit=$1&language=$2&type=$3&setnum=$4&setnam=$5
+RewriteRule agent_book/kiwifruit/(.*)/language/(.*)/type/(.*)/setnum/(.*)/setnam/(.*) agent_book.php?kiwifruit=$1&language=$2&type=$3&setnum=$4&setnam=$5	
+
+# FOR LINK TO STORE FROM LEFTMAIN MENU
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule dynamicstore/store/(.*)/ dynamicstore.php?store=$1
+RewriteRule dynamicstore/store/(.*) dynamicstore.php?store=$1
+
+# FOR REWRITING ALL PHP ENDING URL TO HTML
+RewriteEngine on
+RewriteBase /
+RewriteRule ^(.*)\.html$ $1.php [L]	
+
+# FOR REWRITING THE APPS MAIN PAGES
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule merrow_stitching/app/(.*)/version/(.*)/ merrow_stitching.php?app=$1&version=$2
+RewriteRule merrow_stitching/app/(.*)/version/(.*) merrow_stitching.php?app=$1&version=$2	
+
+# FOR EBAY ANNOUNCEMENTS FROM LEFTMAIN
+
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule announcements/ebay/(.*)/ announcements.php?ebay=$1
+RewriteRule announcements/ebay/(.*) announcements.php?ebay=$1	
+
+# FOR NEWS AND ANNOUNCEMENTS FROM MAIN MENU
+
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule announcements/party_id/(.*)/drawers4/(.*)/ announcements.php?party_id=$1&drawers4=$2
+RewriteRule announcements/party_id/(.*)/drawers4/(.*) announcements.php?party_id=$1&drawers4=$2	
+
+# FOR APPLICATION MAINPAGE
+
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule merrow_stitching/app/(.*)/ merrow_stitching.php?app=$1
+RewriteRule merrow_stitching/app/(.*) merrow_stitching.php?app=$1		
+
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule applications/app/(.*)/ applications.php?app=$1
+RewriteRule applications/app/(.*) applications.php?app=$1	
+
+# FOR THE LINK TO CONTACT FROM APPLICATION PAGES
+
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule contact_general/label/(.*)/key/(.*)/ contact_general.php?label=$1&key=$2
+RewriteRule contact_general/label/(.*)/key/(.*) contact_general.php?label=$1&key=$2					
+							
+# FOR ONE VARIABLE CONTACT PAGE
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule contact_general/key/(.*)/ contact_general.php?key=$1
+RewriteRule contact_general/key/(.*) contact_general.php?key=$1	
+
+# FOR TECHNICAL SUPPORT
+
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule support/class/(.*)/key/(.*)/ support.php?class=$1&key=$2
+RewriteRule support/class/(.*)/key/(.*) support.php?class=$1&key=$2		
+
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule support/class/(.*)/mediakeyword/(.*)/ support.php?class=$1&mediakeyword=$2
+RewriteRule support/class/(.*)/mediakeyword/(.*) support.php?class=$1&mediakeyword=$2				
+							
+				
+# MANUALS
+
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule agent_book/kiwifruit/(.*)/language/(.*)/type/(.*)/setnum/(.*)/setnam/(.*)/ agent_book.php?kiwifruit=$1&language=$2&type=$3&setnum=$4&setnam=$5
+RewriteRule agent_book/kiwifruit/(.*)/language/(.*)/type/(.*)/setnum/(.*)/setnam/(.*) agent_book.php?kiwifruit=$1&language=$2&type=$3&setnum=$4&setnam=$5
+
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule agent_book/kiwifruit/(.*)/language/(.*)/setnum/(.*)/setnam/(.*)/type/(.*)/ agent_book.php?kiwifruit=$1&language=$2&setnum=$3&setnam=$4&type=$5
+RewriteRule agent_book/kiwifruit/(.*)/language/(.*)/setnum/(.*)/setnam/(.*)/type/(.*) agent_book.php?kiwifruit=$1&language=$2&setnum=$3&setnam=$4&type=$5					
+					
+
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule support/diagram/(.*)/showthemapicture/(.*)/ support.php?diagram=$1&showthemapicture=$2
+RewriteRule support/diagram/(.*)/showthemapicture/(.*) support.php?diagram=$1&showthemapicture=$2			
+
+# FOR DRAWERS
+
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule fp_support/class/(.*)/key/(.*)/party_id/(.*)/ fp_support.php?class=$1&key=$2&party_id=$3
+RewriteRule fp_support/class/(.*)/key/(.*)/party_id/(.*) fp_support.php?class=$1&key=$2&party_id=$3					
+				
+# FOR AGENT SELECTION
+
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule agent_choice/party_id/(.*)/ agent_choice.php?party_id=$1
+RewriteRule agent_choice/party_id/(.*) agent_choice.php?party_id=$1					
+						
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^tech-manual.htm$ "http\:\/\/merrow\.com\/support\.html" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^applications.htm$ "http\:\/\/merrow\.com\/merrow_stitching\/app\/mainpage\/version\/first\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^product-lineB.htm$ "http\:\/\/merrow\.com\/dynamicstore\/store\/65533122844756220294\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^merrow-Parts-Manual/indexofmodels.htm$ "http\:\/\/merrow\.com\/dynamicstore\/store\/65533122844756220294\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^aboutmerrow/about.htm$ "http\:\/\/merrow\.com\/about\.html" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^mg3u/mg3u.htm$ "http\:\/\/store\.merrow\.com\/Model\-MG3U\-Merrow\-Sewing\-Machine\/M\/B001AVK6R0\.htm" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^merrow.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www.merrow.com$
+RewriteRule ^distributors/$ "http\:\/\/merrow\.com\/agentmap\.html" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^merrow.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www.merrow.com$
+RewriteRule ^product-lineA.htm$ "http\:\/\/merrow\.com\/dynamicstore\/store\/65533122844756220294\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^merrowing.com$
+RewriteRule ^/?$ "http\:\/\/www\.merrowing\.com" [R=301,L]
+
+<FilesMatch "\.(ico|jpg|jpeg|png|gif|js|css|swf)$">
+ExpiresDefault "access plus 2 hours"
+</FilesMatch>
+
+# Expire images header
+ExpiresActive On
+ExpiresDefault A0
+ExpiresByType image/gif A2592000
+ExpiresByType image/png A2592000
+ExpiresByType image/jpg A2592000
+ExpiresByType image/jpeg A2592000
+ExpiresByType image/ico A2592000
+ExpiresByType text/css A2592000
+ExpiresByType text/javascript A2592000
+
+# 480 weeks
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+Header set Cache-Control "max-age=290304000, public"
+</FilesMatch>
+ 
+# 2 DAYS
+<FilesMatch "\.(xml|txt)$">
+Header set Cache-Control "max-age=172800, public, must-revalidate"
+</FilesMatch>
+ 
+# 2 HOURS
+<FilesMatch "\.(html|htm)$">
+Header set Cache-Control "max-age=7200, must-revalidate"
+</FilesMatch>
+
+AddType text/css css
+
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule php5_module>
+   php_flag asp_tags Off
+   php_flag display_errors Off
+   php_value max_execution_time 30
+   php_value max_input_time 60
+   php_value max_input_vars 1000
+   php_value memory_limit 128M
+   php_value post_max_size 8M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/var/cpanel/php/sessions/ea-php54"
+   php_value upload_max_filesize 2M
+   php_flag zlib.output_compression Off
+</IfModule>
+<IfModule lsapi_module>
+   php_flag asp_tags Off
+   php_flag display_errors Off
+   php_value max_execution_time 30
+   php_value max_input_time 60
+   php_value max_input_vars 1000
+   php_value memory_limit 128M
+   php_value post_max_size 8M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/var/cpanel/php/sessions/ea-php54"
+   php_value upload_max_filesize 2M
+   php_flag zlib.output_compression Off
+</IfModule>
+# END cPanel-generated php ini directives, do not edit

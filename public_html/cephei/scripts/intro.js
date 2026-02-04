@@ -1,0 +1,5 @@
+if(WBA_hasFlash){
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="507" height="213" id="flashBanner" align="middle"><param name="allowScriptAccess" value="sameDomain" /><param name="movie" value="http://imerrow.com/amazon/intro_conv.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#f6f6f6" /><embed src="http://imerrow.com/amazon/intro_conv.swf" quality="high" bgcolor="#f6f6f6" width="507" height="213" name="flashBanner" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /></object>');
+}else{
+document.write('<div id="splash"><img src="/themes/iwsclassic/variations/fresh/images/patio.jpg"/><div><a href="'+firstCategoryUrl+'">'+firstCategory+'</a><div></div>');
+}

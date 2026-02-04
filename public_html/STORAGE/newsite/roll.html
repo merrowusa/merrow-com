@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>OnMouseOver Image - Dynamic Layer demo.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<p><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Demo on Dynamic 
+  layers with Rollover Images and onMouseOver and onMouseOut properties: </font></b></p>
+<table width="66%" border="0">
+  <tr> 
+    <td colspan="2">
+      <table width="100%" border="0">
+        <tr>
+          <td><a href="file:///C|/Documents and Settings/Luis Bernardo/applications/apl_all.html" 
+		  onMouseOver="MM_showHideLayers
+		  ('Layer0','','hide','Layer1','','show','Layer2','','hide','Layer3','','hide','Layer4','','hide')" 
+		  onMouseOut="MM_showHideLayers
+		  ('Layer0','','show','Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide')" >
+		  <img src="Images/photo_apl.gif" width="100" height="100" border="0">
+		  </a></td>
+          <td><a href="file:///C|/Documents and Settings/Luis Bernardo/parts/parts_all.html" 
+		  onMouseOver="MM_showHideLayers
+		  ('Layer0','','hide','Layer1','','hide','Layer2','','hide','Layer3','','show','Layer4','','hide')" 
+		  onMouseOut="MM_showHideLayers
+		  ('Layer0','','show','Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide')" >
+		  <img src="Images/photo_parts.gif" width="100" height="100" border="0"></a>		  </td>
+        </tr>
+        <tr>
+          <td><a href="file:///C|/Documents and Settings/Luis Bernardo/stitches/stitch_all.html"
+		  onMouseOut="MM_showHideLayers
+		  ('Layer0','','show','Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide')" 
+		  onMouseOver="MM_showHideLayers
+		  ('Layer0','','hide','Layer1','','hide','Layer2','','show','Layer3','','hide','Layer4','','hide')" >
+		  <img src="Images/photo_stc.gif" width="100" height="100" border="0"></a>		  </td>
+          <td><a href="file:///C|/Documents and Settings/Luis Bernardo/mac/mac_all.html" 
+		  onMouseOver="MM_showHideLayers
+		  ('Layer0','','hide','Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','show')" 
+		  onMouseOut="MM_showHideLayers
+		  ('Layer0','','show','Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide')" >
+		  <img src="Images/photo_mac.gif" width="100" height="100" border="0"></a>		  </td>
+        </tr>
+      </table>
+	</td>
+    <td width="61%">
+      <div id="Layer0" style="position:absolute; width:250px; height:200px; z-index:1; left: 275px; top: 55px; overflow: visible; visibility: visible;">
+	    <font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#009900">
+	      Welcome to the demo!.This is Layer1. When you load this page you can view this. 
+          Once if you mover your mouse over any of this images, this layer will 
+          be hiddden.	    </font>	  </div>
+	  
+      <div id="Layer1" style="position:absolute; width:250px; height:200; z-index:1; left: 275px; top: 55px; overflow: hidden; visibility: hidden;">
+        <p><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#FF0000">Estou a ver a foto da Applications </font></p>
+        <p><img src="Images/apl.jpg" width="100" height="100"></p>
+      </div>
+	  
+	  <div id="Layer2" style="position:absolute; width:250px; height:200px; z-index:2; left: 275; top: 55; overflow: hidden; visibility: hidden;">
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#0000CC">Estou a ver a foto da Stitch </font></p>
+        <p><img src="Images/stitch.jpg" width="100" height="100"></p>
+      </div>
+	  
+	  <div id="Layer3" style="position:absolute; width:250px; height:200; z-index:3; left: 275px; top: 55px; overflow: hidden; visibility: hidden;">
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#0000CC">Estou a ver a foto da Parts </font></p>
+        <p><img src="Images/oil.jpg" width="100" height="100"></p>
+      </div>
+	  
+      <div id="Layer4" style="position:absolute; width:250px; height:200; z-index:4; left: 275px; top: 55px; overflow: hidden; visibility: hidden;">
+        <p>Detail : 2 </p>
+        <p>Detail : 3 </p>
+        <p>Detail : 4 </p>
+      </div>
+	</td>
+  </tr>
+</table>
+</body>
+</html>

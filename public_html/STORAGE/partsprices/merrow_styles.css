@@ -1,0 +1,12 @@
+/* Replaces fecred rd2blck */
+a.default:link		{color: #003366; font-weight: bold; text-decoration: underline; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; line-height: 12px}
+a.default:visited	{color: #003366; font-weight: bold; text-decoration: none; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; line-height: 12px}
+a.default:hover		{color: #CC0000; font-weight: bold; text-decoration: underline; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; line-height: 12px}
+.smsubhead {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 13px; font-weight: bold; color: #003366; text-decoration: none}
+.subhead {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 15px; font-weight: bold; color: #003366; text-decoration: none}
+.mainhead {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 22px; line-height: 23px; font-weight: bold; color: #003366; text-decoration: none}
+.bodytext {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; line-height: 13px; font-weight: normal; color: #000000; text-decoration: none}
+a.mainnav:link {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 13px; font-weight: bold; color: #003366; text-decoration: underline}
+a.mainnav:hover {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #CC0000; text-decoration: underline; line-height: 13px}
+a.mainnav:visited {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #003366; text-decoration: none}
+.chartext {  font-family: Arial, Helvetica, sans-serif; font-size: 9px; font-style: normal; line-height: 10px; font-weight: normal; color: #000000; text-decoration: none}

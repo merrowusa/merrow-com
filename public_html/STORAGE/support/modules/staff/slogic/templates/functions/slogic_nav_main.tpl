@@ -1,0 +1,1 @@
+[ <a href="staff.php?tpl={TEMPLATE}">{LANG_TEMPLATE}</a> ]

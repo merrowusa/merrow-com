@@ -1,0 +1,43 @@
+.leftnavlink,.left-vert-bar-link
+{
+height: 3px;
+width:196px;
+	background-repeat: no-repeat;
+}
+
+/* cgm */
+
+.main {width: 100%;
+	margin-left: 20px;
+}
+
+/* cgm */
+.content{width:100%;
+}
+
+/* cgm */
+
+.bg{
+padding:0px 0px 2px 22px;
+background:#ffffff;
+background:url(../images/hag_sbc.jpg) center no-repeat;
+height:32px;
+width:196px;
+font-family:verdana, arial, tahoma;
+font-size:12px;
+vertical-align:middle;
+color:#000000;
+font-weight:bold;
+	visibility: hidden;
+}
+
+/* cgm  -- this hides the yellow column headers on the amazon pages*/
+
+
+.bgcr{
+background:url(../images/hag_footer_bg.jpg) center repeat-x;
+height:30px;
+	visibility: hidden;
+}
+
+/* cgm this hides the horrible green bottom border */

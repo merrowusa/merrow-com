@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^internal.merrow.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www.internal.merrow.com$
+RewriteRule ^(.*)$ http://65.96.199.153 [R=301,L]
+
