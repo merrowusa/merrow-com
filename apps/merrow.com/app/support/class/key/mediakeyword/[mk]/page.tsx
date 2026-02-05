@@ -8,13 +8,13 @@ import {
   FullBleed,
   PageHeader,
   MerrowButton,
-} from "../../../../../../../../../packages/ui";
+} from "../../../../../../../../packages/ui";
 import { SupportSidebar } from "../../../../_components/SupportSidebar";
 import { SupportDocsPanel } from "../../../../_components/SupportDocsPanel";
 import {
   getAsinByMediaKeyword,
   getThreadingDiagrams,
-} from "../../../../../../../../../packages/data-layer/queries/support";
+} from "../../../../../../../../packages/data-layer/queries/support";
 
 interface PageProps {
   params: Promise<{ mk: string }>;

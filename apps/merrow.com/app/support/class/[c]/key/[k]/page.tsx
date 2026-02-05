@@ -10,8 +10,8 @@ import {
   PageHeader,
   MerrowButton,
 } from "../../../../../../../../packages/ui";
-import { SupportSidebar } from "../../../_components/SupportSidebar";
-import { SupportDocsPanel } from "../../../_components/SupportDocsPanel";
+import { SupportSidebar } from "../../../../_components/SupportSidebar";
+import { SupportDocsPanel } from "../../../../_components/SupportDocsPanel";
 import {
   getTechnicalField,
   getThreadingDiagrams,
