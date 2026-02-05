@@ -78,12 +78,12 @@ export default async function PartsDetailPage({ params }: PageProps) {
   const mainImage =
     record.imgurlLarge ||
     (record.msmcId
-      ? `https://images.imerrow.com/images/products/large/${record.msmcId}.jpg`
+      ? `/images/products/large/${record.msmcId}.jpg`
       : "");
 
   const thumbnails = record.msmcId
     ? Array.from({ length: 4 }).map((_, index) =>
-        `https://images.imerrow.com/images/products/thumb/${record.msmcId}_t${index + 1}.jpg`
+        `/images/products/thumb/${record.msmcId}_t${index + 1}.jpg`
       )
     : [];
 
@@ -220,7 +220,7 @@ export default async function PartsDetailPage({ params }: PageProps) {
                                 const thumb =
                                   part.imgurlTiny ||
                                   (part.msmcId
-                                    ? `https://images.imerrow.com/images/products/thumb/${part.msmcId}_t1.jpg`
+                                    ? `/images/products/thumb/${part.msmcId}_t1.jpg`
                                     : "");
                                 return (
                                   <tr key={`${drawing.pd}-${part.asinId}`} className="border-t border-[#efefef]">
