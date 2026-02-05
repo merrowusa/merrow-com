@@ -15,7 +15,12 @@ import {
 } from "../../../../packages/ui";
 import { MachineImage } from "./MachineImage";
 import { getMachinePageByStyleKey } from "../../../../packages/data-layer/queries/machines";
+import { getApplicationsForMachine } from "../../../../packages/data-layer/queries/applications";
 import type { MachinePage as MachinePageType } from "../../../../packages/data-layer/schema/machine-pages";
+import { ThumbnailGallery } from "../machines/_components/ThumbnailGallery";
+import { ApplicationsStrip } from "../machines/_components/ApplicationsStrip";
+import { StitchGallery } from "../machines/_components/StitchGallery";
+import { MarketingDownloads } from "../machines/_components/MarketingDownloads";
 
 // S3 base URL for machine images
 const S3_BASE = "https://merrow-media.s3.amazonaws.com";
@@ -91,6 +96,8 @@ export async function MachinePageContent({ styleKey }: MachinePageProps) {
     notFound();
   }
 
+  const applications = await getApplicationsForMachine(machine.styleKey);
+
   const styleName = machine.style || styleKey;
   const header = machine.header || "";
   const descriptionHtml = machine.description || "";
@@ -98,6 +105,7 @@ export async function MachinePageContent({ styleKey }: MachinePageProps) {
   const howHtml = machine.how || "";
   const whyHtml = machine.why || "";
   const whereHtml = machine.whereUsed || "";
+  const numberOfThumbs = Number.parseInt(machine.numberOfThumbs || "0", 10) || 0;
 
   const specs = buildSpecs(machine);
 
@@ -108,6 +116,19 @@ export async function MachinePageContent({ styleKey }: MachinePageProps) {
 
   // Build machine image URL (from S3)
   const machineImageUrl = `${S3_BASE}/machines/${machine.styleKey}/main.png`;
+  const contactStitchParam = machine.contactStitch
+    ? `?stitch=${encodeURIComponent(machine.contactStitch)}`
+    : "";
+  const requestQuoteHref = `/support/request-quote${contactStitchParam}`;
+  const showStitchGallery = Boolean(machine.flickrSet) && machine.styleKey !== "70d3b2rail";
+  const hasApplications = applications.length > 0 || Boolean(machine.primaryApp) || Boolean(machine.secondaryApp);
+  const marketingItems = [
+    { url: machine.marketingUrl1, icon: machine.marketingIcon1, tagline: machine.marketingTagline1 },
+    { url: machine.marketingUrl2, icon: machine.marketingIcon2, tagline: machine.marketingTagline2 },
+    { url: machine.marketingUrl3, icon: machine.marketingIcon3, tagline: machine.marketingTagline3 },
+    { url: machine.marketingUrl4, icon: machine.marketingIcon4, tagline: machine.marketingTagline4 },
+    { url: machine.marketingUrl5, icon: machine.marketingIcon5, tagline: machine.marketingTagline5 },
+  ];
 
   return (
     <main className="text-merrow-textMain">
@@ -116,8 +137,9 @@ export async function MachinePageContent({ styleKey }: MachinePageProps) {
         <div className="mx-auto max-w-merrow px-4 py-8">
           <div className="grid gap-8 md:grid-cols-2 items-center">
             {/* Machine image */}
-            <div className="flex justify-center">
+            <div className="flex flex-col items-center">
               <MachineImage src={machineImageUrl} alt={styleName} />
+              <ThumbnailGallery styleKey={machine.styleKey} numberOfThumbs={numberOfThumbs} />
             </div>
 
             {/* Machine header info */}
@@ -133,9 +155,12 @@ export async function MachinePageContent({ styleKey }: MachinePageProps) {
                 </div>
               )}
 
-              <div className="mt-6">
+              <div className="mt-6 flex flex-wrap gap-3">
+                <MerrowButton href={requestQuoteHref}>
+                  Request Quote
+                </MerrowButton>
                 <MerrowButton href="mailto:sales@merrow.com">
-                  Contact Sales
+                  Email Sales
                 </MerrowButton>
               </div>
             </div>
@@ -149,6 +174,19 @@ export async function MachinePageContent({ styleKey }: MachinePageProps) {
           <SpecGrid specs={specs} />
         </div>
       </FullBleed>
+
+      {/* Applications strip */}
+      {hasApplications && (
+        <FullBleed className="bg-white border-b border-merrow-border">
+          <div className="mx-auto max-w-merrow px-4 py-8">
+            <ApplicationsStrip
+              applications={applications}
+              fallbackPrimary={machine.primaryApp}
+              fallbackSecondary={machine.secondaryApp}
+            />
+          </div>
+        </FullBleed>
+      )}
 
       {/* Content sections */}
       <FullBleed className="bg-white">
@@ -193,26 +231,20 @@ export async function MachinePageContent({ styleKey }: MachinePageProps) {
         </FullBleed>
       )}
 
-      {/* Related applications */}
-      {(machine.primaryApp || machine.secondaryApp) && (
+      {/* Stitch gallery CTA */}
+      {showStitchGallery && (
         <FullBleed className="bg-white border-t border-merrow-border">
           <div className="mx-auto max-w-merrow px-4 py-8">
-            <h2 className="text-lg font-semibold tracking-tight mb-4">
-              Applications
-            </h2>
-            <div className="space-y-2 text-[13px] text-merrow-textSub">
-              {machine.primaryApp && (
-                <p>
-                  <span className="font-semibold">Primary:</span> {machine.primaryApp}
-                </p>
-              )}
-              {machine.secondaryApp && (
-                <p>
-                  <span className="font-semibold">Secondary:</span>{" "}
-                  {machine.secondaryApp}
-                </p>
-              )}
-            </div>
+            <StitchGallery flickrSet={machine.flickrSet} machineName={styleName} />
+          </div>
+        </FullBleed>
+      )}
+
+      {/* Marketing downloads */}
+      {marketingItems.some((item) => item.url) && (
+        <FullBleed className="bg-white border-t border-merrow-border">
+          <div className="mx-auto max-w-merrow px-4 py-8">
+            <MarketingDownloads items={marketingItems} />
           </div>
         </FullBleed>
       )}
@@ -227,6 +259,9 @@ export async function MachinePageContent({ styleKey }: MachinePageProps) {
             Contact our team for pricing, specifications, and availability.
           </p>
           <div className="mt-4 flex justify-center gap-4">
+            <MerrowButton href={requestQuoteHref}>
+              Request Quote
+            </MerrowButton>
             <MerrowButton href="mailto:sales@merrow.com">
               Email Sales
             </MerrowButton>

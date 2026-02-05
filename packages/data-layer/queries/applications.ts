@@ -142,6 +142,23 @@ export async function getApplicationsByCategory(
 }
 
 /**
+ * Get published applications linked to a machine style_key
+ */
+export async function getApplicationsForMachine(
+  styleKey: string
+): Promise<ApplicationPage[]> {
+  const { data, error } = await supabase
+    .from("application_pages")
+    .select("*")
+    .eq("style_key", styleKey)
+    .eq("publish", "yes")
+    .order("layout_order", { ascending: true });
+
+  if (error || !data) return [];
+  return data.map(mapApplicationPage);
+}
+
+/**
  * Get all d_keys for static generation
  */
 export async function getAllApplicationKeys(): Promise<string[]> {
