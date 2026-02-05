@@ -41,7 +41,7 @@ export default async function DiagramPage({ params }: PageProps) {
     notFound();
   }
 
-  const imageUrl = record.imgUrl || `https://www.merrow.com/cephei/images/threadingdiagrams/${record.image}`;
+  const imageUrl = record.imgUrl || `/images/threadingdiagrams/large/${record.image}`;
 
   return (
     <main className="text-merrow-textMain bg-white">
