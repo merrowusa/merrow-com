@@ -3,6 +3,7 @@
 
 import type { Metadata } from "next";
 import "./globals.css";
+import { DevHeader } from "./_components/DevHeader";
 import { HeaderWithData } from "./_components/HeaderWithData";
 import { Footer } from "./_components/Footer";
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className="min-h-screen bg-white text-merrow-textMain">
+        <DevHeader />
         <HeaderWithData />
         {children}
         <Footer />
