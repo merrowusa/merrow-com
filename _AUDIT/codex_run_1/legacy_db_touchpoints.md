@@ -1,0 +1,677 @@
+# Legacy DB Touchpoints
+
+Files with DB or request param usage:
+- `/02576/widget_specialdatabase_form.php` -> \bmysql_\w+\b, \bmysql_query\b, country, label, mature, product
+- `/02576/widget_sub_specialdata.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, 18, 22, 60, 70, 72, A, M, MG, application, check, email, interested_machine, message, name, party_id, production_country, production_need, production_purpose, recaptcha_challenge_field, recaptcha_response_field, sell, submit, urgency
+- `/70class.php` -> \bmysql_\w+\b, \bmysql_query\b, cp, lang
+- `/70class_test.php` -> \bmysql_\w+\b, \bmysql_query\b, cp, lang
+- `/70d3b2.php` -> lang
+- `/70d3b2_GOLD.php` -> lang
+- `/70d3b2_cnp.php` -> lang
+- `/70d3b2_g.php` -> lang
+- `/70d3b2_hp.php` -> lang
+- `/70d3b2_ls.php` -> lang
+- `/70d3b2_ls1.php` -> lang
+- `/70d3b2_rail.php` -> lang
+- `/70test.php` -> \bmysql_\w+\b, \bmysql_query\b, cp, lang
+- `/70y3b2.php` -> lang
+- `/70y3b2_1.php` -> lang
+- `/72d3b2.php` -> lang
+- `/72d3b2r.php` -> lang
+- `/STORAGE/Connections/merrowco.php` -> \bmysql_\w+\b
+- `/STORAGE/boards/admin/admin_db_utilities.php` -> \bpg_\w+\b
+- `/STORAGE/boards/admin/index.php` -> \bDB_\w+\b, \bmysql_\w+\b
+- `/STORAGE/boards/db/mysql.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/STORAGE/boards/db/mysql4.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/STORAGE/boards/db/postgres7.php` -> \bpg_\w+\b
+- `/STORAGE/boards/language/lang_albanian/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_arabic/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_asturian/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_azerbaijani/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_basque/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_belarusian/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_bosnian/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_breton/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_bulgarian/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_catalan/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_chinese_simplified/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_chinese_traditional/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_croatian/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_dutch/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_english/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_esperanto/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_estonian/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_farsi/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_finnish/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_french/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_frisian/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_german/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_german_formal/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_greek/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_hebrew/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_hungarian/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_indonesian/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_italian/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_japanese/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_korean/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_kurdish/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_lithuanian/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_macedonian/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_mongolian/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_norwegian/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_norwegian_nynorsk/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_polish/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_portuguese_brazil/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_romanian/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_romanian_no_diacritics/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_russian/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_russian_tu/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_serbian/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_serbian_cyrillic/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_slovak/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_spanish/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_spanish_argentina/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_thai/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_turkish/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_uighur/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_vietnamese/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/boards/language/lang_welsh/lang_admin.php` -> \bDB_\w+\b
+- `/STORAGE/bom/bomcalc.php` -> \bmysql_\w+\b, assembly, numparts
+- `/STORAGE/bom/bomfunctions.nodaterange.php` -> \bmysql_\w+\b
+- `/STORAGE/bom/bomfunctions.php` -> \bmysql_\w+\b
+- `/STORAGE/bom/catalogview.php` -> \bmysql_\w+\b
+- `/STORAGE/bom/dbclass.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/STORAGE/bom/editschedule.php` -> add, day, delete, deleteconfirm, month, part, quantity, year
+- `/STORAGE/bom/index.nodaterange.php` -> part
+- `/STORAGE/bom/index.php` -> daterange, day, fromday, frommonth, fromyear, increment-length, month, part, today, tomonth, toyear, year
+- `/STORAGE/bom/index.weeklyreadout.php` -> daterange, day, fromday, frommonth, fromyear, increment-length, month, part, today, tomonth, totoyear, year
+- `/STORAGE/bom/mysqlfunctions.php` -> \bmysql_\w+\b
+- `/STORAGE/catalog/catalogview.php` -> \bmysql_\w+\b
+- `/STORAGE/catalog/dbclass.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/STORAGE/help/admin/assigns.php` -> edit, id
+- `/STORAGE/help/admin/canned.php` -> add, delete, department, edit, id, message, operator, subject
+- `/STORAGE/help/admin/code.php` -> cobrowse, departmentid, html, invisible, text
+- `/STORAGE/help/admin/departments.php` -> add, delete, edit, email, email_host, email_password, email_username, id, name
+- `/STORAGE/help/admin/details.php` -> autosave, email, firstname, lastname, new_password, new_password_again, old_password, showpic, submit
+- `/STORAGE/help/admin/hotpages.php` -> add, delete, edit, id, page
+- `/STORAGE/help/admin/icons.php` -> default_offline, default_online, edit, id
+- `/STORAGE/help/admin/index.php` -> add, delete, edit, id, message, subject
+- `/STORAGE/help/admin/login.php` -> password, username
+- `/STORAGE/help/admin/module.php` -> module, type
+- `/STORAGE/help/admin/modules.php` -> type
+- `/STORAGE/help/admin/monitor/info.php` -> chatid, history
+- `/STORAGE/help/admin/monitor/initiate.php` -> chatid, department
+- `/STORAGE/help/admin/operators.php` -> add, admin, autosave, boot, delete, edit, email, firstname, id, lastname, new_password, new_password_again, showpic, username
+- `/STORAGE/help/admin/stats.php` -> fd, fm, fy, id, limit, operators, referrers, td, tm, ty
+- `/STORAGE/help/admin/transcripts.php` -> admin, delete, id, view
+- `/STORAGE/help/class/database.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/STORAGE/help/class/file.php` -> chatid
+- `/STORAGE/help/class/js/chat.php` -> admin, opchat
+- `/STORAGE/help/class/js/include.php` -> admin, chat, chatid, cobrowse, live, misc, monitor, opchat, request
+- `/STORAGE/help/class/js/live.php` -> cobrowse, departmentid, invisible, text, x
+- `/STORAGE/help/class/js/normal/chat.php` -> admin, opchat
+- `/STORAGE/help/class/js/normal/include.php` -> admin, chat, chatid, cobrowse, live, misc, monitor, opchat, request
+- `/STORAGE/help/class/js/normal/live.php` -> cobrowse, departmentid, invisible, text, x
+- `/STORAGE/help/class/js/normal/request.php` -> departmentid, opchat
+- `/STORAGE/help/class/js/request.php` -> departmentid, opchat
+- `/STORAGE/help/client.php` -> accept_chat, accept_opchat, accept_transfer, canned, chat, chatid, cobrowse, cobrowsechangepage, cobrowsedisconnect, cobrowsemarker, cobrowsepage, coforms, connect, decline_chat, decline_opchat, decline_transfer, departmentid, disconnect, end_chat, exit, footprints, history, id, initiate, message, monitor, name, offline, online, operatorid, password, requestfile, send, startcobrowse, transfer, transferchat, transferfile, transfermessages, type, typed, typing, url, username, value, x, y
+- `/STORAGE/help/compile/%%-12/%%-126713066/module.tpl.php` -> file
+- `/STORAGE/help/live/chat/admin.php` -> admin, canned, chatid, file, history, info, request_transfer, submit, transfer
+- `/STORAGE/help/live/chat/display.php` -> admin, chatid
+- `/STORAGE/help/live/chat/download.php` -> admin, chatid, client, id
+- `/STORAGE/help/live/chat/end.php` -> admin, chatid, close, email, opchat, print, save
+- `/STORAGE/help/live/chat/main.php` -> admin, chatid, opchat
+- `/STORAGE/help/live/chat/send.php` -> admin, chatid, opchat
+- `/STORAGE/help/live/chat/top.php` -> admin, chatid
+- `/STORAGE/help/live/chat/type.php` -> admin, chatid
+- `/STORAGE/help/live/chat/upload.php` -> chatid
+- `/STORAGE/help/live/cobrowse.php` -> changepage
+- `/STORAGE/help/live/divert.php` -> departmentid, divert, email, email_send, message, name, subject
+- `/STORAGE/help/live/icon.php` -> departmentid, id, picture, status
+- `/STORAGE/help/live/main.php` -> departmentid, retry
+- `/STORAGE/help/live/operator.php` -> operatorid, retry
+- `/STORAGE/help/live/request.php` -> chatid, departmentid, initiate, nick, opchat, operatorid, request, submit
+- `/STORAGE/help/module.php` -> file, module
+- `/STORAGE/help/modules/HelpCenter/hcl/config.php` -> type
+- `/STORAGE/help/modules/HelpCenter/index.php` -> departmentid, email, email_send, message, name, subject
+- `/STORAGE/help/modules/osTicket/admin.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, ab, cmd, key, order, pageno, psearch, psearchtype, start, x_value, x_value_id
+- `/STORAGE/help/modules/osTicket/attachments.php` -> file
+- `/STORAGE/help/modules/osTicket/automail.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/STORAGE/help/modules/osTicket/class.ticket.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/STORAGE/help/modules/osTicket/config.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/STORAGE/help/modules/osTicket/hcl/config.php` -> type
+- `/STORAGE/help/modules/osTicket/include/banlist.php` -> \bmysql_\w+\b
+- `/STORAGE/help/modules/osTicket/include/banlist_delete.php` -> \bmysql_\w+\b
+- `/STORAGE/help/modules/osTicket/include/cat.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/STORAGE/help/modules/osTicket/include/form.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/STORAGE/help/modules/osTicket/include/main.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/STORAGE/help/modules/osTicket/include/my.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/STORAGE/help/modules/osTicket/include/rep.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/STORAGE/help/modules/osTicket/include/search.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/STORAGE/help/modules/osTicket/include/user_group.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/STORAGE/help/modules/osTicket/include/viewticket.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/STORAGE/help/modules/osTicket/open.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/STORAGE/help/modules/osTicket/tpl.config.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/STORAGE/help/modules/osTicket/view.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/STORAGE/huh.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/STORAGE/phptest/Connections/merrowco.php` -> \bmysql_\w+\b
+- `/STORAGE/phptest/Connections/second.php` -> \bmysql_\w+\b
+- `/STORAGE/phptest/_mmServerScripts/MMHTTPDB.php` -> ConnectionString, Database, ExecProcName, ExecProcParameters, Host, MaxRows, Password, ProcName, RRProcName, SQL, TableName, Timeout, Type, UserName, opCode
+- `/STORAGE/phptest/_mmServerScripts/mysql.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, Database
+- `/STORAGE/phptest/amanwithaplanB0018ZMU3Q.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/STORAGE/phptest/catalog_secondary.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/STORAGE/phptest/crash.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/STORAGE/phptest/crazy.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/STORAGE/phptest/grumpy.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/STORAGE/phptest/huh.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/STORAGE/phptest/index.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/STORAGE/phptest/lilstitch.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/STORAGE/phptest/merrow_enventory.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/STORAGE/phptest/poo.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/STORAGE/phptest/stomach.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/STORAGE/support/admin.php` -> \bDB_\w+\b, lang, login_pass, login_user, set_cookie, tpl
+- `/STORAGE/support/config.php` -> \bDB_\w+\b
+- `/STORAGE/support/index.php` -> \bDB_\w+\b, account_server, account_user, confirm_reset, domain, email, get_email, lang, language, login_pass, login_user, lost_password, lost_password_email, lost_password_user, register, register_password, register_username, set_cookie, tpl
+- `/STORAGE/support/modules/admin/search/functions/search_tickets.php` -> \bDB_\w+\b, search, search_in_notes, search_in_tickets
+- `/STORAGE/support/modules/admin/search/functions/search_users.php` -> \bDB_\w+\b, search
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_add_announcement.php` -> \bDB_\w+\b, content, day, month, show_date, show_to, subject, year
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_add_staff.php` -> \bDB_\w+\b, email, get_email, language, username
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_add_user.php` -> \bDB_\w+\b, act_server, act_username, domain, email, get_email, language, username
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_config.php` -> \bDB_\w+\b, allowed_tags, cookie_timeout, db_database, db_host, db_pass, db_user, debug_mode, default_language, default_pipe_priority, email_flood_limit, script_path, script_url, session_management, session_timeout, slogic_email_from, slogic_pipe_auto_user, slogic_send_alert, slogic_send_email, sql_module, template_system
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_count_announcements.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_count_quick_replies.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_count_staff.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_count_users.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_delete_announcement.php` -> \bDB_\w+\b, del
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_delete_quick_replies.php` -> \bDB_\w+\b, del
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_delete_staff.php` -> \bDB_\w+\b, del
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_delete_user.php` -> \bDB_\w+\b, del
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_edit_announcement.php` -> \bDB_\w+\b, content, day, id, month, show_date, show_to, subject, year
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_edit_quick_reply.php` -> \bDB_\w+\b, id, info, message
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_edit_staff.php` -> \bDB_\w+\b, email, get_email, id, language, username
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_edit_user.php` -> \bDB_\w+\b, act_server, act_username, domain, email, get_email, id, language, username
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_email_content.php` -> \bDB_\w+\b, staff_add_note_close_verified_content, staff_add_note_close_verified_subject, staff_add_note_staff_content, staff_add_note_staff_subject, staff_add_note_user_content, staff_add_note_user_subject, staff_claim_ticket_content, staff_claim_ticket_subject, staff_grab_ticket_content, staff_grab_ticket_subject, staff_move_ticket_content, staff_move_ticket_subject, submit, toggle_staff_add_note_close_verified, toggle_staff_add_note_staff, toggle_staff_add_note_user, toggle_staff_claim_ticket, toggle_staff_grab_ticket, toggle_staff_move_ticket, toggle_user_add_note_close_verified, toggle_user_add_note_staff, toggle_user_lost_password, toggle_user_new_ticket, toggle_user_new_ticket_alert, toggle_user_register, toggle_user_reopen_ticket, user_add_note_close_verified_content, user_add_note_close_verified_subject, user_add_note_staff_content, user_add_note_staff_subject, user_lost_password_content, user_lost_password_subject, user_new_ticket_alert_content, user_new_ticket_alert_subject, user_new_ticket_content, user_new_ticket_subject, user_register_content, user_register_subject, user_reopen_ticket_content, user_reopen_ticket_subject
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_list_announcements.php` -> \bDB_\w+\b, limit, order, order_table, tpl
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_list_quick_replies.php` -> \bDB_\w+\b, limit, order, order_table, tpl
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_list_staff.php` -> \bDB_\w+\b, limit, order, order_table, tpl
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_list_users.php` -> \bDB_\w+\b, limit, order, order_table, tpl
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_maintenance.php` -> \bDB_\w+\b, \bmysql_\w+\b, dump
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_pipe_content.php` -> \bDB_\w+\b, pipe_add_note_closed_content, pipe_add_note_closed_subject, pipe_add_note_error_content, pipe_add_note_error_subject, pipe_add_note_staff_content, pipe_add_note_staff_subject, pipe_add_note_user_content, pipe_add_note_user_subject, pipe_flood_report_content, pipe_flood_report_subject, pipe_new_ticket_staff_content, pipe_new_ticket_staff_subject, pipe_new_ticket_user_content, pipe_new_ticket_user_subject, pipe_new_user_content, pipe_new_user_subject, pipe_ticket_error_content, pipe_ticket_error_subject, submit, toggle_pipe_add_note_closed, toggle_pipe_add_note_error, toggle_pipe_add_note_staff, toggle_pipe_add_note_user, toggle_pipe_flood_report, toggle_pipe_new_ticket_staff, toggle_pipe_new_ticket_user, toggle_pipe_new_user, toggle_pipe_ticket_error
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_profile.php` -> \bDB_\w+\b, category, email, get_email, password, password2
+- `/STORAGE/support/modules/admin/slogic/functions/slogic_reset_flood.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/admin/stats/functions/stats_raw.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/admin/stats/functions/stats_staff_stats.php` -> \bDB_\w+\b, staff
+- `/STORAGE/support/modules/admin/stats/functions/stats_top10.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/admin/stats/functions/stats_user_stats.php` -> \bDB_\w+\b, user
+- `/STORAGE/support/modules/admin/tickets/functions/parse_ticket.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_add_category.php` -> \bDB_\w+\b, info, name, subscribers
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_add_placeholder.php` -> \bDB_\w+\b, find_match, replace_with
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_add_priority.php` -> \bDB_\w+\b, info, name, send_alert, urgency_level
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_count_assigned_tickets.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_count_attachments.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_count_categories.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_count_close_tickets.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_count_closed_tickets.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_count_history.php` -> \bDB_\w+\b, user
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_count_notes.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_count_open_tickets.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_count_placeholders.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_count_priorities.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_count_staff_updated_tickets.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_count_tickets.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_count_user_updated_tickets.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_delete_attachment.php` -> \bDB_\w+\b, del
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_delete_category.php` -> \bDB_\w+\b, del
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_delete_note.php` -> \bDB_\w+\b, del
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_delete_placeholder.php` -> \bDB_\w+\b, del
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_delete_priority.php` -> \bDB_\w+\b, del
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_delete_ticket.php` -> \bDB_\w+\b, del
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_edit_category.php` -> \bDB_\w+\b, id, info, name, subscribers
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_edit_note.php` -> \bDB_\w+\b, content, id, sender, sent_date, show_to, ticket_id, who_is
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_edit_note_form.php` -> \bDB_\w+\b, id, note_id
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_edit_placeholder.php` -> \bDB_\w+\b, find_match, id, replace_with
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_edit_priority.php` -> \bDB_\w+\b, id, info, name, send_alert, urgency_level
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_edit_ticket.php` -> \bDB_\w+\b, category, close_verified, content, id, last_update, pipe_id, priority, sentdate, staff, status, subject, user, who_updated
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_list_attachments.php` -> \bDB_\w+\b, limit, order, order_table, tpl
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_list_categories.php` -> \bDB_\w+\b, limit, order, order_table, tpl
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_list_notes.php` -> \bDB_\w+\b, limit, order, order_table, tpl
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_list_placeholders.php` -> \bDB_\w+\b, limit, order, order_table, tpl
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_list_priorities.php` -> \bDB_\w+\b, limit, order, order_table, tpl
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_list_tickets.php` -> \bDB_\w+\b, limit, order, order_table, tpl
+- `/STORAGE/support/modules/admin/tickets/functions/tickets_show_attachment.php` -> \bDB_\w+\b, id
+- `/STORAGE/support/modules/staff/search/functions/search_tickets.php` -> \bDB_\w+\b, search, search_in_notes, search_in_tickets
+- `/STORAGE/support/modules/staff/search/functions/search_users.php` -> \bDB_\w+\b, search
+- `/STORAGE/support/modules/staff/slogic/functions/slogic_add_quick_reply.php` -> \bDB_\w+\b, info, message
+- `/STORAGE/support/modules/staff/slogic/functions/slogic_count_quick_replies.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/staff/slogic/functions/slogic_count_users.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/staff/slogic/functions/slogic_delete_quick_replies.php` -> \bDB_\w+\b, del
+- `/STORAGE/support/modules/staff/slogic/functions/slogic_edit_quick_reply.php` -> \bDB_\w+\b, id, info, message
+- `/STORAGE/support/modules/staff/slogic/functions/slogic_list_announcements.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/staff/slogic/functions/slogic_list_quick_replies.php` -> \bDB_\w+\b, limit, order, order_table, tpl
+- `/STORAGE/support/modules/staff/slogic/functions/slogic_profile.php` -> \bDB_\w+\b, category, email, get_email, language, password, password2
+- `/STORAGE/support/modules/staff/slogic/functions/slogic_show_announcement.php` -> \bDB_\w+\b, id
+- `/STORAGE/support/modules/staff/slogic/functions/slogic_show_user_profile.php` -> \bDB_\w+\b, user
+- `/STORAGE/support/modules/staff/tickets/functions/parse_ticket.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_add_note.php` -> \bDB_\w+\b, close_verified, content, id, quick_reply, show_to
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_add_note_form.php` -> \bDB_\w+\b, id
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_confirm_delete_attachment.php` -> attachment_id, id
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_confirm_delete_note.php` -> id, note_id
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_count_assigned_tickets.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_count_close_tickets.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_count_closed_tickets.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_count_history.php` -> \bDB_\w+\b, user
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_count_my_assigned_tickets.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_count_my_user_updated_tickets.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_count_open_tickets.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_count_staff_updated_tickets.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_count_user_updated_tickets.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_delete_attachment.php` -> \bDB_\w+\b, attachment_id, id
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_delete_note.php` -> \bDB_\w+\b, id, note_id
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_edit_note.php` -> \bDB_\w+\b, content, id, note_id
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_edit_note_form.php` -> \bDB_\w+\b, id, note_id
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_grab_ticket.php` -> \bDB_\w+\b, id
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_list_assigned.php` -> limit, order, order_table, tpl
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_list_close.php` -> limit, order, order_table, tpl
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_list_closed.php` -> limit, order, order_table, tpl
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_list_my_assigned.php` -> limit, order, order_table, tpl
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_list_my_user_updated.php` -> limit, order, order_table, tpl
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_list_notes.php` -> \bDB_\w+\b, id
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_list_open.php` -> limit, order, order_table, tpl
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_list_staff_updated.php` -> limit, order, order_table, tpl
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_list_user_updated.php` -> limit, order, order_table, tpl
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_move_ticket.php` -> \bDB_\w+\b, content, id, staff
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_show_attachment.php` -> \bDB_\w+\b, id
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_show_grab.php` -> \bDB_\w+\b, id
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_show_history.php` -> limit, order, order_table, tpl, user
+- `/STORAGE/support/modules/staff/tickets/functions/tickets_show_ticket.php` -> \bDB_\w+\b, id
+- `/STORAGE/support/modules/users/slogic/functions/slogic_list_announcements.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/users/slogic/functions/slogic_profile.php` -> \bDB_\w+\b, email, get_email, language, password, password2
+- `/STORAGE/support/modules/users/slogic/functions/slogic_show_announcement.php` -> \bDB_\w+\b, id
+- `/STORAGE/support/modules/users/tickets/functions/parse_ticket.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/users/tickets/functions/tickets_add_note.php` -> \bDB_\w+\b, close_verified, content, id
+- `/STORAGE/support/modules/users/tickets/functions/tickets_add_note_form.php` -> id
+- `/STORAGE/support/modules/users/tickets/functions/tickets_change_priority.php` -> \bDB_\w+\b, change_priority, id
+- `/STORAGE/support/modules/users/tickets/functions/tickets_confirm_delete_note.php` -> id, note_id
+- `/STORAGE/support/modules/users/tickets/functions/tickets_count_assigned_tickets.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/users/tickets/functions/tickets_count_closed_tickets.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/users/tickets/functions/tickets_count_open_assigned_tickets.php` -> \bDB_\w+\b
+- `/STORAGE/support/modules/users/tickets/functions/tickets_delete_note.php` -> \bDB_\w+\b, id, note_id
+- `/STORAGE/support/modules/users/tickets/functions/tickets_edit_note.php` -> \bDB_\w+\b, content, id, note_id
+- `/STORAGE/support/modules/users/tickets/functions/tickets_edit_note_form.php` -> \bDB_\w+\b, id, note_id
+- `/STORAGE/support/modules/users/tickets/functions/tickets_list_assigned.php` -> limit, order, order_table, tpl
+- `/STORAGE/support/modules/users/tickets/functions/tickets_list_closed.php` -> limit, order, order_table, tpl
+- `/STORAGE/support/modules/users/tickets/functions/tickets_list_notes.php` -> \bDB_\w+\b, id
+- `/STORAGE/support/modules/users/tickets/functions/tickets_list_open_assigned.php` -> limit, order, order_table, tpl
+- `/STORAGE/support/modules/users/tickets/functions/tickets_new_ticket.php` -> \bDB_\w+\b, category, content, priority, subject, ticket_file
+- `/STORAGE/support/modules/users/tickets/functions/tickets_reopen_ticket.php` -> \bDB_\w+\b, id
+- `/STORAGE/support/modules/users/tickets/functions/tickets_show_attachment.php` -> \bDB_\w+\b, id
+- `/STORAGE/support/modules/users/tickets/functions/tickets_show_ticket.php` -> \bDB_\w+\b, id
+- `/STORAGE/support/pipe.php` -> \bDB_\w+\b
+- `/STORAGE/support/staff.php` -> \bDB_\w+\b, lang, login_pass, login_user, set_cookie, tpl
+- `/Untitled-2.php` -> key, lang
+- `/X2010_merrow.php` -> lang
+- `/X2010_widget_main_menu.php` -> choice, party_id, store
+- `/_mmServerScripts/MMHTTPDB.php` -> ConnectionString, Database, ExecProcName, ExecProcParameters, Host, MaxRows, Password, ProcName, RRProcName, SQL, TableName, Timeout, Type, UserName, opCode
+- `/_mmServerScripts/mysql.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, Database
+- `/a.php` -> \bmysql_\w+\b, \bmysql_query\b, app, lang
+- `/about.php` -> lang
+- `/activeseam.php` -> branded
+- `/activeseam/comments.php` -> email, name
+- `/activeseam/min/builder/ocCheck.php` -> hello
+- `/activeseam/min/builder/test.php` -> docroot, oc, text
+- `/activeseam/min/index.php` -> f, g
+- `/activeseam/min/lib/Minify/Controller/MinApp.php` -> b, f, g
+- `/activeseam/min/lib/Minify/Controller/Version1.php` -> files
+- `/agent_book.php` -> lang
+- `/agent_choice.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, choice, key, lang, party_id
+- `/agent_dashboard.php` -> lang
+- `/agent_login.class.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/agent_login.post.php` -> p, u
+- `/agent_pricing.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, 33950019334xxlmmnot, 8787, 908234klsdfzwe38hna9f7s
+- `/agent_store.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, choice, key, logoff, party_id
+- `/agentlogin.php` -> asap, choice, lang, party_id
+- `/agentmap.php` -> \bmysql_\w+\b, \bmysql_query\b, app, lang
+- `/all_maps.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff, timeout
+- `/announcements.php` -> lang
+- `/apple_test.php` -> lang
+- `/applications.php` -> app, lang, party_id, stitch
+- `/apps.php` -> app, party_id, stitch
+- `/buttseam.php` -> cp
+- `/cephei/_class/img_ctrl.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/cephei/img_ctrl_test.php` -> \bmysql_\w+\b, \bmysql_connect\b
+- `/cephei/phpMyEdit TEST7/extensions/phpMyEdit-report.class.php` -> \bmysql_\w+\b
+- `/cephei/phpMyEdit TEST7/extensions/phpMyEdit-slide.class.php` -> \bmysql_\w+\b
+- `/cephei/phpMyEdit_TEST7/extensions/phpMyEdit-report.class.php` -> \bmysql_\w+\b
+- `/cephei/phpMyEdit_TEST7/extensions/phpMyEdit-slide.class.php` -> \bmysql_\w+\b
+- `/cephei/phpMyEdit_TEST7/phpMyEdit.class.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/cephei/phpMyEdit_TEST7/phpMyEditSetup.php` -> \bmysql_\w+\b, \bmysql_query\b, CSSstylesheet, HTMLissues, baseFilename, db, hn, id, options, pageHeader, pageTitle, pw, submit, tb, un
+- `/cephei/phpThumb/demo/index.php` -> list
+- `/cephei/phpThumb/demo/phpThumb.demo.gallery.php` -> dir, pic
+- `/cephei/phpThumb/demo/phpThumb.demo.object.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/cephei/phpThumb/demo/phpThumb.demo.random.php` -> dir, o
+- `/cephei/phpThumb/demo/phpThumb.demo.showpic.php` -> src, title
+- `/cephei/phpThumb/phpThumb.config.php` -> \bmysql_\w+\b, \bmysql_query\b, id
+- `/cephei/phpThumb/phpThumb.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, .$key., down, f, h, hash, hl, hp, hs, id, md5s, new, nocache, phpThumbDebug, sia, src, w, wl, wp, ws
+- `/cephei/phpThumb/phpthumb.class.php` -> .$key., f, phpThumbDebug
+- `/cephei/public_images/index.php` -> __upload
+- `/cephei/public_images/php5upload.class.php` -> party_id, unit_on_ur_knees
+- `/cephei/sable/Untitled-2.php` -> key, lang
+- `/cephei/sable/_class/img_ctrl.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/cephei/sable/agent_login.class.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/cephei/sable/agent_login.post.php` -> p, u
+- `/cephei/sable/customers.php` -> lang, moneymaker, party_id, stitch
+- `/cephei/sable/extensions/phpMyEdit-report.class.php` -> \bmysql_\w+\b
+- `/cephei/sable/extensions/phpMyEdit-slide.class.php` -> \bmysql_\w+\b
+- `/cephei/sable/form_folder/files/functions.php` -> address, address2, antispam, cc-opt, city, country, email, hidden, honeypot, message, name, option-menu, org, phone, postcode, state, subject, website
+- `/cephei/sable/form_folder/files/functions_agent.php` -> address, address2, antispam, cc-opt, city, country, email, hidden, honeypot, message, name, option-menu, org, phone, postcode, state, subject, website
+- `/cephei/sable/form_folder_agent/files/functions.php` -> address, address2, antispam, cc-opt, city, country, email, hidden, honeypot, message, name, option-menu, org, phone, postcode, state, subject, website
+- `/cephei/sable/form_folder_agent/files/functions_agent.php` -> address, address2, antispam, cc-opt, city, country, email, hidden, honeypot, message, name, option-menu, org, phone, postcode, state, subject, website
+- `/cephei/sable/fp_agent_book.php` -> lang
+- `/cephei/sable/fp_agent_choice.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, choice, key, lang, party_id
+- `/cephei/sable/fp_agent_store.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, choice, key, logoff, party_id
+- `/cephei/sable/fp_agentlogin.php` -> asap, choice, lang, party_id
+- `/cephei/sable/fp_agentmap.php` -> lang
+- `/cephei/sable/fp_announcements.php` -> lang
+- `/cephei/sable/fp_applications.php` -> app, lang, party_id, stitch
+- `/cephei/sable/fp_apps.php` -> app, party_id, stitch
+- `/cephei/sable/fp_config_agent_store.php` -> lang
+- `/cephei/sable/fp_contact.php` -> lang
+- `/cephei/sable/fp_contact_general.php` -> key, lang
+- `/cephei/sable/fp_dynamicstore.php` -> \bmysql_\w+\b, \bmysql_query\b, choice, lang
+- `/cephei/sable/fp_ebay.php` -> lang
+- `/cephei/sable/fp_finishing.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, app, lang, party_id, stitch
+- `/cephei/sable/fp_history.php` -> lang
+- `/cephei/sable/fp_machineref.php` -> app, lang, party_id, stitch
+- `/cephei/sable/fp_merrow.php` -> lang
+- `/cephei/sable/fp_merrow_login.php` -> lang
+- `/cephei/sable/fp_merrow_reporting.php` -> key, lang
+- `/cephei/sable/fp_merrow_stitching.php` -> app, lang
+- `/cephei/sable/fp_needle_configurator.php` -> lang
+- `/cephei/sable/fp_secure_agent_login.php` -> choice, logoff, party_id
+- `/cephei/sable/fp_stitch.php` -> lang
+- `/cephei/sable/fp_stitchstore_benefits.php` -> lang
+- `/cephei/sable/fp_stitchstore_faq.php` -> lang
+- `/cephei/sable/fp_stitchstore_pricing.php` -> lang
+- `/cephei/sable/fp_stitchstore_production.php` -> lang
+- `/cephei/sable/fp_stitchstore_why.php` -> lang
+- `/cephei/sable/fp_support.php` -> lang
+- `/cephei/sable/fp_talk.php` -> lang
+- `/cephei/sable/fp_video.php` -> app, lang
+- `/cephei/sable/fp_videoHD.php` -> lang
+- `/cephei/sable/imagechk.php` -> \bmysql_\w+\b, \bmysql_connect\b
+- `/cephei/sable/img_ctrl.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/cephei/sable/img_ctrl_test.php` -> \bmysql_\w+\b, \bmysql_connect\b
+- `/cephei/sable/index.php` -> logoff
+- `/cephei/sable/ip_files/ip_lang_database.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, party_id, stitch
+- `/cephei/sable/ip_files/widget_opentaps.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff
+- `/cephei/sable/ip_lang_database.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, party_id, stitch
+- `/cephei/sable/lilbook.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, keyword, mediakeyword
+- `/cephei/sable/lildesc_specs.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, mediakeyword
+- `/cephei/sable/lilstitch.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, keyword, mediakeyword
+- `/cephei/sable/lilvideo.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, mediakeyword
+- `/cephei/sable/login.class.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/cephei/sable/login.post.php` -> p, u
+- `/cephei/sable/merrow404.php` -> key, lang
+- `/cephei/sable/merrow_enventory.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/cephei/sable/merrow_login.class.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/cephei/sable/merrow_login.post.php` -> p, u
+- `/cephei/sable/merrowjax.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, global
+- `/cephei/sable/phpMyEdit.class.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/cephei/sable/phpMyEditSetup.php` -> \bmysql_\w+\b, \bmysql_query\b, CSSstylesheet, HTMLissues, baseFilename, db, hn, id, options, pageHeader, pageTitle, pw, submit, tb, un
+- `/cephei/sable/pop_ajaxcontent.php` -> stitch, subjectmatter
+- `/cephei/sable/sendmail.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, email, message, name, party_id, recaptcha_challenge_field, recaptcha_response_field, submit
+- `/cephei/sable/support.php` -> \bmysql_\w+\b, \bmysql_query\b, class, diagram, key, lang, mediakeyword, showthemapicture
+- `/cephei/sable/testing.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, app, party_id, stitch
+- `/cephei/sable/testvideo.php` -> app, lang
+- `/cephei/sable/update/img_ctrl.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/cephei/sable/update/img_ctrl_test.php` -> \bmysql_\w+\b, \bmysql_connect\b
+- `/cephei/sable/update/index.php` -> \bmysql_\w+\b, \bmysql_connect\b, action
+- `/cephei/sable/updates/index.php` -> \bmysql_\w+\b, \bmysql_connect\b, action
+- `/cephei/sable/wardrobe/customers.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, moneymaker, party_id, stitch, txtPassword, txtUsername
+- `/cephei/sable/widget_agent_book.php` -> \bmysql_\w+\b, \bmysql_query\b, diagram, kiwifruit, language, setnam, setnum, showthemapicture, stitch, type
+- `/cephei/sable/widget_agent_lowebandwidth_info.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/cephei/sable/widget_agent_map.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/cephei/sable/widget_agent_store.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/cephei/sable/widget_announcements.php` -> drawers4, ebay
+- `/cephei/sable/widget_catalog_header.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, party_id, stitch
+- `/cephei/sable/widget_config_choices.php` -> key
+- `/cephei/sable/widget_config_contactinfo.php` -> key, party_id
+- `/cephei/sable/widget_configuration_agent_store.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/cephei/sable/widget_custom_store_feature_product.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, location, party_id, unit, unit_on_ur_knees
+- `/cephei/sable/widget_customagent_map.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/cephei/sable/widget_enventory.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/cephei/sable/widget_general_form.php` -> \bmysql_\w+\b, \bmysql_query\b, country, label, mature, product
+- `/cephei/sable/widget_main_menu.php` -> choice, party_id, store
+- `/cephei/sable/widget_opentaps.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff
+- `/cephei/sable/widget_partsbooklist.php` -> \bmysql_\w+\b, \bmysql_query\b, marketplace
+- `/cephei/sable/widget_sampleinfo.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, party_id, sample, stitch
+- `/cephei/sable/widget_stitches_center.php` -> \bmysql_\w+\b, \bmysql_query\b, label, marketplace, resolution, setnam, setnum, setnum1, stitch, store
+- `/cephei/sable/widget_stitches_centerHD.php` -> \bmysql_\w+\b, \bmysql_query\b, label, marketplace, resolution, setnam, setnum, setnum1, stitch, store
+- `/cephei/sable/widget_stitchselector.php` -> marketplace
+- `/cephei/sable/widget_store.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/cephei/sable/widget_sub_ lilconfig.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, country, keyword, mature, mediakeyword, rail
+- `/cephei/sable/widget_sub_agent_map.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/cephei/sable/widget_sub_config_multipic.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, location, party_id, unit, unit_on_ur_knees
+- `/cephei/sable/widget_sub_configheader.php` -> key, party_id
+- `/cephei/sable/widget_sub_datamover.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, 18, 22, 60, 70, 72, A, M, MG, application, check, email, interested_machine, message, name, party_id, production_country, production_need, production_purpose, recaptcha_challenge_field, recaptcha_response_field, sell, submit, urgency
+- `/cephei/sable/widget_sub_imageuploader.php` -> \bmysql_\w+\b, \bmysql_connect\b
+- `/cephei/sable/widget_sub_lilbook.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, keyword, mediakeyword, rail
+- `/cephei/sable/widget_sub_lildesc_specs.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, mediakeyword, rail
+- `/cephei/sable/widget_sub_lilrailpics.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, keyword, mediakeyword, rail
+- `/cephei/sable/widget_sub_lilstitch.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, keyword, mediakeyword, rail
+- `/cephei/sable/widget_sub_lilvideo.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, mediakeyword, rail
+- `/cephei/sable/widget_sub_productmenu_int.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/cephei/sable/widget_sub_productmenu_us.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/cephei/sable/widget_sub_railinfo.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, global
+- `/cephei/sable/widget_sub_threading.php` -> diagram
+- `/cephei/sable/widget_technical.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/cephei/sable/widget_techspecs.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, machine, party_id, stitch
+- `/cephei/sable/widget_testmenu.php` -> marketplace
+- `/cephei/sable/zz_imageupload.php` -> submit
+- `/cephei/scripts/all_maps.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff, timeout
+- `/cephei/scripts/ebay.html` -> keyword, stitch
+- `/cephei/scripts/genXML5512128.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, 449812, planet, timeout
+- `/cephei/scripts/market_analysis.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff
+- `/cephei/update/index.php` -> \bmysql_\w+\b, \bmysql_connect\b, action
+- `/cephei/updates/index.php` -> \bmysql_\w+\b, \bmysql_connect\b, action
+- `/chimp_aim.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, choice
+- `/chimp_test.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, choice
+- `/config_agent_store.php` -> lang
+- `/contact.php` -> lang
+- `/contact_general.php` -> key, lang
+- `/customers.php` -> lang, moneymaker, party_id, stitch
+- `/depricated_benefits.php` -> lang
+- `/depricated_dynamicstore.php` -> \bmysql_\w+\b, \bmysql_query\b, choice, lang
+- `/depricated_ebay.php` -> lang
+- `/depricated_faq.php` -> lang
+- `/depricated_production.php` -> lang
+- `/depricated_why.php` -> lang
+- `/domtest.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/extensions/phpMyEdit-report.class.php` -> \bmysql_\w+\b
+- `/extensions/phpMyEdit-slide.class.php` -> \bmysql_\w+\b
+- `/finishing.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, app, lang, party_id, stitch
+- `/form_folder/files/functions.php` -> address, address2, antispam, cc-opt, city, country, email, hidden, honeypot, message, name, option-menu, org, phone, postcode, state, subject, website
+- `/form_folder/files/functions_agent.php` -> address, address2, antispam, cc-opt, city, country, email, hidden, honeypot, message, name, option-menu, org, phone, postcode, state, subject, website
+- `/form_folder_agent/files/functions.php` -> address, address2, antispam, cc-opt, city, country, email, hidden, honeypot, message, name, option-menu, org, phone, postcode, state, subject, website
+- `/form_folder_agent/files/functions_agent.php` -> address, address2, antispam, cc-opt, city, country, email, hidden, honeypot, message, name, option-menu, org, phone, postcode, state, subject, website
+- `/genXML.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/genXML5512128.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, 449812, planet, timeout
+- `/genxml_all.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, planet, timeout
+- `/global_analysis.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff
+- `/global_plants.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, 33950019334xxlmmnot, 8787, 908234klsdfzwe38hna9f7s, frommap
+- `/header_test.php` -> \bmysql_\w+\b, \bmysql_query\b, form
+- `/history.php` -> lang
+- `/hyde_sandbox.php` -> \bmysql_\w+\b, \bmysql_query\b, cp, lang
+- `/imagechk.php` -> \bmysql_\w+\b, \bmysql_connect\b
+- `/index.php` -> branded
+- `/index_as.php` -> branded, form
+- `/ip_lang_database.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, party_id, stitch
+- `/js_extra.php` -> form
+- `/lilbook.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, keyword, mediakeyword
+- `/lildesc_specs.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, mediakeyword
+- `/lilstitch.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, keyword, mediakeyword
+- `/lilvideo.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, mediakeyword
+- `/list_images.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, admin, l, m, primary, q
+- `/list_images1.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/list_images2.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/list_images3.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/list_images4.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/login.class.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/login.post.php` -> p, u
+- `/machine_prices.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff, m
+- `/machineref.php` -> app, lang, party_id, stitch
+- `/market_analysis.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff
+- `/market_analysis_internal.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff
+- `/marketing_main.php` -> branded
+- `/merrow.php` -> lang
+- `/merrow404.php` -> key, lang
+- `/merrow_agent_login.class.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/merrow_agent_login.post.php` -> p, rabbithole, u
+- `/merrow_enventory.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/merrow_global_login.class.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/merrow_global_login.post.php` -> p, rabbithole, u
+- `/merrow_global_stores.php` -> lang
+- `/merrow_login.class.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/merrow_login.php` -> lang
+- `/merrow_login.post.php` -> p, u
+- `/merrow_mail.php` -> \bmysql_\w+\b, \bmysql_query\b, app, id, lang
+- `/merrow_market.php` -> lang
+- `/merrow_part_prices.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff
+- `/merrow_reporting.php` -> key, lang
+- `/merrow_stitching.php` -> app, lang
+- `/merrow_wholesale.php` -> lang
+- `/merrowjax.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, global
+- `/mg_1.php` -> \bmysql_\w+\b, \bmysql_query\b, cp, lang
+- `/mg_2.php` -> \bmysql_\w+\b, \bmysql_query\b, cp, lang, sewing_table_style
+- `/mgclass.php` -> \bmysql_\w+\b, \bmysql_query\b, cp, lang
+- `/min/builder/ocCheck.php` -> hello
+- `/min/builder/test.php` -> docroot, oc, text
+- `/min/index.php` -> f, g
+- `/min/lib/Minify/Controller/MinApp.php` -> b, f, g
+- `/min/lib/Minify/Controller/Version1.php` -> files
+- `/nap.php` -> \bmysql_\w+\b, \bmysql_query\b, app, lang
+- `/ncp1.php` -> \bmysql_\w+\b, \bmysql_query\b, a
+- `/ncs1.php` -> \bmysql_\w+\b, \bmysql_query\b, s
+- `/needle_configurator.php` -> lang
+- `/newproducts/contactM.php` -> email, message, name
+- `/newproducts/min/builder/ocCheck.php` -> hello
+- `/newproducts/min/builder/test.php` -> docroot, oc, text
+- `/newproducts/min/index.php` -> f, g
+- `/newproducts/min/lib/Minify/Controller/MinApp.php` -> b, f, g
+- `/newproducts/min/lib/Minify/Controller/Version1.php` -> files
+- `/nfp.php` -> \bmysql_\w+\b, \bmysql_query\b, app, form, lang
+- `/njp.php` -> \bmysql_\w+\b, \bmysql_query\b, j, p, s
+- `/nmp.php` -> \bmysql_\w+\b, \bmysql_query\b, cp, lang
+- `/opentaps/widget_sub_lilmap.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, keyword, mediakeyword, rail
+- `/parts.php` -> \bmysql_\w+\b, \bmysql_query\b, audience, cp, lang
+- `/parts_pricing.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff
+- `/partspricing.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff
+- `/phpMyEdit.class.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/phpMyEditSetup.php` -> \bmysql_\w+\b, \bmysql_query\b, CSSstylesheet, HTMLissues, baseFilename, db, hn, id, options, pageHeader, pageTitle, pw, submit, tb, un
+- `/phpsql_genkml.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/phpsqlsearch_genxml.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lat, lng, radius
+- `/pop_ajaxcontent.php` -> stitch, subjectmatter
+- `/pricing_old.php` -> lang
+- `/sandbox_management.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, frommap, lang, logoff
+- `/search.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, q
+- `/search1.php` -> q
+- `/secure_agent_login.php` -> choice, logoff, party_id
+- `/sendmail.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, email, message, name, party_id, recaptcha_challenge_field, recaptcha_response_field, submit
+- `/sewing_machine_age.php` -> branded
+- `/site.js` -> form
+- `/stitch.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, label, lang, marketplace, resolution, setnam, setnum, setnum1, stitch, store
+- `/stitchHD.php` -> lang
+- `/support.php` -> \bmysql_\w+\b, \bmysql_query\b, class, diagram, key, lang, mediakeyword, showthemapicture
+- `/talk.php` -> lang
+- `/test11.php` -> lang, party_id, store
+- `/test_maps_1.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff, timeout
+- `/testdel_list.php` -> 1, 2
+- `/testing.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, app, party_id, stitch
+- `/testnatgeo.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, keyword, mediakeyword, parts, rail, section
+- `/testvideo.php` -> app, lang
+- `/textile_plants.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, 33950019334xxlmmnot, 8787, 908234klsdfzwe38hna9f7s, frommap
+- `/the70project.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/thread.php` -> lang
+- `/video.php` -> app, lang
+- `/videoHD.php` -> lang
+- `/wardrobe/customers.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, moneymaker, party_id, stitch, txtPassword, txtUsername
+- `/widget_agent_book.php` -> \bmysql_\w+\b, \bmysql_query\b, diagram, kiwifruit, language, setnam, setnum, showthemapicture, stitch, type
+- `/widget_agent_dashboard.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff
+- `/widget_agent_lowebandwidth_info.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/widget_agent_map.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/widget_agent_store.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/widget_agentpass_validation.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/widget_announcements.php` -> drawers4, ebay
+- `/widget_catalog_header.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, party_id, stitch
+- `/widget_cms_applications.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff
+- `/widget_cms_cat_applications.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff
+- `/widget_cms_customer_password.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff
+- `/widget_cms_customer_stories.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff
+- `/widget_cms_machines.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff
+- `/widget_cms_newsletter.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff
+- `/widget_compare.php` -> \bmysql_\w+\b, \bmysql_query\b, app
+- `/widget_config_contactinfo.php` -> key, party_id
+- `/widget_configuration_agent_store.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/widget_cp_enventory.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/widget_cp_enventory_70.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/widget_custom_store_feature_product.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, location, party_id, unit, unit_on_ur_knees
+- `/widget_customagent_map.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/widget_enterprise_db.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff
+- `/widget_enventory.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/widget_general_form.php` -> \bmysql_\w+\b, \bmysql_query\b, agent, country, key, label, location, mature, product, promo
+- `/widget_globaldatabase_form.php` -> \bmysql_\w+\b, \bmysql_query\b, 991212, country, mature, planet, prices, product
+- `/widget_globalstores.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff
+- `/widget_leftmainmenu_cp.php` -> social, translate
+- `/widget_lilneedles.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, keepmap, keyword, mediakeyword, parts, rail, section
+- `/widget_main_google_menu.php` -> \bmysql_\w+\b, \bmysql_query\b, form
+- `/widget_main_menu.php` -> party_id, store
+- `/widget_new_metadata.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/widget_new_sql_genpageload.php` -> \bmysql_\w+\b, \bmysql_connect\b, app, lang
+- `/widget_olde.php` -> q
+- `/widget_opentaps.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff
+- `/widget_partsbooklist.php` -> \bmysql_\w+\b, \bmysql_query\b, marketplace
+- `/widget_partspricing.php` -> logoff
+- `/widget_reporting.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff
+- `/widget_sampleinfo.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, party_id, sample, stitch
+- `/widget_specialdatabase_form.php` -> \bmysql_\w+\b, \bmysql_query\b, 991212, country, mature, planet, prices, product
+- `/widget_specialdatabase_form_internal.php` -> \bmysql_\w+\b, \bmysql_query\b, 991212, country, mature, planet, prices, product
+- `/widget_sql.php` -> \bmysql_\w+\b, \bmysql_connect\b
+- `/widget_stitches_center.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b
+- `/widget_stitches_centerHD.php` -> \bmysql_\w+\b, \bmysql_query\b, label, marketplace, resolution, setnam, setnum, setnum1, stitch, store
+- `/widget_stitchselector.php` -> marketplace
+- `/widget_store.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/widget_sub_ lilconfig.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, country, keyword, mature, mediakeyword, rail
+- `/widget_sub_agent_map.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/widget_sub_config_multipic.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, location, party_id, unit, unit_on_ur_knees
+- `/widget_sub_configheader.php` -> key, party_id
+- `/widget_sub_datamover.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, 18, 22, 60, 70, 72, A, M, MG, application, captcha, check, email, interested_machine, message, name, page, party_id, production_country, production_need, production_purpose, recaptcha_challenge_field, recaptcha_response_field, sell, source, submit, urgency
+- `/widget_sub_datamover_simple.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, 18, 22, 60, 70, 72, A, M, MG, application, captcha, check, email, interested_machine, message, name, party_id, production_country, production_need, production_purpose, recaptcha_challenge_field, recaptcha_response_field, sell, submit, urgency
+- `/widget_sub_dbagent.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, global
+- `/widget_sub_formoreinformation.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, amzn, keyword, mediakeyword, parts, rail
+- `/widget_sub_globaldata.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, 18, 22, 60, 70, 72, A, M, MG, application, check, email, interested_machine, message, name, party_id, planet, prices, production_country, production_need, production_purpose, recaptcha_challenge_field, recaptcha_response_field, sell, submit, urgency
+- `/widget_sub_imageuploader.php` -> \bmysql_\w+\b, \bmysql_connect\b
+- `/widget_sub_lilbook.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, keyword, mediakeyword, rail
+- `/widget_sub_lildesc_specs.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, amzn, keyword, mediakeyword, parts, rail
+- `/widget_sub_lilmap.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, amzn, keepmap, keyword, mediakeyword, parts, rail, section
+- `/widget_sub_lilrailpics.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, keyword, mediakeyword, rail
+- `/widget_sub_lilstitch.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, amzn, keyword, mediakeyword, parts, rail
+- `/widget_sub_lilthreadapps.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, amzn, keyword, mediakeyword
+- `/widget_sub_lilvideo.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, mediakeyword, rail
+- `/widget_sub_noinfopartsmenu.php` -> amzn, section
+- `/widget_sub_partsdrawings.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, amzn, keyword, mediakeyword, parts, rail, section
+- `/widget_sub_partslist.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, amzn, parts, rail, section
+- `/widget_sub_partsmenu.php` -> amzn
+- `/widget_sub_partsmenu2ndchoice.php` -> amzn
+- `/widget_sub_productmenu_int.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/widget_sub_productmenu_us.php` -> \bmysql_\w+\b, \bmysql_query\b
+- `/widget_sub_railinfo.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, global
+- `/widget_sub_refmenu.php` -> amzn
+- `/widget_sub_specialdata.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, 18, 22, 60, 70, 72, A, M, MG, application, check, email, interested_machine, message, name, party_id, planet, prices, production_country, production_need, production_purpose, recaptcha_challenge_field, recaptcha_response_field, sell, submit, urgency
+- `/widget_sub_specialdata_internal.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, 18, 22, 60, 70, 72, A, M, MG, application, check, email, interested_machine, message, name, party_id, planet, prices, production_country, production_need, production_purpose, recaptcha_challenge_field, recaptcha_response_field, sell, submit, urgency
+- `/widget_sub_threading.php` -> diagram
+- `/widget_sub_threadmenu.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, amzn, keepmap, keyword, mediakeyword, section
+- `/widget_technical.php` -> \bmysql_\w+\b, \bmysql_query\b, mediakeyword
+- `/widget_techspecs.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, machine, party_id, stitch
+- `/widget_testmenu.php` -> marketplace
+- `/widget_wholesale.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, lang, logoff
+- `/yli_sandbox.php` -> \bmysql_\w+\b, \bmysql_connect\b, \bmysql_query\b, app, lang, party_id, stitch

@@ -1,0 +1,744 @@
+[
+  {
+    "type": "ErrorDocument",
+    "code": "404",
+    "target": "/merrow404.php"
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^(.*)$",
+    "target": "http://www.merrow.com/$1",
+    "flags": "[R=permanent,L]",
+    "conditions": [
+      "RewriteCond %{HTTP_HOST} ^merrow\\.com"
+    ]
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^(.*)$",
+    "target": "http://www.merrow.com/$1",
+    "flags": "[R=permanent,L]",
+    "conditions": [
+      "RewriteCond %{HTTP_HOST} ^merrowsales\\.com"
+    ]
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^(.*)$",
+    "target": "http://www.merrow.com/$1",
+    "flags": "[R=permanent,L]",
+    "conditions": [
+      "RewriteCond %{HTTP_HOST} ^www.merrowsales\\.com"
+    ]
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^(.*)$",
+    "target": "http://www.merrow.com/$1",
+    "flags": "[R=permanent,L]",
+    "conditions": [
+      "RewriteCond %{HTTP_HOST} ^merrowmachine\\.com"
+    ]
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^(.*)$",
+    "target": "http://www.merrow.com/$1",
+    "flags": "[R=permanent,L]",
+    "conditions": [
+      "RewriteCond %{HTTP_HOST} ^www.merrowmachine\\.com"
+    ]
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^training/?$",
+    "target": "https://merrowedge.com/pages/training-support",
+    "flags": "[R=301,L]",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "stitch/marketplace/(.*)/stitch/(.*)/label/(.*)/setnum/(.*)/setnum1/(.*)/setnam/(.*)/resolution/(.*)/",
+    "target": "stitch.php?marketplace=$1&stitch=$2&label=$3&setnum=$4&setnum1=$5&setnam=$6&resolution=$7",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "stitch/marketplace/(.*)/stitch/(.*)/label/(.*)/setnum/(.*)/setnum1/(.*)/setnam/(.*)/resolution/(.*)",
+    "target": "stitch.php?marketplace=$1&stitch=$2&label=$3&setnum=$4&setnum1=$5&setnam=$6&resolution=$7",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "merrow_stitching/app/(.*)/version/(.*)/",
+    "target": "merrow_stitching.php?app=$1&version=$2",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "merrow_stitching/app/(.*)/version/(.*)",
+    "target": "merrow_stitching.php?app=$1&version=$2",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "stitch/marketplace/(.*)/stitch/(.*)/",
+    "target": "stitch.php?marketplace=$1&stitch=$2",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "stitch/marketplace/(.*)/stitch/(.*)",
+    "target": "stitch.php?marketplace=$1&stitch=$2",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "Overlock_Sewing_Machines/Continuous_Processing/(.*)/",
+    "target": "mg_1.php?cp=$1",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "Overlock_Sewing_Machines/Continuous_Processing/(.*)",
+    "target": "mg_1.php?cp=$1&",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "compact-professional-sewing-table",
+    "target": "mg_2.php?cp=70d3b2",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "70class/cp/(.*)/",
+    "target": "mg_1.php?cp=$1",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "70class/cp/(.*)",
+    "target": "mg_1.php?cp=$1&",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "parts/(.*)/(.*)",
+    "target": "parts.php?cp=$1&mmc_code=$2",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "Sergers_and_Overlock_Sewing_Machines/Emblem_Edging/(.*)/",
+    "target": "mg_1.php?cp=$1",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "Sergers_and_Overlock_Sewing_Machines/Emblem_Edging/(.*)",
+    "target": "mg_1.php?cp=$1&",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "Sergers_and_Overlock_Sewing_Machines/(.*)",
+    "target": "mg_1.php?cp=$1&",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "crochet-sewing-machines/(.*)",
+    "target": "mg_1.php?cp=$1",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "fashion-sewing",
+    "target": "ncp1.php?a=f",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "technical-sewing",
+    "target": "ncp1.php?a=t",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "end-to-end-seaming",
+    "target": "ncp1.php?a=e",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "sewing/applications/(.*)/",
+    "target": "a.php?app=$1&#$2",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "sewing/applications/(.*)",
+    "target": "a.php?app=$1",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "customer-stories/featured/(.*)",
+    "target": "ncs1.php?s=$1",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "overlock-history",
+    "target": "nhp1.php",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^70d3b2_hp.php$",
+    "target": "Overlock_Sewing_Machines/Continuous_Processing/70d3b2hp",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^70d3b2.php$",
+    "target": "Overlock_Sewing_Machines/Continuous_Processing/70d3b2",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^70d3b2_g.php$",
+    "target": "Overlock_Sewing_Machines/Continuous_Processing/70d3b2g",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^70d3b2_cnp.php$",
+    "target": "Overlock_Sewing_Machines/Continuous_Processing/70d3b2cnp",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^70d3b2_ls.php$",
+    "target": "Overlock_Sewing_Machines/Continuous_Processing/70d3b2ls",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^70d3b2_rail.php$",
+    "target": "Overlock_Sewing_Machines/Continuous_Processing/70d3b2rail",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^70y3b2.php$",
+    "target": "Overlock_Sewing_Machines/Continuous_Processing/70y3b2",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^72d3b2.php$",
+    "target": "Overlock_Sewing_Machines/Continuous_Processing/72d3b2",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^72d3br.php$",
+    "target": "Overlock_Sewing_Machines/Continuous_Processing/72d3b2r",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^index.htm$",
+    "target": "index.html",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^WebStore-Privacy-Notice/",
+    "target": "about.html",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^WebStore-Terms-of-Use/",
+    "target": "about.html",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^aboutmerrow/engineer.htm",
+    "target": "about.html",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^aboutmerrow/history.htm",
+    "target": "about.html",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^boards////viewtopic.php?p=72",
+    "target": "about.html",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^buttedseam/bs-threading.htm",
+    "target": "Overlock_Sewing_Machines/Continuous_Processing/70d3b2",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^crochet/crochet.htm",
+    "target": "Sergers_and_Overlock_Sewing_Machines/Emblem_Edging/mg3u",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^decorative/decorative.htm",
+    "target": "Sergers_and_Overlock_Sewing_Machines/Emblem_Edging/mg3u",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^decorative/m_mg-maintenance.htm",
+    "target": "Sergers_and_Overlock_Sewing_Machines/Emblem_Edging/mg3u",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^decorative/m_mg-op.htm",
+    "target": "Sergers_and_Overlock_Sewing_Machines/Emblem_Edging/mg3u",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^decorative/m_mg-troubleshoot.htm",
+    "target": "Sergers_and_Overlock_Sewing_Machines/Emblem_Edging/mg3u",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^english/manuals/mgnmclass/maintenance.htm",
+    "target": "Sergers_and_Overlock_Sewing_Machines/Emblem_Edging/mg3u",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^merrow-Parts-Manual/PD22FJ/PD22FJ.htm",
+    "target": "index.html",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^merrow-Parts-Manual/PD3DW7/PD3DW7.htm",
+    "target": "index.html",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^merrow-Parts-Manual/PDMGNR/PDMGNR.htm",
+    "target": "index.html",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^pdfs/crochetshell.pdf",
+    "target": "index.html",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^pdfs/decorative.pdf",
+    "target": "index.html",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^product-lineB.",
+    "target": "index.html",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^pdfs/butted-seam.pdf",
+    "target": "Overlock_Sewing_Machines/Continuous_Processing/70d3b2",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^pdfs/hosiery.pdf",
+    "target": "Overlock_Sewing_Machines/mg4d45",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "agent_book/kiwifruit/(.*)/language/(.*)/type/(.*)/setnum/(.*)/setnam/(.*)/",
+    "target": "agent_book.php?kiwifruit=$1&language=$2&type=$3&setnum=$4&setnam=$5",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "agent_book/kiwifruit/(.*)/language/(.*)/type/(.*)/setnum/(.*)/setnam/(.*)",
+    "target": "agent_book.php?kiwifruit=$1&language=$2&type=$3&setnum=$4&setnam=$5",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "dynamicstore/store/(.*)/",
+    "target": "dynamicstore.php?store=$1",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "dynamicstore/store/(.*)",
+    "target": "dynamicstore.php?store=$1",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^(.*)\\.html$",
+    "target": "$1.php",
+    "flags": "[L]",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "merrow_stitching/app/(.*)/version/(.*)/",
+    "target": "merrow_stitching.php?app=$1&version=$2",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "merrow_stitching/app/(.*)/version/(.*)",
+    "target": "merrow_stitching.php?app=$1&version=$2",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "announcements/ebay/(.*)/",
+    "target": "announcements.php?ebay=$1",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "announcements/ebay/(.*)",
+    "target": "announcements.php?ebay=$1",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "announcements/party_id/(.*)/drawers4/(.*)/",
+    "target": "announcements.php?party_id=$1&drawers4=$2",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "announcements/party_id/(.*)/drawers4/(.*)",
+    "target": "announcements.php?party_id=$1&drawers4=$2",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "merrow_stitching/app/(.*)/",
+    "target": "merrow_stitching.php?app=$1",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "merrow_stitching/app/(.*)",
+    "target": "merrow_stitching.php?app=$1",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "applications/app/(.*)/",
+    "target": "applications.php?app=$1",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "applications/app/(.*)",
+    "target": "applications.php?app=$1",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "contact_general/label/(.*)/key/(.*)/",
+    "target": "contact_general.php?label=$1&key=$2",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "contact_general/label/(.*)/key/(.*)",
+    "target": "contact_general.php?label=$1&key=$2",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "contact_general/key/(.*)/",
+    "target": "contact_general.php?key=$1",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "contact_general/key/(.*)",
+    "target": "contact_general.php?key=$1",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "support/class/(.*)/key/(.*)/",
+    "target": "support.php?class=$1&key=$2",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "support/class/(.*)/key/(.*)",
+    "target": "support.php?class=$1&key=$2",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "support/class/(.*)/mediakeyword/(.*)/",
+    "target": "support.php?class=$1&mediakeyword=$2",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "support/class/(.*)/mediakeyword/(.*)",
+    "target": "support.php?class=$1&mediakeyword=$2",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "agent_book/kiwifruit/(.*)/language/(.*)/type/(.*)/setnum/(.*)/setnam/(.*)/",
+    "target": "agent_book.php?kiwifruit=$1&language=$2&type=$3&setnum=$4&setnam=$5",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "agent_book/kiwifruit/(.*)/language/(.*)/type/(.*)/setnum/(.*)/setnam/(.*)",
+    "target": "agent_book.php?kiwifruit=$1&language=$2&type=$3&setnum=$4&setnam=$5",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "agent_book/kiwifruit/(.*)/language/(.*)/setnum/(.*)/setnam/(.*)/type/(.*)/",
+    "target": "agent_book.php?kiwifruit=$1&language=$2&setnum=$3&setnam=$4&type=$5",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "agent_book/kiwifruit/(.*)/language/(.*)/setnum/(.*)/setnam/(.*)/type/(.*)",
+    "target": "agent_book.php?kiwifruit=$1&language=$2&setnum=$3&setnam=$4&type=$5",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "support/diagram/(.*)/showthemapicture/(.*)/",
+    "target": "support.php?diagram=$1&showthemapicture=$2",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "support/diagram/(.*)/showthemapicture/(.*)",
+    "target": "support.php?diagram=$1&showthemapicture=$2",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "fp_support/class/(.*)/key/(.*)/party_id/(.*)/",
+    "target": "fp_support.php?class=$1&key=$2&party_id=$3",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "fp_support/class/(.*)/key/(.*)/party_id/(.*)",
+    "target": "fp_support.php?class=$1&key=$2&party_id=$3",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "agent_choice/party_id/(.*)/",
+    "target": "agent_choice.php?party_id=$1",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "agent_choice/party_id/(.*)",
+    "target": "agent_choice.php?party_id=$1",
+    "flags": "",
+    "conditions": []
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^tech-manual.htm$",
+    "target": "\"http\\:\\/\\/merrow\\.com\\/support\\.html\"",
+    "flags": "[R=301,L]",
+    "conditions": [
+      "RewriteCond %{HTTP_HOST} ^.*$"
+    ]
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^applications.htm$",
+    "target": "\"http\\:\\/\\/merrow\\.com\\/merrow_stitching\\/app\\/mainpage\\/version\\/first\\/\"",
+    "flags": "[R=301,L]",
+    "conditions": [
+      "RewriteCond %{HTTP_HOST} ^.*$"
+    ]
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^product-lineB.htm$",
+    "target": "\"http\\:\\/\\/merrow\\.com\\/dynamicstore\\/store\\/65533122844756220294\\/\"",
+    "flags": "[R=301,L]",
+    "conditions": [
+      "RewriteCond %{HTTP_HOST} ^.*$"
+    ]
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^merrow-Parts-Manual/indexofmodels.htm$",
+    "target": "\"http\\:\\/\\/merrow\\.com\\/dynamicstore\\/store\\/65533122844756220294\\/\"",
+    "flags": "[R=301,L]",
+    "conditions": [
+      "RewriteCond %{HTTP_HOST} ^.*$"
+    ]
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^aboutmerrow/about.htm$",
+    "target": "\"http\\:\\/\\/merrow\\.com\\/about\\.html\"",
+    "flags": "[R=301,L]",
+    "conditions": [
+      "RewriteCond %{HTTP_HOST} ^.*$"
+    ]
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^mg3u/mg3u.htm$",
+    "target": "\"http\\:\\/\\/store\\.merrow\\.com\\/Model\\-MG3U\\-Merrow\\-Sewing\\-Machine\\/M\\/B001AVK6R0\\.htm\"",
+    "flags": "[R=301,L]",
+    "conditions": [
+      "RewriteCond %{HTTP_HOST} ^.*$"
+    ]
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^distributors/$",
+    "target": "\"http\\:\\/\\/merrow\\.com\\/agentmap\\.html\"",
+    "flags": "[R=301,L]",
+    "conditions": [
+      "RewriteCond %{HTTP_HOST} ^merrow.com$ [OR]",
+      "RewriteCond %{HTTP_HOST} ^www.merrow.com$"
+    ]
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^product-lineA.htm$",
+    "target": "\"http\\:\\/\\/merrow\\.com\\/dynamicstore\\/store\\/65533122844756220294\\/\"",
+    "flags": "[R=301,L]",
+    "conditions": [
+      "RewriteCond %{HTTP_HOST} ^merrow.com$ [OR]",
+      "RewriteCond %{HTTP_HOST} ^www.merrow.com$"
+    ]
+  },
+  {
+    "type": "RewriteRule",
+    "pattern": "^/?$",
+    "target": "\"http\\:\\/\\/www\\.merrowing\\.com\"",
+    "flags": "[R=301,L]",
+    "conditions": [
+      "RewriteCond %{HTTP_HOST} ^merrowing.com$"
+    ]
+  }
+]
