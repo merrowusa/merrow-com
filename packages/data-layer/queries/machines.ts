@@ -192,6 +192,23 @@ export async function getMachinePageByStyleKey(
 }
 
 /**
+ * Get a machine page by its ot_id (parts lookup)
+ */
+export async function getMachinePageByOtId(
+  otId: string | number
+): Promise<MachinePage | null> {
+  const { data, error } = await supabase
+    .from("machine_pages")
+    .select("*")
+    .eq("ot_id", otId)
+    .limit(1)
+    .single();
+
+  if (error || !data) return null;
+  return mapMachinePage(data);
+}
+
+/**
  * Get all published machine pages
  */
 export async function getAllPublishedMachines(): Promise<MachinePage[]> {

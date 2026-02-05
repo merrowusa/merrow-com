@@ -8,13 +8,12 @@ import { notFound } from "next/navigation";
 import {
   FullBleed,
   PageHeader,
-  RichText,
   MerrowButton,
 } from "../../../../../../../../packages/ui";
 import { SupportSidebar } from "../../../_components/SupportSidebar";
 import { SupportDocsPanel } from "../../../_components/SupportDocsPanel";
 import {
-  getTechnicalByClass,
+  getTechnicalField,
   getThreadingDiagrams,
 } from "../../../../../../../../packages/data-layer/queries/support";
 
@@ -82,12 +81,12 @@ export default async function SupportDetailPage({ params }: PageProps) {
     notFound();
   }
 
-  const [technical, threadingDiagrams] = await Promise.all([
-    getTechnicalByClass(classKey),
+  const [technicalField, threadingDiagrams] = await Promise.all([
+    getTechnicalField(classKey, key),
     getThreadingDiagrams(),
   ]);
 
-  if (!technical) {
+  if (technicalField === null) {
     return (
       <main className="text-merrow-textMain">
         <FullBleed className="bg-merrow-heroBg border-b border-merrow-border">
@@ -103,7 +102,7 @@ export default async function SupportDetailPage({ params }: PageProps) {
     );
   }
 
-  const html = technical[key] || "";
+  const html = technicalField || "";
 
   return (
     <main className="text-merrow-textMain bg-white">
@@ -126,7 +125,13 @@ export default async function SupportDetailPage({ params }: PageProps) {
             <div>
               <div className="rounded-xl border border-[#e1e1e1] bg-[#fafafa] px-6 py-6 shadow-[0_8px_18px_rgba(0,0,0,0.04)]">
                 {html ? (
-                  <RichText html={html} />
+                  <>
+                    {/* Legacy CMS HTML content - trusted source */}
+                    <div
+                      className="prose prose-sm max-w-none text-slate-700"
+                      dangerouslySetInnerHTML={{ __html: html }}
+                    />
+                  </>
                 ) : (
                   <p className="text-[13px] text-merrow-textSub">
                     No content is available for this section yet.

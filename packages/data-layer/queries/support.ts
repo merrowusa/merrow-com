@@ -19,13 +19,31 @@ export interface ThreadingDiagram {
 
 export interface AsinRecord {
   id: string;
+  asinId: string;
+  otId: string;
+  mmcId: string;
   msmcId: string;
   productName: string;
+  description: string;
   mediaKeyword: string;
   bookPage: string;
   partsbookUrl: string;
   partsbookImg: string;
   partsbookName: string;
+  imgurlLarge: string;
+  imgurlMedium: string;
+  imgurlTiny: string;
+  mrsp: string;
+  displayLength: string;
+  displayWidth: string;
+  displayHeight: string;
+  displayWeight: string;
+  displayLengthUnit: string;
+  displayWidthUnit: string;
+  displayHeightUnit: string;
+  displayWeightUnit: string;
+  amznUrl: string;
+  brand: string;
 }
 
 const TECHNICAL_FIELD_LIST = [
@@ -87,13 +105,31 @@ function mapThreadingDiagram(row: any): ThreadingDiagram {
 function mapAsin(row: any): AsinRecord {
   return {
     id: row.id ?? "",
+    asinId: row.asin_id ?? "",
+    otId: row.ot_id ?? "",
+    mmcId: row.mmc_id ?? "",
     msmcId: row.msmc_id ?? "",
     productName: row.product_name ?? "",
+    description: row.description ?? "",
     mediaKeyword: row.media_keyword ?? "",
     bookPage: row.book_page ?? "",
     partsbookUrl: row.partsbook_url ?? "",
     partsbookImg: row.partsbook_img ?? "",
     partsbookName: row.partsbook_name ?? "",
+    imgurlLarge: row.imgurl_large ?? "",
+    imgurlMedium: row.imgurl_medium ?? "",
+    imgurlTiny: row.imgurl_tiny ?? "",
+    mrsp: row.mrsp ?? "",
+    displayLength: row.display_length ?? "",
+    displayWidth: row.display_width ?? "",
+    displayHeight: row.display_height ?? "",
+    displayWeight: row.display_weight ?? "",
+    displayLengthUnit: row.display_length_unit_of_measure ?? "",
+    displayWidthUnit: row.display_width_unit_of_measure ?? "",
+    displayHeightUnit: row.display_height_unit_of_measure ?? "",
+    displayWeightUnit: row.display_weight_unit_of_measure ?? "",
+    amznUrl: row.amzn_url ?? "",
+    brand: row.brand ?? "",
   };
 }
 

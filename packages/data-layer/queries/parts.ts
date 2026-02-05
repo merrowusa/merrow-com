@@ -21,13 +21,31 @@ export interface PartsDrawing {
 function mapAsin(row: any): AsinRecord {
   return {
     id: row.id ?? "",
+    asinId: row.asin_id ?? "",
+    otId: row.ot_id ?? "",
+    mmcId: row.mmc_id ?? "",
     msmcId: row.msmc_id ?? "",
     productName: row.product_name ?? "",
+    description: row.description ?? "",
     mediaKeyword: row.media_keyword ?? "",
     bookPage: row.book_page ?? "",
     partsbookUrl: row.partsbook_url ?? "",
     partsbookImg: row.partsbook_img ?? "",
     partsbookName: row.partsbook_name ?? "",
+    imgurlLarge: row.imgurl_large ?? "",
+    imgurlMedium: row.imgurl_medium ?? "",
+    imgurlTiny: row.imgurl_tiny ?? "",
+    mrsp: row.mrsp ?? "",
+    displayLength: row.display_length ?? "",
+    displayWidth: row.display_width ?? "",
+    displayHeight: row.display_height ?? "",
+    displayWeight: row.display_weight ?? "",
+    displayLengthUnit: row.display_length_unit_of_measure ?? "",
+    displayWidthUnit: row.display_width_unit_of_measure ?? "",
+    displayHeightUnit: row.display_height_unit_of_measure ?? "",
+    displayWeightUnit: row.display_weight_unit_of_measure ?? "",
+    amznUrl: row.amzn_url ?? "",
+    brand: row.brand ?? "",
   };
 }
 
@@ -43,8 +61,11 @@ function mapPartsDrawing(row: any): PartsDrawing {
   };
 }
 
-const ASIN_FIELDS =
-  "id, msmc_id, product_name, media_keyword, book_page, partsbook_url, partsbook_img, partsbook_name";
+const ASIN_DETAIL_FIELDS =
+  "id, asin_id, ot_id, mmc_id, msmc_id, product_name, description, media_keyword, book_page, partsbook_url, partsbook_img, partsbook_name, imgurl_large, imgurl_medium, imgurl_tiny, mrsp, display_length, display_width, display_height, display_weight, display_length_unit_of_measure, display_width_unit_of_measure, display_height_unit_of_measure, display_weight_unit_of_measure, amzn_url, brand";
+
+const ASIN_SUMMARY_FIELDS =
+  "id, asin_id, ot_id, mmc_id, msmc_id, product_name, media_keyword, book_page, partsbook_url, partsbook_img, partsbook_name, imgurl_tiny, mrsp, amzn_url, brand";
 
 /**
  * Get a single part/product by its ot_id (order code)
@@ -52,7 +73,7 @@ const ASIN_FIELDS =
 export async function getAsinByOtId(otId: string): Promise<AsinRecord | null> {
   const { data, error } = await supabase
     .from("asin")
-    .select(ASIN_FIELDS)
+    .select(ASIN_DETAIL_FIELDS)
     .eq("ot_id", otId)
     .limit(1)
     .single();
@@ -65,7 +86,10 @@ export async function getAsinByOtId(otId: string): Promise<AsinRecord | null> {
  * Get all parts for a machine by mmc_id
  */
 export async function getAsinsByMmcId(mmcId: string): Promise<AsinRecord[]> {
-  const { data, error } = await supabase.from("asin").select(ASIN_FIELDS).eq("mmc_id", mmcId);
+  const { data, error } = await supabase
+    .from("asin")
+    .select(ASIN_SUMMARY_FIELDS)
+    .eq("mmc_id", mmcId);
 
   if (error || !data) return [];
   return data.map(mapAsin);
@@ -116,9 +140,107 @@ export async function getPartsDrawingByPd(pd: string): Promise<PartsDrawing | nu
 export async function getAsinsByMediaKeyword(keyword: string): Promise<AsinRecord[]> {
   const { data, error } = await supabase
     .from("asin")
-    .select(ASIN_FIELDS)
+    .select(ASIN_SUMMARY_FIELDS)
     .eq("media_keyword", keyword);
 
   if (error || !data) return [];
   return data.map(mapAsin);
+}
+
+/**
+ * Get all parts that should be pre-generated for static params
+ */
+export async function getAllPartsForStaticGeneration(): Promise<
+  Array<{ otId: string; msmcId: string }>
+> {
+  const { data, error } = await supabase
+    .from("asin")
+    .select("ot_id, msmc_id, mmc_id")
+    .neq("ot_id", "")
+    .neq("mmc_id", "");
+
+  if (error || !data) return [];
+  return data
+    .map((row) => ({
+      otId: row.ot_id ?? "",
+      msmcId: row.msmc_id ?? "",
+    }))
+    .filter((row) => row.otId.length > 0 && row.msmcId.length > 0);
+}
+
+/**
+ * Get all parts (asin records) linked to a drawing PD
+ */
+export async function getAsinsByPd(pd: string): Promise<AsinRecord[]> {
+  const { data: joinData, error: joinError } = await supabase
+    .from("joinpd")
+    .select("asin_id")
+    .eq("pd", pd);
+
+  if (joinError || !joinData) return [];
+  const asinIds = Array.from(
+    new Set(
+      joinData
+        .map((row) => row.asin_id)
+        .filter((asinId) => typeof asinId === "string" && asinId.length > 0),
+    ),
+  );
+  if (asinIds.length === 0) return [];
+
+  const { data, error } = await supabase
+    .from("asin")
+    .select(ASIN_SUMMARY_FIELDS)
+    .in("asin_id", asinIds);
+
+  if (error || !data) return [];
+  return data.map(mapAsin);
+}
+
+/**
+ * Get parts grouped by drawing PD identifiers
+ */
+export async function getAsinsByPdList(
+  pds: string[],
+): Promise<Record<string, AsinRecord[]>> {
+  if (pds.length === 0) return {};
+  const { data: joinData, error: joinError } = await supabase
+    .from("joinpd")
+    .select("pd, asin_id")
+    .in("pd", pds);
+
+  if (joinError || !joinData) return {};
+  const asinIds = Array.from(
+    new Set(
+      joinData
+        .map((row) => row.asin_id)
+        .filter((asinId) => typeof asinId === "string" && asinId.length > 0),
+    ),
+  );
+  if (asinIds.length === 0) return {};
+
+  const { data, error } = await supabase
+    .from("asin")
+    .select(ASIN_SUMMARY_FIELDS)
+    .in("asin_id", asinIds);
+
+  if (error || !data) return {};
+
+  const asinMap = new Map<string, AsinRecord>();
+  data.forEach((row) => {
+    const mapped = mapAsin(row);
+    if (mapped.asinId) asinMap.set(mapped.asinId, mapped);
+  });
+
+  const grouped: Record<string, AsinRecord[]> = {};
+  joinData.forEach((row) => {
+    const pdKey = row.pd ?? "";
+    const asinId = row.asin_id ?? "";
+    if (!pdKey || !asinId) return;
+    const asin = asinMap.get(asinId);
+    if (!asin) return;
+    if (!grouped[pdKey]) grouped[pdKey] = [];
+    grouped[pdKey].push(asin);
+  });
+
+  return grouped;
 }
