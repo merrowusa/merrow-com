@@ -1,204 +1,286 @@
-# Codex Task: Systematic Asset URL Audit + Mapping
+# Codex Task: Asset URL Localization
 
 ## Objective
 
-Create a comprehensive URL → local asset map for the entire merrow.com refactored codebase. Then — and ONLY then — rewrite URLs where a confirmed local asset exists.
-
-**DO NOT rewrite any URL until the mapping is complete and verified.**
+Rewrite ALL asset URLs to local paths. We ARE going to track down every missing file — set up the directory structure and rewrites now, files will be dropped in later.
 
 ---
 
-## Context
+## Step 1: Create Local Directory Structure
 
-- **Worktree:** This repo at `apps/merrow.com/`
-- **Legacy site:** `../../merrow/merrow-com/public_html/` (relative to repo root — absolute: `/Users/charliemerrow/LOCAL_AI_DATA_LAKE/_STATION_LABS/dev/merrow/merrow-com/public_html/`)
-- **imerrow.com = merrow.com** — these are the same site
-- **S3 assets (merrow-media.s3.amazonaws.com, marketing-downloads.s3.amazonaws.com)** — LEAVE ALONE, do not touch
-- **YouTube, social media, external sites** — LEAVE ALONE
-- **Reference files in `_AUDIT/asset_audit/`:**
-  - `db_urls_all.txt` — 13,153 unique URLs extracted from database seed data
-  - `legacy_site_assets.txt` — 5,006 image files from legacy PHP site
-  - `worktree_public_assets.txt` — 75 files in current `public/` directory
-  - `ASSET_AUDIT_SUMMARY.md` — Full breakdown by domain and path pattern
-
----
-
-## Step 1: Extract ALL URLs from Code
-
-Scan every `.ts` and `.tsx` file in `apps/merrow.com/` for URLs. For each URL found, record:
+Create these directories under `apps/merrow.com/public/`:
 
 ```
-file_path:line_number | url | domain | type
+public/images/
+  products/
+    large/          ← product photos (was nebula/inventory/large_inventory/)
+    medium/         ← product photos (was nebula/inventory/medium_inventory/)
+    thumb/          ← product photos (was nebula/inventory/tiny_inventory/)
+  drawings/
+    large/          ← parts diagrams (was nebula/inventory/pdurl_large/)
+    medium/         ← parts diagrams (was nebula/inventory/pdurl_medium/)
+    thumb/          ← parts diagrams (was nebula/inventory/pdurl_tiny/)
+  technical/        ← support diagrams (was images.imerrow.com/images/ + cephei/sable/)
+  parts-manual/     ← scanned manuals (was STORAGE/merrow-Parts-Manual/PD*/)
+  store/            ← store product photos (was nebula/images/store/new_jpgs/)
+  machines/         ← machine type icons (was nebula/images/machines/)
 ```
 
-Where `type` is one of:
-- `IMAGE_ASSET` — points to an image file (.jpg, .png, .gif, .svg, .webp)
-- `PAGE_LINK` — points to an old page route (e.g., merrow.com/parts.php)
-- `S3_ASSET` — S3-hosted file (LEAVE ALONE)
-- `EXTERNAL` — external site (LEAVE ALONE)
-- `DEV_ONLY` — localhost or dev URL (ignore)
-- `DYNAMIC` — URL constructed from variables at runtime
-
-Write output to: `_AUDIT/asset_audit/code_urls.csv`
+Add a `.gitkeep` in each empty directory so git tracks them.
 
 ---
 
-## Step 2: Categorize ALL Database URLs
+## Step 2: Copy Found Assets (237 files)
 
-Read `_AUDIT/asset_audit/db_urls_all.txt`. For each URL, categorize:
+Copy from the legacy site at `../../merrow/merrow-com/public_html/` (relative to repo root).
+
+### Parts Manual Drawings → `public/images/parts-manual/`
+
+Read `_AUDIT/asset_audit/URL_ASSET_MAP_FOUND.csv` for exact source paths. The found files are in:
+- `STORAGE/merrow-Parts-Manual/PD*/` — parts manual page scans
+- Preserve the `PD*` subdirectory grouping (e.g., `PD18A/`, `PDMG3U/`, `PD72/`)
 
 ```
-url | domain | path_pattern | type | table.column (if determinable)
+Legacy: STORAGE/merrow-Parts-Manual/PD18A/PD18A-1-diagram.jpg
+   To:  public/images/parts-manual/PD18A/PD18A-1-diagram.jpg
 ```
 
-The key path patterns from `imerrow.com` are:
-- `nebula/inventory/large_inventory/*.jpg` → IMAGE_ASSET (product image, large)
-- `nebula/inventory/medium_inventory/*.jpg` → IMAGE_ASSET (product image, medium)
-- `nebula/inventory/tiny_inventory/*.jpg` → IMAGE_ASSET (product image, tiny)
-- `nebula/inventory/pdurl_large/*.jpg` → IMAGE_ASSET (parts drawing, large)
-- `nebula/inventory/pdurl_medium/*.jpg` → IMAGE_ASSET (parts drawing, medium)
-- `nebula/inventory/pdurl_tiny/*.jpg` → IMAGE_ASSET (parts drawing, tiny)
-- `nebula/images/store/new_jpgs/*.jpg` → IMAGE_ASSET (store product image)
-- `nebula/images/machines/*.png` → IMAGE_ASSET (machine icon)
-- `nebula/sable/*` → IMAGE_ASSET (unknown)
-- Everything at `images.imerrow.com/images/*` → IMAGE_ASSET (technical diagram)
-- `store.merrow.com/category/*` → PAGE_LINK (old store page)
-- `merrow.com/parts.php*` → PAGE_LINK (old parts lookup)
-- `02576.merrow.com/Merrow-*` → PAGE_LINK (old product page)
-- S3 URLs → S3_ASSET
-- YouTube → EXTERNAL
+### Technical Diagrams → `public/images/technical/`
 
-Write output to: `_AUDIT/asset_audit/db_urls_categorized.csv`
+```
+Legacy: cephei/sable/images/bs-cutter.gif
+   To:  public/images/technical/bs-cutter.gif
+
+Legacy: cephei/sable/images/backviewsmall.gif
+   To:  public/images/technical/backviewsmall.gif
+```
+
+Copy all 26 files from `cephei/sable/images/` that appear in the FOUND map.
 
 ---
 
-## Step 3: Physical Asset Inventory
+## Step 3: Rewrite Code URLs
 
-Create a complete inventory of physical image/media files in these locations:
+### File: `apps/merrow.com/app/parts/[cp]/[mmc_code]/page.tsx`
 
-### 3a. Worktree public assets
-Scan `apps/merrow.com/public/` recursively. Record every file with relative path.
+**Line 78-82** — Main product image:
+```tsx
+// FROM:
+const mainImage =
+  record.imgurlLarge ||
+  (record.msmcId
+    ? `https://images.imerrow.com/images/products/large/${record.msmcId}.jpg`
+    : "");
 
-### 3b. Legacy site assets
-Scan the legacy site directory at the path shown in the reference file `legacy_site_assets.txt`. For each file, record the path relative to `public_html/`.
-
-### 3c. Cross-reference with STORAGE directories
-The legacy site has `STORAGE/` subdirectories with machine images, stitch samples, etc. Record these separately — they may contain assets referenced by the database.
-
-Write output to: `_AUDIT/asset_audit/physical_assets.csv`
-
-Format:
-```
-location | relative_path | filename | extension | size_bytes
-```
-
-Where `location` is `WORKTREE` or `LEGACY`.
-
----
-
-## Step 4: Build the URL → Local Asset Map
-
-For EVERY IMAGE_ASSET URL (from Steps 1 and 2), attempt to find a matching local file:
-
-### Matching Rules (try in order):
-
-1. **Exact filename match** — Extract filename from URL, search for it in both worktree and legacy assets
-2. **Product code match** — Extract product/part code from URL path, search for files containing that code
-3. **Legacy path reconstruction** — Strip domain, check if the path exists relative to legacy `public_html/`
-4. **Fuzzy filename match** — Normalize the filename (lowercase, strip suffixes like `_t1`, `_diagram`), search
-
-### Output Format
-
-Write to: `_AUDIT/asset_audit/URL_ASSET_MAP.csv`
-
-```
-url | type | match_status | local_path | match_method | notes
+// TO:
+const mainImage =
+  record.imgurlLarge ||
+  (record.msmcId
+    ? `/images/products/large/${record.msmcId}.jpg`
+    : "");
 ```
 
-Where:
-- `match_status`: `FOUND`, `MISSING`, `AMBIGUOUS`
-- `local_path`: relative path from repo root (for FOUND), empty for MISSING
-- `match_method`: `exact`, `code_match`, `legacy_path`, `fuzzy`, or empty
-- `notes`: any relevant context
+**Line 84-88** — Thumbnails:
+```tsx
+// FROM:
+const thumbnails = record.msmcId
+  ? Array.from({ length: 4 }).map((_, index) =>
+      `https://images.imerrow.com/images/products/thumb/${record.msmcId}_t${index + 1}.jpg`
+    )
+  : [];
+
+// TO:
+const thumbnails = record.msmcId
+  ? Array.from({ length: 4 }).map((_, index) =>
+      `/images/products/thumb/${record.msmcId}_t${index + 1}.jpg`
+    )
+  : [];
+```
+
+### File: `apps/merrow.com/app/support/class/key/mediakeyword/[mk]/page.tsx`
+
+**Lines 31-36** — `resolveLegacyUrl()` — change to serve locally:
+```tsx
+// FROM:
+function resolveLegacyUrl(value: string | undefined) {
+  if (!value) return "";
+  if (value.startsWith("http://") || value.startsWith("https://")) return value;
+  const trimmed = value.replace(/^\//, "");
+  return `https://www.merrow.com/${trimmed}`;
+}
+
+// TO:
+function resolveLegacyUrl(value: string | undefined) {
+  if (!value) return "";
+  if (value.startsWith("http://") || value.startsWith("https://")) return value;
+  if (value.startsWith("/")) return value;
+  return `/${value}`;
+}
+```
+
+### File: `apps/merrow.com/app/support/_components/SupportDocsPanel.tsx`
+
+**Line 25** — Threading diagram link URL:
+```tsx
+// FROM:
+href: `/support/diagram/${encodeURIComponent(diagram.image)}/showthemapicture/ohyeah`,
+
+// TO:
+href: `/support/diagram/${encodeURIComponent(diagram.image)}`,
+```
+
+**Lines 54-77** — Parts books and instruction manual links. These are legacy Flickr-based photosets served via `agent_book.php`. They are NOT image assets — they are page links to documentation viewers. Leave the `www.merrow.com` URLs for now. Add a TODO comment:
+```tsx
+// TODO: These link to legacy agent_book.php Flickr viewers.
+// Replace with local PDF/image gallery when content is migrated.
+```
+
+### File: `apps/merrow.com/app/support/page.tsx`
+
+**Line 40** — Video link:
+```tsx
+// FROM:
+"For video support please go <a href=\"https://www.merrow.com/video.html\">here</a>."
+
+// TO:
+"For video support please go <a href=\"https://www.youtube.com/@MerrowSewingMachine\">here</a>."
+```
+(The video.html page just embedded YouTube — link directly to the channel.)
+
+### Files with S3 URLs — DO NOT TOUCH:
+- `MachinePage.tsx` (`merrow-media.s3.amazonaws.com`)
+- `end-to-end-seaming/page.tsx`
+- `technical-sewing/page.tsx`
+- `overlock-history/page.tsx`
+- `ThumbnailGallery.tsx`
+- `ApplicationsStrip.tsx`
 
 ---
 
-## Step 5: Generate Reports
+## Step 4: Database URL Migration
 
-### 5a. MISSING Assets Report
+Create file: `db/migrations/20260205_localize_asset_urls.sql`
 
-Write to: `_AUDIT/asset_audit/MISSING_ASSETS.md`
+### Product images (asin table)
 
-Group by pattern:
-- How many product images (large/medium/tiny) are missing?
-- How many parts drawings are missing?
-- How many technical diagrams are missing?
-- For each group: sample URLs, expected filenames
+```sql
+-- Rewrite product image URLs from imerrow.com CDN to local paths
+-- large_inventory → /images/products/large/
+UPDATE asin
+SET imgurl_large = REPLACE(imgurl_large,
+  'http://imerrow.com/nebula/inventory/large_inventory/',
+  '/images/products/large/')
+WHERE imgurl_large LIKE 'http://imerrow.com/nebula/inventory/large_inventory/%';
 
-### 5b. FOUND Assets Report
+-- medium_inventory → /images/products/medium/
+UPDATE asin
+SET imgurl_medium = REPLACE(imgurl_medium,
+  'http://imerrow.com/nebula/inventory/medium_inventory/',
+  '/images/products/medium/')
+WHERE imgurl_medium LIKE 'http://imerrow.com/nebula/inventory/medium_inventory/%';
 
-Write to: `_AUDIT/asset_audit/FOUND_ASSETS.md`
+-- tiny_inventory → /images/products/thumb/
+UPDATE asin
+SET imgurl_tiny = REPLACE(imgurl_tiny,
+  'http://imerrow.com/nebula/inventory/tiny_inventory/',
+  '/images/products/thumb/')
+WHERE imgurl_tiny LIKE 'http://imerrow.com/nebula/inventory/tiny_inventory/%';
+```
 
-For each matched asset:
-- URL → local path
-- Whether it needs to be copied to `public/` or can stay in legacy
-- Recommended new path in `public/`
+### Parts drawings (pd_ref table)
 
-### 5c. Page Link Route Map
+```sql
+-- Parts drawings: pdurl_large → /images/drawings/large/
+UPDATE pd_ref
+SET pdurl_large = REPLACE(pdurl_large,
+  'http://imerrow.com/nebula/inventory/pdurl_large/',
+  '/images/drawings/large/')
+WHERE pdurl_large LIKE 'http://imerrow.com/nebula/inventory/pdurl_large/%';
 
-Write to: `_AUDIT/asset_audit/ROUTE_MAP.md`
+-- pdurl_medium → /images/drawings/medium/
+UPDATE pd_ref
+SET pdurl_medium = REPLACE(pdurl_medium,
+  'http://imerrow.com/nebula/inventory/pdurl_medium/',
+  '/images/drawings/medium/')
+WHERE pdurl_medium LIKE 'http://imerrow.com/nebula/inventory/pdurl_medium/%';
 
-Map old page URLs to new Next.js routes:
-- `merrow.com/parts.php?cp=XXX&mmc_code=YYY` → `/parts/XXX/YYY`
-- `store.merrow.com/category/...` → deprecated or redirect plan
-- `02576.merrow.com/Merrow-.../M/...` → `/machines/[style]` (if applicable)
-- `www.merrow.com/agent_book/...` → `/support/...` or keep as legacy link
-- `www.merrow.com/video.html` → new video page route or external link
+-- pdurl_tiny → /images/drawings/thumb/
+UPDATE pd_ref
+SET pdurl_tiny = REPLACE(pdurl_tiny,
+  'http://imerrow.com/nebula/inventory/pdurl_tiny/',
+  '/images/drawings/thumb/')
+WHERE pdurl_tiny LIKE 'http://imerrow.com/nebula/inventory/pdurl_tiny/%';
+```
+
+### Technical images (images.imerrow.com)
+
+```sql
+-- Technical support images → /images/technical/
+UPDATE asin
+SET setup_url = REPLACE(setup_url,
+  'http://images.imerrow.com/images/',
+  '/images/technical/')
+WHERE setup_url LIKE 'http://images.imerrow.com/images/%';
+
+UPDATE asin
+SET trouble_url = REPLACE(trouble_url,
+  'http://images.imerrow.com/images/',
+  '/images/technical/')
+WHERE trouble_url LIKE 'http://images.imerrow.com/images/%';
+```
+
+### Page link URLs — rewrite to new routes
+
+```sql
+-- Old parts.php links → new /parts/ routes
+-- These have format: http://merrow.com/parts.php?cp=XXX&mmc_code=YYY
+-- Handled by code at runtime, not a simple REPLACE.
+-- Leave store_url as-is for now — the code should parse and route.
+
+-- Old store.merrow.com links → mark as deprecated
+-- UPDATE asin SET amzn_url = NULL WHERE amzn_url LIKE 'http://store.merrow.com/%';
+-- (Uncomment when ready to drop old store links)
+```
+
+### DO NOT touch:
+- S3 URLs (`merrow-media.s3.amazonaws.com`, `marketing-downloads.s3.amazonaws.com`)
+- YouTube URLs
+- External URLs
 
 ---
 
-## Step 6: Rewrite URLs (ONLY for FOUND assets)
+## Step 5: Update seed data file
 
-**CRITICAL: Only proceed with rewrites AFTER the map is complete.**
-
-For each URL with `match_status = FOUND`:
-
-1. If the asset is in worktree `public/`: rewrite URL to relative path (e.g., `/images/...`)
-2. If the asset is in legacy site only: FIRST copy it to an appropriate location in `public/`, THEN rewrite
-3. For dynamically constructed URLs (in code): update the base URL constant/function
-
-**DO NOT rewrite URLs where `match_status = MISSING` or `AMBIGUOUS`.** Leave those as-is and flag them in the report.
-
-For database URLs: create a SQL migration file at `db/migrations/` that updates the URLs. Do NOT modify `db/supabase_data.sql` directly.
-
-For code URLs: edit the source files directly.
+After creating the migration, also update `db/supabase_data.sql` so future fresh deploys use local paths. Apply the same REPLACE logic to the INSERT statements.
 
 ---
 
-## Files to Read First
+## Step 6: Clean up Codex's previous bad work
 
-Before starting, read these files for context:
-
-1. `_AUDIT/asset_audit/ASSET_AUDIT_SUMMARY.md` — Full audit breakdown
-2. `_AUDIT/asset_audit/db_urls_all.txt` — All database URLs (13K lines)
-3. `_AUDIT/asset_audit/legacy_site_assets.txt` — Legacy physical files (5K lines)
-4. `_AUDIT/asset_audit/worktree_public_assets.txt` — Current public assets (75 lines)
-5. `apps/merrow.com/app/parts/[cp]/[mmc_code]/page.tsx` — Dynamic image URL construction
-6. `apps/merrow.com/app/support/_components/SupportDocsPanel.tsx` — Hardcoded legacy URLs
+If these exist, remove them:
+- `apps/merrow.com/public/legacy/` — wrong directory structure from prior run
+- `db/migrations/20260205_rewrite_asset_urls.sql` — had wrong file mappings
 
 ---
 
-## Constraints
+## URL → Local Path Cheat Sheet
 
-- **DO NOT** modify S3 URLs (merrow-media, marketing-downloads)
-- **DO NOT** modify YouTube, social media, or external URLs
-- **DO NOT** assume a local file exists — verify by reading the directory/file
-- **DO NOT** rewrite URLs until the full map is built and verified
-- **DO NOT** modify `db/supabase_data.sql` — create migration files for DB URL changes
-- **DO** create a single commit with the mapping files (Steps 1-5) BEFORE any rewrites
-- **DO** create a separate commit for the URL rewrites (Step 6)
+| Old URL Pattern | New Local Path |
+|----------------|----------------|
+| `imerrow.com/nebula/inventory/large_inventory/{X}.jpg` | `/images/products/large/{X}.jpg` |
+| `imerrow.com/nebula/inventory/medium_inventory/{X}.jpg` | `/images/products/medium/{X}.jpg` |
+| `imerrow.com/nebula/inventory/tiny_inventory/{X}.jpg` | `/images/products/thumb/{X}.jpg` |
+| `imerrow.com/nebula/inventory/pdurl_large/{X}.jpg` | `/images/drawings/large/{X}.jpg` |
+| `imerrow.com/nebula/inventory/pdurl_medium/{X}.jpg` | `/images/drawings/medium/{X}.jpg` |
+| `imerrow.com/nebula/inventory/pdurl_tiny/{X}.jpg` | `/images/drawings/thumb/{X}.jpg` |
+| `images.imerrow.com/images/{X}` | `/images/technical/{X}` |
+| `images.imerrow.com/images/products/large/{X}.jpg` | `/images/products/large/{X}.jpg` |
+| `images.imerrow.com/images/products/thumb/{X}.jpg` | `/images/products/thumb/{X}.jpg` |
+| `imerrow.com/nebula/images/store/new_jpgs/{X}` | `/images/store/{X}` |
+| `imerrow.com/nebula/images/machines/{X}` | `/images/machines/{X}` |
 
-## Commit Messages
+## Commits
 
-1. `audit: comprehensive URL → asset map for merrow.com refactor`
-2. `fix: rewrite verified asset URLs to local paths`
+1. `asset: create local image directory structure + copy 237 found files`
+2. `fix: rewrite asset URLs to local paths in code`
+3. `migration: localize database asset URLs from imerrow.com to /images/`
