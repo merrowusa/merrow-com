@@ -28,6 +28,51 @@ export interface AsinRecord {
   partsbookName: string;
 }
 
+const TECHNICAL_FIELD_LIST = [
+  "setup",
+  "setup_needles",
+  "setup_loopers",
+  "setup_threading",
+  "setup_gencutting",
+  "setup_knife",
+  "setup_sharpening",
+  "setup_feeddogs",
+  "setup_presser",
+  "setup_framecap",
+  "maintenance",
+  "trouble_needles",
+  "trouble_feeding",
+  "trouble_stitch",
+  "trouble_oil",
+  "trouble_skippedstitch",
+  "trouble_thread",
+  "trouble_latchhooks",
+  "trouble_loosestitches",
+  "trouble_skippedstitches",
+  "trouble_breakingneedles",
+  "trouble_needleholes",
+  "maint_lubrication",
+  "maint_needles",
+  "maint_needleguard",
+  "maint_needlebar",
+  "maint_castoff",
+  "maint_fixedcastoff",
+  "maint_needlelever",
+  "maint_hook",
+  "maint_hookcarrier",
+  "maint_fingerplate",
+  "maint_spreader",
+  "maint_tensions",
+  "maint_feedALL",
+  "maint_feedPLAIN",
+  "maint_feedSHELL",
+  "maint_threadcarrier",
+  "maint_threading",
+  "maint_fabricguard",
+] as const;
+
+const TECHNICAL_FIELDS = new Set<string>(TECHNICAL_FIELD_LIST);
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function mapThreadingDiagram(row: any): ThreadingDiagram {
   return {
@@ -65,6 +110,21 @@ export async function getTechnicalByClass(classKey: string): Promise<TechnicalRo
 
   if (error || !data) return null;
   return data as TechnicalRow;
+}
+
+/**
+ * Fetch a specific technical support field by class + field key
+ */
+export async function getTechnicalField(
+  classKey: string,
+  fieldKey: string,
+): Promise<string | null> {
+  if (!TECHNICAL_FIELDS.has(fieldKey)) return null;
+  const row = await getTechnicalByClass(classKey);
+  if (!row) return null;
+  if (!Object.prototype.hasOwnProperty.call(row, fieldKey)) return null;
+  const value = row[fieldKey];
+  return value ?? null;
 }
 
 /**

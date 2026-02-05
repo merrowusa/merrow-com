@@ -8,3 +8,4 @@ export * from "./applications";
 export * from "./customer-stories";
 export * from "./nav";
 export * from "./support";
+export * from "./parts";
