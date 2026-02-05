@@ -144,12 +144,12 @@ export function Footer() {
                 </a>
               </div>
               <div>
-                <a className="text-[#9fc7ff] underline" href="/nhp1.php">
+                <a className="text-[#9fc7ff] underline" href="/overlock-history">
                   History
                 </a>
               </div>
               <div>
-                <a className="text-[#9fc7ff] underline" href="/njp.php?j=jobs">
+                <a className="text-[#9fc7ff] underline" href="/contact_general.html">
                   Jobs
                 </a>
               </div>

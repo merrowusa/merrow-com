@@ -59,7 +59,7 @@ const RESOURCES = [
   { label: "ActiveSeam.com", href: "https://www.activeseam.com", description: "Learn what's new with ActiveSeam, stitch costing and marketing programs" },
   { label: "The Merrow Story", href: "https://merrowedge.com/pages/about-merrow", description: "Learn the story behind Merrow's invention of the overlock stitch and other company milestones" },
   { label: "Marketing Downloads", href: "/widget_marketing_material.php", description: "Our download section for a list of available marketing tools" },
-  { label: "JOBS!", href: "/njp.php?j=jobs", description: "Working at Merrow is awesome - join us in Fall River!" },
+  { label: "JOBS!", href: "/contact_general.html", description: "Working at Merrow is awesome - join us in Fall River!" },
   { label: "Merrow Robots", href: "https://merrowedge.com", description: "AUTOMATION!" },
   { label: "Merrow on Facebook", href: "https://www.facebook.com/MerrowSewingMachineCo", description: "Exchange ideas. See what's going on. Talk to others that value their Merrow Machines and Stitches" },
   { label: "The Merrow Group", href: "https://www.linkedin.com/company/merrow-group/", description: "Learn more about the Merrow Group Companies" },
