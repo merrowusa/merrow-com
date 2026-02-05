@@ -63,6 +63,11 @@ const nextConfig: NextConfig = {
         permanent: true,
         has: [{ type: "query", key: "s", value: "(?<s>.*)" }],
       },
+      {
+        source: "/support.html",
+        destination: "/support",
+        permanent: true,
+      },
       // Training redirect
       {
         source: "/training",

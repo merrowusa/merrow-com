@@ -101,7 +101,7 @@ export default function ContactPage() {
                   — Locate a sales agent near you
                 </li>
                 <li>
-                  <a href="/support.html" className="text-merrow-linkBlue underline">
+                  <a href="/support" className="text-merrow-linkBlue underline">
                     Technical Support
                   </a>{" "}
                   — Get help with your machine

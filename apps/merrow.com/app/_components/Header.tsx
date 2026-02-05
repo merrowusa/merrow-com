@@ -159,7 +159,7 @@ export function Header({ navData }: HeaderProps = {}) {
               <ul className="flex items-center gap-3 text-[13px] text-[#808080]">
                 <li>
                   <a
-                    href="/support.html"
+                    href="/support"
                     className="hover:text-[#1a4f8a] hover:underline focus:outline-none focus:ring-2 focus:ring-[#1a4f8a] focus:ring-opacity-50"
                   >
                     Support
