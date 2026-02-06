@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  background: #fff;
+}
+
+.subhead {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.bodytext {
+  font-size: 14px;
+}
+
+.default {
+  color: #1a4f8a;
+  text-decoration: underline;
+}
