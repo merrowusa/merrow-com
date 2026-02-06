@@ -57,6 +57,7 @@ export const CATEGORY_SLUGS: Record<number, string> = {
   5518: "womens-garments",
   5519: "home-decor",
   5522: "athletic-apparel",
+  5523: "joining-knit-material",
   5524: "joining-non-wovens",
 };
 
