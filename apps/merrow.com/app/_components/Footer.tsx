@@ -14,11 +14,10 @@ const IMG = {
 
 export function Footer() {
   return (
-    // id="footer" for legacy parity selector compatibility
-    <footer id="footer" data-testid="site-footer" role="contentinfo">
+    <>
       {/* Brand bar (logo strip) */}
       <FullBleed className="bg-white border-t border-[#bdbdbd]">
-        <div className="mx-auto max-w-merrow-1020 px-4 py-3">
+        <div className="mx-auto w-[980px] px-4 py-3">
           <div className="flex justify-center">
             <a href="/customer-stories" aria-label="Visit our partner companies page">
               <img
@@ -31,10 +30,10 @@ export function Footer() {
         </div>
       </FullBleed>
 
-      <FullBleed className="bg-[#313131] border-t border-[#363631]">
-        <div className="mx-auto max-w-merrow-1020 px-6 pt-6 pb-8">
-        {/* Feature boxes */}
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+      {/* Feature boxes (legacy main_southern_container) */}
+      <div className="main_southern_container bg-[#313131]">
+        <div className="box_container mx-auto w-[980px]">
+          <div className="grid grid-cols-3 gap-4">
           {/* Agent Locator */}
           <div className="border border-[#3f3f3f] bg-[#1f1f1f] px-4 py-4 rounded-[6px] shadow-[0_1px_2px_rgba(0,0,0,0.4)]">
             <div className="flex items-center gap-2 mb-2">
@@ -102,54 +101,85 @@ export function Footer() {
             </div>
           </div>
         </div>
+        </div>
+      </div>
 
-        {/* Contact / About / Follow / Newsletter */}
-        <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4">
-          {/* Contact */}
-          <div className="text-[12px] leading-[18px] text-[#d7d7d7]">
-            <div>
-              Call:{" "}
-              <a href="tel:+15086894095" className="text-white">
-                508.689.4095
-              </a>
+      {/* Actual footer (widget_feet.php) */}
+      <footer
+        id="footer"
+        data-testid="site-footer"
+        role="contentinfo"
+        className="footer bg-[#313131] border-t border-[#363631]"
+        style={{
+          fontFamily: '"Helvetica Neue", Arial, Helvetica, Geneva, sans-serif',
+          fontSize: "14px",
+        }}
+      >
+        <div
+          className="footer_container mx-auto w-[980px] min-h-[140px] pt-[15px] pb-0 pl-[50px] pr-0"
+          style={{ boxSizing: "content-box" }}
+        >
+          {/* Contact / About / Follow / Newsletter */}
+          <div className="grid grid-cols-4 gap-6">
+            {/* Contact */}
+            <div className="text-[12px] leading-[18px] text-[#d7d7d7]">
+              <div>
+                Call:{" "}
+                <a href="tel:+15086894095" className="text-white">
+                  508.689.4095
+                </a>
+              </div>
+              <div>
+                Fax: <span className="text-white">508.689.4098</span>
+              </div>
+              <div className="mt-2">
+                Email:{" "}
+                <a
+                  className="text-[#808080] text-[15px] font-normal"
+                  style={{ fontFamily: "Arial, Helvetica, Geneva, sans-serif" }}
+                  href="mailto:support@merrow.com"
+                >
+                  support@merrow.com
+                </a>
+                <br />
+                <a
+                  className="text-[#808080] text-[15px] font-normal"
+                  style={{ fontFamily: "Arial, Helvetica, Geneva, sans-serif" }}
+                  href="mailto:sales@merrow.com"
+                >
+                  sales@merrow.com
+                </a>
+              </div>
             </div>
-            <div>
-              Fax: <span className="text-white">508.689.4098</span>
-            </div>
-            <div className="mt-2">
-              Email:{" "}
-              <a
-                className="text-[#9fc7ff] underline"
-                href="mailto:support@merrow.com"
-              >
-                support@merrow.com
-              </a>
-              <br />
-              <a
-                className="text-[#9fc7ff] underline"
-                href="mailto:sales@merrow.com"
-              >
-                sales@merrow.com
-              </a>
-            </div>
-          </div>
 
           {/* About */}
           <div className="text-[12px] leading-[18px] text-[#d7d7d7]">
             <div className="text-white font-semibold">About Us</div>
             <div className="mt-2 space-y-1">
               <div>
-                <a className="text-[#9fc7ff] underline" href="/about.html">
+                <a
+                  className="text-[#808080] text-[15px] font-normal"
+                  style={{ fontFamily: "Arial, Helvetica, Geneva, sans-serif" }}
+                  href="/about.html"
+                >
                   Mission
                 </a>
               </div>
               <div>
-                <a className="text-[#9fc7ff] underline" href="/overlock-history">
+                <a
+                  className="text-[#808080] text-[15px] font-normal"
+                  style={{ fontFamily: "Arial, Helvetica, Geneva, sans-serif" }}
+                  href="/overlock-history"
+                >
                   History
                 </a>
               </div>
               <div>
-                <a className="text-[#9fc7ff] underline" href="/contact_general.html">
+                <a
+                  className="text-[#808080] text-[15px] font-normal"
+                  style={{ fontFamily: "Arial, Helvetica, Geneva, sans-serif" }}
+                  href="/contact_general.html"
+                >
                   Jobs
                 </a>
               </div>
@@ -162,14 +192,19 @@ export function Footer() {
             <div className="mt-2 space-y-1">
               <div>
                 <a
-                  className="text-[#9fc7ff] underline"
+                  className="text-[#808080] text-[15px] font-normal"
+                  style={{ fontFamily: "Arial, Helvetica, Geneva, sans-serif" }}
                   href="https://www.facebook.com/MerrowSewingMachineCo"
                 >
                   Facebook
                 </a>
               </div>
               <div>
-                <a className="text-[#9fc7ff] underline" href="https://www.linkedin.com/company/merrow">
+                <a
+                  className="text-[#808080] text-[15px] font-normal"
+                  style={{ fontFamily: "Arial, Helvetica, Geneva, sans-serif" }}
+                  href="https://www.linkedin.com/company/merrow"
+                >
                   LinkedIn
                 </a>
               </div>
@@ -216,21 +251,21 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="mt-6 text-[11px] leading-[16px] text-[#bdbdbd]">
-          Copyright &copy; {new Date().getFullYear()} Merrow Group Companies All
-          Rights Reserved. Designated trademarks and brands are the property of
-          their respective owners. Credit to{" "}
-          <a href="https://www.merrowedge.com" className="text-[#9fc7ff] hover:underline">
-            Sewing Automation
-          </a>{" "}
-          and to{" "}
-          <a href="https://merrowmfg.com" className="text-[#9fc7ff] hover:underline">
-            Merrow Manufacturing
-          </a>
+          {/* Copyright */}
+          <div className="mt-6 text-[11px] leading-[16px] text-[#bdbdbd]">
+            Copyright &copy; {new Date().getFullYear()} Merrow Group Companies All
+            Rights Reserved. Designated trademarks and brands are the property of
+            their respective owners. Credit to{" "}
+            <a href="https://www.merrowedge.com" className="text-[#9fc7ff] hover:underline">
+              Sewing Automation
+            </a>{" "}
+            and to{" "}
+            <a href="https://merrowmfg.com" className="text-[#9fc7ff] hover:underline">
+              Merrow Manufacturing
+            </a>
+          </div>
         </div>
-      </div>
-      </FullBleed>
-    </footer>
+      </footer>
+    </>
   );
 }

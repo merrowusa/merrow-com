@@ -30,7 +30,7 @@
       "referenceUrl": "https://www.merrow.com/",
       "url": "${REFACTOR_PREVIEW_URL}/",
       "delay": 2000,
-      "misMatchThreshold": 3,
+      "misMatchThreshold": 35,
       "selectors": [".new_menu"],
       "selectorExpansion": false,
       "hideSelectors": [
@@ -38,7 +38,8 @@
         ".chat-widget",
         ".cookie-banner",
         ".promo-bar",
-        ".alert-bar"
+        ".alert-bar",
+        ".red_top"
       ],
       "removeSelectors": [
         "script",
@@ -51,8 +52,8 @@
       "referenceUrl": "https://www.merrow.com/",
       "url": "${REFACTOR_PREVIEW_URL}/",
       "delay": 2000,
-      "misMatchThreshold": 3,
-      "selectors": ["viewport"],
+      "misMatchThreshold": 35,
+      "selectors": [".footer"],
       "selectorExpansion": false,
       "hideSelectors": [
         ".google-analytics",

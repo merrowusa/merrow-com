@@ -138,10 +138,24 @@ export function Header({ navData }: HeaderProps = {}) {
       <TopPromoBar />
 
       {/* Main Header - .new_menu class for legacy parity selector compatibility */}
-      <header className="new_menu bg-white border-b border-[#cfcfcf]" role="banner" data-testid="site-header">
-        <div id="new_menu_a" className="mx-auto max-w-merrow-1020 px-6">
+      <header
+        className="new_menu"
+        role="banner"
+        data-testid="site-header"
+        style={{
+          width: "980px",
+          height: "142px",
+          margin: "0 auto",
+          paddingLeft: "40px",
+          boxSizing: "content-box",
+          background: "transparent",
+          fontFamily: '"Helvetica Neue", Arial, Helvetica, Geneva, sans-serif',
+          fontSize: "14px",
+        }}
+      >
+        <div id="new_menu_a">
           {/* Top Row: Logo + Support/Contact */}
-          <div className="new_menu_top flex items-center justify-between py-[6px]">
+          <div className="new_menu_top flex items-start justify-between h-[68px]">
             <a href="/" aria-label="Merrow Sewing Machine Company - Home">
               <img
                 src={ASSETS.logo}
@@ -152,12 +166,12 @@ export function Header({ navData }: HeaderProps = {}) {
               />
             </a>
 
-            <nav aria-label="Secondary navigation">
-              <ul className="flex items-center gap-3 text-[13px] text-[#808080]">
+            <nav aria-label="Secondary navigation" className="pt-[6px]">
+              <ul className="flex items-center gap-3 text-[14px] text-[#7f0505]">
                 <li>
                   <a
                     href="/support"
-                    className="hover:text-[#1a4f8a] hover:underline focus:outline-none focus:ring-2 focus:ring-[#1a4f8a] focus:ring-opacity-50"
+                    className="hover:underline focus:outline-none focus:ring-2 focus:ring-[#1a4f8a] focus:ring-opacity-50"
                   >
                     Support
                   </a>
@@ -166,7 +180,7 @@ export function Header({ navData }: HeaderProps = {}) {
                 <li>
                   <a
                     href="/contact_general.html"
-                    className="hover:text-[#1a4f8a] hover:underline focus:outline-none focus:ring-2 focus:ring-[#1a4f8a] focus:ring-opacity-50"
+                    className="hover:underline focus:outline-none focus:ring-2 focus:ring-[#1a4f8a] focus:ring-opacity-50"
                   >
                     Contact Us
                   </a>
@@ -176,7 +190,7 @@ export function Header({ navData }: HeaderProps = {}) {
           </div>
 
           {/* Middle Row: Search + Heritage */}
-          <div className="new_menu_middle flex items-center justify-between gap-4 pb-[6px]">
+          <div className="new_menu_middle flex items-center justify-between gap-4 h-[40px]">
             <div className="cse-search-form_container flex-1">
               <div id="cse-search-form" className="w-full">
                 <form onSubmit={handleSearchSubmit} role="search" aria-label="Site search">
@@ -189,7 +203,7 @@ export function Header({ navData }: HeaderProps = {}) {
                     value={searchQuery}
                     onChange={handleSearchChange}
                     placeholder=""
-                    className="w-full max-w-[620px] bg-white border border-[#cfcfcf] px-3 py-2 text-[13px] text-[#333] outline-none shadow-[0_1px_3px_rgba(0,0,0,0.12)]"
+                    className="w-full max-w-[620px] bg-white border border-[#cfcfcf] px-2 py-[4px] text-[12px] text-[#333] outline-none shadow-[0_1px_3px_rgba(0,0,0,0.12)]"
                   />
                 </form>
               </div>
@@ -215,11 +229,11 @@ export function Header({ navData }: HeaderProps = {}) {
           {/* Navigation Row */}
           <div className="new_menu_bottom relative">
             <nav
-              className="h-[29px] rounded-[5px] border-t border-[#747676] bg-[#52524f] shadow-[inset_0_1px_0_rgba(255,255,255,0.15)]"
+              className="h-[34px] w-[980px] border-t border-[#747676] bg-[#52524f]"
               role="navigation"
               aria-label="Main navigation"
             >
-              <ul className="flex items-center">
+              <ul className="flex items-center pr-[120px]">
                 {navItems.map((item, idx) => (
                   <li
                     key={item.label}
@@ -230,7 +244,7 @@ export function Header({ navData }: HeaderProps = {}) {
                   >
                     <a
                       href={item.href}
-                      className="block px-4 py-[6px] text-[13px] font-semibold text-white hover:bg-[#3f3f3f] focus:outline-none focus:bg-[#3f3f3f] focus:ring-2 focus:ring-white focus:ring-inset transition-colors"
+                      className="block h-[34px] leading-[34px] px-[14px] text-[14px] font-normal text-[#7f0505] hover:underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-inset transition-colors"
                       onKeyDown={(e) => handleKeyDown(e, item.href)}
                       aria-expanded={item.hasDropdown ? activeDropdown === item.dropdownId : undefined}
                       aria-haspopup={item.hasDropdown ? "true" : undefined}
@@ -488,7 +502,7 @@ export function Header({ navData }: HeaderProps = {}) {
             {/* STITCH LAB button (legacy) */}
             <a
               href="/stitch-lab"
-              className="absolute right-[2px] top-[6px] z-10 inline-flex items-center bg-[#b10000] text-white text-[11px] font-bold px-4 py-[2px] uppercase tracking-[0.14em] shadow"
+              className="absolute right-[4px] top-[4px] z-10 inline-flex items-center bg-[#b10000] text-white text-[11px] font-bold px-4 py-[1px] uppercase tracking-[0.14em] shadow"
             >
               STITCH LAB
               <span

@@ -29,12 +29,16 @@ const config: Config = {
           footerBg: "#1f1f1f",     // footer band background (legacy: #313131)
           footerBoxBg: "#2a2a2a",  // footer inner boxes
           navBar: "#52524f",       // nav bar background (legacy .new_menu_bottom)
+          navBorder: "#747676",    // nav bar top border
+          menuText: "#7f0505",     // menu link color (legacy maroon)
           // Text colors
           textMain: "#222222",     // main body text (legacy: black)
           textSub: "#444444",      // secondary text
           textMuted: "#666666",    // small labels
           link: "#808080",         // link color (legacy .machine_list a)
           linkBlue: "#1a4f8a",     // blue link color (for CTAs)
+          footerBorder: "#363631", // footer top border
+          footerLink: "#808080",   // footer link color
         },
       },
       maxWidth: {
