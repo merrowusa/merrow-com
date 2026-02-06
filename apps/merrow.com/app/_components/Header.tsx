@@ -484,6 +484,22 @@ export function Header({ navData }: HeaderProps = {}) {
                 ))}
               </ul>
             </nav>
+
+            {/* STITCH LAB button (legacy) */}
+            <a
+              href="/stitch-lab"
+              className="absolute right-[2px] top-[6px] z-10 inline-flex items-center bg-[#b10000] text-white text-[11px] font-bold px-4 py-[2px] uppercase tracking-[0.14em] shadow"
+            >
+              STITCH LAB
+              <span
+                className="pointer-events-none absolute right-0 top-0 h-full w-[12px]"
+                aria-hidden="true"
+                style={{
+                  clipPath: "polygon(100% 0, 100% 100%, 0 100%)",
+                  background: "#7d0b0b",
+                }}
+              />
+            </a>
           </div>
         </div>
       </header>
