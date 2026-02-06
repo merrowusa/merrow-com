@@ -58,6 +58,46 @@ const nextConfig: NextConfig = {
         has: [{ type: "query", key: "app", value: "(?<app>.*)" }],
       },
       {
+        source: "/sewing/applications/5512",
+        destination: "/sewing/applications/emblem-edging",
+        permanent: true,
+      },
+      {
+        source: "/sewing/applications/5513",
+        destination: "/sewing/applications/end-to-end-seaming",
+        permanent: true,
+      },
+      {
+        source: "/sewing/applications/5514",
+        destination: "/sewing/applications/blanket-stitching",
+        permanent: true,
+      },
+      {
+        source: "/sewing/applications/5515",
+        destination: "/sewing/applications/lingerie",
+        permanent: true,
+      },
+      {
+        source: "/sewing/applications/5516",
+        destination: "/sewing/applications/baby-garments",
+        permanent: true,
+      },
+      {
+        source: "/sewing/applications/5517",
+        destination: "/sewing/applications/military-seaming",
+        permanent: true,
+      },
+      {
+        source: "/sewing/applications/5518",
+        destination: "/sewing/applications/womens-garments",
+        permanent: true,
+      },
+      {
+        source: "/sewing/applications/5519",
+        destination: "/sewing/applications/home-decor",
+        permanent: true,
+      },
+      {
         source: "/ncs1.php",
         destination: "/customer-stories/featured/:s",
         permanent: true,

@@ -209,6 +209,15 @@ export async function getMachinePageByOtId(
 }
 
 /**
+ * Get a machine page by its ot_id (parts fallback helper)
+ */
+export async function getMachineByOtId(
+  otId: string
+): Promise<MachinePage | null> {
+  return getMachinePageByOtId(parseInt(otId, 10));
+}
+
+/**
  * Get all published machine pages
  */
 export async function getAllPublishedMachines(): Promise<MachinePage[]> {

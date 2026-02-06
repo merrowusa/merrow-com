@@ -47,6 +47,21 @@ export interface ApplicationCategory {
   appCategorySeoKeywords: string;
 }
 
+export const CATEGORY_SLUGS: Record<number, string> = {
+  5512: "emblem-edging",
+  5513: "end-to-end-seaming",
+  5514: "blanket-stitching",
+  5515: "lingerie",
+  5516: "baby-garments",
+  5517: "military-seaming",
+  5518: "womens-garments",
+  5519: "home-decor",
+};
+
+export const CATEGORY_SLUG_TO_KEY: Record<string, number> = Object.fromEntries(
+  Object.entries(CATEGORY_SLUGS).map(([key, slug]) => [slug, Number(key)])
+);
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function mapApplicationPage(row: any): ApplicationPage {
   return {
@@ -198,6 +213,17 @@ export async function getApplicationCategoryByKey(
 
   if (error || !data) return null;
   return mapApplicationCategory(data);
+}
+
+/**
+ * Get application category by canonical slug
+ */
+export async function getApplicationCategoryBySlug(
+  slug: string
+): Promise<ApplicationCategory | null> {
+  const appKey = CATEGORY_SLUG_TO_KEY[slug];
+  if (!appKey) return null;
+  return getApplicationCategoryByKey(appKey);
 }
 
 /**

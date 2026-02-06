@@ -16,7 +16,10 @@ import {
   getPartsDrawings,
   getAsinsByPdList,
 } from "../../../../../../packages/data-layer/queries/parts";
-import { getMachinePageByOtId } from "../../../../../../packages/data-layer/queries/machines";
+import {
+  getMachineByOtId,
+  type MachinePage,
+} from "../../../../../../packages/data-layer/queries/machines";
 import { PartsSpecs } from "../../_components/PartsSpecs";
 import { PartsDrawings } from "../../_components/PartsDrawings";
 
@@ -45,6 +48,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const record = await getAsinByOtId(cp);
 
   if (!record) {
+    const machine = await getMachineByOtId(cp);
+    if (machine) {
+      return {
+        title: `${machine.style || machine.styleKey} | Merrow Parts`,
+        description:
+          stripHtml(machine.description || "") ||
+          `Parts and service information for ${machine.style || machine.styleKey}.`,
+      };
+    }
     return {
       title: `Parts: ${cp} | Merrow`,
       description: `Find replacement parts for Merrow part ${cp}.`,
@@ -60,11 +72,81 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
+function MachinePartsPage({ machine }: { machine: MachinePage }) {
+  return (
+    <main className="text-merrow-textMain bg-white">
+      <FullBleed className="bg-merrow-heroBg border-b border-merrow-border">
+        <div className="mx-auto max-w-merrow px-4 py-10">
+          <PageHeader
+            eyebrow="Parts & Service"
+            title={machine.style || machine.styleKey}
+            subtitle={machine.header || "Merrow sewing machine"}
+          />
+        </div>
+      </FullBleed>
+
+      <FullBleed className="bg-white">
+        <div className="mx-auto max-w-merrow px-4 py-10 space-y-6">
+          {machine.description ? (
+            <div className="rounded-xl border border-[#e1e1e1] bg-[#fafafa] px-6 py-6 shadow-[0_8px_18px_rgba(0,0,0,0.04)]">
+              {/* Legacy CMS HTML content - trusted source */}
+              <div
+                className="prose prose-sm max-w-none text-slate-700"
+                dangerouslySetInnerHTML={{ __html: machine.description }}
+              />
+            </div>
+          ) : null}
+
+          <div className="rounded-xl border border-[#e1e1e1] bg-white p-6 shadow-[0_6px_16px_rgba(0,0,0,0.05)]">
+            <div className="text-[11px] uppercase tracking-[0.16em] text-merrow-textMuted">
+              Parts & Ordering
+            </div>
+            <p className="mt-2 text-[13px] text-merrow-textSub">
+              Contact your Merrow Agent for pricing and availability.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <MerrowButton href="mailto:contact@merrow.com">
+                Email: contact@merrow.com
+              </MerrowButton>
+              <MerrowButton href="tel:+18004316677">
+                Call: 800.431.6677
+              </MerrowButton>
+            </div>
+            <div className="mt-3 text-[12px]">
+              <Link href="/agentmap.html" className="text-merrow-link hover:underline">
+                Find a local dealer
+              </Link>
+            </div>
+          </div>
+
+          <div className="rounded-xl border border-[#e1e1e1] bg-[#f9f9f9] p-6">
+            <div className="text-[11px] uppercase tracking-[0.16em] text-merrow-textMuted">
+              Machine details
+            </div>
+            <p className="mt-2 text-[13px] text-merrow-textSub">
+              View full specifications and documentation for this machine.
+            </p>
+            <div className="mt-3">
+              <MerrowButton href={`/machines/${machine.styleKey}`}>
+                View Machine Page
+              </MerrowButton>
+            </div>
+          </div>
+        </div>
+      </FullBleed>
+    </main>
+  );
+}
+
 export default async function PartsDetailPage({ params }: PageProps) {
   const { cp } = await params;
   const record = await getAsinByOtId(cp);
 
   if (!record || !record.mmcId) {
+    const machine = await getMachineByOtId(cp);
+    if (machine) {
+      return <MachinePartsPage machine={machine} />;
+    }
     notFound();
   }
 
@@ -73,7 +155,7 @@ export default async function PartsDetailPage({ params }: PageProps) {
   const partsByPd = drawings.length > 0
     ? await getAsinsByPdList(drawings.map((drawing) => drawing.pd).filter(Boolean))
     : {};
-  const machine = record.otId ? await getMachinePageByOtId(record.otId) : null;
+  const machine = record.otId ? await getMachineByOtId(record.otId) : null;
 
   const mainImage =
     record.imgurlLarge ||

@@ -4,7 +4,7 @@
 // Individual application detail page
 
 import { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import {
   FullBleed,
   PageHeader,
@@ -15,6 +15,10 @@ import {
 import {
   getApplicationByKey,
   getAllApplicationKeys,
+  getApplicationCategoryByKey,
+  getApplicationsByCategory,
+  CATEGORY_SLUGS,
+  CATEGORY_SLUG_TO_KEY,
 } from "../../../../../../packages/data-layer/queries/applications";
 
 interface PageProps {
@@ -23,11 +27,48 @@ interface PageProps {
 
 export async function generateStaticParams() {
   const keys = await getAllApplicationKeys();
-  return keys.map((app) => ({ app }));
+  const categorySlugs = Object.values(CATEGORY_SLUGS);
+  const allParams = [...keys, ...categorySlugs];
+  return Array.from(new Set(allParams)).map((app) => ({ app }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { app } = await params;
+  const numericKey = Number(app);
+  if (!Number.isNaN(numericKey) && String(numericKey) === app) {
+    const slug = CATEGORY_SLUGS[numericKey];
+    if (slug) {
+      const category = await getApplicationCategoryByKey(numericKey);
+      if (!category) {
+        return { title: "Applications | Merrow" };
+      }
+      return {
+        title:
+          category.appCategorySeoTitle ||
+          `${category.appCategoryName} | Merrow`,
+        description:
+          category.appCategorySeoDescription ||
+          `${category.appCategoryName} applications by Merrow`,
+      };
+    }
+  }
+
+  const categoryKey = CATEGORY_SLUG_TO_KEY[app];
+  if (categoryKey) {
+    const category = await getApplicationCategoryByKey(categoryKey);
+    if (!category) {
+      return { title: "Applications | Merrow" };
+    }
+    return {
+      title:
+        category.appCategorySeoTitle ||
+        `${category.appCategoryName} | Merrow`,
+      description:
+        category.appCategorySeoDescription ||
+        `${category.appCategoryName} applications by Merrow`,
+    };
+  }
+
   const application = await getApplicationByKey(app);
 
   if (!application) {
@@ -45,6 +86,81 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function ApplicationDetailPage({ params }: PageProps) {
   const { app } = await params;
+  const numericKey = Number(app);
+  if (!Number.isNaN(numericKey) && String(numericKey) === app) {
+    const slug = CATEGORY_SLUGS[numericKey];
+    if (slug) {
+      redirect(`/sewing/applications/${slug}`);
+    }
+  }
+
+  const categoryKey = CATEGORY_SLUG_TO_KEY[app];
+  if (categoryKey) {
+    const category = await getApplicationCategoryByKey(categoryKey);
+    if (!category) {
+      notFound();
+    }
+    const applications = (await getApplicationsByCategory(categoryKey)).filter(
+      (item) => item.publish === "yes"
+    );
+
+    return (
+      <main className="text-merrow-textMain">
+        <FullBleed className="bg-merrow-heroBg border-b border-merrow-border">
+          <div className="mx-auto max-w-merrow px-4 py-12">
+            <PageHeader
+              eyebrow="Sewing Applications"
+              title={category.appCategoryName}
+              subtitle={
+                category.appCategoryShortName
+                  ? `${category.appCategoryShortName} Applications`
+                  : "Applications"
+              }
+            />
+            {category.appCategorySeoDescription && (
+              <p className="mt-4 max-w-3xl text-[13px] leading-[18px] text-merrow-textSub">
+                {category.appCategorySeoDescription}
+              </p>
+            )}
+          </div>
+        </FullBleed>
+
+        <FullBleed className="bg-white">
+          <div className="mx-auto max-w-merrow px-4 py-10">
+            {applications.length === 0 ? (
+              <p className="text-[13px] text-merrow-textSub">
+                No applications are available for this category yet.
+              </p>
+            ) : (
+              <div className="grid gap-6 md:grid-cols-2">
+                {applications.map((item) => (
+                  <div
+                    key={item.dKey}
+                    className="rounded-xl border border-merrow-border bg-white p-6 shadow-[0_6px_16px_rgba(0,0,0,0.05)]"
+                  >
+                    <h3 className="text-[16px] font-semibold text-merrow-textMain">
+                      {item.appMenuTitle || item.appTitle}
+                    </h3>
+                    {item.appRightP && (
+                      <p className="mt-2 text-[13px] leading-[18px] text-merrow-textSub">
+                        {item.appRightP}
+                      </p>
+                    )}
+                    <div className="mt-4">
+                      <MerrowButton href={`/sewing/applications/${item.dKey}`}>
+                        View Application
+                      </MerrowButton>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </FullBleed>
+      </main>
+    );
+  }
+
   const application = await getApplicationByKey(app);
 
   if (!application) {
