@@ -4,7 +4,6 @@
 // Parity pass: align header chrome to live merrow.com (home + fashion)
 
 import { useState, useCallback, useRef, useEffect } from "react";
-import { usePathname } from "next/navigation";
 import { TopPromoBar } from "./TopPromoBar";
 import type { HeaderNavData } from "@data-layer/types/header-nav";
 
@@ -94,8 +93,6 @@ export function Header({ navData }: HeaderProps = {}) {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const dropdownRefs = useRef<Record<string, HTMLLIElement | null>>({});
-  const pathname = usePathname();
-  const showSearch = pathname !== "/";
 
   const handleSearchChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(event.target.value);
@@ -142,9 +139,9 @@ export function Header({ navData }: HeaderProps = {}) {
 
       {/* Main Header - .new_menu class for legacy parity selector compatibility */}
       <header className="new_menu bg-white border-b border-[#cfcfcf]" role="banner" data-testid="site-header">
-        <div className="mx-auto max-w-merrow px-6">
+        <div id="new_menu_a" className="mx-auto max-w-merrow-1020 px-6">
           {/* Top Row: Logo + Support/Contact */}
-          <div className="flex items-center justify-between py-3">
+          <div className="new_menu_top flex items-center justify-between py-[6px]">
             <a href="/" aria-label="Merrow Sewing Machine Company - Home">
               <img
                 src={ASSETS.logo}
@@ -178,26 +175,51 @@ export function Header({ navData }: HeaderProps = {}) {
             </nav>
           </div>
 
-          {/* Heritage Badge */}
-          <div className="flex items-center justify-end pb-2">
-            <span className="text-[12px] text-[#666] italic">
-              Manufacturing Sewing Machines since
-            </span>
-            <img
-              src={ASSETS.since1838}
-              alt="Since 1838"
-              className="ml-2 h-[28px] w-auto"
+          {/* Middle Row: Search + Heritage */}
+          <div className="new_menu_middle flex items-center justify-between gap-4 pb-[6px]">
+            <div className="cse-search-form_container flex-1">
+              <div id="cse-search-form" className="w-full">
+                <form onSubmit={handleSearchSubmit} role="search" aria-label="Site search">
+                  <label htmlFor="search-input" className="sr-only">
+                    Search merrow.com
+                  </label>
+                  <input
+                    id="search-input"
+                    type="text"
+                    value={searchQuery}
+                    onChange={handleSearchChange}
+                    placeholder=""
+                    className="w-full max-w-[620px] bg-white border border-[#cfcfcf] px-3 py-2 text-[13px] text-[#333] outline-none shadow-[0_1px_3px_rgba(0,0,0,0.12)]"
+                  />
+                </form>
+              </div>
+            </div>
+            <div
+              className="css-arrow-right h-0 w-0 border-y-[8px] border-y-transparent border-l-[12px] border-l-[#cfcfcf]"
+              aria-hidden="true"
             />
+            <div className="logo_box flex items-center gap-2">
+              <ul id="logo_text" className="text-[12px] text-[#666] italic">
+                <li>Manufacturing Sewing Machines since</li>
+              </ul>
+              <div className="laroush">
+                <img
+                  src={ASSETS.since1838}
+                  alt="Since 1838"
+                  className="h-[28px] w-auto"
+                />
+              </div>
+            </div>
           </div>
 
           {/* Navigation Row */}
-          <div className="relative">
+          <div className="new_menu_bottom relative">
             <nav
-              className="h-[29px] rounded-[5px] border-t border-[#747676] bg-[linear-gradient(to_bottom,#5e5e5b,#3f3f3f)] shadow-[inset_0_1px_0_rgba(255,255,255,0.15)]"
+              className="h-[29px] rounded-[5px] border-t border-[#747676] bg-[#52524f] shadow-[inset_0_1px_0_rgba(255,255,255,0.15)]"
               role="navigation"
               aria-label="Main navigation"
             >
-              <ul className="flex items-center pr-[120px]">
+              <ul className="flex items-center">
                 {navItems.map((item, idx) => (
                   <li
                     key={item.label}
@@ -462,42 +484,7 @@ export function Header({ navData }: HeaderProps = {}) {
                 ))}
               </ul>
             </nav>
-
-            {/* STITCH LAB button */}
-            <a
-              href="/stitch-lab"
-              className="absolute right-0 -bottom-[7px] bg-[#b10000] text-white text-[11px] font-bold px-4 py-[4px] uppercase tracking-[0.14em] shadow"
-            >
-              STITCH LAB
-              <span
-                className="pointer-events-none absolute right-0 top-0 h-full w-[12px]"
-                aria-hidden="true"
-                style={{
-                  clipPath: "polygon(100% 0, 100% 100%, 0 100%)",
-                  background: "#7d0b0b",
-                }}
-              />
-            </a>
           </div>
-
-          {/* Search Bar (below nav) */}
-          {showSearch && (
-            <div className="py-3">
-              <form onSubmit={handleSearchSubmit} role="search" aria-label="Site search">
-                <label htmlFor="search-input" className="sr-only">
-                  Search merrow.com
-                </label>
-                <input
-                  id="search-input"
-                  type="text"
-                  value={searchQuery}
-                  onChange={handleSearchChange}
-                  placeholder=""
-                  className="w-full max-w-[620px] bg-white border border-[#cfcfcf] px-3 py-2 text-[13px] text-[#333] outline-none shadow-[0_1px_3px_rgba(0,0,0,0.12)]"
-                />
-              </form>
-            </div>
-          )}
         </div>
       </header>
     </>

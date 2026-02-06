@@ -18,7 +18,7 @@ export function Footer() {
     <footer id="footer" data-testid="site-footer" role="contentinfo">
       {/* Brand bar (logo strip) */}
       <FullBleed className="bg-white border-t border-[#bdbdbd]">
-        <div className="mx-auto max-w-merrow px-4 py-3">
+        <div className="mx-auto max-w-merrow-1020 px-4 py-3">
           <div className="flex justify-center">
             <a href="/customer-stories" aria-label="Visit our partner companies page">
               <img
@@ -32,7 +32,7 @@ export function Footer() {
       </FullBleed>
 
       <FullBleed className="bg-[#313131] border-t border-[#363631]">
-        <div className="mx-auto max-w-merrow px-6 pt-6 pb-8">
+        <div className="mx-auto max-w-merrow-1020 px-6 pt-6 pb-8">
         {/* Feature boxes */}
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           {/* Agent Locator */}

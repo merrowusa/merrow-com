@@ -1,51 +1,33 @@
-// @version top-promo-bar v3.0
-// Parity: stacked promo bars (red alert + black ActiveSeam strip)
+// @version top-promo-bar v3.1
+// Parity: legacy ActiveSeam top splash (single black bar)
 
 export function TopPromoBar() {
   return (
     <div data-testid="top-promo-bar">
-      {/* Red alert bar (topmost) */}
-      <div className="bg-[#b10000] text-white text-[11px] h-[26px] flex items-center justify-center relative">
-        <span className="font-semibold tracking-[0.02em]">
-          INTRODUCING: MERROW ROBOTS
-        </span>
-        <a
-          href="https://merrowedge.com"
-          className="ml-3 inline-flex items-center bg-[#8e0000] px-3 py-[2px] text-[10px] font-semibold uppercase"
-        >
-          Learn More
-        </a>
-        <button
-          type="button"
-          aria-label="Dismiss"
-          className="absolute right-3 text-[12px] opacity-80 hover:opacity-100"
-        >
-          ×
-        </button>
-      </div>
-
-      {/* Black ActiveSeam strip */}
-      <div className="bg-black h-[16px] flex items-center justify-center gap-2">
-        <span className="text-[9px] tracking-[0.02em] text-white font-bold">
-          NEW MERROW ACTIVESEAM
-        </span>
-        <span className="text-[9px] tracking-[0.02em] text-white font-normal">
-          VISIT{" "}
-          <a
-            href="https://activeseam.com"
-            className="text-[#66CCFF] underline hover:text-white"
-          >
-            MERROW ACTIVESEAM
-          </a>{" "}
-          FOR DETAILS
-        </span>
-        <a href="https://www.activeseam.com" className="ml-2 hidden sm:inline-flex">
-          <img
-            src="https://activeseam.com/ActiveSeam_Images/merrow_activeseam_logo.png"
-            alt="ActiveSeam"
-            className="h-[12px] w-auto"
-          />
-        </a>
+      <div className="red_top bg-black text-white font-bold">
+        <div className="mx-auto max-w-merrow-1020 px-6 h-[50px] flex items-center justify-center relative text-[11px]">
+          <span className="new_prod_callout mr-2">NEW MERROW ACTIVESEAM</span>
+          <span>
+            VISIT{" "}
+            <a
+              href="https://activeseam.com"
+              className="text-[#66CCFF] underline hover:text-white"
+            >
+              MERROW ACTIVESEAM
+            </a>{" "}
+            FOR DETAILS
+          </span>
+          <div className="new_prod_img absolute right-6 top-1/2 -translate-y-1/2">
+            <a className="new_prod" href="https://www.activeseam.com">
+              <img
+                src="https://activeseam.com/ActiveSeam_Images/merrow_activeseam_logo.png"
+                width={100}
+                alt="new merrow products"
+                className="h-[22px] w-auto"
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
