@@ -12,7 +12,7 @@ import {
 export const metadata: Metadata = {
   title: "Find a Merrow Agent | Merrow Sewing Machine Company",
   description:
-    "Find a Merrow sales and service agent worldwide. Locate a local dealer for support, service, and parts.",
+    "Find a Merrow sales and service agent worldwide. Locate a local dealer for machine selection, maintenance support, replacement parts, and local assistance.",
 };
 
 export default function AgentMapPage() {

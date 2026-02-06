@@ -106,6 +106,7 @@ export function FullBleed({ className = "", children }: FullBleedProps) {
 export interface MerrowButtonProps {
   href?: string;
   type?: "button" | "submit";
+  variant?: "default" | "outline";
   children: React.ReactNode;
   className?: string;
 }
@@ -113,22 +114,27 @@ export interface MerrowButtonProps {
 export function MerrowButton({
   href,
   type = "button",
+  variant = "default",
   children,
   className = "",
 }: MerrowButtonProps) {
-  const baseStyles =
-    "inline-flex bg-[#3f3f3f] px-3 py-[2px] text-[11px] font-semibold text-white hover:bg-[#2a2a2a] transition-colors";
+  const baseStyles = "inline-flex px-3 py-[2px] text-[11px] font-semibold transition-colors";
+  const variantStyles =
+    variant === "outline"
+      ? "border border-[#3f3f3f] bg-transparent text-[#3f3f3f] hover:bg-[#f0f0f0]"
+      : "bg-[#3f3f3f] text-white hover:bg-[#2a2a2a]";
+  const classes = `${baseStyles} ${variantStyles} ${className}`;
 
   if (href) {
     return (
-      <a href={href} className={`${baseStyles} ${className}`}>
+      <a href={href} className={classes}>
         {children}
       </a>
     );
   }
 
   return (
-    <button type={type} className={`${baseStyles} ${className}`}>
+    <button type={type} className={classes}>
       {children}
     </button>
   );
@@ -289,4 +295,3 @@ export function YouTubeEmbed({ videoId, title, tagline }: YouTubeEmbedProps) {
     </div>
   );
 }
-

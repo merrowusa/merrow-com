@@ -11,7 +11,7 @@ import {
 export const metadata: Metadata = {
   title: "Marketing Materials | Merrow Sewing Machine Company",
   description:
-    "Download Merrow marketing materials, line cards, and product brochures.",
+    "Download official Merrow marketing materials, line cards, logos, and product brochures for sales support, customer presentations, and product communication.",
 };
 
 const DOWNLOADS: Array<{ label: string; href: string }> = [

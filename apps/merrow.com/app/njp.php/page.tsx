@@ -13,7 +13,7 @@ import {
 export const metadata: Metadata = {
   title: "Working at Merrow | Merrow Sewing Machine Company",
   description:
-    "Learn about careers at Merrow and contact us to inquire about open positions.",
+    "Learn about careers at Merrow, review current openings, and contact our team to apply for roles in engineering, purchasing, and industrial sewing operations.",
 };
 
 const POSITION_SUBJECTS: Record<string, { title: string; subject: string }> = {
@@ -69,7 +69,10 @@ export default function JobsPage({ searchParams }: PageProps) {
                 </MerrowButton>
               </div>
               <div className="mt-4 text-[12px]">
-                <Link href="/njp.php?j=jobs" className="text-merrow-link hover:underline">
+                <Link
+                  href={{ pathname: "/njp.php", query: { j: "jobs" } }}
+                  className="text-merrow-link hover:underline"
+                >
                   View all positions
                 </Link>
               </div>

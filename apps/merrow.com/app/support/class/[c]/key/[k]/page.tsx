@@ -113,8 +113,8 @@ const normalizeTechnicalHtml = (raw: string) => {
     '$1="/$2"'
   );
 
-  // Final guard: drop any remaining javascript: links.
-  html = html.replace(/href=["']\/?javascript:[^"']*["']/gi, 'href="#"');
+  // Final guard: replace any remaining javascript: links with support hub.
+  html = html.replace(/href=["']\/?javascript:[^"']*["']/gi, 'href="/support"');
 
   return html;
 };

@@ -12,7 +12,7 @@ import {
 export const metadata: Metadata = {
   title: "Needle Selector Tool | Merrow Sewing Machine Company",
   description:
-    "Merrow needle selector tool to help choose the correct needle for your application.",
+    "Use the Merrow needle selector tool to choose the right needle for your fabric and application, then contact support for final setup guidance.",
 };
 
 export default function NeedleConfiguratorPage() {

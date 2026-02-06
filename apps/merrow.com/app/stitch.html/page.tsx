@@ -12,7 +12,7 @@ import {
 export const metadata: Metadata = {
   title: "Stitch Browser | Merrow Sewing Machine Company",
   description:
-    "Browse Merrow stitch samples and learn which machines produce each stitch.",
+    "Browse Merrow stitch samples and compare machine output by seam style, then contact Merrow for recommendations on equipment, setup, and production use cases.",
 };
 
 export default function StitchBrowserPage() {

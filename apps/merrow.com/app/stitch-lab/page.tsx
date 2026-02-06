@@ -12,7 +12,7 @@ import {
 export const metadata: Metadata = {
   title: "Merrow Stitch Lab | Merrow Sewing Machine Company",
   description:
-    "Contact Merrow Stitch Lab to develop custom stitches and sewing solutions for your product.",
+    "Contact the Merrow Stitch Lab to develop custom stitches, test materials, and identify the right machine, thread, and seam configuration.",
 };
 
 export default function StitchLabPage() {
