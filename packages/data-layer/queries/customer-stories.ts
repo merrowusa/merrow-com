@@ -6,6 +6,8 @@
 
 import { supabase } from "../supabase";
 
+const VALID_STORY_KEY = /^[a-z0-9-]+$/i;
+
 export interface CustomerStory {
   id: number;
   appKey: string;
@@ -61,12 +63,18 @@ function mapCustomerStory(row: any): CustomerStory {
   };
 }
 
+function isValidStoryKey(appKey: string | null | undefined): boolean {
+  if (!appKey) return false;
+  return VALID_STORY_KEY.test(appKey);
+}
+
 /**
  * Get a customer story by its app_key (e.g., "csrw")
  */
 export async function getStoryByKey(
   appKey: string
 ): Promise<CustomerStory | null> {
+  if (!isValidStoryKey(appKey)) return null;
   const { data, error } = await supabase
     .from("customer_stories")
     .select("*")
@@ -88,7 +96,9 @@ export async function getPublishedStories(): Promise<CustomerStory[]> {
     .eq("publish", "yes");
 
   if (error || !data) return [];
-  return data.map(mapCustomerStory);
+  return data
+    .filter((row) => isValidStoryKey(row.app_key))
+    .map(mapCustomerStory);
 }
 
 /**
@@ -98,7 +108,9 @@ export async function getAllStories(): Promise<CustomerStory[]> {
   const { data, error } = await supabase.from("customer_stories").select("*");
 
   if (error || !data) return [];
-  return data.map(mapCustomerStory);
+  return data
+    .filter((row) => isValidStoryKey(row.app_key))
+    .map(mapCustomerStory);
 }
 
 /**
@@ -111,5 +123,5 @@ export async function getAllStoryKeys(): Promise<string[]> {
     .eq("publish", "yes");
 
   if (error || !data) return [];
-  return data.map((r) => r.app_key);
+  return data.map((r) => r.app_key).filter(isValidStoryKey);
 }
