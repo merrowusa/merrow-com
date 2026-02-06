@@ -23,12 +23,8 @@ export const COLOR_PALETTE = [
 ];
 
 export function DevHeader() {
-  // Only show in development/staging, hide in production
-  const isProduction = process.env.NODE_ENV === "production" &&
-    process.env.NEXT_PUBLIC_VERCEL_ENV === "production";
-
-  // For now, always show during refactor phase
-  const showHeader = true; // Set to !isProduction after launch
+  // Keep hidden by default so parity snapshots match legacy output.
+  const showHeader = process.env.NEXT_PUBLIC_SHOW_DEV_HEADER === "1";
 
   if (!showHeader) return null;
 

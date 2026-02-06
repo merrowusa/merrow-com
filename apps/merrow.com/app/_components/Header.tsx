@@ -155,44 +155,46 @@ export function Header({ navData }: HeaderProps = {}) {
       >
         <div id="new_menu_a">
           {/* Top Row: Logo + Support/Contact */}
-          <div className="new_menu_top flex items-start justify-between h-[68px]">
-            <a href="/" aria-label="Merrow Sewing Machine Company - Home">
-              <img
-                src={ASSETS.logo}
-                width={341}
-                height={68}
-                alt="Merrow Sewing Machine Co. logo"
-                className="h-auto"
-              />
-            </a>
+          <div className="new_menu_top">
+            <div className="title_img">
+              <a href="/" aria-label="Merrow Sewing Machine Company - Home">
+                <img
+                  src={ASSETS.logo}
+                  width={341}
+                  height={68}
+                  alt="Merrow Sewing Machine Co. logo"
+                />
+              </a>
+            </div>
 
-            <nav aria-label="Secondary navigation" className="pt-[6px]">
-              <ul className="flex items-center gap-3 text-[14px] text-[#7f0505]">
-                <li>
-                  <a
-                    href="/support"
-                    className="hover:underline focus:outline-none focus:ring-2 focus:ring-[#1a4f8a] focus:ring-opacity-50"
-                  >
-                    Support
-                  </a>
-                </li>
-                <li className="text-[#808080]">|</li>
-                <li>
-                  <a
-                    href="/contact_general.html"
-                    className="hover:underline focus:outline-none focus:ring-2 focus:ring-[#1a4f8a] focus:ring-opacity-50"
-                  >
-                    Contact Us
-                  </a>
-                </li>
-              </ul>
-            </nav>
+            <div className="rightlinks">
+              <nav aria-label="Secondary navigation">
+                <ul id="rightlinks">
+                  <li>
+                    <a
+                      href="/support"
+                      className="focus:outline-none focus:ring-2 focus:ring-[#1a4f8a] focus:ring-opacity-50"
+                    >
+                      Support
+                    </a>
+                  </li>
+                  <li id="last">
+                    <a
+                      href="/contact_general.html"
+                      className="focus:outline-none focus:ring-2 focus:ring-[#1a4f8a] focus:ring-opacity-50"
+                    >
+                      Contact Us
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
 
           {/* Middle Row: Search + Heritage */}
-          <div className="new_menu_middle flex items-center justify-between gap-4 h-[40px]">
-            <div className="cse-search-form_container flex-1">
-              <div id="cse-search-form" className="w-full">
+          <div className="new_menu_middle">
+            <div className="cse-search-form_container">
+              <div id="cse-search-form" style={{ width: "100%" }}>
                 <form onSubmit={handleSearchSubmit} role="search" aria-label="Site search">
                   <label htmlFor="search-input" className="sr-only">
                     Search merrow.com
@@ -203,24 +205,23 @@ export function Header({ navData }: HeaderProps = {}) {
                     value={searchQuery}
                     onChange={handleSearchChange}
                     placeholder=""
-                    className="w-full max-w-[620px] bg-white border border-[#cfcfcf] px-2 py-[4px] text-[12px] text-[#333] outline-none shadow-[0_1px_3px_rgba(0,0,0,0.12)]"
+                    className="gsc-input"
                   />
                 </form>
               </div>
             </div>
             <div
-              className="css-arrow-right h-0 w-0 border-y-[8px] border-y-transparent border-l-[12px] border-l-[#cfcfcf]"
+              className="css-arrow-right"
               aria-hidden="true"
             />
-            <div className="logo_box flex items-center gap-2">
-              <ul id="logo_text" className="text-[12px] text-[#666] italic">
+            <div className="logo_box">
+              <ul id="logo_text">
                 <li>Manufacturing Sewing Machines since</li>
               </ul>
               <div className="laroush">
                 <img
                   src={ASSETS.since1838}
                   alt="Since 1838"
-                  className="h-[28px] w-auto"
                 />
               </div>
             </div>
@@ -229,22 +230,22 @@ export function Header({ navData }: HeaderProps = {}) {
           {/* Navigation Row */}
           <div className="new_menu_bottom relative">
             <nav
-              className="h-[34px] w-[980px] border-t border-[#747676] bg-[#52524f]"
               role="navigation"
               aria-label="Main navigation"
             >
-              <ul className="flex items-center pr-[120px]">
-                {navItems.map((item, idx) => (
+              <ul id="menu">
+                {navItems.map((item) => (
                   <li
                     key={item.label}
-                    className={`relative ${idx === 0 ? "" : "border-l border-[#2f2f2f]"}`}
+                    id="top"
+                    className="relative"
                     ref={(el) => { dropdownRefs.current[item.dropdownId] = el; }}
                     onMouseEnter={() => item.hasDropdown && handleMouseEnter(item.dropdownId)}
                     onMouseLeave={handleMouseLeave}
                   >
                     <a
                       href={item.href}
-                      className="block h-[34px] leading-[34px] px-[14px] text-[14px] font-normal text-[#7f0505] hover:underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-inset transition-colors"
+                      className="drop focus:outline-none focus:ring-2 focus:ring-white focus:ring-inset"
                       onKeyDown={(e) => handleKeyDown(e, item.href)}
                       aria-expanded={item.hasDropdown ? activeDropdown === item.dropdownId : undefined}
                       aria-haspopup={item.hasDropdown ? "true" : undefined}

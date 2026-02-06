@@ -35,7 +35,25 @@
         ".google-analytics",
         ".chat-widget",
         ".cookie-banner",
-        "[data-testid='timestamp']"
+        "[data-testid='timestamp']",
+        ".intro_robots_bar",
+        ".red_top",
+        ".homepage-desktop-overlays",
+        ".homepage-desktop-share",
+        ".homepage-desktop-help-bubble",
+        ".homepage-desktop-help-launcher",
+        ".addthis_toolbox",
+        ".addthis-smartlayers",
+        ".at4-share-outer",
+        ".at-share-dock-outer",
+        ".at4-follow",
+        ".intercom-lightweight-app",
+        ".intercom-launcher",
+        "#intercom-container",
+        "iframe[src*='intercom']",
+        "iframe[src*='chat']",
+        "iframe[src*='drift']",
+        "iframe[src*='zendesk']"
       ],
       "removeSelectors": [
         "script",
@@ -108,8 +126,19 @@
     },
     {
       "label": "Sergers MG3U Detail",
-      "referenceUrl": "https://www.merrow.com/machine_pop.php?cp=MG-3U",
+      "referenceUrl": "https://www.merrow.com/Sergers_and_Overlock_Sewing_Machines/MG-3U",
       "url": "${REFACTOR_PREVIEW_URL}/Sergers_and_Overlock_Sewing_Machines/MG-3U",
+      "delay": 2000,
+      "misMatchThreshold": 10,
+      "hideSelectors": [
+        ".google-analytics",
+        ".chat-widget"
+      ]
+    },
+    {
+      "label": "Application Detail Wide Emblem Edge",
+      "referenceUrl": "https://www.merrow.com/sewing/applications/wideemblemedge",
+      "url": "${REFACTOR_PREVIEW_URL}/sewing/applications/wideemblemedge",
       "delay": 2000,
       "misMatchThreshold": 10,
       "hideSelectors": [

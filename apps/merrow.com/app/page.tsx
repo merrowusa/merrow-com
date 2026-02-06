@@ -20,6 +20,8 @@ const IMG = {
   heroEnd: "/images/hero/h_03.gif.png",
   midHeritage: "/images/hero/h_05.gif.png",
   midBranded: "/images/hero/h_06.gif.png",
+  logoBar: "/images/ft_10.gif",
+  worldMap: "/images/ft_11.gif",
 };
 
 export default async function HomePage({ searchParams }: HomePageProps) {
@@ -33,6 +35,8 @@ export default async function HomePage({ searchParams }: HomePageProps) {
       <div className="background_gradient">
         <div className="center_bloc">
           <div className="body_doc">
+            <div className="man" id="fat" />
+            <div className="clear" />
             <div className="bridge_container">
               {!branded ? (
                 <div className="main_content">
@@ -46,9 +50,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
 
                   <div className="main_image" id="left">
                     <a href="/technical-sewing">
-                      <div className="image_holder">
-                        <img src={IMG.heroTech} alt="Technical sewing machine" />
-                      </div>
+                      <img src={IMG.heroTech} alt="Technical sewing machine" />
                     </a>
                     <h2>
                       Technical <br />
@@ -56,28 +58,14 @@ export default async function HomePage({ searchParams }: HomePageProps) {
                     </h2>
                     <p className="machines">machines</p>
                     <a href="/technical-sewing">
-                      <div className="learn" id="left">
-                        Learn More
-                      </div>
+                      <div className="learn" id="left" />
                     </a>
                   </div>
 
                   <div className="main_image" id="center">
                     <a href="/fashion-sewing">
-                      <div className="image_holder center_stack">
-                        <img
-                          src={IMG.heroFashionBase}
-                          alt="Fashion sewing machine"
-                          id="center_front_1"
-                          className="merrow-hero-base"
-                        />
-                        <img
-                          src={IMG.heroFashionOverlay}
-                          alt="Fashion sewing machine overlay"
-                          id="center_front_2"
-                          className="merrow-hero-overlay"
-                        />
-                      </div>
+                      <img src={IMG.heroFashionBase} alt="Fashion sewing machine" id="center_front_1" />
+                      <img src={IMG.heroFashionOverlay} alt="Fashion sewing machine overlay" id="center_front_2" />
                     </a>
                     <h2>
                       Fashion
@@ -86,17 +74,13 @@ export default async function HomePage({ searchParams }: HomePageProps) {
                     </h2>
                     <p className="machines">machines</p>
                     <a href="/fashion-sewing">
-                      <div className="learn" id="center">
-                        Learn More
-                      </div>
+                      <div className="learn" id="center" />
                     </a>
                   </div>
 
                   <div className="main_image" id="right">
                     <a href="/end-to-end-seaming">
-                      <div className="image_holder">
-                        <img src={IMG.heroEnd} alt="End-to-end seaming machine" />
-                      </div>
+                      <img src={IMG.heroEnd} alt="End-to-end seaming machine" />
                     </a>
                     <h2>
                       End-to-End
@@ -105,9 +89,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
                     </h2>
                     <p className="machines">machines</p>
                     <a href="/end-to-end-seaming">
-                      <div className="learn" id="right">
-                        Learn More
-                      </div>
+                      <div className="learn" id="right" />
                     </a>
                   </div>
 
@@ -141,7 +123,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
                       <input name="source" type="hidden" value="nbp" />
                       <input name="captcha" type="hidden" value="no" />
                       <div className="center_box">
-                        <input id="dixie" type="email" name="email" value="" aria-label="Email address" />
+                        <input id="dixie" type="email" name="email" defaultValue="" aria-label="Email address" />
                       </div>
                       <div className="center_box">
                         <button id="aphrodite" type="submit">
@@ -189,13 +171,100 @@ export default async function HomePage({ searchParams }: HomePageProps) {
               Merrow Stitch Tag to your products today!
             </p>
             <a href={branded ? "/" : "/?branded=complete"}>
-              <div className="learn_submain" id="brand">
-                Learn More
-              </div>
+              <div className="learn_submain" id="brand" />
             </a>
+            <div className="close_brand" />
           </div>
           <div className="clear" />
         </div>
+      </div>
+
+      <div className="main_southern_container">
+        <div className="white_boxes" id="logo">
+          <div className="logo_bar">
+            <a href="/customer-stories">
+              <img src={IMG.logoBar} id="logo_bar" alt="Partner company logos strip" />
+            </a>
+          </div>
+        </div>
+
+        <div className="box_container">
+          <div className="boxes" id="left_main">
+            <div className="height_container_150">
+              <div className="f_image" id="b">
+                <a href="/agentmap.html" />
+              </div>
+              <div className="ncp_headline" id="footer">
+                <a href="/agentmap.html">AGENT LOCATOR</a>
+              </div>
+              <div className="box_image" id="map">
+                <a href="/agentmap.html">
+                  <img src={IMG.worldMap} alt="World map" />
+                </a>
+              </div>
+              <div className="special_map_holder">
+                <div className="box_text">
+                  Merrow machines are installed the world over and are sold and supported by a network of 156 sales
+                  agents spanning 65 countries Click Here to locate the agent nearest you.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="boxes" id="center_main">
+            <div className="height_container_150">
+              <div className="f_image" id="c">
+                <a href="https://blog.merrow.com" />
+              </div>
+              <div className="ncp_headline" id="footer">
+                <a href="https://blog.merrow.com">BLOG</a>
+              </div>
+              <div className="box_image" id="blog">
+                <div className="box_text">
+                  Check out the Merrow Blog for updates, special deals, new products, and interesting goings-on. the
+                  Merrow Blog is updated weekly and is a great company resource.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="boxes" id="right_main">
+            <div className="height_container_150">
+              <div className="f_image" id="d">
+                <a href="https://www.facebook.com/MerrowSewingMachineCo" />
+              </div>
+              <a href="https://www.facebook.com/MerrowSewingMachineCo">
+                <div className="ncp_headline" id="footer">
+                  COMMUNITY
+                </div>
+              </a>
+              <a href="https://www.facebook.com/MerrowSewingMachineCo">
+                <div className="box_image" id="community" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="homepage-desktop-overlays" aria-hidden="true">
+        <div className="homepage-desktop-share">
+          <div className="share_label">Shares</div>
+          <a href="https://www.facebook.com/MerrowSewingMachineCo" className="share_item share_fb">
+            f
+          </a>
+          <a href="https://x.com" className="share_item share_x">
+            x
+          </a>
+          <a href="https://www.pinterest.com" className="share_item share_pin">
+            p
+          </a>
+          <a href="mailto:?subject=Merrow%20Sewing%20Machine" className="share_item share_mail">
+            @
+          </a>
+        </div>
+
+        <div className="homepage-desktop-help-bubble">Hi. Need any help?</div>
+        <div className="homepage-desktop-help-launcher" />
       </div>
     </main>
   );

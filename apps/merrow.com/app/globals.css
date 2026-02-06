@@ -23,17 +23,407 @@ body {
   color: #222222;
   font-family: Verdana, Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: normal;
+}
+
+/* Legacy layout was authored with content-box metrics. */
+.new_menu,
+.new_menu *,
+.home-page,
+.home-page *,
+.footer,
+.footer * {
+  box-sizing: content-box;
+}
+
+/* Desktop smartbar shown on live merrow.com */
+.intro_robots_bar {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .intro_robots_bar {
+    display: block;
+    width: 100%;
+    height: 52px;
+    background: #ffffff;
+    border-bottom: 1px solid #dcdcdc;
+    color: #2e2e2e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 52px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .intro_robots_inner {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .intro_robots_copy {
+    font-size: 25px;
+    letter-spacing: 0.2px;
+    margin-right: 18px;
+  }
+
+  .intro_robots_cta {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 12px;
+    padding: 0 18px;
+    border-radius: 2px;
+    background: #a40917;
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: bold;
+    vertical-align: top;
+  }
+
+  .intro_robots_cta:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .intro_robots_close {
+    position: absolute;
+    right: 8px;
+    top: 0;
+    color: #b8b8b8;
+    font-size: 32px;
+    line-height: 52px;
+    font-weight: normal;
+  }
+}
+
+div.red_top {
+  background-color: #000000;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  height: 53px;
+  padding-top: 3px;
+  line-height: 14px;
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  font-size: 14px;
+}
+
+div.red_top a {
+  color: #66ccff;
+}
+
+span.new_prod_callout {
+  font-style: italic;
+}
+
+div.new_prod_img {
+  padding-top: 5px;
+  text-align: center;
+}
+
+div.new_prod_img img {
+  border: 0;
+  display: inline;
+}
+
+a.new_prod {
+  display: inline;
 }
 
 /* Legacy link styles */
 a {
-  color: #808080;
+  color: #7f0505;
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #af0b0c;
+}
+
+/* Legacy header styles (widget_new_css_rev75442112.php) */
+.new_menu li {
+  float: left;
+  list-style-type: none;
+}
+
+.new_menu .new_menu_top {
+  width: 980px;
+  overflow: hidden;
+  margin-top: 5px;
+  height: 70px;
+}
+
+.new_menu .title_img {
+  float: left;
+  margin-left: 5px;
+}
+
+.new_menu ul#rightlinks {
+  float: right;
+}
+
+.new_menu #rightlinks li {
+  width: 80px;
+  border-right: 1px solid #999999;
+  margin-left: 10px;
+  padding-right: 5px;
+}
+
+.new_menu #rightlinks a {
+  color: #000000;
+  font-family: Verdana, Arial, sans-serif;
+  line-height: 14px;
+}
+
+.new_menu li#last {
+  border-right-style: none;
+}
+
+.new_menu .new_menu_middle {
+  width: 980px;
+  overflow: hidden;
+  height: 37px;
+}
+
+.css-arrow-right {
+  border-color: #cfcfcf transparent transparent transparent;
+  border-style: solid;
+  border-width: 18px 0 0 20px;
+  width: 1%;
+  height: 1px;
+  float: left;
+}
+
+.new_menu .cse-search-form_container {
+  width: 400px;
+  float: left;
+  height: 32px;
+  border-radius: 5px 0 0 0;
+}
+
+.new_menu .logo_box {
+  width: 325px;
+  position: relative;
+  float: right;
+  bottom: 1px;
+  height: 40px;
+  clear: right;
+  display: block;
+}
+
+.new_menu .laroush {
+  float: right;
+}
+
+.new_menu #logo_text li {
+  position: absolute;
+  margin-top: 12px;
+  background-color: #ffffff;
+  padding-bottom: 2px;
+  line-height: 9px;
+}
+
+.new_menu ul#logo_text {
+  position: relative;
+  right: 12px;
+}
+
+.new_menu .new_menu_bottom {
+  width: 980px;
+  background-color: #52524f;
+  border-top: 1px solid #747676;
+  border-radius: 5px 5px 0 5px;
+  height: 35px;
+}
+
+.new_menu #menu {
+  list-style: none;
+  height: 30px;
+  z-index: 9999;
+  background: url(https://merrow-media.s3.amazonaws.com/general-http/mhpmenuii.png) repeat-x;
+  padding-left: 0;
+  margin: 2px 2px 0;
+}
+
+.new_menu #menu li {
+  display: block;
+  text-align: center;
+  position: relative;
+  border: none;
+  width: 193px;
+  padding-bottom: 7px;
+  padding-top: 2px;
+}
+
+.new_menu li#top {
+  border-right-style: solid;
+  border-right-width: 1px;
+  padding-top: 4px;
+}
+
+.new_menu #menu li a {
+  font-family: Verdana, "Lucida Grande", Lucida, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  display: block;
+  outline: 0;
+  text-decoration: none;
+}
+
+.new_menu #menu li:hover {
+  background-color: #ffffff;
+  padding-bottom: 9px;
+  border-radius: 5px 5px 0 0;
+  padding-top: 2px;
+  z-index: 9999;
+}
+
+.new_menu #menu li:hover a {
+  color: #686868;
+}
+
+/* Legacy footer styles */
+.footer {
+  background: #313131;
+  border-top: 1px solid #363631;
+  width: 100%;
+}
+
+.footer .footer_container {
+  margin-right: auto;
+  width: 980px;
+  margin-left: auto;
+  padding-top: 15px;
+  padding-left: 50px;
+}
+
+.footer div#left.container {
+  width: 250px;
+  float: left;
+}
+
+.footer div#center_left.container {
+  width: 100px;
+  float: left;
+}
+
+.footer div#center_right.container {
+  width: 200px;
+  float: left;
+}
+
+.footer div#right.container {
+  width: 390px;
+  float: left;
+}
+
+.footer .line {
+  color: #ffffff;
+  margin-bottom: 15px;
+  font: bold 15px Arial, Helvetica, Geneva, sans-serif;
+  text-shadow: #000000 1px 1px 0;
+}
+
+.footer .line a {
+  color: #808080;
+}
+
+.footer div#follow.line {
+  text-align: center;
+}
+
+.footer .share_links {
+  margin-top: 10px;
+}
+
+.footer span.echo {
+  color: #808080;
+  padding-top: 20px;
+  margin-left: 10px;
+  font: normal normal 15px Arial, Helvetica, Geneva, sans-serif;
+  text-shadow: #000000 1px 1px 0;
+}
+
+.footer p.echo {
+  margin-top: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  font: 15px Arial, Helvetica, Geneva, sans-serif;
+  color: #4c4c4c;
+  text-shadow: #000000 1px 1px 0;
+}
+
+.footer span#last.echo {
+  margin-left: 67px;
+}
+
+.footer .boxes#mail {
+  border-radius: 9px 9px 9px 9px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 0 #373731, 0 -1px 0 #0e0d0b;
+  border-bottom: 1px solid #000000 !important;
+  background: #191814;
+  position: relative;
+}
+
+.footer .height_container_1150 {
+  padding-top: 2px;
+}
+
+.footer div#mail.box_subline {
+  text-shadow: none;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.footer input#mce-EMAIL.required.email {
+  border-radius: 9px 9px 9px 9px;
+  box-shadow: 0 1px 0 #373731, 0 -1px 0 #0e0d0b;
+  border-bottom: 1px solid #ffffff !important;
+  background: #ffffff;
+  position: relative;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 330px;
+  margin-left: 10px;
+  height: 20px;
+  margin-top: 5px;
+}
+
+.footer input#mc-embedded-subscribe.btn {
+  background: url(https://merrow-media.s3.amazonaws.com/general-http/2011_live/b_1.png) 0 56px;
+  width: 210px;
+  height: 25px;
+  margin-left: 10px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer input#mc-embedded-subscribe.btn:hover {
+  background: url(https://merrow-media.s3.amazonaws.com/general-http/2011_live/b_1.png) 0 30px;
+}
+
+.footer .party_line {
+  font-size: 10px;
+  line-height: 10px;
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  color: #808080;
+  text-align: center;
+  border-top: 1px solid #808080;
+  padding-top: 4px;
+  padding-bottom: 10px;
+}
+
+.clear {
+  clear: both;
 }
 
 /* Legacy headline styles (Century Gothic) */
@@ -83,15 +473,35 @@ h1, h2, h3 {
 
 /* Legacy home page (index.php) */
 .home-page .background_gradient {
+  background: #ffffff;
   background: linear-gradient(#ffffff, #ededed);
-  padding: 18px 0 26px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.home-page .center_bloc,
-.home-page .body_doc,
-.home-page .bridge_container {
+.home-page .center_bloc {
+  width: 100%;
+  margin: 0;
+}
+
+.home-page .body_doc {
   width: 980px;
   margin: 0 auto;
+  padding-left: 40px;
+  box-sizing: content-box;
+}
+
+.home-page .bridge_container {
+  width: 980px;
+  height: 540px;
+}
+
+.home-page .man#fat {
+  float: right;
+  position: relative;
+  width: 220px;
+  height: 25px;
+  background: #ffffff url(https://merrow-media.s3.amazonaws.com/general-http/g_10.png) no-repeat;
 }
 
 .home-page .main_content,
@@ -101,60 +511,43 @@ h1, h2, h3 {
   text-align: center;
 }
 
+.home-page .headline {
+  color: #8b0005;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .home-page .headline h1 {
-  margin: 6px 0 16px;
+  text-align: center;
+  margin: 0;
   font-size: 32px;
-  line-height: 34px;
-  color: #111111;
+  line-height: 35px;
+  color: #000000;
+  font-family: "Century Gothic", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 .home-page .headline h2 {
-  margin: 6px 0 0;
-  font-size: 20px;
-  line-height: 24px;
-  color: #222222;
+  text-align: center;
+  color: #808080;
+  font: 25px "Century Gothic", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.home-page .center_text {
+  width: 70%;
+  text-align: center;
+  margin: 20px auto;
+  color: #000000;
+  font: 11px/19px "Century Gothic", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 .home-page .main_image {
   float: left;
-  width: 321px;
-  text-align: center;
-}
-
-.home-page .main_image#center {
-  margin: 0 8px;
-}
-
-.home-page .main_image .image_holder {
-  height: 370px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-.home-page .main_image .center_stack {
+  text-transform: uppercase;
   position: relative;
-  width: 321px;
-  height: 370px;
 }
 
-.home-page #center_front_1,
 .home-page #center_front_2 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.home-page .merrow-hero-base {
-  opacity: 1;
-  animation: merrowFadeOut 4s ease forwards;
-  animation-delay: 2s;
-}
-
-.home-page .merrow-hero-overlay {
-  opacity: 0;
-  animation: merrowFadeIn 4.5s ease forwards;
-  animation-delay: 6.3s;
+  display: none;
 }
 
 .home-page .main_image img {
@@ -162,40 +555,94 @@ h1, h2, h3 {
 }
 
 .home-page .main_image h2 {
-  margin: 6px 0 2px;
-  font-size: 18px;
-  line-height: 20px;
-  color: #111111;
+  font: 24px "Century Gothic", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.home-page .main_image p {
+  color: #000000;
+  font: bold 12px "Century Gothic", Verdana, sans-serif;
+  text-transform: uppercase;
 }
 
 .home-page .main_image p.machines {
-  margin: 0 0 4px;
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  color: #6a6a6a;
+  letter-spacing: normal;
+  margin: 0;
+}
+
+.home-page .main_image#left,
+.home-page .main_image#center,
+.home-page .main_image#right {
+  width: 320px;
+  height: 370px;
+}
+
+.home-page .main_image#left h2 {
+  position: absolute;
+  left: 70px;
+  bottom: 30px;
+}
+
+.home-page .main_image#left p {
+  position: absolute;
+  bottom: 18px;
+  right: 105px;
+}
+
+.home-page .main_image#center h2 {
+  position: absolute;
+  bottom: 30px;
+  left: 100px;
+  text-align: center;
+}
+
+.home-page .main_image#center p {
+  position: absolute;
+  bottom: 18px;
+  right: 75px;
+}
+
+.home-page .main_image#right h2 {
+  position: absolute;
+  bottom: 30px;
+  left: 90px;
+  text-align: right;
+}
+
+.home-page .main_image#right p {
+  position: absolute;
+  bottom: 18px;
+  right: 55px;
 }
 
 .home-page .learn,
 .home-page .learn_submain {
   display: block;
-  width: 72px;
+  width: 90px;
   height: 16px;
-  margin: 4px auto 0;
-  background: #3f3f3f;
-  color: #ffffff;
-  font-size: 10px;
-  line-height: 16px;
-  text-transform: uppercase;
-  text-align: center;
+  background: url(https://merrow-media.s3.amazonaws.com/general-http/2011_live/b_1.png) 250px 39px;
 }
 
-.home-page .center_text {
-  margin: 14px auto 0;
-  width: 720px;
-  font-size: 11px;
-  line-height: 16px;
-  color: #444444;
+.home-page .learn:hover,
+.home-page .learn_submain:hover {
+  background: url(https://merrow-media.s3.amazonaws.com/general-http/2011_live/b_1.png) 250px 56px;
+}
+
+.home-page .learn#left {
+  position: absolute;
+  right: 150px;
+  bottom: 0;
+}
+
+.home-page .learn#center {
+  position: absolute;
+  right: 120px;
+  bottom: 0;
+}
+
+.home-page .learn#right {
+  position: absolute;
+  right: 100px;
+  bottom: 0;
 }
 
 .home-page .clear {
@@ -203,8 +650,9 @@ h1, h2, h3 {
 }
 
 .home-page .main_middle_container {
-  background: linear-gradient(to bottom, #c0c0c0, #7d7d7d);
-  padding: 10px 0 18px;
+  background: linear-gradient(#c0c0c0, #7d7d7d);
+  width: 100%;
+  height: 210px;
 }
 
 .home-page .main_middle_container .box_container {
@@ -214,114 +662,381 @@ h1, h2, h3 {
 
 .home-page .grey_boxes {
   float: left;
-  width: 480px;
-  min-height: 160px;
-  padding: 8px 10px;
+  margin-top: 0;
+  border-bottom: 1px solid #ffffff !important;
   background: #a9a9a9;
-  border-radius: 9px;
+  position: relative;
+  border-radius: 9px 9px 9px 9px;
   box-shadow: 0 1px 0 #373731, 0 -1px 0 #0e0d0b;
-  color: #ffffff;
 }
 
 .home-page .grey_boxes#left_main {
+  width: 426px;
+  height: 170px;
+  float: left;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+.home-page .grey_boxes#right_main {
+  width: 490px;
+  height: 170px;
+  float: right;
+  margin-top: 25px;
   margin-right: 20px;
+  padding-left: 10px;
 }
 
 .home-page .grey_boxes img#left,
 .home-page .grey_boxes img#right_neg {
   float: left;
-  margin: 4px 10px 0 0;
+  margin-right: 10px;
 }
 
 .home-page .box_headline {
-  font-size: 20px;
+  font: 23px "Century Gothic", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
   color: #1d1818;
   text-shadow: #ededed 0 1px 0;
 }
 
 .home-page .box_subline {
-  margin-top: 2px;
-  font-size: 14px;
+  font: 14px "Century Gothic", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  text-shadow: #ededed 0 1px 0;
+  margin-top: 0;
   color: #1d1818;
 }
 
 .home-page .main_boxes {
-  margin: 6px 0 0;
-  font-size: 11px;
-  line-height: 16px;
+  margin: 0;
   color: #ffffff;
+  font: 11px/16px Verdana, sans-serif;
+  padding-right: 15px;
+  padding-top: 3px;
 }
 
 .home-page .learn_submain {
-  float: right;
-  margin-top: 8px;
+  width: 90px;
+  height: 18px;
+  position: absolute;
+  right: 40px;
+  bottom: 10px;
+}
+
+.home-page .learn_submain.active {
+  display: none;
+}
+
+.home-page .close_brand {
+  display: none;
+  width: 90px;
+  position: absolute;
+  right: 40px;
+  bottom: 10px;
+  height: 18px;
+  background: url(https://merrow-media.s3.amazonaws.com/general-http/2011_live/b_1.png) 625px 56px;
+}
+
+.home-page .branded_content .headline {
+  padding-top: 40px;
 }
 
 .home-page .byline h2 {
-  margin: 4px 0;
-  font-size: 18px;
-  line-height: 22px;
-  color: #111111;
+  text-align: center;
+  margin-top: 30px;
+  font: 21px "Century Gothic";
 }
 
 .home-page .form_branded h3 {
-  margin: 12px 0 6px;
-  font-size: 11px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: #333333;
+  text-align: center;
+  font: 12px "Century Gothic";
 }
 
 .home-page .center_box {
-  display: flex;
-  justify-content: center;
-  margin-top: 8px;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .home-page #dixie {
-  width: 280px;
-  border: 1px solid #cfcfcf;
-  padding: 6px 8px;
-  font-size: 13px;
-  color: #111111;
+  border: 1px solid #808080;
+  width: 350px;
+  height: 26px;
+  border-radius: 5px;
+  background-color: #cfd1d1;
+  margin-top: 5px;
 }
 
 .home-page #aphrodite {
-  border: 0;
-  background: #3f3f3f;
-  color: #ffffff;
-  padding: 4px 12px;
-  font-size: 11px;
-  text-transform: uppercase;
-  cursor: pointer;
+  position: relative;
+  left: 130px;
+  margin-top: 10px;
+}
+
+.home-page .byline .center_text {
+  width: 500px;
+  margin-top: 40px;
+  font-size: 12px;
+  color: #6f6f6f;
+}
+
+.home-page .return {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
 }
 
 .home-page .return_1 a {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
   display: inline-block;
+}
+
+.home-page .main_southern_container {
+  background: #313131;
+  border-top: 1px solid #363631;
+  width: 100%;
+  height: 320px;
+}
+
+.home-page .main_southern_container .box_container {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.home-page .white_boxes {
+  margin-top: 15px;
+  box-shadow: 0 1px 0 #373731, 0 -1px 0 #0e0d0b;
+  border-bottom: 1px solid #ffffff !important;
+  background: #ffffff;
+  position: relative;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.home-page .logo_bar {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-page .boxes {
+  border-radius: 9px 9px 9px 9px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 0 #373731, 0 -1px 0 #0e0d0b;
+  border-bottom: 1px solid #000000 !important;
+  background: #191814;
+  position: relative;
+}
+
+.home-page .boxes#left_main {
+  width: 429px;
+  height: 205px;
+  float: left;
+  margin-right: 15px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.home-page .boxes#center_main {
+  width: 187px;
+  height: 205px;
+  float: left;
+  margin-right: 15px;
+  margin-top: 20px;
+}
+
+.home-page .boxes#right_main {
+  width: 296px;
+  height: 205px;
+  float: left;
+  margin-top: 20px;
+}
+
+.home-page .height_container_150 {
+  padding-top: 2px;
+}
+
+.home-page .ncp_headline {
+  font: 40px "Century Gothic", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.home-page .ncp_headline#footer {
+  color: #ffffff;
   margin-top: 10px;
-  font-size: 13px;
-  text-decoration: underline;
+  font-size: 34px;
+  text-shadow: #000000 0 0 5px;
+  text-align: left;
 }
 
-@keyframes merrowFadeOut {
-  from { opacity: 1; }
-  to { opacity: 0; }
+.home-page .ncp_headline#footer a {
+  color: #ffffff;
 }
 
-@keyframes merrowFadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+.home-page .f_image {
+  float: left;
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .merrow-hero-base,
-  .merrow-hero-overlay {
-    animation: none !important;
+.home-page .f_image#b {
+  background: url(https://merrow-media.s3.amazonaws.com/general-http/2011_live/ft_01.gif.png) no-repeat -477px -158px;
+}
+
+.home-page .f_image#c {
+  background: url(https://merrow-media.s3.amazonaws.com/general-http/2011_live/ft_01.gif.png) no-repeat -387px -158px;
+}
+
+.home-page .f_image#d {
+  background: url(https://merrow-media.s3.amazonaws.com/general-http/2011_live/ft_01.gif.png) no-repeat -432px -158px;
+}
+
+.home-page .special_map_holder {
+  width: 200px;
+  height: 130px;
+  float: right;
+}
+
+.home-page .box_image#map {
+  z-index: 0;
+  display: block;
+  float: left;
+  margin-right: -200px;
+}
+
+.home-page .box_image#community {
+  background: url(https://merrow-media.s3.amazonaws.com/general-http/2011_live/ft_01.gif.png) no-repeat -310px 0;
+  width: 250px;
+  height: 150px;
+  margin-left: 20px;
+}
+
+.home-page .box_text {
+  color: #ffffff;
+  font-size: 11px;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height: 18px;
+}
+
+.home-page .homepage-desktop-overlays {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .home-page .homepage-desktop-overlays {
+    display: block;
   }
-  .merrow-hero-overlay {
-    opacity: 0 !important;
+
+  .home-page .homepage-desktop-share {
+    position: fixed;
+    left: 0;
+    top: 325px;
+    width: 50px;
+    height: 250px;
+    z-index: 10000000;
+    font-family: Arial, Helvetica, sans-serif;
   }
-  .merrow-hero-base {
-    opacity: 1 !important;
+
+  .home-page .homepage-desktop-share .share_label {
+    font-size: 11px;
+    color: #808080;
+    text-align: center;
+    padding: 3px 0;
+    background: #ffffff;
+  }
+
+  .home-page .homepage-desktop-share .share_item {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  .home-page .homepage-desktop-share .share_item:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .home-page .homepage-desktop-share .share_fb {
+    background: #3b5998;
+  }
+
+  .home-page .homepage-desktop-share .share_x {
+    background: #111111;
+  }
+
+  .home-page .homepage-desktop-share .share_pin {
+    background: #bd081c;
+  }
+
+  .home-page .homepage-desktop-share .share_mail {
+    background: #9fa4aa;
+    font-size: 20px;
+  }
+
+  .home-page .homepage-desktop-help-bubble {
+    position: fixed;
+    right: 31px;
+    bottom: 88px;
+    width: 193px;
+    height: 44px;
+    line-height: 44px;
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    text-align: center;
+    z-index: 999999;
+  }
+
+  .home-page .homepage-desktop-help-launcher {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    width: 64px;
+    height: 64px;
+    border-radius: 0;
+    background: #8c0808;
+    z-index: 999999;
+    box-shadow: none;
+  }
+
+  .home-page .homepage-desktop-help-launcher::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 22px;
+    left: 16px;
+    top: 17px;
+    background: #ffffff;
+    border-radius: 11px;
+  }
+
+  .home-page .homepage-desktop-help-launcher::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 34px;
+    top: 35px;
+    background: #ffffff;
+    transform: rotate(45deg);
   }
 }
