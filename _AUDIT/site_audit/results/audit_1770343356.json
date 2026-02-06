@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-02-05T21:02:36.441209",
+  "base_url": "http://127.0.0.1:3001",
+  "pages": {
+    "ok": [],
+    "not_found": [],
+    "empty": [],
+    "error": [
+      {
+        "url": "/",
+        "error": "HTTPConnectionPool(host='127.0.0.1', port=3001): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=3001): Failed to establish a new connection: [Errno 1] Operation not permitted\"))"
+      },
+      {
+        "url": "/support",
+        "error": "HTTPConnectionPool(host='127.0.0.1', port=3001): Max retries exceeded with url: /support (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=3001): Failed to establish a new connection: [Errno 1] Operation not permitted\"))"
+      },
+      {
+        "url": "/Sergers_and_Overlock_Sewing_Machines",
+        "error": "HTTPConnectionPool(host='127.0.0.1', port=3001): Max retries exceeded with url: /Sergers_and_Overlock_Sewing_Machines (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=3001): Failed to establish a new connection: [Errno 1] Operation not permitted\"))"
+      },
+      {
+        "url": "/sewing",
+        "error": "HTTPConnectionPool(host='127.0.0.1', port=3001): Max retries exceeded with url: /sewing (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=3001): Failed to establish a new connection: [Errno 1] Operation not permitted\"))"
+      },
+      {
+        "url": "/parts",
+        "error": "HTTPConnectionPool(host='127.0.0.1', port=3001): Max retries exceeded with url: /parts (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=3001): Failed to establish a new connection: [Errno 1] Operation not permitted\"))"
+      },
+      {
+        "url": "/sewing/applications",
+        "error": "HTTPConnectionPool(host='127.0.0.1', port=3001): Max retries exceeded with url: /sewing/applications (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=3001): Failed to establish a new connection: [Errno 1] Operation not permitted\"))"
+      },
+      {
+        "url": "/technical-sewing",
+        "error": "HTTPConnectionPool(host='127.0.0.1', port=3001): Max retries exceeded with url: /technical-sewing (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=3001): Failed to establish a new connection: [Errno 1] Operation not permitted\"))"
+      }
+    ]
+  },
+  "broken_links": []
+}

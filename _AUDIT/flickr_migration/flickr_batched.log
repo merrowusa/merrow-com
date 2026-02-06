@@ -1,0 +1,158 @@
+[21:24:01] === Flickr Batched Download ===
+[21:24:01] Batch size: 50 images
+[21:24:01] Cooldown: 30 minutes between batches
+[21:24:02] Found 175 photosets
+[21:26:03]   Batch progress: 10/50
+[21:26:38]   Batch progress: 20/50
+[21:27:13]   Batch progress: 30/50
+[21:27:49]   Batch progress: 40/50
+[21:28:24]   Batch progress: 50/50
+[21:28:26] Batch 1 complete: 50 downloaded (total: 50)
+[21:28:26] Cooling down for 30 minutes...
+[21:58:26] Resuming...
+[22:00:29]   Batch progress: 10/50
+[22:01:04]   Batch progress: 20/50
+[22:01:39]   Batch progress: 30/50
+[22:02:15]   Batch progress: 40/50
+[22:02:50]   Batch progress: 50/50
+[22:02:52] Batch 2 complete: 50 downloaded (total: 100)
+[22:02:52] Cooling down for 30 minutes...
+[22:32:52] Resuming...
+[22:34:57]   Batch progress: 10/50
+[22:35:33]   Batch progress: 20/50
+[22:36:09]   Batch progress: 30/50
+[22:36:44]   Batch progress: 40/50
+[22:37:21]   Batch progress: 50/50
+[22:37:23] Batch 3 complete: 50 downloaded (total: 150)
+[22:37:23] Cooling down for 30 minutes...
+[23:07:23] Resuming...
+[23:09:34]   Batch progress: 10/50
+[23:10:09]   Batch progress: 20/50
+[23:10:45]   Batch progress: 30/50
+[23:11:21]   Batch progress: 40/50
+[23:11:54]   Batch progress: 50/50
+[23:11:56] Batch 4 complete: 50 downloaded (total: 200)
+[23:11:56] Cooling down for 30 minutes...
+[23:41:56] Resuming...
+[23:44:09]   Batch progress: 10/50
+[23:44:43]   Batch progress: 20/50
+[23:45:18]   Batch progress: 30/50
+[23:45:53]   Batch progress: 40/50
+[23:46:28]   Batch progress: 50/50
+[23:46:30] Batch 5 complete: 50 downloaded (total: 250)
+[23:46:30] Cooling down for 30 minutes...
+[00:16:30] Resuming...
+[00:18:42]   Batch progress: 10/50
+[00:19:16]   Batch progress: 20/50
+[00:19:50]   Batch progress: 30/50
+[00:20:25]   Batch progress: 40/50
+[00:20:59]   Batch progress: 50/50
+[00:21:01] Batch 6 complete: 50 downloaded (total: 300)
+[00:21:01] Cooling down for 30 minutes...
+[00:51:01] Resuming...
+[00:53:12]   Batch progress: 10/50
+[00:53:47]   Batch progress: 20/50
+[00:54:21]   Batch progress: 30/50
+[00:54:55]   Batch progress: 40/50
+[00:55:29]   Batch progress: 50/50
+[00:55:31] Batch 7 complete: 50 downloaded (total: 350)
+[00:55:31] Cooling down for 30 minutes...
+[01:25:31] Resuming...
+[01:27:43]   Batch progress: 10/50
+[01:28:17]   Batch progress: 20/50
+[01:28:52]   Batch progress: 30/50
+[01:29:26]   Batch progress: 40/50
+[01:30:00]   Batch progress: 50/50
+[01:30:02] Batch 8 complete: 50 downloaded (total: 400)
+[01:30:02] Cooling down for 30 minutes...
+[02:00:02] Resuming...
+[02:02:17]   Batch progress: 10/50
+[02:02:52]   Batch progress: 20/50
+[02:03:28]   Batch progress: 30/50
+[02:04:03]   Batch progress: 40/50
+[02:04:42]   Batch progress: 50/50
+[02:04:44] Batch 9 complete: 50 downloaded (total: 450)
+[02:04:44] Cooling down for 30 minutes...
+[02:34:44] Resuming...
+[02:37:05]   Batch progress: 10/50
+[02:37:43]   Batch progress: 20/50
+[02:38:21]   Batch progress: 30/50
+[02:38:57]   Batch progress: 40/50
+[02:39:33]   Batch progress: 50/50
+[02:39:35] Batch 10 complete: 50 downloaded (total: 500)
+[02:39:35] Cooling down for 30 minutes...
+[03:09:35] Resuming...
+[03:12:08]   Batch progress: 10/50
+[03:12:45]   Batch progress: 20/50
+[03:13:19]   Batch progress: 30/50
+[03:13:56]   Batch progress: 40/50
+[03:14:33]   Batch progress: 50/50
+[03:14:35] Batch 11 complete: 50 downloaded (total: 550)
+[03:14:35] Cooling down for 30 minutes...
+[03:44:35] Resuming...
+[03:47:17]   Batch progress: 10/50
+[03:47:53]   Batch progress: 20/50
+[03:48:30]   Batch progress: 30/50
+[03:49:06]   Batch progress: 40/50
+[03:49:41]   Batch progress: 50/50
+[03:49:43] Batch 12 complete: 50 downloaded (total: 600)
+[03:49:43] Cooling down for 30 minutes...
+[04:19:43] Resuming...
+[04:22:29]   Batch progress: 10/50
+[04:23:05]   Batch progress: 20/50
+[04:23:39]   Batch progress: 30/50
+[04:24:14]   Batch progress: 40/50
+[04:24:48]   Batch progress: 50/50
+[04:24:50] Batch 13 complete: 50 downloaded (total: 650)
+[04:24:50] Cooling down for 30 minutes...
+[04:54:50] Resuming...
+[04:57:39]   Batch progress: 10/50
+[04:58:15]   Batch progress: 20/50
+[04:58:49]   Batch progress: 30/50
+[04:59:25]   Batch progress: 40/50
+[04:59:59]   Batch progress: 50/50
+[05:00:01] Batch 14 complete: 50 downloaded (total: 700)
+[05:00:01] Cooling down for 30 minutes...
+[05:30:01] Resuming...
+[05:33:03]   Batch progress: 10/50
+[05:33:43]   Batch progress: 20/50
+[05:34:20]   Batch progress: 30/50
+[05:34:59]   Batch progress: 40/50
+[05:35:36]   Batch progress: 50/50
+[05:35:38] Batch 15 complete: 50 downloaded (total: 750)
+[05:35:38] Cooling down for 30 minutes...
+[06:05:38] Resuming...
+[06:09:01]   Batch progress: 10/50
+[06:09:37]   Batch progress: 20/50
+[06:10:13]   Batch progress: 30/50
+[06:10:50]   Batch progress: 40/50
+[06:11:27]   Batch progress: 50/50
+[06:11:29] Batch 16 complete: 50 downloaded (total: 800)
+[06:11:29] Cooling down for 30 minutes...
+[06:41:29] Resuming...
+[06:44:51]   Batch progress: 10/50
+[06:45:29]   Batch progress: 20/50
+[06:46:07]   Batch progress: 30/50
+[06:46:44]   Batch progress: 40/50
+[06:47:20]   Batch progress: 50/50
+[06:47:22] Batch 17 complete: 50 downloaded (total: 850)
+[06:47:22] Cooling down for 30 minutes...
+[07:17:22] Resuming...
+[07:20:56]   Batch progress: 10/50
+[07:21:32]   Batch progress: 20/50
+[07:22:05]   Batch progress: 30/50
+[07:22:42]   Batch progress: 40/50
+[07:23:19]   Batch progress: 50/50
+[07:23:21] Batch 18 complete: 50 downloaded (total: 900)
+[07:23:21] Cooling down for 30 minutes...
+[07:53:21] Resuming...
+[07:56:54]   Batch progress: 10/50
+[07:57:30]   Batch progress: 20/50
+[07:58:06]   Batch progress: 30/50
+[07:58:41]   Batch progress: 40/50
+[07:59:18]   Batch progress: 50/50
+[07:59:20] Batch 19 complete: 50 downloaded (total: 950)
+[07:59:20] Cooling down for 30 minutes...
+[08:29:20] Resuming...
+[08:32:59]   Batch progress: 10/50
+[08:33:33]   Batch progress: 20/50

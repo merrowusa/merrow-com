@@ -1,0 +1,605 @@
+{
+  "timestamp": "2026-02-05T20:50:20.791681",
+  "base_url": "http://localhost:3000",
+  "pages": {
+    "ok": [
+      {
+        "url": "/support",
+        "status": 200,
+        "links_found": 165
+      },
+      {
+        "url": "/sewing/applications/5512",
+        "status": 200,
+        "links_found": 47
+      },
+      {
+        "url": "/machines/70d3b2rail",
+        "status": 200,
+        "links_found": 45
+      },
+      {
+        "url": "/support/class/CROCHET/key/trouble_loosestitches",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/class/70/key/trouble_feeding",
+        "status": 200,
+        "links_found": 165
+      },
+      {
+        "url": "/support/class/MG/key/trouble_stitch",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/diagram/Threading-No.-EXC-345-97.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/class/key/mediakeyword/701d2",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/",
+        "status": 200,
+        "links_found": 45
+      },
+      {
+        "url": "/fashion-sewing",
+        "status": 200,
+        "links_found": 52
+      },
+      {
+        "url": "/support/diagram/Threading-No.-50.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/machines/711d7cnp",
+        "status": 200,
+        "links_found": 43
+      },
+      {
+        "url": "/Sergers_and_Overlock_Sewing_Machines/mg2dnr1",
+        "status": 200,
+        "links_found": 47
+      },
+      {
+        "url": "/support/diagram/Threading-No.-74.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/sewing/applications/5515",
+        "status": 200,
+        "links_found": 47
+      },
+      {
+        "url": "/support/class/MG/key/setup_needles",
+        "status": 200,
+        "links_found": 166
+      },
+      {
+        "url": "/support/class/key/mediakeyword/701d7",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/sewing/applications/narrowemblemedge",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/stitch-lab",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/njp.php",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/support/class/MG/key/setup_loopers",
+        "status": 200,
+        "links_found": 167
+      },
+      {
+        "url": "/support/diagram/Threading-No.-Special.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/class/key/mediakeyword/70d3b2cnp",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/class/CROCHET/key/setup",
+        "status": 200,
+        "links_found": 165
+      },
+      {
+        "url": "/machines/mg3dw2",
+        "status": 200,
+        "links_found": 43
+      },
+      {
+        "url": "/support/diagram/Threading-No.-23.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/class/CROCHET/key/maint_spreader",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/class/key/mediakeyword/m1d7",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/machines/70d3b2g",
+        "status": 200,
+        "links_found": 46
+      },
+      {
+        "url": "/support/diagram/Threading-No.-EXC-696-6.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/customer-stories",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/support/diagram/Threading-No.-78S.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/machines/18e",
+        "status": 200,
+        "links_found": 47
+      },
+      {
+        "url": "/Sergers_and_Overlock_Sewing_Machines/mb4dfo",
+        "status": 200,
+        "links_found": 51
+      },
+      {
+        "url": "/support/class/MG/key/trouble_skippedstitch",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/class/70/key/setup_loopers",
+        "status": 200,
+        "links_found": 178
+      },
+      {
+        "url": "/support/class/key/mediakeyword/70d3b2rail",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/diagram/Threading-No.-41.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/contact_general.html",
+        "status": 200,
+        "links_found": 43
+      },
+      {
+        "url": "/support/class/CROCHET/key/maint_castoff",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/sewing/applications/5514",
+        "status": 200,
+        "links_found": 45
+      },
+      {
+        "url": "/support/class/MG/key/setup_knife",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/sewing/applications/flatcrochetstitch",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/support/class/70/key/trouble_skippedstitch",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/diagram/Threading-No.-M-52.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/diagram/Threading-No.-EXC-787-6.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/diagram/Threading-No.-6.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/class/CROCHET/key/maint_threadcarrier",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/class/CROCHET/key/maint_feedSHELL",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/support/diagram/Threading-No.-M-63.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/diagram/Threading-No.-40.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/diagram/Threading-No.-54.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/machines/mg3dge7",
+        "status": 200,
+        "links_found": 45
+      },
+      {
+        "url": "/machines/711d2cnp",
+        "status": 200,
+        "links_found": 43
+      },
+      {
+        "url": "/support/class/key/mediakeyword/70y3b2",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/sewing/applications/vulcanizedrubber",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/support/diagram/Threading-No.-47.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/machines/711d2",
+        "status": 200,
+        "links_found": 43
+      },
+      {
+        "url": "/support/class/70/key/trouble_oil",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/machines/72d3b2r",
+        "status": 200,
+        "links_found": 47
+      },
+      {
+        "url": "/support/class/MG/key/setup",
+        "status": 200,
+        "links_found": 167
+      },
+      {
+        "url": "/support/class/70/key/setup_framecap",
+        "status": 200,
+        "links_found": 166
+      },
+      {
+        "url": "/support/class/MG/key/setup_presser",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/class/CROCHET/key/maint_hook",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/sewing/applications/purltanktop",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/support/diagram/Threading-No.-EXC-345-114-1.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/class/key/mediakeyword/22fj",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/sewing/applications/polartecpowerstretch",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/agentmap.html",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/support/diagram/Threading-No.-70.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/class/CROCHET/key/maint_needleguard",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/sewing/applications/foldingnapkins",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/parts",
+        "status": 200,
+        "links_found": 63
+      },
+      {
+        "url": "/support/diagram/Threading-No.-D-2DNR-1.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/Sergers_and_Overlock_Sewing_Machines/mg3dwrl",
+        "status": 200,
+        "links_found": 45
+      },
+      {
+        "url": "/support/class/CROCHET/key/maint_feedALL",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/needle_configurator.html",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/sewing/applications/5517",
+        "status": 200,
+        "links_found": 47
+      },
+      {
+        "url": "/support/class/MG/key/setup_threading",
+        "status": 200,
+        "links_found": 180
+      },
+      {
+        "url": "/support/diagram/Threading-No.-67.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/machines/70d3b2hp",
+        "status": 200,
+        "links_found": 46
+      },
+      {
+        "url": "/sewing/applications/advancedprotectivecombatuniform",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/support/class/CROCHET/key/trouble_breakingneedles",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/class/CROCHET/key/maint_needles",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/class/70/key/setup_knife",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/sewing/applications/5518",
+        "status": 200,
+        "links_found": 46
+      },
+      {
+        "url": "/support/class/CROCHET/key/maint_threading",
+        "status": 200,
+        "links_found": 166
+      },
+      {
+        "url": "/Sergers_and_Overlock_Sewing_Machines/mg3q3",
+        "status": 200,
+        "links_found": 47
+      },
+      {
+        "url": "/parts/76804717/711d2cnp",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/technical-sewing",
+        "status": 200,
+        "links_found": 54
+      },
+      {
+        "url": "/sewing/applications/nomexflightsuit",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/support/diagram/Threading-No.-55.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/diagram/Threading-No.-C-859-53.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/diagram/Threading-No.-46.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/diagram/Threading-No.-76.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/Sergers_and_Overlock_Sewing_Machines/mg3dw",
+        "status": 200,
+        "links_found": 45
+      },
+      {
+        "url": "/customer-stories/featured/csb",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/support/class/MG/key/setup_gencutting",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/diagram/Threading-No.-72-Special.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/diagram/Threading-No.-20.jpg/showthemapicture/ohyeah",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/class/key/mediakeyword/mg2dnr1",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/class/70/key/trouble_thread",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/sewing/applications/fleecelinedjeans",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/support/class/70/key/setup_presser",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/class/key/mediakeyword/mg3u",
+        "status": 200,
+        "links_found": 164
+      },
+      {
+        "url": "/support/request-quote",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/sewing/applications/topofsockshell",
+        "status": 200,
+        "links_found": 44
+      }
+    ],
+    "not_found": [
+      {
+        "url": "/javascript:popOne()",
+        "status": 404
+      },
+      {
+        "url": "/javascript:popThirteen()",
+        "status": 404
+      },
+      {
+        "url": "/javascript:popTwo()",
+        "status": 404
+      },
+      {
+        "url": "/../downloads/mounting2.pdf",
+        "status": 404
+      },
+      {
+        "url": "/http://www.merrow.com/english/manuals/mgmclass/pics/threading/thread-no56style.htm",
+        "status": 404
+      },
+      {
+        "url": "/http://www.merrow.com/english/manuals/mgmclass/pics/threading/thread-no38-styleM3.htm",
+        "status": 404
+      },
+      {
+        "url": "//frontviewbig.htm",
+        "status": 404
+      },
+      {
+        "url": "/upperlooper.htm",
+        "status": 404
+      },
+      {
+        "url": "/javascript:popEleven()",
+        "status": 404
+      },
+      {
+        "url": "/javascript:popFour()",
+        "status": 404
+      },
+      {
+        "url": "/http://www.merrow.com/english/manuals/mgmclass/pics/threading/thread-noM44-styleM2.htm",
+        "status": 404
+      }
+    ],
+    "empty": [
+      {
+        "url": "/needleplate.htm",
+        "status": 200,
+        "links_found": 0,
+        "reason": "Page loaded but lacks substantive content"
+      },
+      {
+        "url": "//needleplate.htm",
+        "status": 200,
+        "links_found": 0,
+        "reason": "Page loaded but lacks substantive content"
+      }
+    ],
+    "error": []
+  },
+  "broken_links": []
+}

@@ -1,0 +1,610 @@
+{
+  "timestamp": "2026-02-05T20:39:06.597060",
+  "base_url": "http://localhost:3000",
+  "pages": {
+    "ok": [
+      {
+        "url": "/Sergers_and_Overlock_Sewing_Machines",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/sewing/applications/5516",
+        "status": 200,
+        "links_found": 46
+      },
+      {
+        "url": "/customer-stories/featured/csrw",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/contact_general.html",
+        "status": 200,
+        "links_found": 43
+      },
+      {
+        "url": "/sewing/applications/5517",
+        "status": 200,
+        "links_found": 47
+      },
+      {
+        "url": "/sewing/applications/5519",
+        "status": 200,
+        "links_found": 46
+      },
+      {
+        "url": "/parts",
+        "status": 200,
+        "links_found": 63
+      },
+      {
+        "url": "/parts/76791780/18e",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/parts/76793414/70d3b2",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/sewing/applications/5512",
+        "status": 200,
+        "links_found": 47
+      },
+      {
+        "url": "/sewing/applications/wideemblemedge",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/needle_configurator.html",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/sewing/applications/bibsandburpcloths",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/",
+        "status": 200,
+        "links_found": 45
+      },
+      {
+        "url": "/machines/18e",
+        "status": 200,
+        "links_found": 47
+      },
+      {
+        "url": "/parts/76791778/18a",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/sewing/applications/curtains",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/end-to-end-seaming",
+        "status": 200,
+        "links_found": 57
+      },
+      {
+        "url": "/sewing/applications/5514",
+        "status": 200,
+        "links_found": 45
+      },
+      {
+        "url": "/sewing/applications/standardemblemedge",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/machines/70d3b2ls",
+        "status": 200,
+        "links_found": 46
+      },
+      {
+        "url": "/sewing/applications/overedgemilitaryblanket",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/machines/70d3b2g",
+        "status": 200,
+        "links_found": 46
+      },
+      {
+        "url": "/sewing/applications/rolledcrochetstitch",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/Overlock_Sewing_Machines/Continuous_Processing/711d7cnp",
+        "status": 200,
+        "links_found": 43
+      },
+      {
+        "url": "/sewing/applications/microfiberslipcover",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/sewing/applications/fiberglass",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/machines/mg2dnr1",
+        "status": 200,
+        "links_found": 47
+      },
+      {
+        "url": "/Overlock_Sewing_Machines/Continuous_Processing/72d3b2r",
+        "status": 200,
+        "links_found": 47
+      },
+      {
+        "url": "/Overlock_Sewing_Machines/Continuous_Processing/72d3b2",
+        "status": 200,
+        "links_found": 49
+      },
+      {
+        "url": "/sewing/applications/advancedprotectivecombatuniform",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/sewing/applications/jerseyknit",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/machines/70d3b2rail",
+        "status": 200,
+        "links_found": 45
+      },
+      {
+        "url": "/sewing/applications/tricot",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/parts/76797620/mg3q3",
+        "status": 200,
+        "links_found": 43
+      },
+      {
+        "url": "/customer-stories/featured/csb",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/sewing/applications/5524",
+        "status": 200,
+        "links_found": 49
+      },
+      {
+        "url": "/parts/76803782/72d3b2",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/sewing/applications/gabardine",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/parts/76797494/mg2dnr1",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/parts/76797629/mg3u",
+        "status": 200,
+        "links_found": 43
+      },
+      {
+        "url": "/machines/711d2",
+        "status": 200,
+        "links_found": 43
+      },
+      {
+        "url": "/Sergers_and_Overlock_Sewing_Machines/what-is-a-serger",
+        "status": 200,
+        "links_found": 43
+      },
+      {
+        "url": "/sewing/applications/foldingnapkins",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/sewing/applications/velcroemblemedge",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/Overlock_Sewing_Machines/Continuous_Processing/70d3b2hp",
+        "status": 200,
+        "links_found": 46
+      },
+      {
+        "url": "/Overlock_Sewing_Machines/Continuous_Processing/70d3b2cnp",
+        "status": 200,
+        "links_found": 46
+      },
+      {
+        "url": "/sewing/applications/narrowemblemedge",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/stitch-lab",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/sewing/applications/stretchnylon",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/sewing/applications/5513",
+        "status": 200,
+        "links_found": 49
+      },
+      {
+        "url": "/sewing/applications/polyesterfleece",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/parts/76797497/mg2dnr1micro",
+        "status": 200,
+        "links_found": 43
+      },
+      {
+        "url": "/machines/mg3q3",
+        "status": 200,
+        "links_found": 47
+      },
+      {
+        "url": "/machines/mg3dw2",
+        "status": 200,
+        "links_found": 43
+      },
+      {
+        "url": "/parts/76804632/12e",
+        "status": 200,
+        "links_found": 43
+      },
+      {
+        "url": "/about.html",
+        "status": 200,
+        "links_found": 45
+      },
+      {
+        "url": "/machines",
+        "status": 200,
+        "links_found": 50
+      },
+      {
+        "url": "/machines/18a",
+        "status": 200,
+        "links_found": 45
+      },
+      {
+        "url": "/machines/70d3b2",
+        "status": 200,
+        "links_found": 45
+      },
+      {
+        "url": "/parts/76793427/70d3b2hp",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/parts/76804718/711d7cnp",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/sewing/applications/flatcrochetstitch",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/customer-stories/featured/csam",
+        "status": 200,
+        "links_found": 43
+      },
+      {
+        "url": "/support/request-quote",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/overlock-history",
+        "status": 200,
+        "links_found": 43
+      },
+      {
+        "url": "/parts/76793432/70d3b2rail",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/sewing/applications",
+        "status": 200,
+        "links_found": 103
+      },
+      {
+        "url": "/sewing/applications/terryclothfacecloth",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/sewing",
+        "status": 200,
+        "links_found": 48
+      },
+      {
+        "url": "/machines/mg2u",
+        "status": 200,
+        "links_found": 45
+      },
+      {
+        "url": "/sewing/applications/5515",
+        "status": 200,
+        "links_found": 47
+      },
+      {
+        "url": "/Overlock_Sewing_Machines/Continuous_Processing/70d3b2rail",
+        "status": 200,
+        "links_found": 45
+      },
+      {
+        "url": "/Overlock_Sewing_Machines/Continuous_Processing/70y3b2",
+        "status": 200,
+        "links_found": 45
+      },
+      {
+        "url": "/sewing/applications/rolledfiberglassseam",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/sewing/applications/circularknits",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/agentmap.html",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/sewing/applications/nomexflightsuit",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/sewing/applications/nonwovengeotextile",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/machines/mg2dnr1micro",
+        "status": 200,
+        "links_found": 46
+      },
+      {
+        "url": "/sewing/applications/flatemblemedge",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/machines/mg3dge7",
+        "status": 200,
+        "links_found": 45
+      },
+      {
+        "url": "/sewing/applications/tubularknits",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/customer-stories",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/sewing/applications/kevlarglove",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/sewing/applications/purl",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/Overlock_Sewing_Machines/Continuous_Processing/711d2cnp",
+        "status": 200,
+        "links_found": 43
+      },
+      {
+        "url": "/sewing/applications/fleecelinedjeans",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/parts/76803760/70d3b2g",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/machines/72d3b2",
+        "status": 200,
+        "links_found": 49
+      },
+      {
+        "url": "/sewing/applications/vulcanizedrubber",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/sewing/applications/midweightfleece",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/stitch.html",
+        "status": 200,
+        "links_found": 43
+      },
+      {
+        "url": "/machines/70d3b2hp",
+        "status": 200,
+        "links_found": 46
+      },
+      {
+        "url": "/sewing/applications/purltanktop",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/parts/76793420/70d3b2cnp",
+        "status": 200,
+        "links_found": 43
+      },
+      {
+        "url": "/sewing/applications/fleecehatsandoutfits",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/parts/76803780/72d3b2r",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/sewing/applications/vinylleather",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/parts/76797634/mg3uvelcro",
+        "status": 200,
+        "links_found": 43
+      },
+      {
+        "url": "/sewing/applications/micropurl",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/technical-sewing",
+        "status": 200,
+        "links_found": 54
+      },
+      {
+        "url": "/parts/76804717/711d2cnp",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/fashion-sewing",
+        "status": 200,
+        "links_found": 52
+      },
+      {
+        "url": "/sewing/applications/softshell",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/machines/72d3b2r",
+        "status": 200,
+        "links_found": 47
+      },
+      {
+        "url": "/sewing/applications/topofsockshell",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/parts/76797633/mg2u",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/Sergers_and_Overlock_Sewing_Machines/mg3dw",
+        "status": 200,
+        "links_found": 45
+      },
+      {
+        "url": "/Sergers_and_Overlock_Sewing_Machines/18a",
+        "status": 200,
+        "links_found": 45
+      },
+      {
+        "url": "/sewing/applications/shagfleecemat",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/Overlock_Sewing_Machines/Continuous_Processing/70d3b2ls",
+        "status": 200,
+        "links_found": 46
+      },
+      {
+        "url": "/Overlock_Sewing_Machines/Continuous_Processing/70d3b2g",
+        "status": 200,
+        "links_found": 46
+      },
+      {
+        "url": "/parts/76803782/711d2",
+        "status": 200,
+        "links_found": 42
+      },
+      {
+        "url": "/sewing/applications/filtermaterial",
+        "status": 200,
+        "links_found": 44
+      },
+      {
+        "url": "/sewing/applications/5518",
+        "status": 200,
+        "links_found": 46
+      },
+      {
+        "url": "/sewing/applications/135gmerinowool",
+        "status": 200,
+        "links_found": 44
+      }
+    ],
+    "not_found": [
+      {
+        "url": "/njp.php",
+        "status": 404
+      },
+      {
+        "url": "/widget_marketing_material.php",
+        "status": 404
+      },
+      {
+        "url": "/sewing/applications/5523",
+        "status": 404
+      }
+    ],
+    "empty": [],
+    "error": []
+  },
+  "broken_links": []
+}

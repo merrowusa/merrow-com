@@ -80,3 +80,248 @@ h1, h2, h3 {
   color: #808080;
   font-size: 12px;
 }
+
+/* Legacy home page (index.php) */
+.home-page .background_gradient {
+  background: linear-gradient(#ffffff, #ededed);
+  padding: 18px 0 26px;
+}
+
+.home-page .center_bloc,
+.home-page .body_doc,
+.home-page .bridge_container {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.home-page .main_content,
+.home-page .branded_content {
+  width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-page .headline h1 {
+  margin: 6px 0 16px;
+  font-size: 32px;
+  line-height: 34px;
+  color: #111111;
+}
+
+.home-page .headline h2 {
+  margin: 6px 0 0;
+  font-size: 20px;
+  line-height: 24px;
+  color: #222222;
+}
+
+.home-page .main_image {
+  float: left;
+  width: 321px;
+  text-align: center;
+}
+
+.home-page .main_image#center {
+  margin: 0 8px;
+}
+
+.home-page .main_image .image_holder {
+  height: 370px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.home-page .main_image .center_stack {
+  position: relative;
+  width: 321px;
+  height: 370px;
+}
+
+.home-page #center_front_1,
+.home-page #center_front_2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.home-page .merrow-hero-base {
+  opacity: 1;
+  animation: merrowFadeOut 4s ease forwards;
+  animation-delay: 2s;
+}
+
+.home-page .merrow-hero-overlay {
+  opacity: 0;
+  animation: merrowFadeIn 4.5s ease forwards;
+  animation-delay: 6.3s;
+}
+
+.home-page .main_image img {
+  display: block;
+}
+
+.home-page .main_image h2 {
+  margin: 6px 0 2px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #111111;
+}
+
+.home-page .main_image p.machines {
+  margin: 0 0 4px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #6a6a6a;
+}
+
+.home-page .learn,
+.home-page .learn_submain {
+  display: block;
+  width: 72px;
+  height: 16px;
+  margin: 4px auto 0;
+  background: #3f3f3f;
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.home-page .center_text {
+  margin: 14px auto 0;
+  width: 720px;
+  font-size: 11px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.home-page .clear {
+  clear: both;
+}
+
+.home-page .main_middle_container {
+  background: linear-gradient(to bottom, #c0c0c0, #7d7d7d);
+  padding: 10px 0 18px;
+}
+
+.home-page .main_middle_container .box_container {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.home-page .grey_boxes {
+  float: left;
+  width: 480px;
+  min-height: 160px;
+  padding: 8px 10px;
+  background: #a9a9a9;
+  border-radius: 9px;
+  box-shadow: 0 1px 0 #373731, 0 -1px 0 #0e0d0b;
+  color: #ffffff;
+}
+
+.home-page .grey_boxes#left_main {
+  margin-right: 20px;
+}
+
+.home-page .grey_boxes img#left,
+.home-page .grey_boxes img#right_neg {
+  float: left;
+  margin: 4px 10px 0 0;
+}
+
+.home-page .box_headline {
+  font-size: 20px;
+  color: #1d1818;
+  text-shadow: #ededed 0 1px 0;
+}
+
+.home-page .box_subline {
+  margin-top: 2px;
+  font-size: 14px;
+  color: #1d1818;
+}
+
+.home-page .main_boxes {
+  margin: 6px 0 0;
+  font-size: 11px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.home-page .learn_submain {
+  float: right;
+  margin-top: 8px;
+}
+
+.home-page .byline h2 {
+  margin: 4px 0;
+  font-size: 18px;
+  line-height: 22px;
+  color: #111111;
+}
+
+.home-page .form_branded h3 {
+  margin: 12px 0 6px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.home-page .center_box {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.home-page #dixie {
+  width: 280px;
+  border: 1px solid #cfcfcf;
+  padding: 6px 8px;
+  font-size: 13px;
+  color: #111111;
+}
+
+.home-page #aphrodite {
+  border: 0;
+  background: #3f3f3f;
+  color: #ffffff;
+  padding: 4px 12px;
+  font-size: 11px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.home-page .return_1 a {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+@keyframes merrowFadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes merrowFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .merrow-hero-base,
+  .merrow-hero-overlay {
+    animation: none !important;
+  }
+  .merrow-hero-overlay {
+    opacity: 0 !important;
+  }
+  .merrow-hero-base {
+    opacity: 1 !important;
+  }
+}

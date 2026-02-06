@@ -66,6 +66,64 @@
         "noscript"
       ],
       "requireSameDimensions": false
+    },
+    {
+      "label": "Legacy vs Refactor — Homepage Hero",
+      "referenceUrl": "https://www.merrow.com/",
+      "url": "${REFACTOR_PREVIEW_URL}/",
+      "delay": 2000,
+      "misMatchThreshold": 35,
+      "selectors": [".main_content"],
+      "selectorExpansion": false,
+      "hideSelectors": [
+        ".google-analytics",
+        ".chat-widget",
+        ".cookie-banner",
+        ".red_top"
+      ],
+      "removeSelectors": [
+        "script",
+        "noscript"
+      ],
+      "requireSameDimensions": false
+    },
+    {
+      "label": "Legacy vs Refactor — Homepage Middle (Machines)",
+      "referenceUrl": "https://www.merrow.com/",
+      "url": "${REFACTOR_PREVIEW_URL}/",
+      "delay": 2000,
+      "misMatchThreshold": 35,
+      "selectors": [".main_middle_container"],
+      "selectorExpansion": false,
+      "hideSelectors": [
+        ".google-analytics",
+        ".chat-widget",
+        ".cookie-banner"
+      ],
+      "removeSelectors": [
+        "script",
+        "noscript"
+      ],
+      "requireSameDimensions": false
+    },
+    {
+      "label": "Legacy vs Refactor — Homepage Grey Boxes",
+      "referenceUrl": "https://www.merrow.com/",
+      "url": "${REFACTOR_PREVIEW_URL}/",
+      "delay": 2000,
+      "misMatchThreshold": 35,
+      "selectors": [".grey_boxes"],
+      "selectorExpansion": false,
+      "hideSelectors": [
+        ".google-analytics",
+        ".chat-widget",
+        ".cookie-banner"
+      ],
+      "removeSelectors": [
+        "script",
+        "noscript"
+      ],
+      "requireSameDimensions": false
     }
   ],
   "paths": {

@@ -1,0 +1,147 @@
+[08:50:11] === Flickr Batched Download ===
+[08:50:11] Batch size: 200 images
+[08:50:11] Cooldown: 5 minutes between batches
+[08:50:13] Found 175 photosets
+[08:50:14]     UPGRADED 8658255730 to original
+[08:50:16]     UPGRADED 7441947894 to original
+[08:50:18]     UPGRADED 7441947988 to original
+[08:50:20]     UPGRADED 7441910954 to original
+[08:50:22]     UPGRADED 7441911196 to original
+[08:50:23]     UPGRADED 7441911062 to original
+[08:50:25]     UPGRADED 7441911000 to original
+[08:50:27]     UPGRADED 7312713604 to original
+[08:50:29]     UPGRADED 7312712948 to original
+[08:50:30]     UPGRADED 7312712388 to original
+[08:50:30]   Batch progress: 10/200
+[08:50:32]     UPGRADED 6923957393 to original
+[08:50:34]     UPGRADED 5690610812 to original
+[08:50:36]     UPGRADED 5690034893 to original
+[08:50:37]     UPGRADED 5690591462 to original
+[08:50:39]     UPGRADED 5690591404 to original
+[08:50:41]     UPGRADED 5690015967 to original
+[08:50:43]     UPGRADED 5664989813 to original
+[08:50:45]     UPGRADED 5661492033 to original
+[08:50:46]     UPGRADED 5662059592 to original
+[08:50:48]     UPGRADED 5634257313 to original
+[08:50:48]   Batch progress: 20/200
+[08:50:50]     UPGRADED 5634257241 to original
+[08:50:52]     UPGRADED 5634257191 to original
+[08:50:53]     UPGRADED 5634837652 to original
+[08:50:55]     UPGRADED 5515272742 to original
+[08:50:57]     UPGRADED 5515272698 to original
+[08:50:59]     UPGRADED 5514679903 to original
+[08:51:01]     UPGRADED 5367072804 to original
+[08:51:02]     UPGRADED 5333137939 to original
+[08:51:04]     UPGRADED 5333137911 to original
+[08:51:06]     UPGRADED 5333137865 to original
+[08:51:06]   Batch progress: 30/200
+[08:51:08]     UPGRADED 5333137839 to original
+[08:51:09]     UPGRADED 5333024423 to original
+[08:51:11]     UPGRADED 5333024383 to original
+[08:51:13]     UPGRADED 5333512542 to original
+[08:51:15]     UPGRADED 5333512494 to original
+[08:51:16]     UPGRADED 5333298940 to original
+[08:51:18]     UPGRADED 5332684061 to original
+[08:51:20]     UPGRADED 5333298898 to original
+[08:51:22]     UPGRADED 5332684005 to original
+[08:51:23]     UPGRADED 5333298810 to original
+[08:51:23]   Batch progress: 40/200
+[08:51:25]     UPGRADED 5332683957 to original
+[08:51:27]     UPGRADED 5332683903 to original
+[08:51:29]     UPGRADED 5285391193 to original
+[08:51:31]     UPGRADED 5285933216 to original
+[08:51:32]     UPGRADED 5285336057 to original
+[08:51:34]     UPGRADED 5285933144 to original
+[08:51:36]     UPGRADED 5285272235 to original
+[08:51:38]     UPGRADED 5285869916 to original
+[08:51:40]     UPGRADED 5285267543 to original
+[08:51:41]     UPGRADED 5285251745 to original
+[08:51:41]   Batch progress: 50/200
+[08:51:43]     UPGRADED 5285779918 to original
+[08:51:45]     UPGRADED 5285181891 to original
+[08:51:47]     UPGRADED 5283484783 to original
+[08:51:48]     UPGRADED 5283484757 to original
+[08:51:50]     UPGRADED 5205005278 to original
+[08:51:52]     UPGRADED 5205005236 to original
+[08:51:54]     UPGRADED 5204408349 to original
+[08:51:55]     UPGRADED 5204408279 to original
+[08:51:57]     UPGRADED 5205005066 to original
+[08:51:59]     UPGRADED 5204408183 to original
+[08:51:59]   Batch progress: 60/200
+[08:52:01]     UPGRADED 5204408155 to original
+[08:52:03]     UPGRADED 5205004968 to original
+[08:52:04]     UPGRADED 5204408075 to original
+[08:52:06]     UPGRADED 5033199993 to original
+[08:52:08]     UPGRADED 5014786815 to original
+[08:52:11]     UPGRADED 8658255730 to original
+[08:52:13]     UPGRADED 7441947894 to original
+[08:52:14]     UPGRADED 7441947988 to original
+[08:52:16]     UPGRADED 7441910954 to original
+[08:52:18]     UPGRADED 7441911196 to original
+[08:52:18]   Batch progress: 70/200
+[08:52:20]     UPGRADED 7441911062 to original
+[08:52:21]     UPGRADED 7441911000 to original
+[08:52:23]     UPGRADED 7312713604 to original
+[08:52:25]     UPGRADED 7312712948 to original
+[08:52:27]     UPGRADED 7312712388 to original
+[08:52:28]     UPGRADED 6923957393 to original
+[08:52:30]     UPGRADED 5690610812 to original
+[08:52:32]     UPGRADED 5690034893 to original
+[08:52:34]     UPGRADED 5690591462 to original
+[08:52:35]     UPGRADED 5690591404 to original
+[08:52:35]   Batch progress: 80/200
+[08:52:37]     UPGRADED 5690015967 to original
+[08:52:39]     UPGRADED 5664989813 to original
+[08:52:41]     UPGRADED 5661492033 to original
+[08:52:42]     UPGRADED 5662059592 to original
+[08:52:44]     UPGRADED 5634257313 to original
+[08:52:46]     UPGRADED 5634257241 to original
+[08:52:48]     UPGRADED 5634257191 to original
+[08:52:49]     UPGRADED 5634837652 to original
+[08:52:51]     UPGRADED 5515272742 to original
+[08:52:53]     UPGRADED 5515272698 to original
+[08:52:53]   Batch progress: 90/200
+[08:52:55]     UPGRADED 5514679903 to original
+[08:52:56]     UPGRADED 5367072804 to original
+[08:52:58]     UPGRADED 5333137939 to original
+[08:53:00]     UPGRADED 5333137911 to original
+[08:53:02]     UPGRADED 5333137865 to original
+[08:53:03]     UPGRADED 5333137839 to original
+[08:53:05]     UPGRADED 5333024423 to original
+[08:53:07]     UPGRADED 5333024383 to original
+[08:53:09]     UPGRADED 5333512542 to original
+[08:53:11]     UPGRADED 5333512494 to original
+[08:53:11]   Batch progress: 100/200
+[08:53:12]     UPGRADED 5333298940 to original
+[08:53:14]     UPGRADED 5332684061 to original
+[08:53:16]     UPGRADED 5333298898 to original
+[08:53:18]     UPGRADED 5332684005 to original
+[08:53:19]     UPGRADED 5333298810 to original
+[08:53:21]     UPGRADED 5332683957 to original
+[08:53:23]     UPGRADED 5332683903 to original
+[08:53:25]     UPGRADED 5285391193 to original
+[08:53:26]     UPGRADED 5285933216 to original
+[08:53:28]     UPGRADED 5285336057 to original
+[08:53:28]   Batch progress: 110/200
+[08:53:30]     UPGRADED 5285933144 to original
+[08:53:32]     UPGRADED 5285272235 to original
+[08:53:33]     UPGRADED 5285869916 to original
+[08:53:35]     UPGRADED 5285267543 to original
+[08:53:37]     UPGRADED 5285251745 to original
+[08:53:39]     UPGRADED 5285779918 to original
+[08:53:40]     UPGRADED 5285181891 to original
+[08:53:42]     UPGRADED 5283484783 to original
+[08:53:44]     UPGRADED 5283484757 to original
+[08:53:45]     UPGRADED 5205005278 to original
+[08:53:45]   Batch progress: 120/200
+[08:53:47]     UPGRADED 5205005236 to original
+[08:53:49]     UPGRADED 5204408349 to original
+[08:53:51]     UPGRADED 5204408279 to original
+[08:53:52]     UPGRADED 5205005066 to original
+[08:53:54]     UPGRADED 5204408183 to original
+[08:53:56]     UPGRADED 5204408155 to original
+[08:53:58]     UPGRADED 5205004968 to original
+[08:53:59]     UPGRADED 5204408075 to original
+[08:54:01]     UPGRADED 5033199993 to original
+[08:54:03]     UPGRADED 5014786815 to original
+[08:54:03]   Batch progress: 130/200

@@ -1,0 +1,27 @@
+[08:33:57] === Flickr Batched Download ===
+[08:33:57] Batch size: 200 images
+[08:33:57] Cooldown: 5 minutes between batches
+[08:33:59] Found 175 photosets
+[08:36:09]   Batch progress: 10/200
+[08:36:29]   Batch progress: 20/200
+[08:36:48]   Batch progress: 30/200
+[08:37:07]   Batch progress: 40/200
+[08:37:26]   Batch progress: 50/200
+[08:37:45]   Batch progress: 60/200
+[08:38:05]   Batch progress: 70/200
+[08:38:24]   Batch progress: 80/200
+[08:38:43]   Batch progress: 90/200
+[08:39:04]   Batch progress: 100/200
+[08:39:23]   Batch progress: 110/200
+[08:39:44]   Batch progress: 120/200
+[08:40:04]   Batch progress: 130/200
+[08:40:24]   Batch progress: 140/200
+[08:40:44]   Batch progress: 150/200
+[08:41:04]   Batch progress: 160/200
+[08:41:24]   Batch progress: 170/200
+[08:41:43]   Batch progress: 180/200
+[08:42:03]   Batch progress: 190/200
+[08:42:23]   Batch progress: 200/200
+[08:42:24] Batch 1 complete: 200 downloaded (total: 1150)
+[08:42:24] Cooling down for 5 minutes...
+[08:47:24] Resuming...
