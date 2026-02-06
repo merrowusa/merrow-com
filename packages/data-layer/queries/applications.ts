@@ -56,6 +56,8 @@ export const CATEGORY_SLUGS: Record<number, string> = {
   5517: "military-seaming",
   5518: "womens-garments",
   5519: "home-decor",
+  5522: "athletic-apparel",
+  5524: "joining-non-wovens",
 };
 
 export const CATEGORY_SLUG_TO_KEY: Record<string, number> = Object.fromEntries(
