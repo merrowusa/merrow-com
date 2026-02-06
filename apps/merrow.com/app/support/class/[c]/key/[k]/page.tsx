@@ -64,6 +64,61 @@ const TECHNICAL_KEYS = new Set([
   "maint_fabricguard",
 ]);
 
+const POPUP_LINKS: Record<string, string> = {
+  popOne: "/bs-diag1.htm",
+  popTwo: "/bs-diag2.htm",
+  popThree: "/bs-diag4.htm",
+  popFour: "/bs-diag3.htm",
+  popFive: "/bs-diagA.htm",
+  popSix: "/bs-diagG.htm",
+  popSeven: "/bs-diagB.htm",
+  popEight: "/bs-diagH.htm",
+  popNine: "/bs-diagC.htm",
+  popTen: "/bs-diagD.htm",
+  popEleven: "/bs-diag5-6.htm",
+  popTwelve: "/bs-diagF.htm",
+  popThirteen: "/bs-diagE.htm",
+};
+
+const normalizeTechnicalHtml = (raw: string) => {
+  let html = raw;
+
+  // Remove legacy inline scripts (not executed via React anyway).
+  html = html.replace(/<script[\s\S]*?<\/script>/gi, "");
+
+  for (const [name, href] of Object.entries(POPUP_LINKS)) {
+    const pattern = new RegExp(`href=["']/?javascript:${name}\\(\\)["']`, "gi");
+    html = html.replace(pattern, `href="${href}"`);
+  }
+
+  // Normalize legacy relative paths to absolute root paths.
+  html = html.replace(/(href|src)=["']\/\.\.\//gi, '$1="/');
+  html = html.replace(/(href|src)=["']\.\.\//gi, '$1="/');
+
+  // Fix accidental leading slash before absolute merrow.com links.
+  html = html.replace(
+    /(href|src)=["']\/https?:\/\/(?:www\.)?merrow\.com\/english\//gi,
+    '$1="/english/'
+  );
+
+  // Normalize protocol-relative .htm links.
+  html = html.replace(
+    /(href|src)=["']\/\/([^/]+\.htm)["']/gi,
+    '$1="/$2"'
+  );
+
+  // Promote relative .htm links to absolute paths.
+  html = html.replace(
+    /(href|src)=["'](?!https?:|\/|#|mailto:|tel:)([^"']+\.htm)["']/gi,
+    '$1="/$2"'
+  );
+
+  // Final guard: drop any remaining javascript: links.
+  html = html.replace(/href=["']\/?javascript:[^"']*["']/gi, 'href="#"');
+
+  return html;
+};
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { c, k } = await params;
   return {
@@ -102,7 +157,7 @@ export default async function SupportDetailPage({ params }: PageProps) {
     );
   }
 
-  const html = technicalField || "";
+  const html = technicalField ? normalizeTechnicalHtml(technicalField) : "";
 
   return (
     <main className="text-merrow-textMain bg-white">
