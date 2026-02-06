@@ -15,18 +15,27 @@
 
 ---
 
+## Phase Labels + Visual Criticality (Current Rule)
+
+- `P1_PARITY_VISUAL_CRITICAL`: Header, Footer, Home, Machine pages, Application pages
+- `P1_PARITY_FUNCTIONAL`: All other parity surfaces (functional/content/SEO/route parity required; visual refinement deferred to Phase 2 unless explicitly approved)
+
+Use these labels on every task to avoid phase mixing.
+
+---
+
 ## P0 — This Week (Blocking)
 
 | Item | Description | Source | Owner (Role) | Status |
 | --- | --- | --- | --- | --- |
-| Header parity (visual) | Match legacy header height/spacing, search bar styling, and nav structure. | SURFACE_MAP, REFACTOR_AUDIT | Web/Parity | NOT STARTED |
-| Footer parity (visual) | Ensure brand bar + Agent/Blog/Community block is identical to legacy across all pages. | SURFACE_MAP, LEGACY_INTENT_AUDIT | Web/Parity | IN PROGRESS |
-| Home page parity | Match legacy layout/spacing for hero, grey promos, logo strip. | SURFACE_MAP | Web/Parity | IN PROGRESS |
-| Fashion page parity | Match legacy `ncp1.php?a=f` layout, applications list styling, and CTA. | SURFACE_MAP, LEGACY_INTENT_AUDIT | Web/Parity | IN PROGRESS |
-| Header mega-menu data | Wire DB-driven menu data for machine/app lists. | REFACTOR_AUDIT | Data/DB | NOT STARTED |
-| Support detail data | Implement `/support/class/[c]/key/[k]` data binding. | REFACTOR_AUDIT | Data/DB | NOT STARTED |
-| Parts detail data | Implement `/parts/[cp]/[mmc_code]` data binding. | REFACTOR_AUDIT | Data/DB | NOT STARTED |
-| Missing S3 images | Add images or fallback for `mg2dr`, `mg3dr`, `mgbc`, `70d3b2ls2`. | REFACTOR_AUDIT | Ops/Assets | NOT STARTED |
+| [P1_PARITY_VISUAL_CRITICAL] Header parity (visual) | Match legacy header height/spacing, search bar styling, and nav structure. | SURFACE_MAP, REFACTOR_AUDIT | Web/Parity | NOT STARTED |
+| [P1_PARITY_VISUAL_CRITICAL] Footer parity (visual) | Ensure brand bar + Agent/Blog/Community block is identical to legacy across all pages. | SURFACE_MAP, LEGACY_INTENT_AUDIT | Web/Parity | IN PROGRESS |
+| [P1_PARITY_VISUAL_CRITICAL] Home page parity | Match legacy layout/spacing for hero, grey promos, logo strip. | SURFACE_MAP | Web/Parity | IN PROGRESS |
+| [P1_PARITY_FUNCTIONAL] Fashion page parity | Match legacy `ncp1.php?a=f` functionality/content and maintain route/SEO parity; visual refinement can defer to Phase 2 unless promoted. | SURFACE_MAP, LEGACY_INTENT_AUDIT | Web/Parity | IN PROGRESS |
+| [P1_PARITY_FUNCTIONAL] Header mega-menu data | Wire DB-driven menu data for machine/app lists. | REFACTOR_AUDIT | Data/DB | NOT STARTED |
+| [P1_PARITY_FUNCTIONAL] Support detail data | Implement `/support/class/[c]/key/[k]` data binding. | REFACTOR_AUDIT | Data/DB | NOT STARTED |
+| [P1_PARITY_FUNCTIONAL] Parts detail data | Implement `/parts/[cp]/[mmc_code]` data binding. | REFACTOR_AUDIT | Data/DB | NOT STARTED |
+| [P1_PARITY_FUNCTIONAL] Missing S3 images | Add images or fallback for `mg2dr`, `mg3dr`, `mgbc`, `70d3b2ls2`. | REFACTOR_AUDIT | Ops/Assets | NOT STARTED |
 
 ---
 
@@ -34,11 +43,11 @@
 
 | Item | Description | Source | Owner (Role) | Status |
 | --- | --- | --- | --- | --- |
-| Machine detail parity | Restore thumbnails, applications grid, stitches gallery, marketing downloads, and class-specific blocks. | LEGACY_INTENT_AUDIT | Web/Data | NOT STARTED |
-| Application detail parity | Rebuild anchor nav + image tiles; restore “Compare all” behavior. | LEGACY_INTENT_AUDIT | Web/Data | NOT STARTED |
-| Customer story parity | Restore hero imagery + application/machine/stitch promo tiles. | LEGACY_INTENT_AUDIT | Web/Content | NOT STARTED |
-| Support hub parity | Match legacy manual/parts lists and support IA. | ARCHITECTURE, LEGACY_INTENT_AUDIT | Web/Data | NOT STARTED |
-| Parts hub parity | Upgrade `/parts` to reflect legacy lookup pathways. | LEGACY_INTENT_AUDIT | Web/Data | NOT STARTED |
+| [P1_PARITY_VISUAL_CRITICAL] Machine detail parity | Restore thumbnails, applications grid, stitches gallery, marketing downloads, and class-specific blocks. | LEGACY_INTENT_AUDIT | Web/Data | NOT STARTED |
+| [P1_PARITY_VISUAL_CRITICAL] Application detail parity | Rebuild anchor nav + image tiles; restore “Compare all” behavior. | LEGACY_INTENT_AUDIT | Web/Data | NOT STARTED |
+| [P1_PARITY_FUNCTIONAL] Customer story parity | Restore legacy functionality/content and route/SEO parity; visual redesign quality can defer to Phase 2 unless promoted. | LEGACY_INTENT_AUDIT | Web/Content | NOT STARTED |
+| [P1_PARITY_FUNCTIONAL] Support hub parity | Match legacy manual/parts lists and support IA. | ARCHITECTURE, LEGACY_INTENT_AUDIT | Web/Data | NOT STARTED |
+| [P1_PARITY_FUNCTIONAL] Parts hub parity | Upgrade `/parts` to reflect legacy lookup pathways. | LEGACY_INTENT_AUDIT | Web/Data | NOT STARTED |
 
 ---
 
@@ -67,4 +76,3 @@
 - **P0 must be complete** before any large-scale redesign.
 - P1 depends on P0 header/footer parity and DB access stability.
 - P2 should only begin once P1 machine + application parity is green.
-
