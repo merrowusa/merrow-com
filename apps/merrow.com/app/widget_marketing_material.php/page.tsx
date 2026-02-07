@@ -59,14 +59,7 @@ export default function MarketingMaterialsPage() {
               Additional resources
             </div>
             <div className="mt-2 text-[13px] text-merrow-textSub">
-              <a
-                href="https://www.flickr.com/search/?q=merrow+machine"
-                target="_blank"
-                rel="noreferrer"
-                className="text-merrow-link hover:underline"
-              >
-                Merrow Flickr Images
-              </a>
+              For high-resolution product photos and brand assets, contact Merrow and we will help you find the right files.
             </div>
           </div>
 
