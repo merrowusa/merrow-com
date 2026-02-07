@@ -1,42 +1,80 @@
-// @version support-index v2.1
+// @version support-index v3.0
 //
 // Route: /support
-// Support landing page (legacy SD menu + technical content)
+// Legacy support landing page parity layout (a2.php / support.php style)
 
 import { Metadata } from "next";
-import {
-  FullBleed,
-  PageHeader,
-  RichText,
-  MerrowButton,
-} from "../../../../packages/ui";
-import { SupportSidebar } from "./_components/SupportSidebar";
-import { SupportDocsPanel } from "./_components/SupportDocsPanel";
 import { getThreadingDiagrams } from "../../../../packages/data-layer/queries/support";
 
 export const metadata: Metadata = {
   title: "Support & Service | Merrow Sewing Machine Company",
   description:
-    "Get support for your Merrow sewing machine. Access technical manuals, request replacement parts, and contact our expert service team for assistance.",
+    "Get support for your Merrow sewing machine. Access technical manuals, request replacement parts, and contact Merrow support.",
 };
 
 interface PageProps {
-  searchParams?: { key?: string };
+  searchParams?: Promise<{ key?: string }>;
+}
+
+interface LinkItem {
+  label: string;
+  href: string;
+  external?: boolean;
+}
+
+function linkClass() {
+  return "text-[12px] leading-[14px] text-[#808080] hover:text-[#af0b0c] hover:underline";
+}
+
+function renderLinks(items: LinkItem[]) {
+  return (
+    <ul className="space-y-1">
+      {items.map((item) => (
+        <li key={`${item.href}-${item.label}`}>
+          <a
+            href={item.href}
+            className={linkClass()}
+            target={item.external ? "_blank" : undefined}
+            rel={item.external ? "noopener noreferrer" : undefined}
+          >
+            {item.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function LegacyBox({
+  title,
+  children,
+  className,
+}: {
+  title: string;
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <div className={`mb-3 rounded border border-[#b7b7b7] bg-[#efefef] p-2 ${className ?? ""}`}>
+      <div className="mb-1 text-[13px] font-semibold text-[#b00707]">{title}</div>
+      {children}
+    </div>
+  );
 }
 
 export default async function SupportPage({ searchParams }: PageProps) {
   const threadingDiagrams = await getThreadingDiagrams();
+  const resolved = (await searchParams) ?? {};
 
-  const key = searchParams?.key;
+  const key = resolved.key;
   const contentMap: Record<string, { title: string; html: string }> = {
     howto: {
       title: "How to use this menu",
       html:
         "The menu on the left is divided into general classes of Merrow machines.<br/><br/>" +
-        "MG Class — or all green sergers<br/>" +
-        "70 Class — most often used for textile finishing<br/>" +
+        "MG Class — all green sergers<br/>" +
+        "70 Class — used for textile finishing<br/>" +
         "Crochet Machines — high-arm sewing machines using straight needles and latch hooks<br/><br/>" +
-        "The menu includes setup guides, operation guides, and parts diagrams.<br/><br/>" +
         "For video support please go <a href=\"https://www.merrow.com/video.html\">here</a>.<br/><br/>" +
         "We're here to help; <a href=\"/contact_general.html\">let us know</a> if there is anything else we can do.",
     },
@@ -69,131 +107,227 @@ export default async function SupportPage({ searchParams }: PageProps) {
 
   const content = key && contentMap[key] ? contentMap[key] : defaultContent;
 
+  const diagrams = threadingDiagrams.map((diagram) => ({
+    label: `Diagram #${diagram.name}`,
+    href: `/support/diagram/${encodeURIComponent(diagram.image)}/showthemapicture/ohyeah`,
+  }));
+
+  const generalReference: LinkItem[] = [
+    { label: "How to use this menu", href: "/support?key=howto" },
+    { label: "Video help", href: "https://www.merrow.com/videoHD.php", external: true },
+    { label: "Locate a dealer", href: "/agentmap.html" },
+    { label: "Contact Merrow", href: "/contact_general.html" },
+  ];
+
+  const mgSetup: LinkItem[] = [
+    { label: "General Setup Guide", href: "/support/class/MG/key/setup" },
+    { label: "Needles", href: "/support/class/MG/key/setup_needles" },
+    { label: "Loopers", href: "/support/class/MG/key/setup_loopers" },
+    { label: "Threading", href: "/support/class/MG/key/setup_threading" },
+    { label: "Cutters", href: "/support/class/MG/key/setup_gencutting" },
+    { label: "Knife Tips", href: "/support/class/MG/key/setup_knife" },
+    { label: "Feed Dogs", href: "/support/class/MG/key/setup_feeddogs" },
+    { label: "Presser Foot", href: "/support/class/MG/key/setup_presser" },
+  ];
+
+  const mgTrouble: LinkItem[] = [
+    { label: "Needle Issues", href: "/support/class/MG/key/trouble_needles" },
+    { label: "Feeding Issues", href: "/support/class/MG/key/trouble_feeding" },
+    { label: "Stitching Issues", href: "/support/class/MG/key/trouble_stitch" },
+    { label: "Oil Issues", href: "/support/class/MG/key/trouble_oil" },
+    { label: "Skipped Stitches", href: "/support/class/MG/key/trouble_skippedstitch" },
+    { label: "Threading", href: "/support/class/MG/key/trouble_thread" },
+  ];
+
+  const mgParts: LinkItem[] = [
+    { label: "M-1D-2", href: "/support/class/key/mediakeyword/m1d2" },
+    { label: "M-1D-7", href: "/support/class/key/mediakeyword/m1d7" },
+    { label: "M-2-7-G", href: "/support/class/key/mediakeyword/m27gribitz" },
+    { label: "MG-2DNR-1", href: "/support/class/key/mediakeyword/mg2dnr1" },
+    { label: "MG-3DW-7", href: "/support/class/key/mediakeyword/mg3dw7" },
+    { label: "MG-3Q-3", href: "/support/class/key/mediakeyword/mg3q3" },
+    { label: "MG-3U", href: "/support/class/key/mediakeyword/mg3u" },
+  ];
+
+  const class70Setup: LinkItem[] = [
+    { label: "General Setup Guide", href: "/support/class/70/key/setup" },
+    { label: "Needles", href: "/support/class/70/key/setup_needles" },
+    { label: "Loopers", href: "/support/class/70/key/setup_loopers" },
+    { label: "Threading", href: "/support/class/70/key/setup_threading" },
+    { label: "Cutters", href: "/support/class/70/key/setup_gencutting" },
+    { label: "Sharpening Cutters", href: "/support/class/70/key/setup_sharpening" },
+    { label: "Knife Tips", href: "/support/class/70/key/setup_knife" },
+    { label: "Feed Dogs", href: "/support/class/70/key/setup_feeddogs" },
+    { label: "Presser Foot", href: "/support/class/70/key/setup_presser" },
+    { label: "Framecap", href: "/support/class/70/key/setup_framecap" },
+  ];
+
+  const class70Trouble: LinkItem[] = [
+    { label: "Needle Issues", href: "/support/class/70/key/trouble_needles" },
+    { label: "Feeding Issues", href: "/support/class/70/key/trouble_feeding" },
+    { label: "Stitching Issues", href: "/support/class/70/key/trouble_stitch" },
+    { label: "Oil Issues", href: "/support/class/70/key/trouble_oil" },
+    { label: "Skipped Stitches", href: "/support/class/70/key/trouble_skippedstitch" },
+    { label: "Threading", href: "/support/class/70/key/trouble_thread" },
+  ];
+
+  const class70Parts: LinkItem[] = [
+    { label: "70-D3B-2", href: "/support/class/key/mediakeyword/70d3b2" },
+    { label: "70-D3B-2 NICKEL PLATED", href: "/support/class/key/mediakeyword/70d3b2cnp" },
+    { label: "70-D3B-2 RAIL", href: "/support/class/key/mediakeyword/70d3b2rail" },
+    { label: "70-Y3B-2", href: "/support/class/key/mediakeyword/70y3b2" },
+    { label: "72-D3B", href: "/support/class/key/mediakeyword/72d3b" },
+    { label: "70-1D-2", href: "/support/class/key/mediakeyword/701d2" },
+    { label: "70-1D-7", href: "/support/class/key/mediakeyword/701d7" },
+  ];
+
+  const crochetSetup: LinkItem[] = [
+    { label: "General Setup Guide", href: "/support/class/CROCHET/key/setup" },
+    { label: "Needles", href: "/support/class/CROCHET/key/maint_needles" },
+    { label: "Latch Hooks", href: "/support/class/CROCHET/key/maint_hook" },
+    { label: "Threading", href: "/support/class/CROCHET/key/maint_threading" },
+    { label: "Hook Carrier", href: "/support/class/CROCHET/key/maint_hookcarrier" },
+    { label: "Needle Guard", href: "/support/class/CROCHET/key/maint_needleguard" },
+    { label: "Needle Bar", href: "/support/class/CROCHET/key/maint_needlebar" },
+    { label: "Cast Off Horn", href: "/support/class/CROCHET/key/maint_castoff" },
+    { label: "Fixed (COH)", href: "/support/class/CROCHET/key/maint_fixedcastoff" },
+    { label: "Needle Lever Tips", href: "/support/class/CROCHET/key/maint_needlelever" },
+    { label: "Stitch Plate", href: "/support/class/CROCHET/key/maint_fingerplate" },
+    { label: "Spreader", href: "/support/class/CROCHET/key/maint_spreader" },
+    { label: "Thread Tensions", href: "/support/class/CROCHET/key/maint_tensions" },
+    { label: "Feed Dogs Settings", href: "/support/class/CROCHET/key/maint_feedALL" },
+    { label: "Blanket Stitch FD", href: "/support/class/CROCHET/key/maint_feedPLAIN" },
+    { label: "Shell Stitch FD", href: "/support/class/CROCHET/key/maint_feedSHELL" },
+    { label: "Thread Carrier", href: "/support/class/CROCHET/key/maint_threadcarrier" },
+    { label: "Fabric Guard", href: "/support/class/CROCHET/key/maint_fabricguard" },
+  ];
+
+  const crochetTrouble: LinkItem[] = [
+    { label: "Latch Hook Issues", href: "/support/class/CROCHET/key/trouble_latchhooks" },
+    { label: "Loose Stitch Issues", href: "/support/class/CROCHET/key/trouble_loosestitches" },
+    { label: "Skipped Stitches", href: "/support/class/CROCHET/key/trouble_skippedstitches" },
+    { label: "Breaking Needles", href: "/support/class/CROCHET/key/trouble_breakingneedles" },
+    { label: "Needle Holes", href: "/support/class/CROCHET/key/trouble_needleholes" },
+    { label: "Lubrication Issues", href: "/support/class/CROCHET/key/maint_lubrication" },
+  ];
+
+  const crochetParts: LinkItem[] = [
+    { label: "18-E", href: "/support/class/key/mediakeyword/18e" },
+    { label: "18-A", href: "/support/class/key/mediakeyword/18a" },
+    { label: "18-G", href: "/support/class/key/mediakeyword/18g" },
+    { label: "22-FJ", href: "/support/class/key/mediakeyword/22fj" },
+  ];
+
   return (
-    <main className="text-merrow-textMain bg-white">
-      {/* Hero */}
-      <FullBleed className="bg-[linear-gradient(120deg,#f7f7f7_0%,#ededed_60%,#f4f4f4_100%)] border-b border-merrow-border">
-        <div className="mx-auto max-w-merrow px-4 py-12">
-          <div className="text-center">
-            <PageHeader
-              eyebrow="Customer Service"
-              title="Support & Technical Resources"
-              subtitle="Get help with your Merrow sewing machine."
-            />
+    <main className="min-w-[1040px] bg-[#ebebeb] text-[#222222]">
+      <div className="mx-auto w-[980px] pl-[40px] pt-3 pb-4">
+        <div className="grid grid-cols-[300px_300px_300px] gap-4">
+          <div>
+            <div className="mb-2 text-[13px] font-semibold text-[#b00707]">Support Menu</div>
+
+            <LegacyBox title="General Reference">
+              {renderLinks(generalReference)}
+            </LegacyBox>
+
+            <LegacyBox title="MG Class Machines">
+              <div className="mb-2 text-[12px] font-semibold text-[#666]">Setup &amp; Maintenance</div>
+              {renderLinks(mgSetup)}
+              <div className="mb-2 mt-3 text-[12px] font-semibold text-[#666]">Troubleshooting</div>
+              {renderLinks(mgTrouble)}
+              <div className="mb-2 mt-3 text-[12px] font-semibold text-[#666]">Parts Book</div>
+              {renderLinks(mgParts)}
+            </LegacyBox>
+
+            <LegacyBox title="70 Class Machines">
+              <div className="mb-2 text-[12px] font-semibold text-[#666]">Setup &amp; Maintenance</div>
+              {renderLinks(class70Setup)}
+              <div className="mb-2 mt-3 text-[12px] font-semibold text-[#666]">Troubleshooting</div>
+              {renderLinks(class70Trouble)}
+              <div className="mb-2 mt-3 text-[12px] font-semibold text-[#666]">Parts Book</div>
+              {renderLinks(class70Parts)}
+            </LegacyBox>
+
+            <LegacyBox title="Crochet Machines">
+              <div className="mb-2 text-[12px] font-semibold text-[#666]">Setup &amp; Maintenance</div>
+              {renderLinks(crochetSetup)}
+              <div className="mb-2 mt-3 text-[12px] font-semibold text-[#666]">Troubleshooting</div>
+              {renderLinks(crochetTrouble)}
+              <div className="mb-2 mt-3 text-[12px] font-semibold text-[#666]">Parts Book</div>
+              {renderLinks(crochetParts)}
+            </LegacyBox>
           </div>
-          <div className="mt-6 grid gap-4 md:grid-cols-3">
-            <div className="rounded-xl border border-[#e1e1e1] bg-white px-4 py-5 shadow-[0_8px_18px_rgba(0,0,0,0.05)]">
-              <div className="text-[11px] uppercase tracking-[0.16em] text-merrow-textMuted">Manuals</div>
-              <p className="mt-2 text-[13px] text-merrow-textSub">
-                Access operation manuals, maintenance guides, and technical documentation.
-              </p>
-              <div className="mt-3">
-                <MerrowButton href="/contact_general.html">Request Manual</MerrowButton>
-              </div>
+
+          <div>
+            <div className="mb-2 rounded border border-[#b7b7b7] bg-[#efefef] p-2">
+              <h1 className="text-[14px] font-semibold text-[#222]">{content.title}</h1>
+              <div
+                className="mt-2 text-[12px] leading-[14px] text-[#333]"
+                dangerouslySetInnerHTML={{ __html: content.html }}
+              />
             </div>
-            <div className="rounded-xl border border-[#e1e1e1] bg-white px-4 py-5 shadow-[0_8px_18px_rgba(0,0,0,0.05)]">
-              <div className="text-[11px] uppercase tracking-[0.16em] text-merrow-textMuted">Parts Lookup</div>
-              <p className="mt-2 text-[13px] text-merrow-textSub">
-                Find replacement parts and browse parts books by machine model.
-              </p>
-              <div className="mt-3">
-                <MerrowButton href="/parts">Find Parts</MerrowButton>
-              </div>
-            </div>
-            <div className="rounded-xl border border-[#e1e1e1] bg-white px-4 py-5 shadow-[0_8px_18px_rgba(0,0,0,0.05)]">
-              <div className="text-[11px] uppercase tracking-[0.16em] text-merrow-textMuted">Service</div>
-              <p className="mt-2 text-[13px] text-merrow-textSub">
-                Contact support or find a local agent for on-site service.
-              </p>
-              <div className="mt-3">
-                <MerrowButton href="/agentmap.html">Find Agent</MerrowButton>
-              </div>
-            </div>
+
+            <LegacyBox title="Contact">
+              {renderLinks([
+                { label: "Support Email", href: "mailto:support@merrow.com" },
+                { label: "Parts Email", href: "mailto:parts@merrow.com" },
+                { label: "Sales Email", href: "mailto:sales@merrow.com" },
+                { label: "Call: 508.689.4095", href: "tel:+15086894095" },
+              ])}
+            </LegacyBox>
+          </div>
+
+          <div>
+            <div className="mb-2 text-[13px] font-semibold text-[#b00707]">Merrow Documentation</div>
+
+            <LegacyBox title="Threading Diagrams">
+              {diagrams.length > 0 ? (
+                <ul className="max-h-[180px] space-y-1 overflow-auto pr-1">
+                  {diagrams.map((item) => (
+                    <li key={item.href}>
+                      <a href={item.href} className={linkClass()}>{item.label}</a>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="text-[12px] text-[#666]">No diagrams found.</p>
+              )}
+            </LegacyBox>
+
+            <LegacyBox title="Parts Books">
+              {renderLinks([
+                { label: "MG parts book (english)", href: "https://www.merrow.com/agent_book/kiwifruit/partsbook/language/english/type/MG/setnum/72157606827670334/setnam/mgpartsbook", external: true },
+                { label: "70 class parts book (english)", href: "https://www.merrow.com/agent_book/kiwifruit/partsbook/language/english/type/70/setnum/72157606828138530/setnam/70classbook", external: true },
+                { label: "Crochet parts book (english)", href: "https://www.merrow.com/agent_book/kiwifruit/partsbook/language/english/type/crochet/setnum/72157606826978368/setnam/crochet", external: true },
+                { label: "60 class parts book (english)", href: "https://www.merrow.com/agent_book/kiwifruit/partsbook/language/english/type/60/setnum/72157606826047178/setnam/60class", external: true },
+                { label: "A class parts book (english)", href: "https://www.merrow.com/agent_book/kiwifruit/partsbook/language/english/type/A/setnum/72157606832488303/setnam/Aclassparts", external: true },
+              ])}
+            </LegacyBox>
+
+            <LegacyBox title="Instruction Manuals">
+              {renderLinks([
+                { label: "MG instructions (english)", href: "https://www.merrow.com/agent_book/kiwifruit/instructions/language/english/type/MG/setnum/72157606829542814/setnam/mginstructions", external: true },
+                { label: "MG instructions (spanish)", href: "https://www.merrow.com/agent_book/kiwifruit/instructions/language/spanish/type/MG/setnum/72157606830005278/setnam/mgpspanishinstruction", external: true },
+                { label: "70 class instructions (english)", href: "https://www.merrow.com/agent_book/kiwifruit/instructions/language/english/type/70/setnum/72157606831978449/setnam/70classinstructions", external: true },
+              ])}
+            </LegacyBox>
+
+            <LegacyBox title="Butt Seam Book">
+              {renderLinks([
+                { label: "Butt Seam (english)", href: "https://www.merrow.com/agent_book/kiwifruit/book/language/english/setnum/72157607489347906/setnam/english_book/type/BS", external: true },
+                { label: "Butt Seam (portuguese)", href: "https://www.merrow.com/agent_book/kiwifruit/book/language/portuguese/setnum/72157606583868719/setnam/rivitex_book/type/BS", external: true },
+                { label: "Butt Seam (turkish)", href: "https://www.merrow.com/agent_book/kiwifruit/book/language/turkish/setnum/72157606834081591/setnam/turkish_book/type/BS", external: true },
+                { label: "Butt Seam (spanish)", href: "https://www.merrow.com/agent_book/kiwifruit/book/language/spanish/setnum/72157606834229615/setnam/spanish_book/type/BS", external: true },
+                { label: "Butt Seam (chinese)", href: "https://www.merrow.com/agent_book/kiwifruit/book/language/mandarin/setnum/72157606831254410/setnam/mandarin_book/type/BS", external: true },
+              ])}
+            </LegacyBox>
           </div>
         </div>
-      </FullBleed>
 
-      {/* Support layout */}
-      <FullBleed className="bg-white">
-        <div className="mx-auto max-w-merrow px-4 py-12">
-          <div className="grid gap-10 lg:grid-cols-[260px_1fr_300px]">
-            <SupportSidebar />
-            <section>
-              <div className="rounded-xl border border-[#e1e1e1] bg-[#fafafa] px-6 py-6 shadow-[0_8px_18px_rgba(0,0,0,0.04)]">
-                <h2 className="text-[18px] font-semibold text-merrow-textMain mb-3">
-                  {content.title}
-                </h2>
-                <RichText html={content.html} />
-              </div>
-
-              <div className="mt-8 grid gap-4 md:grid-cols-3">
-                <div className="rounded-xl border border-[#e1e1e1] bg-white p-4">
-                  <div className="text-[12px] uppercase tracking-[0.16em] text-merrow-textMuted">Support Email</div>
-                  <p className="mt-2 text-[13px] text-merrow-textSub">
-                    <a href="mailto:support@merrow.com" className="text-merrow-link">support@merrow.com</a>
-                  </p>
-                </div>
-                <div className="rounded-xl border border-[#e1e1e1] bg-white p-4">
-                  <div className="text-[12px] uppercase tracking-[0.16em] text-merrow-textMuted">Phone</div>
-                  <p className="mt-2 text-[13px] text-merrow-textSub">
-                    <a href="tel:+15086894095" className="text-merrow-link">508.689.4095</a>
-                  </p>
-                </div>
-                <div className="rounded-xl border border-[#e1e1e1] bg-white p-4">
-                  <div className="text-[12px] uppercase tracking-[0.16em] text-merrow-textMuted">Training</div>
-                  <p className="mt-2 text-[13px] text-merrow-textSub">
-                    <a
-                      href="https://merrowedge.com/pages/training-support"
-                      className="text-merrow-link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Merrow Edge Training
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </section>
-            <SupportDocsPanel threadingDiagrams={threadingDiagrams} />
-          </div>
+        <div className="mt-2 border-t-4 border-[#4a4a4a] pt-2 text-[13px] font-semibold text-[#b00707]">
+          What Machine Would You Like?
         </div>
-      </FullBleed>
-
-      {/* Contact band */}
-      <FullBleed className="bg-[#f3f3f3] border-t border-merrow-border">
-        <div className="mx-auto max-w-merrow px-4 py-10">
-          <div className="grid gap-6 md:grid-cols-3">
-            <div className="rounded-xl border border-[#e1e1e1] bg-white p-5">
-              <div className="text-[11px] uppercase tracking-[0.16em] text-merrow-textMuted">Domestic Support</div>
-              <p className="mt-2 text-[13px] text-merrow-textSub">800.431.6677</p>
-            </div>
-            <div className="rounded-xl border border-[#e1e1e1] bg-white p-5">
-              <div className="text-[11px] uppercase tracking-[0.16em] text-merrow-textMuted">International</div>
-              <p className="mt-2 text-[13px] text-merrow-textSub">508.689.4095</p>
-            </div>
-            <div className="rounded-xl border border-[#e1e1e1] bg-white p-5">
-              <div className="text-[11px] uppercase tracking-[0.16em] text-merrow-textMuted">Fax</div>
-              <p className="mt-2 text-[13px] text-merrow-textSub">508.689.4098</p>
-            </div>
-          </div>
-        </div>
-      </FullBleed>
-
-      {/* CTA */}
-      <FullBleed className="bg-merrow-footerBg">
-        <div className="mx-auto max-w-merrow px-4 py-10 text-center">
-          <h2 className="text-[20px] font-light text-white">
-            Still need help?
-          </h2>
-          <p className="mt-2 text-[13px] text-[#d7d7d7]">
-            Our support team is ready to assist with manuals, parts, or service.
-          </p>
-          <div className="mt-4 flex flex-wrap justify-center gap-4">
-            <MerrowButton href="/contact_general.html">Contact Us</MerrowButton>
-            <MerrowButton href="/support/request-quote">Request a Quote</MerrowButton>
-          </div>
-        </div>
-      </FullBleed>
+        <div className="text-[24px] font-semibold leading-[26px] text-[#b00707]">Need More Help?</div>
+      </div>
     </main>
   );
 }
