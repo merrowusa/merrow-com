@@ -1,16 +1,11 @@
-// @version parts-detail v2.0
+// @version parts-detail v3.0
 //
 // Route: /parts/[cp]/[mmc_code]
-// Parts lookup page for specific machine and part code
+// Legacy-style parts detail layout with Supabase-backed data
 
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import {
-  FullBleed,
-  PageHeader,
-  MerrowButton,
-} from "../../../../../../packages/ui";
 import {
   getAsinByOtId,
   getPartsDrawings,
@@ -20,7 +15,6 @@ import {
   getMachineByOtId,
   type MachinePage,
 } from "../../../../../../packages/data-layer/queries/machines";
-import { PartsSpecs } from "../../_components/PartsSpecs";
 import { PartsDrawings } from "../../_components/PartsDrawings";
 
 interface PageProps {
@@ -36,10 +30,26 @@ function formatMeasure(value: string, unit: string) {
   return unit ? `${value} ${unit}` : value;
 }
 
+function normalize(input: string) {
+  return input.trim().toLowerCase();
+}
+
+function LegacyBox({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="mb-3 rounded border border-[#b7b7b7] bg-[#efefef] p-2">
+      <div className="mb-1 text-[13px] font-semibold text-[#b00707]">{title}</div>
+      {children}
+    </div>
+  );
+}
+
 export async function generateStaticParams() {
-  // TODO: Enable full static generation (2800+ parts) once build time is acceptable.
-  // const parts = await getAllPartsForStaticGeneration();
-  // return parts.map((part) => ({ cp: part.otId, mmc_code: part.msmcId }));
   return [] as Array<{ cp: string; mmc_code: string }>;
 }
 
@@ -74,72 +84,69 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 function MachinePartsPage({ machine }: { machine: MachinePage }) {
   return (
-    <main className="text-merrow-textMain bg-white">
-      <FullBleed className="bg-merrow-heroBg border-b border-merrow-border">
-        <div className="mx-auto max-w-merrow px-4 py-10">
-          <PageHeader
-            eyebrow="Parts & Service"
-            title={machine.style || machine.styleKey}
-            subtitle={machine.header || "Merrow sewing machine"}
-          />
+    <main className="min-w-[1040px] bg-[#ebebeb] text-[#222222]">
+      <div className="mx-auto w-[980px] pl-[40px] pt-3 pb-4">
+        <div className="mb-3 rounded border border-[#b7b7b7] bg-[#efefef] p-3">
+          <div className="text-[18px] font-semibold text-[#b00707]">
+            {machine.style || machine.styleKey}
+          </div>
+          <div className="text-[12px] text-[#666666]">{machine.header || "Merrow sewing machine"}</div>
         </div>
-      </FullBleed>
 
-      <FullBleed className="bg-white">
-        <div className="mx-auto max-w-merrow px-4 py-10 space-y-6">
-          {machine.description ? (
-            <div className="rounded-xl border border-[#e1e1e1] bg-[#fafafa] px-6 py-6 shadow-[0_8px_18px_rgba(0,0,0,0.04)]">
-              {/* Legacy CMS HTML content - trusted source */}
+        <div className="grid grid-cols-[620px_300px] gap-4">
+          <div className="rounded border border-[#b7b7b7] bg-[#efefef] p-3">
+            {machine.description ? (
               <div
-                className="prose prose-sm max-w-none text-slate-700"
+                className="parts-machine-html text-[12px] leading-[16px] text-[#4c4c4c]"
                 dangerouslySetInnerHTML={{ __html: machine.description }}
               />
-            </div>
-          ) : null}
-
-          <div className="rounded-xl border border-[#e1e1e1] bg-white p-6 shadow-[0_6px_16px_rgba(0,0,0,0.05)]">
-            <div className="text-[11px] uppercase tracking-[0.16em] text-merrow-textMuted">
-              Parts & Ordering
-            </div>
-            <p className="mt-2 text-[13px] text-merrow-textSub">
-              Contact your Merrow Agent for pricing and availability.
-            </p>
-            <div className="mt-4 flex flex-wrap gap-3">
-              <MerrowButton href="mailto:contact@merrow.com">
-                Email: contact@merrow.com
-              </MerrowButton>
-              <MerrowButton href="tel:+18004316677">
-                Call: 800.431.6677
-              </MerrowButton>
-            </div>
-            <div className="mt-3 text-[12px]">
-              <Link href="/agentmap.html" className="text-merrow-link hover:underline">
-                Find a local dealer
-              </Link>
-            </div>
+            ) : (
+              <p className="text-[12px] leading-[16px] text-[#4c4c4c]">
+                Machine description is not available.
+              </p>
+            )}
           </div>
 
-          <div className="rounded-xl border border-[#e1e1e1] bg-[#f9f9f9] p-6">
-            <div className="text-[11px] uppercase tracking-[0.16em] text-merrow-textMuted">
-              Machine details
-            </div>
-            <p className="mt-2 text-[13px] text-merrow-textSub">
-              View full specifications and documentation for this machine.
-            </p>
-            <div className="mt-3">
-              <MerrowButton href={`/machines/${machine.styleKey}`}>
-                View Machine Page
-              </MerrowButton>
-            </div>
+          <div>
+            <LegacyBox title="Need More Help?">
+              <div className="text-[12px] leading-[16px] text-[#4c4c4c]">
+                Contact your Merrow Agent for pricing and availability.
+                <br />
+                <br />
+                Email: parts@merrow.com
+                <br />
+                Phone: 800.431.6677
+                <br />
+                International: 508.689.4095
+              </div>
+            </LegacyBox>
+
+            <LegacyBox title="Machine Details">
+              <div className="text-[12px] leading-[16px]">
+                <Link href={`/machines/${machine.styleKey}`} className="text-[#808080] hover:text-[#af0b0c] hover:underline">
+                  View full machine page
+                </Link>
+              </div>
+            </LegacyBox>
           </div>
         </div>
-      </FullBleed>
+
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+              .parts-machine-html a { color: #808080; text-decoration: none; }
+              .parts-machine-html a:hover { color: #af0b0c; text-decoration: underline; }
+              .parts-machine-html img { max-width: 100%; height: auto; }
+            `,
+          }}
+        />
+      </div>
     </main>
   );
 }
 
 export default async function PartsDetailPage({ params }: PageProps) {
-  const { cp } = await params;
+  const { cp, mmc_code } = await params;
   const record = await getAsinByOtId(cp);
 
   if (!record || !record.mmcId) {
@@ -150,218 +157,210 @@ export default async function PartsDetailPage({ params }: PageProps) {
     notFound();
   }
 
+  if (record.msmcId && normalize(mmc_code) !== normalize(record.msmcId)) {
+    notFound();
+  }
+
   const asinKey = record.asinId || record.id;
   const drawings = asinKey ? await getPartsDrawings(asinKey) : [];
-  const partsByPd = drawings.length > 0
-    ? await getAsinsByPdList(drawings.map((drawing) => drawing.pd).filter(Boolean))
-    : {};
+  const partsByPd =
+    drawings.length > 0
+      ? await getAsinsByPdList(drawings.map((drawing) => drawing.pd).filter(Boolean))
+      : {};
   const machine = record.otId ? await getMachineByOtId(record.otId) : null;
 
   const mainImage =
-    record.imgurlLarge ||
-    (record.msmcId
-      ? `/images/products/large/${record.msmcId}.jpg`
-      : "");
+    record.imgurlLarge || (record.msmcId ? `/images/products/large/${record.msmcId}.jpg` : "");
 
-  const thumbnails = record.msmcId
-    ? Array.from({ length: 4 }).map((_, index) =>
-        `/images/products/thumb/${record.msmcId}_t${index + 1}.jpg`
-      )
-    : [];
+  const thumbVideos =
+    record.msmcId
+      ? Array.from({ length: 4 }).map((_, index) => ({
+          image: `http://decorativeedging.s3.amazonaws.com/productpages/${record.msmcId}_thumb${index + 1}.jpg`,
+          video: `http://decorativeedging.s3.amazonaws.com/productpages/${record.msmcId}_thumb${index + 1}.m4v`,
+        }))
+      : [];
 
   const dimensions = [
-    formatMeasure(record.displayLength, record.displayLengthUnit),
-    formatMeasure(record.displayWidth, record.displayWidthUnit),
-    formatMeasure(record.displayHeight, record.displayHeightUnit),
-  ].filter(Boolean);
-  const dimensionsLabel = dimensions.length > 0 ? dimensions.join(" × ") : undefined;
-  const weightLabel = formatMeasure(record.displayWeight, record.displayWeightUnit) || undefined;
+    { label: "LENGTH", value: formatMeasure(record.displayLength, record.displayLengthUnit) },
+    { label: "WIDTH", value: formatMeasure(record.displayWidth, record.displayWidthUnit) },
+    { label: "HEIGHT", value: formatMeasure(record.displayHeight, record.displayHeightUnit) },
+  ].filter((row) => row.value);
 
   return (
-    <main className="text-merrow-textMain bg-white">
-      {/* Hero section */}
-      <FullBleed className="bg-merrow-heroBg border-b border-merrow-border">
-        <div className="mx-auto max-w-merrow px-4 py-10">
-          <PageHeader
-            eyebrow={`Part Number: ${cp}`}
-            title={record.productName || record.msmcId || cp}
-            subtitle={record.msmcId ? `Machine: ${record.msmcId}` : "Merrow replacement part"}
-          />
+    <main className="min-w-[1040px] bg-[#ebebeb] text-[#222222]">
+      <div className="mx-auto w-[980px] pl-[40px] pt-3 pb-4">
+        <div className="mb-3 rounded border border-[#b7b7b7] bg-[#efefef] p-3">
+          <div className="text-[18px] font-semibold text-[#b00707]">
+            {record.productName || record.msmcId || cp}
+          </div>
+          <div className="text-[12px] text-[#666666]">{record.msmcId || record.mmcId || cp}</div>
         </div>
-      </FullBleed>
 
-      {/* Main content */}
-      <FullBleed className="bg-white">
-        <div className="mx-auto max-w-merrow px-4 py-10">
-          <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
-            <div className="space-y-6">
-              <div className="rounded-xl border border-[#e1e1e1] bg-white p-5 shadow-[0_6px_16px_rgba(0,0,0,0.05)]">
-                {mainImage ? (
-                  <img
-                    src={mainImage}
-                    alt={record.productName}
-                    className="w-full rounded border border-merrow-border"
-                  />
-                ) : null}
-
-                {thumbnails.length > 0 ? (
-                  <div className="mt-4 grid grid-cols-4 gap-3">
-                    {thumbnails.map((thumb) => (
-                      <img
-                        key={thumb}
-                        src={thumb}
-                        alt="Part thumbnail"
-                        className="h-20 w-full rounded border border-merrow-border object-cover"
-                      />
-                    ))}
-                  </div>
-                ) : null}
-              </div>
-
-              <div className="rounded-xl border border-[#e1e1e1] bg-[#fafafa] px-6 py-6 shadow-[0_8px_18px_rgba(0,0,0,0.04)]">
-                {/* Legacy CMS HTML content - trusted source */}
-                <div
-                  className="prose prose-sm max-w-none text-slate-700"
-                  dangerouslySetInnerHTML={{ __html: record.description || "" }}
+        <div className="grid grid-cols-[620px_300px] gap-4">
+          <div>
+            <div className="rounded border border-[#b7b7b7] bg-[#efefef] p-3">
+              {mainImage ? (
+                <img
+                  src={mainImage}
+                  alt={record.productName || record.msmcId || cp}
+                  className="w-full max-w-[500px]"
                 />
-              </div>
-            </div>
+              ) : (
+                <div className="h-[260px] w-full max-w-[500px] border border-[#c8c8c8] bg-[#f8f8f8]" />
+              )}
 
-            <div className="space-y-6">
-              <PartsSpecs
-                dimensions={dimensionsLabel}
-                weight={weightLabel}
-                mrsp={record.mrsp}
-              />
-
-              <div className="rounded-xl border border-[#e1e1e1] bg-white p-5 shadow-[0_6px_16px_rgba(0,0,0,0.05)]">
-                <div className="text-[11px] uppercase tracking-[0.16em] text-merrow-textMuted">
-                  Need help ordering?
-                </div>
-                <p className="mt-2 text-[13px] text-merrow-textSub">
-                  Contact your Merrow Agent for pricing and availability.
-                </p>
-                <div className="mt-4 flex flex-wrap gap-3">
-                  <MerrowButton href="mailto:contact@merrow.com">Email: contact@merrow.com</MerrowButton>
-                  <MerrowButton href="tel:+18004316677">Call: 800.431.6677</MerrowButton>
-                </div>
-                <div className="mt-3 text-[12px]">
-                  <Link href="/agentmap.html" className="text-merrow-link hover:underline">
-                    Find a local dealer
-                  </Link>
-                </div>
-              </div>
-
-              {machine ? (
-                <div className="rounded-xl border border-[#e1e1e1] bg-[#f9f9f9] p-5">
-                  <div className="text-[11px] uppercase tracking-[0.16em] text-merrow-textMuted">
-                    Related machine
-                  </div>
-                  <div className="mt-2 text-[13px] text-merrow-textSub">
-                    {machine.header || machine.style}
-                  </div>
-                  <div className="mt-3">
-                    <MerrowButton href={`/machines/${machine.styleKey}`}>View Machine</MerrowButton>
-                  </div>
+              {thumbVideos.length > 0 ? (
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {thumbVideos.map((thumb) => (
+                    <a key={thumb.image} href={thumb.video} target="_blank" rel="noopener noreferrer">
+                      <img
+                        src={thumb.image}
+                        alt="Part preview"
+                        className="h-[74px] w-[74px] border border-[#c8c8c8] bg-white object-cover"
+                      />
+                    </a>
+                  ))}
                 </div>
               ) : null}
             </div>
+
+            {dimensions.length > 0 ? (
+              <div className="mt-3 rounded border border-[#b7b7b7] bg-[#efefef] p-3">
+                <table className="w-full text-[12px]">
+                  <tbody>
+                    {dimensions.map((row, index) => (
+                      <tr key={row.label} className={index % 2 === 0 ? "bg-[#f5f5f5]" : "bg-[#ebebeb]"}>
+                        <td className="w-[120px] px-2 py-1 font-semibold text-[#666666]">{row.label}</td>
+                        <td className="px-2 py-1 text-[#4c4c4c]">{row.value}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            ) : null}
           </div>
 
-          {drawings.length > 0 ? (
-            <div className="mt-12 space-y-10">
-              <PartsDrawings drawings={drawings} />
+          <div>
+            <LegacyBox title="Price">
+              <div className="text-[12px] leading-[16px] text-[#4c4c4c]">
+                {record.mrsp ? record.mrsp : "Please Contact your Merrow Agent for Pricing"}
+              </div>
+            </LegacyBox>
 
-              <section className="space-y-6">
-                <div className="text-[12px] uppercase tracking-[0.18em] text-merrow-textMuted">
-                  Parts list by assembly
+            <LegacyBox title="Description">
+              <div className="parts-detail-html text-[12px] leading-[16px] text-[#4c4c4c]">
+                {record.description ? (
+                  <div dangerouslySetInnerHTML={{ __html: record.description }} />
+                ) : (
+                  <div>Part description is not available.</div>
+                )}
+              </div>
+              <div className="mt-2 text-[12px]">
+                <a href="#wingnuts" className="text-[#808080] hover:text-[#af0b0c] hover:underline">
+                  Read More
+                </a>
+                <span className="px-1 text-[#9a9a9a]">|</span>
+                <a href="/contact_general.html" className="text-[#808080] hover:text-[#af0b0c] hover:underline">
+                  Contact Us
+                </a>
+              </div>
+            </LegacyBox>
+
+            {machine ? (
+              <LegacyBox title="Related Machine">
+                <div className="text-[12px] leading-[16px] text-[#4c4c4c]">
+                  {machine.header || machine.style || machine.styleKey}
                 </div>
-                {drawings.map((drawing) => {
-                  const relatedParts = partsByPd[drawing.pd] || [];
-                  return (
-                    <div
-                      key={`parts-${drawing.pd}`}
-                      className="rounded-xl border border-[#e1e1e1] bg-white p-5"
-                    >
-                      <div className="text-[13px] font-semibold text-merrow-textMain">
-                        {drawing.description || drawing.pd}
-                      </div>
-                      {relatedParts.length > 0 ? (
-                        <div className="mt-4 overflow-x-auto">
-                          <table className="w-full text-[13px]">
-                            <thead>
-                              <tr className="text-left text-merrow-textMuted">
-                                <th className="pb-2">Part</th>
-                                <th className="pb-2">MMC</th>
-                                <th className="pb-2">MSRP</th>
-                                <th className="pb-2">Link</th>
-                              </tr>
-                            </thead>
-                            <tbody className="text-merrow-textSub">
-                              {relatedParts.map((part) => {
-                                const thumb =
-                                  part.imgurlTiny ||
-                                  (part.msmcId
-                                    ? `/images/products/thumb/${part.msmcId}_t1.jpg`
-                                    : "");
-                                return (
-                                  <tr key={`${drawing.pd}-${part.asinId}`} className="border-t border-[#efefef]">
-                                    <td className="py-2">
-                                      <div className="flex items-center gap-3">
-                                        {thumb ? (
-                                          <img
-                                            src={thumb}
-                                            alt={part.productName}
-                                            className="h-12 w-12 rounded border border-merrow-border object-cover"
-                                          />
-                                        ) : null}
-                                        <div>
-                                          <div className="text-merrow-textMain">{part.productName}</div>
-                                          {part.otId ? (
-                                            <div className="text-[12px] text-merrow-textMuted">{part.otId}</div>
-                                          ) : null}
-                                        </div>
-                                      </div>
-                                    </td>
-                                    <td className="py-2">{part.mmcId || part.msmcId}</td>
-                                    <td className="py-2">{part.mrsp || "Contact agent"}</td>
-                                    <td className="py-2">
-                                      {part.amznUrl ? (
-                                        <a
-                                          href={part.amznUrl}
-                                          className="text-merrow-link hover:underline"
-                                          target="_blank"
-                                          rel="noopener noreferrer"
-                                        >
-                                          Amazon
-                                        </a>
-                                      ) : (
-                                        <span className="text-merrow-textMuted">—</span>
-                                      )}
-                                    </td>
-                                  </tr>
-                                );
-                              })}
-                            </tbody>
-                          </table>
-                        </div>
-                      ) : (
-                        <p className="mt-2 text-[13px] text-merrow-textSub">
-                          No parts are listed for this assembly yet.
-                        </p>
-                      )}
-                    </div>
-                  );
-                })}
-              </section>
-            </div>
-          ) : (
-            <div className="mt-12 rounded-xl border border-[#e1e1e1] bg-white p-6 text-[13px] text-merrow-textSub">
-              We do not have assembly drawings for this part yet.
-            </div>
-          )}
+                <div className="mt-2 text-[12px]">
+                  <Link href={`/machines/${machine.styleKey}`} className="text-[#808080] hover:text-[#af0b0c] hover:underline">
+                    View machine details
+                  </Link>
+                </div>
+              </LegacyBox>
+            ) : null}
+          </div>
         </div>
-      </FullBleed>
+
+        <div id="wingnuts" className="mt-3 rounded border border-[#b7b7b7] bg-[#efefef] p-3">
+          <div className="mb-2 text-[13px] font-semibold text-[#b00707]">Detailed Description</div>
+          <div
+            className="parts-detail-html text-[12px] leading-[16px] text-[#4c4c4c]"
+            dangerouslySetInnerHTML={{ __html: record.description || "No additional details available." }}
+          />
+        </div>
+
+        {drawings.length > 0 ? (
+          <div className="mt-4 rounded border border-[#b7b7b7] bg-[#efefef] p-3">
+            <PartsDrawings drawings={drawings} />
+          </div>
+        ) : null}
+
+        {drawings.length > 0 ? (
+          <div className="mt-4 space-y-3">
+            {drawings.map((drawing) => {
+              const relatedParts = partsByPd[drawing.pd] || [];
+              if (relatedParts.length === 0) return null;
+
+              return (
+                <div key={`parts-${drawing.pd}`} className="rounded border border-[#b7b7b7] bg-[#efefef] p-3">
+                  <div className="mb-2 text-[13px] font-semibold text-[#b00707]">
+                    {drawing.description || drawing.pd}
+                  </div>
+                  <div className="overflow-x-auto">
+                    <table className="w-full text-[12px]">
+                      <thead>
+                        <tr className="border-b border-[#d5d5d5] text-left text-[#666666]">
+                          <th className="px-2 py-1">Part</th>
+                          <th className="px-2 py-1">MMC</th>
+                          <th className="px-2 py-1">MSRP</th>
+                          <th className="px-2 py-1">Link</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {relatedParts.map((part, idx) => (
+                          <tr key={`${drawing.pd}-${part.asinId}-${idx}`} className="border-b border-[#e2e2e2]">
+                            <td className="px-2 py-1 text-[#4c4c4c]">{part.productName}</td>
+                            <td className="px-2 py-1 text-[#4c4c4c]">{part.msmcId || part.mmcId}</td>
+                            <td className="px-2 py-1 text-[#4c4c4c]">{part.mrsp || "-"}</td>
+                            <td className="px-2 py-1">
+                              {part.otId ? (
+                                <Link
+                                  href={`/parts/${part.otId}/${part.msmcId || part.mmcId}`}
+                                  className="text-[#808080] hover:text-[#af0b0c] hover:underline"
+                                >
+                                  View
+                                </Link>
+                              ) : (
+                                <span className="text-[#9a9a9a]">-</span>
+                              )}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        ) : null}
+
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+              .parts-detail-html a { color: #808080; text-decoration: none; }
+              .parts-detail-html a:hover { color: #af0b0c; text-decoration: underline; }
+              .parts-detail-html img { max-width: 100%; height: auto; }
+              .parts-detail-html table { width: 100%; border-collapse: collapse; }
+              .parts-detail-html td, .parts-detail-html th {
+                border: 1px solid #d3d3d3;
+                padding: 4px;
+                font-size: 12px;
+              }
+            `,
+          }}
+        />
+      </div>
     </main>
   );
 }
