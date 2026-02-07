@@ -26,6 +26,7 @@ function mapAsin(row: any): AsinRecord {
     otId: row.ot_id ?? "",
     mmcId: row.mmc_id ?? "",
     msmcId: row.msmc_id ?? "",
+    numberOfThumbs: Number(row.number_of_thumbs ?? 0) || 0,
     productName: row.product_name ?? "",
     description: rewriteLegacyAssetHostsInHtml(row.description ?? ""),
     mediaKeyword: row.media_keyword ?? "",
@@ -63,10 +64,10 @@ function mapPartsDrawing(row: any): PartsDrawing {
 }
 
 const ASIN_DETAIL_FIELDS =
-  "id, asin_id, ot_id, mmc_id, msmc_id, product_name, description, media_keyword, book_page, partsbook_url, partsbook_img, partsbook_name, imgurl_large, imgurl_medium, imgurl_tiny, mrsp, display_length, display_width, display_height, display_weight, display_length_unit_of_measure, display_width_unit_of_measure, display_height_unit_of_measure, display_weight_unit_of_measure, amzn_url, brand";
+  "id, asin_id, ot_id, mmc_id, msmc_id, number_of_thumbs, product_name, description, media_keyword, book_page, partsbook_url, partsbook_img, partsbook_name, imgurl_large, imgurl_medium, imgurl_tiny, mrsp, display_length, display_width, display_height, display_weight, display_length_unit_of_measure, display_width_unit_of_measure, display_height_unit_of_measure, display_weight_unit_of_measure, amzn_url, brand";
 
 const ASIN_SUMMARY_FIELDS =
-  "id, asin_id, ot_id, mmc_id, msmc_id, product_name, media_keyword, book_page, partsbook_url, partsbook_img, partsbook_name, imgurl_tiny, mrsp, amzn_url, brand";
+  "id, asin_id, ot_id, mmc_id, msmc_id, number_of_thumbs, product_name, media_keyword, book_page, partsbook_url, partsbook_img, partsbook_name, imgurl_tiny, mrsp, amzn_url, brand";
 
 /**
  * Get a single part/product by its ot_id (order code)

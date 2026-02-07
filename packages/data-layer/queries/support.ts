@@ -24,6 +24,7 @@ export interface AsinRecord {
   otId: string;
   mmcId: string;
   msmcId: string;
+  numberOfThumbs: number;
   productName: string;
   description: string;
   mediaKeyword: string;
@@ -110,6 +111,7 @@ function mapAsin(row: any): AsinRecord {
     otId: row.ot_id ?? "",
     mmcId: row.mmc_id ?? "",
     msmcId: row.msmc_id ?? "",
+    numberOfThumbs: Number(row.number_of_thumbs ?? 0) || 0,
     productName: row.product_name ?? "",
     description: rewriteLegacyAssetHostsInHtml(row.description ?? ""),
     mediaKeyword: row.media_keyword ?? "",

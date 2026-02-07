@@ -3,6 +3,7 @@
 // Legacy-style parts hub with machine-class lookup and documentation links
 
 import { Metadata } from "next";
+import Link from "next/link";
 import { getAllPublishedMachines } from "../../../../packages/data-layer/queries/machines";
 import {
   getPartsQuickActionLinks,
@@ -10,6 +11,7 @@ import {
   PARTS_CLASS_ORDER,
   PARTS_POPULAR_SEARCH_LINKS,
 } from "./_data/content";
+import { PartsLookupForm } from "./_components/PartsLookupForm";
 import {
   LegacyBox,
   LegacyLinkList,
@@ -51,6 +53,8 @@ export default async function PartsPage() {
         </p>
       </div>
 
+      <PartsLookupForm />
+
       <div className="grid grid-cols-[300px_300px_300px] gap-4">
         <div>
           <div className="mb-2 text-[13px] font-semibold text-[#b00707]">What Machine Would You Like?</div>
@@ -67,12 +71,12 @@ export default async function PartsPage() {
                   <ul className="space-y-1">
                     {entries.map((machine) => (
                       <li key={`${classKey}-${machine.styleKey}`}>
-                        <a
-                          href={`/parts/${machine.otId}/${machine.styleKey}`}
+                        <Link
+                          href={`/parts/${encodeURIComponent(machine.styleKey)}/${encodeURIComponent(machine.styleKey)}`}
                           className={LEGACY_SUPPORT_LINK_CLASS}
                         >
                           {machine.style || machine.styleKey}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>

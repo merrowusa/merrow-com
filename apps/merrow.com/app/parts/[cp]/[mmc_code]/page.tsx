@@ -13,14 +13,13 @@ import {
 } from "../../../../../../packages/data-layer/queries/parts";
 import {
   getMachineByOtId,
-  type MachinePage,
 } from "../../../../../../packages/data-layer/queries/machines";
 import { PartsDrawings } from "../../_components/PartsDrawings";
+import { FallbackImg } from "../../_components/FallbackImg";
 import {
   LegacyBox,
   LegacySupportPage,
 } from "../../../support/_components/LegacySupportPrimitives";
-import { SUPPORT_CONTACT } from "../../../support/_data/links";
 
 interface PageProps {
   params: Promise<{ cp: string; mmc_code: string }>;
@@ -50,6 +49,14 @@ function formatMeasure(value: string, unit: string) {
 
 function normalize(input: string) {
   return input.trim().toLowerCase();
+}
+
+function clampInt(value: number, min: number, max: number) {
+  return Math.max(min, Math.min(max, value));
+}
+
+function isDigits(value: string) {
+  return /^[0-9]+$/.test(value.trim());
 }
 
 export async function generateStaticParams() {
@@ -89,75 +96,18 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-function MachinePartsPage({ machine }: { machine: MachinePage }) {
-  return (
-    <LegacySupportPage>
-      <div className="mb-3 rounded border border-[#b7b7b7] bg-[#efefef] p-3">
-        <div className="text-[18px] font-semibold text-[#b00707]">
-          {machine.style || machine.styleKey}
-        </div>
-        <div className="text-[12px] text-[#666666]">{machine.header || "Merrow sewing machine"}</div>
-      </div>
-
-      <div className="grid grid-cols-[620px_300px] gap-4">
-        <div className="rounded border border-[#b7b7b7] bg-[#efefef] p-3">
-          {machine.description ? (
-            <div
-              className="parts-machine-html text-[12px] leading-[16px] text-[#4c4c4c]"
-              dangerouslySetInnerHTML={{ __html: machine.description }}
-            />
-          ) : (
-            <p className="text-[12px] leading-[16px] text-[#4c4c4c]">
-              Machine description is not available.
-            </p>
-          )}
-        </div>
-
-        <div>
-          <LegacyBox title="Need More Help?">
-            <div className="text-[12px] leading-[16px] text-[#4c4c4c]">
-              Contact your Merrow Agent for pricing and availability.
-              <br />
-              <br />
-              Email: {SUPPORT_CONTACT.partsEmail}
-              <br />
-              Phone: 800.431.6677
-              <br />
-              International: {SUPPORT_CONTACT.supportPhoneDisplay}
-            </div>
-          </LegacyBox>
-
-          <LegacyBox title="Machine Details">
-            <div className="text-[12px] leading-[16px]">
-              <Link href={`/machines/${machine.styleKey}`} className="text-[#808080] hover:text-[#af0b0c] hover:underline">
-                View full machine page
-              </Link>
-            </div>
-          </LegacyBox>
-        </div>
-      </div>
-
-      <style
-        dangerouslySetInnerHTML={{
-          __html: `
-            .parts-machine-html a { color: #808080; text-decoration: none; }
-            .parts-machine-html a:hover { color: #af0b0c; text-decoration: underline; }
-            .parts-machine-html img { max-width: 100%; height: auto; }
-          `,
-        }}
-      />
-    </LegacySupportPage>
-  );
-}
-
 export default async function PartsDetailPage({ params }: PageProps) {
   const { cp, mmc_code } = await params;
   const record = await getAsinByOtId(cp);
 
   if (!record || !record.mmcId) {
-    const machine = await getMachineByOtId(cp);
-    if (machine) {
-      return <MachinePartsPage machine={machine} />;
+    // Some internal links historically used numeric machine ot_id. Canonicalize those to
+    // the legacy parts surface (`/parts/{styleKey}/{styleKey}`) when possible.
+    if (isDigits(cp)) {
+      const machine = await getMachineByOtId(cp);
+      if (machine?.styleKey) {
+        permanentRedirect(partsCanonicalPath(machine.styleKey, machine.styleKey));
+      }
     }
     notFound();
   }
@@ -179,17 +129,28 @@ export default async function PartsDetailPage({ params }: PageProps) {
 
   const assetBase = getAssetBase();
 
-  const mainImage =
-    record.imgurlLarge ||
-    (record.msmcId ? `${assetBase}/images/products/large/${record.msmcId}.jpg` : "");
+  const styleKey = (record.msmcId || record.mmcId || "").trim();
 
-  const thumbVideos =
-    record.msmcId
-      ? Array.from({ length: 4 }).map((_, index) => ({
-          image: `${assetBase}/productpages/${record.msmcId}_thumb${index + 1}.jpg`,
-          video: `${assetBase}/productpages/${record.msmcId}_thumb${index + 1}.m4v`,
-        }))
-      : [];
+  const mainImageCandidates = [
+    record.imgurlLarge,
+    styleKey ? `${assetBase}/productpages/${styleKey}_main.jpg` : "",
+    styleKey ? `${assetBase}/product-pages/${styleKey}_main.jpg` : "",
+    styleKey ? `${assetBase}/images/products/large/${styleKey}.jpg` : "",
+  ];
+
+  const thumbCount = clampInt(record.numberOfThumbs || 0, 0, 4);
+  const thumbVideos = styleKey
+    ? Array.from({ length: thumbCount }).map((_, index) => {
+        const n = index + 1;
+        return {
+          imageCandidates: [
+            `${assetBase}/productpages/${styleKey}_thumb${n}.jpg`,
+            `${assetBase}/product-pages/${styleKey}_thumb${n}.jpg`,
+          ],
+          video: `${assetBase}/productpages/${styleKey}_thumb${n}.m4v`,
+        };
+      })
+    : [];
 
   const dimensions = [
     { label: "LENGTH", value: formatMeasure(record.displayLength, record.displayLengthUnit) },
@@ -206,59 +167,70 @@ export default async function PartsDetailPage({ params }: PageProps) {
         <div className="text-[12px] text-[#666666]">{record.msmcId || record.mmcId || cp}</div>
       </div>
 
-        <div
-          className="grid grid-cols-[620px_300px] gap-4"
-          data-ot-id={record.otId || cp}
-          data-asin-id={record.asinId || record.id || ""}
-          data-mmc-id={record.mmcId || ""}
-          data-msmc-id={record.msmcId || ""}
-          data-product-name={record.productName || ""}
-        >
-          <div>
-            <div className="rounded border border-[#b7b7b7] bg-[#efefef] p-3">
-              {mainImage ? (
-                <img
-                  src={mainImage}
-                  alt={record.productName || record.msmcId || cp}
-                  className="w-full max-w-[500px]"
-                  loading="eager"
-                />
-              ) : (
-                <div className="h-[260px] w-full max-w-[500px] border border-[#c8c8c8] bg-[#f8f8f8]" />
-              )}
+      <div
+        className="grid grid-cols-[620px_300px] gap-4"
+        data-ot-id={record.otId || cp}
+        data-asin-id={record.asinId || record.id || ""}
+        data-mmc-id={record.mmcId || ""}
+        data-msmc-id={record.msmcId || ""}
+        data-product-name={record.productName || ""}
+      >
+        <div>
+          <div className="rounded border border-[#b7b7b7] bg-[#efefef] p-3">
+            {mainImageCandidates.some(Boolean) ? (
+              <FallbackImg
+                candidates={mainImageCandidates}
+                alt={record.productName || record.msmcId || cp}
+                className="w-full max-w-[500px]"
+                loading="eager"
+              />
+            ) : (
+              <div className="h-[260px] w-full max-w-[500px] border border-[#c8c8c8] bg-[#f8f8f8]" />
+            )}
 
-              {thumbVideos.length > 0 ? (
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {thumbVideos.map((thumb) => (
-                    <a key={thumb.image} href={thumb.video} target="_blank" rel="noopener noreferrer">
-                      <img
-                        src={thumb.image}
-                        alt="Part preview"
-                        className="h-[74px] w-[74px] border border-[#c8c8c8] bg-white object-cover"
-                      />
-                    </a>
-                  ))}
-                </div>
-              ) : null}
-            </div>
-
-            {dimensions.length > 0 ? (
-              <div className="mt-3 rounded border border-[#b7b7b7] bg-[#efefef] p-3">
-                <table className="w-full text-[12px]">
-                  <tbody>
-                    {dimensions.map((row, index) => (
-                      <tr key={row.label} className={index % 2 === 0 ? "bg-[#f5f5f5]" : "bg-[#ebebeb]"}>
-                        <td className="w-[120px] px-2 py-1 font-semibold text-[#666666]">{row.label}</td>
-                        <td className="px-2 py-1 text-[#4c4c4c]">{row.value}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+            {thumbVideos.length > 0 ? (
+              <div className="mt-3 flex flex-wrap gap-2">
+                {thumbVideos.map((thumb) => (
+                  <a
+                    key={thumb.video}
+                    href={thumb.video}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FallbackImg
+                      candidates={thumb.imageCandidates}
+                      alt="Part preview"
+                      className="h-[74px] w-[74px] border border-[#c8c8c8] bg-white object-cover"
+                      loading="lazy"
+                    />
+                  </a>
+                ))}
               </div>
             ) : null}
           </div>
 
-          <div>
+          {dimensions.length > 0 ? (
+            <div className="mt-3 rounded border border-[#b7b7b7] bg-[#efefef] p-3">
+              <table className="w-full text-[12px]">
+                <tbody>
+                  {dimensions.map((row, index) => (
+                    <tr
+                      key={row.label}
+                      className={index % 2 === 0 ? "bg-[#f5f5f5]" : "bg-[#ebebeb]"}
+                    >
+                      <td className="w-[120px] px-2 py-1 font-semibold text-[#666666]">
+                        {row.label}
+                      </td>
+                      <td className="px-2 py-1 text-[#4c4c4c]">{row.value}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          ) : null}
+        </div>
+
+        <div>
             <LegacyBox title="Price">
               <div className="text-[12px] leading-[16px] text-[#4c4c4c]">
                 {record.mrsp ? record.mrsp : "Please Contact your Merrow Agent for Pricing"}
