@@ -1,0 +1,56 @@
+{
+  "id": "merrow-com-header-smoke",
+  "viewports": [
+    {
+      "label": "desktop-1440",
+      "width": 1440,
+      "height": 260
+    },
+    {
+      "label": "desktop-1920",
+      "width": 1920,
+      "height": 260
+    }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "Header Chrome",
+      "referenceUrl": "https://www.merrow.com/",
+      "url": "http://localhost:3000/",
+      "delay": 2000,
+      "misMatchThreshold": 10,
+      "hideSelectors": [
+        ".google-analytics",
+        ".chat-widget"
+      ],
+      "requireSameDimensions": false
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/header_smoke_reference",
+    "bitmaps_test": "backstop_data/header_smoke_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/header_smoke_report",
+    "ci_report": "backstop_data/header_smoke_ci_report"
+  },
+  "report": [
+    "browser",
+    "CI"
+  ],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": [
+      "--no-sandbox"
+    ]
+  },
+  "asyncCaptureLimit": 3,
+  "asyncCompareLimit": 20,
+  "debug": false,
+  "debugWindow": false,
+  "resembleOutputOptions": {
+    "ignoreAntialiasing": true,
+    "usePreciseMatching": false
+  }
+}
