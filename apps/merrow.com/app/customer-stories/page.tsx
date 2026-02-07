@@ -1,104 +1,202 @@
-// @version customer-stories-index v1.0
+// @version customer-stories-index v2.0
 //
 // Route: /customer-stories
-// Index page listing all customer stories
+// Legacy-style story index using the same card treatment as the original menu surface
 
 import { Metadata } from "next";
-import {
-  FullBleed,
-  PageHeader,
-  MerrowButton,
-} from "../../../../packages/ui";
 import { getPublishedStories } from "../../../../packages/data-layer/queries/customer-stories";
 
-export const metadata: Metadata = {
-  title: "Customer Success Stories | Merrow Sewing Machines",
-  description:
-    "Read success stories from Merrow customers around the world. See how manufacturers use Merrow machines for fashion and technical textiles.",
+const LEGACY_STORY_ASSET_BASE =
+  "https://merrow-media.s3.amazonaws.com/general-http/2011_live";
+
+const LEGACY_STORY_ORDER = ["csrw", "csb", "csam"] as const;
+
+const LEGACY_STORY_HEADINGS: Record<(typeof LEGACY_STORY_ORDER)[number], string> = {
+  csrw: "Ramblers Way",
+  csb: "Hoffman Embroidery",
+  csam: "ACME Mills",
 };
+
+const LEGACY_STORY_BLURBS: Record<(typeof LEGACY_STORY_ORDER)[number], string> = {
+  csrw:
+    "Merrow knows sewing, from machine to stitch to garment. During our 172 years in the business we've accumulated a vast amount of knowledge on what it means to design, construct, and market a product.",
+  csb:
+    "We love this machine and the new world it has opened for us. Open communication leads to unparalleled service and customer loyalty that would rival any brand.",
+  csam:
+    "Merrow's partnerships with various OEM manufacturers helped us get the equipment we needed to fit our operation without disrupting our existing setup.",
+};
+
+export const metadata: Metadata = {
+  title: "Customer Stories | Merrow Sewing Machines",
+  description:
+    "Merrow customer stories from fashion, technical seaming, and end-to-end joining manufacturers.",
+};
+
+function normalizeQuote(text?: string): string {
+  return (text || "").replace(/\s+/g, " ").trim();
+}
 
 export default async function CustomerStoriesIndexPage() {
   const stories = await getPublishedStories();
+  const storyMap = new Map(stories.map((story) => [story.appKey, story]));
+
+  const featuredStories = LEGACY_STORY_ORDER.map((storyKey) => {
+    const story = storyMap.get(storyKey);
+    return {
+      appKey: storyKey,
+      href: `/customer-stories/featured/${storyKey}`,
+      title: LEGACY_STORY_HEADINGS[storyKey],
+      blurb: normalizeQuote(story?.quote) || LEGACY_STORY_BLURBS[storyKey],
+      image: `${LEGACY_STORY_ASSET_BASE}/${storyKey}_09.jpg`,
+    };
+  });
+
+  const additionalStories = stories.filter(
+    (story) => !LEGACY_STORY_ORDER.includes(story.appKey as (typeof LEGACY_STORY_ORDER)[number])
+  );
 
   return (
-    <main className="text-merrow-textMain">
-      {/* Hero section */}
-      <FullBleed className="bg-merrow-heroBg border-b border-merrow-border">
-        <div className="mx-auto max-w-merrow px-4 py-12">
-          <div className="text-center">
-            <PageHeader
-              eyebrow="Success Stories"
-              title="Customer Stories"
-              subtitle="See how manufacturers around the world use Merrow machines."
-            />
-          </div>
-        </div>
-      </FullBleed>
-
-      {/* Stories grid */}
-      <FullBleed className="bg-white">
-        <div className="mx-auto max-w-merrow px-4 py-10">
-          {stories.length > 0 ? (
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {stories.map((story) => (
-                <a
-                  key={story.id}
-                  href={`/customer-stories/featured/${story.appKey}`}
-                  className="block border border-merrow-border rounded-lg overflow-hidden hover:shadow-md transition-shadow"
-                >
-                  <div className="p-6">
-                    <h3 className="text-[14px] font-semibold text-merrow-textMain">
-                      {story.appTitle}
-                    </h3>
-
-                    {story.quote && (
-                      <blockquote className="mt-3 text-[12px] italic text-merrow-textSub leading-[18px]">
-                        "{story.quote.slice(0, 150)}
-                        {story.quote.length > 150 ? "..." : ""}"
-                      </blockquote>
-                    )}
-
-                    {story.quoteAuthor && (
-                      <p className="mt-2 text-[11px] text-merrow-textMuted">
-                        - {story.quoteAuthor}
-                      </p>
-                    )}
-
-                    <div className="mt-4">
-                      <span className="text-[11px] font-semibold text-merrow-link">
-                        Read Story
-                      </span>
-                    </div>
-                  </div>
-                </a>
-              ))}
-            </div>
-          ) : (
-            <p className="text-merrow-textMuted text-[13px]">
-              No customer stories found. Please check database connection.
-            </p>
-          )}
-        </div>
-      </FullBleed>
-
-      {/* CTA section */}
-      <FullBleed className="bg-merrow-footerBg">
-        <div className="mx-auto max-w-merrow px-4 py-10 text-center">
-          <h2 className="text-[20px] font-light text-white">
-            Have a story to share?
-          </h2>
-          <p className="mt-2 text-[13px] text-[#d7d7d7]">
-            We'd love to hear how Merrow machines are helping your business.
+    <main className="customer-stories-index-page">
+      <div className="customer-stories-index-shell">
+        <header className="customer-stories-index-header">
+          <h1>Merrow Customer Stories</h1>
+          <p>
+            For over 180 years, companies have depended on Merrow for customized
+            sewing solutions. These stories show how those partnerships perform in
+            production.
           </p>
-          <div className="mt-4 flex justify-center gap-4">
-            <MerrowButton href="mailto:marketing@merrow.com">
-              Share Your Story
-            </MerrowButton>
-          </div>
-        </div>
-      </FullBleed>
+        </header>
+
+        <section className="customer-stories-index-list" aria-label="Featured customer stories">
+          {featuredStories.map((story) => (
+            <article key={story.appKey} className="customer-story-row">
+              <a className="story-image-link" href={story.href}>
+                <img
+                  src={story.image}
+                  width={643}
+                  height={200}
+                  alt={`${story.title} customer story`}
+                />
+              </a>
+              <div className="story-copy">
+                <h2>{story.title}</h2>
+                <p>"{story.blurb}"</p>
+                <a href={story.href}>Read Customer Story</a>
+              </div>
+            </article>
+          ))}
+        </section>
+
+        {additionalStories.length > 0 && (
+          <section className="customer-stories-additional" aria-label="More customer stories">
+            <h2>Additional Stories</h2>
+            <ul>
+              {additionalStories.map((story) => (
+                <li key={story.id}>
+                  <a href={`/customer-stories/featured/${story.appKey}`}>
+                    {story.appTitle || story.appKey}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+      </div>
+
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+            .customer-stories-index-page {
+              min-width: 1040px;
+              background: #ebebeb;
+              padding: 18px 0 30px;
+              color: #333333;
+            }
+            .customer-stories-index-page .customer-stories-index-shell {
+              width: 980px;
+              margin: 0 auto;
+              font-family: Verdana, Arial, sans-serif;
+            }
+            .customer-stories-index-page .customer-stories-index-header h1 {
+              margin: 0 0 8px;
+              font: 28px/34px "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+              color: #2f2f2f;
+            }
+            .customer-stories-index-page .customer-stories-index-header p {
+              margin: 0 0 18px;
+              width: 860px;
+              color: #666666;
+              font: 12px/18px Verdana, Arial, sans-serif;
+            }
+            .customer-stories-index-page .customer-stories-index-list {
+              width: 100%;
+            }
+            .customer-stories-index-page .customer-story-row {
+              width: 100%;
+              min-height: 200px;
+              margin: 0 0 14px;
+              padding: 0 0 14px;
+              border-bottom: 1px solid #d5d5d5;
+              display: flex;
+              align-items: flex-start;
+              gap: 18px;
+            }
+            .customer-stories-index-page .story-image-link img {
+              display: block;
+              width: 643px;
+              height: 200px;
+              border: 0;
+            }
+            .customer-stories-index-page .story-copy {
+              width: 300px;
+            }
+            .customer-stories-index-page .story-copy h2 {
+              margin: 0 0 8px;
+              font: 24px/28px "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+              color: #333333;
+            }
+            .customer-stories-index-page .story-copy p {
+              margin: 0 0 10px;
+              color: #666666;
+              font: 12px/18px Verdana, Arial, sans-serif;
+            }
+            .customer-stories-index-page .story-copy a {
+              color: #990000;
+              font: bold 11px/16px Verdana, Arial, sans-serif;
+              text-decoration: none;
+            }
+            .customer-stories-index-page .story-copy a:hover {
+              text-decoration: underline;
+            }
+            .customer-stories-index-page .customer-stories-additional {
+              margin-top: 12px;
+            }
+            .customer-stories-index-page .customer-stories-additional h2 {
+              margin: 0 0 6px;
+              font: bold 14px/18px Verdana, Arial, sans-serif;
+              color: #333333;
+            }
+            .customer-stories-index-page .customer-stories-additional ul {
+              margin: 0;
+              padding: 0;
+              list-style: none;
+            }
+            .customer-stories-index-page .customer-stories-additional li {
+              margin: 0 0 4px;
+            }
+            .customer-stories-index-page .customer-stories-additional a {
+              color: #990000;
+              font: 12px/18px Verdana, Arial, sans-serif;
+              text-decoration: none;
+            }
+            .customer-stories-index-page .customer-stories-additional a:hover {
+              text-decoration: underline;
+            }
+          `,
+        }}
+      />
     </main>
   );
 }
 
-export const revalidate = 86400; // ISR: 24 hours
+export const revalidate = 86400;
