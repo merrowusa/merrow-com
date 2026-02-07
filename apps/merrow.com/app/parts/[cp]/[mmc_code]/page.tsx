@@ -4,7 +4,7 @@
 // Legacy-style parts detail layout with Supabase-backed data
 
 import { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import Link from "next/link";
 import {
   getAsinByOtId,
@@ -26,6 +26,19 @@ interface PageProps {
   params: Promise<{ cp: string; mmc_code: string }>;
 }
 
+const FALLBACK_ASSET_BASE =
+  "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev";
+
+function getAssetBase(): string {
+  const raw = process.env.NEXT_PUBLIC_MERROW_ASSET_BASE?.trim();
+  if (!raw) return FALLBACK_ASSET_BASE;
+  return raw.replace(/\/+$/, "");
+}
+
+function partsCanonicalPath(cp: string, code: string): string {
+  return `/parts/${encodeURIComponent(cp)}/${encodeURIComponent(code)}`;
+}
+
 function stripHtml(input: string) {
   return input.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
 }
@@ -44,7 +57,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { cp } = await params;
+  const { cp, mmc_code } = await params;
   const record = await getAsinByOtId(cp);
 
   if (!record) {
@@ -65,10 +78,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const title = record.productName || `Part ${cp}`;
   const description = stripHtml(record.description || "") || `Merrow part ${cp} details.`;
+  const canonicalCode = record.msmcId || record.mmcId || mmc_code || "";
 
   return {
     title: `${title} | Merrow Parts`,
     description,
+    alternates: canonicalCode
+      ? { canonical: partsCanonicalPath(cp, canonicalCode) }
+      : undefined,
   };
 }
 
@@ -145,8 +162,11 @@ export default async function PartsDetailPage({ params }: PageProps) {
     notFound();
   }
 
-  if (record.msmcId && normalize(mmc_code) !== normalize(record.msmcId)) {
-    notFound();
+  // Canonicalize URL slug for ecom/backbone stability:
+  // prefer `msmcId` (legacy) and fall back to `mmcId`.
+  const canonicalCode = (record.msmcId || record.mmcId || "").trim();
+  if (canonicalCode && normalize(mmc_code) !== normalize(canonicalCode)) {
+    permanentRedirect(partsCanonicalPath(cp, canonicalCode));
   }
 
   const asinKey = record.asinId || record.id;
@@ -157,14 +177,17 @@ export default async function PartsDetailPage({ params }: PageProps) {
       : {};
   const machine = record.otId ? await getMachineByOtId(record.otId) : null;
 
+  const assetBase = getAssetBase();
+
   const mainImage =
-    record.imgurlLarge || (record.msmcId ? `/images/products/large/${record.msmcId}.jpg` : "");
+    record.imgurlLarge ||
+    (record.msmcId ? `${assetBase}/images/products/large/${record.msmcId}.jpg` : "");
 
   const thumbVideos =
     record.msmcId
       ? Array.from({ length: 4 }).map((_, index) => ({
-          image: `https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/productpages/${record.msmcId}_thumb${index + 1}.jpg`,
-          video: `https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/productpages/${record.msmcId}_thumb${index + 1}.m4v`,
+          image: `${assetBase}/productpages/${record.msmcId}_thumb${index + 1}.jpg`,
+          video: `${assetBase}/productpages/${record.msmcId}_thumb${index + 1}.m4v`,
         }))
       : [];
 
@@ -183,7 +206,14 @@ export default async function PartsDetailPage({ params }: PageProps) {
         <div className="text-[12px] text-[#666666]">{record.msmcId || record.mmcId || cp}</div>
       </div>
 
-        <div className="grid grid-cols-[620px_300px] gap-4">
+        <div
+          className="grid grid-cols-[620px_300px] gap-4"
+          data-ot-id={record.otId || cp}
+          data-asin-id={record.asinId || record.id || ""}
+          data-mmc-id={record.mmcId || ""}
+          data-msmc-id={record.msmcId || ""}
+          data-product-name={record.productName || ""}
+        >
           <div>
             <div className="rounded border border-[#b7b7b7] bg-[#efefef] p-3">
               {mainImage ? (
@@ -191,6 +221,7 @@ export default async function PartsDetailPage({ params }: PageProps) {
                   src={mainImage}
                   alt={record.productName || record.msmcId || cp}
                   className="w-full max-w-[500px]"
+                  loading="eager"
                 />
               ) : (
                 <div className="h-[260px] w-full max-w-[500px] border border-[#c8c8c8] bg-[#f8f8f8]" />
