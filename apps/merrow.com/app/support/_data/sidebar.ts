@@ -67,8 +67,7 @@ export const SUPPORT_SIDEBAR_SECTIONS: SupportSidebarSection[] = [
         items: [
           {
             label: "Download manuals",
-            href: "https://www.merrow.com/agent_book/kiwifruit/instructions/language/english/type/MG/setnum/72157606829542814/setnam/mginstructions",
-            external: true,
+            href: "/agent_book/kiwifruit/instructions/language/english/type/MG/setnum/72157606829542814/setnam/mginstructions",
           },
           {
             label: "View stitch samples",
@@ -123,8 +122,7 @@ export const SUPPORT_SIDEBAR_SECTIONS: SupportSidebarSection[] = [
         items: [
           {
             label: "Download manuals",
-            href: "https://www.merrow.com/agent_book/kiwifruit/instructions/language/english/type/70/setnum/72157606831978449/setnam/70classinstructions",
-            external: true,
+            href: "/agent_book/kiwifruit/instructions/language/english/type/70/setnum/72157606831978449/setnam/70classinstructions",
           },
           {
             label: "View stitch samples",
@@ -184,8 +182,7 @@ export const SUPPORT_SIDEBAR_SECTIONS: SupportSidebarSection[] = [
         items: [
           {
             label: "Download manuals",
-            href: "https://www.merrow.com/agent_book/kiwifruit/partsbook/language/english/type/crochet/setnum/72157606826978368/setnam/crochet",
-            external: true,
+            href: "/agent_book/kiwifruit/partsbook/language/english/type/crochet/setnum/72157606826978368/setnam/crochet",
           },
           {
             label: "View stitch samples",
