@@ -1,15 +1,10 @@
-// @version support-detail v2.1
+// @version support-detail v3.0
 //
 // Route: /support/class/[c]/key/[k]
 // Dynamic support page for specific machine class + support key
 
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import {
-  FullBleed,
-  PageHeader,
-  MerrowButton,
-} from "../../../../../../../../packages/ui";
 import { SupportSidebar } from "../../../../_components/SupportSidebar";
 import { SupportDocsPanel } from "../../../../_components/SupportDocsPanel";
 import {
@@ -143,16 +138,18 @@ export default async function SupportDetailPage({ params }: PageProps) {
 
   if (technicalField === null) {
     return (
-      <main className="text-merrow-textMain">
-        <FullBleed className="bg-merrow-heroBg border-b border-merrow-border">
-          <div className="mx-auto max-w-merrow px-4 py-12">
-            <PageHeader
-              eyebrow={`Class: ${classKey}`}
-              title="Support content not found"
-              subtitle="We couldn't locate technical information for this class."
-            />
+      <main className="min-w-[1040px] bg-[#ebebeb] text-[#222222]">
+        <div className="mx-auto w-[980px] pl-[40px] pt-3 pb-4">
+          <div className="rounded border border-[#b7b7b7] bg-[#efefef] p-3">
+            <div className="mb-2 text-[18px] font-semibold text-[#b00707]">
+              Support content not found
+            </div>
+            <p className="text-[12px] leading-[16px] text-[#4c4c4c]">
+              We couldn&apos;t locate technical information for class <b>{classKey}</b> and key{" "}
+              <b>{key}</b>.
+            </p>
           </div>
-        </FullBleed>
+        </div>
       </main>
     );
   }
@@ -160,71 +157,74 @@ export default async function SupportDetailPage({ params }: PageProps) {
   const html = technicalField ? normalizeTechnicalHtml(technicalField) : "";
 
   return (
-    <main className="text-merrow-textMain bg-white">
-      {/* Hero */}
-      <FullBleed className="bg-[linear-gradient(120deg,#f7f7f7_0%,#ededed_60%,#f4f4f4_100%)] border-b border-merrow-border">
-        <div className="mx-auto max-w-merrow px-4 py-12">
-          <PageHeader
-            eyebrow={`Class: ${classKey}`}
-            title="Technical Support"
-            subtitle={`Section: ${key.replace(/_/g, " ")}`}
-          />
-        </div>
-      </FullBleed>
-
-      {/* Support layout */}
-      <FullBleed className="bg-white">
-        <div className="mx-auto max-w-merrow px-4 py-12">
-          <div className="grid gap-10 lg:grid-cols-[260px_1fr_300px]">
+    <main className="min-w-[1040px] bg-[#ebebeb] text-[#222222]">
+      <div className="mx-auto w-[980px] pl-[40px] pt-3 pb-4">
+        <div className="mb-3 grid grid-cols-[300px_360px_300px] gap-4">
+          <div>
             <SupportSidebar />
-            <div>
-              <div className="rounded-xl border border-[#e1e1e1] bg-[#fafafa] px-6 py-6 shadow-[0_8px_18px_rgba(0,0,0,0.04)]">
-                {html ? (
-                  <>
-                    {/* Legacy CMS HTML content - trusted source */}
-                    <div
-                      className="prose prose-sm max-w-none text-slate-700"
-                      dangerouslySetInnerHTML={{ __html: html }}
-                    />
-                  </>
-                ) : (
-                  <p className="text-[13px] text-merrow-textSub">
-                    No content is available for this section yet.
-                  </p>
-                )}
-              </div>
+          </div>
 
-              <div className="mt-6 rounded-xl border border-[#e1e1e1] bg-white px-5 py-4">
-                <div className="text-[12px] uppercase tracking-[0.16em] text-merrow-textMuted">
-                  Need more help?
-                </div>
-                <p className="mt-2 text-[13px] text-merrow-textSub">
-                  Contact our support team for manuals, parts, or service guidance.
+          <div>
+            <div className="mb-3 rounded border border-[#b7b7b7] bg-[#efefef] p-2">
+              <div className="text-[13px] font-semibold text-[#b00707]">
+                Technical Support: {classKey}
+              </div>
+              <div className="mt-1 text-[12px] text-[#666666]">
+                Section: {key.replace(/_/g, " ")}
+              </div>
+            </div>
+
+            <div className="rounded border border-[#b7b7b7] bg-[#efefef] p-3">
+              {html ? (
+                <div
+                  className="support-technical-html text-[12px] leading-[16px] text-[#4c4c4c]"
+                  dangerouslySetInnerHTML={{ __html: html }}
+                />
+              ) : (
+                <p className="text-[12px] leading-[16px] text-[#4c4c4c]">
+                  No content is available for this section yet.
                 </p>
-                <div className="mt-3 flex flex-wrap gap-3">
-                  <MerrowButton href="mailto:support@merrow.com">Email Support</MerrowButton>
-                  <MerrowButton href="tel:+15086894095">Call: 508.689.4095</MerrowButton>
+              )}
+
+              <div className="mt-4 border-t border-[#d6d6d6] pt-3 text-[12px] leading-[16px] text-[#4c4c4c]">
+                <div className="font-semibold text-[#b00707]">Need more help?</div>
+                <div>
+                  Contact support directly:{" "}
+                  <a className="text-[#808080] hover:underline" href="mailto:support@merrow.com">
+                    support@merrow.com
+                  </a>
+                </div>
+                <div>
+                  International phone:{" "}
+                  <a className="text-[#808080] hover:underline" href="tel:+15086894095">
+                    508.689.4095
+                  </a>
                 </div>
               </div>
             </div>
+          </div>
+
+          <div>
             <SupportDocsPanel threadingDiagrams={threadingDiagrams} />
           </div>
         </div>
-      </FullBleed>
 
-      {/* CTA */}
-      <FullBleed className="bg-merrow-footerBg">
-        <div className="mx-auto max-w-merrow px-4 py-10 text-center">
-          <h2 className="text-[20px] font-light text-white">Need Parts?</h2>
-          <p className="mt-2 text-[13px] text-[#d7d7d7]">
-            Contact our parts department for replacement parts.
-          </p>
-          <div className="mt-4 flex justify-center gap-4">
-            <MerrowButton href="mailto:parts@merrow.com">Order Parts</MerrowButton>
-            <MerrowButton href="/support">All Support</MerrowButton>
-          </div>
-        </div>
-      </FullBleed>
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+              .support-technical-html a { color: #808080; text-decoration: none; }
+              .support-technical-html a:hover { text-decoration: underline; color: #af0b0c; }
+              .support-technical-html img { max-width: 100%; height: auto; border: 0; }
+              .support-technical-html table { width: 100%; border-collapse: collapse; }
+              .support-technical-html td, .support-technical-html th {
+                border: 1px solid #d3d3d3;
+                padding: 4px;
+                font-size: 12px;
+              }
+            `,
+          }}
+        />
+      </div>
     </main>
   );
 }
