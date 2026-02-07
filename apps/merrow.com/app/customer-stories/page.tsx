@@ -7,7 +7,7 @@ import { Metadata } from "next";
 import { getPublishedStories } from "../../../../packages/data-layer/queries/customer-stories";
 
 const LEGACY_STORY_ASSET_BASE =
-  "https://merrow-media.s3.amazonaws.com/general-http/2011_live";
+  "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/general-http/2011_live";
 
 const LEGACY_STORY_ORDER = ["csrw", "csb", "csam"] as const;
 
@@ -29,7 +29,7 @@ const LEGACY_STORY_BLURBS: Record<(typeof LEGACY_STORY_ORDER)[number], string> =
 export const metadata: Metadata = {
   title: "Customer Stories | Merrow Sewing Machines",
   description:
-    "Merrow customer stories from fashion, technical seaming, and end-to-end joining manufacturers.",
+    "Read Merrow customer stories from fashion, technical seaming, and end-to-end joining manufacturers, and see how production teams deploy stitching systems.",
 };
 
 function normalizeQuote(text?: string): string {

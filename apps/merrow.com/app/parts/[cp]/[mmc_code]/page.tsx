@@ -16,6 +16,11 @@ import {
   type MachinePage,
 } from "../../../../../../packages/data-layer/queries/machines";
 import { PartsDrawings } from "../../_components/PartsDrawings";
+import {
+  LegacyBox,
+  LegacySupportPage,
+} from "../../../support/_components/LegacySupportPrimitives";
+import { SUPPORT_CONTACT } from "../../../support/_data/links";
 
 interface PageProps {
   params: Promise<{ cp: string; mmc_code: string }>;
@@ -32,21 +37,6 @@ function formatMeasure(value: string, unit: string) {
 
 function normalize(input: string) {
   return input.trim().toLowerCase();
-}
-
-function LegacyBox({
-  title,
-  children,
-}: {
-  title: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <div className="mb-3 rounded border border-[#b7b7b7] bg-[#efefef] p-2">
-      <div className="mb-1 text-[13px] font-semibold text-[#b00707]">{title}</div>
-      {children}
-    </div>
-  );
 }
 
 export async function generateStaticParams() {
@@ -84,64 +74,62 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 function MachinePartsPage({ machine }: { machine: MachinePage }) {
   return (
-    <main className="min-w-[1040px] bg-[#ebebeb] text-[#222222]">
-      <div className="mx-auto w-[980px] pl-[40px] pt-3 pb-4">
-        <div className="mb-3 rounded border border-[#b7b7b7] bg-[#efefef] p-3">
-          <div className="text-[18px] font-semibold text-[#b00707]">
-            {machine.style || machine.styleKey}
-          </div>
-          <div className="text-[12px] text-[#666666]">{machine.header || "Merrow sewing machine"}</div>
+    <LegacySupportPage>
+      <div className="mb-3 rounded border border-[#b7b7b7] bg-[#efefef] p-3">
+        <div className="text-[18px] font-semibold text-[#b00707]">
+          {machine.style || machine.styleKey}
         </div>
-
-        <div className="grid grid-cols-[620px_300px] gap-4">
-          <div className="rounded border border-[#b7b7b7] bg-[#efefef] p-3">
-            {machine.description ? (
-              <div
-                className="parts-machine-html text-[12px] leading-[16px] text-[#4c4c4c]"
-                dangerouslySetInnerHTML={{ __html: machine.description }}
-              />
-            ) : (
-              <p className="text-[12px] leading-[16px] text-[#4c4c4c]">
-                Machine description is not available.
-              </p>
-            )}
-          </div>
-
-          <div>
-            <LegacyBox title="Need More Help?">
-              <div className="text-[12px] leading-[16px] text-[#4c4c4c]">
-                Contact your Merrow Agent for pricing and availability.
-                <br />
-                <br />
-                Email: parts@merrow.com
-                <br />
-                Phone: 800.431.6677
-                <br />
-                International: 508.689.4095
-              </div>
-            </LegacyBox>
-
-            <LegacyBox title="Machine Details">
-              <div className="text-[12px] leading-[16px]">
-                <Link href={`/machines/${machine.styleKey}`} className="text-[#808080] hover:text-[#af0b0c] hover:underline">
-                  View full machine page
-                </Link>
-              </div>
-            </LegacyBox>
-          </div>
-        </div>
-
-        <style
-          dangerouslySetInnerHTML={{
-            __html: `
-              .parts-machine-html a { color: #808080; text-decoration: none; }
-              .parts-machine-html a:hover { color: #af0b0c; text-decoration: underline; }
-              .parts-machine-html img { max-width: 100%; height: auto; }
-            `,
-          }}
-        />
+        <div className="text-[12px] text-[#666666]">{machine.header || "Merrow sewing machine"}</div>
       </div>
-    </main>
+
+      <div className="grid grid-cols-[620px_300px] gap-4">
+        <div className="rounded border border-[#b7b7b7] bg-[#efefef] p-3">
+          {machine.description ? (
+            <div
+              className="parts-machine-html text-[12px] leading-[16px] text-[#4c4c4c]"
+              dangerouslySetInnerHTML={{ __html: machine.description }}
+            />
+          ) : (
+            <p className="text-[12px] leading-[16px] text-[#4c4c4c]">
+              Machine description is not available.
+            </p>
+          )}
+        </div>
+
+        <div>
+          <LegacyBox title="Need More Help?">
+            <div className="text-[12px] leading-[16px] text-[#4c4c4c]">
+              Contact your Merrow Agent for pricing and availability.
+              <br />
+              <br />
+              Email: {SUPPORT_CONTACT.partsEmail}
+              <br />
+              Phone: 800.431.6677
+              <br />
+              International: {SUPPORT_CONTACT.supportPhoneDisplay}
+            </div>
+          </LegacyBox>
+
+          <LegacyBox title="Machine Details">
+            <div className="text-[12px] leading-[16px]">
+              <Link href={`/machines/${machine.styleKey}`} className="text-[#808080] hover:text-[#af0b0c] hover:underline">
+                View full machine page
+              </Link>
+            </div>
+          </LegacyBox>
+        </div>
+      </div>
+
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+            .parts-machine-html a { color: #808080; text-decoration: none; }
+            .parts-machine-html a:hover { color: #af0b0c; text-decoration: underline; }
+            .parts-machine-html img { max-width: 100%; height: auto; }
+          `,
+        }}
+      />
+    </LegacySupportPage>
   );
 }
 
@@ -175,8 +163,8 @@ export default async function PartsDetailPage({ params }: PageProps) {
   const thumbVideos =
     record.msmcId
       ? Array.from({ length: 4 }).map((_, index) => ({
-          image: `http://decorativeedging.s3.amazonaws.com/productpages/${record.msmcId}_thumb${index + 1}.jpg`,
-          video: `http://decorativeedging.s3.amazonaws.com/productpages/${record.msmcId}_thumb${index + 1}.m4v`,
+          image: `https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/productpages/${record.msmcId}_thumb${index + 1}.jpg`,
+          video: `https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/productpages/${record.msmcId}_thumb${index + 1}.m4v`,
         }))
       : [];
 
@@ -187,14 +175,13 @@ export default async function PartsDetailPage({ params }: PageProps) {
   ].filter((row) => row.value);
 
   return (
-    <main className="min-w-[1040px] bg-[#ebebeb] text-[#222222]">
-      <div className="mx-auto w-[980px] pl-[40px] pt-3 pb-4">
-        <div className="mb-3 rounded border border-[#b7b7b7] bg-[#efefef] p-3">
-          <div className="text-[18px] font-semibold text-[#b00707]">
-            {record.productName || record.msmcId || cp}
-          </div>
-          <div className="text-[12px] text-[#666666]">{record.msmcId || record.mmcId || cp}</div>
+    <LegacySupportPage>
+      <div className="mb-3 rounded border border-[#b7b7b7] bg-[#efefef] p-3">
+        <div className="text-[18px] font-semibold text-[#b00707]">
+          {record.productName || record.msmcId || cp}
         </div>
+        <div className="text-[12px] text-[#666666]">{record.msmcId || record.mmcId || cp}</div>
+      </div>
 
         <div className="grid grid-cols-[620px_300px] gap-4">
           <div>
@@ -345,23 +332,22 @@ export default async function PartsDetailPage({ params }: PageProps) {
           </div>
         ) : null}
 
-        <style
-          dangerouslySetInnerHTML={{
-            __html: `
-              .parts-detail-html a { color: #808080; text-decoration: none; }
-              .parts-detail-html a:hover { color: #af0b0c; text-decoration: underline; }
-              .parts-detail-html img { max-width: 100%; height: auto; }
-              .parts-detail-html table { width: 100%; border-collapse: collapse; }
-              .parts-detail-html td, .parts-detail-html th {
-                border: 1px solid #d3d3d3;
-                padding: 4px;
-                font-size: 12px;
-              }
-            `,
-          }}
-        />
-      </div>
-    </main>
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+            .parts-detail-html a { color: #808080; text-decoration: none; }
+            .parts-detail-html a:hover { color: #af0b0c; text-decoration: underline; }
+            .parts-detail-html img { max-width: 100%; height: auto; }
+            .parts-detail-html table { width: 100%; border-collapse: collapse; }
+            .parts-detail-html td, .parts-detail-html th {
+              border: 1px solid #d3d3d3;
+              padding: 4px;
+              font-size: 12px;
+            }
+          `,
+        }}
+      />
+    </LegacySupportPage>
   );
 }
 

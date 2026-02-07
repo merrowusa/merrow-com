@@ -36,10 +36,11 @@ yarn-error.log*
 # vercel
 .vercel
 
-# backstop visual regression test artifacts (reference is committed for CI)
-backstop_data/bitmaps_test/
-backstop_data/html_report/
-backstop_data/ci_report/
+# backstop visual regression artifacts (local only)
+backstop_data/
+
+# local migrated image dumps (do not commit)
+public/images/
 
 # typescript
 *.tsbuildinfo

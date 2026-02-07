@@ -15,20 +15,20 @@ export const metadata: Metadata = {
 };
 
 const DOWNLOADS: Array<{ label: string; href: string }> = [
-  { label: "Merrow Logo", href: "http://marketing-downloads.s3.amazonaws.com/merrowlogo.zip" },
-  { label: "Merrow History Document", href: "http://marketing-downloads.s3.amazonaws.com/merrowhistory.pdf" },
-  { label: "Air Motor Line Card", href: "http://marketing-downloads.s3.amazonaws.com/linecard_AIRMOTOR.pdf" },
-  { label: "Needles Brochure", href: "http://marketing-downloads.s3.amazonaws.com/brochure_NEEDLES.pdf" },
-  { label: "Butted Seaming Machines Lineup Card", href: "http://marketing-downloads.s3.amazonaws.com/continuousprocessing_lineup.pdf" },
-  { label: "70-D3B-2 Line Card", href: "http://marketing-downloads.s3.amazonaws.com/linecard_70-D3B-2.pdf" },
-  { label: "70-Y3B-2 Line Card", href: "http://marketing-downloads.s3.amazonaws.com/linecard_70-Y3B-2.pdf" },
-  { label: "70-D3B-2 CNP Line Card", href: "http://marketing-downloads.s3.amazonaws.com/linecard_70-D3B-2-CNP.pdf" },
-  { label: "70-D3B-2 HP Line Card", href: "http://marketing-downloads.s3.amazonaws.com/linecard_70-D3B-2_HP.pdf" },
-  { label: "70-D3B-2 G Line Card", href: "http://marketing-downloads.s3.amazonaws.com/linecard_70-D3B-2_G.pdf" },
-  { label: "70-D3B-2 RAIL Line Card", href: "http://marketing-downloads.s3.amazonaws.com/linecard_70-D3B-2_RAIL.pdf" },
-  { label: "70-D3B-2 LS Line Card", href: "http://marketing-downloads.s3.amazonaws.com/linecard_70-D3B-2_LS.pdf" },
-  { label: "72-D3B-2 Line Card", href: "http://marketing-downloads.s3.amazonaws.com/linecard_72-D3B-2.pdf" },
-  { label: "72-D3B-2 R Line Card", href: "http://marketing-downloads.s3.amazonaws.com/linecard_72-D3B-2_R.pdf" },
+  { label: "Merrow Logo", href: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/merrowlogo.zip" },
+  { label: "Merrow History Document", href: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/merrowhistory.pdf" },
+  { label: "Air Motor Line Card", href: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/linecard_AIRMOTOR.pdf" },
+  { label: "Needles Brochure", href: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/brochure_NEEDLES.pdf" },
+  { label: "Butted Seaming Machines Lineup Card", href: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/continuousprocessing_lineup.pdf" },
+  { label: "70-D3B-2 Line Card", href: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/linecard_70-D3B-2.pdf" },
+  { label: "70-Y3B-2 Line Card", href: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/linecard_70-Y3B-2.pdf" },
+  { label: "70-D3B-2 CNP Line Card", href: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/linecard_70-D3B-2-CNP.pdf" },
+  { label: "70-D3B-2 HP Line Card", href: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/linecard_70-D3B-2_HP.pdf" },
+  { label: "70-D3B-2 G Line Card", href: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/linecard_70-D3B-2_G.pdf" },
+  { label: "70-D3B-2 RAIL Line Card", href: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/linecard_70-D3B-2_RAIL.pdf" },
+  { label: "70-D3B-2 LS Line Card", href: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/linecard_70-D3B-2_LS.pdf" },
+  { label: "72-D3B-2 Line Card", href: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/linecard_72-D3B-2.pdf" },
+  { label: "72-D3B-2 R Line Card", href: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/linecard_72-D3B-2_R.pdf" },
 ];
 
 export default function MarketingMaterialsPage() {
@@ -49,7 +49,7 @@ export default function MarketingMaterialsPage() {
           <div className="rounded-xl border border-[#e1e1e1] bg-white p-4 shadow-[0_6px_16px_rgba(0,0,0,0.05)]">
             <iframe
               title="Merrow Marketing Materials"
-              src="http://merrow.uberflip.com/read/embed_mini/112219/386605?miniPop=false&alwaysCover=false&miniTitle=Merrow%20Marketing%20Material%20Brochure&miniColor=333333&miniLinkToTitle=false&miniUrl=&miniBg=FFFFFF&hideBg=false&width=430&height=300&sharing=true"
+              src="https://merrow.uberflip.com/read/embed_mini/112219/386605?miniPop=false&alwaysCover=false&miniTitle=Merrow%20Marketing%20Material%20Brochure&miniColor=333333&miniLinkToTitle=false&miniUrl=&miniBg=FFFFFF&hideBg=false&width=430&height=300&sharing=true"
               className="h-[320px] w-full rounded border border-merrow-border"
             />
           </div>

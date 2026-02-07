@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     "Explore Merrow's sewing applications - from emblem edging to blanket binding, find the right machine for your application.",
 };
 
+const SHARE_URL =
+  "https://www.addthis.com/share?url=https%3A%2F%2Fwww.merrow.com%2Fsewing%2Fapplications";
+
 export default function ApplicationsIndexPage() {
   return (
     <main className="text-merrow-textMain" id="top">
@@ -26,7 +29,7 @@ export default function ApplicationsIndexPage() {
               </div>
 
               <div className="mt-6 text-[12px]">
-                <a href="https://www.addthis.com/bookmark.php?v=250&username=merrow" className="text-merrow-link hover:underline" target="_blank" rel="noopener noreferrer">
+                <a href={SHARE_URL} className="text-merrow-link hover:underline" target="_blank" rel="noopener noreferrer">
                   Share
                 </a>{" "}
                 |{" "}
@@ -44,7 +47,7 @@ export default function ApplicationsIndexPage() {
 
               <div className="mt-8">
                 <a
-                  href="/widget_compare.php?&app=&iframe=true&width=1100&height=600"
+                  href="/support/request-quote?source=applications-index-compare-all"
                   className="inline-block rounded-sm bg-[#a80c0d] px-3 py-1 text-[12px] font-semibold uppercase tracking-[0.03em] text-white hover:bg-[#8f090a]"
                 >
                   Compare all

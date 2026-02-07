@@ -39,7 +39,7 @@ We're the only manufacturer in the world building Cam-driven sewing machines tha
 <br clear="all"/><br clear="all"/>
 <b>Merrow Cams are Machined to Exacting Dimensions</b><br clear="all"/>Tolerances are held to .001: the tightest in the industry. They have been designed to operate continuously between 2200 and 5500 RPM. Merrow Cams allow a Merrow Machine to create a perfect stitch while ensuring that the sewing machine will last a lifetime.
 <br clear="all"/><br clear="all"/>
-<img src="http://decorativeedging.s3.amazonaws.com/productpages/cams400pxw_1.jpg" alt="Merrow cam technology" width="900" height="345" style="max-width:900px;width:100%;height:auto;"/>
+<img src="https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/productpages/cams400pxw_1.jpg" alt="Merrow cam technology" width="900" height="345" style="max-width:900px;width:100%;height:auto;"/>
 <div style="max-width:900px;">
 <ol>
 <b>Special consideration should be paid to the intricacies of Merrow's Cam Technology:</b><br clear="all"/>
@@ -72,7 +72,7 @@ You can depend on the parts Merrow provides as all Genuine Parts are machined to
 <div style="font-size:22px;line-height:24px;color:#4b4b4b;">SALES</div><br clear="all"/>
 <div>
 <a href="/agentmap.html">
-<img src="http://merrowservices.s3.amazonaws.com/2010_landingpage/agentmap.png" width="646" height="309" alt="merrow agent map" style="max-width:646px;width:100%;height:auto;"/>
+<img src="https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/2010_landingpage/agentmap.png" width="646" height="309" alt="merrow agent map" style="max-width:646px;width:100%;height:auto;"/>
 </a>
 </div>
 <div class="clear"></div>

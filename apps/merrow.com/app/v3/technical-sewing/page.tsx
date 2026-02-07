@@ -13,20 +13,20 @@ const TECHNICAL_APP_KEYS = [5514, 5517, 5519, 5512];
 
 // Legacy S3 assets
 const IMG = {
-  hero: "https://merrow-media.s3.amazonaws.com/general-http/t_03.gif",
-  customerStory: "https://merrow-media.s3.amazonaws.com/general-http/t_09.jpg",
+  hero: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/general-http/t_03.gif",
+  customerStory: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/general-http/t_09.jpg",
 };
 
 // Customer logos
 const CUSTOMER_LOGOS = [
-  { name: "Milliken", src: "https://merrow-media.s3.amazonaws.com/customer-logos/milliken.png" },
-  { name: "Guilford", src: "https://merrow-media.s3.amazonaws.com/customer-logos/guilford.png" },
-  { name: "3M", src: "https://merrow-media.s3.amazonaws.com/customer-logos/3m.png" },
-  { name: "Brightec", src: "https://merrow-media.s3.amazonaws.com/customer-logos/brightec.png" },
-  { name: "BRFL", src: "https://merrow-media.s3.amazonaws.com/customer-logos/brfl.png" },
-  { name: "Gildan", src: "https://merrow-media.s3.amazonaws.com/customer-logos/gildan.png" },
-  { name: "Penn Emblem", src: "https://merrow-media.s3.amazonaws.com/customer-logos/penn-emblem.png" },
-  { name: "Griffin", src: "https://merrow-media.s3.amazonaws.com/customer-logos/griffin.png" },
+  { name: "Milliken", src: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/customer-logos/milliken.png" },
+  { name: "Guilford", src: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/customer-logos/guilford.png" },
+  { name: "3M", src: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/customer-logos/3m.png" },
+  { name: "Brightec", src: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/customer-logos/brightec.png" },
+  { name: "BRFL", src: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/customer-logos/brfl.png" },
+  { name: "Gildan", src: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/customer-logos/gildan.png" },
+  { name: "Penn Emblem", src: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/customer-logos/penn-emblem.png" },
+  { name: "Griffin", src: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/customer-logos/griffin.png" },
 ];
 
 // Gradient colors for application categories

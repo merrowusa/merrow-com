@@ -5,8 +5,10 @@
 
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { LegacySupportPage } from "../../../../_components/LegacySupportPrimitives";
 import { SupportSidebar } from "../../../../_components/SupportSidebar";
 import { SupportDocsPanel } from "../../../../_components/SupportDocsPanel";
+import { SUPPORT_CONTACT } from "../../../../_data/links";
 import {
   getTechnicalField,
   getThreadingDiagrams,
@@ -138,94 +140,96 @@ export default async function SupportDetailPage({ params }: PageProps) {
 
   if (technicalField === null) {
     return (
-      <main className="min-w-[1040px] bg-[#ebebeb] text-[#222222]">
-        <div className="mx-auto w-[980px] pl-[40px] pt-3 pb-4">
-          <div className="rounded border border-[#b7b7b7] bg-[#efefef] p-3">
-            <div className="mb-2 text-[18px] font-semibold text-[#b00707]">
-              Support content not found
-            </div>
-            <p className="text-[12px] leading-[16px] text-[#4c4c4c]">
-              We couldn&apos;t locate technical information for class <b>{classKey}</b> and key{" "}
-              <b>{key}</b>.
-            </p>
+      <LegacySupportPage>
+        <div className="rounded border border-[#b7b7b7] bg-[#efefef] p-3">
+          <div className="mb-2 text-[18px] font-semibold text-[#b00707]">
+            Support content not found
           </div>
+          <p className="text-[12px] leading-[16px] text-[#4c4c4c]">
+            We couldn&apos;t locate technical information for class <b>{classKey}</b> and key{" "}
+            <b>{key}</b>.
+          </p>
         </div>
-      </main>
+      </LegacySupportPage>
     );
   }
 
   const html = technicalField ? normalizeTechnicalHtml(technicalField) : "";
 
   return (
-    <main className="min-w-[1040px] bg-[#ebebeb] text-[#222222]">
-      <div className="mx-auto w-[980px] pl-[40px] pt-3 pb-4">
-        <div className="mb-3 grid grid-cols-[300px_360px_300px] gap-4">
-          <div>
-            <SupportSidebar />
-          </div>
+    <LegacySupportPage>
+      <div className="mb-3 grid grid-cols-[300px_360px_300px] gap-4">
+        <div>
+          <SupportSidebar />
+        </div>
 
-          <div>
-            <div className="mb-3 rounded border border-[#b7b7b7] bg-[#efefef] p-2">
-              <div className="text-[13px] font-semibold text-[#b00707]">
-                Technical Support: {classKey}
-              </div>
-              <div className="mt-1 text-[12px] text-[#666666]">
-                Section: {key.replace(/_/g, " ")}
-              </div>
+        <div>
+          <div className="mb-3 rounded border border-[#b7b7b7] bg-[#efefef] p-2">
+            <div className="text-[13px] font-semibold text-[#b00707]">
+              Technical Support: {classKey}
             </div>
-
-            <div className="rounded border border-[#b7b7b7] bg-[#efefef] p-3">
-              {html ? (
-                <div
-                  className="support-technical-html text-[12px] leading-[16px] text-[#4c4c4c]"
-                  dangerouslySetInnerHTML={{ __html: html }}
-                />
-              ) : (
-                <p className="text-[12px] leading-[16px] text-[#4c4c4c]">
-                  No content is available for this section yet.
-                </p>
-              )}
-
-              <div className="mt-4 border-t border-[#d6d6d6] pt-3 text-[12px] leading-[16px] text-[#4c4c4c]">
-                <div className="font-semibold text-[#b00707]">Need more help?</div>
-                <div>
-                  Contact support directly:{" "}
-                  <a className="text-[#808080] hover:underline" href="mailto:support@merrow.com">
-                    support@merrow.com
-                  </a>
-                </div>
-                <div>
-                  International phone:{" "}
-                  <a className="text-[#808080] hover:underline" href="tel:+15086894095">
-                    508.689.4095
-                  </a>
-                </div>
-              </div>
+            <div className="mt-1 text-[12px] text-[#666666]">
+              Section: {key.replace(/_/g, " ")}
             </div>
           </div>
 
-          <div>
-            <SupportDocsPanel threadingDiagrams={threadingDiagrams} />
+          <div className="rounded border border-[#b7b7b7] bg-[#efefef] p-3">
+            {html ? (
+              <div
+                className="support-technical-html text-[12px] leading-[16px] text-[#4c4c4c]"
+                dangerouslySetInnerHTML={{ __html: html }}
+              />
+            ) : (
+              <p className="text-[12px] leading-[16px] text-[#4c4c4c]">
+                No content is available for this section yet.
+              </p>
+            )}
+
+            <div className="mt-4 border-t border-[#d6d6d6] pt-3 text-[12px] leading-[16px] text-[#4c4c4c]">
+              <div className="font-semibold text-[#b00707]">Need more help?</div>
+              <div>
+                Contact support directly:{" "}
+                <a
+                  className="text-[#808080] hover:underline"
+                  href={`mailto:${SUPPORT_CONTACT.supportEmail}`}
+                >
+                  {SUPPORT_CONTACT.supportEmail}
+                </a>
+              </div>
+              <div>
+                International phone:{" "}
+                <a
+                  className="text-[#808080] hover:underline"
+                  href={SUPPORT_CONTACT.supportPhoneHref}
+                >
+                  {SUPPORT_CONTACT.supportPhoneDisplay}
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <style
-          dangerouslySetInnerHTML={{
-            __html: `
-              .support-technical-html a { color: #808080; text-decoration: none; }
-              .support-technical-html a:hover { text-decoration: underline; color: #af0b0c; }
-              .support-technical-html img { max-width: 100%; height: auto; border: 0; }
-              .support-technical-html table { width: 100%; border-collapse: collapse; }
-              .support-technical-html td, .support-technical-html th {
-                border: 1px solid #d3d3d3;
-                padding: 4px;
-                font-size: 12px;
-              }
-            `,
-          }}
-        />
+        <div>
+          <SupportDocsPanel threadingDiagrams={threadingDiagrams} />
+        </div>
       </div>
-    </main>
+
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+            .support-technical-html a { color: #808080; text-decoration: none; }
+            .support-technical-html a:hover { text-decoration: underline; color: #af0b0c; }
+            .support-technical-html img { max-width: 100%; height: auto; border: 0; }
+            .support-technical-html table { width: 100%; border-collapse: collapse; }
+            .support-technical-html td, .support-technical-html th {
+              border: 1px solid #d3d3d3;
+              padding: 4px;
+              font-size: 12px;
+            }
+          `,
+        }}
+      />
+    </LegacySupportPage>
   );
 }
 

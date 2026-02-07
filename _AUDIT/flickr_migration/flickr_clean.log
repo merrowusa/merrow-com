@@ -1,0 +1,1192 @@
+[15:32:06] === PHASE 1: Download originals ===
+[15:32:06]   3384 photos, 100 already checked, 3284 remaining
+[15:32:07]   UPGRADE 2496794911: disk=217008 < remote=217158
+[15:32:08]   Progress: 10/100 (total checked: 110/3384, downloaded: 3, skipped: 107)
+[15:32:09]   UPGRADE 2496796017: disk=194268 < remote=194418
+[15:32:10]   Progress: 20/100 (total checked: 120/3384, downloaded: 4, skipped: 116)
+[15:32:11]   UPGRADE 2496796371: disk=290778 < remote=291441
+[15:32:12]   UPGRADE 2496796477: disk=254318 < remote=254979
+[15:32:14]   Progress: 30/100 (total checked: 130/3384, downloaded: 6, skipped: 124)
+[15:32:15]   UPGRADE 2496797639: disk=264277 < remote=264912
+[15:32:16]   Progress: 40/100 (total checked: 140/3384, downloaded: 7, skipped: 133)
+[15:32:17]   Progress: 50/100 (total checked: 150/3384, downloaded: 7, skipped: 143)
+[15:32:18]   Progress: 60/100 (total checked: 160/3384, downloaded: 7, skipped: 153)
+[15:32:18]   UPGRADE 2496801013: disk=187025 < remote=187647
+[15:32:20]   UPGRADE 2496801057: disk=229561 < remote=230073
+[15:32:21]   Progress: 70/100 (total checked: 170/3384, downloaded: 9, skipped: 161)
+[15:32:22]   Progress: 80/100 (total checked: 180/3384, downloaded: 9, skipped: 171)
+[15:32:23]   UPGRADE 2496802689: disk=147250 < remote=147439
+[15:32:24]   Progress: 90/100 (total checked: 190/3384, downloaded: 10, skipped: 180)
+[15:32:25]   Progress: 100/100 (total checked: 200/3384, downloaded: 10, skipped: 190)
+[15:32:25] Batch 1: 100 checked (downloaded: 10, skipped: 190, total: 200/3384)
+[15:32:25] Cooldown 1 min...
+[15:33:26]   Progress: 10/100 (total checked: 210/3384, downloaded: 10, skipped: 200)
+[15:33:27]   Progress: 20/100 (total checked: 220/3384, downloaded: 10, skipped: 210)
+[15:33:27]   UPGRADE 2496806519: disk=245061 < remote=245215
+[15:33:29]   Progress: 30/100 (total checked: 230/3384, downloaded: 11, skipped: 219)
+[15:33:30]   Progress: 40/100 (total checked: 240/3384, downloaded: 11, skipped: 229)
+[15:33:31]   Progress: 50/100 (total checked: 250/3384, downloaded: 11, skipped: 239)
+[15:33:31]   Progress: 60/100 (total checked: 260/3384, downloaded: 11, skipped: 249)
+[15:33:32]   Progress: 70/100 (total checked: 270/3384, downloaded: 11, skipped: 259)
+[15:33:33]   Progress: 80/100 (total checked: 280/3384, downloaded: 11, skipped: 269)
+[15:33:34]   Progress: 90/100 (total checked: 290/3384, downloaded: 11, skipped: 279)
+[15:33:34]   UPGRADE 2496816635: disk=271371 < remote=271523
+[15:33:36]   Progress: 100/100 (total checked: 300/3384, downloaded: 12, skipped: 288)
+[15:33:36] Batch 2: 100 checked (downloaded: 12, skipped: 288, total: 300/3384)
+[15:33:36] Cooldown 1 min...
+[15:34:37]   Progress: 10/100 (total checked: 310/3384, downloaded: 12, skipped: 298)
+[15:34:38]   Progress: 20/100 (total checked: 320/3384, downloaded: 12, skipped: 308)
+[15:34:38]   UPGRADE 2497621258: disk=241319 < remote=241481
+[15:34:40]   Progress: 30/100 (total checked: 330/3384, downloaded: 13, skipped: 317)
+[15:34:40]   UPGRADE 2497621908: disk=347934 < remote=348569
+[15:34:42]   UPGRADE 2497622144: disk=239365 < remote=240004
+[15:34:43]   UPGRADE 2497622642: disk=216868 < remote=217533
+[15:34:45]   Progress: 40/100 (total checked: 340/3384, downloaded: 16, skipped: 324)
+[15:34:46]   Progress: 50/100 (total checked: 350/3384, downloaded: 16, skipped: 334)
+[15:34:47]   Progress: 60/100 (total checked: 360/3384, downloaded: 16, skipped: 344)
+[15:34:47]   Progress: 70/100 (total checked: 370/3384, downloaded: 16, skipped: 354)
+[15:34:48]   UPGRADE 2497626852: disk=224130 < remote=224750
+[15:34:50]   Progress: 80/100 (total checked: 380/3384, downloaded: 17, skipped: 363)
+[15:34:50]   Progress: 90/100 (total checked: 390/3384, downloaded: 17, skipped: 373)
+[15:34:51]   Progress: 100/100 (total checked: 400/3384, downloaded: 17, skipped: 383)
+[15:34:51] Batch 3: 100 checked (downloaded: 17, skipped: 383, total: 400/3384)
+[15:34:51] Cooldown 1 min...
+[15:35:52]   UPGRADE 2497630900: disk=181992 < remote=182204
+[15:35:53]   Progress: 10/100 (total checked: 410/3384, downloaded: 18, skipped: 392)
+[15:35:54]   UPGRADE 2497631152: disk=181662 < remote=181812
+[15:35:55]   Progress: 20/100 (total checked: 420/3384, downloaded: 19, skipped: 401)
+[15:35:56]   Progress: 30/100 (total checked: 430/3384, downloaded: 19, skipped: 411)
+[15:35:58]   Progress: 40/100 (total checked: 440/3384, downloaded: 19, skipped: 421)
+[15:35:58]   UPGRADE 2497637142: disk=160831 < remote=160979
+[15:36:00]   Progress: 50/100 (total checked: 450/3384, downloaded: 20, skipped: 430)
+[15:36:00]   UPGRADE 2497637546: disk=191677 < remote=191841
+[15:36:02]   UPGRADE 2497638308: disk=234149 < remote=234313
+[15:36:04]   Progress: 60/100 (total checked: 460/3384, downloaded: 22, skipped: 438)
+[15:36:05]   Progress: 70/100 (total checked: 470/3384, downloaded: 22, skipped: 448)
+[15:36:06]   Progress: 80/100 (total checked: 480/3384, downloaded: 22, skipped: 458)
+[15:36:07]   UPGRADE 2497642480: disk=237641 < remote=237791
+[15:36:09]   Progress: 90/100 (total checked: 490/3384, downloaded: 23, skipped: 467)
+[15:36:09]   UPGRADE 2497642906: disk=272387 < remote=272539
+[15:36:10]   UPGRADE 2497643190: disk=210780 < remote=210930
+[15:36:12]   UPGRADE 2497643398: disk=129916 < remote=130128
+[15:36:13]   Progress: 100/100 (total checked: 500/3384, downloaded: 26, skipped: 474)
+[15:36:13] Batch 4: 100 checked (downloaded: 26, skipped: 474, total: 500/3384)
+[15:36:13] Cooldown 1 min...
+[15:37:14]   UPGRADE 2497643706: disk=274985 < remote=275135
+[15:37:15]   UPGRADE 2497643804: disk=314963 < remote=315115
+[15:37:17]   Progress: 10/100 (total checked: 510/3384, downloaded: 28, skipped: 482)
+[15:37:18]   UPGRADE 2513838293: disk=222841 < remote=13785729
+[15:37:20]   Progress: 20/100 (total checked: 520/3384, downloaded: 29, skipped: 491)
+[15:37:20]   Progress: 30/100 (total checked: 530/3384, downloaded: 29, skipped: 501)
+[15:37:21]   UPGRADE 2587253217: disk=495121 < remote=5161115
+[15:37:23]   UPGRADE 2587272887: disk=357169 < remote=542546
+[15:37:24]   UPGRADE 2587304489: disk=79769 < remote=153698
+[15:37:26]   Progress: 40/100 (total checked: 540/3384, downloaded: 32, skipped: 508)
+[15:37:27]   Progress: 50/100 (total checked: 550/3384, downloaded: 32, skipped: 518)
+[15:37:27]   UPGRADE 2587328665: disk=83099 < remote=2099700
+[15:37:28]   UPGRADE 2587330363: disk=246230 < remote=384151
+[15:37:30]   UPGRADE 2587336713: disk=294595 < remote=442200
+[15:37:31]   UPGRADE 2587339051: disk=311806 < remote=405459
+[15:37:33]   Progress: 60/100 (total checked: 560/3384, downloaded: 36, skipped: 524)
+[15:37:33]   UPGRADE 2587398847: disk=343333 < remote=404784
+[15:37:35]   UPGRADE 2587445219: disk=373748 < remote=400103
+[15:37:36]   UPGRADE 2587450393: disk=111186 < remote=2534174
+[15:37:38]   UPGRADE 2587466827: disk=221900 < remote=334750
+[15:37:39]   Progress: 70/100 (total checked: 570/3384, downloaded: 40, skipped: 530)
+[15:37:39]   UPGRADE 2587479441: disk=103083 < remote=2380565
+[15:37:41]   UPGRADE 2587489009: disk=109500 < remote=2334717
+[15:37:43]   UPGRADE 2587502075: disk=203088 < remote=856109
+[15:37:44]   Progress: 80/100 (total checked: 580/3384, downloaded: 43, skipped: 537)
+[15:37:45]   UPGRADE 2587524621: disk=416550 < remote=20721793
+[15:37:47]   UPGRADE 2587565871: disk=92672 < remote=2218388
+[15:37:48]   UPGRADE 2587567655: disk=450385 < remote=3086532
+[15:37:50]   UPGRADE 2587568491: disk=477167 < remote=5622191
+[15:37:52]   Progress: 90/100 (total checked: 590/3384, downloaded: 47, skipped: 543)
+[15:37:52]   UPGRADE 2587603411: disk=418110 < remote=897588
+[15:37:53]   UPGRADE 2588086078: disk=108372 < remote=583560
+[15:37:55]   Progress: 100/100 (total checked: 600/3384, downloaded: 49, skipped: 551)
+[15:37:55] Batch 5: 100 checked (downloaded: 49, skipped: 551, total: 600/3384)
+[15:37:55] Cooldown 1 min...
+[15:38:55]   UPGRADE 2588131746: disk=92396 < remote=2265786
+[15:38:57]   UPGRADE 2588134322: disk=234639 < remote=356193
+[15:38:59]   UPGRADE 2588140004: disk=85005 < remote=2120668
+[15:39:00]   Progress: 10/100 (total checked: 610/3384, downloaded: 52, skipped: 558)
+[15:39:01]   UPGRADE 2588167264: disk=310058 < remote=511022
+[15:39:02]   Progress: 20/100 (total checked: 620/3384, downloaded: 53, skipped: 567)
+[15:39:03]   UPGRADE 2588212942: disk=274425 < remote=647971
+[15:39:04]   UPGRADE 2588235744: disk=133029 < remote=541488
+[15:39:05]   UPGRADE 2588236136: disk=107746 < remote=2385307
+[15:39:07]   UPGRADE 2588295482: disk=310344 < remote=656597
+[15:39:09]   Progress: 30/100 (total checked: 630/3384, downloaded: 57, skipped: 573)
+[15:39:09]   UPGRADE 2588363964: disk=315519 < remote=16804906
+[15:39:12]   Progress: 40/100 (total checked: 640/3384, downloaded: 58, skipped: 582)
+[15:39:12]   UPGRADE 2588369512: disk=90745 < remote=2195926
+[15:39:13]   UPGRADE 2588371408: disk=454916 < remote=11852851
+[15:39:15]   UPGRADE 2588373938: disk=97349 < remote=2299733
+[15:39:17]   Progress: 50/100 (total checked: 650/3384, downloaded: 61, skipped: 589)
+[15:39:18]   UPGRADE 2588441492: disk=399803 < remote=7765331
+[15:39:20]   Progress: 60/100 (total checked: 660/3384, downloaded: 62, skipped: 598)
+[15:39:21]   Progress: 70/100 (total checked: 670/3384, downloaded: 62, skipped: 608)
+[15:39:22]   Progress: 80/100 (total checked: 680/3384, downloaded: 62, skipped: 618)
+[15:39:22]   Progress: 90/100 (total checked: 690/3384, downloaded: 62, skipped: 628)
+[15:39:23]   UPGRADE 2589627383: disk=77614 < remote=440491
+[15:39:25]   UPGRADE 2589627543: disk=361462 < remote=1129161
+[15:39:26]   Progress: 100/100 (total checked: 700/3384, downloaded: 64, skipped: 636)
+[15:39:26] Batch 6: 100 checked (downloaded: 64, skipped: 636, total: 700/3384)
+[15:39:26] Cooldown 1 min...
+[15:40:26]   UPGRADE 2589633899: disk=362061 < remote=1320958
+[15:40:28]   UPGRADE 2589635465: disk=269292 < remote=412957
+[15:40:29]   UPGRADE 2589636061: disk=311225 < remote=4583958
+[15:40:31]   UPGRADE 2589636913: disk=269519 < remote=395627
+[15:40:33]   UPGRADE 2589637365: disk=353831 < remote=1753519
+[15:40:34]   Progress: 10/100 (total checked: 710/3384, downloaded: 69, skipped: 641)
+[15:40:35]   UPGRADE 2589638473: disk=392586 < remote=431923
+[15:40:36]   UPGRADE 2589638543: disk=412703 < remote=458541
+[15:40:37]   UPGRADE 2589639237: disk=362810 < remote=2156976
+[15:40:39]   UPGRADE 2589639333: disk=398248 < remote=441314
+[15:40:41]   UPGRADE 2589648911: disk=374671 < remote=1103015
+[15:40:42]   Progress: 20/100 (total checked: 720/3384, downloaded: 74, skipped: 646)
+[15:40:43]   Progress: 30/100 (total checked: 730/3384, downloaded: 74, skipped: 656)
+[15:40:43]   UPGRADE 2589657595: disk=408535 < remote=2130459
+[15:40:45]   UPGRADE 2589661825: disk=391706 < remote=3033218
+[15:40:46]   UPGRADE 2589664665: disk=397189 < remote=1665406
+[15:40:48]   Progress: 40/100 (total checked: 740/3384, downloaded: 77, skipped: 663)
+[15:40:49]   Progress: 50/100 (total checked: 750/3384, downloaded: 77, skipped: 673)
+[15:40:49]   UPGRADE 2589697667: disk=462303 < remote=2510076
+[15:40:51]   UPGRADE 2589710015: disk=392763 < remote=743967
+[15:40:53]   Progress: 60/100 (total checked: 760/3384, downloaded: 79, skipped: 681)
+[15:40:53]   UPGRADE 2589715429: disk=255015 < remote=266166
+[15:40:54]   UPGRADE 2589716015: disk=356827 < remote=2331983
+[15:40:56]   UPGRADE 2589719167: disk=208114 < remote=269700
+[15:40:57]   UPGRADE 2589722911: disk=299995 < remote=488315
+[15:40:59]   Progress: 70/100 (total checked: 770/3384, downloaded: 83, skipped: 687)
+[15:41:00]   UPGRADE 2589736659: disk=257156 < remote=308840
+[15:41:01]   UPGRADE 2589741311: disk=481250 < remote=566019
+[15:41:03]   Progress: 80/100 (total checked: 780/3384, downloaded: 85, skipped: 695)
+[15:41:03]   UPGRADE 2589751167: disk=332487 < remote=15843958
+[15:41:05]   UPGRADE 2589755523: disk=412078 < remote=836270
+[15:41:06]   UPGRADE 2589755633: disk=343462 < remote=575530
+[15:41:08]   UPGRADE 2589759039: disk=274714 < remote=1157343
+[15:41:10]   UPGRADE 2589759163: disk=250925 < remote=347875
+[15:41:11]   Progress: 90/100 (total checked: 790/3384, downloaded: 90, skipped: 700)
+[15:41:11]   UPGRADE 2589766463: disk=310190 < remote=5065781
+[15:41:13]   UPGRADE 2589771579: disk=78967 < remote=234372
+[15:41:15]   UPGRADE 2589772949: disk=316490 < remote=3589363
+[15:41:17]   Progress: 100/100 (total checked: 800/3384, downloaded: 93, skipped: 707)
+[15:41:17] Batch 7: 100 checked (downloaded: 93, skipped: 707, total: 800/3384)
+[15:41:17] Cooldown 1 min...
+[15:42:17]   UPGRADE 2590168122: disk=330847 < remote=383482
+[15:42:19]   Progress: 10/100 (total checked: 810/3384, downloaded: 94, skipped: 716)
+[15:42:20]   UPGRADE 2590193796: disk=403965 < remote=4515206
+[15:42:21]   Progress: 20/100 (total checked: 820/3384, downloaded: 95, skipped: 725)
+[15:42:22]   UPGRADE 2590220008: disk=75609 < remote=98899
+[15:42:23]   UPGRADE 2590220918: disk=115523 < remote=2523691
+[15:42:25]   Progress: 30/100 (total checked: 830/3384, downloaded: 97, skipped: 733)
+[15:42:25]   UPGRADE 2590326832: disk=101742 < remote=2194904
+[15:42:27]   UPGRADE 2590385122: disk=88065 < remote=2161388
+[15:42:29]   UPGRADE 2590391186: disk=170430 < remote=620280
+[15:42:30]   Progress: 40/100 (total checked: 840/3384, downloaded: 100, skipped: 740)
+[15:42:31]   Progress: 50/100 (total checked: 850/3384, downloaded: 100, skipped: 750)
+[15:42:31]   UPGRADE 2590466558: disk=55175 < remote=91188
+[15:42:33]   UPGRADE 2590466722: disk=314510 < remote=1200805
+[15:42:34]   UPGRADE 2590467844: disk=249943 < remote=376523
+[15:42:36]   UPGRADE 2590469276: disk=452820 < remote=500257
+[15:42:37]   UPGRADE 2590469360: disk=357859 < remote=484405
+[15:42:38]   Progress: 60/100 (total checked: 860/3384, downloaded: 105, skipped: 755)
+[15:42:39]   UPGRADE 2590471614: disk=259723 < remote=385772
+[15:42:40]   UPGRADE 2590473180: disk=374354 < remote=2551769
+[15:42:42]   UPGRADE 2590474422: disk=378449 < remote=2552023
+[15:42:43]   Progress: 70/100 (total checked: 870/3384, downloaded: 108, skipped: 762)
+[15:42:44]   UPGRADE 2590486778: disk=356099 < remote=1099954
+[15:42:46]   Progress: 80/100 (total checked: 880/3384, downloaded: 109, skipped: 771)
+[15:42:46]   UPGRADE 2590493988: disk=245706 < remote=255635
+[15:42:47]   UPGRADE 2590494162: disk=347974 < remote=932929
+[15:42:49]   UPGRADE 2590496144: disk=405919 < remote=1747237
+[15:42:50]   Progress: 90/100 (total checked: 890/3384, downloaded: 112, skipped: 778)
+[15:42:51]   UPGRADE 2590501328: disk=254187 < remote=265503
+[15:42:53]   UPGRADE 2590502536: disk=302733 < remote=2033761
+[15:42:54]   Progress: 100/100 (total checked: 900/3384, downloaded: 114, skipped: 786)
+[15:42:54] Batch 8: 100 checked (downloaded: 114, skipped: 786, total: 900/3384)
+[15:42:54] Cooldown 1 min...
+[15:43:55]   UPGRADE 2590513008: disk=362916 < remote=1166253
+[15:43:56]   Progress: 10/100 (total checked: 910/3384, downloaded: 115, skipped: 795)
+[15:43:57]   UPGRADE 2590542834: disk=364767 < remote=17054502
+[15:43:59]   Progress: 20/100 (total checked: 920/3384, downloaded: 116, skipped: 804)
+[15:44:00]   UPGRADE 2590545866: disk=408777 < remote=666779
+[15:44:01]   UPGRADE 2590546014: disk=375217 < remote=945403
+[15:44:03]   Progress: 30/100 (total checked: 930/3384, downloaded: 118, skipped: 812)
+[15:44:04]   UPGRADE 2590566594: disk=489207 < remote=2770148
+[15:44:05]   UPGRADE 2590572330: disk=411390 < remote=4845269
+[15:44:07]   UPGRADE 2590575270: disk=105491 < remote=2345182
+[15:44:09]   Progress: 40/100 (total checked: 940/3384, downloaded: 121, skipped: 819)
+[15:44:09]   UPGRADE 2590582008: disk=310512 < remote=1505867
+[15:44:11]   UPGRADE 2590582340: disk=308447 < remote=2507216
+[15:44:12]   UPGRADE 2590584886: disk=309600 < remote=737648
+[15:44:14]   Progress: 50/100 (total checked: 950/3384, downloaded: 124, skipped: 826)
+[15:44:15]   Progress: 60/100 (total checked: 960/3384, downloaded: 124, skipped: 836)
+[15:44:15]   UPGRADE 2590607164: disk=336532 < remote=470479
+[15:44:16]   UPGRADE 2590611916: disk=272061 < remote=349946
+[15:44:18]   UPGRADE 2590648484: disk=398933 < remote=1250151
+[15:44:19]   UPGRADE 2590652136: disk=330247 < remote=13317071
+[15:44:21]   Progress: 70/100 (total checked: 970/3384, downloaded: 128, skipped: 842)
+[15:44:22]   UPGRADE 2603574765: disk=163623 < remote=1897423
+[15:44:24]   Progress: 80/100 (total checked: 980/3384, downloaded: 129, skipped: 851)
+[15:44:24]   UPGRADE 2603733203: disk=317613 < remote=2253105
+[15:44:26]   Progress: 90/100 (total checked: 990/3384, downloaded: 130, skipped: 860)
+[15:44:27]   Progress: 100/100 (total checked: 1000/3384, downloaded: 130, skipped: 870)
+[15:44:27] Batch 9: 100 checked (downloaded: 130, skipped: 870, total: 1000/3384)
+[15:44:27] Cooldown 1 min...
+[15:45:27]   Progress: 10/100 (total checked: 1010/3384, downloaded: 130, skipped: 880)
+[15:45:28]   UPGRADE 2604275135: disk=69804 < remote=1753448
+[15:45:30]   Progress: 20/100 (total checked: 1020/3384, downloaded: 131, skipped: 889)
+[15:45:30]   Progress: 30/100 (total checked: 1030/3384, downloaded: 131, skipped: 899)
+[15:45:31]   UPGRADE 2604559176: disk=152874 < remote=3083459
+[15:45:32]   UPGRADE 2604562198: disk=337256 < remote=3228517
+[15:45:34]   UPGRADE 2604562648: disk=130421 < remote=2100357
+[15:45:35]   Progress: 40/100 (total checked: 1040/3384, downloaded: 134, skipped: 906)
+[15:45:36]   UPGRADE 2604613384: disk=304284 < remote=1865697
+[15:45:37]   UPGRADE 2604638751: disk=215941 < remote=2430870
+[15:45:39]   Progress: 50/100 (total checked: 1050/3384, downloaded: 136, skipped: 914)
+[15:45:39]   UPGRADE 2604639257: disk=144618 < remote=1830542
+[15:45:40]   UPGRADE 2604642133: disk=307425 < remote=1853128
+[15:45:42]   UPGRADE 2604642299: disk=343298 < remote=477507
+[15:45:44]   UPGRADE 2604649483: disk=266848 < remote=5884575
+[15:45:45]   Progress: 60/100 (total checked: 1060/3384, downloaded: 140, skipped: 920)
+[15:45:46]   UPGRADE 2605046452: disk=225830 < remote=2503325
+[15:45:48]   Progress: 70/100 (total checked: 1070/3384, downloaded: 141, skipped: 929)
+[15:45:48]   Progress: 80/100 (total checked: 1080/3384, downloaded: 141, skipped: 939)
+[15:45:49]   UPGRADE 2605472392: disk=403778 < remote=570717
+[15:45:51]   UPGRADE 2605482154: disk=405547 < remote=1823629
+[15:45:52]   Progress: 90/100 (total checked: 1090/3384, downloaded: 143, skipped: 947)
+[15:45:53]   UPGRADE 2728968451: disk=259991 < remote=286040
+[15:45:54]   UPGRADE 2728968603: disk=423654 < remote=473338
+[15:45:55]   Progress: 100/100 (total checked: 1100/3384, downloaded: 145, skipped: 955)
+[15:45:55] Batch 10: 100 checked (downloaded: 145, skipped: 955, total: 1100/3384)
+[15:45:55] Cooldown 1 min...
+[15:46:56]   Progress: 10/100 (total checked: 1110/3384, downloaded: 145, skipped: 965)
+[15:46:56]   UPGRADE 2729798008: disk=195134 < remote=2134139
+[15:46:58]   UPGRADE 2729799244: disk=272287 < remote=2592317
+[15:46:59]   UPGRADE 2729799918: disk=358838 < remote=1546530
+[15:47:01]   Progress: 20/100 (total checked: 1120/3384, downloaded: 148, skipped: 972)
+[15:47:02]   Progress: 30/100 (total checked: 1130/3384, downloaded: 148, skipped: 982)
+[15:47:03]   Progress: 40/100 (total checked: 1140/3384, downloaded: 148, skipped: 992)
+[15:47:03]   Progress: 50/100 (total checked: 1150/3384, downloaded: 148, skipped: 1002)
+[15:47:04]   Progress: 60/100 (total checked: 1160/3384, downloaded: 148, skipped: 1012)
+[15:47:05]   Progress: 70/100 (total checked: 1170/3384, downloaded: 148, skipped: 1022)
+[15:47:06]   Progress: 80/100 (total checked: 1180/3384, downloaded: 148, skipped: 1032)
+[15:47:07]   Progress: 90/100 (total checked: 1190/3384, downloaded: 148, skipped: 1042)
+[15:47:07]   Progress: 100/100 (total checked: 1200/3384, downloaded: 148, skipped: 1052)
+[15:47:07] Batch 11: 100 checked (downloaded: 148, skipped: 1052, total: 1200/3384)
+[15:47:07] Cooldown 1 min...
+[15:48:08]   Progress: 10/100 (total checked: 1210/3384, downloaded: 148, skipped: 1062)
+[15:48:09]   Progress: 20/100 (total checked: 1220/3384, downloaded: 148, skipped: 1072)
+[15:48:10]   UPGRADE 2756909576: disk=230637 < remote=554449
+[15:48:11]   UPGRADE 2756938162: disk=144717 < remote=437886
+[15:48:13]   Progress: 30/100 (total checked: 1230/3384, downloaded: 150, skipped: 1080)
+[15:48:13]   Progress: 40/100 (total checked: 1240/3384, downloaded: 150, skipped: 1090)
+[15:48:14]   Progress: 50/100 (total checked: 1250/3384, downloaded: 150, skipped: 1100)
+[15:48:15]   Progress: 60/100 (total checked: 1260/3384, downloaded: 150, skipped: 1110)
+[15:48:16]   Progress: 70/100 (total checked: 1270/3384, downloaded: 150, skipped: 1120)
+[15:48:16]   Progress: 80/100 (total checked: 1280/3384, downloaded: 150, skipped: 1130)
+[15:48:17]   Progress: 90/100 (total checked: 1290/3384, downloaded: 150, skipped: 1140)
+[15:48:18]   Progress: 100/100 (total checked: 1300/3384, downloaded: 150, skipped: 1150)
+[15:48:18] Batch 12: 100 checked (downloaded: 150, skipped: 1150, total: 1300/3384)
+[15:48:18] Cooldown 1 min...
+[15:49:19]   Progress: 10/100 (total checked: 1310/3384, downloaded: 150, skipped: 1160)
+[15:49:19]   Progress: 20/100 (total checked: 1320/3384, downloaded: 150, skipped: 1170)
+[15:49:20]   Progress: 30/100 (total checked: 1330/3384, downloaded: 150, skipped: 1180)
+[15:49:21]   Progress: 40/100 (total checked: 1340/3384, downloaded: 150, skipped: 1190)
+[15:49:22]   Progress: 50/100 (total checked: 1350/3384, downloaded: 150, skipped: 1200)
+[15:49:23]   Progress: 60/100 (total checked: 1360/3384, downloaded: 150, skipped: 1210)
+[15:49:23]   UPGRADE 2778030969: disk=124791 < remote=138049
+[15:49:25]   UPGRADE 2778031097: disk=112076 < remote=125997
+[15:49:26]   UPGRADE 2778031283: disk=158071 < remote=171931
+[15:49:28]   Progress: 70/100 (total checked: 1370/3384, downloaded: 153, skipped: 1217)
+[15:49:28]   UPGRADE 2778031357: disk=108879 < remote=128211
+[15:49:29]   UPGRADE 2778031403: disk=127937 < remote=137341
+[15:49:31]   UPGRADE 2778031465: disk=149945 < remote=158141
+[15:49:32]   UPGRADE 2778031533: disk=160406 < remote=169700
+[15:49:34]   UPGRADE 2778031719: disk=104827 < remote=119769
+[15:49:35]   UPGRADE 2778031831: disk=120456 < remote=139739
+[15:49:37]   UPGRADE 2778031921: disk=151275 < remote=162189
+[15:49:38]   UPGRADE 2778032007: disk=182385 < remote=198126
+[15:49:40]   UPGRADE 2778032083: disk=149922 < remote=160525
+[15:49:41]   UPGRADE 2778032231: disk=160387 < remote=176005
+[15:49:42]   Progress: 80/100 (total checked: 1380/3384, downloaded: 163, skipped: 1217)
+[15:49:43]   UPGRADE 2778032289: disk=86630 < remote=98873
+[15:49:44]   UPGRADE 2778032407: disk=164669 < remote=187690
+[15:49:45]   UPGRADE 2778032435: disk=97089 < remote=114495
+[15:49:47]   UPGRADE 2778032617: disk=163528 < remote=181992
+[15:49:48]   UPGRADE 2778032677: disk=138156 < remote=148255
+[15:49:50]   UPGRADE 2778032773: disk=90126 < remote=103418
+[15:49:52]   UPGRADE 2778033739: disk=110135 < remote=120391
+[15:49:53]   UPGRADE 2778033849: disk=122472 < remote=131118
+[15:49:54]   UPGRADE 2778033927: disk=205382 < remote=230687
+[15:49:56]   UPGRADE 2778033983: disk=130999 < remote=138348
+[15:49:57]   Progress: 90/100 (total checked: 1390/3384, downloaded: 173, skipped: 1217)
+[15:49:58]   UPGRADE 2778034059: disk=182546 < remote=198311
+[15:49:59]   UPGRADE 2778034239: disk=193296 < remote=210166
+[15:50:01]   UPGRADE 2778034565: disk=136004 < remote=148998
+[15:50:02]   UPGRADE 2778034629: disk=142815 < remote=155097
+[15:50:04]   UPGRADE 2778034755: disk=143000 < remote=152283
+[15:50:05]   UPGRADE 2778034945: disk=117520 < remote=125987
+[15:50:07]   UPGRADE 2778035251: disk=101406 < remote=114241
+[15:50:08]   UPGRADE 2778035385: disk=107317 < remote=117814
+[15:50:10]   UPGRADE 2778035585: disk=95247 < remote=109803
+[15:50:11]   UPGRADE 2778035737: disk=89324 < remote=95825
+[15:50:12]   Progress: 100/100 (total checked: 1400/3384, downloaded: 183, skipped: 1217)
+[15:50:12] Batch 13: 100 checked (downloaded: 183, skipped: 1217, total: 1400/3384)
+[15:50:12] Cooldown 1 min...
+[15:51:13]   Progress: 10/100 (total checked: 1410/3384, downloaded: 183, skipped: 1227)
+[15:51:14]   Progress: 20/100 (total checked: 1420/3384, downloaded: 183, skipped: 1237)
+[15:51:15]   Progress: 30/100 (total checked: 1430/3384, downloaded: 183, skipped: 1247)
+[15:51:16]   Progress: 40/100 (total checked: 1440/3384, downloaded: 183, skipped: 1257)
+[15:51:16]   UPGRADE 2778227405: disk=28785 < remote=35992
+[15:51:18]   UPGRADE 2778227499: disk=39374 < remote=45593
+[15:51:19]   UPGRADE 2778227543: disk=34338 < remote=38223
+[15:51:20]   UPGRADE 2778227603: disk=49678 < remote=51233
+[15:51:21]   UPGRADE 2778227629: disk=18904 < remote=27730
+[15:51:23]   UPGRADE 2778227671: disk=30294 < remote=35624
+[15:51:24]   UPGRADE 2778227733: disk=51483 < remote=59484
+[15:51:25]   UPGRADE 2778227801: disk=68659 < remote=76577
+[15:51:27]   Progress: 50/100 (total checked: 1450/3384, downloaded: 191, skipped: 1259)
+[15:51:27]   UPGRADE 2778228143: disk=49101 < remote=58615
+[15:51:28]   UPGRADE 2778228243: disk=53575 < remote=60241
+[15:51:29]   UPGRADE 2778228325: disk=49779 < remote=55286
+[15:51:31]   UPGRADE 2778228359: disk=21200 < remote=25173
+[15:51:32]   UPGRADE 2778247857: disk=27863 < remote=64853
+[15:51:33]   UPGRADE 2778247965: disk=51902 < remote=118075
+[15:51:35]   UPGRADE 2778248055: disk=50533 < remote=105019
+[15:51:36]   UPGRADE 2778248149: disk=30349 < remote=62325
+[15:51:37]   UPGRADE 2778248189: disk=26464 < remote=65187
+[15:51:39]   UPGRADE 2778248327: disk=36497 < remote=83327
+[15:51:40]   Progress: 60/100 (total checked: 1460/3384, downloaded: 201, skipped: 1259)
+[15:51:40]   UPGRADE 2778248409: disk=42460 < remote=103654
+[15:51:42]   UPGRADE 2778248471: disk=56413 < remote=124773
+[15:51:43]   UPGRADE 2778248517: disk=47000 < remote=104624
+[15:51:44]   UPGRADE 2778248595: disk=56666 < remote=123688
+[15:51:46]   UPGRADE 2778248647: disk=51683 < remote=119973
+[15:51:47]   UPGRADE 2778248697: disk=32830 < remote=79478
+[15:51:49]   UPGRADE 2778248931: disk=51017 < remote=125675
+[15:51:50]   Progress: 70/100 (total checked: 1470/3384, downloaded: 208, skipped: 1262)
+[15:51:51]   Progress: 80/100 (total checked: 1480/3384, downloaded: 208, skipped: 1272)
+[15:51:52]   UPGRADE 2778314571: disk=57409 < remote=132907
+[15:51:53]   UPGRADE 2778314635: disk=44275 < remote=98416
+[15:51:55]   UPGRADE 2778314665: disk=31484 < remote=67519
+[15:51:56]   Progress: 90/100 (total checked: 1490/3384, downloaded: 211, skipped: 1279)
+[15:51:56]   UPGRADE 2778314723: disk=36138 < remote=86793
+[15:51:57]   UPGRADE 2778314865: disk=33563 < remote=76467
+[15:51:58]   UPGRADE 2778315013: disk=29666 < remote=63614
+[15:52:00]   UPGRADE 2778315059: disk=49727 < remote=120852
+[15:52:01]   UPGRADE 2778315119: disk=42260 < remote=101041
+[15:52:03]   UPGRADE 2778315415: disk=59880 < remote=150777
+[15:52:04]   UPGRADE 2778315483: disk=62550 < remote=144042
+[15:52:05]   UPGRADE 2778315539: disk=46090 < remote=106724
+[15:52:07]   UPGRADE 2778315605: disk=64567 < remote=150262
+[15:52:08]   UPGRADE 2778315663: disk=42097 < remote=109106
+[15:52:10]   Progress: 100/100 (total checked: 1500/3384, downloaded: 221, skipped: 1279)
+[15:52:10] Batch 14: 100 checked (downloaded: 221, skipped: 1279, total: 1500/3384)
+[15:52:10] Cooldown 1 min...
+[15:53:10]   UPGRADE 2778315883: disk=70449 < remote=159307
+[15:53:11]   UPGRADE 2778315955: disk=61222 < remote=137823
+[15:53:13]   Progress: 10/100 (total checked: 1510/3384, downloaded: 223, skipped: 1287)
+[15:53:14]   Progress: 20/100 (total checked: 1520/3384, downloaded: 223, skipped: 1297)
+[15:53:15]   Progress: 30/100 (total checked: 1530/3384, downloaded: 223, skipped: 1307)
+[15:53:16]   Progress: 40/100 (total checked: 1540/3384, downloaded: 223, skipped: 1317)
+[15:53:16]   Progress: 50/100 (total checked: 1550/3384, downloaded: 223, skipped: 1327)
+[15:53:17]   Progress: 60/100 (total checked: 1560/3384, downloaded: 223, skipped: 1337)
+[15:53:18]   Progress: 70/100 (total checked: 1570/3384, downloaded: 223, skipped: 1347)
+[15:53:19]   Progress: 80/100 (total checked: 1580/3384, downloaded: 223, skipped: 1357)
+[15:53:19]   Progress: 90/100 (total checked: 1590/3384, downloaded: 223, skipped: 1367)
+[15:53:20]   Progress: 100/100 (total checked: 1600/3384, downloaded: 223, skipped: 1377)
+[15:53:20] Batch 15: 100 checked (downloaded: 223, skipped: 1377, total: 1600/3384)
+[15:53:20] Cooldown 1 min...
+[15:54:21]   Progress: 10/100 (total checked: 1610/3384, downloaded: 223, skipped: 1387)
+[15:54:21]   UPGRADE 2778887626: disk=87495 < remote=96752
+[15:54:23]   UPGRADE 2778887764: disk=120125 < remote=134641
+[15:54:24]   UPGRADE 2778887884: disk=138467 < remote=148238
+[15:54:26]   UPGRADE 2778887948: disk=91625 < remote=105042
+[15:54:27]   UPGRADE 2778888352: disk=99003 < remote=112215
+[15:54:28]   UPGRADE 2778888522: disk=151930 < remote=164192
+[15:54:30]   UPGRADE 2778888860: disk=101827 < remote=116112
+[15:54:31]   Progress: 20/100 (total checked: 1620/3384, downloaded: 230, skipped: 1390)
+[15:54:31]   UPGRADE 2778889042: disk=126593 < remote=136308
+[15:54:33]   UPGRADE 2778889232: disk=186737 < remote=207785
+[15:54:34]   UPGRADE 2778889288: disk=92569 < remote=107718
+[15:54:36]   UPGRADE 2778889476: disk=131261 < remote=141393
+[15:54:37]   UPGRADE 2778890470: disk=89161 < remote=103072
+[15:54:39]   UPGRADE 2778890854: disk=111942 < remote=130548
+[15:54:40]   UPGRADE 2778891020: disk=147673 < remote=160319
+[15:54:42]   UPGRADE 2778891078: disk=107602 < remote=119266
+[15:54:43]   UPGRADE 2778891450: disk=113995 < remote=131639
+[15:54:45]   UPGRADE 2778891560: disk=141092 < remote=164058
+[15:54:46]   Progress: 30/100 (total checked: 1630/3384, downloaded: 240, skipped: 1390)
+[15:54:46]   UPGRADE 2778891642: disk=134444 < remote=140939
+[15:54:48]   UPGRADE 2778891764: disk=96786 < remote=111939
+[15:54:49]   UPGRADE 2778891826: disk=154444 < remote=164523
+[15:54:51]   UPGRADE 2778891890: disk=145804 < remote=170701
+[15:54:53]   UPGRADE 2778891952: disk=124981 < remote=139882
+[15:54:54]   UPGRADE 2778892086: disk=132070 < remote=140935
+[15:54:56]   UPGRADE 2778892230: disk=124259 < remote=134881
+[15:54:57]   UPGRADE 2778892304: disk=140510 < remote=155839
+[15:54:59]   UPGRADE 2778892424: disk=106294 < remote=120269
+[15:55:00]   UPGRADE 2778892468: disk=90700 < remote=98250
+[15:55:02]   Progress: 40/100 (total checked: 1640/3384, downloaded: 250, skipped: 1390)
+[15:55:02]   Progress: 50/100 (total checked: 1650/3384, downloaded: 250, skipped: 1400)
+[15:55:03]   Progress: 60/100 (total checked: 1660/3384, downloaded: 250, skipped: 1410)
+[15:55:04]   Progress: 70/100 (total checked: 1670/3384, downloaded: 250, skipped: 1420)
+[15:55:05]   UPGRADE 2779019064: disk=127661 < remote=128959
+[15:55:07]   UPGRADE 2779082960: disk=43185 < remote=44529
+[15:55:08]   UPGRADE 2779083048: disk=28393 < remote=40033
+[15:55:09]   Progress: 80/100 (total checked: 1680/3384, downloaded: 253, skipped: 1427)
+[15:55:09]   UPGRADE 2779083248: disk=39501 < remote=45681
+[15:55:11]   UPGRADE 2779083308: disk=42852 < remote=47526
+[15:55:12]   UPGRADE 2779083414: disk=29184 < remote=41286
+[15:55:13]   UPGRADE 2779083454: disk=43232 < remote=47821
+[15:55:14]   UPGRADE 2779083520: disk=56142 < remote=61684
+[15:55:16]   UPGRADE 2779083654: disk=53291 < remote=58571
+[15:55:17]   UPGRADE 2779083694: disk=49816 < remote=57013
+[15:55:18]   UPGRADE 2779083736: disk=46058 < remote=52135
+[15:55:20]   UPGRADE 2779083824: disk=16465 < remote=27112
+[15:55:21]   UPGRADE 2779083904: disk=52177 < remote=68856
+[15:55:22]   Progress: 90/100 (total checked: 1690/3384, downloaded: 263, skipped: 1427)
+[15:55:22]   UPGRADE 2779103304: disk=38873 < remote=85320
+[15:55:24]   UPGRADE 2779103358: disk=32882 < remote=67665
+[15:55:25]   UPGRADE 2779103458: disk=48316 < remote=105939
+[15:55:27]   UPGRADE 2779103552: disk=20483 < remote=45993
+[15:55:28]   UPGRADE 2779103654: disk=42161 < remote=95378
+[15:55:29]   UPGRADE 2779103784: disk=70822 < remote=161863
+[15:55:31]   UPGRADE 2779103822: disk=51615 < remote=115655
+[15:55:32]   UPGRADE 2779104070: disk=46245 < remote=105394
+[15:55:33]   UPGRADE 2779104250: disk=54908 < remote=120044
+[15:55:35]   UPGRADE 2779104310: disk=49976 < remote=109275
+[15:55:36]   Progress: 100/100 (total checked: 1700/3384, downloaded: 273, skipped: 1427)
+[15:55:36] Batch 16: 100 checked (downloaded: 273, skipped: 1427, total: 1700/3384)
+[15:55:36] Cooldown 1 min...
+[15:56:37]   UPGRADE 2779104366: disk=23164 < remote=48061
+[15:56:38]   Progress: 10/100 (total checked: 1710/3384, downloaded: 274, skipped: 1436)
+[15:56:39]   Progress: 20/100 (total checked: 1720/3384, downloaded: 274, skipped: 1446)
+[15:56:39]   UPGRADE 2779170914: disk=30559 < remote=67045
+[15:56:41]   UPGRADE 2779170962: disk=46281 < remote=95377
+[15:56:42]   UPGRADE 2779171036: disk=18892 < remote=41978
+[15:56:43]   UPGRADE 2779171100: disk=60692 < remote=143645
+[15:56:45]   UPGRADE 2779171310: disk=25817 < remote=63104
+[15:56:46]   UPGRADE 2779171366: disk=40316 < remote=96022
+[15:56:48]   UPGRADE 2779171430: disk=65571 < remote=153031
+[15:56:49]   UPGRADE 2779171488: disk=28597 < remote=69781
+[15:56:50]   UPGRADE 2779171836: disk=21090 < remote=51578
+[15:56:52]   UPGRADE 2779171878: disk=21718 < remote=43254
+[15:56:53]   Progress: 30/100 (total checked: 1730/3384, downloaded: 284, skipped: 1446)
+[15:56:53]   UPGRADE 2800062161: disk=54250 < remote=127361
+[15:56:55]   Progress: 40/100 (total checked: 1740/3384, downloaded: 285, skipped: 1455)
+[15:56:55]   UPGRADE 2800063059: disk=61273 < remote=111470
+[15:56:57]   UPGRADE 2800063129: disk=61048 < remote=106288
+[15:56:58]   UPGRADE 2800063233: disk=61337 < remote=115484
+[15:57:00]   UPGRADE 2800063323: disk=69532 < remote=113798
+[15:57:01]   UPGRADE 2800063385: disk=60880 < remote=87270
+[15:57:03]   UPGRADE 2800064239: disk=60886 < remote=132424
+[15:57:04]   Progress: 50/100 (total checked: 1750/3384, downloaded: 291, skipped: 1459)
+[15:57:05]   Progress: 60/100 (total checked: 1760/3384, downloaded: 291, skipped: 1469)
+[15:57:06]   UPGRADE 2800911158: disk=55380 < remote=113861
+[15:57:07]   UPGRADE 2800911212: disk=58164 < remote=131078
+[15:57:09]   UPGRADE 2800911280: disk=69172 < remote=125997
+[15:57:10]   UPGRADE 2800911344: disk=74296 < remote=107436
+[15:57:12]   UPGRADE 2800911564: disk=68036 < remote=107947
+[15:57:13]   Progress: 70/100 (total checked: 1770/3384, downloaded: 296, skipped: 1474)
+[15:57:13]   UPGRADE 2800911708: disk=64063 < remote=132203
+[15:57:15]   UPGRADE 2800911918: disk=54938 < remote=116449
+[15:57:16]   UPGRADE 2800912088: disk=66690 < remote=76476
+[15:57:18]   UPGRADE 2800912438: disk=67156 < remote=73522
+[15:57:19]   UPGRADE 2800912754: disk=53379 < remote=92337
+[15:57:21]   UPGRADE 2800913210: disk=65839 < remote=117148
+[15:57:22]   Progress: 80/100 (total checked: 1780/3384, downloaded: 302, skipped: 1478)
+[15:57:23]   Progress: 90/100 (total checked: 1790/3384, downloaded: 302, skipped: 1488)
+[15:57:23]   UPGRADE 2832766035: disk=12271 < remote=35890
+[15:57:25]   UPGRADE 2833550708: disk=16471 < remote=24833
+[15:57:26]   UPGRADE 2833550752: disk=17985 < remote=26795
+[15:57:27]   Progress: 100/100 (total checked: 1800/3384, downloaded: 305, skipped: 1495)
+[15:57:27] Batch 17: 100 checked (downloaded: 305, skipped: 1495, total: 1800/3384)
+[15:57:27] Cooldown 1 min...
+[15:58:28]   UPGRADE 2836877771: disk=118606 < remote=128179
+[15:58:29]   UPGRADE 2837787856: disk=40717 < remote=50786
+[15:58:31]   Progress: 10/100 (total checked: 1810/3384, downloaded: 307, skipped: 1503)
+[15:58:32]   Progress: 20/100 (total checked: 1820/3384, downloaded: 307, skipped: 1513)
+[15:58:33]   Progress: 30/100 (total checked: 1830/3384, downloaded: 307, skipped: 1523)
+[15:58:34]   Progress: 40/100 (total checked: 1840/3384, downloaded: 307, skipped: 1533)
+[15:58:35]   Progress: 50/100 (total checked: 1850/3384, downloaded: 307, skipped: 1543)
+[15:58:36]   Progress: 60/100 (total checked: 1860/3384, downloaded: 307, skipped: 1553)
+[15:58:37]   Progress: 70/100 (total checked: 1870/3384, downloaded: 307, skipped: 1563)
+[15:58:38]   Progress: 80/100 (total checked: 1880/3384, downloaded: 307, skipped: 1573)
+[15:58:38]   UPGRADE 2863214014: disk=66512 < remote=67485
+[15:58:40]   Progress: 90/100 (total checked: 1890/3384, downloaded: 308, skipped: 1582)
+[15:58:41]   UPGRADE 2863289100: disk=60392 < remote=62294
+[15:58:42]   Progress: 100/100 (total checked: 1900/3384, downloaded: 309, skipped: 1591)
+[15:58:42] Batch 18: 100 checked (downloaded: 309, skipped: 1591, total: 1900/3384)
+[15:58:42] Cooldown 1 min...
+[15:59:43]   Progress: 10/100 (total checked: 1910/3384, downloaded: 309, skipped: 1601)
+[15:59:45]   Progress: 20/100 (total checked: 1920/3384, downloaded: 309, skipped: 1611)
+[15:59:48]   Progress: 30/100 (total checked: 1930/3384, downloaded: 311, skipped: 1619)
+[15:59:48]   UPGRADE 2887418317: disk=19130 < remote=19760
+[15:59:50]   Progress: 40/100 (total checked: 1940/3384, downloaded: 312, skipped: 1628)
+[15:59:52]   UPGRADE 2934950785: disk=180661 < remote=2562752
+[15:59:54]   UPGRADE 2934952529: disk=223714 < remote=3581312
+[15:59:56]   UPGRADE 2934957331: disk=272244 < remote=4043468
+[15:59:57]   Progress: 50/100 (total checked: 1950/3384, downloaded: 316, skipped: 1634)
+[15:59:57]   UPGRADE 2934958787: disk=163831 < remote=2740126
+[15:59:59]   UPGRADE 2934959435: disk=152309 < remote=1319189
+[16:00:01]   UPGRADE 2935811160: disk=197840 < remote=5616169
+[16:00:03]   UPGRADE 2935815822: disk=88824 < remote=946255
+[16:00:05]   UPGRADE 2937341547: disk=62993 < remote=88460
+[16:00:06]   Progress: 60/100 (total checked: 1960/3384, downloaded: 321, skipped: 1639)
+[16:00:08]   UPGRADE 3190953413: disk=183637 < remote=188125
+[16:00:09]   UPGRADE 3191801598: disk=113919 < remote=300289
+[16:00:11]   UPGRADE 3191801666: disk=238787 < remote=282736
+[16:00:17]   Progress: 70/100 (total checked: 1970/3384, downloaded: 329, skipped: 1641)
+[16:00:30]   UPGRADE 3228798333: disk=209097 < remote=2465585
+[16:00:32]   Progress: 80/100 (total checked: 1980/3384, downloaded: 339, skipped: 1641)
+[16:00:32]   UPGRADE 3228799363: disk=154160 < remote=1971504
+[16:00:33]   UPGRADE 3229649152: disk=227104 < remote=1101204
+[16:00:35]   UPGRADE 3229650444: disk=282920 < remote=3354899
+[16:00:36]   UPGRADE 3229651522: disk=412867 < remote=3017503
+[16:00:38]   UPGRADE 3236249551: disk=237882 < remote=1474457
+[16:00:39]   UPGRADE 3237093594: disk=228262 < remote=1567882
+[16:00:41]   UPGRADE 3284193313: disk=73564 < remote=2711129
+[16:00:43]   UPGRADE 3284193575: disk=95015 < remote=3314482
+[16:00:44]   UPGRADE 3284193843: disk=57517 < remote=1807161
+[16:00:46]   UPGRADE 3284194619: disk=66223 < remote=1923280
+[16:00:47]   Progress: 90/100 (total checked: 1990/3384, downloaded: 349, skipped: 1641)
+[16:00:47]   UPGRADE 3284195183: disk=49599 < remote=1761634
+[16:00:48]   UPGRADE 3285014726: disk=69058 < remote=1681415
+[16:00:50]   UPGRADE 3285014818: disk=64110 < remote=1896036
+[16:00:52]   UPGRADE 3285014892: disk=77584 < remote=1456167
+[16:00:53]   UPGRADE 3285015006: disk=60574 < remote=2359458
+[16:00:54]   UPGRADE 3285016188: disk=104437 < remote=2162593
+[16:00:56]   UPGRADE 3285017020: disk=65321 < remote=1890690
+[16:00:59]   UPGRADE 3527827469: disk=97913 < remote=98443
+[16:01:00]   UPGRADE 3528638946: disk=45579 < remote=82136
+[16:01:02]   Progress: 100/100 (total checked: 2000/3384, downloaded: 359, skipped: 1641)
+[16:01:02] Batch 19: 100 checked (downloaded: 359, skipped: 1641, total: 2000/3384)
+[16:01:02] Cooldown 1 min...
+[16:02:02]   UPGRADE 3528639324: disk=74268 < remote=74686
+[16:02:03]   UPGRADE 3528639500: disk=55248 < remote=55664
+[16:02:04]   UPGRADE 3528639740: disk=146927 < remote=147451
+[16:02:06]   UPGRADE 3535363387: disk=204349 < remote=204819
+[16:02:07]   UPGRADE 3535363547: disk=83066 < remote=83592
+[16:02:09]   UPGRADE 3535363719: disk=43058 < remote=43532
+[16:02:10]   UPGRADE 3535363893: disk=79077 < remote=79553
+[16:02:11]   UPGRADE 3535364091: disk=91588 < remote=92062
+[16:02:13]   UPGRADE 3535365199: disk=76703 < remote=77175
+[16:02:14]   Progress: 10/100 (total checked: 2010/3384, downloaded: 368, skipped: 1642)
+[16:02:14]   UPGRADE 3536179222: disk=173895 < remote=174371
+[16:02:18]   UPGRADE 3536180950: disk=161758 < remote=162230
+[16:02:20]   UPGRADE 3536181356: disk=169116 < remote=169590
+[16:02:21]   UPGRADE 3536181660: disk=218593 < remote=219067
+[16:02:23]   UPGRADE 3536181844: disk=97412 < remote=97886
+[16:02:24]   UPGRADE 3536183570: disk=230915 < remote=231387
+[16:02:26]   Progress: 20/100 (total checked: 2020/3384, downloaded: 376, skipped: 1644)
+[16:02:26]   UPGRADE 3543335192: disk=13936 < remote=19197
+[16:02:27]   UPGRADE 3595959608: disk=124321 < remote=664447
+[16:02:29]   UPGRADE 3595960114: disk=133741 < remote=692363
+[16:02:30]   UPGRADE 3595961212: disk=179878 < remote=942167
+[16:02:32]   UPGRADE 3595961550: disk=140953 < remote=756234
+[16:02:33]   UPGRADE 3595962478: disk=160856 < remote=846889
+[16:02:35]   UPGRADE 3616139707: disk=145871 < remote=743155
+[16:02:36]   UPGRADE 3616140091: disk=156113 < remote=902076
+[16:02:39]   Progress: 30/100 (total checked: 2030/3384, downloaded: 385, skipped: 1645)
+[16:02:39]   UPGRADE 3616141585: disk=108387 < remote=649509
+[16:02:41]   UPGRADE 3616141757: disk=106329 < remote=694988
+[16:02:42]   UPGRADE 3616142535: disk=263400 < remote=1542349
+[16:02:43]   UPGRADE 3616147379: disk=114628 < remote=737839
+[16:02:45]   UPGRADE 3616148531: disk=117597 < remote=536446
+[16:02:46]   UPGRADE 3616957356: disk=273634 < remote=1585527
+[16:02:48]   UPGRADE 3616957612: disk=244220 < remote=1338082
+[16:02:49]   UPGRADE 3616957948: disk=171008 < remote=963197
+[16:02:51]   UPGRADE 3616958352: disk=160007 < remote=813162
+[16:02:52]   UPGRADE 3616958542: disk=139195 < remote=781376
+[16:02:54]   Progress: 40/100 (total checked: 2040/3384, downloaded: 395, skipped: 1645)
+[16:02:54]   UPGRADE 3616958732: disk=179609 < remote=986782
+[16:02:55]   UPGRADE 3616959504: disk=146806 < remote=823747
+[16:02:57]   UPGRADE 3616960128: disk=161002 < remote=862430
+[16:02:58]   UPGRADE 3616960318: disk=216652 < remote=1290532
+[16:03:00]   UPGRADE 3661877709: disk=97877 < remote=590018
+[16:03:01]   UPGRADE 3661877845: disk=130562 < remote=750911
+[16:03:03]   UPGRADE 3661877979: disk=67374 < remote=604270
+[16:03:04]   UPGRADE 3661912805: disk=211471 < remote=1251294
+[16:03:06]   UPGRADE 3662678916: disk=82864 < remote=603446
+[16:03:07]   UPGRADE 3662679854: disk=151053 < remote=830448
+[16:03:09]   Progress: 50/100 (total checked: 2050/3384, downloaded: 405, skipped: 1645)
+[16:03:09]   UPGRADE 3662704762: disk=169589 < remote=776357
+[16:03:10]   UPGRADE 3662706312: disk=165109 < remote=909058
+[16:03:12]   UPGRADE 3662707668: disk=228108 < remote=1132809
+[16:03:13]   UPGRADE 3662708506: disk=224762 < remote=1206673
+[16:03:15]   UPGRADE 3662709876: disk=226926 < remote=528425
+[16:03:16]   UPGRADE 3674739381: disk=129200 < remote=728367
+[16:03:18]   UPGRADE 3674740469: disk=150210 < remote=826566
+[16:03:20]   UPGRADE 3674740657: disk=129195 < remote=807683
+[16:03:21]   UPGRADE 3674741145: disk=76320 < remote=550186
+[16:03:24]   Progress: 60/100 (total checked: 2060/3384, downloaded: 415, skipped: 1645)
+[16:03:24]   UPGRADE 3675551204: disk=136279 < remote=778405
+[16:03:26]   UPGRADE 3830986948: disk=150139 < remote=819291
+[16:03:27]   UPGRADE 3830987542: disk=149405 < remote=826522
+[16:03:29]   UPGRADE 3929591800: disk=204777 < remote=1106259
+[16:03:30]   UPGRADE 3938610871: disk=129736 < remote=719958
+[16:03:32]   UPGRADE 3938613509: disk=134137 < remote=769024
+[16:03:35]   UPGRADE 3938615255: disk=118490 < remote=670657
+[16:03:36]   UPGRADE 3938615677: disk=162213 < remote=931551
+[16:03:38]   UPGRADE 3938616161: disk=162708 < remote=920767
+[16:03:39]   Progress: 70/100 (total checked: 2070/3384, downloaded: 425, skipped: 1645)
+[16:03:39]   UPGRADE 3939389672: disk=92842 < remote=582287
+[16:03:40]   UPGRADE 3939390850: disk=132311 < remote=756639
+[16:03:42]   UPGRADE 3939391618: disk=110170 < remote=679136
+[16:03:43]   UPGRADE 3939394258: disk=115744 < remote=694111
+[16:03:45]   UPGRADE 3945305962: disk=157306 < remote=593218
+[16:03:46]   UPGRADE 3951368946: disk=160315 < remote=249434
+[16:03:48]   UPGRADE 3954837433: disk=74109 < remote=1852549
+[16:03:49]   UPGRADE 3954838281: disk=68781 < remote=1717193
+[16:03:51]   UPGRADE 3954838433: disk=65309 < remote=1668697
+[16:03:52]   UPGRADE 3954838599: disk=70842 < remote=1775014
+[16:03:54]   Progress: 80/100 (total checked: 2080/3384, downloaded: 435, skipped: 1645)
+[16:03:54]   UPGRADE 3954838763: disk=71991 < remote=1801032
+[16:03:55]   UPGRADE 3954839181: disk=76068 < remote=1838123
+[16:03:57]   UPGRADE 3955617128: disk=71285 < remote=1790236
+[16:03:58]   UPGRADE 3955617308: disk=65451 < remote=1662593
+[16:04:00]   UPGRADE 3955617538: disk=70054 < remote=1755770
+[16:04:01]   UPGRADE 3955617994: disk=67613 < remote=1708684
+[16:04:03]   UPGRADE 3955618226: disk=70477 < remote=1799089
+[16:04:04]   UPGRADE 3955618440: disk=68947 < remote=1725446
+[16:04:06]   UPGRADE 3955619470: disk=74937 < remote=1844199
+[16:04:07]   UPGRADE 3955619758: disk=71819 < remote=1822833
+[16:04:09]   Progress: 90/100 (total checked: 2090/3384, downloaded: 445, skipped: 1645)
+[16:04:09]   UPGRADE 3986508251: disk=94533 < remote=590975
+[16:04:11]   UPGRADE 4004062359: disk=139962 < remote=489175
+[16:04:13]   UPGRADE 4004062645: disk=357780 < remote=1151284
+[16:04:14]   UPGRADE 4004075053: disk=307887 < remote=956278
+[16:04:16]   UPGRADE 4004075269: disk=121063 < remote=231027
+[16:04:17]   UPGRADE 4004844918: disk=146503 < remote=498391
+[16:04:20]   UPGRADE 4112547156: disk=51018 < remote=64422
+[16:04:21]   Progress: 100/100 (total checked: 2100/3384, downloaded: 454, skipped: 1646)
+[16:04:21] Batch 20: 100 checked (downloaded: 454, skipped: 1646, total: 2100/3384)
+[16:04:21] Cooldown 1 min...
+[16:05:22]   UPGRADE 4130864041: disk=145427 < remote=379494
+[16:05:23]   UPGRADE 4130864333: disk=151460 < remote=372328
+[16:05:24]   UPGRADE 4130864783: disk=180025 < remote=966937
+[16:05:26]   UPGRADE 4130865245: disk=120451 < remote=701613
+[16:05:27]   UPGRADE 4130869079: disk=188066 < remote=873644
+[16:05:29]   UPGRADE 4130869503: disk=184943 < remote=433565
+[16:05:30]   UPGRADE 4130869757: disk=133165 < remote=305868
+[16:05:32]   UPGRADE 4131625836: disk=146703 < remote=330520
+[16:05:33]   UPGRADE 4131626574: disk=96542 < remote=446399
+[16:05:35]   Progress: 10/100 (total checked: 2110/3384, downloaded: 463, skipped: 1647)
+[16:05:35]   UPGRADE 4131627562: disk=120034 < remote=530006
+[16:05:36]   UPGRADE 4131630932: disk=142527 < remote=812134
+[16:05:38]   UPGRADE 4131631364: disk=194035 < remote=871949
+[16:05:40]   UPGRADE 4134105569: disk=122018 < remote=691278
+[16:05:41]   UPGRADE 4134106511: disk=137064 < remote=744353
+[16:05:43]   UPGRADE 4134107215: disk=167357 < remote=970027
+[16:05:44]   UPGRADE 4134107397: disk=152624 < remote=909269
+[16:05:46]   UPGRADE 4134121935: disk=135023 < remote=767330
+[16:05:47]   UPGRADE 4134122401: disk=139478 < remote=772665
+[16:05:49]   UPGRADE 4134122807: disk=125039 < remote=728480
+[16:05:50]   Progress: 20/100 (total checked: 2120/3384, downloaded: 473, skipped: 1647)
+[16:05:50]   UPGRADE 4134867186: disk=183266 < remote=944640
+[16:05:52]   UPGRADE 4134867540: disk=154893 < remote=487465
+[16:05:53]   UPGRADE 4134867762: disk=89741 < remote=594117
+[16:05:55]   UPGRADE 4134867986: disk=157388 < remote=861380
+[16:05:56]   UPGRADE 4134868236: disk=169705 < remote=901990
+[16:05:58]   UPGRADE 4134868566: disk=169332 < remote=940604
+[16:05:59]   UPGRADE 4134868758: disk=159300 < remote=885726
+[16:06:01]   UPGRADE 4134868922: disk=124891 < remote=719725
+[16:06:02]   UPGRADE 4134869414: disk=117136 < remote=659780
+[16:06:04]   UPGRADE 4134883962: disk=143259 < remote=828310
+[16:06:05]   Progress: 30/100 (total checked: 2130/3384, downloaded: 483, skipped: 1647)
+[16:06:05]   UPGRADE 4134884402: disk=130584 < remote=733960
+[16:06:07]   UPGRADE 4134884824: disk=116573 < remote=700968
+[16:06:08]   UPGRADE 4195347543: disk=142400 < remote=1085028
+[16:06:15]   Progress: 40/100 (total checked: 2140/3384, downloaded: 490, skipped: 1650)
+[16:06:16]   Progress: 50/100 (total checked: 2150/3384, downloaded: 490, skipped: 1660)
+[16:06:17]   Progress: 60/100 (total checked: 2160/3384, downloaded: 490, skipped: 1670)
+[16:06:19]   Progress: 70/100 (total checked: 2170/3384, downloaded: 491, skipped: 1679)
+[16:06:20]   Progress: 80/100 (total checked: 2180/3384, downloaded: 491, skipped: 1689)
+[16:06:23]   Progress: 90/100 (total checked: 2190/3384, downloaded: 493, skipped: 1697)
+[16:06:24]   Progress: 100/100 (total checked: 2200/3384, downloaded: 493, skipped: 1707)
+[16:06:24] Batch 21: 100 checked (downloaded: 493, skipped: 1707, total: 2200/3384)
+[16:06:24] Cooldown 1 min...
+[16:07:24]   Progress: 10/100 (total checked: 2210/3384, downloaded: 493, skipped: 1717)
+[16:07:25]   Progress: 20/100 (total checked: 2220/3384, downloaded: 493, skipped: 1727)
+[16:07:27]   Progress: 30/100 (total checked: 2230/3384, downloaded: 494, skipped: 1736)
+[16:07:28]   Progress: 40/100 (total checked: 2240/3384, downloaded: 494, skipped: 1746)
+[16:07:29]   Progress: 50/100 (total checked: 2250/3384, downloaded: 494, skipped: 1756)
+[16:07:30]   Progress: 60/100 (total checked: 2260/3384, downloaded: 494, skipped: 1766)
+[16:07:31]   Progress: 70/100 (total checked: 2270/3384, downloaded: 494, skipped: 1776)
+[16:07:31]   Progress: 80/100 (total checked: 2280/3384, downloaded: 494, skipped: 1786)
+[16:07:34]   Progress: 90/100 (total checked: 2290/3384, downloaded: 495, skipped: 1795)
+[16:07:34]   Progress: 100/100 (total checked: 2300/3384, downloaded: 495, skipped: 1805)
+[16:07:34] Batch 22: 100 checked (downloaded: 495, skipped: 1805, total: 2300/3384)
+[16:07:34] Cooldown 1 min...
+[16:08:35]   Progress: 10/100 (total checked: 2310/3384, downloaded: 495, skipped: 1815)
+[16:08:37]   Progress: 20/100 (total checked: 2320/3384, downloaded: 496, skipped: 1824)
+[16:08:38]   Progress: 30/100 (total checked: 2330/3384, downloaded: 496, skipped: 1834)
+[16:08:40]   Progress: 40/100 (total checked: 2340/3384, downloaded: 497, skipped: 1843)
+[16:08:41]   Progress: 50/100 (total checked: 2350/3384, downloaded: 497, skipped: 1853)
+[16:08:42]   Progress: 60/100 (total checked: 2360/3384, downloaded: 497, skipped: 1863)
+[16:08:43]   UPGRADE 4322480371: disk=102627 < remote=456018
+[16:08:44]   Progress: 70/100 (total checked: 2370/3384, downloaded: 498, skipped: 1872)
+[16:08:44]   UPGRADE 4322480611: disk=103749 < remote=457424
+[16:08:46]   UPGRADE 4322480883: disk=99708 < remote=472272
+[16:08:47]   UPGRADE 4322488491: disk=124444 < remote=514116
+[16:08:48]   UPGRADE 4322488819: disk=148247 < remote=501057
+[16:08:50]   UPGRADE 4323214024: disk=165818 < remote=615917
+[16:08:51]   UPGRADE 4323215148: disk=118714 < remote=511479
+[16:08:53]   UPGRADE 4323221006: disk=123949 < remote=522590
+[16:08:54]   UPGRADE 4323221244: disk=131364 < remote=532144
+[16:08:56]   UPGRADE 4323221540: disk=90295 < remote=437358
+[16:08:57]   UPGRADE 4323221840: disk=67513 < remote=253865
+[16:08:59]   Progress: 80/100 (total checked: 2380/3384, downloaded: 508, skipped: 1872)
+[16:08:59]   UPGRADE 4424489541: disk=214383 < remote=1113692
+[16:09:00]   UPGRADE 4424489993: disk=241967 < remote=1142869
+[16:09:02]   UPGRADE 4424490595: disk=246763 < remote=1268719
+[16:09:03]   UPGRADE 4424490829: disk=305303 < remote=1605265
+[16:09:05]   UPGRADE 4424491301: disk=141779 < remote=768286
+[16:09:06]   UPGRADE 4424491503: disk=194611 < remote=1127608
+[16:09:08]   UPGRADE 4424491727: disk=319767 < remote=1735690
+[16:09:09]   UPGRADE 4424492329: disk=166930 < remote=917989
+[16:09:11]   UPGRADE 4424493039: disk=196049 < remote=1025719
+[16:09:12]   UPGRADE 4424493415: disk=128100 < remote=706068
+[16:09:14]   Progress: 90/100 (total checked: 2390/3384, downloaded: 518, skipped: 1872)
+[16:09:14]   UPGRADE 4424493693: disk=133757 < remote=798635
+[16:09:15]   UPGRADE 4424493911: disk=120501 < remote=699454
+[16:09:17]   UPGRADE 4425255730: disk=265157 < remote=1232997
+[16:09:18]   UPGRADE 4425256280: disk=298221 < remote=1520684
+[16:09:20]   UPGRADE 4425257030: disk=278860 < remote=1418975
+[16:09:21]   UPGRADE 4425257870: disk=250744 < remote=1246010
+[16:09:23]   UPGRADE 4425258082: disk=227196 < remote=1219684
+[16:09:24]   UPGRADE 4425258484: disk=142391 < remote=838446
+[16:09:26]   UPGRADE 4425258740: disk=199587 < remote=1073015
+[16:09:27]   UPGRADE 4425259172: disk=116758 < remote=758796
+[16:09:29]   Progress: 100/100 (total checked: 2400/3384, downloaded: 528, skipped: 1872)
+[16:09:29] Batch 23: 100 checked (downloaded: 528, skipped: 1872, total: 2400/3384)
+[16:09:29] Cooldown 1 min...
+[16:10:29]   UPGRADE 4606930457: disk=112012 < remote=845375
+[16:10:30]   UPGRADE 4607541818: disk=138098 < remote=973014
+[16:10:32]   UPGRADE 4607542036: disk=189908 < remote=1267958
+[16:10:33]   UPGRADE 4607542252: disk=133742 < remote=951023
+[16:10:35]   UPGRADE 4726313836: disk=29640 < remote=35981
+[16:10:37]   Progress: 10/100 (total checked: 2410/3384, downloaded: 533, skipped: 1877)
+[16:10:38]   UPGRADE 4728572227: disk=219939 < remote=911062
+[16:10:40]   UPGRADE 4728574381: disk=248435 < remote=1018846
+[16:10:41]   UPGRADE 4728575857: disk=230621 < remote=975530
+[16:10:43]   UPGRADE 4728579143: disk=209775 < remote=877410
+[16:10:44]   UPGRADE 4728580763: disk=170622 < remote=928973
+[16:10:46]   UPGRADE 4728581795: disk=191515 < remote=1055998
+[16:10:47]   UPGRADE 4728582597: disk=94740 < remote=548378
+[16:10:49]   Progress: 20/100 (total checked: 2420/3384, downloaded: 541, skipped: 1879)
+[16:10:49]   UPGRADE 4728583373: disk=89531 < remote=520021
+[16:10:50]   UPGRADE 4728585255: disk=224981 < remote=1124314
+[16:10:52]   UPGRADE 4728589915: disk=198438 < remote=1086142
+[16:10:53]   UPGRADE 4728591357: disk=216512 < remote=1180575
+[16:10:55]   UPGRADE 4728595159: disk=116374 < remote=714645
+[16:10:57]   UPGRADE 4728601007: disk=156159 < remote=156678
+[16:10:59]   UPGRADE 4728605195: disk=195963 < remote=837572
+[16:11:00]   UPGRADE 4728608669: disk=225726 < remote=1011891
+[16:11:02]   Progress: 30/100 (total checked: 2430/3384, downloaded: 550, skipped: 1880)
+[16:11:02]   UPGRADE 4728612405: disk=151191 < remote=765490
+[16:11:03]   UPGRADE 4728615965: disk=172853 < remote=1002021
+[16:11:05]   UPGRADE 4729217624: disk=181047 < remote=899022
+[16:11:06]   UPGRADE 4729226302: disk=185929 < remote=881110
+[16:11:08]   UPGRADE 4729233092: disk=227755 < remote=1135467
+[16:11:09]   UPGRADE 4729233924: disk=225425 < remote=1125654
+[16:11:11]   UPGRADE 4729235254: disk=197099 < remote=1028717
+[16:11:12]   UPGRADE 4729239104: disk=149315 < remote=853014
+[16:11:14]   UPGRADE 4729240216: disk=132109 < remote=822015
+[16:11:15]   Progress: 40/100 (total checked: 2440/3384, downloaded: 559, skipped: 1881)
+[16:11:15]   UPGRADE 4729253712: disk=160095 < remote=918740
+[16:11:17]   UPGRADE 4729257038: disk=204837 < remote=961694
+[16:11:18]   UPGRADE 4729263094: disk=123170 < remote=763247
+[16:11:20]   UPGRADE 4729649893: disk=166060 < remote=1079382
+[16:11:23]   UPGRADE 4730330366: disk=126948 < remote=128259
+[16:11:25]   UPGRADE 4737952111: disk=236994 < remote=237873
+[16:11:27]   UPGRADE 4737952693: disk=170678 < remote=171561
+[16:11:28]   Progress: 50/100 (total checked: 2450/3384, downloaded: 568, skipped: 1882)
+[16:11:28]   UPGRADE 4737953939: disk=204284 < remote=205165
+[16:11:30]   UPGRADE 4737954533: disk=157698 < remote=158581
+[16:11:31]   UPGRADE 4737955587: disk=149699 < remote=150576
+[16:11:33]   UPGRADE 4737961505: disk=156130 < remote=157009
+[16:11:34]   UPGRADE 4737962051: disk=128114 < remote=128991
+[16:11:35]   UPGRADE 4737962557: disk=157372 < remote=158247
+[16:11:37]   UPGRADE 4737963079: disk=127383 < remote=128266
+[16:11:38]   UPGRADE 4737967815: disk=87945 < remote=88828
+[16:11:40]   UPGRADE 4738004075: disk=127678 < remote=128559
+[16:11:41]   Progress: 60/100 (total checked: 2460/3384, downloaded: 577, skipped: 1883)
+[16:11:41]   UPGRADE 4738004683: disk=157700 < remote=158581
+[16:11:43]   UPGRADE 4738009301: disk=112967 < remote=113846
+[16:11:44]   UPGRADE 4738011005: disk=128257 < remote=129138
+[16:11:46]   UPGRADE 4738015993: disk=87959 < remote=88828
+[16:11:47]   UPGRADE 4738586670: disk=169204 < remote=170087
+[16:11:49]   UPGRADE 4738588436: disk=127682 < remote=128559
+[16:11:50]   UPGRADE 4738596948: disk=166933 < remote=167816
+[16:11:51]   Progress: 70/100 (total checked: 2470/3384, downloaded: 584, skipped: 1886)
+[16:11:51]   UPGRADE 4738597460: disk=143591 < remote=144468
+[16:11:53]   UPGRADE 4738598386: disk=112967 < remote=113846
+[16:11:55]   UPGRADE 4738599404: disk=128261 < remote=129138
+[16:11:56]   UPGRADE 4738601478: disk=156559 < remote=157438
+[16:11:57]   UPGRADE 4738618316: disk=199650 < remote=200531
+[16:11:59]   UPGRADE 4738618930: disk=237009 < remote=237892
+[16:12:00]   UPGRADE 4738619548: disk=153372 < remote=154251
+[16:12:02]   Progress: 80/100 (total checked: 2480/3384, downloaded: 591, skipped: 1889)
+[16:12:02]   UPGRADE 4738620594: disk=141715 < remote=142596
+[16:12:03]   UPGRADE 4738621070: disk=121201 < remote=122080
+[16:12:05]   UPGRADE 4738634900: disk=156557 < remote=157438
+[16:12:06]   UPGRADE 4738636030: disk=143587 < remote=144468
+[16:12:08]   UPGRADE 4738637938: disk=236996 < remote=237873
+[16:12:09]   UPGRADE 4738639316: disk=157366 < remote=158247
+[16:12:10]   UPGRADE 4738639998: disk=127385 < remote=128266
+[16:12:12]   UPGRADE 4738642504: disk=128114 < remote=128991
+[16:12:13]   Progress: 90/100 (total checked: 2490/3384, downloaded: 599, skipped: 1891)
+[16:12:13]   UPGRADE 4738645304: disk=149695 < remote=150576
+[16:12:15]   UPGRADE 4738646508: disk=204292 < remote=205165
+[16:12:17]   UPGRADE 4738647622: disk=169210 < remote=170087
+[16:12:18]   UPGRADE 4738649036: disk=170680 < remote=171561
+[16:12:19]   UPGRADE 4738649702: disk=156130 < remote=157009
+[16:12:22]   UPGRADE 4739922937: disk=236990 < remote=237873
+[16:12:24]   UPGRADE 4739925639: disk=169206 < remote=170087
+[16:12:25]   UPGRADE 4739927151: disk=204284 < remote=205165
+[16:12:27]   UPGRADE 4739928561: disk=157700 < remote=158581
+[16:12:28]   Progress: 100/100 (total checked: 2500/3384, downloaded: 609, skipped: 1891)
+[16:12:28] Batch 24: 100 checked (downloaded: 609, skipped: 1891, total: 2500/3384)
+[16:12:28] Cooldown 1 min...
+[16:13:28]   UPGRADE 4739930615: disk=149693 < remote=150576
+[16:13:30]   UPGRADE 4739941817: disk=157366 < remote=158247
+[16:13:31]   UPGRADE 4739942787: disk=127385 < remote=128266
+[16:13:32]   UPGRADE 4740012817: disk=172031 < remote=172912
+[16:13:34]   UPGRADE 4740056625: disk=87949 < remote=88828
+[16:13:35]   UPGRADE 4740058225: disk=199648 < remote=200531
+[16:13:37]   UPGRADE 4740059169: disk=237013 < remote=237892
+[16:13:38]   Progress: 10/100 (total checked: 2510/3384, downloaded: 616, skipped: 1894)
+[16:13:38]   UPGRADE 4740061089: disk=66137 < remote=67020
+[16:13:40]   UPGRADE 4740061983: disk=141715 < remote=142596
+[16:13:41]   UPGRADE 4740063489: disk=166937 < remote=167816
+[16:13:43]   UPGRADE 4740096049: disk=143585 < remote=144468
+[16:13:51]   Progress: 20/100 (total checked: 2520/3384, downloaded: 626, skipped: 1894)
+[16:14:00]   UPGRADE 4740559756: disk=170680 < remote=171561
+[16:14:02]   UPGRADE 4740564996: disk=127680 < remote=128559
+[16:14:03]   UPGRADE 4740574750: disk=156130 < remote=157009
+[16:14:04]   Progress: 30/100 (total checked: 2530/3384, downloaded: 636, skipped: 1894)
+[16:14:04]   UPGRADE 4740576070: disk=128110 < remote=128991
+[16:14:06]   UPGRADE 4740689192: disk=112969 < remote=113846
+[16:14:07]   UPGRADE 4740690364: disk=128255 < remote=129138
+[16:14:09]   UPGRADE 4740692848: disk=156557 < remote=157438
+[16:14:10]   UPGRADE 4740695732: disk=153370 < remote=154251
+[16:14:12]   UPGRADE 4740698170: disk=121201 < remote=122080
+[16:14:17]   Progress: 40/100 (total checked: 2540/3384, downloaded: 645, skipped: 1895)
+[16:14:29]   Progress: 50/100 (total checked: 2550/3384, downloaded: 655, skipped: 1895)
+[16:14:36]   UPGRADE 4741953055: disk=181651 < remote=182532
+[16:14:38]   UPGRADE 4741954003: disk=208251 < remote=209130
+[16:14:39]   UPGRADE 4741954919: disk=182667 < remote=183548
+[16:14:41]   UPGRADE 4741956353: disk=153388 < remote=154267
+[16:14:42]   Progress: 60/100 (total checked: 2560/3384, downloaded: 665, skipped: 1895)
+[16:14:42]   UPGRADE 4741958249: disk=267373 < remote=268250
+[16:14:44]   UPGRADE 4741960075: disk=245722 < remote=246603
+[16:14:45]   UPGRADE 4741960961: disk=183897 < remote=184780
+[16:14:46]   UPGRADE 4741964061: disk=131962 < remote=132843
+[16:14:48]   UPGRADE 4741964819: disk=193121 < remote=194002
+[16:14:49]   UPGRADE 4741965701: disk=173613 < remote=174494
+[16:14:51]   UPGRADE 4741967173: disk=240040 < remote=240923
+[16:14:52]   UPGRADE 4742590600: disk=144881 < remote=145762
+[16:14:54]   UPGRADE 4742594002: disk=150730 < remote=151609
+[16:14:56]   UPGRADE 4742595456: disk=219694 < remote=220573
+[16:14:57]   Progress: 70/100 (total checked: 2570/3384, downloaded: 675, skipped: 1895)
+[16:14:57]   UPGRADE 4742597618: disk=203264 < remote=204141
+[16:14:59]   UPGRADE 4742600432: disk=229418 < remote=230297
+[16:15:00]   UPGRADE 4742601188: disk=230999 < remote=231880
+[16:15:01]   UPGRADE 4742601942: disk=201416 < remote=202295
+[16:15:03]   UPGRADE 4742606458: disk=113397 < remote=114280
+[16:15:04]   UPGRADE 4742607166: disk=141471 < remote=142350
+[16:15:06]   Progress: 80/100 (total checked: 2580/3384, downloaded: 681, skipped: 1899)
+[16:15:09]   Progress: 90/100 (total checked: 2590/3384, downloaded: 683, skipped: 1907)
+[16:15:09]   UPGRADE 4745021654: disk=67487 < remote=122125
+[16:15:11]   Progress: 100/100 (total checked: 2600/3384, downloaded: 684, skipped: 1916)
+[16:15:11] Batch 25: 100 checked (downloaded: 684, skipped: 1916, total: 2600/3384)
+[16:15:11] Cooldown 1 min...
+[16:16:12]   Progress: 10/100 (total checked: 2610/3384, downloaded: 684, skipped: 1926)
+[16:16:13]   Progress: 20/100 (total checked: 2620/3384, downloaded: 684, skipped: 1936)
+[16:16:14]   Progress: 30/100 (total checked: 2630/3384, downloaded: 684, skipped: 1946)
+[16:16:15]   Progress: 40/100 (total checked: 2640/3384, downloaded: 684, skipped: 1956)
+[16:16:15]   Progress: 50/100 (total checked: 2650/3384, downloaded: 684, skipped: 1966)
+[16:16:16]   Progress: 60/100 (total checked: 2660/3384, downloaded: 684, skipped: 1976)
+[16:16:17]   Progress: 70/100 (total checked: 2670/3384, downloaded: 684, skipped: 1986)
+[16:16:18]   Progress: 80/100 (total checked: 2680/3384, downloaded: 684, skipped: 1996)
+[16:16:19]   Progress: 90/100 (total checked: 2690/3384, downloaded: 684, skipped: 2006)
+[16:16:21]   Progress: 100/100 (total checked: 2700/3384, downloaded: 685, skipped: 2015)
+[16:16:21] Batch 26: 100 checked (downloaded: 685, skipped: 2015, total: 2700/3384)
+[16:16:21] Cooldown 1 min...
+[16:17:24]   Progress: 10/100 (total checked: 2710/3384, downloaded: 687, skipped: 2023)
+[16:17:26]   Progress: 20/100 (total checked: 2720/3384, downloaded: 688, skipped: 2032)
+[16:17:28]   Progress: 30/100 (total checked: 2730/3384, downloaded: 689, skipped: 2041)
+[16:17:30]   Progress: 40/100 (total checked: 2740/3384, downloaded: 690, skipped: 2050)
+[16:17:31]   Progress: 50/100 (total checked: 2750/3384, downloaded: 690, skipped: 2060)
+[16:17:32]   Progress: 60/100 (total checked: 2760/3384, downloaded: 690, skipped: 2070)
+[16:17:34]   Progress: 70/100 (total checked: 2770/3384, downloaded: 691, skipped: 2079)
+[16:17:35]   Progress: 80/100 (total checked: 2780/3384, downloaded: 691, skipped: 2089)
+[16:17:35]   Progress: 90/100 (total checked: 2790/3384, downloaded: 691, skipped: 2099)
+[16:17:38]   Progress: 100/100 (total checked: 2800/3384, downloaded: 693, skipped: 2107)
+[16:17:38] Batch 27: 100 checked (downloaded: 693, skipped: 2107, total: 2800/3384)
+[16:17:38] Cooldown 1 min...
+[16:18:39]   Progress: 10/100 (total checked: 2810/3384, downloaded: 693, skipped: 2117)
+[16:18:40]   Progress: 20/100 (total checked: 2820/3384, downloaded: 693, skipped: 2127)
+[16:18:42]   Progress: 30/100 (total checked: 2830/3384, downloaded: 694, skipped: 2136)
+[16:18:43]   Progress: 40/100 (total checked: 2840/3384, downloaded: 694, skipped: 2146)
+[16:18:45]   Progress: 50/100 (total checked: 2850/3384, downloaded: 695, skipped: 2155)
+[16:18:46]   Progress: 60/100 (total checked: 2860/3384, downloaded: 695, skipped: 2165)
+[16:18:48]   Progress: 70/100 (total checked: 2870/3384, downloaded: 696, skipped: 2174)
+[16:18:50]   Progress: 80/100 (total checked: 2880/3384, downloaded: 697, skipped: 2183)
+[16:18:52]   Progress: 90/100 (total checked: 2890/3384, downloaded: 698, skipped: 2192)
+[16:18:53]   Progress: 100/100 (total checked: 2900/3384, downloaded: 698, skipped: 2202)
+[16:18:53] Batch 28: 100 checked (downloaded: 698, skipped: 2202, total: 2900/3384)
+[16:18:53] Cooldown 1 min...
+[16:19:54]   Progress: 10/100 (total checked: 2910/3384, downloaded: 698, skipped: 2212)
+[16:19:55]   Progress: 20/100 (total checked: 2920/3384, downloaded: 698, skipped: 2222)
+[16:19:56]   Progress: 30/100 (total checked: 2930/3384, downloaded: 698, skipped: 2232)
+[16:19:56]   Progress: 40/100 (total checked: 2940/3384, downloaded: 698, skipped: 2242)
+[16:19:57]   Progress: 50/100 (total checked: 2950/3384, downloaded: 698, skipped: 2252)
+[16:19:58]   Progress: 60/100 (total checked: 2960/3384, downloaded: 698, skipped: 2262)
+[16:19:58]   Progress: 70/100 (total checked: 2970/3384, downloaded: 698, skipped: 2272)
+[16:19:59]   Progress: 80/100 (total checked: 2980/3384, downloaded: 698, skipped: 2282)
+[16:19:59]   Progress: 90/100 (total checked: 2990/3384, downloaded: 698, skipped: 2292)
+[16:20:00]   Progress: 100/100 (total checked: 3000/3384, downloaded: 698, skipped: 2302)
+[16:20:00] Batch 29: 100 checked (downloaded: 698, skipped: 2302, total: 3000/3384)
+[16:20:00] Cooldown 1 min...
+[16:21:01]   Progress: 10/100 (total checked: 3010/3384, downloaded: 698, skipped: 2312)
+[16:21:01]   Progress: 20/100 (total checked: 3020/3384, downloaded: 698, skipped: 2322)
+[16:21:02]   Progress: 30/100 (total checked: 3030/3384, downloaded: 698, skipped: 2332)
+[16:21:02]   Progress: 40/100 (total checked: 3040/3384, downloaded: 698, skipped: 2342)
+[16:21:03]   Progress: 50/100 (total checked: 3050/3384, downloaded: 698, skipped: 2352)
+[16:21:04]   Progress: 60/100 (total checked: 3060/3384, downloaded: 698, skipped: 2362)
+[16:21:04]   Progress: 70/100 (total checked: 3070/3384, downloaded: 698, skipped: 2372)
+[16:21:05]   Progress: 80/100 (total checked: 3080/3384, downloaded: 698, skipped: 2382)
+[16:21:05]   Progress: 90/100 (total checked: 3090/3384, downloaded: 698, skipped: 2392)
+[16:21:06]   Progress: 100/100 (total checked: 3100/3384, downloaded: 698, skipped: 2402)
+[16:21:06] Batch 30: 100 checked (downloaded: 698, skipped: 2402, total: 3100/3384)
+[16:21:06] Cooldown 1 min...
+[16:22:07]   Progress: 10/100 (total checked: 3110/3384, downloaded: 698, skipped: 2412)
+[16:22:08]   Progress: 20/100 (total checked: 3120/3384, downloaded: 698, skipped: 2422)
+[16:22:08]   Progress: 30/100 (total checked: 3130/3384, downloaded: 698, skipped: 2432)
+[16:22:09]   Progress: 40/100 (total checked: 3140/3384, downloaded: 698, skipped: 2442)
+[16:22:09]   Progress: 50/100 (total checked: 3150/3384, downloaded: 698, skipped: 2452)
+[16:22:10]   Progress: 60/100 (total checked: 3160/3384, downloaded: 698, skipped: 2462)
+[16:22:11]   Progress: 70/100 (total checked: 3170/3384, downloaded: 698, skipped: 2472)
+[16:22:11]   Progress: 80/100 (total checked: 3180/3384, downloaded: 698, skipped: 2482)
+[16:22:12]   Progress: 90/100 (total checked: 3190/3384, downloaded: 698, skipped: 2492)
+[16:22:13]   Progress: 100/100 (total checked: 3200/3384, downloaded: 698, skipped: 2502)
+[16:22:13] Batch 31: 100 checked (downloaded: 698, skipped: 2502, total: 3200/3384)
+[16:22:13] Cooldown 1 min...
+[16:23:13]   Progress: 10/100 (total checked: 3210/3384, downloaded: 698, skipped: 2512)
+[16:23:14]   Progress: 20/100 (total checked: 3220/3384, downloaded: 698, skipped: 2522)
+[16:23:14]   Progress: 30/100 (total checked: 3230/3384, downloaded: 698, skipped: 2532)
+[16:23:15]   Progress: 40/100 (total checked: 3240/3384, downloaded: 698, skipped: 2542)
+[16:23:16]   Progress: 50/100 (total checked: 3250/3384, downloaded: 698, skipped: 2552)
+[16:23:16]   Progress: 60/100 (total checked: 3260/3384, downloaded: 698, skipped: 2562)
+[16:23:17]   Progress: 70/100 (total checked: 3270/3384, downloaded: 698, skipped: 2572)
+[16:23:18]   Progress: 80/100 (total checked: 3280/3384, downloaded: 698, skipped: 2582)
+[16:23:18]   Progress: 90/100 (total checked: 3290/3384, downloaded: 698, skipped: 2592)
+[16:23:19]   Progress: 100/100 (total checked: 3300/3384, downloaded: 698, skipped: 2602)
+[16:23:19] Batch 32: 100 checked (downloaded: 698, skipped: 2602, total: 3300/3384)
+[16:23:19] Cooldown 1 min...
+[16:24:19]   Progress: 10/100 (total checked: 3310/3384, downloaded: 698, skipped: 2612)
+[16:24:20]   Progress: 20/100 (total checked: 3320/3384, downloaded: 698, skipped: 2622)
+[16:24:21]   Progress: 30/100 (total checked: 3330/3384, downloaded: 698, skipped: 2632)
+[16:24:21]   Progress: 40/100 (total checked: 3340/3384, downloaded: 698, skipped: 2642)
+[16:24:22]   Progress: 50/100 (total checked: 3350/3384, downloaded: 698, skipped: 2652)
+[16:24:23]   Progress: 60/100 (total checked: 3360/3384, downloaded: 698, skipped: 2662)
+[16:24:23]   Progress: 70/100 (total checked: 3370/3384, downloaded: 698, skipped: 2672)
+[16:24:24]   Progress: 80/100 (total checked: 3380/3384, downloaded: 698, skipped: 2682)
+[16:24:24] Batch 33: 84 checked (downloaded: 698, skipped: 2686, total: 3384/3384)
+[16:24:24] === PHASE 1 COMPLETE: 698 downloaded, 2686 already had original ===
+[16:24:24] === PHASE 2: Pull metadata for 1484 photos ===
+[16:24:45]   Meta progress: 10/100 (total: 10/1494)
+[16:25:07]   Meta progress: 20/100 (total: 20/1504)
+[16:25:29]   Meta progress: 30/100 (total: 30/1514)
+[16:25:50]   Meta progress: 40/100 (total: 40/1524)
+[16:26:12]   Meta progress: 50/100 (total: 50/1534)
+[16:26:33]   Meta progress: 60/100 (total: 60/1544)
+[16:26:55]   Meta progress: 70/100 (total: 70/1554)
+[16:27:18]   Meta progress: 80/100 (total: 80/1564)
+[16:27:41]   Meta progress: 90/100 (total: 90/1574)
+[16:28:03]   Meta progress: 100/100 (total: 100/1584)
+[16:28:03] Meta batch 1: 100 done (total: 100/1484)
+[16:28:03] Cooldown 5 min...
+[16:33:25]   Meta progress: 10/100 (total: 110/1594)
+[16:33:47]   Meta progress: 20/100 (total: 120/1604)
+[16:34:09]   Meta progress: 30/100 (total: 130/1614)
+[16:34:30]   Meta progress: 40/100 (total: 140/1624)
+[16:34:52]   Meta progress: 50/100 (total: 150/1634)
+[16:35:15]   Meta progress: 60/100 (total: 160/1644)
+[16:35:36] === PHASE 2: Pull metadata for 1384 photos ===
+[16:35:56]   Meta progress: 10/100 (total: 110/1494)
+[16:36:18]   Meta progress: 20/100 (total: 120/1504)
+[16:36:38]   Meta progress: 30/100 (total: 130/1514)
+[16:36:59]   Meta progress: 40/100 (total: 140/1524)
+[16:37:20]   Meta progress: 50/100 (total: 150/1534)
+[16:37:40]   Meta progress: 60/100 (total: 160/1544)
+[16:38:02]   Meta progress: 70/100 (total: 170/1554)
+[16:38:24]   Meta progress: 80/100 (total: 180/1564)
+[16:38:46]   Meta progress: 90/100 (total: 190/1574)
+[16:39:08]   Meta progress: 100/100 (total: 200/1584)
+[16:39:08] Meta batch 1: 100 done (total: 100/1384)
+[16:39:08] Cooldown 1 min...
+[16:40:30]   Meta progress: 10/100 (total: 210/1594)
+[16:40:52]   Meta progress: 20/100 (total: 220/1604)
+[16:41:14]   Meta progress: 30/100 (total: 230/1614)
+[16:41:36]   Meta progress: 40/100 (total: 240/1624)
+[16:41:58]   Meta progress: 50/100 (total: 250/1634)
+[16:42:20]   Meta progress: 60/100 (total: 260/1644)
+[16:42:41]   Meta progress: 70/100 (total: 270/1654)
+[16:43:03]   Meta progress: 80/100 (total: 280/1664)
+[16:43:25]   Meta progress: 90/100 (total: 290/1674)
+[16:43:46]   Meta progress: 100/100 (total: 300/1684)
+[16:43:47] Meta batch 2: 100 done (total: 200/1384)
+[16:43:47] Cooldown 1 min...
+[16:45:08]   Meta progress: 10/100 (total: 310/1694)
+[16:45:30]   Meta progress: 20/100 (total: 320/1704)
+[16:45:51]   Meta progress: 30/100 (total: 330/1714)
+[16:46:13]   Meta progress: 40/100 (total: 340/1724)
+[16:46:35]   Meta progress: 50/100 (total: 350/1734)
+[16:46:57]   Meta progress: 60/100 (total: 360/1744)
+[16:47:19]   Meta progress: 70/100 (total: 370/1754)
+[16:47:40]   Meta progress: 80/100 (total: 380/1764)
+[16:48:02]   Meta progress: 90/100 (total: 390/1774)
+[16:48:23]   Meta progress: 100/100 (total: 400/1784)
+[16:48:24] Meta batch 3: 100 done (total: 300/1384)
+[16:48:24] Cooldown 1 min...
+[16:49:45]   Meta progress: 10/100 (total: 410/1794)
+[16:50:07]   Meta progress: 20/100 (total: 420/1804)
+[16:50:29]   Meta progress: 30/100 (total: 430/1814)
+[16:50:50]   Meta progress: 40/100 (total: 440/1824)
+[16:51:12]   Meta progress: 50/100 (total: 450/1834)
+[16:51:34]   Meta progress: 60/100 (total: 460/1844)
+[16:51:55]   Meta progress: 70/100 (total: 470/1854)
+[16:52:17]   Meta progress: 80/100 (total: 480/1864)
+[16:52:38]   Meta progress: 90/100 (total: 490/1874)
+[16:53:00]   Meta progress: 100/100 (total: 500/1884)
+[16:53:00] Meta batch 4: 100 done (total: 400/1384)
+[16:53:00] Cooldown 1 min...
+[16:54:23]   Meta progress: 10/100 (total: 510/1894)
+[16:54:45]   Meta progress: 20/100 (total: 520/1904)
+[16:55:07]   Meta progress: 30/100 (total: 530/1914)
+[16:55:29]   Meta progress: 40/100 (total: 540/1924)
+[16:55:51]   Meta progress: 50/100 (total: 550/1934)
+[16:56:13]   Meta progress: 60/100 (total: 560/1944)
+[16:56:34]   Meta progress: 70/100 (total: 570/1954)
+[16:56:56]   Meta progress: 80/100 (total: 580/1964)
+[16:57:18]   Meta progress: 90/100 (total: 590/1974)
+[16:57:39]   Meta progress: 100/100 (total: 600/1984)
+[16:57:40] Meta batch 5: 100 done (total: 500/1384)
+[16:57:40] Cooldown 1 min...
+[16:59:01]   Meta progress: 10/100 (total: 610/1994)
+[16:59:23]   Meta progress: 20/100 (total: 620/2004)
+[16:59:44]   Meta progress: 30/100 (total: 630/2014)
+[17:00:08]   Meta progress: 40/100 (total: 640/2024)
+[17:00:30]   Meta progress: 50/100 (total: 650/2034)
+[17:00:51]   Meta progress: 60/100 (total: 660/2044)
+[17:01:14]   Meta progress: 70/100 (total: 670/2054)
+[17:01:35]   Meta progress: 80/100 (total: 680/2064)
+[17:01:57]   Meta progress: 90/100 (total: 690/2074)
+[17:02:17]   Meta progress: 100/100 (total: 700/2084)
+[17:02:18] Meta batch 6: 100 done (total: 600/1384)
+[17:02:18] Cooldown 1 min...
+[17:03:40]   Meta progress: 10/100 (total: 710/2094)
+[17:04:01]   Meta progress: 20/100 (total: 720/2104)
+[17:04:24]   Meta progress: 30/100 (total: 730/2114)
+[17:04:45]   Meta progress: 40/100 (total: 740/2124)
+[17:05:07]   Meta progress: 50/100 (total: 750/2134)
+[17:05:29]   Meta progress: 60/100 (total: 760/2144)
+[17:05:50]   Meta progress: 70/100 (total: 770/2154)
+[17:06:13]   Meta progress: 80/100 (total: 780/2164)
+[17:06:35]   Meta progress: 90/100 (total: 790/2174)
+[17:06:56]   Meta progress: 100/100 (total: 800/2184)
+[17:06:57] Meta batch 7: 100 done (total: 700/1384)
+[17:06:57] Cooldown 1 min...
+[17:08:19]   Meta progress: 10/100 (total: 810/2194)
+[17:08:40]   Meta progress: 20/100 (total: 820/2204)
+[17:09:02]   Meta progress: 30/100 (total: 830/2214)
+[17:09:23]   Meta progress: 40/100 (total: 840/2224)
+[17:09:45]   Meta progress: 50/100 (total: 850/2234)
+[17:10:08]   Meta progress: 60/100 (total: 860/2244)
+[17:10:29]   Meta progress: 70/100 (total: 870/2254)
+[17:10:51]   Meta progress: 80/100 (total: 880/2264)
+[17:11:12]   Meta progress: 90/100 (total: 890/2274)
+[17:11:34]   Meta progress: 100/100 (total: 900/2284)
+[17:11:34] Meta batch 8: 100 done (total: 800/1384)
+[17:11:34] Cooldown 1 min...
+[17:12:56]   Meta progress: 10/100 (total: 910/2294)
+[17:13:18]   Meta progress: 20/100 (total: 920/2304)
+[17:13:39]   Meta progress: 30/100 (total: 930/2314)
+[17:14:01]   Meta progress: 40/100 (total: 940/2324)
+[17:14:23]   Meta progress: 50/100 (total: 950/2334)
+[17:14:45]   Meta progress: 60/100 (total: 960/2344)
+[17:15:07]   Meta progress: 70/100 (total: 970/2354)
+[17:15:29]   Meta progress: 80/100 (total: 980/2364)
+[17:15:50]   Meta progress: 90/100 (total: 990/2374)
+[17:16:12]   Meta progress: 100/100 (total: 1000/2384)
+[17:16:13] Meta batch 9: 100 done (total: 900/1384)
+[17:16:13] Cooldown 1 min...
+[17:17:35]   Meta progress: 10/100 (total: 1010/2394)
+[17:17:57]   Meta progress: 20/100 (total: 1020/2404)
+[17:18:19]   Meta progress: 30/100 (total: 1030/2414)
+[17:18:40]   Meta progress: 40/100 (total: 1040/2424)
+[17:19:02]   Meta progress: 50/100 (total: 1050/2434)
+[17:19:24]   Meta progress: 60/100 (total: 1060/2444)
+[17:19:45]   Meta progress: 70/100 (total: 1070/2454)
+[17:20:06]   Meta progress: 80/100 (total: 1080/2464)
+[17:20:28]   Meta progress: 90/100 (total: 1090/2474)
+[17:20:49]   Meta progress: 100/100 (total: 1100/2484)
+[17:20:50] Meta batch 10: 100 done (total: 1000/1384)
+[17:20:50] Cooldown 1 min...
+[17:22:11]   Meta progress: 10/100 (total: 1110/2494)
+[17:22:31]   Meta progress: 20/100 (total: 1120/2504)
+[17:22:52]   Meta progress: 30/100 (total: 1130/2514)
+[17:23:13]   Meta progress: 40/100 (total: 1140/2524)
+[17:23:35]   Meta progress: 50/100 (total: 1150/2534)
+[17:23:56]   Meta progress: 60/100 (total: 1160/2544)
+[17:24:18]   Meta progress: 70/100 (total: 1170/2554)
+[17:24:40]   Meta progress: 80/100 (total: 1180/2564)
+[17:25:01]   Meta progress: 90/100 (total: 1190/2574)
+[17:25:23]   Meta progress: 100/100 (total: 1200/2584)
+[17:25:24] Meta batch 11: 100 done (total: 1100/1384)
+[17:25:24] Cooldown 1 min...
+[17:26:46]   Meta progress: 10/100 (total: 1210/2594)
+[17:27:07]   Meta progress: 20/100 (total: 1220/2604)
+[17:27:29]   Meta progress: 30/100 (total: 1230/2614)
+[17:27:51]   Meta progress: 40/100 (total: 1240/2624)
+[17:28:12]   Meta progress: 50/100 (total: 1250/2634)
+[17:28:34]   Meta progress: 60/100 (total: 1260/2644)
+[17:28:56]   Meta progress: 70/100 (total: 1270/2654)
+[17:29:18]   Meta progress: 80/100 (total: 1280/2664)
+[17:29:40]   Meta progress: 90/100 (total: 1290/2674)
+[17:30:02]   Meta progress: 100/100 (total: 1300/2684)
+[17:30:03] Meta batch 12: 100 done (total: 1200/1384)
+[17:30:03] Cooldown 1 min...
+[17:31:25]   Meta progress: 10/100 (total: 1310/2694)
+[17:31:47]   Meta progress: 20/100 (total: 1320/2704)
+[17:32:08]   Meta progress: 30/100 (total: 1330/2714)
+[17:32:30]   Meta progress: 40/100 (total: 1340/2724)
+[17:32:52]   Meta progress: 50/100 (total: 1350/2734)
+[17:33:13]   Meta progress: 60/100 (total: 1360/2744)
+[17:33:35]   Meta progress: 70/100 (total: 1370/2754)
+[17:33:56]   Meta progress: 80/100 (total: 1380/2764)
+[17:34:18]   Meta progress: 90/100 (total: 1390/2774)
+[17:34:40]   Meta progress: 100/100 (total: 1400/2784)
+[17:34:41] Meta batch 13: 100 done (total: 1300/1384)
+[17:34:41] Cooldown 1 min...
+[17:36:03]   Meta progress: 10/100 (total: 1410/2794)
+[17:36:24]   Meta progress: 20/100 (total: 1420/2804)
+[17:36:46]   Meta progress: 30/100 (total: 1430/2814)
+[17:37:08]   Meta progress: 40/100 (total: 1440/2824)
+[17:37:29]   Meta progress: 50/100 (total: 1450/2834)
+[17:37:51]   Meta progress: 60/100 (total: 1460/2844)
+[17:38:13]   Meta progress: 70/100 (total: 1470/2854)
+[17:38:35]   Meta progress: 80/100 (total: 1480/2864)
+[17:38:44] Meta batch 14: 84 done (total: 1384/1384)
+[17:38:44] === ALL DONE ===
+[17:38:44]   Total photos: 3384
+[17:38:44]   Photos with metadata: 3384
+[17:38:44]   Images on disk: 3385

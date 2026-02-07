@@ -5,6 +5,7 @@
 // Maps snake_case DB columns to camelCase for app compatibility
 
 import { supabase } from "../supabase";
+import { rewriteLegacyAssetHostsInHtml, toR2AssetUrl } from "../utils/assets";
 
 export interface ApplicationPage {
   id: number;
@@ -81,12 +82,12 @@ function mapApplicationPage(row: any): ApplicationPage {
     seoKeywords: row.seo_keywords,
     popupTitle: row.popup_title,
     popupSubtitle: row.popup_subtitle,
-    popup1stColumn: row.popup_1stcolumn,
-    popup2ndColumn: row.popup_2ndcolumn,
-    machineUrl: row.machine_url,
+    popup1stColumn: rewriteLegacyAssetHostsInHtml(row.popup_1stcolumn ?? ""),
+    popup2ndColumn: rewriteLegacyAssetHostsInHtml(row.popup_2ndcolumn ?? ""),
+    machineUrl: toR2AssetUrl(row.machine_url ?? ""),
     appNavTitle: row.app_nav_title,
     appRightTitle: row.app_right_title,
-    appRightP: row.app_right_p,
+    appRightP: rewriteLegacyAssetHostsInHtml(row.app_right_p ?? ""),
     stitchWidth: row.stitch_width,
     machineSpeed: row.machine_speed,
     fabricMaterial: row.fabric_material,

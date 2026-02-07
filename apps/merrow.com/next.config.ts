@@ -7,9 +7,14 @@ const nextConfig: NextConfig = {
   // Transpile packages from monorepo
   transpilePackages: ["@merrow/data-layer", "@merrow/ui"],
 
-  // Image optimization for S3-hosted images
+  // Image optimization for remote assets
   images: {
     remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev",
+        pathname: "/**",
+      },
       {
         protocol: "https",
         hostname: "merrow-media.s3.amazonaws.com",
@@ -106,6 +111,31 @@ const nextConfig: NextConfig = {
       {
         source: "/support.html",
         destination: "/support",
+        permanent: true,
+      },
+      {
+        source: "/contact_general.php",
+        destination: "/contact_general/label/:label/key/:key",
+        permanent: true,
+        has: [
+          { type: "query", key: "label", value: "(?<label>.*)" },
+          { type: "query", key: "key", value: "(?<key>.*)" },
+        ],
+      },
+      {
+        source: "/contact_general.php",
+        destination: "/contact_general/key/:key",
+        permanent: true,
+        has: [{ type: "query", key: "key", value: "(?<key>.*)" }],
+      },
+      {
+        source: "/contact_general.php",
+        destination: "/contact_general.html",
+        permanent: true,
+      },
+      {
+        source: "/contact_general",
+        destination: "/contact_general.html",
         permanent: true,
       },
       // Training redirect

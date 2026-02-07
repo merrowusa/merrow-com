@@ -264,15 +264,26 @@ def main():
             filename = f"{photo_id}.{ext}"
             dest_path = OUTPUT_DIR / filename
 
-            # Download image (skip if already exists at same or larger size)
+            # Download image
+            # If url_o available and file exists at original size: skip.
+            # If url_o available but file is smaller (lesser res from prev run): re-download.
+            # If only url_l/url_m available and file exists: skip (no better version).
             need_download = True
             if dest_path.exists():
                 existing_size = dest_path.stat().st_size
-                # If we already have it and it's url_o, skip download
-                if size_key == "url_o" and existing_size > 1000:
-                    need_download = False
-                # If we have it but at lower res, re-download
-                elif size_key != "url_o":
+                if size_key == "url_o":
+                    # Check if existing file matches original size via HEAD request
+                    try:
+                        req = urllib.request.Request(url, method="HEAD")
+                        with urllib.request.urlopen(req, timeout=10) as resp:
+                            expected_size = int(resp.headers.get("Content-Length", 0))
+                        if expected_size > 0 and existing_size >= expected_size:
+                            need_download = False  # already have the original
+                        # else: file is smaller than original, re-download
+                    except Exception:
+                        # HEAD failed — re-download to be safe
+                        pass
+                else:
                     need_download = False  # no better version available
 
             if need_download:

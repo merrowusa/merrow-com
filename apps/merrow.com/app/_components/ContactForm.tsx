@@ -14,6 +14,14 @@ interface ContactFormProps {
   showMachine?: boolean;
   submitLabel?: string;
   extraFields?: Record<string, string>;
+  initialValues?: Partial<{
+    name: string;
+    email: string;
+    company: string;
+    phone: string;
+    machine: string;
+    message: string;
+  }>;
 }
 
 interface FormState {
@@ -30,6 +38,7 @@ export function ContactForm({
   showMachine = false,
   submitLabel = "Send Message",
   extraFields = {},
+  initialValues = {},
 }: ContactFormProps) {
   const [formState, setFormState] = useState<FormState>({
     status: "idle",
@@ -122,6 +131,7 @@ export function ContactForm({
           id="name"
           name="name"
           required
+          defaultValue={initialValues.name}
           className="w-full border border-merrow-border rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-merrow-linkBlue"
           placeholder="Your name"
         />
@@ -136,6 +146,7 @@ export function ContactForm({
           id="email"
           name="email"
           required
+          defaultValue={initialValues.email}
           className="w-full border border-merrow-border rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-merrow-linkBlue"
           placeholder="your@email.com"
         />
@@ -150,6 +161,7 @@ export function ContactForm({
             type="text"
             id="company"
             name="company"
+            defaultValue={initialValues.company}
             className="w-full border border-merrow-border rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-merrow-linkBlue"
             placeholder="Your company"
           />
@@ -165,6 +177,7 @@ export function ContactForm({
             type="tel"
             id="phone"
             name="phone"
+            defaultValue={initialValues.phone}
             className="w-full border border-merrow-border rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-merrow-linkBlue"
             placeholder="Your phone number"
           />
@@ -180,6 +193,7 @@ export function ContactForm({
             type="text"
             id="machine"
             name="machine"
+            defaultValue={initialValues.machine}
             className="w-full border border-merrow-border rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-merrow-linkBlue"
             placeholder="e.g., MG-3U, 70-D3B"
           />
@@ -194,6 +208,7 @@ export function ContactForm({
           id="message"
           name="message"
           rows={4}
+          defaultValue={initialValues.message}
           className="w-full border border-merrow-border rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-merrow-linkBlue resize-y"
           placeholder="How can we help?"
         />

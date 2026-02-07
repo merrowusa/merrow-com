@@ -3,6 +3,12 @@
 
 import React from "react";
 import type { ThreadingDiagram } from "../../../../../packages/data-layer/queries/support";
+import {
+  SUPPORT_BUTT_SEAM_BOOK_LINKS,
+  SUPPORT_INSTRUCTION_MANUAL_LINKS,
+  SUPPORT_PARTS_BOOK_LINKS,
+  type SupportLinkItem,
+} from "../_data/links";
 
 interface DocsPanelProps {
   threadingDiagrams: ThreadingDiagram[];
@@ -16,6 +22,25 @@ function ListSection({ title, children }: { title: string; children: React.React
       </div>
       {children}
     </div>
+  );
+}
+
+function LinkList({ items }: { items: SupportLinkItem[] }) {
+  return (
+    <ul className="space-y-1">
+      {items.map((item) => (
+        <li key={`${item.href}-${item.label}`}>
+          <a
+            className="text-[12px] text-merrow-textSub hover:text-merrow-link"
+            href={item.href}
+            target={item.external ? "_blank" : undefined}
+            rel={item.external ? "noopener noreferrer" : undefined}
+          >
+            {item.label}
+          </a>
+        </li>
+      ))}
+    </ul>
   );
 }
 
@@ -50,31 +75,15 @@ export function SupportDocsPanel({ threadingDiagrams }: DocsPanelProps) {
           </ListSection>
 
           <ListSection title="Parts Books">
-            <ul className="space-y-1">
-              <li><a className="text-[12px] text-merrow-textSub hover:text-merrow-link" href="https://www.merrow.com/agent_book/kiwifruit/partsbook/language/english/type/MG/setnum/72157606827670334/setnam/mgpartsbook" target="_blank" rel="noopener noreferrer">MG parts book (english)</a></li>
-              <li><a className="text-[12px] text-merrow-textSub hover:text-merrow-link" href="https://www.merrow.com/agent_book/kiwifruit/partsbook/language/english/type/70/setnum/72157606828138530/setnam/70classbook" target="_blank" rel="noopener noreferrer">70 class parts book (english)</a></li>
-              <li><a className="text-[12px] text-merrow-textSub hover:text-merrow-link" href="https://www.merrow.com/agent_book/kiwifruit/partsbook/language/english/type/crochet/setnum/72157606826978368/setnam/crochet" target="_blank" rel="noopener noreferrer">Crochet parts book (english)</a></li>
-              <li><a className="text-[12px] text-merrow-textSub hover:text-merrow-link" href="https://www.merrow.com/agent_book/kiwifruit/partsbook/language/english/type/60/setnum/72157606826047178/setnam/60class" target="_blank" rel="noopener noreferrer">60 class parts book (english)</a></li>
-              <li><a className="text-[12px] text-merrow-textSub hover:text-merrow-link" href="https://www.merrow.com/agent_book/kiwifruit/partsbook/language/english/type/A/setnum/72157606832488303/setnam/Aclassparts" target="_blank" rel="noopener noreferrer">A class parts book (english)</a></li>
-            </ul>
+            <LinkList items={SUPPORT_PARTS_BOOK_LINKS} />
           </ListSection>
 
           <ListSection title="Instruction Manuals">
-            <ul className="space-y-1">
-              <li><a className="text-[12px] text-merrow-textSub hover:text-merrow-link" href="https://www.merrow.com/agent_book/kiwifruit/instructions/language/english/type/MG/setnum/72157606829542814/setnam/mginstructions" target="_blank" rel="noopener noreferrer">MG instructions (english)</a></li>
-              <li><a className="text-[12px] text-merrow-textSub hover:text-merrow-link" href="https://www.merrow.com/agent_book/kiwifruit/instructions/language/spanish/type/MG/setnum/72157606830005278/setnam/mgpspanishinstruction" target="_blank" rel="noopener noreferrer">MG instructions (spanish)</a></li>
-              <li><a className="text-[12px] text-merrow-textSub hover:text-merrow-link" href="https://www.merrow.com/agent_book/kiwifruit/instructions/language/english/type/70/setnum/72157606831978449/setnam/70classinstructions" target="_blank" rel="noopener noreferrer">70 class instructions (english)</a></li>
-            </ul>
+            <LinkList items={SUPPORT_INSTRUCTION_MANUAL_LINKS} />
           </ListSection>
 
           <ListSection title="Butt Seam Book">
-            <ul className="space-y-1">
-              <li><a className="text-[12px] text-merrow-textSub hover:text-merrow-link" href="https://www.merrow.com/agent_book/kiwifruit/book/language/english/setnum/72157607489347906/setnam/english_book/type/BS" target="_blank" rel="noopener noreferrer">Butt Seam (english)</a></li>
-              <li><a className="text-[12px] text-merrow-textSub hover:text-merrow-link" href="https://www.merrow.com/agent_book/kiwifruit/book/language/portuguese/setnum/72157606583868719/setnam/rivitex_book/type/BS" target="_blank" rel="noopener noreferrer">Butt Seam (portuguese)</a></li>
-              <li><a className="text-[12px] text-merrow-textSub hover:text-merrow-link" href="https://www.merrow.com/agent_book/kiwifruit/book/language/turkish/setnum/72157606834081591/setnam/turkish_book/type/BS" target="_blank" rel="noopener noreferrer">Butt Seam (turkish)</a></li>
-              <li><a className="text-[12px] text-merrow-textSub hover:text-merrow-link" href="https://www.merrow.com/agent_book/kiwifruit/book/language/spanish/setnum/72157606834229615/setnam/spanish_book/type/BS" target="_blank" rel="noopener noreferrer">Butt Seam (spanish)</a></li>
-              <li><a className="text-[12px] text-merrow-textSub hover:text-merrow-link" href="https://www.merrow.com/agent_book/kiwifruit/book/language/mandarin/setnum/72157606831254410/setnam/mandarin_book/type/BS" target="_blank" rel="noopener noreferrer">Butt Seam (chinese)</a></li>
-            </ul>
+            <LinkList items={SUPPORT_BUTT_SEAM_BOOK_LINKS} />
           </ListSection>
         </div>
       </div>

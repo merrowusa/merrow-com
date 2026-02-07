@@ -21,7 +21,7 @@ const STORY_NAV = [
 ];
 
 const LEGACY_STORY_ASSET_BASE =
-  "https://merrow-media.s3.amazonaws.com/general-http/2011_live";
+  "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/general-http/2011_live";
 
 function storyAsset(storyKey: string, suffix: "03" | "07" | "11" | "15" | "19") {
   return `${LEGACY_STORY_ASSET_BASE}/${storyKey}_${suffix}.gif`;

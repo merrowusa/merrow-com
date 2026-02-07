@@ -14,9 +14,9 @@ const TECHNICAL_APP_KEYS = [5514, 5517, 5519, 5512];
 
 // Legacy S3 assets
 const IMG = {
-  hero: "https://merrow-media.s3.amazonaws.com/general-http/t_03.gif",
-  customerStory: "https://merrow-media.s3.amazonaws.com/general-http/t_09.jpg",
-  customersLogo: "https://merrow-media.s3.amazonaws.com/general-http/t_06.gif",
+  hero: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/general-http/t_03.gif",
+  customerStory: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/general-http/t_09.jpg",
+  customersLogo: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/general-http/t_06.gif",
 };
 
 export const metadata: Metadata = {
@@ -180,7 +180,7 @@ export default async function TechnicalSewingPage() {
                           return (
                             <li key={item.dKey} className="page-app-list flex items-center gap-2">
                               <img
-                                src={`https://merrow-media.s3.amazonaws.com/applications/${dKey}_main_icon_15x15.jpg`}
+                                src={`https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/applications/${dKey}_main_icon_15x15.jpg`}
                                 alt=""
                                 width={15}
                                 height={15}

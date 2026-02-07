@@ -11,6 +11,7 @@ import {
 } from "../../../../../../../../packages/ui";
 import { SupportSidebar } from "../../../../_components/SupportSidebar";
 import { SupportDocsPanel } from "../../../../_components/SupportDocsPanel";
+import { SUPPORT_CONTACT } from "../../../../_data/links";
 import {
   getAsinByMediaKeyword,
   getThreadingDiagrams,
@@ -115,7 +116,7 @@ export default async function PartsBookPage({ params }: PageProps) {
             Contact our parts department for assistance.
           </p>
           <div className="mt-4 flex justify-center gap-4">
-            <MerrowButton href="mailto:parts@merrow.com">Email Parts</MerrowButton>
+            <MerrowButton href={`mailto:${SUPPORT_CONTACT.partsEmail}`}>Email Parts</MerrowButton>
             <MerrowButton href="/support">Back to Support</MerrowButton>
           </div>
         </div>

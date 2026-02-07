@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 };
 
 const IMG = {
-  heritage: "https://merrow-media.s3.amazonaws.com/general-http/2011_live/h_05.gif.png",
+  heritage: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/general-http/2011_live/h_05.gif.png",
 };
 
 const timeline = [

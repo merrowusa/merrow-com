@@ -20,7 +20,7 @@ import {
   type CompareApplicationRow,
 } from "../_components/CompareAllModal";
 
-const APP_IMAGE_BASE = "https://merrow-media.s3.amazonaws.com/applications";
+const APP_IMAGE_BASE = "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/applications";
 
 interface PageProps {
   params: Promise<{ app: string }>;

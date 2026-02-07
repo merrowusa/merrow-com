@@ -5,6 +5,7 @@
 // Maps snake_case DB columns to camelCase for app compatibility
 
 import { supabase } from "../supabase";
+import { rewriteLegacyAssetHostsInHtml, toR2AssetUrl } from "../utils/assets";
 
 // Use the same interface shape as the Drizzle schema for compatibility
 export interface MachinePage {
@@ -103,7 +104,7 @@ function mapMachinePage(row: any): MachinePage {
     publish: row.publish,
     style: row.style,
     header: row.header,
-    description: row.description,
+    description: rewriteLegacyAssetHostsInHtml(row.description ?? ""),
     styleKey: row.style_key,
     pageKey: row.page_key,
     mrsp: row.mrsp,
@@ -121,10 +122,10 @@ function mapMachinePage(row: any): MachinePage {
     videoTagline2: row.video_tagline2,
     youtube1: row.youtube1,
     youtube2: row.youtube2,
-    overview: row.overview,
-    how: row.how,
-    why: row.why,
-    whereUsed: row.where,
+    overview: rewriteLegacyAssetHostsInHtml(row.overview ?? ""),
+    how: rewriteLegacyAssetHostsInHtml(row.how ?? ""),
+    why: rewriteLegacyAssetHostsInHtml(row.why ?? ""),
+    whereUsed: rewriteLegacyAssetHostsInHtml(row.where ?? ""),
     primaryApp: row.primary_app,
     secondaryApp: row.secondary_app,
     completeAppList: row.complete_app_list,
@@ -155,16 +156,16 @@ function mapMachinePage(row: any): MachinePage {
     seoSearchKeywords: row.seo_search_keywords,
     seoSearchTitle: row.seo_search_title,
     seoBrand: row.seo_brand,
-    marketingUrl1: row.marketing_url1,
-    marketingUrl2: row.marketing_url2,
-    marketingUrl3: row.marketing_url3,
-    marketingUrl4: row.marketing_url4,
-    marketingUrl5: row.marketing_url5,
-    marketingIcon1: row.marketing_icon1,
-    marketingIcon2: row.marketing_icon2,
-    marketingIcon3: row.marketing_icon3,
-    marketingIcon4: row.marketing_icon4,
-    marketingIcon5: row.marketing_icon5,
+    marketingUrl1: toR2AssetUrl(row.marketing_url1 ?? ""),
+    marketingUrl2: toR2AssetUrl(row.marketing_url2 ?? ""),
+    marketingUrl3: toR2AssetUrl(row.marketing_url3 ?? ""),
+    marketingUrl4: toR2AssetUrl(row.marketing_url4 ?? ""),
+    marketingUrl5: toR2AssetUrl(row.marketing_url5 ?? ""),
+    marketingIcon1: toR2AssetUrl(row.marketing_icon1 ?? ""),
+    marketingIcon2: toR2AssetUrl(row.marketing_icon2 ?? ""),
+    marketingIcon3: toR2AssetUrl(row.marketing_icon3 ?? ""),
+    marketingIcon4: toR2AssetUrl(row.marketing_icon4 ?? ""),
+    marketingIcon5: toR2AssetUrl(row.marketing_icon5 ?? ""),
     marketingTagline1: row.marketing_tagline1,
     marketingTagline2: row.marketing_tagline2,
     marketingTagline3: row.marketing_tagline3,

@@ -1,0 +1,57 @@
+{
+  "id": "merrow-com-parity",
+  "viewports": [
+    { "label": "desktop-1440", "width": 1440, "height": 900 },
+    { "label": "desktop-1920", "width": 1920, "height": 1080 }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "Customer Story CSRW",
+      "referenceUrl": "https://www.merrow.com/customer-stories/featured/csrw",
+      "url": "http://localhost:3000/customer-stories/featured/csrw",
+      "delay": 2000,
+      "misMatchThreshold": 10,
+      "requireSameDimensions": false,
+      "hideSelectors": [
+        ".google-analytics",
+        ".chat-widget",
+        ".cookie-banner",
+        ".addthis_toolbox",
+        ".addthis-smartlayers",
+        ".at4-share-outer",
+        ".at-share-dock-outer",
+        ".at4-follow",
+        ".intercom-lightweight-app",
+        ".intercom-launcher",
+        "#intercom-container",
+        "iframe[src*='intercom']",
+        "iframe[src*='chat']",
+        "iframe[src*='drift']",
+        "iframe[src*='zendesk']"
+      ],
+      "removeSelectors": ["script", "noscript"]
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/parity_reference",
+    "bitmaps_test": "backstop_data/parity_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/parity_report",
+    "ci_report": "backstop_data/parity_ci_report"
+  },
+  "report": ["browser", "CI"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 3,
+  "asyncCompareLimit": 20,
+  "debug": false,
+  "debugWindow": false,
+  "resembleOutputOptions": {
+    "ignoreAntialiasing": true,
+    "usePreciseMatching": false
+  }
+}

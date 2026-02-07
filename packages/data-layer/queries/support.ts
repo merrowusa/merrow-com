@@ -4,6 +4,7 @@
 // Uses Supabase REST API
 
 import { supabase } from "../supabase";
+import { rewriteLegacyAssetHostsInHtml, toR2AssetUrl } from "../utils/assets";
 
 export interface TechnicalRow {
   class: string;
@@ -97,7 +98,7 @@ function mapThreadingDiagram(row: any): ThreadingDiagram {
     id: String(row.id ?? ""),
     name: row.name ?? "",
     image: row.image ?? "",
-    imgUrl: row.img_url ?? "",
+    imgUrl: toR2AssetUrl(row.img_url ?? ""),
   };
 }
 
@@ -110,15 +111,15 @@ function mapAsin(row: any): AsinRecord {
     mmcId: row.mmc_id ?? "",
     msmcId: row.msmc_id ?? "",
     productName: row.product_name ?? "",
-    description: row.description ?? "",
+    description: rewriteLegacyAssetHostsInHtml(row.description ?? ""),
     mediaKeyword: row.media_keyword ?? "",
     bookPage: row.book_page ?? "",
-    partsbookUrl: row.partsbook_url ?? "",
-    partsbookImg: row.partsbook_img ?? "",
+    partsbookUrl: toR2AssetUrl(row.partsbook_url ?? ""),
+    partsbookImg: toR2AssetUrl(row.partsbook_img ?? ""),
     partsbookName: row.partsbook_name ?? "",
-    imgurlLarge: row.imgurl_large ?? "",
-    imgurlMedium: row.imgurl_medium ?? "",
-    imgurlTiny: row.imgurl_tiny ?? "",
+    imgurlLarge: toR2AssetUrl(row.imgurl_large ?? ""),
+    imgurlMedium: toR2AssetUrl(row.imgurl_medium ?? ""),
+    imgurlTiny: toR2AssetUrl(row.imgurl_tiny ?? ""),
     mrsp: row.mrsp ?? "",
     displayLength: row.display_length ?? "",
     displayWidth: row.display_width ?? "",
@@ -160,7 +161,7 @@ export async function getTechnicalField(
   if (!row) return null;
   if (!Object.prototype.hasOwnProperty.call(row, fieldKey)) return null;
   const value = row[fieldKey];
-  return value ?? null;
+  return value ? rewriteLegacyAssetHostsInHtml(value) : null;
 }
 
 /**

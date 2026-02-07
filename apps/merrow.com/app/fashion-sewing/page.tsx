@@ -14,9 +14,9 @@ const FASHION_APP_KEYS = [5515, 5516, 5518, 5522, 5521, 5525];
 
 // Legacy S3 assets
 const IMG = {
-  hero: "https://merrow-media.s3.amazonaws.com/general-http/f_03.gif",
-  customerStory: "https://merrow-media.s3.amazonaws.com/general-http/f_09.jpg",
-  customersLogo: "https://merrow-media.s3.amazonaws.com/general-http/f_06.gif",
+  hero: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/general-http/f_03.gif",
+  customerStory: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/general-http/f_09.jpg",
+  customersLogo: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/general-http/f_06.gif",
 };
 
 export const metadata: Metadata = {
@@ -194,7 +194,7 @@ export default async function FashionSewingPage() {
                                 return (
                                   <li key={item.dKey} className="page-app-list flex items-center gap-2">
                                     <img
-                                      src={`https://merrow-media.s3.amazonaws.com/applications/${dKey}_main_icon_15x15.jpg`}
+                                      src={`https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/applications/${dKey}_main_icon_15x15.jpg`}
                                       alt=""
                                       width={15}
                                       height={15}

@@ -14,11 +14,11 @@ const E2E_APP_KEYS = [5523, 5513, 5524];
 
 // Legacy S3 assets
 const IMG = {
-  hero: "https://merrow-media.s3.amazonaws.com/general-http/e_03.gif",
-  customerStory: "https://merrow-media.s3.amazonaws.com/general-http/e_09.jpg",
-  ravenTable: "https://merrow-media.s3.amazonaws.com/general-http/e_09.png",
-  railway: "https://merrow-media.s3.amazonaws.com/general-http/e_13.png",
-  airMotor: "https://merrow-media.s3.amazonaws.com/general-http/e_15.png",
+  hero: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/general-http/e_03.gif",
+  customerStory: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/general-http/e_09.jpg",
+  ravenTable: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/general-http/e_09.png",
+  railway: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/general-http/e_13.png",
+  airMotor: "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/general-http/e_15.png",
 };
 
 export const metadata: Metadata = {
@@ -221,7 +221,7 @@ export default async function EndToEndSeamingPage() {
                           return (
                             <li key={item.dKey} className="page-app-list flex items-center gap-2">
                               <img
-                                src={`https://merrow-media.s3.amazonaws.com/applications/${dKey}_main_icon_15x15.jpg`}
+                                src={`https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/applications/${dKey}_main_icon_15x15.jpg`}
                                 alt=""
                                 width={15}
                                 height={15}
