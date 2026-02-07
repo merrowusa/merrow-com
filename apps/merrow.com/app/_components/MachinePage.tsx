@@ -8,6 +8,7 @@ import { getMachinePageByStyleKey } from "../../../../packages/data-layer/querie
 import { getApplicationsForMachine } from "../../../../packages/data-layer/queries/applications";
 import type { MachinePage as MachinePageType } from "../../../../packages/data-layer/schema/machine-pages";
 import { LegacyMachineAdvantages } from "../machines/_components/LegacyMachineAdvantages";
+import { StitchGallery } from "../machines/_components/StitchGallery";
 
 const PRODUCT_PAGE_BASE = "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/product-pages";
 const APP_IMAGE_BASE = "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/applications";
@@ -312,15 +313,9 @@ export async function MachinePageContent({ styleKey }: MachinePageProps) {
             <section className="pt-5" id="ss">
               <div className="h-px w-full overflow-hidden border-t border-dashed border-[#999999]" />
               <div className="pt-3 text-[20px] leading-[22px] text-[#4a4a4a]">{styleName} Stitches</div>
-              <p className="mt-2 text-[12px] leading-[16px] text-[#666666]">
-                Get the flash player here:{" "}
-                <a
-                  className="text-[#808080] hover:underline"
-                  href={`https://www.flickr.com/photos/merrowmachine/sets/${machine.flickrSet}`}
-                >
-                  Stitch Gallery on Flickr
-                </a>
-              </p>
+              <div className="pt-3">
+                <StitchGallery flickrSet={machine.flickrSet} machineName={styleName} />
+              </div>
             </section>
           )}
 

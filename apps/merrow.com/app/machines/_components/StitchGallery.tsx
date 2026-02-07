@@ -13,6 +13,7 @@ interface StitchImage {
   id: string;
   title: string;
   tags: string[];
+  imageUrl: string;
 }
 
 interface StitchGalleryProps {
@@ -45,7 +46,7 @@ export function StitchGallery({ flickrSet, machineName }: StitchGalleryProps) {
 
   if (!flickrSet) return null;
 
-  const flickrUrl = `https://www.flickr.com/photos/merrowmachine/sets/${flickrSet}`;
+  const stitchBrowserUrl = `/stitch.html?setnum=${encodeURIComponent(flickrSet)}`;
 
   // If no local images, show CTA to Flickr
   if (!loading && images.length === 0) {
@@ -59,10 +60,10 @@ export function StitchGallery({ flickrSet, machineName }: StitchGalleryProps) {
         </h3>
         <p className="mt-2 text-[13px] text-merrow-textSub">
           Explore sample seams and stitch variations from this machine in the
-          Merrow Flickr gallery.
+          Merrow stitch browser.
         </p>
         <div className="mt-4">
-          <MerrowButton href={flickrUrl}>View on Flickr</MerrowButton>
+          <MerrowButton href={stitchBrowserUrl}>Open Stitch Browser</MerrowButton>
         </div>
       </section>
     );
@@ -92,7 +93,7 @@ export function StitchGallery({ flickrSet, machineName }: StitchGalleryProps) {
                 className="group relative aspect-square overflow-hidden rounded-lg border border-gray-200 bg-gray-100 transition-all hover:border-merrow-red hover:shadow-md"
               >
                 <Image
-                  src={`/images/stitch-samples/${flickrSet}/${img.filename}`}
+                  src={img.imageUrl}
                   alt={img.title || "Stitch sample"}
                   fill
                   sizes="100px"
@@ -109,8 +110,8 @@ export function StitchGallery({ flickrSet, machineName }: StitchGalleryProps) {
           )}
 
           <div className="mt-4 flex gap-3">
-            <MerrowButton href={flickrUrl} variant="outline">
-              View All on Flickr
+            <MerrowButton href={stitchBrowserUrl} variant="outline">
+              View All in Stitch Browser
             </MerrowButton>
           </div>
         </>
@@ -137,7 +138,7 @@ export function StitchGallery({ flickrSet, machineName }: StitchGalleryProps) {
             {/* Image */}
             <div className="relative h-[70vh] w-[80vw] max-w-4xl">
               <Image
-                src={`/images/stitch-samples/${flickrSet}/${selectedImage.filename}`}
+                src={selectedImage.imageUrl}
                 alt={selectedImage.title || "Stitch sample"}
                 fill
                 className="object-contain"

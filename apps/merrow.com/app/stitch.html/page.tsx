@@ -1,52 +1,125 @@
-// @version stitch-browser-stub v1.0
+// @version stitch-browser v2.0
 // Route: /stitch.html
-// Legacy stitch browser stub (design pass later)
+// Stitch finder rebuilt using Flickr migration metadata + R2 assets
 
 import { Metadata } from "next";
+import { FullBleed, PageHeader } from "../../../../packages/ui";
 import {
-  FullBleed,
-  PageHeader,
-  MerrowButton,
-} from "../../../../packages/ui";
+  resolveLegacyCollectionAlbumId,
+  LEGACY_STITCH_COLLECTIONS,
+} from "../../lib/stitch-samples";
+import { StitchBrowserClient } from "./_components/StitchBrowserClient";
+
+interface StitchBrowserPageProps {
+  searchParams?: Promise<{
+    q?: string | string[];
+    stitch?: string | string[];
+    setnum?: string | string[];
+    setnum1?: string | string[];
+    setnam?: string | string[];
+    resolution?: string | string[];
+    sort?: string | string[];
+  }>;
+}
 
 export const metadata: Metadata = {
   title: "Stitch Browser | Merrow Sewing Machine Company",
   description:
-    "Browse Merrow stitch samples and compare machine output by seam style, then contact Merrow for recommendations on equipment, setup, and production use cases.",
+    "Search Merrow stitch samples by machine model, stitch classification, and photoset collections.",
 };
 
-export default function StitchBrowserPage() {
+function firstParam(value?: string | string[]) {
+  if (!value) {
+    return "";
+  }
+  return Array.isArray(value) ? value[0] ?? "" : value;
+}
+
+function inferLegacyCollectionId(stitchParam: string) {
+  if (!stitchParam) {
+    return "";
+  }
+
+  const normalized = stitchParam.toLowerCase().trim();
+  const direct = LEGACY_STITCH_COLLECTIONS.find(
+    (collection) => collection.id === normalized
+  );
+  if (direct) {
+    return direct.id;
+  }
+
+  if (normalized.startsWith("front_")) {
+    return normalized;
+  }
+
+  return "";
+}
+
+function inferInitialQuery(stitchParam: string, q: string, setnam: string) {
+  if (q) {
+    return q;
+  }
+
+  if (stitchParam && !stitchParam.toLowerCase().startsWith("front_")) {
+    return stitchParam.replace(/_/g, " ");
+  }
+
+  if (setnam) {
+    return setnam.replace(/_/g, " ");
+  }
+
+  return "";
+}
+
+function normalizeSort(sort: string) {
+  const normalized = sort.trim().toLowerCase();
+  if (normalized === "oldest" || normalized === "title") {
+    return normalized;
+  }
+  return "newest";
+}
+
+export default async function StitchBrowserPage({
+  searchParams,
+}: StitchBrowserPageProps) {
+  const resolved = (await searchParams) ?? {};
+
+  const q = firstParam(resolved.q).trim();
+  const stitch = firstParam(resolved.stitch).trim();
+  const setnum = firstParam(resolved.setnum).trim();
+  const setnum1 = firstParam(resolved.setnum1).trim();
+  const setnam = firstParam(resolved.setnam).trim();
+  const resolution = firstParam(resolved.resolution).trim();
+  const sort = normalizeSort(firstParam(resolved.sort));
+
+  const legacyCollectionId = inferLegacyCollectionId(stitch);
+  const initialAlbumId = resolveLegacyCollectionAlbumId(
+    legacyCollectionId,
+    resolution,
+    setnum,
+    setnum1
+  );
+  const initialQuery = inferInitialQuery(stitch, q, setnam);
+
   return (
     <main className="text-merrow-textMain">
-      <FullBleed className="bg-merrow-heroBg border-b border-merrow-border">
-        <div className="mx-auto max-w-merrow px-4 py-10">
+      <FullBleed className="border-b border-merrow-border bg-merrow-heroBg">
+        <div className="mx-auto max-w-merrow px-4 py-8">
           <PageHeader
             eyebrow="Stitch Samples"
             title="Merrow Stitch Browser"
-            subtitle="Explore stitch samples and find the right machine for your application."
+            subtitle="Search, sort, and browse stitch images grouped by photosets and legacy stitch collections."
           />
         </div>
       </FullBleed>
 
       <FullBleed className="bg-white">
-        <div className="mx-auto max-w-merrow px-4 py-10">
-          <div className="rounded-xl border border-[#e1e1e1] bg-[#fafafa] p-6 shadow-[0_6px_16px_rgba(0,0,0,0.04)]">
-            <p className="text-[13px] text-merrow-textSub">
-              The legacy stitch browser is being rebuilt with a modern experience. In
-              the meantime, contact Merrow for stitch recommendations or browse related
-              machine pages.
-            </p>
-            <div className="mt-4 flex flex-wrap gap-3">
-              <MerrowButton href="mailto:contact@merrow.com">
-                Email: contact@merrow.com
-              </MerrowButton>
-              <MerrowButton href="tel:+18004316677">Call: 800.431.6677</MerrowButton>
-              <MerrowButton href="/sewing/applications">
-                Sewing Applications
-              </MerrowButton>
-            </div>
-          </div>
-        </div>
+        <StitchBrowserClient
+          initialQuery={initialQuery}
+          initialAlbumId={initialAlbumId}
+          initialLegacyCollectionId={legacyCollectionId}
+          initialSort={sort}
+        />
       </FullBleed>
     </main>
   );

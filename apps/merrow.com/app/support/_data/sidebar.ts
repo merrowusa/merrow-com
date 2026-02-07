@@ -72,8 +72,7 @@ export const SUPPORT_SIDEBAR_SECTIONS: SupportSidebarSection[] = [
           },
           {
             label: "View stitch samples",
-            href: "https://www.merrow.com/stitch/marketplace/general/stitch/front_overlock/label/143627189/setnum/72157606893157487/setnum1/72157607323739660/setnam/general%20overlock/resolution/low",
-            external: true,
+            href: "/stitch.html?marketplace=general&stitch=front_overlock&label=143627189&setnum=72157606893157487&setnum1=72157607323739660&setnam=general%20overlock&resolution=low",
           },
         ],
       },
@@ -129,8 +128,7 @@ export const SUPPORT_SIDEBAR_SECTIONS: SupportSidebarSection[] = [
           },
           {
             label: "View stitch samples",
-            href: "https://www.merrow.com/stitch/marketplace/general/stitch/front_textile/label/145362189/setnum/72157606892968601/setnum1/72157607324383640/setnam/Textile%20Finishing/resolution/low",
-            external: true,
+            href: "/stitch.html?marketplace=general&stitch=front_textile&label=145362189&setnum=72157606892968601&setnum1=72157607324383640&setnam=Textile%20Finishing&resolution=low",
           },
         ],
       },
@@ -191,8 +189,7 @@ export const SUPPORT_SIDEBAR_SECTIONS: SupportSidebarSection[] = [
           },
           {
             label: "View stitch samples",
-            href: "https://www.merrow.com/stitch/marketplace/general/stitch/front_crochet/label/145327189/setnum/72157606906056879/setnum1/72157607323790836/setnam/crochet/resolution/low",
-            external: true,
+            href: "/stitch.html?marketplace=general&stitch=front_crochet&label=145327189&setnum=72157606906056879&setnum1=72157607323790836&setnam=crochet&resolution=low",
           },
         ],
       },

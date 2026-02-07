@@ -114,6 +114,28 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/stitch.php",
+        destination: "/stitch.html",
+        permanent: true,
+      },
+      {
+        source: "/stitchHD.php",
+        destination: "/stitch.html",
+        permanent: true,
+      },
+      {
+        source: "/stitch/marketplace/:marketplace/stitch/:stitch",
+        destination: "/stitch.html?marketplace=:marketplace&stitch=:stitch",
+        permanent: true,
+      },
+      {
+        source:
+          "/stitch/marketplace/:marketplace/stitch/:stitch/label/:label/setnum/:setnum/setnum1/:setnum1/setnam/:setnam/resolution/:resolution",
+        destination:
+          "/stitch.html?marketplace=:marketplace&stitch=:stitch&label=:label&setnum=:setnum&setnum1=:setnum1&setnam=:setnam&resolution=:resolution",
+        permanent: true,
+      },
+      {
         source: "/contact_general.php",
         destination: "/contact_general/label/:label/key/:key",
         permanent: true,
