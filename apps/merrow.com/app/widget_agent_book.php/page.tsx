@@ -2,7 +2,14 @@
 // Route: /widget_agent_book.php
 // Legacy widget endpoint; canonicalize to /agent_book.php.
 
+import type { Metadata } from "next";
 import { redirect } from "next/navigation";
+
+export const metadata: Metadata = {
+  title: "Agent Book Widget Redirect | Merrow Support",
+  description:
+    "Legacy widget_agent_book endpoint retained for compatibility. This route redirects to the Agent Book manual viewer at /agent_book.php with the same params.",
+};
 
 interface PageProps {
   searchParams?: Promise<Record<string, string | string[] | undefined>>;
@@ -27,4 +34,3 @@ export default async function Page({ searchParams }: PageProps) {
 }
 
 export const dynamic = "force-dynamic";
-

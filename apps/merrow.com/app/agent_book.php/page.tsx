@@ -28,8 +28,9 @@ function firstParam(value?: string | string[]) {
 }
 
 export const metadata: Metadata = {
-  title: "Agent Book | Merrow Support",
-  description: "Merrow manual and parts-book viewer.",
+  title: "Agent Book Manuals and Parts Books | Merrow Support",
+  description:
+    "Browse Merrow manuals and parts books (Agent Book) online. Open a manual by set number, view pages and diagrams, and access support resources for your machine.",
 };
 
 function buildEyebrow(kiwifruit: string, type: string, language: string) {
@@ -160,4 +161,3 @@ export default async function AgentBookPage({ searchParams }: PageProps) {
 }
 
 export const dynamic = "force-dynamic";
-

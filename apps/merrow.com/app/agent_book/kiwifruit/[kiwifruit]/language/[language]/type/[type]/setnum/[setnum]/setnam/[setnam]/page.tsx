@@ -2,7 +2,14 @@
 // Route: /agent_book/kiwifruit/.../language/.../type/.../setnum/.../setnam/...
 // Canonicalize to /agent_book.php query form.
 
+import type { Metadata } from "next";
 import { redirect } from "next/navigation";
+
+export const metadata: Metadata = {
+  title: "Agent Book Legacy Route (Type First) | Merrow Support",
+  description:
+    "Legacy Agent Book URL variant retained for compatibility. This route redirects to the Agent Book manual viewer at /agent_book.php with the same params.",
+};
 
 interface PageProps {
   params: Promise<{
@@ -28,4 +35,3 @@ export default async function Page({ params }: PageProps) {
 }
 
 export const dynamic = "force-dynamic";
-

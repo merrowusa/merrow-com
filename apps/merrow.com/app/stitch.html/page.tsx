@@ -25,7 +25,7 @@ interface StitchBrowserPageProps {
 export const metadata: Metadata = {
   title: "Stitch Browser | Merrow Sewing Machine Company",
   description:
-    "Search Merrow stitch samples by machine model, stitch classification, and photoset collections.",
+    "Search Merrow stitch samples by model, stitch classification, and photoset collections. Filter and sort, then browse full resolution samples by photoset.",
 };
 
 function firstParam(value?: string | string[]) {
