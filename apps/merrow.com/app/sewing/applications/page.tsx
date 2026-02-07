@@ -1,19 +1,10 @@
-// @version applications-index v1.0
+// @version applications-index v2.1
 //
 // Route: /sewing/applications
-// Index page listing all sewing applications
+// Legacy-parity top-level applications shell page (no category selected)
 
 import { Metadata } from "next";
-import {
-  FullBleed,
-  PageHeader,
-  MerrowButton,
-} from "../../../../../packages/ui";
-import {
-  getAllPublishedApplications,
-  getAllApplicationCategories,
-  CATEGORY_SLUGS,
-} from "../../../../../packages/data-layer/queries/applications";
+import { FullBleed } from "../../../../../packages/ui";
 
 export const metadata: Metadata = {
   title: "Industrial Sewing Applications | Merrow",
@@ -21,105 +12,45 @@ export const metadata: Metadata = {
     "Explore Merrow's sewing applications - from emblem edging to blanket binding, find the right machine for your application.",
 };
 
-export default async function ApplicationsIndexPage() {
-  const applications = await getAllPublishedApplications();
-  const categories = await getAllApplicationCategories();
-
-  // Group applications by category
-  const appsByCategory = categories.map((cat) => ({
-    category: cat,
-    apps: applications.filter((app) => app.appKey === cat.appKey),
-  }));
-
+export default function ApplicationsIndexPage() {
   return (
-    <main className="text-merrow-textMain">
-      {/* Hero section */}
-      <FullBleed className="bg-merrow-heroBg border-b border-merrow-border">
-        <div className="mx-auto max-w-merrow px-4 py-12">
-          <div className="text-center">
-            <PageHeader
-              eyebrow="Merrow Applications"
-              title="Sewing Applications"
-              subtitle="Find the right Merrow machine for your specific application."
-            />
-          </div>
-          <div className="mt-6 flex justify-center">
-            <p className="max-w-[700px] text-center text-[13px] leading-[18px] text-merrow-textSub">
-              Merrow machines are used in over 70 different sewing applications
-              across industries. Browse by category to find the machine that
-              best fits your needs.
-            </p>
-          </div>
-        </div>
-      </FullBleed>
+    <main className="text-merrow-textMain" id="top">
+      <FullBleed className="border-b border-merrow-border bg-merrow-heroBg">
+        <div className="mx-auto max-w-merrow px-4 py-8">
+          <div className="grid gap-8 md:grid-cols-[300px_minmax(0,1fr)]">
+            <section>
+              <div className="text-[28px] leading-[30px] text-[#333]">
+                <div className="text-[22px] text-[#666]">Merrow Stitches for</div>
+                <h1 className="mt-1 min-h-[30px] font-['Century_Gothic','CenturyGothic',sans-serif]">&nbsp;</h1>
+                <div className="mt-1 text-[18px] tracking-[0.08em] text-[#888]">APPLICATIONS</div>
+              </div>
 
-      {/* Applications by category */}
-      <FullBleed className="bg-white">
-        <div className="mx-auto max-w-merrow px-4 py-10">
-          <h2 className="text-lg font-semibold tracking-tight mb-6">
-            All Applications ({applications.length})
-          </h2>
+              <div className="mt-6 text-[12px]">
+                <a href="https://www.addthis.com/bookmark.php?v=250&username=merrow" className="text-merrow-link hover:underline" target="_blank" rel="noopener noreferrer">
+                  Share
+                </a>{" "}
+                |{" "}
+                <a
+                  href="mailto:?subject=Merrow%20Sewing%20Applications&body=https://www.merrow.com/sewing/applications"
+                  className="text-merrow-link hover:underline"
+                >
+                  Send to a friend
+                </a>
+              </div>
+            </section>
 
-          {appsByCategory.length > 0 ? (
-            <div className="space-y-10">
-              {appsByCategory
-                .filter((group) => group.apps.length > 0)
-                .map((group) => (
-                  <section key={group.category.id}>
-                    <h3 className="text-[14px] font-semibold text-merrow-textMain mb-4 border-b border-merrow-border pb-2">
-                      {group.category.appCategoryName}
-                    </h3>
-                    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                      {group.apps.map((app) => {
-                        const categoryParam =
-                          CATEGORY_SLUGS[app.appKey] ?? String(app.appKey);
-                        const appHref = `/sewing/applications/${categoryParam}#${encodeURIComponent(app.dKey)}`;
-                        return (
-                          <a
-                            key={app.id}
-                            href={appHref}
-                            className="block border border-merrow-border rounded px-4 py-3 hover:bg-merrow-heroBg transition-colors"
-                          >
-                            <p className="text-[13px] font-semibold text-merrow-textMain">
-                              {app.appTitle}
-                            </p>
-                            {app.appMenuTitle &&
-                              app.appMenuTitle !== app.appTitle && (
-                                <p className="mt-1 text-[11px] text-merrow-textMuted">
-                                  {app.appMenuTitle}
-                                </p>
-                              )}
-                          </a>
-                        );
-                      })}
-                    </div>
-                  </section>
-                ))}
-            </div>
-          ) : (
-            <p className="text-merrow-textMuted text-[13px]">
-              No applications found. Please check database connection.
-            </p>
-          )}
-        </div>
-      </FullBleed>
+            <section className="border-l border-[#d0d0d0] pl-8">
+              <h2 className="text-[22px] leading-[28px] text-[#333]">Choose your specific application</h2>
 
-      {/* CTA section */}
-      <FullBleed className="bg-merrow-footerBg">
-        <div className="mx-auto max-w-merrow px-4 py-10 text-center">
-          <h2 className="text-[20px] font-light text-white">
-            Don't see your application?
-          </h2>
-          <p className="mt-2 text-[13px] text-[#d7d7d7]">
-            Contact our team to discuss your specific sewing requirements.
-          </p>
-          <div className="mt-4 flex justify-center gap-4">
-            <MerrowButton href="/support/request-quote">
-              Request a Quote
-            </MerrowButton>
-            <MerrowButton href="/contact_general.html">
-              Contact Us
-            </MerrowButton>
+              <div className="mt-8">
+                <a
+                  href="/widget_compare.php?&app=&iframe=true&width=1100&height=600"
+                  className="inline-block rounded-sm bg-[#a80c0d] px-3 py-1 text-[12px] font-semibold uppercase tracking-[0.03em] text-white hover:bg-[#8f090a]"
+                >
+                  Compare all
+                </a>
+              </div>
+            </section>
           </div>
         </div>
       </FullBleed>
