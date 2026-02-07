@@ -12,6 +12,7 @@ import {
 import {
   getAllPublishedApplications,
   getAllApplicationCategories,
+  CATEGORY_SLUGS,
 } from "../../../../../packages/data-layer/queries/applications";
 
 export const metadata: Metadata = {
@@ -69,22 +70,28 @@ export default async function ApplicationsIndexPage() {
                       {group.category.appCategoryName}
                     </h3>
                     <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                      {group.apps.map((app) => (
-                        <a
-                          key={app.id}
-                          href={`/sewing/applications/${app.dKey}`}
-                          className="block border border-merrow-border rounded px-4 py-3 hover:bg-merrow-heroBg transition-colors"
-                        >
-                          <p className="text-[13px] font-semibold text-merrow-textMain">
-                            {app.appTitle}
-                          </p>
-                          {app.appMenuTitle && app.appMenuTitle !== app.appTitle && (
-                            <p className="mt-1 text-[11px] text-merrow-textMuted">
-                              {app.appMenuTitle}
+                      {group.apps.map((app) => {
+                        const categoryParam =
+                          CATEGORY_SLUGS[app.appKey] ?? String(app.appKey);
+                        const appHref = `/sewing/applications/${categoryParam}#${encodeURIComponent(app.dKey)}`;
+                        return (
+                          <a
+                            key={app.id}
+                            href={appHref}
+                            className="block border border-merrow-border rounded px-4 py-3 hover:bg-merrow-heroBg transition-colors"
+                          >
+                            <p className="text-[13px] font-semibold text-merrow-textMain">
+                              {app.appTitle}
                             </p>
-                          )}
-                        </a>
-                      ))}
+                            {app.appMenuTitle &&
+                              app.appMenuTitle !== app.appTitle && (
+                                <p className="mt-1 text-[11px] text-merrow-textMuted">
+                                  {app.appMenuTitle}
+                                </p>
+                              )}
+                          </a>
+                        );
+                      })}
                     </div>
                   </section>
                 ))}

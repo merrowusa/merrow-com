@@ -1,17 +1,11 @@
-// @version application-detail v1.0
+// @version application-detail v2.0
 //
 // Route: /sewing/applications/[app]
-// Individual application detail page
+// Legacy-parity category detail with anchor navigation and compare modal
 
 import { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
-import {
-  FullBleed,
-  PageHeader,
-  RichText,
-  SpecGrid,
-  MerrowButton,
-} from "../../../../../../packages/ui";
+import { FullBleed, RichText } from "../../../../../../packages/ui";
 import {
   getApplicationByKey,
   getAllApplicationKeys,
@@ -19,250 +13,332 @@ import {
   getApplicationsByCategory,
   CATEGORY_SLUGS,
   CATEGORY_SLUG_TO_KEY,
+  type ApplicationPage,
 } from "../../../../../../packages/data-layer/queries/applications";
+import {
+  CompareAllModal,
+  type CompareApplicationRow,
+} from "../_components/CompareAllModal";
+
+const APP_IMAGE_BASE = "https://merrow-media.s3.amazonaws.com/applications";
 
 interface PageProps {
   params: Promise<{ app: string }>;
 }
 
+function getCategoryPath(appKey: number): string {
+  const slug = CATEGORY_SLUGS[appKey];
+  if (slug) return `/sewing/applications/${slug}`;
+  return `/sewing/applications/${appKey}`;
+}
+
+function getMachineRoute(item: ApplicationPage): string {
+  if (item.machineUrl?.trim()) {
+    return item.machineUrl.trim();
+  }
+
+  const styleKey = item.styleKey?.trim();
+  if (!styleKey) return "/machines";
+
+  const pageKey = item.pageKey?.toUpperCase();
+  if (pageKey === "70") {
+    return `/Overlock_Sewing_Machines/Continuous_Processing/${styleKey}`;
+  }
+  if (pageKey === "EMBLEM") {
+    return `/Sergers_and_Overlock_Sewing_Machines/Emblem_Edging/${styleKey}`;
+  }
+  if (pageKey === "18") {
+    return `/crochet-sewing-machines/${styleKey}`;
+  }
+
+  return `/Sergers_and_Overlock_Sewing_Machines/${styleKey}`;
+}
+
+function splitIntoColumns<T>(items: T[], columnCount: number): T[][] {
+  if (!items.length) return [];
+  const perColumn = Math.ceil(items.length / columnCount);
+  return Array.from({ length: columnCount }, (_, index) => {
+    const start = index * perColumn;
+    const end = start + perColumn;
+    return items.slice(start, end);
+  }).filter((column) => column.length > 0);
+}
+
 export async function generateStaticParams() {
   const keys = await getAllApplicationKeys();
   const categorySlugs = Object.values(CATEGORY_SLUGS);
-  const allParams = [...keys, ...categorySlugs];
+  const categoryNumericKeys = Object.keys(CATEGORY_SLUGS);
+  const allParams = [...keys, ...categorySlugs, ...categoryNumericKeys];
   return Array.from(new Set(allParams)).map((app) => ({ app }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { app } = await params;
+
   const numericKey = Number(app);
-  if (!Number.isNaN(numericKey) && String(numericKey) === app) {
-    const slug = CATEGORY_SLUGS[numericKey];
-    if (slug) {
-      const category = await getApplicationCategoryByKey(numericKey);
-      if (!category) {
-        return { title: "Applications | Merrow" };
-      }
-      return {
-        title:
-          category.appCategorySeoTitle ||
-          `${category.appCategoryName} | Merrow`,
-        description:
-          category.appCategorySeoDescription ||
-          `${category.appCategoryName} applications by Merrow`,
-      };
-    }
+  const isNumeric = !Number.isNaN(numericKey) && String(numericKey) === app;
+
+  let appKey: number | undefined;
+  if (isNumeric) {
+    appKey = numericKey;
+  } else {
+    appKey = CATEGORY_SLUG_TO_KEY[app];
   }
 
-  const categoryKey = CATEGORY_SLUG_TO_KEY[app];
-  if (categoryKey) {
-    const category = await getApplicationCategoryByKey(categoryKey);
-    if (!category) {
-      return { title: "Applications | Merrow" };
+  if (!appKey) {
+    const application = await getApplicationByKey(app);
+    if (!application) {
+      return { title: "Application Not Found | Merrow" };
     }
-    return {
-      title:
-        category.appCategorySeoTitle ||
-        `${category.appCategoryName} | Merrow`,
-      description:
-        category.appCategorySeoDescription ||
-        `${category.appCategoryName} applications by Merrow`,
-    };
+    appKey = application.appKey;
   }
 
-  const application = await getApplicationByKey(app);
-
-  if (!application) {
-    return { title: "Application Not Found | Merrow" };
+  const category = await getApplicationCategoryByKey(appKey);
+  if (!category) {
+    return { title: "Applications | Merrow" };
   }
 
   return {
-    title: application.seoTitle || `${application.appTitle} | Merrow`,
+    title:
+      category.appCategorySeoTitle ||
+      `${category.appCategoryName} Applications | Merrow`,
     description:
-      typeof application.seoDescription === "string"
-        ? application.seoDescription
-        : `${application.appTitle} - Sewing application by Merrow`,
+      category.appCategorySeoDescription ||
+      `${category.appCategoryName} applications by Merrow`,
+    keywords: category.appCategorySeoKeywords || undefined,
   };
 }
 
 export default async function ApplicationDetailPage({ params }: PageProps) {
   const { app } = await params;
+
   const numericKey = Number(app);
-  if (!Number.isNaN(numericKey) && String(numericKey) === app) {
-    const slug = CATEGORY_SLUGS[numericKey];
-    if (slug) {
-      redirect(`/sewing/applications/${slug}`);
-    }
+  const isNumeric = !Number.isNaN(numericKey) && String(numericKey) === app;
+
+  if (isNumeric && CATEGORY_SLUGS[numericKey]) {
+    redirect(`/sewing/applications/${CATEGORY_SLUGS[numericKey]}`);
   }
 
-  const categoryKey = CATEGORY_SLUG_TO_KEY[app];
-  if (categoryKey) {
-    const category = await getApplicationCategoryByKey(categoryKey);
-    if (!category) {
+  let appKey: number | undefined;
+
+  if (isNumeric) {
+    appKey = numericKey;
+  } else {
+    appKey = CATEGORY_SLUG_TO_KEY[app];
+  }
+
+  if (!appKey) {
+    const focusedApplication = await getApplicationByKey(app);
+    if (!focusedApplication) {
       notFound();
     }
-    const applications = (await getApplicationsByCategory(categoryKey)).filter(
-      (item) => item.publish === "yes"
-    );
 
-    return (
-      <main className="text-merrow-textMain">
-        <FullBleed className="bg-merrow-heroBg border-b border-merrow-border">
-          <div className="mx-auto max-w-merrow px-4 py-12">
-            <PageHeader
-              eyebrow="Sewing Applications"
-              title={category.appCategoryName}
-              subtitle={
-                category.appCategoryShortName
-                  ? `${category.appCategoryShortName} Applications`
-                  : "Applications"
-              }
-            />
-            {category.appCategorySeoDescription && (
-              <p className="mt-4 max-w-3xl text-[13px] leading-[18px] text-merrow-textSub">
-                {category.appCategorySeoDescription}
-              </p>
-            )}
-          </div>
-        </FullBleed>
-
-        <FullBleed className="bg-white">
-          <div className="mx-auto max-w-merrow px-4 py-10">
-            {applications.length === 0 ? (
-              <p className="text-[13px] text-merrow-textSub">
-                No applications are available for this category yet.
-              </p>
-            ) : (
-              <div className="grid gap-6 md:grid-cols-2">
-                {applications.map((item) => (
-                  <div
-                    key={item.dKey}
-                    className="rounded-xl border border-merrow-border bg-white p-6 shadow-[0_6px_16px_rgba(0,0,0,0.05)]"
-                  >
-                    <h3 className="text-[16px] font-semibold text-merrow-textMain">
-                      {item.appMenuTitle || item.appTitle}
-                    </h3>
-                    {item.appRightP && (
-                      <p className="mt-2 text-[13px] leading-[18px] text-merrow-textSub">
-                        {item.appRightP}
-                      </p>
-                    )}
-                    <div className="mt-4">
-                      <MerrowButton href={`/sewing/applications/${item.dKey}`}>
-                        View Application
-                      </MerrowButton>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-        </FullBleed>
-      </main>
-    );
+    const focusedPath = getCategoryPath(focusedApplication.appKey);
+    redirect(`${focusedPath}#${encodeURIComponent(focusedApplication.dKey)}`);
   }
 
-  const application = await getApplicationByKey(app);
-
-  if (!application) {
+  const category = await getApplicationCategoryByKey(appKey);
+  if (!category) {
     notFound();
   }
 
-  const specs = [
-    { label: "Stitch Width", value: application.stitchWidth },
-    { label: "Machine Speed", value: application.machineSpeed },
-    { label: "Fabric Material", value: application.fabricMaterial },
-    {
-      label: "Thread Count",
-      value: application.threadNumber ? String(application.threadNumber) : "",
-    },
-    { label: "Thread Material", value: application.threadMaterial },
-    { label: "Machine Model", value: application.machineModel },
-    { label: "Price Range", value: application.machinePrice },
-  ];
+  const applications = (await getApplicationsByCategory(appKey)).filter(
+    (item) => item.publish === "yes" && item.dKey !== "MASTER"
+  );
+
+  const navColumns = splitIntoColumns(applications, 3);
+
+  const compareRows: CompareApplicationRow[] = applications.map((item) => ({
+    dKey: item.dKey,
+    title: item.appMenuTitle || item.appTitle,
+    machineSpeed: item.machineSpeed,
+    stitchWidth: item.stitchWidth,
+    fabricMaterial: item.fabricMaterial,
+    machineModel: item.machineModel,
+    machinePrice: item.machinePrice,
+  }));
 
   return (
-    <main className="text-merrow-textMain">
-      {/* Hero section */}
-      <FullBleed className="bg-merrow-heroBg border-b border-merrow-border">
-        <div className="mx-auto max-w-merrow px-4 py-12">
-          <PageHeader
-            eyebrow="Sewing Application"
-            title={application.appTitle}
-            subtitle={application.popupSubtitle || undefined}
-          />
+    <main className="text-merrow-textMain" id="top">
+      <FullBleed className="border-b border-merrow-border bg-merrow-heroBg">
+        <div className="mx-auto max-w-merrow px-4 py-10">
+          <div className="grid gap-8 md:grid-cols-[300px_minmax(0,1fr)]">
+            <section>
+              <div className="text-[28px] leading-[30px] text-[#333]">
+                <div className="text-[22px] text-[#666]">Merrow Stitches for</div>
+                <h1 className="mt-1 font-['Century_Gothic','CenturyGothic',sans-serif]">
+                  {category.appCategoryName}
+                </h1>
+                <div className="mt-1 text-[18px] tracking-[0.08em] text-[#888]">
+                  APPLICATIONS
+                </div>
+              </div>
+            </section>
 
-          {application.machineUrl && (
-            <div className="mt-6">
-              <MerrowButton href={application.machineUrl}>
-                View Machine
-              </MerrowButton>
-            </div>
-          )}
+            <section>
+              <h2 className="text-[22px] leading-[28px] text-[#333]">
+                Choose your specific {category.appCategoryShortName || category.appCategoryName} application
+              </h2>
+
+              {applications.length > 0 ? (
+                <div className="mt-4 grid gap-6 md:grid-cols-3">
+                  {navColumns.map((column, columnIndex) => (
+                    <ul key={columnIndex} className="space-y-2 text-[13px] leading-[17px]">
+                      {column.map((item) => (
+                        <li key={item.dKey}>
+                          <a
+                            href={`#${item.dKey}`}
+                            className="text-merrow-link hover:underline"
+                          >
+                            {item.appNavTitle || item.appMenuTitle || item.appTitle}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  ))}
+                </div>
+              ) : (
+                <p className="mt-4 text-[13px] text-merrow-textSub">
+                  No published applications found for this category.
+                </p>
+              )}
+
+              <div className="mt-6">
+                <CompareAllModal
+                  categoryName={category.appCategoryName}
+                  items={compareRows}
+                />
+              </div>
+            </section>
+          </div>
         </div>
       </FullBleed>
 
-      {/* Specs section */}
-      <FullBleed className="bg-white border-b border-merrow-border">
-        <div className="mx-auto max-w-merrow px-4 py-8">
-          <SpecGrid specs={specs} />
-        </div>
-      </FullBleed>
-
-      {/* Content sections */}
       <FullBleed className="bg-white">
         <div className="mx-auto max-w-merrow px-4 py-8">
-          <div className="grid gap-8 md:grid-cols-2">
-            {application.popup1stColumn && (
-              <div>
-                <h3 className="text-sm font-semibold tracking-tight text-slate-800 mb-2">
-                  {application.popupTitle || "Overview"}
-                </h3>
-                <RichText html={application.popup1stColumn} />
-              </div>
-            )}
-            {application.popup2ndColumn && (
-              <div>
-                <h3 className="text-sm font-semibold tracking-tight text-slate-800 mb-2">
-                  Details
-                </h3>
-                <RichText html={application.popup2ndColumn} />
-              </div>
-            )}
-          </div>
+          {applications.map((item, index) => {
+            const machineHref = getMachineRoute(item);
+            const sectionClass =
+              index % 2 === 0 ? "bg-[#f9f9f9]" : "bg-[#ededed]";
 
-          {application.appRightP && (
-            <div className="mt-8">
-              <h3 className="text-sm font-semibold tracking-tight text-slate-800 mb-2">
-                {application.appRightTitle || "Additional Information"}
-              </h3>
-              <p className="text-[13px] leading-[18px] text-merrow-textSub">
-                {application.appRightP}
-              </p>
-            </div>
-          )}
-        </div>
-      </FullBleed>
+            return (
+              <section key={item.dKey} id={item.dKey} className="scroll-mt-28">
+                <div className={`rounded border border-[#d4d4d4] p-4 md:p-6 ${sectionClass}`}>
+                  <div className="grid gap-4 lg:grid-cols-[400px_1fr_270px] lg:gap-6">
+                    <div>
+                      <img
+                        src={`${APP_IMAGE_BASE}/${item.dKey}_main_400x360.jpg`}
+                        alt={item.appMenuTitle || item.appTitle}
+                        className="h-auto w-full rounded border border-[#bcbcbc] bg-white"
+                      />
+                    </div>
 
-      {/* CTA section */}
-      <FullBleed className="bg-merrow-footerBg">
-        <div className="mx-auto max-w-merrow px-4 py-10 text-center">
-          <h2 className="text-[20px] font-light text-white">
-            Ready to get started with {application.appTitle}?
-          </h2>
-          <p className="mt-2 text-[13px] text-[#d7d7d7]">
-            Contact our team for more information and pricing.
-          </p>
-          <div className="mt-4 flex flex-wrap justify-center gap-4">
-            <MerrowButton href="/support/request-quote">
-              Request a Quote
-            </MerrowButton>
-            <MerrowButton href="/contact_general.html">
-              Contact Us
-            </MerrowButton>
-            <MerrowButton href="/sewing/applications">
-              All Applications
-            </MerrowButton>
-          </div>
+                    <div>
+                      <h3 className="font-['Century_Gothic','CenturyGothic',sans-serif] text-[22px] leading-[24px] text-[#3a3a3a]">
+                        {item.appMenuTitle || item.appTitle}
+                      </h3>
+
+                      <div className="mt-3 rounded border border-[#cfcfcf] bg-white p-3">
+                        <div className="text-[12px] font-semibold uppercase tracking-[0.08em] text-[#666]">
+                          More information
+                        </div>
+
+                        <div className="mt-3 grid gap-3 md:grid-cols-[115px_1fr]">
+                          <img
+                            src={`${APP_IMAGE_BASE}/${item.dKey}_callout_115x115.jpg`}
+                            alt={`${item.appMenuTitle || item.appTitle} callout`}
+                            className="h-[115px] w-[115px] rounded border border-[#c8c8c8] bg-[#f2f2f2] object-cover"
+                          />
+
+                          <div>
+                            <div className="text-[16px] font-semibold text-[#4a4a4a]">
+                              {item.popupTitle || item.appRightTitle || item.appTitle}
+                            </div>
+                            {item.popupSubtitle && (
+                              <div className="text-[12px] uppercase tracking-[0.08em] text-[#777]">
+                                {item.popupSubtitle}
+                              </div>
+                            )}
+                          </div>
+                        </div>
+
+                        <div className="mt-4 grid gap-4 md:grid-cols-2">
+                          <div className="text-[13px] leading-[18px] text-[#4e4e4e]">
+                            <RichText html={item.popup1stColumn || ""} />
+                          </div>
+                          <div className="text-[13px] leading-[18px] text-[#4e4e4e]">
+                            <RichText html={item.popup2ndColumn || ""} />
+                          </div>
+                        </div>
+
+                        <div className="mt-4 flex flex-wrap gap-2">
+                          <a
+                            href={machineHref}
+                            className="rounded border border-[#808080] bg-white px-3 py-1 text-[12px] font-semibold text-[#4b4b4b] hover:bg-[#f2f2f2]"
+                          >
+                            View Machine
+                          </a>
+                          <a
+                            href={`/support/request-quote?application=${encodeURIComponent(item.dKey)}`}
+                            className="rounded border border-[#808080] bg-white px-3 py-1 text-[12px] font-semibold text-[#4b4b4b] hover:bg-[#f2f2f2]"
+                          >
+                            Request Quote
+                          </a>
+                        </div>
+                      </div>
+
+                      <div className="mt-4 grid gap-3 md:grid-cols-2">
+                        <a
+                          href={`${APP_IMAGE_BASE}/${item.dKey}_stitch_highres1.jpg`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block"
+                        >
+                          <img
+                            src={`${APP_IMAGE_BASE}/${item.dKey}_stitch_260x170.png`}
+                            alt={`${item.appMenuTitle || item.appTitle} stitch`}
+                            className="h-auto w-full rounded border border-[#c8c8c8] bg-white"
+                          />
+                        </a>
+
+                        <a href={machineHref} className="block">
+                          <img
+                            src={`${APP_IMAGE_BASE}/${item.dKey}_machine_260x170.png`}
+                            alt={`${item.appMenuTitle || item.appTitle} machine`}
+                            className="h-auto w-full rounded border border-[#c8c8c8] bg-white"
+                          />
+                        </a>
+                      </div>
+                    </div>
+
+                    <aside className="rounded border border-[#bfbfbf] bg-[#f5f5f5] p-4 text-[13px] leading-[18px] text-[#4a4a4a]">
+                      <div className="text-[15px] font-semibold text-[#444]">
+                        {item.appRightTitle || "Application Summary"}
+                      </div>
+
+                      <div className="mt-2">
+                        <RichText html={item.appRightP || ""} />
+                      </div>
+
+                      <ul className="mt-4 space-y-1 border-t border-[#cfcfcf] pt-3 text-[12px] uppercase tracking-[0.04em]">
+                        <li>SPEED: {item.machineSpeed || "N/A"}</li>
+                        <li>STITCH WIDTH: {item.stitchWidth || "N/A"}</li>
+                        <li>MATERIAL: {item.fabricMaterial || "N/A"}</li>
+                      </ul>
+                    </aside>
+                  </div>
+                </div>
+
+                {index > 0 && (
+                  <p className="py-3 text-right text-[12px]">
+                    <a href="#top" className="text-merrow-link hover:underline">
+                      Back to the top
+                    </a>
+                  </p>
+                )}
+              </section>
+            );
+          })}
         </div>
       </FullBleed>
     </main>

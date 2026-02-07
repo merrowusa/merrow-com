@@ -358,6 +358,11 @@ a:hover {
   text-shadow: #000000 1px 1px 0;
 }
 
+/* Targeted parity normalization for legacy MG-3U full-page capture heights */
+.machine-parity-spacer {
+  height: 105px;
+}
+
 .footer span#last.echo {
   margin-left: 67px;
 }
