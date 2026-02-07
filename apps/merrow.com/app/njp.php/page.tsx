@@ -23,11 +23,14 @@ const POSITION_SUBJECTS: Record<string, { title: string; subject: string }> = {
 };
 
 interface PageProps {
-  searchParams?: { p?: string; j?: string };
+  searchParams?: Promise<{ p?: string; j?: string }>;
 }
 
-export default function JobsPage({ searchParams }: PageProps) {
-  const selected = searchParams?.p ? POSITION_SUBJECTS[searchParams.p] : null;
+export default async function JobsPage({ searchParams }: PageProps) {
+  const resolvedSearchParams = await searchParams;
+  const selected = resolvedSearchParams?.p
+    ? POSITION_SUBJECTS[resolvedSearchParams.p]
+    : null;
 
   return (
     <main className="text-merrow-textMain">
