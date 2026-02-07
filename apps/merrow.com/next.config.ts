@@ -1,5 +1,9 @@
 import type { NextConfig } from "next";
 
+// Public Cloudflare R2 endpoint serving the `merrow-assets` bucket.
+// This lets us keep legacy `/images/...` paths working while sourcing from R2.
+const R2_PUBLIC_BASE = "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev";
+
 const nextConfig: NextConfig = {
   // Enable React strict mode
   reactStrictMode: true,
@@ -26,6 +30,24 @@ const nextConfig: NextConfig = {
   // Redirects from legacy URLs
   async redirects() {
     return [
+      // Legacy static assets now served from R2.
+      // Keep these high in the list so they win early.
+      {
+        source: "/images/:path*",
+        destination: `${R2_PUBLIC_BASE}/images/:path*`,
+        permanent: true,
+      },
+      {
+        source: "/stitch-samples/:path*",
+        destination: `${R2_PUBLIC_BASE}/stitch-samples/:path*`,
+        permanent: true,
+      },
+      {
+        source: "/applications/:path*",
+        destination: `${R2_PUBLIC_BASE}/applications/:path*`,
+        permanent: true,
+      },
+
       // Legacy PHP redirects
       {
         source: "/mg_1.php",
