@@ -101,8 +101,14 @@ export function Header({ navData }: HeaderProps = {}) {
   const handleSearchSubmit = useCallback((event: React.FormEvent) => {
     event.preventDefault();
     if (searchQuery.trim()) {
-      // TODO: Implement search functionality - redirect to search results page
-      window.location.href = `/search?q=${encodeURIComponent(searchQuery)}`;
+      // Legacy header uses Google CSE; until the refactor's search is rebuilt,
+      // send users to a Google `site:merrow.com` query rather than a non-existent /search route.
+      const q = `site:merrow.com ${searchQuery.trim()}`;
+      window.open(
+        `https://www.google.com/search?q=${encodeURIComponent(q)}`,
+        "_blank",
+        "noopener,noreferrer"
+      );
     }
   }, [searchQuery]);
 
