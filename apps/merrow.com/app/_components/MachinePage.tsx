@@ -9,6 +9,7 @@ import { getApplicationsForMachine } from "../../../../packages/data-layer/queri
 import type { MachinePage as MachinePageType } from "../../../../packages/data-layer/schema/machine-pages";
 import { LegacyMachineAdvantages } from "../machines/_components/LegacyMachineAdvantages";
 import { StitchGallery } from "../machines/_components/StitchGallery";
+import { FallbackImg } from "./FallbackImg";
 
 const PRODUCT_PAGE_BASE = "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/product-pages";
 const APP_IMAGE_BASE = "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/applications";
@@ -117,7 +118,21 @@ export async function MachinePageContent({ styleKey }: MachinePageProps) {
   const hasVideo2 = Boolean(machine.youtube2);
   const hasVideos = hasVideo1 || hasVideo2;
 
-  const mainImageUrl = `${PRODUCT_PAGE_BASE}/${machine.styleKey}_main.jpg`;
+  const productBases = Array.from(
+    new Set([PRODUCT_PAGE_BASE, PRODUCT_PAGE_BASE.replace("/product-pages", "/productpages")]),
+  );
+  const styleKeyLower = machine.styleKey;
+  const styleKeyUpper = machine.styleKey.toUpperCase();
+
+  const mainImageCandidates = productBases.flatMap((base) => [
+    `${base}/${styleKeyLower}_main.jpg`,
+    `${base}/${styleKeyLower}_main.JPG`,
+    `${base}/${styleKeyLower}_main.png`,
+    `${base}/${styleKeyUpper}_main.jpg`,
+    `${base}/${styleKeyUpper}_main.JPG`,
+    `${base}/${styleKeyUpper}_main.png`,
+  ]);
+
   const video1Image = `${PRODUCT_PAGE_BASE}/${machine.styleKey}_video1.jpg`;
   const video2Image = `${PRODUCT_PAGE_BASE}/${machine.styleKey}_video2.jpg`;
   const stitch1Image = `${PRODUCT_PAGE_BASE}/${machine.styleKey}_stitch1.jpg`;
@@ -148,8 +163,8 @@ export async function MachinePageContent({ styleKey }: MachinePageProps) {
 
           <div className="flex items-start gap-5">
             <div className="w-[620px]">
-              <img
-                src={mainImageUrl}
+              <FallbackImg
+                candidates={mainImageCandidates}
                 width={500}
                 height={417}
                 alt={`${styleName} image`}
@@ -160,16 +175,24 @@ export async function MachinePageContent({ styleKey }: MachinePageProps) {
                 <div className="w-[106px] space-y-2">
                   {Array.from({ length: numberOfThumbs }).map((_, index) => {
                     const n = index + 1;
-                    const thumb = `${PRODUCT_PAGE_BASE}/${machine.styleKey}_thumb${n}.jpg`;
                     const full = `${PRODUCT_PAGE_BASE}/${machine.styleKey}_thumb${n}x.jpg`;
+                    const thumbCandidates = productBases.flatMap((base) => [
+                      `${base}/${styleKeyLower}_thumb${n}.jpg`,
+                      `${base}/${styleKeyLower}_thumb${n}.JPG`,
+                      `${base}/${styleKeyLower}_thumb${n}.png`,
+                      `${base}/${styleKeyUpper}_thumb${n}.jpg`,
+                      `${base}/${styleKeyUpper}_thumb${n}.JPG`,
+                      `${base}/${styleKeyUpper}_thumb${n}.png`,
+                    ]);
                     return (
-                      <a key={thumb} href={full}>
-                        <img
-                          src={thumb}
+                      <a key={full} href={full}>
+                        <FallbackImg
+                          candidates={thumbCandidates}
                           width={100}
                           height={83}
                           alt={`${styleName} thumbnail ${n}`}
                           className="block border-0"
+                          loading="lazy"
                         />
                       </a>
                     );

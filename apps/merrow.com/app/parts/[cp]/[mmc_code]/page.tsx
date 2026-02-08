@@ -15,7 +15,7 @@ import {
   getMachineByOtId,
 } from "../../../../../../packages/data-layer/queries/machines";
 import { PartsDrawings } from "../../_components/PartsDrawings";
-import { FallbackImg } from "../../_components/FallbackImg";
+import { FallbackImg } from "../../../_components/FallbackImg";
 import {
   LegacyBox,
   LegacySupportPage,
