@@ -1,5 +1,7 @@
 "use client";
 
+import { FallbackImg } from "./FallbackImg";
+
 interface MachineImageProps {
   src: string;
   alt: string;
@@ -7,14 +9,11 @@ interface MachineImageProps {
 
 export function MachineImage({ src, alt }: MachineImageProps) {
   return (
-    <img
-      src={src}
+    <FallbackImg
+      candidates={[src, "/images/placeholders/unicorn.svg"]}
       alt={alt}
       className="max-h-[400px] w-auto object-contain"
-      onError={(e) => {
-        // Fallback if image doesn't exist
-        (e.target as HTMLImageElement).style.display = "none";
-      }}
+      loading="lazy"
     />
   );
 }

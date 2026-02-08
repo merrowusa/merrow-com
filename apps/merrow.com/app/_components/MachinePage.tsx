@@ -13,6 +13,7 @@ import { FallbackImg } from "./FallbackImg";
 
 const PRODUCT_PAGE_BASE = "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/product-pages";
 const APP_IMAGE_BASE = "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/applications";
+const MACHINE_IMAGE_PLACEHOLDER = "/images/placeholders/unicorn.svg";
 
 export interface MachinePageProps {
   styleKey: string;
@@ -131,7 +132,7 @@ export async function MachinePageContent({ styleKey }: MachinePageProps) {
     `${base}/${styleKeyUpper}_main.jpg`,
     `${base}/${styleKeyUpper}_main.JPG`,
     `${base}/${styleKeyUpper}_main.png`,
-  ]);
+  ]).concat([MACHINE_IMAGE_PLACEHOLDER]);
 
   const video1Image = `${PRODUCT_PAGE_BASE}/${machine.styleKey}_video1.jpg`;
   const video2Image = `${PRODUCT_PAGE_BASE}/${machine.styleKey}_video2.jpg`;
@@ -183,7 +184,7 @@ export async function MachinePageContent({ styleKey }: MachinePageProps) {
                       `${base}/${styleKeyUpper}_thumb${n}.jpg`,
                       `${base}/${styleKeyUpper}_thumb${n}.JPG`,
                       `${base}/${styleKeyUpper}_thumb${n}.png`,
-                    ]);
+                    ]).concat([MACHINE_IMAGE_PLACEHOLDER]);
                     return (
                       <a key={full} href={full}>
                         <FallbackImg

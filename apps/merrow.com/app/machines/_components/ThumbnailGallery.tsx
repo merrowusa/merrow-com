@@ -4,6 +4,7 @@
 "use client";
 
 import React, { useMemo, useState } from "react";
+import { FallbackImg } from "../../_components/FallbackImg";
 
 interface ThumbnailGalleryProps {
   styleKey: string;
@@ -11,6 +12,7 @@ interface ThumbnailGalleryProps {
 }
 
 const S3_BASE = "https://pub-8a8d2bb929a64db2b053e893f4dcb4d0.r2.dev/product-pages";
+const MACHINE_IMAGE_PLACEHOLDER = "/images/placeholders/unicorn.svg";
 
 export function ThumbnailGallery({ styleKey, numberOfThumbs }: ThumbnailGalleryProps) {
   const [activeImage, setActiveImage] = useState<string | null>(null);
@@ -39,10 +41,11 @@ export function ThumbnailGallery({ styleKey, numberOfThumbs }: ThumbnailGalleryP
             onClick={() => setActiveImage(item.full)}
             aria-label={`Open image ${index + 1}`}
           >
-            <img
-              src={item.thumb}
+            <FallbackImg
+              candidates={[item.thumb, MACHINE_IMAGE_PLACEHOLDER]}
               alt={`Machine thumbnail ${index + 1}`}
               className="h-full w-full rounded object-cover"
+              loading="lazy"
             />
           </button>
         ))}
@@ -64,8 +67,8 @@ export function ThumbnailGallery({ styleKey, numberOfThumbs }: ThumbnailGalleryP
             >
               Close
             </button>
-            <img
-              src={activeImage}
+            <FallbackImg
+              candidates={[activeImage, MACHINE_IMAGE_PLACEHOLDER]}
               alt="Machine detail"
               className="max-h-[80vh] w-full rounded-lg border border-[#2a2a2a] bg-white object-contain"
             />
